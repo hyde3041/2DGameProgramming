@@ -1,0 +1,8 @@
+{
+  "file": "dungeon-room.png",
+  "kind": "기획용 맵 시안",
+  "terrain_heights": 2,
+  "goal_points": 2,
+  "game_grid_calibrated": false,
+  "target_map_count": 3
+}

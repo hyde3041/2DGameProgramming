@@ -1,0 +1,229 @@
+{
+  "version": 1,
+  "asset_type": "four-direction deployment facing selector",
+  "creation": "native SVG UI matching existing game palette; PNG exports",
+  "size": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    128
+  ],
+  "default_display_size": [
+    192,
+    192
+  ],
+  "dead_zone": 20,
+  "direction_rule": "Select horizontal when abs(dx) >= abs(dy); otherwise vertical. Screen y increases downward; pico2d y increases upward.",
+  "atlas": {
+    "file": "atlases/direction-selector.png",
+    "size": [
+      1280,
+      256
+    ],
+    "cell_size": [
+      256,
+      256
+    ],
+    "columns": 5,
+    "rows": 1
+  },
+  "assets": [
+    {
+      "state": "idle",
+      "label": "기본",
+      "svg": "svg/direction-idle.svg",
+      "png": "png/direction-idle.png",
+      "png_2x": "png-2x/direction-idle.png",
+      "size": [
+        256,
+        256
+      ],
+      "size_2x": [
+        512,
+        512
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "atlas_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "pico2d_rect": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "screen_vector": [
+        0,
+        0
+      ],
+      "world_vector": [
+        0,
+        0
+      ]
+    },
+    {
+      "state": "up",
+      "label": "위쪽",
+      "svg": "svg/direction-up.svg",
+      "png": "png/direction-up.png",
+      "png_2x": "png-2x/direction-up.png",
+      "size": [
+        256,
+        256
+      ],
+      "size_2x": [
+        512,
+        512
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "atlas_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "pico2d_rect": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "screen_vector": [
+        0,
+        -1
+      ],
+      "world_vector": [
+        0,
+        1
+      ]
+    },
+    {
+      "state": "right",
+      "label": "오른쪽",
+      "svg": "svg/direction-right.svg",
+      "png": "png/direction-right.png",
+      "png_2x": "png-2x/direction-right.png",
+      "size": [
+        256,
+        256
+      ],
+      "size_2x": [
+        512,
+        512
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "atlas_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "pico2d_rect": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "screen_vector": [
+        1,
+        0
+      ],
+      "world_vector": [
+        1,
+        0
+      ]
+    },
+    {
+      "state": "down",
+      "label": "아래쪽",
+      "svg": "svg/direction-down.svg",
+      "png": "png/direction-down.png",
+      "png_2x": "png-2x/direction-down.png",
+      "size": [
+        256,
+        256
+      ],
+      "size_2x": [
+        512,
+        512
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "atlas_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "pico2d_rect": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "screen_vector": [
+        0,
+        1
+      ],
+      "world_vector": [
+        0,
+        -1
+      ]
+    },
+    {
+      "state": "left",
+      "label": "왼쪽",
+      "svg": "svg/direction-left.svg",
+      "png": "png/direction-left.png",
+      "png_2x": "png-2x/direction-left.png",
+      "size": [
+        256,
+        256
+      ],
+      "size_2x": [
+        512,
+        512
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "atlas_rect": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "pico2d_rect": [
+        1024,
+        0,
+        256,
+        256
+      ],
+      "screen_vector": [
+        -1,
+        0
+      ],
+      "world_vector": [
+        -1,
+        0
+      ]
+    }
+  ]
+}
