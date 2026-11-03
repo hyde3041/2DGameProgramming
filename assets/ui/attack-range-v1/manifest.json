@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "asset_type": "deployment attack-range overlay tile",
+  "creation": "native SVG geometry matching the existing UI; deterministic PNG export",
+  "color": "#F8B748",
+  "default": "png/attack-range.png",
+  "variants": [
+    "hatched",
+    "plain"
+  ],
+  "size": [
+    128,
+    128
+  ],
+  "size_2x": [
+    256,
+    256
+  ],
+  "anchor": [
+    64,
+    64
+  ],
+  "fill_alpha": 0.22,
+  "outline_alpha": 0.78,
+  "baked_in_alpha": true,
+  "draw_order": [
+    "map",
+    "range tiles",
+    "characters",
+    "placement direction UI"
+  ],
+  "coordinate_system": "PNG top-left; game draw anchor is the tile center",
+  "assets": [
+    {
+      "file": "png/attack-range.png",
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "variant": "hatched",
+      "alpha_min": 0,
+      "alpha_max": 211
+    },
+    {
+      "file": "png-2x/attack-range.png",
+      "size": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "variant": "hatched",
+      "alpha_min": 0,
+      "alpha_max": 211
+    },
+    {
+      "file": "png/attack-range-plain.png",
+      "size": [
+        128,
+        128
+      ],
+      "anchor": [
+        64,
+        64
+      ],
+      "variant": "plain",
+      "alpha_min": 0,
+      "alpha_max": 211
+    },
+    {
+      "file": "png-2x/attack-range-plain.png",
+      "size": [
+        256,
+        256
+      ],
+      "anchor": [
+        128,
+        128
+      ],
+      "variant": "plain",
+      "alpha_min": 0,
+      "alpha_max": 211
+    }
+  ],
+  "preview": {
+    "kind": "composited placement concept",
+    "file": "preview.png",
+    "full_map_file": "preview-full.png",
+    "range_is_example": true,
+    "game_grid_calibrated": false
+  }
+}
