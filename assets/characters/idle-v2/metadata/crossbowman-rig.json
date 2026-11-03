@@ -1,0 +1,75 @@
+{
+  "id": "crossbowman",
+  "name": "석궁병",
+  "layer_file": "layers/crossbowman.png",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "layer_columns": [
+    "lower",
+    "torso_arms_equipment",
+    "head",
+    "rear_hair_cloth"
+  ],
+  "draw_order": [
+    3,
+    0,
+    1,
+    2
+  ],
+  "views": [
+    {
+      "direction": "front",
+      "waist": [
+        160,
+        220
+      ],
+      "neck": [
+        160,
+        206
+      ],
+      "source_scale": 0.30228136882129275,
+      "source_offset": [
+        64,
+        108
+      ]
+    },
+    {
+      "direction": "back",
+      "waist": [
+        160,
+        218
+      ],
+      "neck": [
+        155,
+        204
+      ],
+      "source_scale": 0.30228136882129275,
+      "source_offset": [
+        61,
+        107
+      ]
+    },
+    {
+      "direction": "right",
+      "waist": [
+        160,
+        218
+      ],
+      "neck": [
+        162,
+        204
+      ],
+      "source_scale": 0.30228136882129275,
+      "source_offset": [
+        63,
+        108
+      ]
+    }
+  ]
+}

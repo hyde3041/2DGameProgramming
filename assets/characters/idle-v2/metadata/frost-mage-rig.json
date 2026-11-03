@@ -1,0 +1,75 @@
+{
+  "id": "frost-mage",
+  "name": "냉기술사",
+  "layer_file": "layers/frost-mage.png",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "layer_columns": [
+    "lower",
+    "torso_arms_equipment",
+    "head",
+    "rear_hair_cloth"
+  ],
+  "draw_order": [
+    3,
+    0,
+    1,
+    2
+  ],
+  "views": [
+    {
+      "direction": "front",
+      "waist": [
+        160,
+        215
+      ],
+      "neck": [
+        153,
+        201
+      ],
+      "source_scale": 0.310546875,
+      "source_offset": [
+        60,
+        99
+      ]
+    },
+    {
+      "direction": "back",
+      "waist": [
+        160,
+        215
+      ],
+      "neck": [
+        158,
+        201
+      ],
+      "source_scale": 0.310546875,
+      "source_offset": [
+        60,
+        100
+      ]
+    },
+    {
+      "direction": "right",
+      "waist": [
+        160,
+        214
+      ],
+      "neck": [
+        153,
+        200
+      ],
+      "source_scale": 0.310546875,
+      "source_offset": [
+        62,
+        100
+      ]
+    }
+  ]
+}

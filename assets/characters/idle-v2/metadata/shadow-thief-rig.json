@@ -1,0 +1,75 @@
+{
+  "id": "shadow-thief",
+  "name": "그림자 도적",
+  "layer_file": "layers/shadow-thief.png",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "layer_columns": [
+    "lower",
+    "torso_arms_equipment",
+    "head",
+    "rear_hair_cloth"
+  ],
+  "draw_order": [
+    3,
+    0,
+    1,
+    2
+  ],
+  "views": [
+    {
+      "direction": "front",
+      "waist": [
+        160,
+        224
+      ],
+      "neck": [
+        158,
+        210
+      ],
+      "source_scale": 0.301707779886148,
+      "source_offset": [
+        61,
+        104
+      ]
+    },
+    {
+      "direction": "back",
+      "waist": [
+        160,
+        221
+      ],
+      "neck": [
+        155,
+        207
+      ],
+      "source_scale": 0.301707779886148,
+      "source_offset": [
+        56,
+        103
+      ]
+    },
+    {
+      "direction": "right",
+      "waist": [
+        160,
+        223
+      ],
+      "neck": [
+        157,
+        209
+      ],
+      "source_scale": 0.301707779886148,
+      "source_offset": [
+        63,
+        103
+      ]
+    }
+  ]
+}
