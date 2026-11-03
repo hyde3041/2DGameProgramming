@@ -37,7 +37,8 @@
 ![던전 배경 시안](assets/maps/dungeon-room.png)
 
 - 캐릭터 8명: 정면·뒷면·오른쪽 옆면의 대기와 공격 동작
-- 스프라이트 시트 8개, 개별 투명 프레임 96장
+- 정적 대기·공격 시트 8개와 투명 프레임 96장
+- [움직이는 대기 모션](assets/characters/idle-v1/README.md): 8명의 앞·뒤·옆 24개 애니메이션, 추가 시트 8개와 투명 프레임 96장, 2초 반복
 - 배치 프로필 카드 8종, 스킬 프로필 카드 8종과 스킬 아이콘 16종
 - 상하좌우 배치 방향 선택 UI, 높낮이와 목표 지점 2개를 가진 던전 배경
 - [맵 칸에 맞춘 반투명 공격 범위 타일](assets/ui/attack-range-v2/README.md): 사선·단색 PNG, 칸별 보정 좌표와 적용 예시
@@ -48,6 +49,7 @@
 ```text
 docs/                      발표 PPT, 상세 기획서 PPT, 대본
 assets/characters/sprites/ 스프라이트 시트와 개별 프레임
+assets/characters/idle-v1/  3방향 대기 애니메이션과 GIF 미리보기
 assets/characters/deployment/ 배치 프로필 카드
 assets/characters/skills/  스킬 카드, 아이콘, 효과 기획 데이터
 assets/maps/               던전 배경 시안

@@ -1,0 +1,3027 @@
+{
+  "version": 1,
+  "action": "idle_breathing",
+  "creation": "built-in image_gen key poses; constant scale, low-alpha matte cleanup, and rigid foot registration",
+  "character_count": 8,
+  "directions": [
+    "front",
+    "back",
+    "right"
+  ],
+  "unique_frames_per_direction": 4,
+  "frame_count": 96,
+  "animation_count": 24,
+  "atlas_count": 8,
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "pattern": [
+    0,
+    1,
+    2,
+    3,
+    2,
+    1
+  ],
+  "frame_durations_ms": [
+    320,
+    320,
+    320,
+    400,
+    320,
+    320
+  ],
+  "cycle_ms": 2000,
+  "coordinate_system": "rect and pivot use top-left pixels; pico2d_rect uses bottom-left pixels",
+  "assets": [
+    {
+      "id": "swordsman",
+      "name": "검사",
+      "file": "atlases/swordsman.png",
+      "width": 1280,
+      "height": 960,
+      "cell_size": [
+        320,
+        320
+      ],
+      "pivot": [
+        160,
+        288
+      ],
+      "animations": {
+        "front": {
+          "idle": {
+            "frames": [
+              "front_idle_00",
+              "front_idle_01",
+              "front_idle_02",
+              "front_idle_03",
+              "front_idle_02",
+              "front_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "back": {
+          "idle": {
+            "frames": [
+              "back_idle_00",
+              "back_idle_01",
+              "back_idle_02",
+              "back_idle_03",
+              "back_idle_02",
+              "back_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "right": {
+          "idle": {
+            "frames": [
+              "right_idle_00",
+              "right_idle_01",
+              "right_idle_02",
+              "right_idle_03",
+              "right_idle_02",
+              "right_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        }
+      },
+      "frames": [
+        {
+          "id": "front_idle_00",
+          "direction": "front",
+          "phase": "idle_00",
+          "file": "frames/swordsman/front/idle_00.png",
+          "row": 0,
+          "column": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_01",
+          "direction": "front",
+          "phase": "idle_01",
+          "file": "frames/swordsman/front/idle_01.png",
+          "row": 0,
+          "column": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_02",
+          "direction": "front",
+          "phase": "idle_02",
+          "file": "frames/swordsman/front/idle_02.png",
+          "row": 0,
+          "column": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_03",
+          "direction": "front",
+          "phase": "idle_03",
+          "file": "frames/swordsman/front/idle_03.png",
+          "row": 0,
+          "column": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_00",
+          "direction": "back",
+          "phase": "idle_00",
+          "file": "frames/swordsman/back/idle_00.png",
+          "row": 1,
+          "column": 0,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_01",
+          "direction": "back",
+          "phase": "idle_01",
+          "file": "frames/swordsman/back/idle_01.png",
+          "row": 1,
+          "column": 1,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_02",
+          "direction": "back",
+          "phase": "idle_02",
+          "file": "frames/swordsman/back/idle_02.png",
+          "row": 1,
+          "column": 2,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_03",
+          "direction": "back",
+          "phase": "idle_03",
+          "file": "frames/swordsman/back/idle_03.png",
+          "row": 1,
+          "column": 3,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_00",
+          "direction": "right",
+          "phase": "idle_00",
+          "file": "frames/swordsman/right/idle_00.png",
+          "row": 2,
+          "column": 0,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_01",
+          "direction": "right",
+          "phase": "idle_01",
+          "file": "frames/swordsman/right/idle_01.png",
+          "row": 2,
+          "column": 1,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_02",
+          "direction": "right",
+          "phase": "idle_02",
+          "file": "frames/swordsman/right/idle_02.png",
+          "row": 2,
+          "column": 2,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_03",
+          "direction": "right",
+          "phase": "idle_03",
+          "file": "frames/swordsman/right/idle_03.png",
+          "row": 2,
+          "column": 3,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        }
+      ]
+    },
+    {
+      "id": "guardian",
+      "name": "수호기사",
+      "file": "atlases/guardian.png",
+      "width": 1280,
+      "height": 960,
+      "cell_size": [
+        320,
+        320
+      ],
+      "pivot": [
+        160,
+        288
+      ],
+      "animations": {
+        "front": {
+          "idle": {
+            "frames": [
+              "front_idle_00",
+              "front_idle_01",
+              "front_idle_02",
+              "front_idle_03",
+              "front_idle_02",
+              "front_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "back": {
+          "idle": {
+            "frames": [
+              "back_idle_00",
+              "back_idle_01",
+              "back_idle_02",
+              "back_idle_03",
+              "back_idle_02",
+              "back_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "right": {
+          "idle": {
+            "frames": [
+              "right_idle_00",
+              "right_idle_01",
+              "right_idle_02",
+              "right_idle_03",
+              "right_idle_02",
+              "right_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        }
+      },
+      "frames": [
+        {
+          "id": "front_idle_00",
+          "direction": "front",
+          "phase": "idle_00",
+          "file": "frames/guardian/front/idle_00.png",
+          "row": 0,
+          "column": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_01",
+          "direction": "front",
+          "phase": "idle_01",
+          "file": "frames/guardian/front/idle_01.png",
+          "row": 0,
+          "column": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_02",
+          "direction": "front",
+          "phase": "idle_02",
+          "file": "frames/guardian/front/idle_02.png",
+          "row": 0,
+          "column": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_03",
+          "direction": "front",
+          "phase": "idle_03",
+          "file": "frames/guardian/front/idle_03.png",
+          "row": 0,
+          "column": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_00",
+          "direction": "back",
+          "phase": "idle_00",
+          "file": "frames/guardian/back/idle_00.png",
+          "row": 1,
+          "column": 0,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_01",
+          "direction": "back",
+          "phase": "idle_01",
+          "file": "frames/guardian/back/idle_01.png",
+          "row": 1,
+          "column": 1,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_02",
+          "direction": "back",
+          "phase": "idle_02",
+          "file": "frames/guardian/back/idle_02.png",
+          "row": 1,
+          "column": 2,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_03",
+          "direction": "back",
+          "phase": "idle_03",
+          "file": "frames/guardian/back/idle_03.png",
+          "row": 1,
+          "column": 3,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_00",
+          "direction": "right",
+          "phase": "idle_00",
+          "file": "frames/guardian/right/idle_00.png",
+          "row": 2,
+          "column": 0,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_01",
+          "direction": "right",
+          "phase": "idle_01",
+          "file": "frames/guardian/right/idle_01.png",
+          "row": 2,
+          "column": 1,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_02",
+          "direction": "right",
+          "phase": "idle_02",
+          "file": "frames/guardian/right/idle_02.png",
+          "row": 2,
+          "column": 2,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_03",
+          "direction": "right",
+          "phase": "idle_03",
+          "file": "frames/guardian/right/idle_03.png",
+          "row": 2,
+          "column": 3,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        }
+      ]
+    },
+    {
+      "id": "archer",
+      "name": "궁수",
+      "file": "atlases/archer.png",
+      "width": 1280,
+      "height": 960,
+      "cell_size": [
+        320,
+        320
+      ],
+      "pivot": [
+        160,
+        288
+      ],
+      "animations": {
+        "front": {
+          "idle": {
+            "frames": [
+              "front_idle_00",
+              "front_idle_01",
+              "front_idle_02",
+              "front_idle_03",
+              "front_idle_02",
+              "front_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "back": {
+          "idle": {
+            "frames": [
+              "back_idle_00",
+              "back_idle_01",
+              "back_idle_02",
+              "back_idle_03",
+              "back_idle_02",
+              "back_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "right": {
+          "idle": {
+            "frames": [
+              "right_idle_00",
+              "right_idle_01",
+              "right_idle_02",
+              "right_idle_03",
+              "right_idle_02",
+              "right_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        }
+      },
+      "frames": [
+        {
+          "id": "front_idle_00",
+          "direction": "front",
+          "phase": "idle_00",
+          "file": "frames/archer/front/idle_00.png",
+          "row": 0,
+          "column": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_01",
+          "direction": "front",
+          "phase": "idle_01",
+          "file": "frames/archer/front/idle_01.png",
+          "row": 0,
+          "column": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_02",
+          "direction": "front",
+          "phase": "idle_02",
+          "file": "frames/archer/front/idle_02.png",
+          "row": 0,
+          "column": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_03",
+          "direction": "front",
+          "phase": "idle_03",
+          "file": "frames/archer/front/idle_03.png",
+          "row": 0,
+          "column": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_00",
+          "direction": "back",
+          "phase": "idle_00",
+          "file": "frames/archer/back/idle_00.png",
+          "row": 1,
+          "column": 0,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_01",
+          "direction": "back",
+          "phase": "idle_01",
+          "file": "frames/archer/back/idle_01.png",
+          "row": 1,
+          "column": 1,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_02",
+          "direction": "back",
+          "phase": "idle_02",
+          "file": "frames/archer/back/idle_02.png",
+          "row": 1,
+          "column": 2,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_03",
+          "direction": "back",
+          "phase": "idle_03",
+          "file": "frames/archer/back/idle_03.png",
+          "row": 1,
+          "column": 3,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_00",
+          "direction": "right",
+          "phase": "idle_00",
+          "file": "frames/archer/right/idle_00.png",
+          "row": 2,
+          "column": 0,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_01",
+          "direction": "right",
+          "phase": "idle_01",
+          "file": "frames/archer/right/idle_01.png",
+          "row": 2,
+          "column": 1,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_02",
+          "direction": "right",
+          "phase": "idle_02",
+          "file": "frames/archer/right/idle_02.png",
+          "row": 2,
+          "column": 2,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_03",
+          "direction": "right",
+          "phase": "idle_03",
+          "file": "frames/archer/right/idle_03.png",
+          "row": 2,
+          "column": 3,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        }
+      ]
+    },
+    {
+      "id": "crossbowman",
+      "name": "석궁병",
+      "file": "atlases/crossbowman.png",
+      "width": 1280,
+      "height": 960,
+      "cell_size": [
+        320,
+        320
+      ],
+      "pivot": [
+        160,
+        288
+      ],
+      "animations": {
+        "front": {
+          "idle": {
+            "frames": [
+              "front_idle_00",
+              "front_idle_01",
+              "front_idle_02",
+              "front_idle_03",
+              "front_idle_02",
+              "front_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "back": {
+          "idle": {
+            "frames": [
+              "back_idle_00",
+              "back_idle_01",
+              "back_idle_02",
+              "back_idle_03",
+              "back_idle_02",
+              "back_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "right": {
+          "idle": {
+            "frames": [
+              "right_idle_00",
+              "right_idle_01",
+              "right_idle_02",
+              "right_idle_03",
+              "right_idle_02",
+              "right_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        }
+      },
+      "frames": [
+        {
+          "id": "front_idle_00",
+          "direction": "front",
+          "phase": "idle_00",
+          "file": "frames/crossbowman/front/idle_00.png",
+          "row": 0,
+          "column": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_01",
+          "direction": "front",
+          "phase": "idle_01",
+          "file": "frames/crossbowman/front/idle_01.png",
+          "row": 0,
+          "column": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_02",
+          "direction": "front",
+          "phase": "idle_02",
+          "file": "frames/crossbowman/front/idle_02.png",
+          "row": 0,
+          "column": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_03",
+          "direction": "front",
+          "phase": "idle_03",
+          "file": "frames/crossbowman/front/idle_03.png",
+          "row": 0,
+          "column": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_00",
+          "direction": "back",
+          "phase": "idle_00",
+          "file": "frames/crossbowman/back/idle_00.png",
+          "row": 1,
+          "column": 0,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_01",
+          "direction": "back",
+          "phase": "idle_01",
+          "file": "frames/crossbowman/back/idle_01.png",
+          "row": 1,
+          "column": 1,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_02",
+          "direction": "back",
+          "phase": "idle_02",
+          "file": "frames/crossbowman/back/idle_02.png",
+          "row": 1,
+          "column": 2,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_03",
+          "direction": "back",
+          "phase": "idle_03",
+          "file": "frames/crossbowman/back/idle_03.png",
+          "row": 1,
+          "column": 3,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_00",
+          "direction": "right",
+          "phase": "idle_00",
+          "file": "frames/crossbowman/right/idle_00.png",
+          "row": 2,
+          "column": 0,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_01",
+          "direction": "right",
+          "phase": "idle_01",
+          "file": "frames/crossbowman/right/idle_01.png",
+          "row": 2,
+          "column": 1,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_02",
+          "direction": "right",
+          "phase": "idle_02",
+          "file": "frames/crossbowman/right/idle_02.png",
+          "row": 2,
+          "column": 2,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_03",
+          "direction": "right",
+          "phase": "idle_03",
+          "file": "frames/crossbowman/right/idle_03.png",
+          "row": 2,
+          "column": 3,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleric",
+      "name": "성직자",
+      "file": "atlases/cleric.png",
+      "width": 1280,
+      "height": 960,
+      "cell_size": [
+        320,
+        320
+      ],
+      "pivot": [
+        160,
+        288
+      ],
+      "animations": {
+        "front": {
+          "idle": {
+            "frames": [
+              "front_idle_00",
+              "front_idle_01",
+              "front_idle_02",
+              "front_idle_03",
+              "front_idle_02",
+              "front_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "back": {
+          "idle": {
+            "frames": [
+              "back_idle_00",
+              "back_idle_01",
+              "back_idle_02",
+              "back_idle_03",
+              "back_idle_02",
+              "back_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "right": {
+          "idle": {
+            "frames": [
+              "right_idle_00",
+              "right_idle_01",
+              "right_idle_02",
+              "right_idle_03",
+              "right_idle_02",
+              "right_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        }
+      },
+      "frames": [
+        {
+          "id": "front_idle_00",
+          "direction": "front",
+          "phase": "idle_00",
+          "file": "frames/cleric/front/idle_00.png",
+          "row": 0,
+          "column": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_01",
+          "direction": "front",
+          "phase": "idle_01",
+          "file": "frames/cleric/front/idle_01.png",
+          "row": 0,
+          "column": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_02",
+          "direction": "front",
+          "phase": "idle_02",
+          "file": "frames/cleric/front/idle_02.png",
+          "row": 0,
+          "column": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_03",
+          "direction": "front",
+          "phase": "idle_03",
+          "file": "frames/cleric/front/idle_03.png",
+          "row": 0,
+          "column": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_00",
+          "direction": "back",
+          "phase": "idle_00",
+          "file": "frames/cleric/back/idle_00.png",
+          "row": 1,
+          "column": 0,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_01",
+          "direction": "back",
+          "phase": "idle_01",
+          "file": "frames/cleric/back/idle_01.png",
+          "row": 1,
+          "column": 1,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_02",
+          "direction": "back",
+          "phase": "idle_02",
+          "file": "frames/cleric/back/idle_02.png",
+          "row": 1,
+          "column": 2,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_03",
+          "direction": "back",
+          "phase": "idle_03",
+          "file": "frames/cleric/back/idle_03.png",
+          "row": 1,
+          "column": 3,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_00",
+          "direction": "right",
+          "phase": "idle_00",
+          "file": "frames/cleric/right/idle_00.png",
+          "row": 2,
+          "column": 0,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_01",
+          "direction": "right",
+          "phase": "idle_01",
+          "file": "frames/cleric/right/idle_01.png",
+          "row": 2,
+          "column": 1,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_02",
+          "direction": "right",
+          "phase": "idle_02",
+          "file": "frames/cleric/right/idle_02.png",
+          "row": 2,
+          "column": 2,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_03",
+          "direction": "right",
+          "phase": "idle_03",
+          "file": "frames/cleric/right/idle_03.png",
+          "row": 2,
+          "column": 3,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        }
+      ]
+    },
+    {
+      "id": "herbalist",
+      "name": "약초사",
+      "file": "atlases/herbalist.png",
+      "width": 1280,
+      "height": 960,
+      "cell_size": [
+        320,
+        320
+      ],
+      "pivot": [
+        160,
+        288
+      ],
+      "animations": {
+        "front": {
+          "idle": {
+            "frames": [
+              "front_idle_00",
+              "front_idle_01",
+              "front_idle_02",
+              "front_idle_03",
+              "front_idle_02",
+              "front_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "back": {
+          "idle": {
+            "frames": [
+              "back_idle_00",
+              "back_idle_01",
+              "back_idle_02",
+              "back_idle_03",
+              "back_idle_02",
+              "back_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "right": {
+          "idle": {
+            "frames": [
+              "right_idle_00",
+              "right_idle_01",
+              "right_idle_02",
+              "right_idle_03",
+              "right_idle_02",
+              "right_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        }
+      },
+      "frames": [
+        {
+          "id": "front_idle_00",
+          "direction": "front",
+          "phase": "idle_00",
+          "file": "frames/herbalist/front/idle_00.png",
+          "row": 0,
+          "column": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_01",
+          "direction": "front",
+          "phase": "idle_01",
+          "file": "frames/herbalist/front/idle_01.png",
+          "row": 0,
+          "column": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_02",
+          "direction": "front",
+          "phase": "idle_02",
+          "file": "frames/herbalist/front/idle_02.png",
+          "row": 0,
+          "column": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_03",
+          "direction": "front",
+          "phase": "idle_03",
+          "file": "frames/herbalist/front/idle_03.png",
+          "row": 0,
+          "column": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_00",
+          "direction": "back",
+          "phase": "idle_00",
+          "file": "frames/herbalist/back/idle_00.png",
+          "row": 1,
+          "column": 0,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_01",
+          "direction": "back",
+          "phase": "idle_01",
+          "file": "frames/herbalist/back/idle_01.png",
+          "row": 1,
+          "column": 1,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_02",
+          "direction": "back",
+          "phase": "idle_02",
+          "file": "frames/herbalist/back/idle_02.png",
+          "row": 1,
+          "column": 2,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_03",
+          "direction": "back",
+          "phase": "idle_03",
+          "file": "frames/herbalist/back/idle_03.png",
+          "row": 1,
+          "column": 3,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_00",
+          "direction": "right",
+          "phase": "idle_00",
+          "file": "frames/herbalist/right/idle_00.png",
+          "row": 2,
+          "column": 0,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_01",
+          "direction": "right",
+          "phase": "idle_01",
+          "file": "frames/herbalist/right/idle_01.png",
+          "row": 2,
+          "column": 1,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_02",
+          "direction": "right",
+          "phase": "idle_02",
+          "file": "frames/herbalist/right/idle_02.png",
+          "row": 2,
+          "column": 2,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_03",
+          "direction": "right",
+          "phase": "idle_03",
+          "file": "frames/herbalist/right/idle_03.png",
+          "row": 2,
+          "column": 3,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frost-mage",
+      "name": "냉기술사",
+      "file": "atlases/frost-mage.png",
+      "width": 1280,
+      "height": 960,
+      "cell_size": [
+        320,
+        320
+      ],
+      "pivot": [
+        160,
+        288
+      ],
+      "animations": {
+        "front": {
+          "idle": {
+            "frames": [
+              "front_idle_00",
+              "front_idle_01",
+              "front_idle_02",
+              "front_idle_03",
+              "front_idle_02",
+              "front_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "back": {
+          "idle": {
+            "frames": [
+              "back_idle_00",
+              "back_idle_01",
+              "back_idle_02",
+              "back_idle_03",
+              "back_idle_02",
+              "back_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "right": {
+          "idle": {
+            "frames": [
+              "right_idle_00",
+              "right_idle_01",
+              "right_idle_02",
+              "right_idle_03",
+              "right_idle_02",
+              "right_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        }
+      },
+      "frames": [
+        {
+          "id": "front_idle_00",
+          "direction": "front",
+          "phase": "idle_00",
+          "file": "frames/frost-mage/front/idle_00.png",
+          "row": 0,
+          "column": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_01",
+          "direction": "front",
+          "phase": "idle_01",
+          "file": "frames/frost-mage/front/idle_01.png",
+          "row": 0,
+          "column": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_02",
+          "direction": "front",
+          "phase": "idle_02",
+          "file": "frames/frost-mage/front/idle_02.png",
+          "row": 0,
+          "column": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_03",
+          "direction": "front",
+          "phase": "idle_03",
+          "file": "frames/frost-mage/front/idle_03.png",
+          "row": 0,
+          "column": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_00",
+          "direction": "back",
+          "phase": "idle_00",
+          "file": "frames/frost-mage/back/idle_00.png",
+          "row": 1,
+          "column": 0,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_01",
+          "direction": "back",
+          "phase": "idle_01",
+          "file": "frames/frost-mage/back/idle_01.png",
+          "row": 1,
+          "column": 1,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_02",
+          "direction": "back",
+          "phase": "idle_02",
+          "file": "frames/frost-mage/back/idle_02.png",
+          "row": 1,
+          "column": 2,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_03",
+          "direction": "back",
+          "phase": "idle_03",
+          "file": "frames/frost-mage/back/idle_03.png",
+          "row": 1,
+          "column": 3,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_00",
+          "direction": "right",
+          "phase": "idle_00",
+          "file": "frames/frost-mage/right/idle_00.png",
+          "row": 2,
+          "column": 0,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_01",
+          "direction": "right",
+          "phase": "idle_01",
+          "file": "frames/frost-mage/right/idle_01.png",
+          "row": 2,
+          "column": 1,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_02",
+          "direction": "right",
+          "phase": "idle_02",
+          "file": "frames/frost-mage/right/idle_02.png",
+          "row": 2,
+          "column": 2,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_03",
+          "direction": "right",
+          "phase": "idle_03",
+          "file": "frames/frost-mage/right/idle_03.png",
+          "row": 2,
+          "column": 3,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shadow-thief",
+      "name": "그림자 도적",
+      "file": "atlases/shadow-thief.png",
+      "width": 1280,
+      "height": 960,
+      "cell_size": [
+        320,
+        320
+      ],
+      "pivot": [
+        160,
+        288
+      ],
+      "animations": {
+        "front": {
+          "idle": {
+            "frames": [
+              "front_idle_00",
+              "front_idle_01",
+              "front_idle_02",
+              "front_idle_03",
+              "front_idle_02",
+              "front_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "back": {
+          "idle": {
+            "frames": [
+              "back_idle_00",
+              "back_idle_01",
+              "back_idle_02",
+              "back_idle_03",
+              "back_idle_02",
+              "back_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        },
+        "right": {
+          "idle": {
+            "frames": [
+              "right_idle_00",
+              "right_idle_01",
+              "right_idle_02",
+              "right_idle_03",
+              "right_idle_02",
+              "right_idle_01"
+            ],
+            "frame_durations_ms": [
+              320,
+              320,
+              320,
+              400,
+              320,
+              320
+            ],
+            "duration_ms": 2000,
+            "loop": true
+          }
+        }
+      },
+      "frames": [
+        {
+          "id": "front_idle_00",
+          "direction": "front",
+          "phase": "idle_00",
+          "file": "frames/shadow-thief/front/idle_00.png",
+          "row": 0,
+          "column": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_01",
+          "direction": "front",
+          "phase": "idle_01",
+          "file": "frames/shadow-thief/front/idle_01.png",
+          "row": 0,
+          "column": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_02",
+          "direction": "front",
+          "phase": "idle_02",
+          "file": "frames/shadow-thief/front/idle_02.png",
+          "row": 0,
+          "column": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "front_idle_03",
+          "direction": "front",
+          "phase": "idle_03",
+          "file": "frames/shadow-thief/front/idle_03.png",
+          "row": 0,
+          "column": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_00",
+          "direction": "back",
+          "phase": "idle_00",
+          "file": "frames/shadow-thief/back/idle_00.png",
+          "row": 1,
+          "column": 0,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_01",
+          "direction": "back",
+          "phase": "idle_01",
+          "file": "frames/shadow-thief/back/idle_01.png",
+          "row": 1,
+          "column": 1,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_02",
+          "direction": "back",
+          "phase": "idle_02",
+          "file": "frames/shadow-thief/back/idle_02.png",
+          "row": 1,
+          "column": 2,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "back_idle_03",
+          "direction": "back",
+          "phase": "idle_03",
+          "file": "frames/shadow-thief/back/idle_03.png",
+          "row": 1,
+          "column": 3,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_00",
+          "direction": "right",
+          "phase": "idle_00",
+          "file": "frames/shadow-thief/right/idle_00.png",
+          "row": 2,
+          "column": 0,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_01",
+          "direction": "right",
+          "phase": "idle_01",
+          "file": "frames/shadow-thief/right/idle_01.png",
+          "row": 2,
+          "column": 1,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_02",
+          "direction": "right",
+          "phase": "idle_02",
+          "file": "frames/shadow-thief/right/idle_02.png",
+          "row": 2,
+          "column": 2,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        },
+        {
+          "id": "right_idle_03",
+          "direction": "right",
+          "phase": "idle_03",
+          "file": "frames/shadow-thief/right/idle_03.png",
+          "row": 2,
+          "column": 3,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pivot": [
+            160,
+            288
+          ]
+        }
+      ]
+    }
+  ]
+}
