@@ -13,6 +13,7 @@ function createIdleMotionPlayer(canvases, options = {}) {
     uniform float u_view;
     uniform vec3 u_body;
     uniform vec4 u_hair;
+    uniform vec3 u_hairMotion;
     uniform vec4 u_cloth;
     varying vec2 v_uv;
     float zone(vec2 p, vec4 z) {
@@ -22,17 +23,17 @@ function createIdleMotionPlayer(canvases, options = {}) {
       vec2 p=a_pixel;
       float breath=(1.0-cos(u_phase))*0.5;
       float upper=1.0-smoothstep(u_body.y,u_body.z,p.y);
-      vec2 displacement=vec2(1.2*sin(u_phase),-4.5*breath)*upper;
-      float head=1.0-smoothstep(u_body.y-2.0,u_body.y+9.0,p.y);
-      vec2 q=p-vec2(u_body.x,u_body.y);
-      float angle=0.0104719755*sin(u_phase);
-      vec2 turned=vec2(cos(angle)*q.x-sin(angle)*q.y,sin(angle)*q.x+cos(angle)*q.y);
-      displacement+=(turned-q)*head;
+      vec2 displacement=vec2(0.12*sin(u_phase),-0.35*breath)*upper;
       float feet=1.0-smoothstep(255.0,270.0,p.y);
-      float hairWave=sin(u_phase-0.65)+sin(0.65);
-      float clothWave=sin(u_phase-0.9)+sin(0.9);
-      displacement+=vec2(2.25*hairWave,0.35*(cos(u_phase)-1.0))*zone(p,u_hair)*feet;
-      displacement+=vec2(1.6*clothWave,0.45*(cos(u_phase)-1.0))*zone(p,u_cloth)*feet;
+      // Roots stay attached; the tips lag behind and swing farther sideways.
+      float hairTip=smoothstep(0.0,1.0,clamp((p.y-u_hairMotion.y)/(u_hairMotion.z-u_hairMotion.y),0.0,1.0));
+      float hairLag=0.45+0.9*hairTip;
+      float hairWave=sin(u_phase)*(1.0+0.25*sin(u_phase-hairLag));
+      float clothTip=smoothstep(u_cloth.y-u_cloth.w*0.75,u_cloth.y+u_cloth.w*0.35,p.y);
+      float clothLag=0.85+0.6*clothTip;
+      float clothWave=sin(u_phase)*(1.0+0.25*sin(u_phase-clothLag));
+      displacement.x+=u_hairMotion.x*hairWave*hairTip*zone(p,u_hair)*feet;
+      displacement.x+=2.8*clothWave*clothTip*zone(p,u_cloth)*feet;
       vec2 position=p+displacement;
       gl_Position=vec4(position.x/160.0-1.0,1.0-position.y/160.0,0.0,1.0);
       v_uv=vec2((a_pixel.x+u_view*320.0)/960.0,a_pixel.y/320.0);
@@ -65,7 +66,7 @@ function createIdleMotionPlayer(canvases, options = {}) {
   gl.enableVertexAttribArray(attribute);gl.vertexAttribPointer(attribute,2,gl.FLOAT,false,0,0);
   gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,gl.createBuffer());
   gl.bufferData(gl.ELEMENT_ARRAY_BUFFER,new Uint16Array(indices),gl.STATIC_DRAW);
-  const locations=Object.fromEntries(['phase','view','body','hair','cloth'].map(name=>[name,gl.getUniformLocation(program,'u_'+name)]));
+  const locations=Object.fromEntries(['phase','view','body','hair','hairMotion','cloth'].map(name=>[name,gl.getUniformLocation(program,'u_'+name)]));
   const texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);
   gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);
   gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);
@@ -84,6 +85,7 @@ function createIdleMotionPlayer(canvases, options = {}) {
       gl.uniform1f(locations.view,view);
       gl.uniform3fv(locations.body,setting.body);
       gl.uniform4fv(locations.hair,setting.hair);
+      gl.uniform3fv(locations.hairMotion,setting.hair_motion);
       gl.uniform4fv(locations.cloth,setting.cloth);
       gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);
       gl.drawElements(gl.TRIANGLES,indices.length,gl.UNSIGNED_SHORT,0);
