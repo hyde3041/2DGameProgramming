@@ -1,0 +1,89 @@
+{
+  "id": "crossbowman",
+  "name": "석궁병",
+  "file": "sources/crossbowman.png",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "views": [
+    {
+      "direction": "front",
+      "body": [
+        160,
+        213,
+        246
+      ],
+      "hair": [
+        -100,
+        -100,
+        1,
+        1
+      ],
+      "cloth": [
+        197,
+        236,
+        20,
+        30
+      ]
+    },
+    {
+      "direction": "back",
+      "body": [
+        160,
+        213,
+        246
+      ],
+      "hair": [
+        -100,
+        -100,
+        1,
+        1
+      ],
+      "cloth": [
+        129,
+        235,
+        24,
+        32
+      ]
+    },
+    {
+      "direction": "right",
+      "body": [
+        160,
+        213,
+        246
+      ],
+      "hair": [
+        -100,
+        -100,
+        1,
+        1
+      ],
+      "cloth": [
+        125,
+        235,
+        22,
+        32
+      ]
+    }
+  ],
+  "references": [
+    {
+      "file": "../sprites/frames/crossbowman/front/idle.png",
+      "sha256": "c5f4363e34bebf183c82935cabab071e331fde2b37509648669027c0d192d3ab"
+    },
+    {
+      "file": "../sprites/frames/crossbowman/back/idle.png",
+      "sha256": "e14c80744d38ce085f94a70a0cf141de8c3ca90def2cffea0a93b1a9adff6b8b"
+    },
+    {
+      "file": "../sprites/frames/crossbowman/right/idle.png",
+      "sha256": "3ffb00921b26f6b767c5230a1a6add2b44e2a85767d4e7cc245bf05f7cc3e7b6"
+    }
+  ]
+}

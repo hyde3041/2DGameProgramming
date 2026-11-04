@@ -1,0 +1,89 @@
+{
+  "id": "guardian",
+  "name": "수호기사",
+  "file": "sources/guardian.png",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "views": [
+    {
+      "direction": "front",
+      "body": [
+        160,
+        213,
+        246
+      ],
+      "hair": [
+        -100,
+        -100,
+        1,
+        1
+      ],
+      "cloth": [
+        135,
+        225,
+        14,
+        12
+      ]
+    },
+    {
+      "direction": "back",
+      "body": [
+        160,
+        213,
+        246
+      ],
+      "hair": [
+        -100,
+        -100,
+        1,
+        1
+      ],
+      "cloth": [
+        160,
+        218,
+        30,
+        12
+      ]
+    },
+    {
+      "direction": "right",
+      "body": [
+        160,
+        213,
+        246
+      ],
+      "hair": [
+        -100,
+        -100,
+        1,
+        1
+      ],
+      "cloth": [
+        133,
+        221,
+        15,
+        14
+      ]
+    }
+  ],
+  "references": [
+    {
+      "file": "../sprites/frames/guardian/front/idle.png",
+      "sha256": "6c7bb6bbcbb7be5820c7e92e1d6286c1c9492bc24255c859da1694575f80df21"
+    },
+    {
+      "file": "../sprites/frames/guardian/back/idle.png",
+      "sha256": "ce3b4e38cd9fc4dfe802e799db447dd6e672fc1bbd1061da65fb6082b224bbf0"
+    },
+    {
+      "file": "../sprites/frames/guardian/right/idle.png",
+      "sha256": "6113918e3ab62c842e81a4f5234e6ea62cf0bfe6edd9be26f145e959a061a8c6"
+    }
+  ]
+}

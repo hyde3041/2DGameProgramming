@@ -1,0 +1,89 @@
+{
+  "id": "archer",
+  "name": "궁수",
+  "file": "sources/archer.png",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "views": [
+    {
+      "direction": "front",
+      "body": [
+        160,
+        213,
+        246
+      ],
+      "hair": [
+        118,
+        225,
+        27,
+        44
+      ],
+      "cloth": [
+        193,
+        258,
+        22,
+        24
+      ]
+    },
+    {
+      "direction": "back",
+      "body": [
+        160,
+        213,
+        246
+      ],
+      "hair": [
+        204,
+        228,
+        29,
+        44
+      ],
+      "cloth": [
+        139,
+        260,
+        19,
+        23
+      ]
+    },
+    {
+      "direction": "right",
+      "body": [
+        160,
+        213,
+        246
+      ],
+      "hair": [
+        115,
+        224,
+        28,
+        44
+      ],
+      "cloth": [
+        189,
+        258,
+        20,
+        24
+      ]
+    }
+  ],
+  "references": [
+    {
+      "file": "../sprites/frames/archer/front/idle.png",
+      "sha256": "0e1534b4036d0d62f8eded68fdc0541bc2e471325f14421d897bc1339ef561cf"
+    },
+    {
+      "file": "../sprites/frames/archer/back/idle.png",
+      "sha256": "831b3aa72495b99b27492656f82615286f124ef6dd952006b0d17df79fae1fda"
+    },
+    {
+      "file": "../sprites/frames/archer/right/idle.png",
+      "sha256": "8f4fbce57d5d4b3f9547eb0ff2d71f08848e0337b6a92d070fd85f5746f31c3c"
+    }
+  ]
+}
