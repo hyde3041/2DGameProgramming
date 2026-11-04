@@ -60,7 +60,7 @@ function createIdleMotionPlayer(canvases, options = {}) {
       vec2 p=a_pixel;
       float breath=(1.0-cos(u_phase))*0.5;
       float upper=1.0-smoothstep(u_body.y,u_body.z,p.y);
-      vec2 displacement=vec2(0.12*sin(u_phase),-0.35*breath)*upper;
+      vec2 displacement=vec2(0.12*sin(u_phase),-2.0*breath)*upper;
       float feet=1.0-smoothstep(255.0,270.0,p.y);
       // Roots stay attached; the tips lag behind and swing farther sideways.
       float hairTip=smoothstep(0.0,1.0,clamp((p.y-u_hairMotion.y)/(u_hairMotion.z-u_hairMotion.y),0.0,1.0));
