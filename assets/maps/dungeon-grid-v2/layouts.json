@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "canvas": {
+    "width": 1536,
+    "height": 1024
+  },
+  "grid": {
+    "columns": 15,
+    "rows": 10,
+    "origin": [
+      108,
+      72
+    ],
+    "cell_size": [
+      88,
+      88
+    ],
+    "elevation_pixels": 22,
+    "coordinate_system": "row 0 at top, column 0 at left"
+  },
+  "legend": {
+    ".": "ground, walkable and ground-deployable",
+    "H": "elevated, ranged-deployable, not enemy-walkable",
+    "#": "blocked stone structure",
+    "~": "blocked water or lava",
+    "R": "enemy entrance, ground",
+    "B": "defense goal, ground"
+  },
+  "maps": [
+    {
+      "id": "prison-cellblock",
+      "name": "지하 감옥",
+      "grid": [
+        "...............",
+        "R..###.#.###...",
+        "..#HHH.##HHH..B",
+        "..#HHH..#HHH...",
+        ".......H.......",
+        "R......H.......",
+        "...HHH#..HHH#..",
+        "...HHH##.HHH#.B",
+        "R..###.#.###...",
+        "..............."
+      ]
+    },
+    {
+      "id": "flooded-ruins",
+      "name": "침수 유적",
+      "grid": [
+        "..HH~~HH.~~....",
+        "R.HH~~HH.~~HH..",
+        ".........~~HH.B",
+        "....~~...~~....",
+        ".HH.~~.........",
+        "RHH.~~.HH~~.HH.",
+        "....~~.HH~~.HH.",
+        ".........~~...B",
+        "RHH.~~HH....HH.",
+        ".HH.~~HH.~~.HH."
+      ]
+    },
+    {
+      "id": "magma-altar",
+      "name": "용암 제단",
+      "grid": [
+        "..HH.......HH..",
+        "R.HH.......HH..",
+        "...HH.....H...B",
+        "......###...HH.",
+        "....~~###~~.HH.",
+        "R.HH~~###~~....",
+        "..HH...~....HH.",
+        ".......~....HHB",
+        "R..HH..~..HH...",
+        "....HH...HH...."
+      ]
+    }
+  ]
+}

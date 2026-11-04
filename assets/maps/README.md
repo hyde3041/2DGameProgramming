@@ -5,10 +5,10 @@
 | 배경 | 파일 | 구조 |
 | --- | --- | --- |
 | 기본 던전 | [PNG](dungeon-room.png) | 큰 석조 방 안에 단상과 장애물이 분산된 구조 |
-| 지하 감옥 | [PNG](dungeon-variants-v1/prison-cellblock.png) | 중앙 교차로와 큰 단상 구역을 잇는 넓은 통로 |
-| 침수 유적 | [PNG](dungeon-variants-v1/flooded-ruins.png) | 물웅덩이를 돌아가는 석조 길과 다리로 연결된 섬 |
-| 용암 제단 | [PNG](dungeon-variants-v1/magma-altar.png) | 중앙 제단 양쪽으로 돌아가는 통로와 용암 지형 |
+| 지하 감옥 | [PNG](dungeon-grid-v2/prison-cellblock.png) | 중앙 교차로와 큰 단상 구역을 잇는 넓은 통로 |
+| 침수 유적 | [PNG](dungeon-grid-v2/flooded-ruins.png) | 물웅덩이를 돌아가는 석조 길과 다리로 연결된 섬 |
+| 용암 제단 | [PNG](dungeon-grid-v2/magma-altar.png) | 중앙 제단 양쪽으로 돌아가는 통로와 용암 지형 |
 
-[추가 맵 이미지와 제작 기록](dungeon-variants-v1/README.md), [전체 목록](maps-manifest.json)을 함께 제공합니다.
+[칸 정렬을 완료한 맵과 좌표 데이터](dungeon-grid-v2/README.md), [전체 목록](maps-manifest.json)을 함께 제공합니다. 세 맵은 모두 15 × 10칸, 같은 88 × 88 크기이며 입구·도착 문도 한 칸에 맞췄습니다. 이전 [이미지 시안](dungeon-variants-v1/README.md)은 보관합니다.
 
-현재 자료는 전투 배경 시안입니다. 실제 게임의 이동 경로·배치 가능 칸·타일 좌표는 각 이미지에 맞춰 설정해야 합니다. 기존 공격 범위 타일의 맵 보정 좌표는 기본 던전용이며, 새 배경에 그대로 적용하지 않습니다.
+기본 던전 이미지는 아직 칸 좌표를 보정하지 않은 시안입니다. 새 맵 세 종은 배경과 동일한 좌표로 이동 경로·배치 칸 데이터를 제공합니다. 범위 표시는 새 맵 폴더의 `range-overlay.png`와 각 칸의 좌표를 사용합니다. 기존 공격 범위 타일의 보정 좌표는 기본 던전용입니다.

@@ -1,0 +1,7057 @@
+{
+  "id": "flooded-ruins",
+  "name": "침수 유적",
+  "file": "flooded-ruins.png",
+  "editable_svg": "flooded-ruins.svg",
+  "canvas": {
+    "width": 1536,
+    "height": 1024
+  },
+  "grid": {
+    "columns": 15,
+    "rows": 10,
+    "origin": [
+      108,
+      72
+    ],
+    "cell_size": [
+      88,
+      88
+    ],
+    "elevation_pixels": 22,
+    "coordinate_system": "row 0 at top, column 0 at left"
+  },
+  "game_grid_calibrated": true,
+  "terrain_heights": 2,
+  "goal_points": 2,
+  "enemy_entrances": 3,
+  "entrances": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      8
+    ]
+  ],
+  "goals": [
+    [
+      14,
+      2
+    ],
+    [
+      14,
+      7
+    ]
+  ],
+  "coordinates": "pixel rectangles and centers use top-left origin unless named pico2d",
+  "cells": [
+    {
+      "id": "0,0",
+      "column": 0,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        108,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        108,
+        72,
+        88,
+        88
+      ],
+      "draw_rect": [
+        108,
+        72,
+        88,
+        88
+      ],
+      "canvas_center": [
+        152,
+        116
+      ],
+      "pico2d_center": [
+        152,
+        908
+      ],
+      "pico2d_surface_rect": [
+        108,
+        864,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "1,0",
+      "column": 1,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        196,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        196,
+        72,
+        88,
+        88
+      ],
+      "draw_rect": [
+        196,
+        72,
+        88,
+        88
+      ],
+      "canvas_center": [
+        240,
+        116
+      ],
+      "pico2d_center": [
+        240,
+        908
+      ],
+      "pico2d_surface_rect": [
+        196,
+        864,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "2,0",
+      "column": 2,
+      "row": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        284,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        284,
+        50,
+        88,
+        88
+      ],
+      "draw_rect": [
+        284,
+        50,
+        88,
+        110
+      ],
+      "canvas_center": [
+        328,
+        94
+      ],
+      "pico2d_center": [
+        328,
+        930
+      ],
+      "pico2d_surface_rect": [
+        284,
+        886,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "3,0",
+      "column": 3,
+      "row": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        372,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        372,
+        50,
+        88,
+        88
+      ],
+      "draw_rect": [
+        372,
+        50,
+        88,
+        110
+      ],
+      "canvas_center": [
+        416,
+        94
+      ],
+      "pico2d_center": [
+        416,
+        930
+      ],
+      "pico2d_surface_rect": [
+        372,
+        886,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "4,0",
+      "column": 4,
+      "row": 0,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        460,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        460,
+        72,
+        88,
+        88
+      ],
+      "draw_rect": [
+        460,
+        72,
+        88,
+        88
+      ],
+      "canvas_center": [
+        504,
+        116
+      ],
+      "pico2d_center": [
+        504,
+        908
+      ],
+      "pico2d_surface_rect": [
+        460,
+        864,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "5,0",
+      "column": 5,
+      "row": 0,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        548,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        548,
+        72,
+        88,
+        88
+      ],
+      "draw_rect": [
+        548,
+        72,
+        88,
+        88
+      ],
+      "canvas_center": [
+        592,
+        116
+      ],
+      "pico2d_center": [
+        592,
+        908
+      ],
+      "pico2d_surface_rect": [
+        548,
+        864,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "6,0",
+      "column": 6,
+      "row": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        636,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        636,
+        50,
+        88,
+        88
+      ],
+      "draw_rect": [
+        636,
+        50,
+        88,
+        110
+      ],
+      "canvas_center": [
+        680,
+        94
+      ],
+      "pico2d_center": [
+        680,
+        930
+      ],
+      "pico2d_surface_rect": [
+        636,
+        886,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "7,0",
+      "column": 7,
+      "row": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        724,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        724,
+        50,
+        88,
+        88
+      ],
+      "draw_rect": [
+        724,
+        50,
+        88,
+        110
+      ],
+      "canvas_center": [
+        768,
+        94
+      ],
+      "pico2d_center": [
+        768,
+        930
+      ],
+      "pico2d_surface_rect": [
+        724,
+        886,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "8,0",
+      "column": 8,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        812,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        812,
+        72,
+        88,
+        88
+      ],
+      "draw_rect": [
+        812,
+        72,
+        88,
+        88
+      ],
+      "canvas_center": [
+        856,
+        116
+      ],
+      "pico2d_center": [
+        856,
+        908
+      ],
+      "pico2d_surface_rect": [
+        812,
+        864,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "9,0",
+      "column": 9,
+      "row": 0,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        900,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        900,
+        72,
+        88,
+        88
+      ],
+      "draw_rect": [
+        900,
+        72,
+        88,
+        88
+      ],
+      "canvas_center": [
+        944,
+        116
+      ],
+      "pico2d_center": [
+        944,
+        908
+      ],
+      "pico2d_surface_rect": [
+        900,
+        864,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "10,0",
+      "column": 10,
+      "row": 0,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        988,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        988,
+        72,
+        88,
+        88
+      ],
+      "draw_rect": [
+        988,
+        72,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1032,
+        116
+      ],
+      "pico2d_center": [
+        1032,
+        908
+      ],
+      "pico2d_surface_rect": [
+        988,
+        864,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "11,0",
+      "column": 11,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1076,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1076,
+        72,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1076,
+        72,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1120,
+        116
+      ],
+      "pico2d_center": [
+        1120,
+        908
+      ],
+      "pico2d_surface_rect": [
+        1076,
+        864,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "12,0",
+      "column": 12,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1164,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1164,
+        72,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1164,
+        72,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1208,
+        116
+      ],
+      "pico2d_center": [
+        1208,
+        908
+      ],
+      "pico2d_surface_rect": [
+        1164,
+        864,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "13,0",
+      "column": 13,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1252,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1252,
+        72,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1252,
+        72,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1296,
+        116
+      ],
+      "pico2d_center": [
+        1296,
+        908
+      ],
+      "pico2d_surface_rect": [
+        1252,
+        864,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "14,0",
+      "column": 14,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1340,
+        72,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1340,
+        72,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1340,
+        72,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1384,
+        116
+      ],
+      "pico2d_center": [
+        1384,
+        908
+      ],
+      "pico2d_surface_rect": [
+        1340,
+        864,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "0,1",
+      "column": 0,
+      "row": 1,
+      "type": "R",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        108,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        108,
+        160,
+        88,
+        88
+      ],
+      "draw_rect": [
+        108,
+        160,
+        88,
+        88
+      ],
+      "canvas_center": [
+        152,
+        204
+      ],
+      "pico2d_center": [
+        152,
+        820
+      ],
+      "pico2d_surface_rect": [
+        108,
+        776,
+        88,
+        88
+      ],
+      "portal_rect": [
+        108,
+        160,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "1,1",
+      "column": 1,
+      "row": 1,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        196,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        196,
+        160,
+        88,
+        88
+      ],
+      "draw_rect": [
+        196,
+        160,
+        88,
+        88
+      ],
+      "canvas_center": [
+        240,
+        204
+      ],
+      "pico2d_center": [
+        240,
+        820
+      ],
+      "pico2d_surface_rect": [
+        196,
+        776,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "2,1",
+      "column": 2,
+      "row": 1,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        284,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        284,
+        138,
+        88,
+        88
+      ],
+      "draw_rect": [
+        284,
+        138,
+        88,
+        110
+      ],
+      "canvas_center": [
+        328,
+        182
+      ],
+      "pico2d_center": [
+        328,
+        842
+      ],
+      "pico2d_surface_rect": [
+        284,
+        798,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "3,1",
+      "column": 3,
+      "row": 1,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        372,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        372,
+        138,
+        88,
+        88
+      ],
+      "draw_rect": [
+        372,
+        138,
+        88,
+        110
+      ],
+      "canvas_center": [
+        416,
+        182
+      ],
+      "pico2d_center": [
+        416,
+        842
+      ],
+      "pico2d_surface_rect": [
+        372,
+        798,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "4,1",
+      "column": 4,
+      "row": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        460,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        460,
+        160,
+        88,
+        88
+      ],
+      "draw_rect": [
+        460,
+        160,
+        88,
+        88
+      ],
+      "canvas_center": [
+        504,
+        204
+      ],
+      "pico2d_center": [
+        504,
+        820
+      ],
+      "pico2d_surface_rect": [
+        460,
+        776,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "5,1",
+      "column": 5,
+      "row": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        548,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        548,
+        160,
+        88,
+        88
+      ],
+      "draw_rect": [
+        548,
+        160,
+        88,
+        88
+      ],
+      "canvas_center": [
+        592,
+        204
+      ],
+      "pico2d_center": [
+        592,
+        820
+      ],
+      "pico2d_surface_rect": [
+        548,
+        776,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "6,1",
+      "column": 6,
+      "row": 1,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        636,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        636,
+        138,
+        88,
+        88
+      ],
+      "draw_rect": [
+        636,
+        138,
+        88,
+        110
+      ],
+      "canvas_center": [
+        680,
+        182
+      ],
+      "pico2d_center": [
+        680,
+        842
+      ],
+      "pico2d_surface_rect": [
+        636,
+        798,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "7,1",
+      "column": 7,
+      "row": 1,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        724,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        724,
+        138,
+        88,
+        88
+      ],
+      "draw_rect": [
+        724,
+        138,
+        88,
+        110
+      ],
+      "canvas_center": [
+        768,
+        182
+      ],
+      "pico2d_center": [
+        768,
+        842
+      ],
+      "pico2d_surface_rect": [
+        724,
+        798,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "8,1",
+      "column": 8,
+      "row": 1,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        812,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        812,
+        160,
+        88,
+        88
+      ],
+      "draw_rect": [
+        812,
+        160,
+        88,
+        88
+      ],
+      "canvas_center": [
+        856,
+        204
+      ],
+      "pico2d_center": [
+        856,
+        820
+      ],
+      "pico2d_surface_rect": [
+        812,
+        776,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "9,1",
+      "column": 9,
+      "row": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        900,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        900,
+        160,
+        88,
+        88
+      ],
+      "draw_rect": [
+        900,
+        160,
+        88,
+        88
+      ],
+      "canvas_center": [
+        944,
+        204
+      ],
+      "pico2d_center": [
+        944,
+        820
+      ],
+      "pico2d_surface_rect": [
+        900,
+        776,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "10,1",
+      "column": 10,
+      "row": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        988,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        988,
+        160,
+        88,
+        88
+      ],
+      "draw_rect": [
+        988,
+        160,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1032,
+        204
+      ],
+      "pico2d_center": [
+        1032,
+        820
+      ],
+      "pico2d_surface_rect": [
+        988,
+        776,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "11,1",
+      "column": 11,
+      "row": 1,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        1076,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1076,
+        138,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1076,
+        138,
+        88,
+        110
+      ],
+      "canvas_center": [
+        1120,
+        182
+      ],
+      "pico2d_center": [
+        1120,
+        842
+      ],
+      "pico2d_surface_rect": [
+        1076,
+        798,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "12,1",
+      "column": 12,
+      "row": 1,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        1164,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1164,
+        138,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1164,
+        138,
+        88,
+        110
+      ],
+      "canvas_center": [
+        1208,
+        182
+      ],
+      "pico2d_center": [
+        1208,
+        842
+      ],
+      "pico2d_surface_rect": [
+        1164,
+        798,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "13,1",
+      "column": 13,
+      "row": 1,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1252,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1252,
+        160,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1252,
+        160,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1296,
+        204
+      ],
+      "pico2d_center": [
+        1296,
+        820
+      ],
+      "pico2d_surface_rect": [
+        1252,
+        776,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "14,1",
+      "column": 14,
+      "row": 1,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1340,
+        160,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1340,
+        160,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1340,
+        160,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1384,
+        204
+      ],
+      "pico2d_center": [
+        1384,
+        820
+      ],
+      "pico2d_surface_rect": [
+        1340,
+        776,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "0,2",
+      "column": 0,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        108,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        108,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        108,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        152,
+        292
+      ],
+      "pico2d_center": [
+        152,
+        732
+      ],
+      "pico2d_surface_rect": [
+        108,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "1,2",
+      "column": 1,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        196,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        196,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        196,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        240,
+        292
+      ],
+      "pico2d_center": [
+        240,
+        732
+      ],
+      "pico2d_surface_rect": [
+        196,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "2,2",
+      "column": 2,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        284,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        284,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        284,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        328,
+        292
+      ],
+      "pico2d_center": [
+        328,
+        732
+      ],
+      "pico2d_surface_rect": [
+        284,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "3,2",
+      "column": 3,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        372,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        372,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        372,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        416,
+        292
+      ],
+      "pico2d_center": [
+        416,
+        732
+      ],
+      "pico2d_surface_rect": [
+        372,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "4,2",
+      "column": 4,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        460,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        460,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        460,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        504,
+        292
+      ],
+      "pico2d_center": [
+        504,
+        732
+      ],
+      "pico2d_surface_rect": [
+        460,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "5,2",
+      "column": 5,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        548,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        548,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        548,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        592,
+        292
+      ],
+      "pico2d_center": [
+        592,
+        732
+      ],
+      "pico2d_surface_rect": [
+        548,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "6,2",
+      "column": 6,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        636,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        636,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        636,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        680,
+        292
+      ],
+      "pico2d_center": [
+        680,
+        732
+      ],
+      "pico2d_surface_rect": [
+        636,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "7,2",
+      "column": 7,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        724,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        724,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        724,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        768,
+        292
+      ],
+      "pico2d_center": [
+        768,
+        732
+      ],
+      "pico2d_surface_rect": [
+        724,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "8,2",
+      "column": 8,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        812,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        812,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        812,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        856,
+        292
+      ],
+      "pico2d_center": [
+        856,
+        732
+      ],
+      "pico2d_surface_rect": [
+        812,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "9,2",
+      "column": 9,
+      "row": 2,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        900,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        900,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        900,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        944,
+        292
+      ],
+      "pico2d_center": [
+        944,
+        732
+      ],
+      "pico2d_surface_rect": [
+        900,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "10,2",
+      "column": 10,
+      "row": 2,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        988,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        988,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        988,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1032,
+        292
+      ],
+      "pico2d_center": [
+        1032,
+        732
+      ],
+      "pico2d_surface_rect": [
+        988,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "11,2",
+      "column": 11,
+      "row": 2,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        1076,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1076,
+        226,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1076,
+        226,
+        88,
+        110
+      ],
+      "canvas_center": [
+        1120,
+        270
+      ],
+      "pico2d_center": [
+        1120,
+        754
+      ],
+      "pico2d_surface_rect": [
+        1076,
+        710,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "12,2",
+      "column": 12,
+      "row": 2,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        1164,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1164,
+        226,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1164,
+        226,
+        88,
+        110
+      ],
+      "canvas_center": [
+        1208,
+        270
+      ],
+      "pico2d_center": [
+        1208,
+        754
+      ],
+      "pico2d_surface_rect": [
+        1164,
+        710,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "13,2",
+      "column": 13,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1252,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1252,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1252,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1296,
+        292
+      ],
+      "pico2d_center": [
+        1296,
+        732
+      ],
+      "pico2d_surface_rect": [
+        1252,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "14,2",
+      "column": 14,
+      "row": 2,
+      "type": "B",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        1340,
+        248,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1340,
+        248,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1340,
+        248,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1384,
+        292
+      ],
+      "pico2d_center": [
+        1384,
+        732
+      ],
+      "pico2d_surface_rect": [
+        1340,
+        688,
+        88,
+        88
+      ],
+      "portal_rect": [
+        1340,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "0,3",
+      "column": 0,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        108,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        108,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        108,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        152,
+        380
+      ],
+      "pico2d_center": [
+        152,
+        644
+      ],
+      "pico2d_surface_rect": [
+        108,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "1,3",
+      "column": 1,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        196,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        196,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        196,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        240,
+        380
+      ],
+      "pico2d_center": [
+        240,
+        644
+      ],
+      "pico2d_surface_rect": [
+        196,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "2,3",
+      "column": 2,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        284,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        284,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        284,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        328,
+        380
+      ],
+      "pico2d_center": [
+        328,
+        644
+      ],
+      "pico2d_surface_rect": [
+        284,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "3,3",
+      "column": 3,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        372,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        372,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        372,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        416,
+        380
+      ],
+      "pico2d_center": [
+        416,
+        644
+      ],
+      "pico2d_surface_rect": [
+        372,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "4,3",
+      "column": 4,
+      "row": 3,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        460,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        460,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        460,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        504,
+        380
+      ],
+      "pico2d_center": [
+        504,
+        644
+      ],
+      "pico2d_surface_rect": [
+        460,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "5,3",
+      "column": 5,
+      "row": 3,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        548,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        548,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        548,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        592,
+        380
+      ],
+      "pico2d_center": [
+        592,
+        644
+      ],
+      "pico2d_surface_rect": [
+        548,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "6,3",
+      "column": 6,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        636,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        636,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        636,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        680,
+        380
+      ],
+      "pico2d_center": [
+        680,
+        644
+      ],
+      "pico2d_surface_rect": [
+        636,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "7,3",
+      "column": 7,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        724,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        724,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        724,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        768,
+        380
+      ],
+      "pico2d_center": [
+        768,
+        644
+      ],
+      "pico2d_surface_rect": [
+        724,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "8,3",
+      "column": 8,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        812,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        812,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        812,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        856,
+        380
+      ],
+      "pico2d_center": [
+        856,
+        644
+      ],
+      "pico2d_surface_rect": [
+        812,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "9,3",
+      "column": 9,
+      "row": 3,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        900,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        900,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        900,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        944,
+        380
+      ],
+      "pico2d_center": [
+        944,
+        644
+      ],
+      "pico2d_surface_rect": [
+        900,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "10,3",
+      "column": 10,
+      "row": 3,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        988,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        988,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        988,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1032,
+        380
+      ],
+      "pico2d_center": [
+        1032,
+        644
+      ],
+      "pico2d_surface_rect": [
+        988,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "11,3",
+      "column": 11,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1076,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1076,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1076,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1120,
+        380
+      ],
+      "pico2d_center": [
+        1120,
+        644
+      ],
+      "pico2d_surface_rect": [
+        1076,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "12,3",
+      "column": 12,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1164,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1164,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1164,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1208,
+        380
+      ],
+      "pico2d_center": [
+        1208,
+        644
+      ],
+      "pico2d_surface_rect": [
+        1164,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "13,3",
+      "column": 13,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1252,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1252,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1252,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1296,
+        380
+      ],
+      "pico2d_center": [
+        1296,
+        644
+      ],
+      "pico2d_surface_rect": [
+        1252,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "14,3",
+      "column": 14,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1340,
+        336,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1340,
+        336,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1340,
+        336,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1384,
+        380
+      ],
+      "pico2d_center": [
+        1384,
+        644
+      ],
+      "pico2d_surface_rect": [
+        1340,
+        600,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "0,4",
+      "column": 0,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        108,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        108,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        108,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        152,
+        468
+      ],
+      "pico2d_center": [
+        152,
+        556
+      ],
+      "pico2d_surface_rect": [
+        108,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "1,4",
+      "column": 1,
+      "row": 4,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        196,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        196,
+        402,
+        88,
+        88
+      ],
+      "draw_rect": [
+        196,
+        402,
+        88,
+        110
+      ],
+      "canvas_center": [
+        240,
+        446
+      ],
+      "pico2d_center": [
+        240,
+        578
+      ],
+      "pico2d_surface_rect": [
+        196,
+        534,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "2,4",
+      "column": 2,
+      "row": 4,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        284,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        284,
+        402,
+        88,
+        88
+      ],
+      "draw_rect": [
+        284,
+        402,
+        88,
+        110
+      ],
+      "canvas_center": [
+        328,
+        446
+      ],
+      "pico2d_center": [
+        328,
+        578
+      ],
+      "pico2d_surface_rect": [
+        284,
+        534,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "3,4",
+      "column": 3,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        372,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        372,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        372,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        416,
+        468
+      ],
+      "pico2d_center": [
+        416,
+        556
+      ],
+      "pico2d_surface_rect": [
+        372,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "4,4",
+      "column": 4,
+      "row": 4,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        460,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        460,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        460,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        504,
+        468
+      ],
+      "pico2d_center": [
+        504,
+        556
+      ],
+      "pico2d_surface_rect": [
+        460,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "5,4",
+      "column": 5,
+      "row": 4,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        548,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        548,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        548,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        592,
+        468
+      ],
+      "pico2d_center": [
+        592,
+        556
+      ],
+      "pico2d_surface_rect": [
+        548,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "6,4",
+      "column": 6,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        636,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        636,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        636,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        680,
+        468
+      ],
+      "pico2d_center": [
+        680,
+        556
+      ],
+      "pico2d_surface_rect": [
+        636,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "7,4",
+      "column": 7,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        724,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        724,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        724,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        768,
+        468
+      ],
+      "pico2d_center": [
+        768,
+        556
+      ],
+      "pico2d_surface_rect": [
+        724,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "8,4",
+      "column": 8,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        812,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        812,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        812,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        856,
+        468
+      ],
+      "pico2d_center": [
+        856,
+        556
+      ],
+      "pico2d_surface_rect": [
+        812,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "9,4",
+      "column": 9,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        900,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        900,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        900,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        944,
+        468
+      ],
+      "pico2d_center": [
+        944,
+        556
+      ],
+      "pico2d_surface_rect": [
+        900,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "10,4",
+      "column": 10,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        988,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        988,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        988,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1032,
+        468
+      ],
+      "pico2d_center": [
+        1032,
+        556
+      ],
+      "pico2d_surface_rect": [
+        988,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "11,4",
+      "column": 11,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1076,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1076,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1076,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1120,
+        468
+      ],
+      "pico2d_center": [
+        1120,
+        556
+      ],
+      "pico2d_surface_rect": [
+        1076,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "12,4",
+      "column": 12,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1164,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1164,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1164,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1208,
+        468
+      ],
+      "pico2d_center": [
+        1208,
+        556
+      ],
+      "pico2d_surface_rect": [
+        1164,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "13,4",
+      "column": 13,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1252,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1252,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1252,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1296,
+        468
+      ],
+      "pico2d_center": [
+        1296,
+        556
+      ],
+      "pico2d_surface_rect": [
+        1252,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "14,4",
+      "column": 14,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1340,
+        424,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1340,
+        424,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1340,
+        424,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1384,
+        468
+      ],
+      "pico2d_center": [
+        1384,
+        556
+      ],
+      "pico2d_surface_rect": [
+        1340,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "0,5",
+      "column": 0,
+      "row": 5,
+      "type": "R",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        108,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        108,
+        512,
+        88,
+        88
+      ],
+      "draw_rect": [
+        108,
+        512,
+        88,
+        88
+      ],
+      "canvas_center": [
+        152,
+        556
+      ],
+      "pico2d_center": [
+        152,
+        468
+      ],
+      "pico2d_surface_rect": [
+        108,
+        424,
+        88,
+        88
+      ],
+      "portal_rect": [
+        108,
+        512,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "1,5",
+      "column": 1,
+      "row": 5,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        196,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        196,
+        490,
+        88,
+        88
+      ],
+      "draw_rect": [
+        196,
+        490,
+        88,
+        110
+      ],
+      "canvas_center": [
+        240,
+        534
+      ],
+      "pico2d_center": [
+        240,
+        490
+      ],
+      "pico2d_surface_rect": [
+        196,
+        446,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "2,5",
+      "column": 2,
+      "row": 5,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        284,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        284,
+        490,
+        88,
+        88
+      ],
+      "draw_rect": [
+        284,
+        490,
+        88,
+        110
+      ],
+      "canvas_center": [
+        328,
+        534
+      ],
+      "pico2d_center": [
+        328,
+        490
+      ],
+      "pico2d_surface_rect": [
+        284,
+        446,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "3,5",
+      "column": 3,
+      "row": 5,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        372,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        372,
+        512,
+        88,
+        88
+      ],
+      "draw_rect": [
+        372,
+        512,
+        88,
+        88
+      ],
+      "canvas_center": [
+        416,
+        556
+      ],
+      "pico2d_center": [
+        416,
+        468
+      ],
+      "pico2d_surface_rect": [
+        372,
+        424,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "4,5",
+      "column": 4,
+      "row": 5,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        460,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        460,
+        512,
+        88,
+        88
+      ],
+      "draw_rect": [
+        460,
+        512,
+        88,
+        88
+      ],
+      "canvas_center": [
+        504,
+        556
+      ],
+      "pico2d_center": [
+        504,
+        468
+      ],
+      "pico2d_surface_rect": [
+        460,
+        424,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "5,5",
+      "column": 5,
+      "row": 5,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        548,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        548,
+        512,
+        88,
+        88
+      ],
+      "draw_rect": [
+        548,
+        512,
+        88,
+        88
+      ],
+      "canvas_center": [
+        592,
+        556
+      ],
+      "pico2d_center": [
+        592,
+        468
+      ],
+      "pico2d_surface_rect": [
+        548,
+        424,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "6,5",
+      "column": 6,
+      "row": 5,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        636,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        636,
+        512,
+        88,
+        88
+      ],
+      "draw_rect": [
+        636,
+        512,
+        88,
+        88
+      ],
+      "canvas_center": [
+        680,
+        556
+      ],
+      "pico2d_center": [
+        680,
+        468
+      ],
+      "pico2d_surface_rect": [
+        636,
+        424,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "7,5",
+      "column": 7,
+      "row": 5,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        724,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        724,
+        490,
+        88,
+        88
+      ],
+      "draw_rect": [
+        724,
+        490,
+        88,
+        110
+      ],
+      "canvas_center": [
+        768,
+        534
+      ],
+      "pico2d_center": [
+        768,
+        490
+      ],
+      "pico2d_surface_rect": [
+        724,
+        446,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "8,5",
+      "column": 8,
+      "row": 5,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        812,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        812,
+        490,
+        88,
+        88
+      ],
+      "draw_rect": [
+        812,
+        490,
+        88,
+        110
+      ],
+      "canvas_center": [
+        856,
+        534
+      ],
+      "pico2d_center": [
+        856,
+        490
+      ],
+      "pico2d_surface_rect": [
+        812,
+        446,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "9,5",
+      "column": 9,
+      "row": 5,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        900,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        900,
+        512,
+        88,
+        88
+      ],
+      "draw_rect": [
+        900,
+        512,
+        88,
+        88
+      ],
+      "canvas_center": [
+        944,
+        556
+      ],
+      "pico2d_center": [
+        944,
+        468
+      ],
+      "pico2d_surface_rect": [
+        900,
+        424,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "10,5",
+      "column": 10,
+      "row": 5,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        988,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        988,
+        512,
+        88,
+        88
+      ],
+      "draw_rect": [
+        988,
+        512,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1032,
+        556
+      ],
+      "pico2d_center": [
+        1032,
+        468
+      ],
+      "pico2d_surface_rect": [
+        988,
+        424,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "11,5",
+      "column": 11,
+      "row": 5,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1076,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1076,
+        512,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1076,
+        512,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1120,
+        556
+      ],
+      "pico2d_center": [
+        1120,
+        468
+      ],
+      "pico2d_surface_rect": [
+        1076,
+        424,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "12,5",
+      "column": 12,
+      "row": 5,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        1164,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1164,
+        490,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1164,
+        490,
+        88,
+        110
+      ],
+      "canvas_center": [
+        1208,
+        534
+      ],
+      "pico2d_center": [
+        1208,
+        490
+      ],
+      "pico2d_surface_rect": [
+        1164,
+        446,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "13,5",
+      "column": 13,
+      "row": 5,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        1252,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1252,
+        490,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1252,
+        490,
+        88,
+        110
+      ],
+      "canvas_center": [
+        1296,
+        534
+      ],
+      "pico2d_center": [
+        1296,
+        490
+      ],
+      "pico2d_surface_rect": [
+        1252,
+        446,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "14,5",
+      "column": 14,
+      "row": 5,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1340,
+        512,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1340,
+        512,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1340,
+        512,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1384,
+        556
+      ],
+      "pico2d_center": [
+        1384,
+        468
+      ],
+      "pico2d_surface_rect": [
+        1340,
+        424,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "0,6",
+      "column": 0,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        108,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        108,
+        600,
+        88,
+        88
+      ],
+      "draw_rect": [
+        108,
+        600,
+        88,
+        88
+      ],
+      "canvas_center": [
+        152,
+        644
+      ],
+      "pico2d_center": [
+        152,
+        380
+      ],
+      "pico2d_surface_rect": [
+        108,
+        336,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "1,6",
+      "column": 1,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        196,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        196,
+        600,
+        88,
+        88
+      ],
+      "draw_rect": [
+        196,
+        600,
+        88,
+        88
+      ],
+      "canvas_center": [
+        240,
+        644
+      ],
+      "pico2d_center": [
+        240,
+        380
+      ],
+      "pico2d_surface_rect": [
+        196,
+        336,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "2,6",
+      "column": 2,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        284,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        284,
+        600,
+        88,
+        88
+      ],
+      "draw_rect": [
+        284,
+        600,
+        88,
+        88
+      ],
+      "canvas_center": [
+        328,
+        644
+      ],
+      "pico2d_center": [
+        328,
+        380
+      ],
+      "pico2d_surface_rect": [
+        284,
+        336,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "3,6",
+      "column": 3,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        372,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        372,
+        600,
+        88,
+        88
+      ],
+      "draw_rect": [
+        372,
+        600,
+        88,
+        88
+      ],
+      "canvas_center": [
+        416,
+        644
+      ],
+      "pico2d_center": [
+        416,
+        380
+      ],
+      "pico2d_surface_rect": [
+        372,
+        336,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "4,6",
+      "column": 4,
+      "row": 6,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        460,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        460,
+        600,
+        88,
+        88
+      ],
+      "draw_rect": [
+        460,
+        600,
+        88,
+        88
+      ],
+      "canvas_center": [
+        504,
+        644
+      ],
+      "pico2d_center": [
+        504,
+        380
+      ],
+      "pico2d_surface_rect": [
+        460,
+        336,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "5,6",
+      "column": 5,
+      "row": 6,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        548,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        548,
+        600,
+        88,
+        88
+      ],
+      "draw_rect": [
+        548,
+        600,
+        88,
+        88
+      ],
+      "canvas_center": [
+        592,
+        644
+      ],
+      "pico2d_center": [
+        592,
+        380
+      ],
+      "pico2d_surface_rect": [
+        548,
+        336,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "6,6",
+      "column": 6,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        636,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        636,
+        600,
+        88,
+        88
+      ],
+      "draw_rect": [
+        636,
+        600,
+        88,
+        88
+      ],
+      "canvas_center": [
+        680,
+        644
+      ],
+      "pico2d_center": [
+        680,
+        380
+      ],
+      "pico2d_surface_rect": [
+        636,
+        336,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "7,6",
+      "column": 7,
+      "row": 6,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        724,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        724,
+        578,
+        88,
+        88
+      ],
+      "draw_rect": [
+        724,
+        578,
+        88,
+        110
+      ],
+      "canvas_center": [
+        768,
+        622
+      ],
+      "pico2d_center": [
+        768,
+        402
+      ],
+      "pico2d_surface_rect": [
+        724,
+        358,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "8,6",
+      "column": 8,
+      "row": 6,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        812,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        812,
+        578,
+        88,
+        88
+      ],
+      "draw_rect": [
+        812,
+        578,
+        88,
+        110
+      ],
+      "canvas_center": [
+        856,
+        622
+      ],
+      "pico2d_center": [
+        856,
+        402
+      ],
+      "pico2d_surface_rect": [
+        812,
+        358,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "9,6",
+      "column": 9,
+      "row": 6,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        900,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        900,
+        600,
+        88,
+        88
+      ],
+      "draw_rect": [
+        900,
+        600,
+        88,
+        88
+      ],
+      "canvas_center": [
+        944,
+        644
+      ],
+      "pico2d_center": [
+        944,
+        380
+      ],
+      "pico2d_surface_rect": [
+        900,
+        336,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "10,6",
+      "column": 10,
+      "row": 6,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        988,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        988,
+        600,
+        88,
+        88
+      ],
+      "draw_rect": [
+        988,
+        600,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1032,
+        644
+      ],
+      "pico2d_center": [
+        1032,
+        380
+      ],
+      "pico2d_surface_rect": [
+        988,
+        336,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "11,6",
+      "column": 11,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1076,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1076,
+        600,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1076,
+        600,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1120,
+        644
+      ],
+      "pico2d_center": [
+        1120,
+        380
+      ],
+      "pico2d_surface_rect": [
+        1076,
+        336,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "12,6",
+      "column": 12,
+      "row": 6,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        1164,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1164,
+        578,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1164,
+        578,
+        88,
+        110
+      ],
+      "canvas_center": [
+        1208,
+        622
+      ],
+      "pico2d_center": [
+        1208,
+        402
+      ],
+      "pico2d_surface_rect": [
+        1164,
+        358,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "13,6",
+      "column": 13,
+      "row": 6,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        1252,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1252,
+        578,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1252,
+        578,
+        88,
+        110
+      ],
+      "canvas_center": [
+        1296,
+        622
+      ],
+      "pico2d_center": [
+        1296,
+        402
+      ],
+      "pico2d_surface_rect": [
+        1252,
+        358,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "14,6",
+      "column": 14,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1340,
+        600,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1340,
+        600,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1340,
+        600,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1384,
+        644
+      ],
+      "pico2d_center": [
+        1384,
+        380
+      ],
+      "pico2d_surface_rect": [
+        1340,
+        336,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "0,7",
+      "column": 0,
+      "row": 7,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        108,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        108,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        108,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        152,
+        732
+      ],
+      "pico2d_center": [
+        152,
+        292
+      ],
+      "pico2d_surface_rect": [
+        108,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "1,7",
+      "column": 1,
+      "row": 7,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        196,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        196,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        196,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        240,
+        732
+      ],
+      "pico2d_center": [
+        240,
+        292
+      ],
+      "pico2d_surface_rect": [
+        196,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "2,7",
+      "column": 2,
+      "row": 7,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        284,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        284,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        284,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        328,
+        732
+      ],
+      "pico2d_center": [
+        328,
+        292
+      ],
+      "pico2d_surface_rect": [
+        284,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "3,7",
+      "column": 3,
+      "row": 7,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        372,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        372,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        372,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        416,
+        732
+      ],
+      "pico2d_center": [
+        416,
+        292
+      ],
+      "pico2d_surface_rect": [
+        372,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "4,7",
+      "column": 4,
+      "row": 7,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        460,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        460,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        460,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        504,
+        732
+      ],
+      "pico2d_center": [
+        504,
+        292
+      ],
+      "pico2d_surface_rect": [
+        460,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "5,7",
+      "column": 5,
+      "row": 7,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        548,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        548,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        548,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        592,
+        732
+      ],
+      "pico2d_center": [
+        592,
+        292
+      ],
+      "pico2d_surface_rect": [
+        548,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "6,7",
+      "column": 6,
+      "row": 7,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        636,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        636,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        636,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        680,
+        732
+      ],
+      "pico2d_center": [
+        680,
+        292
+      ],
+      "pico2d_surface_rect": [
+        636,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "7,7",
+      "column": 7,
+      "row": 7,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        724,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        724,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        724,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        768,
+        732
+      ],
+      "pico2d_center": [
+        768,
+        292
+      ],
+      "pico2d_surface_rect": [
+        724,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "8,7",
+      "column": 8,
+      "row": 7,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        812,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        812,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        812,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        856,
+        732
+      ],
+      "pico2d_center": [
+        856,
+        292
+      ],
+      "pico2d_surface_rect": [
+        812,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "9,7",
+      "column": 9,
+      "row": 7,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        900,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        900,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        900,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        944,
+        732
+      ],
+      "pico2d_center": [
+        944,
+        292
+      ],
+      "pico2d_surface_rect": [
+        900,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "10,7",
+      "column": 10,
+      "row": 7,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        988,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        988,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        988,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1032,
+        732
+      ],
+      "pico2d_center": [
+        1032,
+        292
+      ],
+      "pico2d_surface_rect": [
+        988,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "11,7",
+      "column": 11,
+      "row": 7,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1076,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1076,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1076,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1120,
+        732
+      ],
+      "pico2d_center": [
+        1120,
+        292
+      ],
+      "pico2d_surface_rect": [
+        1076,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "12,7",
+      "column": 12,
+      "row": 7,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1164,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1164,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1164,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1208,
+        732
+      ],
+      "pico2d_center": [
+        1208,
+        292
+      ],
+      "pico2d_surface_rect": [
+        1164,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "13,7",
+      "column": 13,
+      "row": 7,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1252,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1252,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1252,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1296,
+        732
+      ],
+      "pico2d_center": [
+        1296,
+        292
+      ],
+      "pico2d_surface_rect": [
+        1252,
+        248,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "14,7",
+      "column": 14,
+      "row": 7,
+      "type": "B",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        1340,
+        688,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1340,
+        688,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1340,
+        688,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1384,
+        732
+      ],
+      "pico2d_center": [
+        1384,
+        292
+      ],
+      "pico2d_surface_rect": [
+        1340,
+        248,
+        88,
+        88
+      ],
+      "portal_rect": [
+        1340,
+        688,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "0,8",
+      "column": 0,
+      "row": 8,
+      "type": "R",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        108,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        108,
+        776,
+        88,
+        88
+      ],
+      "draw_rect": [
+        108,
+        776,
+        88,
+        88
+      ],
+      "canvas_center": [
+        152,
+        820
+      ],
+      "pico2d_center": [
+        152,
+        204
+      ],
+      "pico2d_surface_rect": [
+        108,
+        160,
+        88,
+        88
+      ],
+      "portal_rect": [
+        108,
+        776,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "1,8",
+      "column": 1,
+      "row": 8,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        196,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        196,
+        754,
+        88,
+        88
+      ],
+      "draw_rect": [
+        196,
+        754,
+        88,
+        110
+      ],
+      "canvas_center": [
+        240,
+        798
+      ],
+      "pico2d_center": [
+        240,
+        226
+      ],
+      "pico2d_surface_rect": [
+        196,
+        182,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "2,8",
+      "column": 2,
+      "row": 8,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        284,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        284,
+        754,
+        88,
+        88
+      ],
+      "draw_rect": [
+        284,
+        754,
+        88,
+        110
+      ],
+      "canvas_center": [
+        328,
+        798
+      ],
+      "pico2d_center": [
+        328,
+        226
+      ],
+      "pico2d_surface_rect": [
+        284,
+        182,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "3,8",
+      "column": 3,
+      "row": 8,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        372,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        372,
+        776,
+        88,
+        88
+      ],
+      "draw_rect": [
+        372,
+        776,
+        88,
+        88
+      ],
+      "canvas_center": [
+        416,
+        820
+      ],
+      "pico2d_center": [
+        416,
+        204
+      ],
+      "pico2d_surface_rect": [
+        372,
+        160,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "4,8",
+      "column": 4,
+      "row": 8,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        460,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        460,
+        776,
+        88,
+        88
+      ],
+      "draw_rect": [
+        460,
+        776,
+        88,
+        88
+      ],
+      "canvas_center": [
+        504,
+        820
+      ],
+      "pico2d_center": [
+        504,
+        204
+      ],
+      "pico2d_surface_rect": [
+        460,
+        160,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "5,8",
+      "column": 5,
+      "row": 8,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        548,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        548,
+        776,
+        88,
+        88
+      ],
+      "draw_rect": [
+        548,
+        776,
+        88,
+        88
+      ],
+      "canvas_center": [
+        592,
+        820
+      ],
+      "pico2d_center": [
+        592,
+        204
+      ],
+      "pico2d_surface_rect": [
+        548,
+        160,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "6,8",
+      "column": 6,
+      "row": 8,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        636,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        636,
+        754,
+        88,
+        88
+      ],
+      "draw_rect": [
+        636,
+        754,
+        88,
+        110
+      ],
+      "canvas_center": [
+        680,
+        798
+      ],
+      "pico2d_center": [
+        680,
+        226
+      ],
+      "pico2d_surface_rect": [
+        636,
+        182,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "7,8",
+      "column": 7,
+      "row": 8,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        724,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        724,
+        754,
+        88,
+        88
+      ],
+      "draw_rect": [
+        724,
+        754,
+        88,
+        110
+      ],
+      "canvas_center": [
+        768,
+        798
+      ],
+      "pico2d_center": [
+        768,
+        226
+      ],
+      "pico2d_surface_rect": [
+        724,
+        182,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "8,8",
+      "column": 8,
+      "row": 8,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        812,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        812,
+        776,
+        88,
+        88
+      ],
+      "draw_rect": [
+        812,
+        776,
+        88,
+        88
+      ],
+      "canvas_center": [
+        856,
+        820
+      ],
+      "pico2d_center": [
+        856,
+        204
+      ],
+      "pico2d_surface_rect": [
+        812,
+        160,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "9,8",
+      "column": 9,
+      "row": 8,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        900,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        900,
+        776,
+        88,
+        88
+      ],
+      "draw_rect": [
+        900,
+        776,
+        88,
+        88
+      ],
+      "canvas_center": [
+        944,
+        820
+      ],
+      "pico2d_center": [
+        944,
+        204
+      ],
+      "pico2d_surface_rect": [
+        900,
+        160,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "10,8",
+      "column": 10,
+      "row": 8,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        988,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        988,
+        776,
+        88,
+        88
+      ],
+      "draw_rect": [
+        988,
+        776,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1032,
+        820
+      ],
+      "pico2d_center": [
+        1032,
+        204
+      ],
+      "pico2d_surface_rect": [
+        988,
+        160,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "11,8",
+      "column": 11,
+      "row": 8,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1076,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1076,
+        776,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1076,
+        776,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1120,
+        820
+      ],
+      "pico2d_center": [
+        1120,
+        204
+      ],
+      "pico2d_surface_rect": [
+        1076,
+        160,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "12,8",
+      "column": 12,
+      "row": 8,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        1164,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1164,
+        754,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1164,
+        754,
+        88,
+        110
+      ],
+      "canvas_center": [
+        1208,
+        798
+      ],
+      "pico2d_center": [
+        1208,
+        226
+      ],
+      "pico2d_surface_rect": [
+        1164,
+        182,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "13,8",
+      "column": 13,
+      "row": 8,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        1252,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1252,
+        754,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1252,
+        754,
+        88,
+        110
+      ],
+      "canvas_center": [
+        1296,
+        798
+      ],
+      "pico2d_center": [
+        1296,
+        226
+      ],
+      "pico2d_surface_rect": [
+        1252,
+        182,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "14,8",
+      "column": 14,
+      "row": 8,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1340,
+        776,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1340,
+        776,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1340,
+        776,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1384,
+        820
+      ],
+      "pico2d_center": [
+        1384,
+        204
+      ],
+      "pico2d_surface_rect": [
+        1340,
+        160,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "0,9",
+      "column": 0,
+      "row": 9,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        108,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        108,
+        864,
+        88,
+        88
+      ],
+      "draw_rect": [
+        108,
+        864,
+        88,
+        88
+      ],
+      "canvas_center": [
+        152,
+        908
+      ],
+      "pico2d_center": [
+        152,
+        116
+      ],
+      "pico2d_surface_rect": [
+        108,
+        72,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "1,9",
+      "column": 1,
+      "row": 9,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        196,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        196,
+        842,
+        88,
+        88
+      ],
+      "draw_rect": [
+        196,
+        842,
+        88,
+        110
+      ],
+      "canvas_center": [
+        240,
+        886
+      ],
+      "pico2d_center": [
+        240,
+        138
+      ],
+      "pico2d_surface_rect": [
+        196,
+        94,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "2,9",
+      "column": 2,
+      "row": 9,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        284,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        284,
+        842,
+        88,
+        88
+      ],
+      "draw_rect": [
+        284,
+        842,
+        88,
+        110
+      ],
+      "canvas_center": [
+        328,
+        886
+      ],
+      "pico2d_center": [
+        328,
+        138
+      ],
+      "pico2d_surface_rect": [
+        284,
+        94,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "3,9",
+      "column": 3,
+      "row": 9,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        372,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        372,
+        864,
+        88,
+        88
+      ],
+      "draw_rect": [
+        372,
+        864,
+        88,
+        88
+      ],
+      "canvas_center": [
+        416,
+        908
+      ],
+      "pico2d_center": [
+        416,
+        116
+      ],
+      "pico2d_surface_rect": [
+        372,
+        72,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "4,9",
+      "column": 4,
+      "row": 9,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        460,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        460,
+        864,
+        88,
+        88
+      ],
+      "draw_rect": [
+        460,
+        864,
+        88,
+        88
+      ],
+      "canvas_center": [
+        504,
+        908
+      ],
+      "pico2d_center": [
+        504,
+        116
+      ],
+      "pico2d_surface_rect": [
+        460,
+        72,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "5,9",
+      "column": 5,
+      "row": 9,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        548,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        548,
+        864,
+        88,
+        88
+      ],
+      "draw_rect": [
+        548,
+        864,
+        88,
+        88
+      ],
+      "canvas_center": [
+        592,
+        908
+      ],
+      "pico2d_center": [
+        592,
+        116
+      ],
+      "pico2d_surface_rect": [
+        548,
+        72,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "6,9",
+      "column": 6,
+      "row": 9,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        636,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        636,
+        842,
+        88,
+        88
+      ],
+      "draw_rect": [
+        636,
+        842,
+        88,
+        110
+      ],
+      "canvas_center": [
+        680,
+        886
+      ],
+      "pico2d_center": [
+        680,
+        138
+      ],
+      "pico2d_surface_rect": [
+        636,
+        94,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "7,9",
+      "column": 7,
+      "row": 9,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        724,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        724,
+        842,
+        88,
+        88
+      ],
+      "draw_rect": [
+        724,
+        842,
+        88,
+        110
+      ],
+      "canvas_center": [
+        768,
+        886
+      ],
+      "pico2d_center": [
+        768,
+        138
+      ],
+      "pico2d_surface_rect": [
+        724,
+        94,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "8,9",
+      "column": 8,
+      "row": 9,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        812,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        812,
+        864,
+        88,
+        88
+      ],
+      "draw_rect": [
+        812,
+        864,
+        88,
+        88
+      ],
+      "canvas_center": [
+        856,
+        908
+      ],
+      "pico2d_center": [
+        856,
+        116
+      ],
+      "pico2d_surface_rect": [
+        812,
+        72,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "9,9",
+      "column": 9,
+      "row": 9,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        900,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        900,
+        864,
+        88,
+        88
+      ],
+      "draw_rect": [
+        900,
+        864,
+        88,
+        88
+      ],
+      "canvas_center": [
+        944,
+        908
+      ],
+      "pico2d_center": [
+        944,
+        116
+      ],
+      "pico2d_surface_rect": [
+        900,
+        72,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "10,9",
+      "column": 10,
+      "row": 9,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        988,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        988,
+        864,
+        88,
+        88
+      ],
+      "draw_rect": [
+        988,
+        864,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1032,
+        908
+      ],
+      "pico2d_center": [
+        1032,
+        116
+      ],
+      "pico2d_surface_rect": [
+        988,
+        72,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "11,9",
+      "column": 11,
+      "row": 9,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1076,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1076,
+        864,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1076,
+        864,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1120,
+        908
+      ],
+      "pico2d_center": [
+        1120,
+        116
+      ],
+      "pico2d_surface_rect": [
+        1076,
+        72,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "12,9",
+      "column": 12,
+      "row": 9,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        1164,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1164,
+        842,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1164,
+        842,
+        88,
+        110
+      ],
+      "canvas_center": [
+        1208,
+        886
+      ],
+      "pico2d_center": [
+        1208,
+        138
+      ],
+      "pico2d_surface_rect": [
+        1164,
+        94,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "13,9",
+      "column": 13,
+      "row": 9,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        1252,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1252,
+        842,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1252,
+        842,
+        88,
+        110
+      ],
+      "canvas_center": [
+        1296,
+        886
+      ],
+      "pico2d_center": [
+        1296,
+        138
+      ],
+      "pico2d_surface_rect": [
+        1252,
+        94,
+        88,
+        88
+      ]
+    },
+    {
+      "id": "14,9",
+      "column": 14,
+      "row": 9,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        1340,
+        864,
+        88,
+        88
+      ],
+      "surface_rect": [
+        1340,
+        864,
+        88,
+        88
+      ],
+      "draw_rect": [
+        1340,
+        864,
+        88,
+        88
+      ],
+      "canvas_center": [
+        1384,
+        908
+      ],
+      "pico2d_center": [
+        1384,
+        116
+      ],
+      "pico2d_surface_rect": [
+        1340,
+        72,
+        88,
+        88
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "entrance": 0,
+      "goal": 0,
+      "cells": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          14,
+          2
+        ]
+      ]
+    },
+    {
+      "entrance": 0,
+      "goal": 1,
+      "cells": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          2
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          14,
+          5
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          14,
+          7
+        ]
+      ]
+    },
+    {
+      "entrance": 1,
+      "goal": 0,
+      "cells": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          14,
+          2
+        ]
+      ]
+    },
+    {
+      "entrance": 1,
+      "goal": 1,
+      "cells": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          14,
+          7
+        ]
+      ]
+    },
+    {
+      "entrance": 2,
+      "goal": 0,
+      "cells": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          12,
+          4
+        ],
+        [
+          13,
+          4
+        ],
+        [
+          14,
+          4
+        ],
+        [
+          14,
+          3
+        ],
+        [
+          14,
+          2
+        ]
+      ]
+    },
+    {
+      "entrance": 2,
+      "goal": 1,
+      "cells": [
+        [
+          0,
+          8
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          11,
+          8
+        ],
+        [
+          11,
+          7
+        ],
+        [
+          12,
+          7
+        ],
+        [
+          13,
+          7
+        ],
+        [
+          14,
+          7
+        ]
+      ]
+    }
+  ]
+}
