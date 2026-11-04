@@ -43,6 +43,7 @@
 - [이전 대기 모션 v1](assets/characters/idle-v1/README.md): 고유 자세 4장씩을 사용한 시트 보관
 - 배치 프로필 카드 8종, 스킬 프로필 카드 8종과 스킬 아이콘 16종
 - 상하좌우 배치 방향 선택 UI, 높낮이와 목표 지점 2개를 가진 던전 배경
+- [지하 감옥·침수 유적·용암 제단 추가 맵 3종](assets/maps/dungeon-variants-v1/README.md): 분위기와 길·단상 배치가 다른 전투 배경 시안
 - [맵 칸에 맞춘 반투명 공격 범위 타일](assets/ui/attack-range-v2/README.md): 사선·단색 PNG, 칸별 보정 좌표와 적용 예시
 - [파일 규격과 제작 자료 안내](assets/README.md)
 

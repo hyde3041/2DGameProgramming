@@ -1,0 +1,67 @@
+{
+  "kind": "던전 원정대 전투 배경 시안 목록",
+  "map_count": 4,
+  "maps": [
+    {
+      "id": "dungeon-room",
+      "name": "기본 던전",
+      "file": "dungeon-room.png",
+      "width": 1484,
+      "height": 1060,
+      "terrain_heights": 2,
+      "goal_points": 2,
+      "game_grid_calibrated": false
+    },
+    {
+      "id": "prison-cellblock",
+      "name": "지하 감옥",
+      "file": "dungeon-variants-v1/prison-cellblock.png",
+      "theme": "지하 감옥",
+      "layout": "중앙 교차로와 네 개의 큰 단상 구역을 잇는 넓은 감옥 통로",
+      "palette": "회색 석재, 철창, 따뜻한 횃불",
+      "width": 1536,
+      "height": 1024,
+      "terrain_heights": 2,
+      "goal_points": 2,
+      "enemy_entrances": 3,
+      "kind": "기획용 전투 맵 배경 시안",
+      "game_grid_calibrated": false,
+      "tile_coordinates": null,
+      "sha256": "6a5f10ee9f02685038ba310ae818c6dcf302089a7e95c1b2cd63c8c07dc9ec5e"
+    },
+    {
+      "id": "flooded-ruins",
+      "name": "침수 유적",
+      "file": "dungeon-variants-v1/flooded-ruins.png",
+      "theme": "침수 유적",
+      "layout": "물웅덩이를 돌아가는 석조 길과 여러 다리로 연결된 섬",
+      "palette": "청록색 물, 밝은 회색 석재, 차가운 반사광",
+      "width": 1536,
+      "height": 1024,
+      "terrain_heights": 2,
+      "goal_points": 2,
+      "enemy_entrances": 3,
+      "kind": "기획용 전투 맵 배경 시안",
+      "game_grid_calibrated": false,
+      "tile_coordinates": null,
+      "sha256": "b765e4b0e924032aa73a488b343acbdd3ed32174c171cd5da11f300963513cbc"
+    },
+    {
+      "id": "magma-altar",
+      "name": "용암 제단",
+      "file": "dungeon-variants-v1/magma-altar.png",
+      "theme": "용암 제단",
+      "layout": "중앙 제단을 양쪽으로 돌아가는 통로와 용암 지형",
+      "palette": "검은 현무암, 어두운 붉은색 구조물, 제한된 주황색 용암",
+      "width": 1536,
+      "height": 1024,
+      "terrain_heights": 2,
+      "goal_points": 2,
+      "enemy_entrances": 3,
+      "kind": "기획용 전투 맵 배경 시안",
+      "game_grid_calibrated": false,
+      "tile_coordinates": null,
+      "sha256": "f3434e8a004e83d36ead882e829740c0d7659a3c05e975761e695f3da3eefb36"
+    }
+  ]
+}
