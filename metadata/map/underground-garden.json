@@ -2,7 +2,7 @@
   "id": "underground-garden",
   "name": "지하 정원",
   "number": 9,
-  "file": "asset/map/underground-garden.png",
+  "file": "asset/map/stage/main/underground-garden.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -309,7 +309,7 @@
         64
       ],
       "prop": "수풀 화단",
-      "prop_file": "asset/map/tiles/themes/underground-garden/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/underground-garden/prop-0.png"
     },
     {
       "id": "6,0",
@@ -1097,7 +1097,7 @@
         64
       ],
       "prop": "수풀 화단",
-      "prop_file": "asset/map/tiles/themes/underground-garden/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/underground-garden/prop-0.png"
     },
     {
       "id": "2,2",
@@ -1271,7 +1271,7 @@
         64
       ],
       "hazard": "연못",
-      "hazard_file": "asset/map/tiles/themes/underground-garden/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/underground-garden/hazard.png"
     },
     {
       "id": "6,2",
@@ -1316,7 +1316,7 @@
         64
       ],
       "hazard": "연못",
-      "hazard_file": "asset/map/tiles/themes/underground-garden/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/underground-garden/hazard.png"
     },
     {
       "id": "7,2",
@@ -1625,7 +1625,7 @@
         64
       ],
       "prop": "덩굴 기둥",
-      "prop_file": "asset/map/tiles/themes/underground-garden/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/underground-garden/prop-1.png"
     },
     {
       "id": "3,3",
@@ -1885,7 +1885,7 @@
         64
       ],
       "prop": "꽃 화단",
-      "prop_file": "asset/map/tiles/themes/underground-garden/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/underground-garden/prop-2.png"
     },
     {
       "id": "9,3",
@@ -2188,7 +2188,7 @@
         64
       ],
       "hazard": "연못",
-      "hazard_file": "asset/map/tiles/themes/underground-garden/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/underground-garden/hazard.png"
     },
     {
       "id": "5,4",
@@ -2233,7 +2233,7 @@
         64
       ],
       "hazard": "연못",
-      "hazard_file": "asset/map/tiles/themes/underground-garden/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/underground-garden/hazard.png"
     },
     {
       "id": "6,4",
@@ -2407,7 +2407,7 @@
         64
       ],
       "prop": "덩굴 기둥",
-      "prop_file": "asset/map/tiles/themes/underground-garden/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/underground-garden/prop-1.png"
     },
     {
       "id": "10,4",
@@ -3195,7 +3195,7 @@
         64
       ],
       "prop": "꽃 화단",
-      "prop_file": "asset/map/tiles/themes/underground-garden/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/underground-garden/prop-2.png"
     },
     {
       "id": "6,6",
@@ -3852,7 +3852,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "existing v5 layout preserved"
 }

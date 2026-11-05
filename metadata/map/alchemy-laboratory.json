@@ -2,7 +2,7 @@
   "id": "alchemy-laboratory",
   "name": "연금술 실험실",
   "number": 18,
-  "file": "asset/map/alchemy-laboratory.png",
+  "file": "asset/map/stage/main/alchemy-laboratory.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -223,7 +223,7 @@
         64
       ],
       "prop": "물약 탁자",
-      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-0.png"
     },
     {
       "id": "4,0",
@@ -397,7 +397,7 @@
         64
       ],
       "hazard": "마력 유출",
-      "hazard_file": "asset/map/tiles/themes/alchemy-laboratory/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/alchemy-laboratory/hazard.png"
     },
     {
       "id": "8,0",
@@ -706,7 +706,7 @@
         64
       ],
       "prop": "돌 가마솥",
-      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-1.png"
     },
     {
       "id": "4,1",
@@ -966,7 +966,7 @@
         64
       ],
       "prop": "재료 통",
-      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-2.png"
     },
     {
       "id": "10,1",
@@ -1103,7 +1103,7 @@
         64
       ],
       "hazard": "마력 유출",
-      "hazard_file": "asset/map/tiles/themes/alchemy-laboratory/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/alchemy-laboratory/hazard.png"
     },
     {
       "id": "2,2",
@@ -1191,7 +1191,7 @@
         64
       ],
       "prop": "물약 탁자",
-      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-0.png"
     },
     {
       "id": "4,2",
@@ -1586,7 +1586,7 @@
         64
       ],
       "hazard": "마력 유출",
-      "hazard_file": "asset/map/tiles/themes/alchemy-laboratory/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/alchemy-laboratory/hazard.png"
     },
     {
       "id": "2,3",
@@ -2061,7 +2061,7 @@
         64
       ],
       "prop": "돌 가마솥",
-      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-1.png"
     },
     {
       "id": "2,4",
@@ -2321,7 +2321,7 @@
         64
       ],
       "prop": "재료 통",
-      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-2.png"
     },
     {
       "id": "8,4",
@@ -2544,7 +2544,7 @@
         64
       ],
       "prop": "물약 탁자",
-      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-0.png"
     },
     {
       "id": "2,5",
@@ -2675,7 +2675,7 @@
         64
       ],
       "hazard": "마력 유출",
-      "hazard_file": "asset/map/tiles/themes/alchemy-laboratory/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/alchemy-laboratory/hazard.png"
     },
     {
       "id": "5,5",
@@ -2720,7 +2720,7 @@
         64
       ],
       "hazard": "마력 유출",
-      "hazard_file": "asset/map/tiles/themes/alchemy-laboratory/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/alchemy-laboratory/hazard.png"
     },
     {
       "id": "6,5",
@@ -2808,7 +2808,7 @@
         64
       ],
       "prop": "돌 가마솥",
-      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-1.png"
     },
     {
       "id": "8,5",
@@ -3289,7 +3289,7 @@
         64
       ],
       "prop": "재료 통",
-      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-2.png"
     },
     {
       "id": "8,6",
@@ -4012,7 +4012,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "new theme"
 }

@@ -2,7 +2,7 @@
   "id": "undercity-sewer",
   "name": "지하 수로",
   "number": 16,
-  "file": "asset/map/undercity-sewer.png",
+  "file": "asset/map/stage/main/undercity-sewer.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -180,7 +180,7 @@
         64
       ],
       "hazard": "배수로",
-      "hazard_file": "asset/map/tiles/themes/undercity-sewer/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/undercity-sewer/hazard.png"
     },
     {
       "id": "3,0",
@@ -354,7 +354,7 @@
         64
       ],
       "prop": "배수관",
-      "prop_file": "asset/map/tiles/themes/undercity-sewer/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/undercity-sewer/prop-0.png"
     },
     {
       "id": "7,0",
@@ -399,7 +399,7 @@
         64
       ],
       "prop": "밸브 받침대",
-      "prop_file": "asset/map/tiles/themes/undercity-sewer/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/undercity-sewer/prop-1.png"
     },
     {
       "id": "8,0",
@@ -444,7 +444,7 @@
         64
       ],
       "hazard": "배수로",
-      "hazard_file": "asset/map/tiles/themes/undercity-sewer/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/undercity-sewer/hazard.png"
     },
     {
       "id": "9,0",
@@ -925,7 +925,7 @@
         64
       ],
       "hazard": "배수로",
-      "hazard_file": "asset/map/tiles/themes/undercity-sewer/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/undercity-sewer/hazard.png"
     },
     {
       "id": "9,1",
@@ -1148,7 +1148,7 @@
         64
       ],
       "hazard": "배수로",
-      "hazard_file": "asset/map/tiles/themes/undercity-sewer/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/undercity-sewer/hazard.png"
     },
     {
       "id": "3,2",
@@ -1586,7 +1586,7 @@
         64
       ],
       "prop": "철제 보관함",
-      "prop_file": "asset/map/tiles/themes/undercity-sewer/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/undercity-sewer/prop-2.png"
     },
     {
       "id": "2,3",
@@ -1631,7 +1631,7 @@
         64
       ],
       "hazard": "배수로",
-      "hazard_file": "asset/map/tiles/themes/undercity-sewer/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/undercity-sewer/hazard.png"
     },
     {
       "id": "3,3",
@@ -1891,7 +1891,7 @@
         64
       ],
       "hazard": "배수로",
-      "hazard_file": "asset/map/tiles/themes/undercity-sewer/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/undercity-sewer/hazard.png"
     },
     {
       "id": "9,3",
@@ -2366,7 +2366,7 @@
         64
       ],
       "hazard": "배수로",
-      "hazard_file": "asset/map/tiles/themes/undercity-sewer/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/undercity-sewer/hazard.png"
     },
     {
       "id": "9,4",
@@ -2589,7 +2589,7 @@
         64
       ],
       "hazard": "배수로",
-      "hazard_file": "asset/map/tiles/themes/undercity-sewer/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/undercity-sewer/hazard.png"
     },
     {
       "id": "3,5",
@@ -2677,7 +2677,7 @@
         64
       ],
       "prop": "배수관",
-      "prop_file": "asset/map/tiles/themes/undercity-sewer/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/undercity-sewer/prop-0.png"
     },
     {
       "id": "5,5",
@@ -3029,7 +3029,7 @@
         64
       ],
       "prop": "밸브 받침대",
-      "prop_file": "asset/map/tiles/themes/undercity-sewer/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/undercity-sewer/prop-1.png"
     },
     {
       "id": "2,6",
@@ -3074,7 +3074,7 @@
         64
       ],
       "hazard": "배수로",
-      "hazard_file": "asset/map/tiles/themes/undercity-sewer/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/undercity-sewer/hazard.png"
     },
     {
       "id": "3,6",
@@ -3334,7 +3334,7 @@
         64
       ],
       "hazard": "배수로",
-      "hazard_file": "asset/map/tiles/themes/undercity-sewer/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/undercity-sewer/hazard.png"
     },
     {
       "id": "9,6",
@@ -3379,7 +3379,7 @@
         64
       ],
       "prop": "철제 보관함",
-      "prop_file": "asset/map/tiles/themes/undercity-sewer/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/undercity-sewer/prop-2.png"
     },
     {
       "id": "10,6",
@@ -3888,7 +3888,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "new theme"
 }

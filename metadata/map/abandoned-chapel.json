@@ -2,7 +2,7 @@
   "id": "abandoned-chapel",
   "name": "버려진 예배당",
   "number": 19,
-  "file": "asset/map/abandoned-chapel.png",
+  "file": "asset/map/stage/main/abandoned-chapel.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -309,7 +309,7 @@
         64
       ],
       "prop": "예배 제단",
-      "prop_file": "asset/map/tiles/themes/abandoned-chapel/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-chapel/prop-0.png"
     },
     {
       "id": "6,0",
@@ -704,7 +704,7 @@
         64
       ],
       "prop": "나무 긴의자",
-      "prop_file": "asset/map/tiles/themes/abandoned-chapel/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-chapel/prop-1.png"
     },
     {
       "id": "4,1",
@@ -878,7 +878,7 @@
         64
       ],
       "prop": "손상된 석상",
-      "prop_file": "asset/map/tiles/themes/abandoned-chapel/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-chapel/prop-2.png"
     },
     {
       "id": "8,1",
@@ -966,7 +966,7 @@
         64
       ],
       "hazard": "저주받은 바닥",
-      "hazard_file": "asset/map/tiles/themes/abandoned-chapel/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-chapel/hazard.png"
     },
     {
       "id": "10,1",
@@ -1146,7 +1146,7 @@
         64
       ],
       "prop": "예배 제단",
-      "prop_file": "asset/map/tiles/themes/abandoned-chapel/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-chapel/prop-0.png"
     },
     {
       "id": "3,2",
@@ -1191,7 +1191,7 @@
         64
       ],
       "prop": "나무 긴의자",
-      "prop_file": "asset/map/tiles/themes/abandoned-chapel/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-chapel/prop-1.png"
     },
     {
       "id": "4,2",
@@ -1365,7 +1365,7 @@
         64
       ],
       "prop": "손상된 석상",
-      "prop_file": "asset/map/tiles/themes/abandoned-chapel/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-chapel/prop-2.png"
     },
     {
       "id": "8,2",
@@ -1760,7 +1760,7 @@
         64
       ],
       "hazard": "저주받은 바닥",
-      "hazard_file": "asset/map/tiles/themes/abandoned-chapel/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-chapel/hazard.png"
     },
     {
       "id": "6,3",
@@ -1891,7 +1891,7 @@
         64
       ],
       "hazard": "저주받은 바닥",
-      "hazard_file": "asset/map/tiles/themes/abandoned-chapel/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-chapel/hazard.png"
     },
     {
       "id": "9,3",
@@ -2151,7 +2151,7 @@
         64
       ],
       "prop": "예배 제단",
-      "prop_file": "asset/map/tiles/themes/abandoned-chapel/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-chapel/prop-0.png"
     },
     {
       "id": "4,4",
@@ -2325,7 +2325,7 @@
         64
       ],
       "prop": "나무 긴의자",
-      "prop_file": "asset/map/tiles/themes/abandoned-chapel/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-chapel/prop-1.png"
     },
     {
       "id": "8,4",
@@ -2634,7 +2634,7 @@
         64
       ],
       "prop": "손상된 석상",
-      "prop_file": "asset/map/tiles/themes/abandoned-chapel/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-chapel/prop-2.png"
     },
     {
       "id": "4,5",
@@ -2808,7 +2808,7 @@
         64
       ],
       "prop": "예배 제단",
-      "prop_file": "asset/map/tiles/themes/abandoned-chapel/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-chapel/prop-0.png"
     },
     {
       "id": "8,5",
@@ -3898,7 +3898,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "new theme"
 }

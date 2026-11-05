@@ -1,0 +1,588 @@
+{
+  "version": 3,
+  "id": "frost-mage",
+  "name": "냉기술사",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "workflow": "original reference-aligned visible surfaces with redrawn hidden joints; rigid animation",
+  "original_design_unchanged": true,
+  "alignment": "metadata/character/layers/reference-alignment.json",
+  "redrawn_atlas": "asset/character/icon/layers/frost-mage/layer-atlas-redrawn.png",
+  "prompt": "metadata/character/layers/redraw-prompts/frost-mage.txt",
+  "animation_applied": true,
+  "views": [
+    {
+      "direction": "front",
+      "source": "asset/character/icon/layers/frost-mage/front/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/frost-mage/front/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/frost-mage/front/aligned/legs.png",
+        "body": "asset/character/icon/layers/frost-mage/front/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/frost-mage/front/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/frost-mage/front/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/frost-mage/front/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/frost-mage/front/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/frost-mage/front/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/frost-mage/front/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/frost-mage/front/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/frost-mage/front/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/frost-mage/front/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/frost-mage/front/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/frost-mage/front/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/frost-mage/front/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/frost-mage/front/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/frost-mage/front/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/frost-mage/front/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/frost-mage/front/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/frost-mage/front/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/frost-mage/front/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/frost-mage/front/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/frost-mage/front/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/frost-mage/front/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/frost-mage/front/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/frost-mage/front/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/frost-mage/front/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/frost-mage/front/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/frost-mage/front/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            140,
+            264
+          ],
+          "size": [
+            44,
+            25
+          ]
+        },
+        "body": {
+          "position": [
+            116,
+            202
+          ],
+          "size": [
+            87,
+            70
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            106,
+            221
+          ],
+          "size": [
+            99,
+            64
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ]
+        },
+        "head": {
+          "position": [
+            100,
+            126
+          ],
+          "size": [
+            101,
+            85
+          ]
+        },
+        "arm-left": {
+          "position": [
+            114,
+            214
+          ],
+          "size": [
+            37,
+            40
+          ]
+        },
+        "arm-right": {
+          "position": [
+            182,
+            217
+          ],
+          "size": [
+            13,
+            20
+          ]
+        },
+        "equipment": {
+          "position": [
+            173,
+            151
+          ],
+          "size": [
+            61,
+            107
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          164,
+          209
+        ],
+        "body": [
+          162,
+          242
+        ],
+        "hair": [
+          164,
+          209
+        ],
+        "cloth": [
+          162,
+          242
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            145,
+            221
+          ],
+          "arm-right": [
+            184,
+            218
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            130,
+            245
+          ],
+          "arm-right": [
+            193,
+            223
+          ]
+        },
+        "weapon_arm": "arm-right",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.029961569393382036,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "back",
+      "source": "asset/character/icon/layers/frost-mage/back/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/frost-mage/back/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/frost-mage/back/aligned/legs.png",
+        "body": "asset/character/icon/layers/frost-mage/back/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/frost-mage/back/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/frost-mage/back/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/frost-mage/back/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/frost-mage/back/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/frost-mage/back/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/frost-mage/back/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/frost-mage/back/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/frost-mage/back/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/frost-mage/back/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/frost-mage/back/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/frost-mage/back/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/frost-mage/back/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/frost-mage/back/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/frost-mage/back/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/frost-mage/back/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/frost-mage/back/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/frost-mage/back/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/frost-mage/back/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/frost-mage/back/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/frost-mage/back/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/frost-mage/back/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/frost-mage/back/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/frost-mage/back/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/frost-mage/back/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/frost-mage/back/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/frost-mage/back/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            137,
+            266
+          ],
+          "size": [
+            46,
+            23
+          ]
+        },
+        "body": {
+          "position": [
+            128,
+            199
+          ],
+          "size": [
+            82,
+            74
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            109,
+            223
+          ],
+          "size": [
+            110,
+            61
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ]
+        },
+        "head": {
+          "position": [
+            119,
+            129
+          ],
+          "size": [
+            101,
+            78
+          ]
+        },
+        "arm-left": {
+          "position": [
+            125,
+            214
+          ],
+          "size": [
+            22,
+            21
+          ]
+        },
+        "arm-right": {
+          "position": [
+            180,
+            216
+          ],
+          "size": [
+            29,
+            39
+          ]
+        },
+        "equipment": {
+          "position": [
+            98,
+            156
+          ],
+          "size": [
+            43,
+            104
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          164,
+          208
+        ],
+        "body": [
+          163,
+          242
+        ],
+        "hair": [
+          164,
+          208
+        ],
+        "cloth": [
+          163,
+          242
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            141,
+            218
+          ],
+          "arm-right": [
+            188,
+            225
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            122,
+            224
+          ],
+          "arm-right": [
+            201,
+            246
+          ]
+        },
+        "weapon_arm": "arm-left",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.028768296185661298,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "side",
+      "source": "asset/character/icon/layers/frost-mage/side/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/frost-mage/side/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/frost-mage/side/aligned/legs.png",
+        "body": "asset/character/icon/layers/frost-mage/side/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/frost-mage/side/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/frost-mage/side/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/frost-mage/side/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/frost-mage/side/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/frost-mage/side/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/frost-mage/side/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/frost-mage/side/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/frost-mage/side/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/frost-mage/side/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/frost-mage/side/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/frost-mage/side/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/frost-mage/side/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/frost-mage/side/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/frost-mage/side/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/frost-mage/side/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/frost-mage/side/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/frost-mage/side/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/frost-mage/side/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/frost-mage/side/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/frost-mage/side/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/frost-mage/side/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/frost-mage/side/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/frost-mage/side/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/frost-mage/side/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/frost-mage/side/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/frost-mage/side/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            147,
+            264
+          ],
+          "size": [
+            32,
+            24
+          ]
+        },
+        "body": {
+          "position": [
+            123,
+            202
+          ],
+          "size": [
+            79,
+            70
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            113,
+            219
+          ],
+          "size": [
+            92,
+            67
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ]
+        },
+        "head": {
+          "position": [
+            102,
+            129
+          ],
+          "size": [
+            95,
+            80
+          ]
+        },
+        "arm-left": {
+          "position": [
+            124,
+            217
+          ],
+          "size": [
+            34,
+            35
+          ]
+        },
+        "arm-right": {
+          "position": [
+            181,
+            214
+          ],
+          "size": [
+            14,
+            18
+          ]
+        },
+        "equipment": {
+          "position": [
+            99,
+            141
+          ],
+          "size": [
+            121,
+            116
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          174,
+          210
+        ],
+        "body": [
+          167,
+          242
+        ],
+        "hair": [
+          174,
+          210
+        ],
+        "cloth": [
+          167,
+          242
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            150,
+            227
+          ],
+          "arm-right": [
+            186,
+            217
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            143,
+            242
+          ],
+          "arm-right": [
+            199,
+            218
+          ]
+        },
+        "weapon_arm": "arm-right",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.024774672564337887,
+        "complete_hidden_joints": true
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "dungeon-room",
   "name": "기본 던전",
   "number": 1,
-  "file": "asset/map/dungeon-room.png",
+  "file": "asset/map/stage/main/dungeon-room.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -3776,7 +3776,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "legacy theme rebuilt on the standard grid"
 }

@@ -2,7 +2,7 @@
   "id": "royal-treasury",
   "name": "왕실 보물고",
   "number": 17,
-  "file": "asset/map/royal-treasury.png",
+  "file": "asset/map/stage/main/royal-treasury.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -352,7 +352,7 @@
         64
       ],
       "prop": "보물 상자",
-      "prop_file": "asset/map/tiles/themes/royal-treasury/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-0.png"
     },
     {
       "id": "7,0",
@@ -1220,7 +1220,7 @@
         64
       ],
       "hazard": "압력 함정",
-      "hazard_file": "asset/map/tiles/themes/royal-treasury/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/royal-treasury/hazard.png"
     },
     {
       "id": "5,2",
@@ -1265,7 +1265,7 @@
         64
       ],
       "prop": "금괴 받침대",
-      "prop_file": "asset/map/tiles/themes/royal-treasury/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-1.png"
     },
     {
       "id": "6,2",
@@ -1310,7 +1310,7 @@
         64
       ],
       "hazard": "압력 함정",
-      "hazard_file": "asset/map/tiles/themes/royal-treasury/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/royal-treasury/hazard.png"
     },
     {
       "id": "7,2",
@@ -1711,7 +1711,7 @@
         64
       ],
       "prop": "금고",
-      "prop_file": "asset/map/tiles/themes/royal-treasury/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-2.png"
     },
     {
       "id": "5,3",
@@ -1756,7 +1756,7 @@
         64
       ],
       "prop": "금고",
-      "prop_file": "asset/map/tiles/themes/royal-treasury/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-2.png"
     },
     {
       "id": "6,3",
@@ -1801,7 +1801,7 @@
         64
       ],
       "prop": "금괴 받침대",
-      "prop_file": "asset/map/tiles/themes/royal-treasury/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-1.png"
     },
     {
       "id": "7,3",
@@ -2104,7 +2104,7 @@
         64
       ],
       "prop": "금고",
-      "prop_file": "asset/map/tiles/themes/royal-treasury/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-2.png"
     },
     {
       "id": "3,4",
@@ -2192,7 +2192,7 @@
         64
       ],
       "hazard": "압력 함정",
-      "hazard_file": "asset/map/tiles/themes/royal-treasury/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/royal-treasury/hazard.png"
     },
     {
       "id": "5,4",
@@ -2237,7 +2237,7 @@
         64
       ],
       "prop": "보물 상자",
-      "prop_file": "asset/map/tiles/themes/royal-treasury/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-0.png"
     },
     {
       "id": "6,4",
@@ -2282,7 +2282,7 @@
         64
       ],
       "hazard": "압력 함정",
-      "hazard_file": "asset/map/tiles/themes/royal-treasury/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/royal-treasury/hazard.png"
     },
     {
       "id": "7,4",
@@ -3242,7 +3242,7 @@
         64
       ],
       "prop": "금괴 받침대",
-      "prop_file": "asset/map/tiles/themes/royal-treasury/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-1.png"
     },
     {
       "id": "7,6",
@@ -3828,7 +3828,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "new theme"
 }

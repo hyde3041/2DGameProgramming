@@ -2,7 +2,7 @@
   "id": "ancient-temple",
   "name": "고대 신전",
   "number": 13,
-  "file": "asset/map/ancient-temple.png",
+  "file": "asset/map/stage/main/ancient-temple.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -223,7 +223,7 @@
         64
       ],
       "hazard": "봉인 균열",
-      "hazard_file": "asset/map/tiles/themes/ancient-temple/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/ancient-temple/hazard.png"
     },
     {
       "id": "4,0",
@@ -268,7 +268,7 @@
         64
       ],
       "prop": "신전 기둥",
-      "prop_file": "asset/map/tiles/themes/ancient-temple/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-0.png"
     },
     {
       "id": "5,0",
@@ -313,7 +313,7 @@
         64
       ],
       "hazard": "봉인 균열",
-      "hazard_file": "asset/map/tiles/themes/ancient-temple/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/ancient-temple/hazard.png"
     },
     {
       "id": "6,0",
@@ -757,7 +757,7 @@
         64
       ],
       "prop": "기하학 석상",
-      "prop_file": "asset/map/tiles/themes/ancient-temple/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-1.png"
     },
     {
       "id": "5,1",
@@ -1275,7 +1275,7 @@
         64
       ],
       "prop": "부서진 제단",
-      "prop_file": "asset/map/tiles/themes/ancient-temple/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-2.png"
     },
     {
       "id": "6,2",
@@ -1756,7 +1756,7 @@
         64
       ],
       "prop": "기하학 석상",
-      "prop_file": "asset/map/tiles/themes/ancient-temple/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-1.png"
     },
     {
       "id": "6,3",
@@ -1887,7 +1887,7 @@
         64
       ],
       "prop": "기하학 석상",
-      "prop_file": "asset/map/tiles/themes/ancient-temple/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-1.png"
     },
     {
       "id": "9,3",
@@ -1932,7 +1932,7 @@
         64
       ],
       "prop": "부서진 제단",
-      "prop_file": "asset/map/tiles/themes/ancient-temple/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-2.png"
     },
     {
       "id": "10,3",
@@ -2585,7 +2585,7 @@
         64
       ],
       "prop": "신전 기둥",
-      "prop_file": "asset/map/tiles/themes/ancient-temple/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-0.png"
     },
     {
       "id": "3,5",
@@ -3060,7 +3060,7 @@
         64
       ],
       "hazard": "봉인 균열",
-      "hazard_file": "asset/map/tiles/themes/ancient-temple/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/ancient-temple/hazard.png"
     },
     {
       "id": "3,6",
@@ -3191,7 +3191,7 @@
         64
       ],
       "hazard": "봉인 균열",
-      "hazard_file": "asset/map/tiles/themes/ancient-temple/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/ancient-temple/hazard.png"
     },
     {
       "id": "6,6",
@@ -3279,7 +3279,7 @@
         64
       ],
       "prop": "기하학 석상",
-      "prop_file": "asset/map/tiles/themes/ancient-temple/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-1.png"
     },
     {
       "id": "8,6",
@@ -3880,7 +3880,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "new theme"
 }

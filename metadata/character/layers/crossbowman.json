@@ -1,0 +1,588 @@
+{
+  "version": 3,
+  "id": "crossbowman",
+  "name": "석궁병",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "workflow": "original reference-aligned visible surfaces with redrawn hidden joints; rigid animation",
+  "original_design_unchanged": true,
+  "alignment": "metadata/character/layers/reference-alignment.json",
+  "redrawn_atlas": "asset/character/icon/layers/crossbowman/layer-atlas-redrawn.png",
+  "prompt": "metadata/character/layers/redraw-prompts/crossbowman.txt",
+  "animation_applied": true,
+  "views": [
+    {
+      "direction": "front",
+      "source": "asset/character/icon/layers/crossbowman/front/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/crossbowman/front/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/crossbowman/front/aligned/legs.png",
+        "body": "asset/character/icon/layers/crossbowman/front/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/crossbowman/front/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/crossbowman/front/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/crossbowman/front/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/crossbowman/front/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/crossbowman/front/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/crossbowman/front/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/crossbowman/front/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/crossbowman/front/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/crossbowman/front/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/crossbowman/front/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/crossbowman/front/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/crossbowman/front/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/crossbowman/front/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/crossbowman/front/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/crossbowman/front/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/crossbowman/front/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/crossbowman/front/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/crossbowman/front/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/crossbowman/front/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/crossbowman/front/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/crossbowman/front/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/crossbowman/front/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/crossbowman/front/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/crossbowman/front/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/crossbowman/front/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/crossbowman/front/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            123,
+            244
+          ],
+          "size": [
+            71,
+            45
+          ]
+        },
+        "body": {
+          "position": [
+            133,
+            205
+          ],
+          "size": [
+            67,
+            65
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            163,
+            217
+          ],
+          "size": [
+            47,
+            71
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ]
+        },
+        "head": {
+          "position": [
+            114,
+            128
+          ],
+          "size": [
+            95,
+            83
+          ]
+        },
+        "arm-left": {
+          "position": [
+            113,
+            207
+          ],
+          "size": [
+            43,
+            48
+          ]
+        },
+        "arm-right": {
+          "position": [
+            168,
+            224
+          ],
+          "size": [
+            29,
+            39
+          ]
+        },
+        "equipment": {
+          "position": [
+            114,
+            206
+          ],
+          "size": [
+            96,
+            73
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          170,
+          213
+        ],
+        "body": [
+          163,
+          241
+        ],
+        "hair": [
+          170,
+          213
+        ],
+        "cloth": [
+          163,
+          241
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            144,
+            220
+          ],
+          "arm-right": [
+            182,
+            226
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            152,
+            242
+          ],
+          "arm-right": [
+            190,
+            260
+          ]
+        },
+        "weapon_arm": "arm-left",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.02671805108762173,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "back",
+      "source": "asset/character/icon/layers/crossbowman/back/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/crossbowman/back/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/crossbowman/back/aligned/legs.png",
+        "body": "asset/character/icon/layers/crossbowman/back/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/crossbowman/back/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/crossbowman/back/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/crossbowman/back/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/crossbowman/back/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/crossbowman/back/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/crossbowman/back/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/crossbowman/back/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/crossbowman/back/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/crossbowman/back/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/crossbowman/back/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/crossbowman/back/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/crossbowman/back/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/crossbowman/back/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/crossbowman/back/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/crossbowman/back/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/crossbowman/back/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/crossbowman/back/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/crossbowman/back/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/crossbowman/back/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/crossbowman/back/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/crossbowman/back/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/crossbowman/back/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/crossbowman/back/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/crossbowman/back/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/crossbowman/back/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/crossbowman/back/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            125,
+            248
+          ],
+          "size": [
+            70,
+            40
+          ]
+        },
+        "body": {
+          "position": [
+            130,
+            199
+          ],
+          "size": [
+            68,
+            71
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            97,
+            211
+          ],
+          "size": [
+            102,
+            64
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ]
+        },
+        "head": {
+          "position": [
+            111,
+            129
+          ],
+          "size": [
+            93,
+            77
+          ]
+        },
+        "arm-left": {
+          "position": [
+            138,
+            222
+          ],
+          "size": [
+            7,
+            18
+          ]
+        },
+        "arm-right": {
+          "position": [
+            173,
+            214
+          ],
+          "size": [
+            25,
+            34
+          ]
+        },
+        "equipment": {
+          "position": [
+            110,
+            177
+          ],
+          "size": [
+            51,
+            91
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          164,
+          211
+        ],
+        "body": [
+          163,
+          243
+        ],
+        "hair": [
+          164,
+          211
+        ],
+        "cloth": [
+          163,
+          243
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            143,
+            224
+          ],
+          "arm-right": [
+            181,
+            221
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            141,
+            238
+          ],
+          "arm-right": [
+            190,
+            236
+          ]
+        },
+        "weapon_arm": "arm-left",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.027774251302082414,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "side",
+      "source": "asset/character/icon/layers/crossbowman/side/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/crossbowman/side/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/crossbowman/side/aligned/legs.png",
+        "body": "asset/character/icon/layers/crossbowman/side/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/crossbowman/side/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/crossbowman/side/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/crossbowman/side/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/crossbowman/side/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/crossbowman/side/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/crossbowman/side/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/crossbowman/side/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/crossbowman/side/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/crossbowman/side/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/crossbowman/side/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/crossbowman/side/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/crossbowman/side/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/crossbowman/side/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/crossbowman/side/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/crossbowman/side/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/crossbowman/side/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/crossbowman/side/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/crossbowman/side/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/crossbowman/side/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/crossbowman/side/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/crossbowman/side/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/crossbowman/side/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/crossbowman/side/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/crossbowman/side/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/crossbowman/side/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/crossbowman/side/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            124,
+            243
+          ],
+          "size": [
+            71,
+            45
+          ]
+        },
+        "body": {
+          "position": [
+            138,
+            204
+          ],
+          "size": [
+            65,
+            61
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            99,
+            204
+          ],
+          "size": [
+            58,
+            84
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ]
+        },
+        "head": {
+          "position": [
+            114,
+            128
+          ],
+          "size": [
+            94,
+            83
+          ]
+        },
+        "arm-left": {
+          "position": [
+            142,
+            210
+          ],
+          "size": [
+            36,
+            33
+          ]
+        },
+        "arm-right": {
+          "position": [
+            177,
+            225
+          ],
+          "size": [
+            43,
+            28
+          ]
+        },
+        "equipment": {
+          "position": [
+            113,
+            169
+          ],
+          "size": [
+            109,
+            89
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          177,
+          214
+        ],
+        "body": [
+          170,
+          241
+        ],
+        "hair": [
+          177,
+          214
+        ],
+        "cloth": [
+          170,
+          241
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            153,
+            220
+          ],
+          "arm-right": [
+            183,
+            225
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            174,
+            240
+          ],
+          "arm-right": [
+            215,
+            250
+          ]
+        },
+        "weapon_arm": "arm-left",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.02016758578431329,
+        "complete_hidden_joints": true
+      }
+    }
+  ]
+}

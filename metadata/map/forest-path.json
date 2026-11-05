@@ -2,7 +2,7 @@
   "id": "forest-path",
   "name": "숲길",
   "number": 2,
-  "file": "asset/map/forest-path.png",
+  "file": "asset/map/stage/main/forest-path.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -266,7 +266,7 @@
         64
       ],
       "hazard": "가시덤불",
-      "hazard_file": "asset/map/tiles/themes/forest-kit/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/forest-kit/hazard.png"
     },
     {
       "id": "5,0",
@@ -747,7 +747,7 @@
         64
       ],
       "hazard": "가시덤불",
-      "hazard_file": "asset/map/tiles/themes/forest-kit/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/forest-kit/hazard.png"
     },
     {
       "id": "5,1",
@@ -1228,7 +1228,7 @@
         64
       ],
       "hazard": "가시덤불",
-      "hazard_file": "asset/map/tiles/themes/forest-kit/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/forest-kit/hazard.png"
     },
     {
       "id": "5,2",
@@ -1580,7 +1580,7 @@
         64
       ],
       "prop": "숲 나무",
-      "prop_file": "asset/map/tiles/themes/forest-kit/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-0.png"
     },
     {
       "id": "2,3",
@@ -1625,7 +1625,7 @@
         64
       ],
       "prop": "이끼 바위",
-      "prop_file": "asset/map/tiles/themes/forest-kit/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-1.png"
     },
     {
       "id": "3,3",
@@ -1799,7 +1799,7 @@
         64
       ],
       "prop": "쓰러진 통나무",
-      "prop_file": "asset/map/tiles/themes/forest-kit/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-2.png"
     },
     {
       "id": "7,3",
@@ -2059,7 +2059,7 @@
         64
       ],
       "prop": "숲 나무",
-      "prop_file": "asset/map/tiles/themes/forest-kit/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-0.png"
     },
     {
       "id": "2,4",
@@ -2276,7 +2276,7 @@
         64
       ],
       "hazard": "가시덤불",
-      "hazard_file": "asset/map/tiles/themes/forest-kit/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/forest-kit/hazard.png"
     },
     {
       "id": "7,4",
@@ -2407,7 +2407,7 @@
         64
       ],
       "prop": "이끼 바위",
-      "prop_file": "asset/map/tiles/themes/forest-kit/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-1.png"
     },
     {
       "id": "10,4",
@@ -2587,7 +2587,7 @@
         64
       ],
       "prop": "쓰러진 통나무",
-      "prop_file": "asset/map/tiles/themes/forest-kit/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-2.png"
     },
     {
       "id": "3,5",
@@ -2761,7 +2761,7 @@
         64
       ],
       "hazard": "가시덤불",
-      "hazard_file": "asset/map/tiles/themes/forest-kit/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/forest-kit/hazard.png"
     },
     {
       "id": "7,5",
@@ -3113,7 +3113,7 @@
         64
       ],
       "prop": "숲 나무",
-      "prop_file": "asset/map/tiles/themes/forest-kit/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-0.png"
     },
     {
       "id": "4,6",
@@ -3158,7 +3158,7 @@
         64
       ],
       "prop": "이끼 바위",
-      "prop_file": "asset/map/tiles/themes/forest-kit/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-1.png"
     },
     {
       "id": "5,6",
@@ -3246,7 +3246,7 @@
         64
       ],
       "hazard": "가시덤불",
-      "hazard_file": "asset/map/tiles/themes/forest-kit/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/forest-kit/hazard.png"
     },
     {
       "id": "7,6",
@@ -3860,7 +3860,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "legacy theme rebuilt on the standard grid"
 }

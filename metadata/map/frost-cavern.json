@@ -2,7 +2,7 @@
   "id": "frost-cavern",
   "name": "얼음 동굴",
   "number": 11,
-  "file": "asset/map/frost-cavern.png",
+  "file": "asset/map/stage/main/frost-cavern.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -180,7 +180,7 @@
         64
       ],
       "prop": "얼음 결정",
-      "prop_file": "asset/map/tiles/themes/frost-cavern/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/frost-cavern/prop-0.png"
     },
     {
       "id": "3,0",
@@ -225,7 +225,7 @@
         64
       ],
       "hazard": "얼음 균열",
-      "hazard_file": "asset/map/tiles/themes/frost-cavern/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
     },
     {
       "id": "4,0",
@@ -399,7 +399,7 @@
         64
       ],
       "hazard": "얼음 균열",
-      "hazard_file": "asset/map/tiles/themes/frost-cavern/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
     },
     {
       "id": "8,0",
@@ -880,7 +880,7 @@
         64
       ],
       "hazard": "얼음 균열",
-      "hazard_file": "asset/map/tiles/themes/frost-cavern/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
     },
     {
       "id": "8,1",
@@ -1189,7 +1189,7 @@
         64
       ],
       "hazard": "얼음 균열",
-      "hazard_file": "asset/map/tiles/themes/frost-cavern/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
     },
     {
       "id": "4,2",
@@ -1363,7 +1363,7 @@
         64
       ],
       "prop": "서리 바위",
-      "prop_file": "asset/map/tiles/themes/frost-cavern/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/frost-cavern/prop-1.png"
     },
     {
       "id": "8,2",
@@ -1672,7 +1672,7 @@
         64
       ],
       "hazard": "얼음 균열",
-      "hazard_file": "asset/map/tiles/themes/frost-cavern/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
     },
     {
       "id": "4,3",
@@ -1846,7 +1846,7 @@
         64
       ],
       "hazard": "얼음 균열",
-      "hazard_file": "asset/map/tiles/themes/frost-cavern/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
     },
     {
       "id": "8,3",
@@ -1934,7 +1934,7 @@
         64
       ],
       "prop": "얼어붙은 기둥",
-      "prop_file": "asset/map/tiles/themes/frost-cavern/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/frost-cavern/prop-2.png"
     },
     {
       "id": "10,3",
@@ -2323,7 +2323,7 @@
         64
       ],
       "hazard": "얼음 균열",
-      "hazard_file": "asset/map/tiles/themes/frost-cavern/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
     },
     {
       "id": "8,4",
@@ -2589,7 +2589,7 @@
         64
       ],
       "prop": "얼음 결정",
-      "prop_file": "asset/map/tiles/themes/frost-cavern/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/frost-cavern/prop-0.png"
     },
     {
       "id": "3,5",
@@ -2634,7 +2634,7 @@
         64
       ],
       "hazard": "얼음 균열",
-      "hazard_file": "asset/map/tiles/themes/frost-cavern/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
     },
     {
       "id": "4,5",
@@ -3115,7 +3115,7 @@
         64
       ],
       "hazard": "얼음 균열",
-      "hazard_file": "asset/map/tiles/themes/frost-cavern/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
     },
     {
       "id": "4,6",
@@ -3160,7 +3160,7 @@
         64
       ],
       "prop": "서리 바위",
-      "prop_file": "asset/map/tiles/themes/frost-cavern/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/frost-cavern/prop-1.png"
     },
     {
       "id": "5,6",
@@ -3291,7 +3291,7 @@
         64
       ],
       "hazard": "얼음 균열",
-      "hazard_file": "asset/map/tiles/themes/frost-cavern/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
     },
     {
       "id": "8,6",
@@ -3336,7 +3336,7 @@
         64
       ],
       "prop": "얼어붙은 기둥",
-      "prop_file": "asset/map/tiles/themes/frost-cavern/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/frost-cavern/prop-2.png"
     },
     {
       "id": "9,6",
@@ -3920,7 +3920,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "new theme"
 }

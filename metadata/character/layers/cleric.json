@@ -1,0 +1,588 @@
+{
+  "version": 3,
+  "id": "cleric",
+  "name": "성직자",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "workflow": "original reference-aligned visible surfaces with redrawn hidden joints; rigid animation",
+  "original_design_unchanged": true,
+  "alignment": "metadata/character/layers/reference-alignment.json",
+  "redrawn_atlas": "asset/character/icon/layers/cleric/layer-atlas-redrawn.png",
+  "prompt": "metadata/character/layers/redraw-prompts/cleric.txt",
+  "animation_applied": true,
+  "views": [
+    {
+      "direction": "front",
+      "source": "asset/character/icon/layers/cleric/front/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/cleric/front/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/cleric/front/aligned/legs.png",
+        "body": "asset/character/icon/layers/cleric/front/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/cleric/front/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/cleric/front/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/cleric/front/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/cleric/front/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/cleric/front/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/cleric/front/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/cleric/front/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/cleric/front/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/cleric/front/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/cleric/front/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/cleric/front/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/cleric/front/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/cleric/front/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/cleric/front/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/cleric/front/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/cleric/front/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/cleric/front/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/cleric/front/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/cleric/front/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/cleric/front/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/cleric/front/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/cleric/front/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/cleric/front/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/cleric/front/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/cleric/front/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/cleric/front/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            151,
+            266
+          ],
+          "size": [
+            30,
+            23
+          ]
+        },
+        "body": {
+          "position": [
+            134,
+            196
+          ],
+          "size": [
+            67,
+            74
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            105,
+            220
+          ],
+          "size": [
+            115,
+            65
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            182,
+            183
+          ],
+          "size": [
+            48,
+            81
+          ]
+        },
+        "head": {
+          "position": [
+            129,
+            126
+          ],
+          "size": [
+            79,
+            79
+          ]
+        },
+        "arm-left": {
+          "position": [
+            125,
+            199
+          ],
+          "size": [
+            24,
+            27
+          ]
+        },
+        "arm-right": {
+          "position": [
+            178,
+            214
+          ],
+          "size": [
+            30,
+            36
+          ]
+        },
+        "equipment": {
+          "position": [
+            99,
+            125
+          ],
+          "size": [
+            78,
+            164
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          166,
+          202
+        ],
+        "body": [
+          163,
+          237
+        ],
+        "hair": [
+          166,
+          202
+        ],
+        "cloth": [
+          163,
+          237
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            145,
+            211
+          ],
+          "arm-right": [
+            185,
+            217
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            127,
+            205
+          ],
+          "arm-right": [
+            190,
+            246
+          ]
+        },
+        "weapon_arm": "arm-left",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.04540393305759883,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "back",
+      "source": "asset/character/icon/layers/cleric/back/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/cleric/back/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/cleric/back/aligned/legs.png",
+        "body": "asset/character/icon/layers/cleric/back/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/cleric/back/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/cleric/back/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/cleric/back/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/cleric/back/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/cleric/back/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/cleric/back/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/cleric/back/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/cleric/back/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/cleric/back/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/cleric/back/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/cleric/back/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/cleric/back/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/cleric/back/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/cleric/back/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/cleric/back/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/cleric/back/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/cleric/back/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/cleric/back/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/cleric/back/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/cleric/back/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/cleric/back/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/cleric/back/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/cleric/back/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/cleric/back/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/cleric/back/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/cleric/back/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            136,
+            265
+          ],
+          "size": [
+            46,
+            23
+          ]
+        },
+        "body": {
+          "position": [
+            126,
+            196
+          ],
+          "size": [
+            74,
+            74
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            91,
+            210
+          ],
+          "size": [
+            111,
+            74
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            95,
+            189
+          ],
+          "size": [
+            78,
+            78
+          ]
+        },
+        "head": {
+          "position": [
+            110,
+            130
+          ],
+          "size": [
+            85,
+            74
+          ]
+        },
+        "arm-left": {
+          "position": [
+            126,
+            213
+          ],
+          "size": [
+            17,
+            36
+          ]
+        },
+        "arm-right": {
+          "position": [
+            177,
+            200
+          ],
+          "size": [
+            23,
+            27
+          ]
+        },
+        "equipment": {
+          "position": [
+            111,
+            129
+          ],
+          "size": [
+            110,
+            158
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          163,
+          202
+        ],
+        "body": [
+          161,
+          239
+        ],
+        "hair": [
+          163,
+          202
+        ],
+        "cloth": [
+          161,
+          239
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            139,
+            217
+          ],
+          "arm-right": [
+            181,
+            210
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            132,
+            244
+          ],
+          "arm-right": [
+            202,
+            205
+          ]
+        },
+        "weapon_arm": "arm-right",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.0475986040900772,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "side",
+      "source": "asset/character/icon/layers/cleric/side/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/cleric/side/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/cleric/side/aligned/legs.png",
+        "body": "asset/character/icon/layers/cleric/side/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/cleric/side/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/cleric/side/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/cleric/side/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/cleric/side/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/cleric/side/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/cleric/side/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/cleric/side/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/cleric/side/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/cleric/side/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/cleric/side/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/cleric/side/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/cleric/side/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/cleric/side/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/cleric/side/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/cleric/side/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/cleric/side/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/cleric/side/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/cleric/side/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/cleric/side/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/cleric/side/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/cleric/side/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/cleric/side/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/cleric/side/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/cleric/side/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/cleric/side/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/cleric/side/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            138,
+            270
+          ],
+          "size": [
+            49,
+            19
+          ]
+        },
+        "body": {
+          "position": [
+            139,
+            200
+          ],
+          "size": [
+            55,
+            73
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            91,
+            211
+          ],
+          "size": [
+            105,
+            76
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            94,
+            190
+          ],
+          "size": [
+            74,
+            88
+          ]
+        },
+        "head": {
+          "position": [
+            107,
+            134
+          ],
+          "size": [
+            92,
+            73
+          ]
+        },
+        "arm-left": {
+          "position": [
+            154,
+            216
+          ],
+          "size": [
+            29,
+            27
+          ]
+        },
+        "arm-right": {
+          "position": [
+            163,
+            204
+          ],
+          "size": [
+            34,
+            41
+          ]
+        },
+        "equipment": {
+          "position": [
+            113,
+            137
+          ],
+          "size": [
+            105,
+            149
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          172,
+          206
+        ],
+        "body": [
+          164,
+          240
+        ],
+        "hair": [
+          172,
+          206
+        ],
+        "cloth": [
+          164,
+          240
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            159,
+            219
+          ],
+          "arm-right": [
+            179,
+            215
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            179,
+            240
+          ],
+          "arm-right": [
+            204,
+            215
+          ]
+        },
+        "weapon_arm": "arm-right",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.048885464537379617,
+        "complete_hidden_joints": true
+      }
+    }
+  ]
+}

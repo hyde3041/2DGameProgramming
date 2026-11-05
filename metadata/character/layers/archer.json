@@ -1,0 +1,588 @@
+{
+  "version": 3,
+  "id": "archer",
+  "name": "궁수",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "workflow": "original reference-aligned visible surfaces with redrawn hidden joints; rigid animation",
+  "original_design_unchanged": true,
+  "alignment": "metadata/character/layers/reference-alignment.json",
+  "redrawn_atlas": "asset/character/icon/layers/archer/layer-atlas-redrawn.png",
+  "prompt": "metadata/character/layers/redraw-prompts/archer.txt",
+  "animation_applied": true,
+  "views": [
+    {
+      "direction": "front",
+      "source": "asset/character/icon/layers/archer/front/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/archer/front/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/archer/front/aligned/legs.png",
+        "body": "asset/character/icon/layers/archer/front/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/archer/front/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/archer/front/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/archer/front/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/archer/front/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/archer/front/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/archer/front/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/archer/front/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/archer/front/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/archer/front/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/archer/front/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/archer/front/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/archer/front/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/archer/front/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/archer/front/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/archer/front/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/archer/front/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/archer/front/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/archer/front/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/archer/front/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/archer/front/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/archer/front/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/archer/front/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/archer/front/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/archer/front/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/archer/front/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/archer/front/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            132,
+            248
+          ],
+          "size": [
+            59,
+            41
+          ]
+        },
+        "body": {
+          "position": [
+            131,
+            207
+          ],
+          "size": [
+            69,
+            61
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            117,
+            231
+          ],
+          "size": [
+            60,
+            46
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            90,
+            128
+          ],
+          "size": [
+            72,
+            131
+          ]
+        },
+        "head": {
+          "position": [
+            134,
+            139
+          ],
+          "size": [
+            77,
+            89
+          ]
+        },
+        "arm-left": {
+          "position": [
+            133,
+            219
+          ],
+          "size": [
+            27,
+            23
+          ]
+        },
+        "arm-right": {
+          "position": [
+            165,
+            223
+          ],
+          "size": [
+            35,
+            33
+          ]
+        },
+        "equipment": {
+          "position": [
+            126,
+            187
+          ],
+          "size": [
+            101,
+            90
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          169,
+          213
+        ],
+        "body": [
+          162,
+          242
+        ],
+        "hair": [
+          145,
+          155
+        ],
+        "cloth": [
+          162,
+          242
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            140,
+            222
+          ],
+          "arm-right": [
+            176,
+            226
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            150,
+            238
+          ],
+          "arm-right": [
+            194,
+            248
+          ]
+        },
+        "weapon_arm": "arm-right",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.031553280101102386,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "back",
+      "source": "asset/character/icon/layers/archer/back/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/archer/back/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/archer/back/aligned/legs.png",
+        "body": "asset/character/icon/layers/archer/back/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/archer/back/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/archer/back/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/archer/back/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/archer/back/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/archer/back/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/archer/back/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/archer/back/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/archer/back/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/archer/back/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/archer/back/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/archer/back/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/archer/back/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/archer/back/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/archer/back/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/archer/back/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/archer/back/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/archer/back/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/archer/back/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/archer/back/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/archer/back/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/archer/back/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/archer/back/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/archer/back/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/archer/back/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/archer/back/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/archer/back/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            132,
+            265
+          ],
+          "size": [
+            56,
+            23
+          ]
+        },
+        "body": {
+          "position": [
+            126,
+            205
+          ],
+          "size": [
+            70,
+            62
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            126,
+            239
+          ],
+          "size": [
+            76,
+            39
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            164,
+            128
+          ],
+          "size": [
+            70,
+            131
+          ]
+        },
+        "head": {
+          "position": [
+            116,
+            136
+          ],
+          "size": [
+            77,
+            87
+          ]
+        },
+        "arm-left": {
+          "position": [
+            120,
+            220
+          ],
+          "size": [
+            29,
+            36
+          ]
+        },
+        "arm-right": {
+          "position": [
+            174,
+            226
+          ],
+          "size": [
+            18,
+            25
+          ]
+        },
+        "equipment": {
+          "position": [
+            101,
+            135
+          ],
+          "size": [
+            89,
+            131
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          155,
+          211
+        ],
+        "body": [
+          160,
+          241
+        ],
+        "hair": [
+          174,
+          154
+        ],
+        "cloth": [
+          160,
+          241
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            139,
+            223
+          ],
+          "arm-right": [
+            180,
+            228
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            125,
+            253
+          ],
+          "arm-right": [
+            184,
+            244
+          ]
+        },
+        "weapon_arm": "arm-left",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.03286673751531762,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "side",
+      "source": "asset/character/icon/layers/archer/side/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/archer/side/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/archer/side/aligned/legs.png",
+        "body": "asset/character/icon/layers/archer/side/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/archer/side/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/archer/side/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/archer/side/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/archer/side/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/archer/side/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/archer/side/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/archer/side/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/archer/side/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/archer/side/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/archer/side/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/archer/side/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/archer/side/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/archer/side/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/archer/side/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/archer/side/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/archer/side/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/archer/side/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/archer/side/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/archer/side/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/archer/side/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/archer/side/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/archer/side/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/archer/side/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/archer/side/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/archer/side/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/archer/side/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            140,
+            248
+          ],
+          "size": [
+            44,
+            40
+          ]
+        },
+        "body": {
+          "position": [
+            134,
+            207
+          ],
+          "size": [
+            64,
+            61
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            123,
+            235
+          ],
+          "size": [
+            49,
+            42
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            83,
+            129
+          ],
+          "size": [
+            74,
+            133
+          ]
+        },
+        "head": {
+          "position": [
+            134,
+            140
+          ],
+          "size": [
+            68,
+            84
+          ]
+        },
+        "arm-left": {
+          "position": [
+            132,
+            216
+          ],
+          "size": [
+            32,
+            27
+          ]
+        },
+        "arm-right": {
+          "position": [
+            166,
+            226
+          ],
+          "size": [
+            31,
+            32
+          ]
+        },
+        "equipment": {
+          "position": [
+            125,
+            179
+          ],
+          "size": [
+            92,
+            97
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          175,
+          213
+        ],
+        "body": [
+          162,
+          241
+        ],
+        "hair": [
+          141,
+          155
+        ],
+        "cloth": [
+          162,
+          241
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            145,
+            223
+          ],
+          "arm-right": [
+            178,
+            228
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            157,
+            239
+          ],
+          "arm-right": [
+            192,
+            249
+          ]
+        },
+        "weapon_arm": "arm-right",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.02741766237744975,
+        "complete_hidden_joints": true
+      }
+    }
+  ]
+}

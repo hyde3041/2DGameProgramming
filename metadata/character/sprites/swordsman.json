@@ -2,7 +2,7 @@
   "id": "swordsman",
   "name": "검사",
   "action_label": "베기",
-  "file": "asset/character/sprites/atlases/swordsman.png",
+  "file": "asset/character/icon/source/swordsman/sprite-sheet.png",
   "width": 1280,
   "height": 960,
   "cell_size": [
@@ -74,7 +74,7 @@
       "id": "front_idle",
       "direction": "front",
       "phase": "idle",
-      "file": "asset/character/sprites/frames/swordsman/front/idle.png",
+      "file": "asset/character/icon/source/swordsman/front/idle.png",
       "row": 0,
       "column": 0,
       "rect": [
@@ -99,7 +99,7 @@
       "id": "front_attack_01",
       "direction": "front",
       "phase": "attack_01",
-      "file": "asset/character/sprites/frames/swordsman/front/attack_01.png",
+      "file": "asset/character/icon/source/swordsman/front/attack_01.png",
       "row": 0,
       "column": 1,
       "rect": [
@@ -124,7 +124,7 @@
       "id": "front_attack_02",
       "direction": "front",
       "phase": "attack_02",
-      "file": "asset/character/sprites/frames/swordsman/front/attack_02.png",
+      "file": "asset/character/icon/source/swordsman/front/attack_02.png",
       "row": 0,
       "column": 2,
       "rect": [
@@ -149,7 +149,7 @@
       "id": "front_attack_03",
       "direction": "front",
       "phase": "attack_03",
-      "file": "asset/character/sprites/frames/swordsman/front/attack_03.png",
+      "file": "asset/character/icon/source/swordsman/front/attack_03.png",
       "row": 0,
       "column": 3,
       "rect": [
@@ -174,7 +174,7 @@
       "id": "back_idle",
       "direction": "back",
       "phase": "idle",
-      "file": "asset/character/sprites/frames/swordsman/back/idle.png",
+      "file": "asset/character/icon/source/swordsman/back/idle.png",
       "row": 1,
       "column": 0,
       "rect": [
@@ -200,7 +200,7 @@
       "id": "back_attack_01",
       "direction": "back",
       "phase": "attack_01",
-      "file": "asset/character/sprites/frames/swordsman/back/attack_01.png",
+      "file": "asset/character/icon/source/swordsman/back/attack_01.png",
       "row": 1,
       "column": 1,
       "rect": [
@@ -226,7 +226,7 @@
       "id": "back_attack_02",
       "direction": "back",
       "phase": "attack_02",
-      "file": "asset/character/sprites/frames/swordsman/back/attack_02.png",
+      "file": "asset/character/icon/source/swordsman/back/attack_02.png",
       "row": 1,
       "column": 2,
       "rect": [
@@ -252,7 +252,7 @@
       "id": "back_attack_03",
       "direction": "back",
       "phase": "attack_03",
-      "file": "asset/character/sprites/frames/swordsman/back/attack_03.png",
+      "file": "asset/character/icon/source/swordsman/back/attack_03.png",
       "row": 1,
       "column": 3,
       "rect": [
@@ -278,7 +278,7 @@
       "id": "right_idle",
       "direction": "right",
       "phase": "idle",
-      "file": "asset/character/sprites/frames/swordsman/right/idle.png",
+      "file": "asset/character/icon/source/swordsman/side/idle.png",
       "row": 2,
       "column": 0,
       "rect": [
@@ -303,7 +303,7 @@
       "id": "right_attack_01",
       "direction": "right",
       "phase": "attack_01",
-      "file": "asset/character/sprites/frames/swordsman/right/attack_01.png",
+      "file": "asset/character/icon/source/swordsman/side/attack_01.png",
       "row": 2,
       "column": 1,
       "rect": [
@@ -328,7 +328,7 @@
       "id": "right_attack_02",
       "direction": "right",
       "phase": "attack_02",
-      "file": "asset/character/sprites/frames/swordsman/right/attack_02.png",
+      "file": "asset/character/icon/source/swordsman/side/attack_02.png",
       "row": 2,
       "column": 2,
       "rect": [
@@ -353,7 +353,7 @@
       "id": "right_attack_03",
       "direction": "right",
       "phase": "attack_03",
-      "file": "asset/character/sprites/frames/swordsman/right/attack_03.png",
+      "file": "asset/character/icon/source/swordsman/side/attack_03.png",
       "row": 2,
       "column": 3,
       "rect": [
@@ -376,5 +376,199 @@
     }
   ],
   "back_source_scale": 0.291970802919708,
-  "revision": 2
+  "revision": 2,
+  "directional_attack_sheets": {
+    "front": {
+      "file": "asset/character/main/swordsman/front/attack-sheet.png",
+      "width": 960,
+      "height": 320,
+      "cell_size": [
+        320,
+        320
+      ],
+      "columns": 3,
+      "rows": 1,
+      "loop": false,
+      "return_to": "front_idle",
+      "duration_ms": 430,
+      "frames": [
+        {
+          "id": "front_attack_01",
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 160
+        },
+        {
+          "id": "front_attack_02",
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 90
+        },
+        {
+          "id": "front_attack_03",
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 180
+        }
+      ]
+    },
+    "back": {
+      "file": "asset/character/main/swordsman/back/attack-sheet.png",
+      "width": 960,
+      "height": 320,
+      "cell_size": [
+        320,
+        320
+      ],
+      "columns": 3,
+      "rows": 1,
+      "loop": false,
+      "return_to": "back_idle",
+      "duration_ms": 430,
+      "frames": [
+        {
+          "id": "back_attack_01",
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 160
+        },
+        {
+          "id": "back_attack_02",
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 90
+        },
+        {
+          "id": "back_attack_03",
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 180
+        }
+      ]
+    },
+    "right": {
+      "file": "asset/character/main/swordsman/side/attack-sheet.png",
+      "width": 960,
+      "height": 320,
+      "cell_size": [
+        320,
+        320
+      ],
+      "columns": 3,
+      "rows": 1,
+      "loop": false,
+      "return_to": "right_idle",
+      "duration_ms": 430,
+      "frames": [
+        {
+          "id": "right_attack_01",
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 160
+        },
+        {
+          "id": "right_attack_02",
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 90
+        },
+        {
+          "id": "right_attack_03",
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 180
+        }
+      ]
+    }
+  }
 }

@@ -17,7 +17,7 @@
   "dead_zone": 20,
   "direction_rule": "Select horizontal when abs(dx) >= abs(dy); otherwise vertical. Screen y increases downward; pico2d y increases upward.",
   "atlas": {
-    "file": "asset/character/direction/atlases/direction-selector.png",
+    "file": "asset/etc/direction/direction-selector.png",
     "size": [
       1280,
       256
@@ -33,7 +33,7 @@
     {
       "state": "idle",
       "label": "기본",
-      "png": "asset/character/direction/png/direction-idle.png",
+      "png": "asset/etc/direction/direction-idle.png",
       "size": [
         256,
         256
@@ -66,7 +66,7 @@
     {
       "state": "up",
       "label": "위쪽",
-      "png": "asset/character/direction/png/direction-up.png",
+      "png": "asset/etc/direction/direction-up.png",
       "size": [
         256,
         256
@@ -99,7 +99,7 @@
     {
       "state": "right",
       "label": "오른쪽",
-      "png": "asset/character/direction/png/direction-right.png",
+      "png": "asset/etc/direction/direction-right.png",
       "size": [
         256,
         256
@@ -132,7 +132,7 @@
     {
       "state": "down",
       "label": "아래쪽",
-      "png": "asset/character/direction/png/direction-down.png",
+      "png": "asset/etc/direction/direction-down.png",
       "size": [
         256,
         256
@@ -165,7 +165,7 @@
     {
       "state": "left",
       "label": "왼쪽",
-      "png": "asset/character/direction/png/direction-left.png",
+      "png": "asset/etc/direction/direction-left.png",
       "size": [
         256,
         256

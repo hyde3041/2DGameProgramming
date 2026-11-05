@@ -28,7 +28,7 @@
 | 전투 | 일반 스테이지 4개와 최종 보스전 1개 |
 | 몬스터와 맵 | 일반 몬스터 2종, 보스 1종, 전투 맵 3종 |
 
-현재는 **맵 출력부터 구현하는 단계**입니다. `main.py`에서 최신 던전 맵을 800×600 크기로 표시합니다. 캐릭터 배치, 전투와 보상 기능은 이후 개발할 예정이며, 제작한 이미지와 효과 설계 자료는 해당 기능의 구현 완료를 뜻하지 않습니다.
+현재는 **맵과 Idle 출력 단계**입니다. `main.py`에서 800×600 던전 맵과 궁수의 대기 모션을 표시합니다. `idle_sprite.py`가 실제 경과 시간으로 프레임을 갱신하고 `clip_draw()`로 출력합니다. 캐릭터 배치, 전투와 보상 기능은 이후 개발할 예정입니다.
 
 ## 실행 방법
 
@@ -39,35 +39,52 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-맵은 `asset/map/dungeon-room.png`를 사용하며, 파일 경로는 `main.py`의 위치를 기준으로 찾습니다.
+맵은 `asset/map/stage/main/dungeon-room.png`를 사용하며, 파일 경로는 `main.py`의 위치를 기준으로 찾습니다.
 
 ## 제작한 이미지
 
 ![캐릭터 디자인 시안](asset/character/character-overview.png)
 
-![던전 배경 시안](asset/map/dungeon-room.png)
+![던전 배경 시안](asset/map/stage/main/dungeon-room.png)
 
-- [캐릭터 8명](metadata/README.md#캐릭터): 정적 대기·공격 시트 8개와 개별 프레임 96장, 최신 대기 모션 시트 24개
-- 대기 모션은 방향별 48프레임·24fps·2초 반복이며, 정면·뒷면·오른쪽 옆면을 제공
+- [캐릭터 8명](metadata/README.md#캐릭터): 방향별 대기 시트 24개와 공격 시트 24개
+- 원본 통합 시트 8개와 개별 프레임 96장은 `asset/character/icon/source/`에 보관
+- 8명 모두 앞·뒤·옆 대기를 방향별 16프레임·16FPS·1초 반복으로 통일. 4열×4행의 1280×1280 시트, 프레임 320×320
+- 8명 모두 원본의 신체 비율과 위치로 복원. 보이는 원본과 가려진 연결부의 보완 그림은 `asset/character/icon/layers/<캐릭터>/<방향>/aligned/`에 보관
+- 8명 모두 몸통·팔·머리·머리카락·옷자락의 움직임에 시차를 적용. 팔은 어깨에 붙어 움직이고, 무기는 손을 따라가며 발은 고정. 재생 중 늘이기 없이 이동·회전만 사용
 - 배치 프로필 카드 8종, 스킬 프로필 카드 8종과 스킬 아이콘 16종, 상하좌우 배치 방향 선택 UI
 - [유물 아이콘과 효과 25종](metadata/README.md#아이템): 256×256 투명 PNG, 통합 시트와 [효과표](docs/유물효과.md)
 - [규격을 통일한 맵 20종](metadata/README.md#맵): 800×600·11×7칸 배경, 층별 좌표와 이동 경로, 도착 지점 2개
-- [한 칸 크기의 반투명 공격 범위 타일](asset/map/range-overlay.png): 64×64
+- [한 칸 크기의 반투명 공격 범위 타일](asset/map/stage/main/range-overlay.png): 64×64
+- [탐험 지도용 타일 5종](asset/map/field/icon/): 전투 방·기본 방·좌우 연결선·상하 연결선·빈 배경, 모두 64×64
 - [이미지와 데이터 규격](metadata/README.md)
 
 ## 폴더
 
 ```text
 main.py                    던전 맵 출력과 종료 처리
+idle_sprite.py             경과 시간 기반 Idle 재생, 방향과 발 기준점 유지
+tests/test_idle_sprite.py  재생 속도·반복·방향 전환·그리기 기준점 검증
 requirements.txt           실행에 필요한 Python 패키지
 asset/
-  character/               캐릭터, 대기·공격 동작, 배치·스킬 카드, 방향 선택 UI
+  character/
+    icon/                  원본 프레임·통합 시트와 캐릭터별 분리 원본
+    main/                  캐릭터별 idle·attack 시트, 스킬 아이콘과 프로필
   item/                    유물 아이콘 25종과 통합 시트
-  map/                     맵 20종, 지형·목표 지점, 범위 표시 타일
-metadata/                  캐릭터·아이템·맵 JSON 데이터 44개
+  etc/                     방향 선택 UI와 타이틀 그림
+  map/
+    field/                 탐험 지도와 화면 시안
+      icon/                64×64 탐험 지도 타일 5종
+    stage/
+      icon/                지형 타일과 목표 지점 오브젝트
+      main/                전투 맵 20종과 범위 표시 타일
+metadata/                  캐릭터·아이템·맵 JSON 데이터 63개
+tools/                     재작화 레이어 패킹 및 궁수 Idle 시트 생성 도구
 docs/                      발표 PPT, 상세 기획서 PPT, 대본
 ```
 
 JSON 파일은 [metadata 폴더](metadata/README.md)에 종류별로 모았습니다. JSON 안의 파일·폴더 경로는 프로젝트 루트를 기준으로 읽습니다.
+
+새 캐릭터는 처음부터 부위별 원본을 저장하고, 조립 및 움직임을 확인하는 제작 규칙을 [프로젝트 지침](AGENTS.md)에 기록했습니다.
 
 공격력, 회복량, 배치 비용, 스킬 재사용 시간과 유물 수치는 전투 구현 후 조정합니다. 6주 개발 계획은 개발 순서를 설명하는 상대 일정이며 실제 수업 일정에 맞춰 조정합니다.

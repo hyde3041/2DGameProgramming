@@ -1,0 +1,588 @@
+{
+  "version": 3,
+  "id": "shadow-thief",
+  "name": "그림자 도적",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "workflow": "original reference-aligned visible surfaces with redrawn hidden joints; rigid animation",
+  "original_design_unchanged": true,
+  "alignment": "metadata/character/layers/reference-alignment.json",
+  "redrawn_atlas": "asset/character/icon/layers/shadow-thief/layer-atlas-redrawn.png",
+  "prompt": "metadata/character/layers/redraw-prompts/shadow-thief.txt",
+  "animation_applied": true,
+  "views": [
+    {
+      "direction": "front",
+      "source": "asset/character/icon/layers/shadow-thief/front/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/shadow-thief/front/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/shadow-thief/front/aligned/legs.png",
+        "body": "asset/character/icon/layers/shadow-thief/front/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/shadow-thief/front/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/shadow-thief/front/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/shadow-thief/front/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/shadow-thief/front/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/shadow-thief/front/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/shadow-thief/front/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/shadow-thief/front/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/shadow-thief/front/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/shadow-thief/front/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/shadow-thief/front/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/shadow-thief/front/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/shadow-thief/front/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/shadow-thief/front/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/shadow-thief/front/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/shadow-thief/front/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/shadow-thief/front/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/shadow-thief/front/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/shadow-thief/front/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/shadow-thief/front/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/shadow-thief/front/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/shadow-thief/front/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/shadow-thief/front/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/shadow-thief/front/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/shadow-thief/front/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/shadow-thief/front/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/shadow-thief/front/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            117,
+            262
+          ],
+          "size": [
+            77,
+            27
+          ]
+        },
+        "body": {
+          "position": [
+            130,
+            206
+          ],
+          "size": [
+            71,
+            67
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            100,
+            231
+          ],
+          "size": [
+            96,
+            53
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ]
+        },
+        "head": {
+          "position": [
+            110,
+            128
+          ],
+          "size": [
+            108,
+            85
+          ]
+        },
+        "arm-left": {
+          "position": [
+            118,
+            213
+          ],
+          "size": [
+            32,
+            39
+          ]
+        },
+        "arm-right": {
+          "position": [
+            174,
+            224
+          ],
+          "size": [
+            20,
+            25
+          ]
+        },
+        "equipment": {
+          "position": [
+            117,
+            242
+          ],
+          "size": [
+            98,
+            33
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          169,
+          214
+        ],
+        "body": [
+          162,
+          240
+        ],
+        "hair": [
+          169,
+          214
+        ],
+        "cloth": [
+          162,
+          240
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            142,
+            226
+          ],
+          "arm-right": [
+            184,
+            226
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            134,
+            250
+          ],
+          "arm-right": [
+            192,
+            246
+          ]
+        },
+        "weapon_arm": "arm-right",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.02145550896139613,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "back",
+      "source": "asset/character/icon/layers/shadow-thief/back/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/shadow-thief/back/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/shadow-thief/back/aligned/legs.png",
+        "body": "asset/character/icon/layers/shadow-thief/back/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/shadow-thief/back/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/shadow-thief/back/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/shadow-thief/back/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/shadow-thief/back/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/shadow-thief/back/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/shadow-thief/back/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/shadow-thief/back/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/shadow-thief/back/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/shadow-thief/back/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/shadow-thief/back/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/shadow-thief/back/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/shadow-thief/back/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/shadow-thief/back/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/shadow-thief/back/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/shadow-thief/back/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/shadow-thief/back/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/shadow-thief/back/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/shadow-thief/back/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/shadow-thief/back/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/shadow-thief/back/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/shadow-thief/back/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/shadow-thief/back/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/shadow-thief/back/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/shadow-thief/back/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/shadow-thief/back/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/shadow-thief/back/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            128,
+            266
+          ],
+          "size": [
+            76,
+            23
+          ]
+        },
+        "body": {
+          "position": [
+            131,
+            198
+          ],
+          "size": [
+            74,
+            72
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            121,
+            219
+          ],
+          "size": [
+            108,
+            69
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ]
+        },
+        "head": {
+          "position": [
+            114,
+            128
+          ],
+          "size": [
+            102,
+            79
+          ]
+        },
+        "arm-left": {
+          "position": [
+            118,
+            215
+          ],
+          "size": [
+            33,
+            33
+          ]
+        },
+        "arm-right": {
+          "position": [
+            175,
+            215
+          ],
+          "size": [
+            27,
+            33
+          ]
+        },
+        "equipment": {
+          "position": [
+            105,
+            240
+          ],
+          "size": [
+            34,
+            24
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          166,
+          209
+        ],
+        "body": [
+          163,
+          239
+        ],
+        "hair": [
+          166,
+          209
+        ],
+        "cloth": [
+          163,
+          239
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            143,
+            224
+          ],
+          "arm-right": [
+            185,
+            223
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            132,
+            242
+          ],
+          "arm-right": [
+            192,
+            246
+          ]
+        },
+        "weapon_arm": "arm-left",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.022778885186886432,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "side",
+      "source": "asset/character/icon/layers/shadow-thief/side/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/shadow-thief/side/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/shadow-thief/side/aligned/legs.png",
+        "body": "asset/character/icon/layers/shadow-thief/side/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/shadow-thief/side/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/shadow-thief/side/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/shadow-thief/side/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/shadow-thief/side/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/shadow-thief/side/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/shadow-thief/side/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/shadow-thief/side/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/shadow-thief/side/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/shadow-thief/side/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/shadow-thief/side/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/shadow-thief/side/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/shadow-thief/side/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/shadow-thief/side/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/shadow-thief/side/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/shadow-thief/side/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/shadow-thief/side/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/shadow-thief/side/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/shadow-thief/side/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/shadow-thief/side/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/shadow-thief/side/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/shadow-thief/side/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/shadow-thief/side/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/shadow-thief/side/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/shadow-thief/side/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/shadow-thief/side/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/shadow-thief/side/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            130,
+            260
+          ],
+          "size": [
+            63,
+            29
+          ]
+        },
+        "body": {
+          "position": [
+            135,
+            205
+          ],
+          "size": [
+            70,
+            68
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            99,
+            208
+          ],
+          "size": [
+            94,
+            66
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ]
+        },
+        "head": {
+          "position": [
+            110,
+            129
+          ],
+          "size": [
+            100,
+            83
+          ]
+        },
+        "arm-left": {
+          "position": [
+            136,
+            219
+          ],
+          "size": [
+            28,
+            36
+          ]
+        },
+        "arm-right": {
+          "position": [
+            177,
+            229
+          ],
+          "size": [
+            17,
+            17
+          ]
+        },
+        "equipment": {
+          "position": [
+            103,
+            165
+          ],
+          "size": [
+            115,
+            102
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          178,
+          214
+        ],
+        "body": [
+          168,
+          241
+        ],
+        "hair": [
+          178,
+          214
+        ],
+        "cloth": [
+          168,
+          241
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            151,
+            229
+          ],
+          "arm-right": [
+            186,
+            223
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            144,
+            251
+          ],
+          "arm-right": [
+            193,
+            242
+          ]
+        },
+        "weapon_arm": "arm-right",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.02054470166972947,
+        "complete_hidden_joints": true
+      }
+    }
+  ]
+}

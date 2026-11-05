@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "description": "Landmarks measured on the original 320px PNG, top-left origin. Visible artwork remains at its original coordinates. Redrawn art completes hidden joints only.",
+  "characters": {
+    "swordsman": {
+      "front":{"neck":[165,212],"waist":[161,240],"shoulders":{"arm-left":[145,220],"arm-right":[184,220]},"hands":{"arm-left":[140,244],"arm-right":[191,244]},"weapon_arm":"arm-left","weapon_zone":[[123,238],[150,234],[205,291],[177,296],[122,254]],"body_box":[133,205,65,58]},
+      "back":{"neck":[162,209],"waist":[161,239],"shoulders":{"arm-left":[145,221],"arm-right":[184,222]},"hands":{"arm-left":[139,240],"arm-right":[194,244]},"weapon_arm":"arm-right","weapon_zone":[[178,230],[201,231],[246,273],[235,281],[177,252]],"body_box":[132,204,68,61]},
+      "side":{"neck":[173,213],"waist":[165,242],"shoulders":{"arm-left":[156,224],"arm-right":[176,222]},"hands":{"arm-left":[156,246],"arm-right":[187,242]},"weapon_arm":"arm-left","weapon_zone":[[139,239],[164,238],[243,292],[222,299],[133,258]],"body_box":[142,207,58,60]}
+    },
+    "guardian": {
+      "front":{"neck":[167,207],"waist":[164,236],"shoulders":{"arm-left":[146,219],"arm-right":[188,218]},"hands":{"arm-left":[137,241],"arm-right":[198,236]},"weapon_arm":"arm-left","weapon_zone":[[84,239],[144,233],[147,250],[116,291],[83,287]],"secondary_arm":"arm-right","secondary_zone":[[180,184],[244,184],[248,294],[181,294]],"body_box":[135,201,69,68]},
+      "back":{"neck":[163,209],"waist":[163,235],"shoulders":{"arm-left":[136,221],"arm-right":[184,221]},"hands":{"arm-left":[123,240],"arm-right":[201,246]},"weapon_arm":"arm-right","weapon_zone":[[192,235],[217,242],[243,270],[240,295],[212,295],[188,253]],"secondary_arm":"arm-left","secondary_zone":[[79,177],[131,177],[137,278],[77,278]],"body_box":[128,201,72,70]},
+      "side":{"neck":[175,209],"waist":[170,238],"shoulders":{"arm-left":[151,224],"arm-right":[187,220]},"hands":{"arm-left":[144,247],"arm-right":[199,237]},"weapon_arm":"arm-left","weapon_zone":[[92,247],[145,237],[158,249],[127,292],[92,292]],"secondary_arm":"arm-right","secondary_zone":[[183,185],[242,185],[245,294],[182,294]],"body_box":[139,202,64,69]}
+    },
+    "archer": {
+      "front":{"neck":[169,213],"waist":[162,242],"shoulders":{"arm-left":[140,222],"arm-right":[176,226]},"hands":{"arm-left":[150,238],"arm-right":[194,248]},"weapon_arm":"arm-right","weapon_zone":[[215,174],[234,179],[232,246],[207,264],[163,281],[151,277],[164,258],[191,239],[201,209]],"body_box":[130,207,71,62]},
+      "back":{"neck":[155,211],"waist":[160,241],"shoulders":{"arm-left":[139,223],"arm-right":[180,228]},"hands":{"arm-left":[125,253],"arm-right":[184,244]},"weapon_arm":"arm-left","weapon_zone":[[94,188],[122,189],[127,233],[157,270],[146,280],[117,263],[94,218]],"body_box":[126,205,72,63]},
+      "side":{"neck":[175,213],"waist":[162,241],"shoulders":{"arm-left":[145,223],"arm-right":[178,228]},"hands":{"arm-left":[157,239],"arm-right":[192,249]},"weapon_arm":"arm-right","weapon_zone":[[208,173],[229,176],[232,244],[205,263],[161,282],[151,276],[176,251],[193,237],[201,205]],"body_box":[133,207,67,62]}
+    },
+    "crossbowman": {
+      "front":{"neck":[170,213],"waist":[163,241],"shoulders":{"arm-left":[144,220],"arm-right":[182,226]},"hands":{"arm-left":[152,242],"arm-right":[190,260]},"weapon_arm":"arm-left","weapon_zone":[[130,228],[164,231],[222,258],[221,279],[158,276],[126,252]],"body_box":[133,205,69,65]},
+      "back":{"neck":[164,211],"waist":[163,243],"shoulders":{"arm-left":[143,224],"arm-right":[181,221]},"hands":{"arm-left":[141,238],"arm-right":[190,236]},"weapon_arm":"arm-left","weapon_zone":[[106,216],[141,213],[168,251],[153,273],[105,269]],"body_box":[131,205,72,65]},
+      "side":{"neck":[177,214],"waist":[170,241],"shoulders":{"arm-left":[153,220],"arm-right":[183,225]},"hands":{"arm-left":[174,240],"arm-right":[215,250]},"weapon_arm":"arm-left","weapon_zone":[[151,223],[189,225],[231,240],[233,260],[197,262],[150,243]],"body_box":[142,207,63,62]}
+    },
+    "cleric": {
+      "front":{"neck":[166,202],"waist":[163,237],"shoulders":{"arm-left":[145,211],"arm-right":[185,217]},"hands":{"arm-left":[127,205],"arm-right":[190,246]},"weapon_arm":"arm-left","weapon_zone":[[84,116],[145,115],[153,181],[146,200],[158,296],[136,296],[119,192],[97,183]],"body_box":[133,196,69,74]},
+      "back":{"neck":[163,202],"waist":[161,239],"shoulders":{"arm-left":[139,217],"arm-right":[181,210]},"hands":{"arm-left":[132,244],"arm-right":[202,205]},"weapon_arm":"arm-right","weapon_zone":[[187,119],[231,120],[233,182],[221,202],[224,297],[203,297],[199,191],[184,178]],"body_box":[126,196,75,74]},
+      "side":{"neck":[172,206],"waist":[164,240],"shoulders":{"arm-left":[159,219],"arm-right":[179,215]},"hands":{"arm-left":[179,240],"arm-right":[204,215]},"weapon_arm":"arm-right","weapon_zone":[[185,125],[233,125],[234,185],[222,206],[220,299],[201,299],[198,192],[184,178]],"body_box":[138,199,66,74]}
+    },
+    "herbalist": {
+      "front":{"neck":[168,205],"waist":[164,231],"shoulders":{"arm-left":[146,219],"arm-right":[189,210]},"hands":{"arm-left":[151,230],"arm-right":[204,211]},"weapon_arm":"arm-right","weapon_zone":[[192,181],[226,181],[227,239],[191,240]],"body_box":[130,199,75,70]},
+      "back":{"neck":[159,203],"waist":[163,228],"shoulders":{"arm-left":[140,215],"arm-right":[181,220]},"hands":{"arm-left":[124,205],"arm-right":[189,238]},"weapon_arm":"arm-left","weapon_zone":[[99,178],[136,178],[141,232],[101,235]],"body_box":[128,198,77,73]},
+      "side":{"neck":[175,206],"waist":[167,232],"shoulders":{"arm-left":[150,220],"arm-right":[188,211]},"hands":{"arm-left":[158,232],"arm-right":[208,211]},"weapon_arm":"arm-right","weapon_zone":[[194,182],[232,182],[233,241],[193,241]],"body_box":[137,200,72,70]}
+    },
+    "frost-mage": {
+      "front":{"neck":[164,209],"waist":[162,242],"shoulders":{"arm-left":[145,221],"arm-right":[184,218]},"hands":{"arm-left":[130,245],"arm-right":[193,223]},"weapon_arm":"arm-right","weapon_zone":[[179,141],[244,144],[244,201],[210,220],[192,271],[177,265],[188,217],[174,194]],"body_box":[128,203,75,70]},
+      "back":{"neck":[164,208],"waist":[163,242],"shoulders":{"arm-left":[141,218],"arm-right":[188,225]},"hands":{"arm-left":[122,224],"arm-right":[201,246]},"weapon_arm":"arm-left","weapon_zone":[[91,145],[145,149],[150,199],[135,229],[132,272],[110,272],[107,209],[89,193]],"body_box":[127,202,79,72]},
+      "side":{"neck":[174,210],"waist":[167,242],"shoulders":{"arm-left":[150,227],"arm-right":[186,217]},"hands":{"arm-left":[143,242],"arm-right":[199,218]},"weapon_arm":"arm-right","weapon_zone":[[189,135],[235,137],[238,196],[216,218],[203,270],[186,269],[191,213],[182,191]],"body_box":[138,204,67,69]}
+    },
+    "shadow-thief": {
+      "front":{"neck":[169,214],"waist":[162,240],"shoulders":{"arm-left":[142,226],"arm-right":[184,226]},"hands":{"arm-left":[134,250],"arm-right":[192,246]},"weapon_arm":"arm-right","weapon_zone":[[187,234],[208,239],[223,278],[202,275],[180,252]],"body_box":[129,207,74,66]},
+      "back":{"neck":[166,209],"waist":[163,239],"shoulders":{"arm-left":[143,224],"arm-right":[185,223]},"hands":{"arm-left":[132,242],"arm-right":[192,246]},"weapon_arm":"arm-left","weapon_zone":[[99,231],[140,230],[150,247],[127,273],[98,275]],"body_box":[130,203,75,69]},
+      "side":{"neck":[178,214],"waist":[168,241],"shoulders":{"arm-left":[151,229],"arm-right":[186,223]},"hands":{"arm-left":[144,251],"arm-right":[193,242]},"weapon_arm":"arm-right","weapon_zone":[[188,231],[212,235],[230,270],[210,275],[182,248]],"body_box":[138,207,70,66]}
+    }
+  }
+}

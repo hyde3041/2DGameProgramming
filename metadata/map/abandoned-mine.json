@@ -2,7 +2,7 @@
   "id": "abandoned-mine",
   "name": "폐광",
   "number": 8,
-  "file": "asset/map/abandoned-mine.png",
+  "file": "asset/map/stage/main/abandoned-mine.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -229,7 +229,7 @@
         64
       ],
       "hazard": "갱도",
-      "hazard_file": "asset/map/tiles/themes/abandoned-mine/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
     },
     {
       "id": "4,0",
@@ -403,7 +403,7 @@
         64
       ],
       "hazard": "갱도",
-      "hazard_file": "asset/map/tiles/themes/abandoned-mine/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
     },
     {
       "id": "8,0",
@@ -491,7 +491,7 @@
         64
       ],
       "prop": "광석 결정",
-      "prop_file": "asset/map/tiles/themes/abandoned-mine/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-mine/prop-1.png"
     },
     {
       "id": "10,0",
@@ -708,7 +708,7 @@
         64
       ],
       "hazard": "갱도",
-      "hazard_file": "asset/map/tiles/themes/abandoned-mine/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
     },
     {
       "id": "4,1",
@@ -796,7 +796,7 @@
         64
       ],
       "prop": "나무 상자",
-      "prop_file": "asset/map/tiles/themes/abandoned-mine/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-mine/prop-0.png"
     },
     {
       "id": "6,1",
@@ -1363,7 +1363,7 @@
         64
       ],
       "hazard": "갱도",
-      "hazard_file": "asset/map/tiles/themes/abandoned-mine/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
     },
     {
       "id": "8,2",
@@ -1629,7 +1629,7 @@
         64
       ],
       "prop": "광석 결정",
-      "prop_file": "asset/map/tiles/themes/abandoned-mine/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-mine/prop-1.png"
     },
     {
       "id": "3,3",
@@ -1674,7 +1674,7 @@
         64
       ],
       "hazard": "갱도",
-      "hazard_file": "asset/map/tiles/themes/abandoned-mine/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
     },
     {
       "id": "4,3",
@@ -1762,7 +1762,7 @@
         64
       ],
       "prop": "광차",
-      "prop_file": "asset/map/tiles/themes/abandoned-mine/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-mine/prop-2.png"
     },
     {
       "id": "6,3",
@@ -1850,7 +1850,7 @@
         64
       ],
       "hazard": "갱도",
-      "hazard_file": "asset/map/tiles/themes/abandoned-mine/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
     },
     {
       "id": "8,3",
@@ -2153,7 +2153,7 @@
         64
       ],
       "hazard": "갱도",
-      "hazard_file": "asset/map/tiles/themes/abandoned-mine/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
     },
     {
       "id": "4,4",
@@ -2413,7 +2413,7 @@
         64
       ],
       "prop": "광차",
-      "prop_file": "asset/map/tiles/themes/abandoned-mine/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-mine/prop-2.png"
     },
     {
       "id": "10,4",
@@ -2802,7 +2802,7 @@
         64
       ],
       "hazard": "갱도",
-      "hazard_file": "asset/map/tiles/themes/abandoned-mine/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
     },
     {
       "id": "8,5",
@@ -3031,7 +3031,7 @@
         64
       ],
       "prop": "나무 상자",
-      "prop_file": "asset/map/tiles/themes/abandoned-mine/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/abandoned-mine/prop-0.png"
     },
     {
       "id": "2,6",
@@ -3119,7 +3119,7 @@
         64
       ],
       "hazard": "갱도",
-      "hazard_file": "asset/map/tiles/themes/abandoned-mine/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
     },
     {
       "id": "4,6",
@@ -3293,7 +3293,7 @@
         64
       ],
       "hazard": "갱도",
-      "hazard_file": "asset/map/tiles/themes/abandoned-mine/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
     },
     {
       "id": "8,6",
@@ -3816,7 +3816,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "existing v5 layout preserved"
 }

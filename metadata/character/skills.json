@@ -20,7 +20,7 @@
             "전방의 적 하나에게",
             "강한 근접 피해"
           ],
-          "icon_file": "asset/character/skills/icons/azure-slash.png",
+          "icon_file": "asset/character/main/swordsman/skill/icon/azure-slash.png",
           "atlas_rect": [
             0,
             0,
@@ -42,7 +42,7 @@
             "잠시 자신의 공격력과",
             "공격 속도 증가"
           ],
-          "icon_file": "asset/character/skills/icons/sword-dance.png",
+          "icon_file": "asset/character/main/swordsman/skill/icon/sword-dance.png",
           "atlas_rect": [
             128,
             0,
@@ -71,7 +71,7 @@
             "잠시 자신이 받는",
             "피해 감소"
           ],
-          "icon_file": "asset/character/skills/icons/guardian-oath.png",
+          "icon_file": "asset/character/main/guardian/skill/icon/guardian-oath.png",
           "atlas_rect": [
             256,
             0,
@@ -93,7 +93,7 @@
             "막고 있는 적에게",
             "피해를 주고 잠시 기절"
           ],
-          "icon_file": "asset/character/skills/icons/shield-bash.png",
+          "icon_file": "asset/character/main/guardian/skill/icon/shield-bash.png",
           "atlas_rect": [
             384,
             0,
@@ -122,7 +122,7 @@
             "잠시 자신의 기본 공격",
             "속도 증가"
           ],
-          "icon_file": "asset/character/skills/icons/rapid-shot.png",
+          "icon_file": "asset/character/main/archer/skill/icon/rapid-shot.png",
           "atlas_rect": [
             0,
             128,
@@ -144,7 +144,7 @@
             "범위 안 여러 적을",
             "동시에 공격"
           ],
-          "icon_file": "asset/character/skills/icons/split-arrows.png",
+          "icon_file": "asset/character/main/archer/skill/icon/split-arrows.png",
           "atlas_rect": [
             128,
             128,
@@ -173,7 +173,7 @@
             "일직선 위의 적들을",
             "관통하는 사격"
           ],
-          "icon_file": "asset/character/skills/icons/piercing-bolt.png",
+          "icon_file": "asset/character/main/crossbowman/skill/icon/piercing-bolt.png",
           "atlas_rect": [
             256,
             128,
@@ -195,7 +195,7 @@
             "범위 안 적 하나에게",
             "강한 원거리 피해"
           ],
-          "icon_file": "asset/character/skills/icons/weak-point.png",
+          "icon_file": "asset/character/main/crossbowman/skill/icon/weak-point.png",
           "atlas_rect": [
             384,
             128,
@@ -224,7 +224,7 @@
             "범위 안 아군 하나의",
             "체력을 즉시 회복"
           ],
-          "icon_file": "asset/character/skills/icons/healing-light.png",
+          "icon_file": "asset/character/main/cleric/skill/icon/healing-light.png",
           "atlas_rect": [
             0,
             256,
@@ -246,7 +246,7 @@
             "범위 안 여러 아군의",
             "체력을 동시에 회복"
           ],
-          "icon_file": "asset/character/skills/icons/sanctuary.png",
+          "icon_file": "asset/character/main/cleric/skill/icon/sanctuary.png",
           "atlas_rect": [
             128,
             256,
@@ -275,7 +275,7 @@
             "체력이 낮은 아군을",
             "빠르게 회복"
           ],
-          "icon_file": "asset/character/skills/icons/first-aid.png",
+          "icon_file": "asset/character/main/herbalist/skill/icon/first-aid.png",
           "atlas_rect": [
             256,
             256,
@@ -297,7 +297,7 @@
             "잠시 아군의 체력을",
             "지속해서 회복"
           ],
-          "icon_file": "asset/character/skills/icons/regeneration-potion.png",
+          "icon_file": "asset/character/main/herbalist/skill/icon/regeneration-potion.png",
           "atlas_rect": [
             384,
             256,
@@ -326,7 +326,7 @@
             "범위 안 적들의",
             "이동 속도 감소"
           ],
-          "icon_file": "asset/character/skills/icons/frost-bind.png",
+          "icon_file": "asset/character/main/frost-mage/skill/icon/frost-bind.png",
           "atlas_rect": [
             0,
             384,
@@ -348,7 +348,7 @@
             "범위 안 적들을",
             "얼려서 잠시 기절"
           ],
-          "icon_file": "asset/character/skills/icons/frozen-prison.png",
+          "icon_file": "asset/character/main/frost-mage/skill/icon/frozen-prison.png",
           "atlas_rect": [
             128,
             384,
@@ -377,7 +377,7 @@
             "적 하나의 급소를 노려",
             "강한 근접 피해"
           ],
-          "icon_file": "asset/character/skills/icons/vital-stab.png",
+          "icon_file": "asset/character/main/shadow-thief/skill/icon/vital-stab.png",
           "atlas_rect": [
             256,
             384,
@@ -399,7 +399,7 @@
             "독침을 맞힌 적을",
             "잠시 기절"
           ],
-          "icon_file": "asset/character/skills/icons/paralysis-needle.png",
+          "icon_file": "asset/character/main/shadow-thief/skill/icon/paralysis-needle.png",
           "atlas_rect": [
             384,
             384,

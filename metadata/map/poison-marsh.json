@@ -2,7 +2,7 @@
   "id": "poison-marsh",
   "name": "독늪",
   "number": 14,
-  "file": "asset/map/poison-marsh.png",
+  "file": "asset/map/stage/main/poison-marsh.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -223,7 +223,7 @@
         64
       ],
       "prop": "독버섯",
-      "prop_file": "asset/map/tiles/themes/poison-marsh/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-0.png"
     },
     {
       "id": "4,0",
@@ -268,7 +268,7 @@
         64
       ],
       "hazard": "독 웅덩이",
-      "hazard_file": "asset/map/tiles/themes/poison-marsh/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "5,0",
@@ -399,7 +399,7 @@
         64
       ],
       "prop": "뒤엉킨 뿌리",
-      "prop_file": "asset/map/tiles/themes/poison-marsh/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-1.png"
     },
     {
       "id": "8,0",
@@ -487,7 +487,7 @@
         64
       ],
       "prop": "시든 화단",
-      "prop_file": "asset/map/tiles/themes/poison-marsh/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-2.png"
     },
     {
       "id": "10,0",
@@ -753,7 +753,7 @@
         64
       ],
       "hazard": "독 웅덩이",
-      "hazard_file": "asset/map/tiles/themes/poison-marsh/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "5,1",
@@ -1234,7 +1234,7 @@
         64
       ],
       "hazard": "독 웅덩이",
-      "hazard_file": "asset/map/tiles/themes/poison-marsh/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "5,2",
@@ -1365,7 +1365,7 @@
         64
       ],
       "prop": "독버섯",
-      "prop_file": "asset/map/tiles/themes/poison-marsh/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-0.png"
     },
     {
       "id": "8,2",
@@ -1717,7 +1717,7 @@
         64
       ],
       "hazard": "독 웅덩이",
-      "hazard_file": "asset/map/tiles/themes/poison-marsh/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "5,3",
@@ -1805,7 +1805,7 @@
         64
       ],
       "hazard": "독 웅덩이",
-      "hazard_file": "asset/map/tiles/themes/poison-marsh/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "7,3",
@@ -2108,7 +2108,7 @@
         64
       ],
       "prop": "뒤엉킨 뿌리",
-      "prop_file": "asset/map/tiles/themes/poison-marsh/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-1.png"
     },
     {
       "id": "3,4",
@@ -2282,7 +2282,7 @@
         64
       ],
       "hazard": "독 웅덩이",
-      "hazard_file": "asset/map/tiles/themes/poison-marsh/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "7,4",
@@ -2591,7 +2591,7 @@
         64
       ],
       "prop": "시든 화단",
-      "prop_file": "asset/map/tiles/themes/poison-marsh/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-2.png"
     },
     {
       "id": "3,5",
@@ -2765,7 +2765,7 @@
         64
       ],
       "hazard": "독 웅덩이",
-      "hazard_file": "asset/map/tiles/themes/poison-marsh/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "7,5",
@@ -2810,7 +2810,7 @@
         64
       ],
       "prop": "독버섯",
-      "prop_file": "asset/map/tiles/themes/poison-marsh/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-0.png"
     },
     {
       "id": "8,5",
@@ -3033,7 +3033,7 @@
         64
       ],
       "hazard": "독 웅덩이",
-      "hazard_file": "asset/map/tiles/themes/poison-marsh/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "2,6",
@@ -3250,7 +3250,7 @@
         64
       ],
       "hazard": "독 웅덩이",
-      "hazard_file": "asset/map/tiles/themes/poison-marsh/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "7,6",
@@ -3904,7 +3904,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "new theme"
 }

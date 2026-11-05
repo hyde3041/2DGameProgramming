@@ -2,7 +2,7 @@
   "id": "ancient-graveyard",
   "name": "고대 묘지",
   "number": 12,
-  "file": "asset/map/ancient-graveyard.png",
+  "file": "asset/map/stage/main/ancient-graveyard.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -266,7 +266,7 @@
         64
       ],
       "hazard": "열린 묘혈",
-      "hazard_file": "asset/map/tiles/themes/ancient-graveyard/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/ancient-graveyard/hazard.png"
     },
     {
       "id": "5,0",
@@ -483,7 +483,7 @@
         64
       ],
       "hazard": "열린 묘혈",
-      "hazard_file": "asset/map/tiles/themes/ancient-graveyard/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/ancient-graveyard/hazard.png"
     },
     {
       "id": "10,0",
@@ -1142,7 +1142,7 @@
         64
       ],
       "prop": "묘비",
-      "prop_file": "asset/map/tiles/themes/ancient-graveyard/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-graveyard/prop-0.png"
     },
     {
       "id": "3,2",
@@ -1230,7 +1230,7 @@
         64
       ],
       "prop": "석관",
-      "prop_file": "asset/map/tiles/themes/ancient-graveyard/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-graveyard/prop-1.png"
     },
     {
       "id": "5,2",
@@ -1275,7 +1275,7 @@
         64
       ],
       "prop": "마른 그루터기",
-      "prop_file": "asset/map/tiles/themes/ancient-graveyard/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-graveyard/prop-2.png"
     },
     {
       "id": "6,2",
@@ -1320,7 +1320,7 @@
         64
       ],
       "prop": "묘비",
-      "prop_file": "asset/map/tiles/themes/ancient-graveyard/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-graveyard/prop-0.png"
     },
     {
       "id": "7,2",
@@ -1408,7 +1408,7 @@
         64
       ],
       "prop": "석관",
-      "prop_file": "asset/map/tiles/themes/ancient-graveyard/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-graveyard/prop-1.png"
     },
     {
       "id": "9,2",
@@ -2104,7 +2104,7 @@
         64
       ],
       "prop": "마른 그루터기",
-      "prop_file": "asset/map/tiles/themes/ancient-graveyard/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-graveyard/prop-2.png"
     },
     {
       "id": "3,4",
@@ -2149,7 +2149,7 @@
         64
       ],
       "prop": "묘비",
-      "prop_file": "asset/map/tiles/themes/ancient-graveyard/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-graveyard/prop-0.png"
     },
     {
       "id": "4,4",
@@ -2194,7 +2194,7 @@
         64
       ],
       "hazard": "열린 묘혈",
-      "hazard_file": "asset/map/tiles/themes/ancient-graveyard/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/ancient-graveyard/hazard.png"
     },
     {
       "id": "5,4",
@@ -2239,7 +2239,7 @@
         64
       ],
       "prop": "석관",
-      "prop_file": "asset/map/tiles/themes/ancient-graveyard/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-graveyard/prop-1.png"
     },
     {
       "id": "6,4",
@@ -2327,7 +2327,7 @@
         64
       ],
       "prop": "마른 그루터기",
-      "prop_file": "asset/map/tiles/themes/ancient-graveyard/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-graveyard/prop-2.png"
     },
     {
       "id": "8,4",
@@ -2372,7 +2372,7 @@
         64
       ],
       "prop": "묘비",
-      "prop_file": "asset/map/tiles/themes/ancient-graveyard/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/ancient-graveyard/prop-0.png"
     },
     {
       "id": "9,4",
@@ -3850,7 +3850,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "new theme"
 }

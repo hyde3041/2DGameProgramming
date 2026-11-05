@@ -2,7 +2,7 @@
   "id": "castle-gate",
   "name": "성문 앞",
   "number": 4,
-  "file": "asset/map/castle-gate.png",
+  "file": "asset/map/stage/main/castle-gate.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -223,7 +223,7 @@
         64
       ],
       "hazard": "무너진 해자",
-      "hazard_file": "asset/map/tiles/themes/fortified-kit/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/fortified-kit/hazard.png"
     },
     {
       "id": "4,0",
@@ -483,7 +483,7 @@
         64
       ],
       "prop": "나무 방책",
-      "prop_file": "asset/map/tiles/themes/fortified-kit/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-0.png"
     },
     {
       "id": "10,0",
@@ -1179,7 +1179,7 @@
         64
       ],
       "hazard": "무너진 해자",
-      "hazard_file": "asset/map/tiles/themes/fortified-kit/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/fortified-kit/hazard.png"
     },
     {
       "id": "4,2",
@@ -1310,7 +1310,7 @@
         64
       ],
       "prop": "붉은 깃발",
-      "prop_file": "asset/map/tiles/themes/fortified-kit/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-1.png"
     },
     {
       "id": "7,2",
@@ -1926,7 +1926,7 @@
         64
       ],
       "prop": "보급 상자",
-      "prop_file": "asset/map/tiles/themes/fortified-kit/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-2.png"
     },
     {
       "id": "10,3",
@@ -2143,7 +2143,7 @@
         64
       ],
       "hazard": "무너진 해자",
-      "hazard_file": "asset/map/tiles/themes/fortified-kit/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/fortified-kit/hazard.png"
     },
     {
       "id": "4,4",
@@ -2544,7 +2544,7 @@
         64
       ],
       "prop": "나무 방책",
-      "prop_file": "asset/map/tiles/themes/fortified-kit/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-0.png"
     },
     {
       "id": "2,5",
@@ -3062,7 +3062,7 @@
         64
       ],
       "prop": "붉은 깃발",
-      "prop_file": "asset/map/tiles/themes/fortified-kit/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-1.png"
     },
     {
       "id": "3,6",
@@ -3107,7 +3107,7 @@
         64
       ],
       "hazard": "무너진 해자",
-      "hazard_file": "asset/map/tiles/themes/fortified-kit/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/fortified-kit/hazard.png"
     },
     {
       "id": "4,6",
@@ -3195,7 +3195,7 @@
         64
       ],
       "prop": "보급 상자",
-      "prop_file": "asset/map/tiles/themes/fortified-kit/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-2.png"
     },
     {
       "id": "6,6",
@@ -3828,7 +3828,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "legacy theme rebuilt on the standard grid"
 }

@@ -2,7 +2,7 @@
   "id": "arcane-library",
   "name": "마법 도서관",
   "number": 10,
-  "file": "asset/map/arcane-library.png",
+  "file": "asset/map/stage/main/arcane-library.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -223,7 +223,7 @@
         64
       ],
       "prop": "책장",
-      "prop_file": "asset/map/tiles/themes/arcane-library/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/arcane-library/prop-0.png"
     },
     {
       "id": "4,0",
@@ -704,7 +704,7 @@
         64
       ],
       "prop": "책장",
-      "prop_file": "asset/map/tiles/themes/arcane-library/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/arcane-library/prop-0.png"
     },
     {
       "id": "4,1",
@@ -878,7 +878,7 @@
         64
       ],
       "prop": "수납장",
-      "prop_file": "asset/map/tiles/themes/arcane-library/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/arcane-library/prop-2.png"
     },
     {
       "id": "8,1",
@@ -1187,7 +1187,7 @@
         64
       ],
       "prop": "책장",
-      "prop_file": "asset/map/tiles/themes/arcane-library/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/arcane-library/prop-0.png"
     },
     {
       "id": "4,2",
@@ -1275,7 +1275,7 @@
         64
       ],
       "hazard": "마법 함정",
-      "hazard_file": "asset/map/tiles/themes/arcane-library/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/arcane-library/hazard.png"
     },
     {
       "id": "6,2",
@@ -1363,7 +1363,7 @@
         64
       ],
       "prop": "수납장",
-      "prop_file": "asset/map/tiles/themes/arcane-library/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/arcane-library/prop-2.png"
     },
     {
       "id": "8,2",
@@ -1586,7 +1586,7 @@
         64
       ],
       "prop": "마법서 받침대",
-      "prop_file": "asset/map/tiles/themes/arcane-library/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/arcane-library/prop-1.png"
     },
     {
       "id": "2,3",
@@ -1846,7 +1846,7 @@
         64
       ],
       "prop": "수납장",
-      "prop_file": "asset/map/tiles/themes/arcane-library/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/arcane-library/prop-2.png"
     },
     {
       "id": "8,3",
@@ -2149,7 +2149,7 @@
         64
       ],
       "prop": "책장",
-      "prop_file": "asset/map/tiles/themes/arcane-library/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/arcane-library/prop-0.png"
     },
     {
       "id": "4,4",
@@ -2237,7 +2237,7 @@
         64
       ],
       "hazard": "마법 함정",
-      "hazard_file": "asset/map/tiles/themes/arcane-library/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/arcane-library/hazard.png"
     },
     {
       "id": "6,4",
@@ -2325,7 +2325,7 @@
         64
       ],
       "prop": "수납장",
-      "prop_file": "asset/map/tiles/themes/arcane-library/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/arcane-library/prop-2.png"
     },
     {
       "id": "8,4",
@@ -2370,7 +2370,7 @@
         64
       ],
       "hazard": "마법 함정",
-      "hazard_file": "asset/map/tiles/themes/arcane-library/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/arcane-library/hazard.png"
     },
     {
       "id": "9,4",
@@ -2636,7 +2636,7 @@
         64
       ],
       "prop": "책장",
-      "prop_file": "asset/map/tiles/themes/arcane-library/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/arcane-library/prop-0.png"
     },
     {
       "id": "4,5",
@@ -3117,7 +3117,7 @@
         64
       ],
       "prop": "책장",
-      "prop_file": "asset/map/tiles/themes/arcane-library/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/arcane-library/prop-0.png"
     },
     {
       "id": "4,6",
@@ -3377,7 +3377,7 @@
         64
       ],
       "prop": "마법서 받침대",
-      "prop_file": "asset/map/tiles/themes/arcane-library/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/arcane-library/prop-1.png"
     },
     {
       "id": "10,6",
@@ -3862,7 +3862,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "existing v5 layout preserved"
 }

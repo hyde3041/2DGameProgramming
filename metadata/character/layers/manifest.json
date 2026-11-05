@@ -1,0 +1,78 @@
+{
+  "version": 3,
+  "character_count": 8,
+  "direction_count": 24,
+  "core_parts_per_direction": {
+    "default": 8,
+    "guardian": 9
+  },
+  "characters": [
+    {
+      "id": "swordsman",
+      "name": "검사",
+      "metadata": "metadata/character/layers/swordsman.json"
+    },
+    {
+      "id": "guardian",
+      "name": "수호기사",
+      "metadata": "metadata/character/layers/guardian.json"
+    },
+    {
+      "id": "archer",
+      "name": "궁수",
+      "metadata": "metadata/character/layers/archer.json"
+    },
+    {
+      "id": "crossbowman",
+      "name": "석궁병",
+      "metadata": "metadata/character/layers/crossbowman.json"
+    },
+    {
+      "id": "cleric",
+      "name": "성직자",
+      "metadata": "metadata/character/layers/cleric.json"
+    },
+    {
+      "id": "herbalist",
+      "name": "약초사",
+      "metadata": "metadata/character/layers/herbalist.json"
+    },
+    {
+      "id": "frost-mage",
+      "name": "냉기술사",
+      "metadata": "metadata/character/layers/frost-mage.json"
+    },
+    {
+      "id": "shadow-thief",
+      "name": "그림자 도적",
+      "metadata": "metadata/character/layers/shadow-thief.json"
+    }
+  ],
+  "source_view_count": 24,
+  "workflow": "Original visible artwork kept at original coordinates; redrawn art completes hidden joints",
+  "total_parts": 195,
+  "animation_applied": [
+    "swordsman",
+    "guardian",
+    "archer",
+    "crossbowman",
+    "cleric",
+    "herbalist",
+    "frost-mage",
+    "shadow-thief"
+  ],
+  "layer_names": [
+    "head",
+    "hair-tail",
+    "body",
+    "arm-left",
+    "arm-right",
+    "cloth-hem",
+    "legs",
+    "equipment"
+  ],
+  "guardian_extra_layer": "equipment-secondary",
+  "placement": "metadata/character/layers/redraw-layout.json",
+  "alignment": "metadata/character/layers/reference-alignment.json",
+  "empty_parts": "A character without long rear hair has a transparent hair-tail layer; the original head remains intact."
+}

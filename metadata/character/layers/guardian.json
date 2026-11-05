@@ -1,0 +1,621 @@
+{
+  "version": 3,
+  "id": "guardian",
+  "name": "수호기사",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "workflow": "original reference-aligned visible surfaces with redrawn hidden joints; rigid animation",
+  "original_design_unchanged": true,
+  "alignment": "metadata/character/layers/reference-alignment.json",
+  "redrawn_atlas": "asset/character/icon/layers/guardian/layer-atlas-redrawn.png",
+  "prompt": "metadata/character/layers/redraw-prompts/guardian.txt",
+  "animation_applied": true,
+  "views": [
+    {
+      "direction": "front",
+      "source": "asset/character/icon/layers/guardian/front/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/guardian/front/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/guardian/front/aligned/legs.png",
+        "body": "asset/character/icon/layers/guardian/front/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/front/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/guardian/front/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/guardian/front/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/guardian/front/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/guardian/front/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/guardian/front/aligned/equipment.png",
+        "equipment-secondary": "asset/character/icon/layers/guardian/front/aligned/equipment-secondary.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/guardian/front/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/guardian/front/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/guardian/front/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/guardian/front/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/guardian/front/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/guardian/front/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/guardian/front/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/guardian/front/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/guardian/front/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/guardian/front/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/guardian/front/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/guardian/front/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/guardian/front/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/front/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/guardian/front/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/guardian/front/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/guardian/front/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/guardian/front/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/guardian/front/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/guardian/front/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            131,
+            268
+          ],
+          "size": [
+            68,
+            21
+          ]
+        },
+        "body": {
+          "position": [
+            131,
+            198
+          ],
+          "size": [
+            73,
+            71
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            124,
+            233
+          ],
+          "size": [
+            75,
+            45
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ]
+        },
+        "head": {
+          "position": [
+            112,
+            126
+          ],
+          "size": [
+            106,
+            78
+          ]
+        },
+        "arm-left": {
+          "position": [
+            114,
+            211
+          ],
+          "size": [
+            37,
+            40
+          ]
+        },
+        "arm-right": {
+          "position": [
+            183,
+            216
+          ],
+          "size": [
+            18,
+            22
+          ]
+        },
+        "equipment": {
+          "position": [
+            181,
+            189
+          ],
+          "size": [
+            55,
+            98
+          ]
+        },
+        "equipment-secondary": {
+          "position": [
+            93,
+            246
+          ],
+          "size": [
+            30,
+            33
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          167,
+          207
+        ],
+        "body": [
+          164,
+          236
+        ],
+        "hair": [
+          167,
+          207
+        ],
+        "cloth": [
+          164,
+          236
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            146,
+            219
+          ],
+          "arm-right": [
+            188,
+            218
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            137,
+            241
+          ],
+          "arm-right": [
+            198,
+            236
+          ]
+        },
+        "weapon_arm": "arm-left",
+        "secondary_arm": "arm-right"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.0214566770067393,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "back",
+      "source": "asset/character/icon/layers/guardian/back/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/guardian/back/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/guardian/back/aligned/legs.png",
+        "body": "asset/character/icon/layers/guardian/back/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/back/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/guardian/back/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/guardian/back/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/guardian/back/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/guardian/back/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/guardian/back/aligned/equipment.png",
+        "equipment-secondary": "asset/character/icon/layers/guardian/back/aligned/equipment-secondary.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/guardian/back/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/guardian/back/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/guardian/back/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/guardian/back/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/guardian/back/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/guardian/back/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/guardian/back/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/guardian/back/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/guardian/back/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/guardian/back/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/guardian/back/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/guardian/back/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/guardian/back/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/back/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/guardian/back/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/guardian/back/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/guardian/back/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/guardian/back/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/guardian/back/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/guardian/back/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            116,
+            265
+          ],
+          "size": [
+            81,
+            24
+          ]
+        },
+        "body": {
+          "position": [
+            128,
+            199
+          ],
+          "size": [
+            71,
+            72
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            127,
+            234
+          ],
+          "size": [
+            74,
+            44
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ]
+        },
+        "head": {
+          "position": [
+            106,
+            129
+          ],
+          "size": [
+            110,
+            76
+          ]
+        },
+        "arm-left": {
+          "position": [
+            124,
+            214
+          ],
+          "size": [
+            21,
+            21
+          ]
+        },
+        "arm-right": {
+          "position": [
+            173,
+            213
+          ],
+          "size": [
+            30,
+            36
+          ]
+        },
+        "equipment": {
+          "position": [
+            84,
+            169
+          ],
+          "size": [
+            151,
+            120
+          ]
+        },
+        "equipment-secondary": {
+          "position": [
+            189,
+            237
+          ],
+          "size": [
+            48,
+            46
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          163,
+          209
+        ],
+        "body": [
+          163,
+          235
+        ],
+        "hair": [
+          163,
+          209
+        ],
+        "cloth": [
+          163,
+          235
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            136,
+            221
+          ],
+          "arm-right": [
+            184,
+            221
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            123,
+            240
+          ],
+          "arm-right": [
+            201,
+            246
+          ]
+        },
+        "weapon_arm": "arm-right",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.02665496706495082,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "side",
+      "source": "asset/character/icon/layers/guardian/side/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/guardian/side/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/guardian/side/aligned/legs.png",
+        "body": "asset/character/icon/layers/guardian/side/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/side/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/guardian/side/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/guardian/side/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/guardian/side/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/guardian/side/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/guardian/side/aligned/equipment.png",
+        "equipment-secondary": "asset/character/icon/layers/guardian/side/aligned/equipment-secondary.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/guardian/side/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/guardian/side/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/guardian/side/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/guardian/side/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/guardian/side/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/guardian/side/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/guardian/side/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/guardian/side/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/guardian/side/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/guardian/side/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/guardian/side/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/guardian/side/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/guardian/side/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/side/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/guardian/side/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/guardian/side/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/guardian/side/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/guardian/side/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/guardian/side/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/guardian/side/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            135,
+            265
+          ],
+          "size": [
+            63,
+            24
+          ]
+        },
+        "body": {
+          "position": [
+            123,
+            199
+          ],
+          "size": [
+            79,
+            72
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            133,
+            237
+          ],
+          "size": [
+            67,
+            41
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1
+          ]
+        },
+        "head": {
+          "position": [
+            102,
+            129
+          ],
+          "size": [
+            111,
+            79
+          ]
+        },
+        "arm-left": {
+          "position": [
+            124,
+            210
+          ],
+          "size": [
+            39,
+            43
+          ]
+        },
+        "arm-right": {
+          "position": [
+            183,
+            218
+          ],
+          "size": [
+            19,
+            21
+          ]
+        },
+        "equipment": {
+          "position": [
+            98,
+            179
+          ],
+          "size": [
+            130,
+            102
+          ]
+        },
+        "equipment-secondary": {
+          "position": [
+            104,
+            244
+          ],
+          "size": [
+            37,
+            42
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          175,
+          209
+        ],
+        "body": [
+          170,
+          238
+        ],
+        "hair": [
+          175,
+          209
+        ],
+        "cloth": [
+          170,
+          238
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            151,
+            224
+          ],
+          "arm-right": [
+            187,
+            220
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            144,
+            247
+          ],
+          "arm-right": [
+            199,
+            237
+          ]
+        },
+        "weapon_arm": "arm-left",
+        "secondary_arm": "arm-right"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.02565573299632265,
+        "complete_hidden_joints": true
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "id": "prison-cellblock",
   "name": "지하 감옥",
   "number": 5,
-  "file": "asset/map/prison-cellblock.png",
+  "file": "asset/map/stage/main/prison-cellblock.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -3776,7 +3776,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "existing v4 layout preserved"
 }

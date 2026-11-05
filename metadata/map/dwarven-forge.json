@@ -2,7 +2,7 @@
   "id": "dwarven-forge",
   "name": "대장간",
   "number": 15,
-  "file": "asset/map/dwarven-forge.png",
+  "file": "asset/map/stage/main/dwarven-forge.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -1138,7 +1138,7 @@
         64
       ],
       "hazard": "달아오른 철망",
-      "hazard_file": "asset/map/tiles/themes/dwarven-forge/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/dwarven-forge/hazard.png"
     },
     {
       "id": "3,2",
@@ -1269,7 +1269,7 @@
         64
       ],
       "hazard": "달아오른 철망",
-      "hazard_file": "asset/map/tiles/themes/dwarven-forge/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/dwarven-forge/hazard.png"
     },
     {
       "id": "6,2",
@@ -1400,7 +1400,7 @@
         64
       ],
       "hazard": "달아오른 철망",
-      "hazard_file": "asset/map/tiles/themes/dwarven-forge/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/dwarven-forge/hazard.png"
     },
     {
       "id": "9,2",
@@ -1580,7 +1580,7 @@
         64
       ],
       "prop": "모루",
-      "prop_file": "asset/map/tiles/themes/dwarven-forge/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-0.png"
     },
     {
       "id": "2,3",
@@ -1625,7 +1625,7 @@
         64
       ],
       "prop": "소형 화로",
-      "prop_file": "asset/map/tiles/themes/dwarven-forge/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-1.png"
     },
     {
       "id": "3,3",
@@ -1713,7 +1713,7 @@
         64
       ],
       "prop": "석탄 상자",
-      "prop_file": "asset/map/tiles/themes/dwarven-forge/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-2.png"
     },
     {
       "id": "5,3",
@@ -1758,7 +1758,7 @@
         64
       ],
       "prop": "소형 화로",
-      "prop_file": "asset/map/tiles/themes/dwarven-forge/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-1.png"
     },
     {
       "id": "6,3",
@@ -1803,7 +1803,7 @@
         64
       ],
       "prop": "소형 화로",
-      "prop_file": "asset/map/tiles/themes/dwarven-forge/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-1.png"
     },
     {
       "id": "7,3",
@@ -1891,7 +1891,7 @@
         64
       ],
       "prop": "석탄 상자",
-      "prop_file": "asset/map/tiles/themes/dwarven-forge/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-2.png"
     },
     {
       "id": "9,3",
@@ -1936,7 +1936,7 @@
         64
       ],
       "prop": "모루",
-      "prop_file": "asset/map/tiles/themes/dwarven-forge/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-0.png"
     },
     {
       "id": "10,3",
@@ -2110,7 +2110,7 @@
         64
       ],
       "hazard": "달아오른 철망",
-      "hazard_file": "asset/map/tiles/themes/dwarven-forge/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/dwarven-forge/hazard.png"
     },
     {
       "id": "3,4",
@@ -2241,7 +2241,7 @@
         64
       ],
       "hazard": "달아오른 철망",
-      "hazard_file": "asset/map/tiles/themes/dwarven-forge/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/dwarven-forge/hazard.png"
     },
     {
       "id": "6,4",
@@ -2372,7 +2372,7 @@
         64
       ],
       "hazard": "달아오른 철망",
-      "hazard_file": "asset/map/tiles/themes/dwarven-forge/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/dwarven-forge/hazard.png"
     },
     {
       "id": "9,4",
@@ -3246,7 +3246,7 @@
         64
       ],
       "prop": "소형 화로",
-      "prop_file": "asset/map/tiles/themes/dwarven-forge/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-1.png"
     },
     {
       "id": "7,6",
@@ -3916,7 +3916,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "new theme"
 }

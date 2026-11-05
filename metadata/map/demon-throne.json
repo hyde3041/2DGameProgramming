@@ -2,7 +2,7 @@
   "id": "demon-throne",
   "name": "마왕의 왕좌",
   "number": 20,
-  "file": "asset/map/demon-throne.png",
+  "file": "asset/map/stage/main/demon-throne.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -788,7 +788,7 @@
         64
       ],
       "hazard": "심연의 문양",
-      "hazard_file": "asset/map/tiles/themes/demon-throne/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/demon-throne/hazard.png"
     },
     {
       "id": "6,1",
@@ -962,7 +962,7 @@
         64
       ],
       "prop": "부서진 흑석 기둥",
-      "prop_file": "asset/map/tiles/themes/demon-throne/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/demon-throne/prop-1.png"
     },
     {
       "id": "10,1",
@@ -1099,7 +1099,7 @@
         64
       ],
       "prop": "심홍색 깃발",
-      "prop_file": "asset/map/tiles/themes/demon-throne/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/demon-throne/prop-2.png"
     },
     {
       "id": "2,2",
@@ -1144,7 +1144,7 @@
         64
       ],
       "prop": "부서진 흑석 기둥",
-      "prop_file": "asset/map/tiles/themes/demon-throne/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/demon-throne/prop-1.png"
     },
     {
       "id": "3,2",
@@ -1404,7 +1404,7 @@
         64
       ],
       "prop": "심홍색 깃발",
-      "prop_file": "asset/map/tiles/themes/demon-throne/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/demon-throne/prop-2.png"
     },
     {
       "id": "9,2",
@@ -1670,7 +1670,7 @@
         64
       ],
       "hazard": "심연의 문양",
-      "hazard_file": "asset/map/tiles/themes/demon-throne/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/demon-throne/hazard.png"
     },
     {
       "id": "4,3",
@@ -1758,7 +1758,7 @@
         64
       ],
       "prop": "검은 왕좌",
-      "prop_file": "asset/map/tiles/themes/demon-throne/prop-0.png"
+      "prop_file": "asset/map/stage/icon/themes/demon-throne/prop-0.png"
     },
     {
       "id": "6,3",
@@ -1846,7 +1846,7 @@
         64
       ],
       "hazard": "심연의 문양",
-      "hazard_file": "asset/map/tiles/themes/demon-throne/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/demon-throne/hazard.png"
     },
     {
       "id": "8,3",
@@ -2364,7 +2364,7 @@
         64
       ],
       "prop": "심홍색 깃발",
-      "prop_file": "asset/map/tiles/themes/demon-throne/prop-2.png"
+      "prop_file": "asset/map/stage/icon/themes/demon-throne/prop-2.png"
     },
     {
       "id": "9,4",
@@ -2716,7 +2716,7 @@
         64
       ],
       "hazard": "심연의 문양",
-      "hazard_file": "asset/map/tiles/themes/demon-throne/hazard.png"
+      "hazard_file": "asset/map/stage/icon/themes/demon-throne/hazard.png"
     },
     {
       "id": "6,5",
@@ -2761,7 +2761,7 @@
         64
       ],
       "prop": "부서진 흑석 기둥",
-      "prop_file": "asset/map/tiles/themes/demon-throne/prop-1.png"
+      "prop_file": "asset/map/stage/icon/themes/demon-throne/prop-1.png"
     },
     {
       "id": "7,5",
@@ -3926,7 +3926,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "new theme"
 }

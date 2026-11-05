@@ -1,0 +1,588 @@
+{
+  "version": 3,
+  "id": "herbalist",
+  "name": "약초사",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "workflow": "original reference-aligned visible surfaces with redrawn hidden joints; rigid animation",
+  "original_design_unchanged": true,
+  "alignment": "metadata/character/layers/reference-alignment.json",
+  "redrawn_atlas": "asset/character/icon/layers/herbalist/layer-atlas-redrawn.png",
+  "prompt": "metadata/character/layers/redraw-prompts/herbalist.txt",
+  "animation_applied": true,
+  "views": [
+    {
+      "direction": "front",
+      "source": "asset/character/icon/layers/herbalist/front/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/herbalist/front/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/herbalist/front/aligned/legs.png",
+        "body": "asset/character/icon/layers/herbalist/front/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/herbalist/front/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/herbalist/front/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/herbalist/front/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/herbalist/front/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/herbalist/front/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/herbalist/front/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/herbalist/front/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/herbalist/front/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/herbalist/front/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/herbalist/front/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/herbalist/front/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/herbalist/front/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/herbalist/front/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/herbalist/front/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/herbalist/front/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/herbalist/front/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/herbalist/front/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/herbalist/front/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/herbalist/front/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/herbalist/front/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/herbalist/front/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/herbalist/front/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/herbalist/front/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/herbalist/front/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/herbalist/front/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/herbalist/front/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            123,
+            268
+          ],
+          "size": [
+            69,
+            21
+          ]
+        },
+        "body": {
+          "position": [
+            131,
+            196
+          ],
+          "size": [
+            73,
+            73
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            114,
+            223
+          ],
+          "size": [
+            84,
+            55
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            116,
+            186
+          ],
+          "size": [
+            43,
+            52
+          ]
+        },
+        "head": {
+          "position": [
+            110,
+            124
+          ],
+          "size": [
+            102,
+            82
+          ]
+        },
+        "arm-left": {
+          "position": [
+            125,
+            210
+          ],
+          "size": [
+            32,
+            26
+          ]
+        },
+        "arm-right": {
+          "position": [
+            182,
+            207
+          ],
+          "size": [
+            24,
+            21
+          ]
+        },
+        "equipment": {
+          "position": [
+            102,
+            188
+          ],
+          "size": [
+            114,
+            86
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          168,
+          205
+        ],
+        "body": [
+          164,
+          231
+        ],
+        "hair": [
+          168,
+          205
+        ],
+        "cloth": [
+          164,
+          231
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            146,
+            219
+          ],
+          "arm-right": [
+            189,
+            210
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            151,
+            230
+          ],
+          "arm-right": [
+            204,
+            211
+          ]
+        },
+        "weapon_arm": "arm-right",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.033092802159925966,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "back",
+      "source": "asset/character/icon/layers/herbalist/back/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/herbalist/back/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/herbalist/back/aligned/legs.png",
+        "body": "asset/character/icon/layers/herbalist/back/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/herbalist/back/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/herbalist/back/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/herbalist/back/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/herbalist/back/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/herbalist/back/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/herbalist/back/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/herbalist/back/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/herbalist/back/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/herbalist/back/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/herbalist/back/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/herbalist/back/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/herbalist/back/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/herbalist/back/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/herbalist/back/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/herbalist/back/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/herbalist/back/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/herbalist/back/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/herbalist/back/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/herbalist/back/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/herbalist/back/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/herbalist/back/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/herbalist/back/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/herbalist/back/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/herbalist/back/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/herbalist/back/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/herbalist/back/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            124,
+            265
+          ],
+          "size": [
+            75,
+            24
+          ]
+        },
+        "body": {
+          "position": [
+            129,
+            195
+          ],
+          "size": [
+            75,
+            76
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            131,
+            223
+          ],
+          "size": [
+            84,
+            52
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            167,
+            189
+          ],
+          "size": [
+            42,
+            50
+          ]
+        },
+        "head": {
+          "position": [
+            115,
+            129
+          ],
+          "size": [
+            93,
+            73
+          ]
+        },
+        "arm-left": {
+          "position": [
+            121,
+            202
+          ],
+          "size": [
+            25,
+            23
+          ]
+        },
+        "arm-right": {
+          "position": [
+            178,
+            217
+          ],
+          "size": [
+            13,
+            24
+          ]
+        },
+        "equipment": {
+          "position": [
+            108,
+            183
+          ],
+          "size": [
+            106,
+            105
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          159,
+          203
+        ],
+        "body": [
+          163,
+          228
+        ],
+        "hair": [
+          159,
+          203
+        ],
+        "cloth": [
+          163,
+          228
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            140,
+            215
+          ],
+          "arm-right": [
+            181,
+            220
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            124,
+            205
+          ],
+          "arm-right": [
+            189,
+            238
+          ]
+        },
+        "weapon_arm": "arm-left",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.03269167432597981,
+        "complete_hidden_joints": true
+      }
+    },
+    {
+      "direction": "side",
+      "source": "asset/character/icon/layers/herbalist/side/aligned/neutral.png",
+      "original_reference": "asset/character/icon/source/herbalist/side/idle.png",
+      "parts": {
+        "legs": "asset/character/icon/layers/herbalist/side/aligned/legs.png",
+        "body": "asset/character/icon/layers/herbalist/side/aligned/body.png",
+        "cloth-hem": "asset/character/icon/layers/herbalist/side/aligned/cloth-hem.png",
+        "hair-tail": "asset/character/icon/layers/herbalist/side/aligned/hair-tail.png",
+        "head": "asset/character/icon/layers/herbalist/side/aligned/head.png",
+        "arm-left": "asset/character/icon/layers/herbalist/side/aligned/arm-left.png",
+        "arm-right": "asset/character/icon/layers/herbalist/side/aligned/arm-right.png",
+        "equipment": "asset/character/icon/layers/herbalist/side/aligned/equipment.png"
+      },
+      "idle_groups": {
+        "under:legs": "asset/character/icon/layers/herbalist/side/aligned/hidden/legs.png",
+        "under:body": "asset/character/icon/layers/herbalist/side/aligned/hidden/body.png",
+        "under:cloth-hem": "asset/character/icon/layers/herbalist/side/aligned/hidden/cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/herbalist/side/aligned/hidden/arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/herbalist/side/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/herbalist/side/aligned/hidden/gear.png",
+        "under:weapon": "asset/character/icon/layers/herbalist/side/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/herbalist/side/aligned/hidden/shield.png",
+        "under:hair-tail": "asset/character/icon/layers/herbalist/side/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/herbalist/side/aligned/hidden/head.png",
+        "legs": "asset/character/icon/layers/herbalist/side/aligned/visible/legs.png",
+        "hair-tail": "asset/character/icon/layers/herbalist/side/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/herbalist/side/aligned/visible/body.png",
+        "cloth-hem": "asset/character/icon/layers/herbalist/side/aligned/visible/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/herbalist/side/aligned/visible/arm-left.png",
+        "arm-right": "asset/character/icon/layers/herbalist/side/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/herbalist/side/aligned/visible/gear.png",
+        "weapon": "asset/character/icon/layers/herbalist/side/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/herbalist/side/aligned/visible/shield.png",
+        "head": "asset/character/icon/layers/herbalist/side/aligned/visible/head.png"
+      },
+      "idle_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "under:arm-left",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:shield",
+        "under:hair-tail",
+        "under:head",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "arm-right",
+        "gear",
+        "weapon",
+        "shield",
+        "head"
+      ],
+      "placements": {
+        "legs": {
+          "position": [
+            132,
+            268
+          ],
+          "size": [
+            56,
+            21
+          ]
+        },
+        "body": {
+          "position": [
+            138,
+            197
+          ],
+          "size": [
+            59,
+            73
+          ]
+        },
+        "cloth-hem": {
+          "position": [
+            132,
+            225
+          ],
+          "size": [
+            65,
+            52
+          ]
+        },
+        "hair-tail": {
+          "position": [
+            112,
+            186
+          ],
+          "size": [
+            61,
+            45
+          ]
+        },
+        "head": {
+          "position": [
+            110,
+            129
+          ],
+          "size": [
+            97,
+            75
+          ]
+        },
+        "arm-left": {
+          "position": [
+            137,
+            212
+          ],
+          "size": [
+            34,
+            23
+          ]
+        },
+        "arm-right": {
+          "position": [
+            184,
+            205
+          ],
+          "size": [
+            21,
+            16
+          ]
+        },
+        "equipment": {
+          "position": [
+            103,
+            161
+          ],
+          "size": [
+            107,
+            108
+          ]
+        }
+      },
+      "pivots": {
+        "head": [
+          175,
+          206
+        ],
+        "body": [
+          167,
+          232
+        ],
+        "hair": [
+          175,
+          206
+        ],
+        "cloth": [
+          167,
+          232
+        ]
+      },
+      "rig": {
+        "arm_roots": {
+          "arm-left": [
+            150,
+            220
+          ],
+          "arm-right": [
+            188,
+            211
+          ]
+        },
+        "hand_roots": {
+          "arm-left": [
+            158,
+            232
+          ],
+          "arm-right": [
+            208,
+            211
+          ]
+        },
+        "weapon_arm": "arm-right",
+        "secondary_arm": "arm-left"
+      },
+      "validation": {
+        "original_visible_pixels_exact": true,
+        "original_positions_unchanged": true,
+        "reference_neutral_premultiplied_mae": 0.028032619102328012,
+        "complete_hidden_joints": true
+      }
+    }
+  ]
+}

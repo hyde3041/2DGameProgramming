@@ -2,7 +2,7 @@
   "id": "flooded-ruins",
   "name": "침수 유적",
   "number": 6,
-  "file": "asset/map/flooded-ruins.png",
+  "file": "asset/map/stage/main/flooded-ruins.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -223,7 +223,7 @@
         64
       ],
       "hazard": "물",
-      "hazard_file": "asset/map/tiles/common/water.png"
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "4,0",
@@ -440,7 +440,7 @@
         64
       ],
       "hazard": "물",
-      "hazard_file": "asset/map/tiles/common/water.png"
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "9,0",
@@ -706,7 +706,7 @@
         64
       ],
       "hazard": "물",
-      "hazard_file": "asset/map/tiles/common/water.png"
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "4,1",
@@ -923,7 +923,7 @@
         64
       ],
       "hazard": "물",
-      "hazard_file": "asset/map/tiles/common/water.png"
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "9,1",
@@ -1404,7 +1404,7 @@
         64
       ],
       "hazard": "물",
-      "hazard_file": "asset/map/tiles/common/water.png"
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "9,2",
@@ -1670,7 +1670,7 @@
         64
       ],
       "hazard": "물",
-      "hazard_file": "asset/map/tiles/common/water.png"
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "4,3",
@@ -2145,7 +2145,7 @@
         64
       ],
       "hazard": "물",
-      "hazard_file": "asset/map/tiles/common/water.png"
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "4,4",
@@ -2362,7 +2362,7 @@
         64
       ],
       "hazard": "물",
-      "hazard_file": "asset/map/tiles/common/water.png"
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "9,4",
@@ -2628,7 +2628,7 @@
         64
       ],
       "hazard": "물",
-      "hazard_file": "asset/map/tiles/common/water.png"
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "4,5",
@@ -3109,7 +3109,7 @@
         64
       ],
       "hazard": "물",
-      "hazard_file": "asset/map/tiles/common/water.png"
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "4,6",
@@ -3326,7 +3326,7 @@
         64
       ],
       "hazard": "물",
-      "hazard_file": "asset/map/tiles/common/water.png"
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "9,6",
@@ -3846,7 +3846,7 @@
     }
   ],
   "art_version": 6,
-  "shared_tiles": "asset/map/tiles/common",
-  "shared_objects": "asset/map/objects",
+  "shared_tiles": "asset/map/stage/icon/common",
+  "shared_objects": "asset/map/stage/icon/objects",
   "origin": "existing v4 layout preserved"
 }

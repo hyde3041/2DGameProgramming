@@ -1,0 +1,2114 @@
+{
+  "version": 1,
+  "description": "Static registration of independently drawn parts; animation never changes their scale.",
+  "characters": {
+    "archer": {
+      "name": "궁수",
+      "views": {
+        "front": {
+          "pivots": {
+            "head": [
+              169,
+              213
+            ],
+            "hair": [
+              145,
+              155
+            ],
+            "cloth": [
+              160,
+              238
+            ],
+            "body": [
+              160,
+              270
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 80,
+              "cx": 173,
+              "bottom": 218
+            },
+            "hair-tail": {
+              "height": 135,
+              "left": 89,
+              "top": 127,
+              "flip": true
+            },
+            "body": {
+              "height": 47,
+              "cx": 171,
+              "top": 200
+            },
+            "arm-left": {
+              "height": 33,
+              "left": 144,
+              "top": 217,
+              "flip": true,
+              "attach": [
+                154,
+                221
+              ]
+            },
+            "arm-right": {
+              "height": 26,
+              "left": 175,
+              "top": 219,
+              "attach": [
+                186,
+                219
+              ],
+              "angle": -40
+            },
+            "cloth-hem": {
+              "height": 45,
+              "cx": 162,
+              "top": 234
+            },
+            "legs": {
+              "height": 53,
+              "cx": 161,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 97,
+              "left": 152,
+              "top": 180,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.72,
+                "y": 0.53
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        },
+        "back": {
+          "pivots": {
+            "head": [
+              155,
+              211
+            ],
+            "hair": [
+              174,
+              154
+            ],
+            "cloth": [
+              160,
+              238
+            ],
+            "body": [
+              160,
+              270
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 78,
+              "cx": 155,
+              "bottom": 218
+            },
+            "hair-tail": {
+              "height": 134,
+              "left": 164,
+              "top": 127
+            },
+            "body": {
+              "height": 46,
+              "cx": 160,
+              "top": 200
+            },
+            "arm-left": {
+              "height": 34,
+              "left": 173,
+              "top": 217,
+              "attach": [
+                182,
+                221
+              ]
+            },
+            "arm-right": {
+              "height": 26,
+              "left": 130,
+              "top": 219,
+              "attach": [
+                145,
+                220
+              ],
+              "angle": 40
+            },
+            "cloth-hem": {
+              "height": 43,
+              "cx": 162,
+              "top": 234
+            },
+            "legs": {
+              "height": 53,
+              "cx": 161,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 95,
+              "left": 103,
+              "top": 178,
+              "flip": true,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.28,
+                "y": 0.53
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        },
+        "side": {
+          "pivots": {
+            "head": [
+              175,
+              213
+            ],
+            "hair": [
+              141,
+              155
+            ],
+            "cloth": [
+              160,
+              238
+            ],
+            "body": [
+              160,
+              270
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 76,
+              "cx": 171,
+              "bottom": 218
+            },
+            "hair-tail": {
+              "height": 135,
+              "left": 83,
+              "top": 127,
+              "flip": true
+            },
+            "body": {
+              "height": 46,
+              "cx": 172,
+              "top": 200
+            },
+            "arm-left": {
+              "height": 34,
+              "left": 145,
+              "top": 217,
+              "attach": [
+                172,
+                220
+              ]
+            },
+            "arm-right": {
+              "height": 26,
+              "left": 174,
+              "top": 219,
+              "attach": [
+                185,
+                219
+              ],
+              "angle": -40
+            },
+            "cloth-hem": {
+              "height": 44,
+              "cx": 161,
+              "top": 234
+            },
+            "legs": {
+              "height": 53,
+              "cx": 162,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 97,
+              "left": 147,
+              "top": 179,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.72,
+                "y": 0.53
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        }
+      }
+    },
+    "swordsman": {
+      "name": "검사",
+      "views": {
+        "front": {
+          "pivots": {
+            "head": [
+              165,
+              212
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              165,
+              212
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 85,
+              "cx": 158,
+              "bottom": 215
+            },
+            "hair-tail": {
+              "width": 88,
+              "cx": 158,
+              "top": 131
+            },
+            "body": {
+              "height": 53,
+              "cx": 164,
+              "top": 202
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 219,
+              "attach": [
+                146,
+                224
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 219,
+              "attach": [
+                185,
+                224
+              ]
+            },
+            "cloth-hem": {
+              "height": 52,
+              "cx": 161,
+              "top": 231,
+              "flip": true
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 58,
+              "left": 138,
+              "top": 230
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        },
+        "back": {
+          "pivots": {
+            "head": [
+              162,
+              209
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              162,
+              209
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 79,
+              "cx": 159,
+              "bottom": 212
+            },
+            "hair-tail": {
+              "width": 86,
+              "cx": 159,
+              "top": 134
+            },
+            "body": {
+              "height": 53,
+              "cx": 164,
+              "top": 199
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 216,
+              "attach": [
+                185,
+                221
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 216,
+              "attach": [
+                145,
+                221
+              ]
+            },
+            "cloth-hem": {
+              "height": 52,
+              "cx": 161,
+              "top": 231,
+              "flip": false
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 45,
+              "left": 182,
+              "top": 232
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        },
+        "side": {
+          "pivots": {
+            "head": [
+              173,
+              213
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              173,
+              213
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 79,
+              "cx": 159.5,
+              "bottom": 216
+            },
+            "hair-tail": {
+              "width": 80,
+              "cx": 159.5,
+              "top": 139
+            },
+            "body": {
+              "height": 53,
+              "cx": 171,
+              "top": 203
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 147,
+              "top": 220,
+              "attach": [
+                165,
+                225
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 169,
+              "top": 220,
+              "attach": [
+                181,
+                225
+              ]
+            },
+            "cloth-hem": {
+              "height": 52,
+              "cx": 161,
+              "top": 231,
+              "flip": false
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 58,
+              "left": 138,
+              "top": 230
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        }
+      }
+    },
+    "guardian": {
+      "name": "수호기사",
+      "views": {
+        "front": {
+          "pivots": {
+            "head": [
+              167,
+              207
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              167,
+              207
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 79,
+              "cx": 165,
+              "bottom": 210
+            },
+            "hair-tail": {
+              "width": 93,
+              "cx": 165,
+              "top": 131
+            },
+            "body": {
+              "height": 56,
+              "cx": 164,
+              "top": 197
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 214,
+              "attach": [
+                146,
+                219
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 214,
+              "attach": [
+                185,
+                219
+              ]
+            },
+            "cloth-hem": {
+              "height": 48,
+              "cx": 161,
+              "top": 231
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 102,
+              "left": 188,
+              "top": 184,
+              "island_rank": 0
+            },
+            "equipment-secondary": {
+              "height": 38,
+              "left": 100,
+              "top": 240,
+              "island_rank": 1,
+              "grip": {
+                "arm": "arm-left",
+                "x": 0.5,
+                "y": 0.15
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment-secondary",
+            "equipment",
+            "head"
+          ]
+        },
+        "back": {
+          "pivots": {
+            "head": [
+              163,
+              209
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              163,
+              209
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 77,
+              "cx": 162,
+              "bottom": 212
+            },
+            "hair-tail": {
+              "width": 95,
+              "cx": 162,
+              "top": 134
+            },
+            "body": {
+              "height": 56,
+              "cx": 164,
+              "top": 199
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 216,
+              "attach": [
+                185,
+                221
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 216,
+              "attach": [
+                145,
+                221
+              ]
+            },
+            "cloth-hem": {
+              "height": 48,
+              "cx": 161,
+              "top": 231
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 102,
+              "left": 86,
+              "top": 184,
+              "island_rank": 0
+            },
+            "equipment-secondary": {
+              "height": 38,
+              "left": 100,
+              "top": 240,
+              "island_rank": 1,
+              "grip": {
+                "arm": "arm-left",
+                "x": 0.5,
+                "y": 0.15
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment-secondary",
+            "equipment",
+            "head"
+          ]
+        },
+        "side": {
+          "pivots": {
+            "head": [
+              175,
+              209
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              175,
+              209
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 82,
+              "cx": 157.5,
+              "bottom": 212
+            },
+            "hair-tail": {
+              "width": 97,
+              "cx": 157.5,
+              "top": 134
+            },
+            "body": {
+              "height": 56,
+              "cx": 171,
+              "top": 199
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 147,
+              "top": 216,
+              "attach": [
+                165,
+                221
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 169,
+              "top": 216,
+              "attach": [
+                181,
+                221
+              ]
+            },
+            "cloth-hem": {
+              "height": 48,
+              "cx": 161,
+              "top": 231
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 102,
+              "left": 183,
+              "top": 184,
+              "island_rank": 0
+            },
+            "equipment-secondary": {
+              "height": 38,
+              "left": 100,
+              "top": 240,
+              "island_rank": 1,
+              "grip": {
+                "arm": "arm-left",
+                "x": 0.5,
+                "y": 0.15
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment-secondary",
+            "equipment",
+            "head"
+          ]
+        }
+      }
+    },
+    "crossbowman": {
+      "name": "석궁병",
+      "views": {
+        "front": {
+          "pivots": {
+            "head": [
+              170,
+              213
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              170,
+              213
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 84,
+              "cx": 161.5,
+              "bottom": 216
+            },
+            "hair-tail": {
+              "width": 83,
+              "cx": 161.5,
+              "top": 133
+            },
+            "body": {
+              "height": 53,
+              "cx": 164,
+              "top": 203
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 220,
+              "attach": [
+                146,
+                225
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 220,
+              "attach": [
+                185,
+                225
+              ]
+            },
+            "cloth-hem": {
+              "height": 49,
+              "cx": 161,
+              "top": 231
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "width": 92,
+              "left": 139,
+              "top": 229,
+              "flip": false
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        },
+        "back": {
+          "pivots": {
+            "head": [
+              164,
+              211
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              164,
+              211
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 79,
+              "cx": 157.5,
+              "bottom": 214
+            },
+            "hair-tail": {
+              "width": 81,
+              "cx": 157.5,
+              "top": 134
+            },
+            "body": {
+              "height": 53,
+              "cx": 164,
+              "top": 201
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 218,
+              "attach": [
+                185,
+                223
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 218,
+              "attach": [
+                145,
+                223
+              ]
+            },
+            "cloth-hem": {
+              "height": 49,
+              "cx": 161,
+              "top": 231
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "width": 92,
+              "left": 118,
+              "top": 229,
+              "flip": true
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        },
+        "side": {
+          "pivots": {
+            "head": [
+              177,
+              214
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              177,
+              214
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 83,
+              "cx": 161,
+              "bottom": 217
+            },
+            "hair-tail": {
+              "width": 82,
+              "cx": 161,
+              "top": 134
+            },
+            "body": {
+              "height": 53,
+              "cx": 171,
+              "top": 204
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 147,
+              "top": 221,
+              "attach": [
+                165,
+                226
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 169,
+              "top": 221,
+              "attach": [
+                181,
+                226
+              ]
+            },
+            "cloth-hem": {
+              "height": 49,
+              "cx": 161,
+              "top": 231
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "width": 92,
+              "left": 139,
+              "top": 229,
+              "flip": false
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        }
+      }
+    },
+    "cleric": {
+      "name": "성직자",
+      "views": {
+        "front": {
+          "pivots": {
+            "head": [
+              166,
+              202
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              166,
+              202
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 80,
+              "cx": 169.5,
+              "bottom": 207
+            },
+            "hair-tail": {
+              "width": 79,
+              "cx": 178,
+              "top": 132,
+              "flip": true
+            },
+            "body": {
+              "height": 57,
+              "cx": 164,
+              "top": 192
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 209,
+              "attach": [
+                146,
+                214
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 209,
+              "attach": [
+                185,
+                214
+              ]
+            },
+            "cloth-hem": {
+              "height": 54,
+              "cx": 161,
+              "top": 227
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 160,
+              "left": 92,
+              "top": 129,
+              "angle": -20,
+              "grip": {
+                "arm": "arm-left",
+                "x": 0.5,
+                "y": 0.75,
+                "shaft": true
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        },
+        "back": {
+          "pivots": {
+            "head": [
+              163,
+              202
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              163,
+              202
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 80,
+              "cx": 151.5,
+              "bottom": 207
+            },
+            "hair-tail": {
+              "width": 79,
+              "cx": 149,
+              "top": 132,
+              "flip": false
+            },
+            "body": {
+              "height": 57,
+              "cx": 164,
+              "top": 192
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 209,
+              "attach": [
+                185,
+                214
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 209,
+              "attach": [
+                145,
+                214
+              ]
+            },
+            "cloth-hem": {
+              "height": 54,
+              "cx": 161,
+              "top": 227
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 160,
+              "left": 173,
+              "top": 129,
+              "angle": -20,
+              "grip": {
+                "arm": "arm-left",
+                "x": 0.5,
+                "y": 0.75,
+                "shaft": true
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        },
+        "side": {
+          "pivots": {
+            "head": [
+              172,
+              206
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              172,
+              206
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 80,
+              "cx": 152,
+              "bottom": 211
+            },
+            "hair-tail": {
+              "width": 75,
+              "cx": 153,
+              "top": 132,
+              "flip": false
+            },
+            "body": {
+              "height": 57,
+              "cx": 171,
+              "top": 196
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 147,
+              "top": 213,
+              "attach": [
+                165,
+                218
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 169,
+              "top": 213,
+              "attach": [
+                181,
+                218
+              ]
+            },
+            "cloth-hem": {
+              "height": 54,
+              "cx": 161,
+              "top": 227
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 160,
+              "left": 177,
+              "top": 129,
+              "angle": -20,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.5,
+                "y": 0.75,
+                "shaft": true
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        }
+      }
+    },
+    "herbalist": {
+      "name": "약초사",
+      "views": {
+        "front": {
+          "pivots": {
+            "head": [
+              168,
+              205
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              168,
+              205
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 85,
+              "cx": 161,
+              "bottom": 208
+            },
+            "hair-tail": {
+              "width": 92,
+              "cx": 161,
+              "top": 130,
+              "flip": true
+            },
+            "body": {
+              "height": 58,
+              "cx": 164,
+              "top": 195
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 212,
+              "attach": [
+                146,
+                217
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 212,
+              "attach": [
+                185,
+                217
+              ]
+            },
+            "cloth-hem": {
+              "height": 48,
+              "cx": 161,
+              "top": 224
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 37,
+              "left": 198,
+              "top": 239,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.5,
+                "y": 0.15
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        },
+        "back": {
+          "pivots": {
+            "head": [
+              159,
+              203
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              159,
+              203
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 76,
+              "cx": 161.5,
+              "bottom": 206
+            },
+            "hair-tail": {
+              "width": 84,
+              "cx": 161.5,
+              "top": 135,
+              "flip": false
+            },
+            "body": {
+              "height": 58,
+              "cx": 164,
+              "top": 193
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 210,
+              "attach": [
+                185,
+                215
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 210,
+              "attach": [
+                145,
+                215
+              ]
+            },
+            "cloth-hem": {
+              "height": 48,
+              "cx": 161,
+              "top": 224
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 37,
+              "left": 113,
+              "top": 239,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.5,
+                "y": 0.15
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        },
+        "side": {
+          "pivots": {
+            "head": [
+              175,
+              206
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              175,
+              206
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 78,
+              "cx": 159,
+              "bottom": 209
+            },
+            "hair-tail": {
+              "width": 87,
+              "cx": 159,
+              "top": 135,
+              "flip": true
+            },
+            "body": {
+              "height": 58,
+              "cx": 171,
+              "top": 196
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 147,
+              "top": 213,
+              "attach": [
+                165,
+                218
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 169,
+              "top": 213,
+              "attach": [
+                181,
+                218
+              ]
+            },
+            "cloth-hem": {
+              "height": 48,
+              "cx": 161,
+              "top": 224
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 37,
+              "left": 198,
+              "top": 239,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.5,
+                "y": 0.15
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        }
+      }
+    },
+    "frost-mage": {
+      "name": "냉기술사",
+      "views": {
+        "front": {
+          "pivots": {
+            "head": [
+              164,
+              209
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              164,
+              209
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 88,
+              "cx": 149.5,
+              "bottom": 212
+            },
+            "hair-tail": {
+              "width": 87,
+              "cx": 149.5,
+              "top": 131
+            },
+            "body": {
+              "height": 54,
+              "cx": 164,
+              "top": 199
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 216,
+              "attach": [
+                146,
+                221
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 216,
+              "attach": [
+                185,
+                221
+              ]
+            },
+            "cloth-hem": {
+              "height": 51,
+              "cx": 161,
+              "top": 231
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 116,
+              "left": 174,
+              "top": 151,
+              "angle": -24,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.5,
+                "y": 0.82,
+                "shaft": true
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        },
+        "back": {
+          "pivots": {
+            "head": [
+              164,
+              208
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              164,
+              208
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 79,
+              "cx": 170.5,
+              "bottom": 211
+            },
+            "hair-tail": {
+              "width": 87,
+              "cx": 170.5,
+              "top": 134
+            },
+            "body": {
+              "height": 54,
+              "cx": 164,
+              "top": 198
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 215,
+              "attach": [
+                185,
+                220
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 215,
+              "attach": [
+                145,
+                220
+              ]
+            },
+            "cloth-hem": {
+              "height": 51,
+              "cx": 161,
+              "top": 231
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 116,
+              "left": 117,
+              "top": 151,
+              "angle": -24,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.5,
+                "y": 0.82,
+                "shaft": true
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        },
+        "side": {
+          "pivots": {
+            "head": [
+              174,
+              210
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              174,
+              210
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 83,
+              "cx": 148.5,
+              "bottom": 213
+            },
+            "hair-tail": {
+              "width": 81,
+              "cx": 148.5,
+              "top": 134
+            },
+            "body": {
+              "height": 54,
+              "cx": 171,
+              "top": 200
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 147,
+              "top": 217,
+              "attach": [
+                165,
+                222
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 169,
+              "top": 217,
+              "attach": [
+                181,
+                222
+              ]
+            },
+            "cloth-hem": {
+              "height": 51,
+              "cx": 161,
+              "top": 231
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 116,
+              "left": 175,
+              "top": 151,
+              "angle": -24,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.5,
+                "y": 0.82,
+                "shaft": true
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "arm-left",
+            "arm-right",
+            "body",
+            "cloth-hem",
+            "equipment",
+            "head"
+          ]
+        }
+      }
+    },
+    "shadow-thief": {
+      "name": "그림자 도적",
+      "views": {
+        "front": {
+          "pivots": {
+            "head": [
+              169,
+              214
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              169,
+              214
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 86,
+              "cx": 164,
+              "bottom": 217
+            },
+            "hair-tail": {
+              "width": 95,
+              "cx": 164,
+              "top": 133
+            },
+            "body": {
+              "height": 56,
+              "cx": 164,
+              "top": 204
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 221,
+              "attach": [
+                146,
+                226
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 221,
+              "attach": [
+                185,
+                226
+              ]
+            },
+            "cloth-hem": {
+              "height": 45,
+              "cx": 161,
+              "top": 235
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 44,
+              "left": 190,
+              "top": 240,
+              "flip": true,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.2,
+                "y": 0.22
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "cloth-hem",
+            "arm-left",
+            "arm-right",
+            "body",
+            "equipment",
+            "head"
+          ]
+        },
+        "back": {
+          "pivots": {
+            "head": [
+              166,
+              209
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              166,
+              209
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 82,
+              "cx": 164.5,
+              "bottom": 212
+            },
+            "hair-tail": {
+              "width": 88,
+              "cx": 164.5,
+              "top": 133
+            },
+            "body": {
+              "height": 56,
+              "cx": 164,
+              "top": 199
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 127,
+              "top": 216,
+              "attach": [
+                185,
+                221
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 174,
+              "top": 216,
+              "attach": [
+                145,
+                221
+              ]
+            },
+            "cloth-hem": {
+              "height": 45,
+              "cx": 161,
+              "top": 235
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 44,
+              "left": 105,
+              "top": 240,
+              "flip": false,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.8,
+                "y": 0.22
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "cloth-hem",
+            "arm-left",
+            "arm-right",
+            "body",
+            "equipment",
+            "head"
+          ]
+        },
+        "side": {
+          "pivots": {
+            "head": [
+              178,
+              214
+            ],
+            "body": [
+              160,
+              270
+            ],
+            "hair": [
+              178,
+              214
+            ],
+            "cloth": [
+              160,
+              242
+            ]
+          },
+          "parts": {
+            "head": {
+              "height": 84,
+              "cx": 160,
+              "bottom": 217
+            },
+            "hair-tail": {
+              "width": 88,
+              "cx": 160,
+              "top": 134
+            },
+            "body": {
+              "height": 56,
+              "cx": 171,
+              "top": 204
+            },
+            "arm-left": {
+              "height": 38,
+              "left": 147,
+              "top": 221,
+              "attach": [
+                165,
+                226
+              ]
+            },
+            "arm-right": {
+              "height": 38,
+              "left": 169,
+              "top": 221,
+              "attach": [
+                181,
+                226
+              ]
+            },
+            "cloth-hem": {
+              "height": 45,
+              "cx": 161,
+              "top": 235
+            },
+            "legs": {
+              "height": 54,
+              "cx": 160,
+              "bottom": 288
+            },
+            "equipment": {
+              "height": 44,
+              "left": 190,
+              "top": 240,
+              "flip": true,
+              "grip": {
+                "arm": "arm-right",
+                "x": 0.2,
+                "y": 0.22
+              }
+            }
+          },
+          "order": [
+            "hair-tail",
+            "legs",
+            "cloth-hem",
+            "arm-left",
+            "arm-right",
+            "body",
+            "equipment",
+            "head"
+          ]
+        }
+      }
+    }
+  }
+}
