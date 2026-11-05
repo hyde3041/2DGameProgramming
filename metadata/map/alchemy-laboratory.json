@@ -1,0 +1,4018 @@
+{
+  "id": "alchemy-laboratory",
+  "name": "연금술 실험실",
+  "number": 18,
+  "file": "asset/map/alchemy-laboratory.png",
+  "canvas": {
+    "width": 800,
+    "height": 600
+  },
+  "grid": {
+    "columns": 11,
+    "rows": 7,
+    "origin": [
+      48,
+      76
+    ],
+    "cell_size": [
+      64,
+      64
+    ],
+    "elevation_pixels": 16,
+    "coordinate_system": "row 0 at top, column 0 at left"
+  },
+  "game_grid_calibrated": true,
+  "terrain_heights": 2,
+  "goal_points": 2,
+  "enemy_entrances": 3,
+  "entrances": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      5
+    ]
+  ],
+  "goals": [
+    [
+      10,
+      1
+    ],
+    [
+      10,
+      5
+    ]
+  ],
+  "coordinates": "pixel rectangles and centers use top-left origin unless named pico2d",
+  "cells": [
+    {
+      "id": "0,0",
+      "column": 0,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        48,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        48,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        48,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        80,
+        108
+      ],
+      "pico2d_center": [
+        80,
+        492
+      ],
+      "pico2d_surface_rect": [
+        48,
+        460,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "1,0",
+      "column": 1,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        112,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        112,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        112,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        144,
+        108
+      ],
+      "pico2d_center": [
+        144,
+        492
+      ],
+      "pico2d_surface_rect": [
+        112,
+        460,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "2,0",
+      "column": 2,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        176,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        208,
+        108
+      ],
+      "pico2d_center": [
+        208,
+        492
+      ],
+      "pico2d_surface_rect": [
+        176,
+        460,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "3,0",
+      "column": 3,
+      "row": 0,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        240,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        240,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        240,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        272,
+        108
+      ],
+      "pico2d_center": [
+        272,
+        492
+      ],
+      "pico2d_surface_rect": [
+        240,
+        460,
+        64,
+        64
+      ],
+      "prop": "물약 탁자",
+      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-0.png"
+    },
+    {
+      "id": "4,0",
+      "column": 4,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        304,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        304,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        304,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        336,
+        108
+      ],
+      "pico2d_center": [
+        336,
+        492
+      ],
+      "pico2d_surface_rect": [
+        304,
+        460,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "5,0",
+      "column": 5,
+      "row": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        368,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        368,
+        60,
+        64,
+        64
+      ],
+      "draw_rect": [
+        368,
+        60,
+        64,
+        80
+      ],
+      "canvas_center": [
+        400,
+        92
+      ],
+      "pico2d_center": [
+        400,
+        508
+      ],
+      "pico2d_surface_rect": [
+        368,
+        476,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "6,0",
+      "column": 6,
+      "row": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        432,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        60,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        60,
+        64,
+        80
+      ],
+      "canvas_center": [
+        464,
+        92
+      ],
+      "pico2d_center": [
+        464,
+        508
+      ],
+      "pico2d_surface_rect": [
+        432,
+        476,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "7,0",
+      "column": 7,
+      "row": 0,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        496,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        528,
+        108
+      ],
+      "pico2d_center": [
+        528,
+        492
+      ],
+      "pico2d_surface_rect": [
+        496,
+        460,
+        64,
+        64
+      ],
+      "hazard": "마력 유출",
+      "hazard_file": "asset/map/tiles/themes/alchemy-laboratory/hazard.png"
+    },
+    {
+      "id": "8,0",
+      "column": 8,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        560,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        560,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        560,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        592,
+        108
+      ],
+      "pico2d_center": [
+        592,
+        492
+      ],
+      "pico2d_surface_rect": [
+        560,
+        460,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "9,0",
+      "column": 9,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        624,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        624,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        624,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        656,
+        108
+      ],
+      "pico2d_center": [
+        656,
+        492
+      ],
+      "pico2d_surface_rect": [
+        624,
+        460,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "10,0",
+      "column": 10,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        688,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        688,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        688,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        720,
+        108
+      ],
+      "pico2d_center": [
+        720,
+        492
+      ],
+      "pico2d_surface_rect": [
+        688,
+        460,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "0,1",
+      "column": 0,
+      "row": 1,
+      "type": "R",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        48,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        48,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        48,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        80,
+        172
+      ],
+      "pico2d_center": [
+        80,
+        428
+      ],
+      "pico2d_surface_rect": [
+        48,
+        396,
+        64,
+        64
+      ],
+      "portal_rect": [
+        48,
+        140,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "1,1",
+      "column": 1,
+      "row": 1,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        112,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        112,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        112,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        144,
+        172
+      ],
+      "pico2d_center": [
+        144,
+        428
+      ],
+      "pico2d_surface_rect": [
+        112,
+        396,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "2,1",
+      "column": 2,
+      "row": 1,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        176,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        208,
+        172
+      ],
+      "pico2d_center": [
+        208,
+        428
+      ],
+      "pico2d_surface_rect": [
+        176,
+        396,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "3,1",
+      "column": 3,
+      "row": 1,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        240,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        240,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        240,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        272,
+        172
+      ],
+      "pico2d_center": [
+        272,
+        428
+      ],
+      "pico2d_surface_rect": [
+        240,
+        396,
+        64,
+        64
+      ],
+      "prop": "돌 가마솥",
+      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-1.png"
+    },
+    {
+      "id": "4,1",
+      "column": 4,
+      "row": 1,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        336,
+        172
+      ],
+      "pico2d_center": [
+        336,
+        428
+      ],
+      "pico2d_surface_rect": [
+        304,
+        396,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "5,1",
+      "column": 5,
+      "row": 1,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        368,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        368,
+        124,
+        64,
+        64
+      ],
+      "draw_rect": [
+        368,
+        124,
+        64,
+        80
+      ],
+      "canvas_center": [
+        400,
+        156
+      ],
+      "pico2d_center": [
+        400,
+        444
+      ],
+      "pico2d_surface_rect": [
+        368,
+        412,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "6,1",
+      "column": 6,
+      "row": 1,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        432,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        124,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        124,
+        64,
+        80
+      ],
+      "canvas_center": [
+        464,
+        156
+      ],
+      "pico2d_center": [
+        464,
+        444
+      ],
+      "pico2d_surface_rect": [
+        432,
+        412,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "7,1",
+      "column": 7,
+      "row": 1,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        496,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        528,
+        172
+      ],
+      "pico2d_center": [
+        528,
+        428
+      ],
+      "pico2d_surface_rect": [
+        496,
+        396,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "8,1",
+      "column": 8,
+      "row": 1,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        560,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        560,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        560,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        592,
+        172
+      ],
+      "pico2d_center": [
+        592,
+        428
+      ],
+      "pico2d_surface_rect": [
+        560,
+        396,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "9,1",
+      "column": 9,
+      "row": 1,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        624,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        624,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        624,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        656,
+        172
+      ],
+      "pico2d_center": [
+        656,
+        428
+      ],
+      "pico2d_surface_rect": [
+        624,
+        396,
+        64,
+        64
+      ],
+      "prop": "재료 통",
+      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-2.png"
+    },
+    {
+      "id": "10,1",
+      "column": 10,
+      "row": 1,
+      "type": "B",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        688,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        688,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        688,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        720,
+        172
+      ],
+      "pico2d_center": [
+        720,
+        428
+      ],
+      "pico2d_surface_rect": [
+        688,
+        396,
+        64,
+        64
+      ],
+      "portal_rect": [
+        688,
+        140,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "0,2",
+      "column": 0,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        48,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        48,
+        204,
+        64,
+        64
+      ],
+      "draw_rect": [
+        48,
+        204,
+        64,
+        64
+      ],
+      "canvas_center": [
+        80,
+        236
+      ],
+      "pico2d_center": [
+        80,
+        364
+      ],
+      "pico2d_surface_rect": [
+        48,
+        332,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "1,2",
+      "column": 1,
+      "row": 2,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        112,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        112,
+        204,
+        64,
+        64
+      ],
+      "draw_rect": [
+        112,
+        204,
+        64,
+        64
+      ],
+      "canvas_center": [
+        144,
+        236
+      ],
+      "pico2d_center": [
+        144,
+        364
+      ],
+      "pico2d_surface_rect": [
+        112,
+        332,
+        64,
+        64
+      ],
+      "hazard": "마력 유출",
+      "hazard_file": "asset/map/tiles/themes/alchemy-laboratory/hazard.png"
+    },
+    {
+      "id": "2,2",
+      "column": 2,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        176,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        204,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        204,
+        64,
+        64
+      ],
+      "canvas_center": [
+        208,
+        236
+      ],
+      "pico2d_center": [
+        208,
+        364
+      ],
+      "pico2d_surface_rect": [
+        176,
+        332,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "3,2",
+      "column": 3,
+      "row": 2,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        240,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        240,
+        204,
+        64,
+        64
+      ],
+      "draw_rect": [
+        240,
+        204,
+        64,
+        64
+      ],
+      "canvas_center": [
+        272,
+        236
+      ],
+      "pico2d_center": [
+        272,
+        364
+      ],
+      "pico2d_surface_rect": [
+        240,
+        332,
+        64,
+        64
+      ],
+      "prop": "물약 탁자",
+      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-0.png"
+    },
+    {
+      "id": "4,2",
+      "column": 4,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        304,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        304,
+        204,
+        64,
+        64
+      ],
+      "draw_rect": [
+        304,
+        204,
+        64,
+        64
+      ],
+      "canvas_center": [
+        336,
+        236
+      ],
+      "pico2d_center": [
+        336,
+        364
+      ],
+      "pico2d_surface_rect": [
+        304,
+        332,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "5,2",
+      "column": 5,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        368,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        368,
+        204,
+        64,
+        64
+      ],
+      "draw_rect": [
+        368,
+        204,
+        64,
+        64
+      ],
+      "canvas_center": [
+        400,
+        236
+      ],
+      "pico2d_center": [
+        400,
+        364
+      ],
+      "pico2d_surface_rect": [
+        368,
+        332,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "6,2",
+      "column": 6,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        432,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        204,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        204,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        236
+      ],
+      "pico2d_center": [
+        464,
+        364
+      ],
+      "pico2d_surface_rect": [
+        432,
+        332,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "7,2",
+      "column": 7,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        496,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        204,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        204,
+        64,
+        64
+      ],
+      "canvas_center": [
+        528,
+        236
+      ],
+      "pico2d_center": [
+        528,
+        364
+      ],
+      "pico2d_surface_rect": [
+        496,
+        332,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "8,2",
+      "column": 8,
+      "row": 2,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        560,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        560,
+        188,
+        64,
+        64
+      ],
+      "draw_rect": [
+        560,
+        188,
+        64,
+        80
+      ],
+      "canvas_center": [
+        592,
+        220
+      ],
+      "pico2d_center": [
+        592,
+        380
+      ],
+      "pico2d_surface_rect": [
+        560,
+        348,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "9,2",
+      "column": 9,
+      "row": 2,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        624,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        624,
+        188,
+        64,
+        64
+      ],
+      "draw_rect": [
+        624,
+        188,
+        64,
+        80
+      ],
+      "canvas_center": [
+        656,
+        220
+      ],
+      "pico2d_center": [
+        656,
+        380
+      ],
+      "pico2d_surface_rect": [
+        624,
+        348,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "10,2",
+      "column": 10,
+      "row": 2,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        688,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        688,
+        204,
+        64,
+        64
+      ],
+      "draw_rect": [
+        688,
+        204,
+        64,
+        64
+      ],
+      "canvas_center": [
+        720,
+        236
+      ],
+      "pico2d_center": [
+        720,
+        364
+      ],
+      "pico2d_surface_rect": [
+        688,
+        332,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "0,3",
+      "column": 0,
+      "row": 3,
+      "type": "R",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        48,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        48,
+        268,
+        64,
+        64
+      ],
+      "draw_rect": [
+        48,
+        268,
+        64,
+        64
+      ],
+      "canvas_center": [
+        80,
+        300
+      ],
+      "pico2d_center": [
+        80,
+        300
+      ],
+      "pico2d_surface_rect": [
+        48,
+        268,
+        64,
+        64
+      ],
+      "portal_rect": [
+        48,
+        268,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "1,3",
+      "column": 1,
+      "row": 3,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        112,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        112,
+        268,
+        64,
+        64
+      ],
+      "draw_rect": [
+        112,
+        268,
+        64,
+        64
+      ],
+      "canvas_center": [
+        144,
+        300
+      ],
+      "pico2d_center": [
+        144,
+        300
+      ],
+      "pico2d_surface_rect": [
+        112,
+        268,
+        64,
+        64
+      ],
+      "hazard": "마력 유출",
+      "hazard_file": "asset/map/tiles/themes/alchemy-laboratory/hazard.png"
+    },
+    {
+      "id": "2,3",
+      "column": 2,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        176,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        268,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        268,
+        64,
+        64
+      ],
+      "canvas_center": [
+        208,
+        300
+      ],
+      "pico2d_center": [
+        208,
+        300
+      ],
+      "pico2d_surface_rect": [
+        176,
+        268,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "3,3",
+      "column": 3,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        240,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        240,
+        268,
+        64,
+        64
+      ],
+      "draw_rect": [
+        240,
+        268,
+        64,
+        64
+      ],
+      "canvas_center": [
+        272,
+        300
+      ],
+      "pico2d_center": [
+        272,
+        300
+      ],
+      "pico2d_surface_rect": [
+        240,
+        268,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "4,3",
+      "column": 4,
+      "row": 3,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        304,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        304,
+        252,
+        64,
+        64
+      ],
+      "draw_rect": [
+        304,
+        252,
+        64,
+        80
+      ],
+      "canvas_center": [
+        336,
+        284
+      ],
+      "pico2d_center": [
+        336,
+        316
+      ],
+      "pico2d_surface_rect": [
+        304,
+        284,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "5,3",
+      "column": 5,
+      "row": 3,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        368,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        368,
+        252,
+        64,
+        64
+      ],
+      "draw_rect": [
+        368,
+        252,
+        64,
+        80
+      ],
+      "canvas_center": [
+        400,
+        284
+      ],
+      "pico2d_center": [
+        400,
+        316
+      ],
+      "pico2d_surface_rect": [
+        368,
+        284,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "6,3",
+      "column": 6,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        300
+      ],
+      "pico2d_center": [
+        464,
+        300
+      ],
+      "pico2d_surface_rect": [
+        432,
+        268,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "7,3",
+      "column": 7,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        496,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        268,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        268,
+        64,
+        64
+      ],
+      "canvas_center": [
+        528,
+        300
+      ],
+      "pico2d_center": [
+        528,
+        300
+      ],
+      "pico2d_surface_rect": [
+        496,
+        268,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "8,3",
+      "column": 8,
+      "row": 3,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        560,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        560,
+        252,
+        64,
+        64
+      ],
+      "draw_rect": [
+        560,
+        252,
+        64,
+        80
+      ],
+      "canvas_center": [
+        592,
+        284
+      ],
+      "pico2d_center": [
+        592,
+        316
+      ],
+      "pico2d_surface_rect": [
+        560,
+        284,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "9,3",
+      "column": 9,
+      "row": 3,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        624,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        624,
+        252,
+        64,
+        64
+      ],
+      "draw_rect": [
+        624,
+        252,
+        64,
+        80
+      ],
+      "canvas_center": [
+        656,
+        284
+      ],
+      "pico2d_center": [
+        656,
+        316
+      ],
+      "pico2d_surface_rect": [
+        624,
+        284,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "10,3",
+      "column": 10,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        688,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        688,
+        268,
+        64,
+        64
+      ],
+      "draw_rect": [
+        688,
+        268,
+        64,
+        64
+      ],
+      "canvas_center": [
+        720,
+        300
+      ],
+      "pico2d_center": [
+        720,
+        300
+      ],
+      "pico2d_surface_rect": [
+        688,
+        268,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "0,4",
+      "column": 0,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        48,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        48,
+        332,
+        64,
+        64
+      ],
+      "draw_rect": [
+        48,
+        332,
+        64,
+        64
+      ],
+      "canvas_center": [
+        80,
+        364
+      ],
+      "pico2d_center": [
+        80,
+        236
+      ],
+      "pico2d_surface_rect": [
+        48,
+        204,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "1,4",
+      "column": 1,
+      "row": 4,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        112,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        112,
+        332,
+        64,
+        64
+      ],
+      "draw_rect": [
+        112,
+        332,
+        64,
+        64
+      ],
+      "canvas_center": [
+        144,
+        364
+      ],
+      "pico2d_center": [
+        144,
+        236
+      ],
+      "pico2d_surface_rect": [
+        112,
+        204,
+        64,
+        64
+      ],
+      "prop": "돌 가마솥",
+      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-1.png"
+    },
+    {
+      "id": "2,4",
+      "column": 2,
+      "row": 4,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        176,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        316,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        316,
+        64,
+        80
+      ],
+      "canvas_center": [
+        208,
+        348
+      ],
+      "pico2d_center": [
+        208,
+        252
+      ],
+      "pico2d_surface_rect": [
+        176,
+        220,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "3,4",
+      "column": 3,
+      "row": 4,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        240,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        240,
+        316,
+        64,
+        64
+      ],
+      "draw_rect": [
+        240,
+        316,
+        64,
+        80
+      ],
+      "canvas_center": [
+        272,
+        348
+      ],
+      "pico2d_center": [
+        272,
+        252
+      ],
+      "pico2d_surface_rect": [
+        240,
+        220,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "4,4",
+      "column": 4,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        304,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        304,
+        332,
+        64,
+        64
+      ],
+      "draw_rect": [
+        304,
+        332,
+        64,
+        64
+      ],
+      "canvas_center": [
+        336,
+        364
+      ],
+      "pico2d_center": [
+        336,
+        236
+      ],
+      "pico2d_surface_rect": [
+        304,
+        204,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "5,4",
+      "column": 5,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        368,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        368,
+        332,
+        64,
+        64
+      ],
+      "draw_rect": [
+        368,
+        332,
+        64,
+        64
+      ],
+      "canvas_center": [
+        400,
+        364
+      ],
+      "pico2d_center": [
+        400,
+        236
+      ],
+      "pico2d_surface_rect": [
+        368,
+        204,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "6,4",
+      "column": 6,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        432,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        332,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        332,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        364
+      ],
+      "pico2d_center": [
+        464,
+        236
+      ],
+      "pico2d_surface_rect": [
+        432,
+        204,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "7,4",
+      "column": 7,
+      "row": 4,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        496,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        332,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        332,
+        64,
+        64
+      ],
+      "canvas_center": [
+        528,
+        364
+      ],
+      "pico2d_center": [
+        528,
+        236
+      ],
+      "pico2d_surface_rect": [
+        496,
+        204,
+        64,
+        64
+      ],
+      "prop": "재료 통",
+      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-2.png"
+    },
+    {
+      "id": "8,4",
+      "column": 8,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        560,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        560,
+        332,
+        64,
+        64
+      ],
+      "draw_rect": [
+        560,
+        332,
+        64,
+        64
+      ],
+      "canvas_center": [
+        592,
+        364
+      ],
+      "pico2d_center": [
+        592,
+        236
+      ],
+      "pico2d_surface_rect": [
+        560,
+        204,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "9,4",
+      "column": 9,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        624,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        624,
+        332,
+        64,
+        64
+      ],
+      "draw_rect": [
+        624,
+        332,
+        64,
+        64
+      ],
+      "canvas_center": [
+        656,
+        364
+      ],
+      "pico2d_center": [
+        656,
+        236
+      ],
+      "pico2d_surface_rect": [
+        624,
+        204,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "10,4",
+      "column": 10,
+      "row": 4,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        688,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        688,
+        332,
+        64,
+        64
+      ],
+      "draw_rect": [
+        688,
+        332,
+        64,
+        64
+      ],
+      "canvas_center": [
+        720,
+        364
+      ],
+      "pico2d_center": [
+        720,
+        236
+      ],
+      "pico2d_surface_rect": [
+        688,
+        204,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "0,5",
+      "column": 0,
+      "row": 5,
+      "type": "R",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        48,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        48,
+        396,
+        64,
+        64
+      ],
+      "draw_rect": [
+        48,
+        396,
+        64,
+        64
+      ],
+      "canvas_center": [
+        80,
+        428
+      ],
+      "pico2d_center": [
+        80,
+        172
+      ],
+      "pico2d_surface_rect": [
+        48,
+        140,
+        64,
+        64
+      ],
+      "portal_rect": [
+        48,
+        396,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "1,5",
+      "column": 1,
+      "row": 5,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        112,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        112,
+        396,
+        64,
+        64
+      ],
+      "draw_rect": [
+        112,
+        396,
+        64,
+        64
+      ],
+      "canvas_center": [
+        144,
+        428
+      ],
+      "pico2d_center": [
+        144,
+        172
+      ],
+      "pico2d_surface_rect": [
+        112,
+        140,
+        64,
+        64
+      ],
+      "prop": "물약 탁자",
+      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-0.png"
+    },
+    {
+      "id": "2,5",
+      "column": 2,
+      "row": 5,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        176,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        380,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        380,
+        64,
+        80
+      ],
+      "canvas_center": [
+        208,
+        412
+      ],
+      "pico2d_center": [
+        208,
+        188
+      ],
+      "pico2d_surface_rect": [
+        176,
+        156,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "3,5",
+      "column": 3,
+      "row": 5,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        240,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        240,
+        380,
+        64,
+        64
+      ],
+      "draw_rect": [
+        240,
+        380,
+        64,
+        80
+      ],
+      "canvas_center": [
+        272,
+        412
+      ],
+      "pico2d_center": [
+        272,
+        188
+      ],
+      "pico2d_surface_rect": [
+        240,
+        156,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "4,5",
+      "column": 4,
+      "row": 5,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        304,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        304,
+        396,
+        64,
+        64
+      ],
+      "draw_rect": [
+        304,
+        396,
+        64,
+        64
+      ],
+      "canvas_center": [
+        336,
+        428
+      ],
+      "pico2d_center": [
+        336,
+        172
+      ],
+      "pico2d_surface_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "hazard": "마력 유출",
+      "hazard_file": "asset/map/tiles/themes/alchemy-laboratory/hazard.png"
+    },
+    {
+      "id": "5,5",
+      "column": 5,
+      "row": 5,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        368,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        368,
+        396,
+        64,
+        64
+      ],
+      "draw_rect": [
+        368,
+        396,
+        64,
+        64
+      ],
+      "canvas_center": [
+        400,
+        428
+      ],
+      "pico2d_center": [
+        400,
+        172
+      ],
+      "pico2d_surface_rect": [
+        368,
+        140,
+        64,
+        64
+      ],
+      "hazard": "마력 유출",
+      "hazard_file": "asset/map/tiles/themes/alchemy-laboratory/hazard.png"
+    },
+    {
+      "id": "6,5",
+      "column": 6,
+      "row": 5,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        432,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        396,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        396,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        428
+      ],
+      "pico2d_center": [
+        464,
+        172
+      ],
+      "pico2d_surface_rect": [
+        432,
+        140,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "7,5",
+      "column": 7,
+      "row": 5,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        496,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        396,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        396,
+        64,
+        64
+      ],
+      "canvas_center": [
+        528,
+        428
+      ],
+      "pico2d_center": [
+        528,
+        172
+      ],
+      "pico2d_surface_rect": [
+        496,
+        140,
+        64,
+        64
+      ],
+      "prop": "돌 가마솥",
+      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-1.png"
+    },
+    {
+      "id": "8,5",
+      "column": 8,
+      "row": 5,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        560,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        560,
+        396,
+        64,
+        64
+      ],
+      "draw_rect": [
+        560,
+        396,
+        64,
+        64
+      ],
+      "canvas_center": [
+        592,
+        428
+      ],
+      "pico2d_center": [
+        592,
+        172
+      ],
+      "pico2d_surface_rect": [
+        560,
+        140,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "9,5",
+      "column": 9,
+      "row": 5,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        624,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        624,
+        396,
+        64,
+        64
+      ],
+      "draw_rect": [
+        624,
+        396,
+        64,
+        64
+      ],
+      "canvas_center": [
+        656,
+        428
+      ],
+      "pico2d_center": [
+        656,
+        172
+      ],
+      "pico2d_surface_rect": [
+        624,
+        140,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "10,5",
+      "column": 10,
+      "row": 5,
+      "type": "B",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        688,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        688,
+        396,
+        64,
+        64
+      ],
+      "draw_rect": [
+        688,
+        396,
+        64,
+        64
+      ],
+      "canvas_center": [
+        720,
+        428
+      ],
+      "pico2d_center": [
+        720,
+        172
+      ],
+      "pico2d_surface_rect": [
+        688,
+        140,
+        64,
+        64
+      ],
+      "portal_rect": [
+        688,
+        396,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "0,6",
+      "column": 0,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        48,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        48,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        48,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        80,
+        492
+      ],
+      "pico2d_center": [
+        80,
+        108
+      ],
+      "pico2d_surface_rect": [
+        48,
+        76,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "1,6",
+      "column": 1,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        112,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        112,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        112,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        144,
+        492
+      ],
+      "pico2d_center": [
+        144,
+        108
+      ],
+      "pico2d_surface_rect": [
+        112,
+        76,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "2,6",
+      "column": 2,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        176,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        208,
+        492
+      ],
+      "pico2d_center": [
+        208,
+        108
+      ],
+      "pico2d_surface_rect": [
+        176,
+        76,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "3,6",
+      "column": 3,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        240,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        240,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        240,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        272,
+        492
+      ],
+      "pico2d_center": [
+        272,
+        108
+      ],
+      "pico2d_surface_rect": [
+        240,
+        76,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "4,6",
+      "column": 4,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        304,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        304,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        304,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        336,
+        492
+      ],
+      "pico2d_center": [
+        336,
+        108
+      ],
+      "pico2d_surface_rect": [
+        304,
+        76,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "5,6",
+      "column": 5,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        368,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        368,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        368,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        400,
+        492
+      ],
+      "pico2d_center": [
+        400,
+        108
+      ],
+      "pico2d_surface_rect": [
+        368,
+        76,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "6,6",
+      "column": 6,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        432,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        492
+      ],
+      "pico2d_center": [
+        464,
+        108
+      ],
+      "pico2d_surface_rect": [
+        432,
+        76,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "7,6",
+      "column": 7,
+      "row": 6,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        496,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        528,
+        492
+      ],
+      "pico2d_center": [
+        528,
+        108
+      ],
+      "pico2d_surface_rect": [
+        496,
+        76,
+        64,
+        64
+      ],
+      "prop": "재료 통",
+      "prop_file": "asset/map/tiles/themes/alchemy-laboratory/prop-2.png"
+    },
+    {
+      "id": "8,6",
+      "column": 8,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        560,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        560,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        560,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        592,
+        492
+      ],
+      "pico2d_center": [
+        592,
+        108
+      ],
+      "pico2d_surface_rect": [
+        560,
+        76,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "9,6",
+      "column": 9,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        624,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        624,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        624,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        656,
+        492
+      ],
+      "pico2d_center": [
+        656,
+        108
+      ],
+      "pico2d_surface_rect": [
+        624,
+        76,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "10,6",
+      "column": 10,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        688,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        688,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        688,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        720,
+        492
+      ],
+      "pico2d_center": [
+        720,
+        108
+      ],
+      "pico2d_surface_rect": [
+        688,
+        76,
+        64,
+        64
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "entrance": 0,
+      "goal": 0,
+      "cells": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          1
+        ]
+      ]
+    },
+    {
+      "entrance": 0,
+      "goal": 1,
+      "cells": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          5
+        ]
+      ]
+    },
+    {
+      "entrance": 1,
+      "goal": 0,
+      "cells": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          1
+        ]
+      ]
+    },
+    {
+      "entrance": 1,
+      "goal": 1,
+      "cells": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          5
+        ]
+      ]
+    },
+    {
+      "entrance": 2,
+      "goal": 0,
+      "cells": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          1
+        ]
+      ]
+    },
+    {
+      "entrance": 2,
+      "goal": 1,
+      "cells": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          9,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          5
+        ]
+      ]
+    }
+  ],
+  "art_version": 6,
+  "shared_tiles": "asset/map/tiles/common",
+  "shared_objects": "asset/map/objects",
+  "origin": "new theme"
+}

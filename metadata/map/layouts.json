@@ -1,0 +1,1149 @@
+{
+  "version": 6,
+  "canvas": {
+    "width": 800,
+    "height": 600
+  },
+  "grid": {
+    "columns": 11,
+    "rows": 7,
+    "origin": [
+      48,
+      76
+    ],
+    "cell_size": [
+      64,
+      64
+    ],
+    "elevation_pixels": 16,
+    "coordinate_system": "row 0 at top, column 0 at left"
+  },
+  "legend": {
+    ".": "ground, walkable and ground-deployable",
+    "H": "elevated, ranged-deployable, not enemy-walkable",
+    "#": "raised stone wall, blocked",
+    "O": "themed blocking prop, one ground-cell footprint",
+    "~": "blocked theme hazard",
+    "R": "enemy entrance, ground",
+    "B": "defense goal, ground"
+  },
+  "maps": [
+    {
+      "id": "dungeon-room",
+      "name": "기본 던전",
+      "description": "중앙 석벽의 교차로와 좌우 단상을 잇는 기본 전투실",
+      "origin": "legacy theme rebuilt on the standard grid",
+      "grid": [
+        ".....#.....",
+        "R.HH.#....B",
+        "..HH.#.HH..",
+        "R......HH..",
+        "..HH.#.....",
+        "R.HH.#....B",
+        ".....#....."
+      ],
+      "props": [],
+      "prop_names": [],
+      "hazard": null,
+      "number": 1
+    },
+    {
+      "id": "forest-path",
+      "name": "숲길",
+      "kit": "forest-kit",
+      "description": "엇갈린 가시덤불과 나무 사이를 굽어 이동하는 길",
+      "origin": "legacy theme rebuilt on the standard grid",
+      "grid": [
+        ".HH.~..HH..",
+        "RHH.~..HH.B",
+        "....~......",
+        "ROO...O.HH.",
+        ".O....~HHO.",
+        "R.O...~HH.B",
+        "...OO.~...."
+      ],
+      "props": [
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          6,
+          3,
+          2
+        ],
+        [
+          1,
+          4,
+          0
+        ],
+        [
+          9,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          2
+        ],
+        [
+          3,
+          6,
+          0
+        ],
+        [
+          4,
+          6,
+          1
+        ]
+      ],
+      "prop_names": [
+        "숲 나무",
+        "이끼 바위",
+        "쓰러진 통나무"
+      ],
+      "hazard": "가시덤불",
+      "number": 2
+    },
+    {
+      "id": "frontier-outpost",
+      "name": "전초기지",
+      "kit": "fortified-kit",
+      "description": "나무 방책을 돌아 보급 구역의 두 출구를 방어",
+      "origin": "legacy theme rebuilt on the standard grid",
+      "grid": [
+        "...O~HHO...",
+        "R..O.HH.~~B",
+        ".....O.....",
+        "R..OO..OHH.",
+        ".HH.HH..HH.",
+        "RHH....O..B",
+        ".....O.O..."
+      ],
+      "props": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          2
+        ],
+        [
+          5,
+          2,
+          0
+        ],
+        [
+          3,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          7,
+          3,
+          0
+        ],
+        [
+          7,
+          5,
+          1
+        ],
+        [
+          5,
+          6,
+          2
+        ],
+        [
+          7,
+          6,
+          0
+        ]
+      ],
+      "prop_names": [
+        "나무 방책",
+        "붉은 깃발",
+        "보급 상자"
+      ],
+      "hazard": "무너진 해자",
+      "number": 3
+    },
+    {
+      "id": "castle-gate",
+      "name": "성문 앞",
+      "kit": "fortified-kit",
+      "description": "해자를 건너 중앙 성벽의 두 관문을 통과하는 전장",
+      "origin": "legacy theme rebuilt on the standard grid",
+      "grid": [
+        "...~HH#..O.",
+        "R...HH#.HH.",
+        ".HH~..O.HHB",
+        "RHH...#..O.",
+        "...~......B",
+        "RO....#HH..",
+        "..O~.O#HH.."
+      ],
+      "props": [
+        [
+          9,
+          0,
+          0
+        ],
+        [
+          6,
+          2,
+          1
+        ],
+        [
+          9,
+          3,
+          2
+        ],
+        [
+          1,
+          5,
+          0
+        ],
+        [
+          2,
+          6,
+          1
+        ],
+        [
+          5,
+          6,
+          2
+        ]
+      ],
+      "prop_names": [
+        "나무 방책",
+        "붉은 깃발",
+        "보급 상자"
+      ],
+      "hazard": "무너진 해자",
+      "number": 4
+    },
+    {
+      "id": "prison-cellblock",
+      "name": "지하 감옥",
+      "grid": [
+        "....#......",
+        "R.HH#..HH.B",
+        "..HH#..HH..",
+        "R..........",
+        "..HH..#HH..",
+        "R.HH..#HH.B",
+        "......#...."
+      ],
+      "description": "감옥 벽 사이의 엇갈린 상하 통로",
+      "kit": null,
+      "props": [],
+      "prop_names": [],
+      "hazard": null,
+      "hazard_material": "lava",
+      "origin": "existing v4 layout preserved",
+      "number": 5
+    },
+    {
+      "id": "flooded-ruins",
+      "name": "침수 유적",
+      "grid": [
+        "...~....~..",
+        "RHH~.HH.~.B",
+        ".H...HH.~..",
+        "R..~.......",
+        ".HH~.HH.~..",
+        "RHH~.HH...B",
+        "...~....~.."
+      ],
+      "description": "수로 사이의 교차 다리",
+      "kit": null,
+      "props": [],
+      "prop_names": [],
+      "hazard": "물",
+      "hazard_material": "water",
+      "origin": "existing v4 layout preserved",
+      "number": 6
+    },
+    {
+      "id": "magma-altar",
+      "name": "용암 제단",
+      "grid": [
+        ".....~.....",
+        "R.HH...HH.B",
+        "..HH.#.HH..",
+        "R...~#~....",
+        "..HH.#.HH..",
+        "R.HH...HH.B",
+        ".....~....."
+      ],
+      "description": "중앙 제단과 용암 지형을 우회하는 길",
+      "kit": null,
+      "props": [],
+      "prop_names": [],
+      "hazard": "용암",
+      "hazard_material": "lava",
+      "origin": "existing v4 layout preserved",
+      "number": 7
+    },
+    {
+      "id": "abandoned-mine",
+      "name": "폐광",
+      "description": "두 갱도 사이를 어긋난 연결 통로로 건너는 구조",
+      "grid": [
+        "RHH~HH.~.O.",
+        ".HH~.O....B",
+        ".......~.HH",
+        "RHO~.O.~.HH",
+        ".H.~.....O.",
+        ".......~..B",
+        "RO.~HH.~HH."
+      ],
+      "props": [
+        [
+          1,
+          6,
+          0
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          5,
+          3,
+          2
+        ],
+        [
+          9,
+          0,
+          1
+        ],
+        [
+          9,
+          4,
+          2
+        ],
+        [
+          5,
+          1,
+          0
+        ]
+      ],
+      "prop_names": [
+        "나무 상자",
+        "광석 결정",
+        "광차"
+      ],
+      "hazard": "갱도",
+      "kit": "abandoned-mine",
+      "origin": "existing v5 layout preserved",
+      "number": 8
+    },
+    {
+      "id": "underground-garden",
+      "name": "지하 정원",
+      "description": "화단과 연못 사이를 돌아가는 굽은 통로",
+      "grid": [
+        "..HH.O.HH..",
+        "R.HH...HH.B",
+        ".O...~~....",
+        "R.O.....O..",
+        "....~~...O.",
+        "R.HH...HH.B",
+        "..HH.O.HH.."
+      ],
+      "props": [
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          8,
+          3,
+          2
+        ],
+        [
+          9,
+          4,
+          1
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          5,
+          6,
+          2
+        ]
+      ],
+      "prop_names": [
+        "수풀 화단",
+        "덩굴 기둥",
+        "꽃 화단"
+      ],
+      "hazard": "연못",
+      "kit": "underground-garden",
+      "origin": "existing v5 layout preserved",
+      "number": 9
+    },
+    {
+      "id": "arcane-library",
+      "name": "마법 도서관",
+      "description": "책장과 수납장으로 나뉜 통로를 꺾어 이동하는 구조",
+      "grid": [
+        "...OHH.....",
+        "RHHOHH.O..B",
+        ".HHO.~.O.HH",
+        "RO.....O.HH",
+        "...O.~.O~..",
+        "RH.O.H....B",
+        ".H.O.H...O."
+      ],
+      "props": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          2,
+          0
+        ],
+        [
+          3,
+          4,
+          0
+        ],
+        [
+          3,
+          5,
+          0
+        ],
+        [
+          3,
+          6,
+          0
+        ],
+        [
+          7,
+          1,
+          2
+        ],
+        [
+          7,
+          2,
+          2
+        ],
+        [
+          7,
+          3,
+          2
+        ],
+        [
+          7,
+          4,
+          2
+        ],
+        [
+          1,
+          3,
+          1
+        ],
+        [
+          9,
+          6,
+          1
+        ]
+      ],
+      "prop_names": [
+        "책장",
+        "마법서 받침대",
+        "수납장"
+      ],
+      "hazard": "마법 함정",
+      "kit": "arcane-library",
+      "origin": "existing v5 layout preserved",
+      "number": 10
+    },
+    {
+      "id": "frost-cavern",
+      "name": "얼음 동굴",
+      "kit": "frost-cavern",
+      "description": "두 얼음 균열의 어긋난 틈을 지나가는 굽은 통로",
+      "grid": [
+        "..O~.HH~...",
+        "R....HH~..B",
+        ".HH~.HHO...",
+        "RHH~...~.O.",
+        "....HH.~...",
+        "R.O~HH....B",
+        "...~O..~O.."
+      ],
+      "props": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          7,
+          2,
+          1
+        ],
+        [
+          9,
+          3,
+          2
+        ],
+        [
+          2,
+          5,
+          0
+        ],
+        [
+          4,
+          6,
+          1
+        ],
+        [
+          8,
+          6,
+          2
+        ]
+      ],
+      "prop_names": [
+        "얼음 결정",
+        "서리 바위",
+        "얼어붙은 기둥"
+      ],
+      "hazard": "얼음 균열",
+      "origin": "new theme",
+      "number": 11
+    },
+    {
+      "id": "ancient-graveyard",
+      "name": "고대 묘지",
+      "kit": "ancient-graveyard",
+      "description": "두 묘비 열 사이를 교차해 이동하는 묘역",
+      "grid": [
+        ".HH.~HH..~.",
+        "RHH..HH...B",
+        "..O.OOO.O..",
+        "R.......HH.",
+        "..OO~O.OO..",
+        "R.......HHB",
+        "........HH."
+      ],
+      "props": [
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          4,
+          2,
+          1
+        ],
+        [
+          5,
+          2,
+          2
+        ],
+        [
+          6,
+          2,
+          0
+        ],
+        [
+          8,
+          2,
+          1
+        ],
+        [
+          2,
+          4,
+          2
+        ],
+        [
+          3,
+          4,
+          0
+        ],
+        [
+          5,
+          4,
+          1
+        ],
+        [
+          7,
+          4,
+          2
+        ],
+        [
+          8,
+          4,
+          0
+        ]
+      ],
+      "prop_names": [
+        "묘비",
+        "석관",
+        "마른 그루터기"
+      ],
+      "hazard": "열린 묘혈",
+      "origin": "new theme",
+      "number": 12
+    },
+    {
+      "id": "ancient-temple",
+      "name": "고대 신전",
+      "kit": "ancient-temple",
+      "description": "중앙 제단과 봉인 지형 주위를 순환하는 회랑",
+      "grid": [
+        ".HH~O~....B",
+        "RHH.O..HH..",
+        "....#O#HH..",
+        "R..HHO..OO.",
+        "....#.#....",
+        "R.O.....HH.",
+        "..~..~.OHHB"
+      ],
+      "props": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          4,
+          1,
+          1
+        ],
+        [
+          5,
+          2,
+          2
+        ],
+        [
+          5,
+          3,
+          1
+        ],
+        [
+          8,
+          3,
+          1
+        ],
+        [
+          9,
+          3,
+          2
+        ],
+        [
+          2,
+          5,
+          0
+        ],
+        [
+          7,
+          6,
+          1
+        ]
+      ],
+      "prop_names": [
+        "신전 기둥",
+        "기하학 석상",
+        "부서진 제단"
+      ],
+      "hazard": "봉인 균열",
+      "origin": "new theme",
+      "number": 13
+    },
+    {
+      "id": "poison-marsh",
+      "name": "독늪",
+      "kit": "poison-marsh",
+      "description": "독 웅덩이 두 줄을 상하로 크게 우회하는 S자 길",
+      "grid": [
+        "...O~HHO.O.",
+        "RHH.~.....B",
+        ".HH.~..O...",
+        "R...~.~....",
+        "..O...~.HH.",
+        "R.O.HH~OHHB",
+        ".~..HH~...."
+      ],
+      "props": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          1
+        ],
+        [
+          9,
+          0,
+          2
+        ],
+        [
+          7,
+          2,
+          0
+        ],
+        [
+          2,
+          4,
+          1
+        ],
+        [
+          2,
+          5,
+          2
+        ],
+        [
+          7,
+          5,
+          0
+        ]
+      ],
+      "prop_names": [
+        "독버섯",
+        "뒤엉킨 뿌리",
+        "시든 화단"
+      ],
+      "hazard": "독 웅덩이",
+      "origin": "new theme",
+      "number": 14
+    },
+    {
+      "id": "dwarven-forge",
+      "name": "대장간",
+      "kit": "dwarven-forge",
+      "description": "화로 사이의 두 연결로와 달아오른 철망을 넘나드는 작업장",
+      "grid": [
+        "....HH.....",
+        "R...HHHH..B",
+        "..~..~HH~..",
+        "ROO.OOO.OO.",
+        "..~..~..~..",
+        "R.HH......B",
+        "..HH..O.HH."
+      ],
+      "props": [
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          1
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          5,
+          3,
+          1
+        ],
+        [
+          6,
+          3,
+          1
+        ],
+        [
+          8,
+          3,
+          2
+        ],
+        [
+          9,
+          3,
+          0
+        ],
+        [
+          6,
+          6,
+          1
+        ]
+      ],
+      "prop_names": [
+        "모루",
+        "소형 화로",
+        "석탄 상자"
+      ],
+      "hazard": "달아오른 철망",
+      "origin": "new theme",
+      "number": 15
+    },
+    {
+      "id": "undercity-sewer",
+      "name": "지하 수로",
+      "kit": "undercity-sewer",
+      "description": "좌우 배수로의 다리를 서로 다른 높이에서 건너는 길",
+      "grid": [
+        "..~.HHOO~..",
+        "R...HH..~.B",
+        "..~HH......",
+        "RO~HH.HH~..",
+        ".....HH.~..",
+        "R.~.OHH...B",
+        ".O~.....~O."
+      ],
+      "props": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          7,
+          0,
+          1
+        ],
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          4,
+          5,
+          0
+        ],
+        [
+          1,
+          6,
+          1
+        ],
+        [
+          9,
+          6,
+          2
+        ]
+      ],
+      "prop_names": [
+        "배수관",
+        "밸브 받침대",
+        "철제 보관함"
+      ],
+      "hazard": "배수로",
+      "origin": "new theme",
+      "number": 16
+    },
+    {
+      "id": "royal-treasury",
+      "name": "왕실 보물고",
+      "kit": "royal-treasury",
+      "description": "중앙 보물 구역과 압력 함정 양쪽을 우회하는 금고실",
+      "grid": [
+        ".HH...O....",
+        "RHH.....HH.",
+        ".HH.~O~.HHB",
+        "RHH.OOO....",
+        "..O.~O~.HH.",
+        "R.......HHB",
+        "......O...."
+      ],
+      "props": [
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          5,
+          2,
+          1
+        ],
+        [
+          4,
+          3,
+          2
+        ],
+        [
+          5,
+          3,
+          2
+        ],
+        [
+          6,
+          3,
+          1
+        ],
+        [
+          2,
+          4,
+          2
+        ],
+        [
+          5,
+          4,
+          0
+        ],
+        [
+          6,
+          6,
+          1
+        ]
+      ],
+      "prop_names": [
+        "보물 상자",
+        "금괴 받침대",
+        "금고"
+      ],
+      "hazard": "압력 함정",
+      "origin": "new theme",
+      "number": 17
+    },
+    {
+      "id": "alchemy-laboratory",
+      "name": "연금술 실험실",
+      "kit": "alchemy-laboratory",
+      "description": "엇갈린 실험대와 마력 유출을 돌아가는 작업 구역",
+      "grid": [
+        "...O.HH~...",
+        "R..O.HH..OB",
+        ".~.O....HH.",
+        "R~..HH..HH.",
+        ".OHH...O...",
+        "ROHH~~.O..B",
+        ".......O..."
+      ],
+      "props": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          9,
+          1,
+          2
+        ],
+        [
+          3,
+          2,
+          0
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          7,
+          4,
+          2
+        ],
+        [
+          1,
+          5,
+          0
+        ],
+        [
+          7,
+          5,
+          1
+        ],
+        [
+          7,
+          6,
+          2
+        ]
+      ],
+      "prop_names": [
+        "물약 탁자",
+        "돌 가마솥",
+        "재료 통"
+      ],
+      "hazard": "마력 유출",
+      "origin": "new theme",
+      "number": 18
+    },
+    {
+      "id": "abandoned-chapel",
+      "name": "버려진 예배당",
+      "kit": "abandoned-chapel",
+      "description": "긴의자 열 사이 중앙 통로와 양쪽 회랑을 잇는 구조",
+      "grid": [
+        ".HH..O.....",
+        "RHHO...O.~B",
+        "..OO...O...",
+        "R....~..~..",
+        "...O...O...",
+        "R..OHH.OHHB",
+        "....HH..HH."
+      ],
+      "props": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          7,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          7,
+          2,
+          2
+        ],
+        [
+          3,
+          4,
+          0
+        ],
+        [
+          7,
+          4,
+          1
+        ],
+        [
+          3,
+          5,
+          2
+        ],
+        [
+          7,
+          5,
+          0
+        ]
+      ],
+      "prop_names": [
+        "예배 제단",
+        "나무 긴의자",
+        "손상된 석상"
+      ],
+      "hazard": "저주받은 바닥",
+      "origin": "new theme",
+      "number": 19
+    },
+    {
+      "id": "demon-throne",
+      "name": "마왕의 왕좌",
+      "kit": "demon-throne",
+      "description": "중앙 왕좌와 심연 문양을 여러 방향에서 에워싸는 최종 전장",
+      "grid": [
+        ".HH........",
+        "RHH#.~HH.OB",
+        ".OO#..HHO..",
+        "R..~.O.~...",
+        ".......#O..",
+        "R.HH.~O#HHB",
+        "..HH....HH."
+      ],
+      "props": [
+        [
+          9,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          8,
+          2,
+          2
+        ],
+        [
+          5,
+          3,
+          0
+        ],
+        [
+          8,
+          4,
+          2
+        ],
+        [
+          6,
+          5,
+          1
+        ]
+      ],
+      "prop_names": [
+        "검은 왕좌",
+        "부서진 흑석 기둥",
+        "심홍색 깃발"
+      ],
+      "hazard": "심연의 문양",
+      "origin": "new theme",
+      "number": 20
+    }
+  ]
+}

@@ -28,37 +28,46 @@
 | 전투 | 일반 스테이지 4개와 최종 보스전 1개 |
 | 몬스터와 맵 | 일반 몬스터 2종, 보스 1종, 전투 맵 3종 |
 
-현재는 **1차 발표 및 기획 단계**입니다. 캐릭터·카드·UI·던전 배경은 제작한 이미지 시안이며 실제 플레이 화면이나 게임 기능의 구현 완료를 뜻하지 않습니다. 게임 실행 코드는 이후 개발하면서 추가합니다.
+현재는 **맵 출력부터 구현하는 단계**입니다. `main.py`에서 최신 던전 맵을 800×600 크기로 표시합니다. 캐릭터 배치, 전투와 보상 기능은 이후 개발할 예정이며, 제작한 이미지와 효과 설계 자료는 해당 기능의 구현 완료를 뜻하지 않습니다.
+
+## 실행 방법
+
+VS Code에서 pico2d가 설치된 Python 환경을 선택하고 `main.py`를 실행합니다. **ESC** 또는 창의 닫기 버튼으로 종료합니다.
+
+```powershell
+python -m pip install -r requirements.txt
+python main.py
+```
+
+맵은 `asset/map/dungeon-room.png`를 사용하며, 파일 경로는 `main.py`의 위치를 기준으로 찾습니다.
 
 ## 제작한 이미지
 
-![캐릭터 디자인 시안](assets/characters/character-overview.png)
+![캐릭터 디자인 시안](asset/character/character-overview.png)
 
-![던전 배경 시안](assets/maps/dungeon-room.png)
+![던전 배경 시안](asset/map/dungeon-room.png)
 
-- 캐릭터 8명: 정면·뒷면·오른쪽 옆면의 대기와 공격 동작
-- 정적 대기·공격 시트 8개와 투명 프레임 96장
-- [비율·무기 가림을 보정한 대기 모션 v3](assets/characters/idle-v3/README.md): 기존 캐릭터의 비율과 겹침을 유지한 앞·뒤·옆 24개 애니메이션, 방향별 48프레임·24fps, 2초 반복
-- [이전 대기 모션 v2](assets/characters/idle-v2/README.md): 분리 그림 기반 시트 보관
-- [이전 대기 모션 v1](assets/characters/idle-v1/README.md): 고유 자세 4장씩을 사용한 시트 보관
-- 배치 프로필 카드 8종, 스킬 프로필 카드 8종과 스킬 아이콘 16종
-- 상하좌우 배치 방향 선택 UI, 높낮이와 목표 지점 2개를 가진 던전 배경
-- [지하 감옥·침수 유적·용암 제단 맵 3종](assets/maps/dungeon-grid-v2/README.md): 15×10 격자에 1층·2층·도착 문을 맞춘 배경과 칸 좌표·이동 경로
-- [맵 칸에 맞춘 반투명 공격 범위 타일](assets/ui/attack-range-v2/README.md): 사선·단색 PNG, 칸별 보정 좌표와 적용 예시
-- [파일 규격과 제작 자료 안내](assets/README.md)
+- [캐릭터 8명](metadata/README.md#캐릭터): 정적 대기·공격 시트 8개와 개별 프레임 96장, 최신 대기 모션 시트 24개
+- 대기 모션은 방향별 48프레임·24fps·2초 반복이며, 정면·뒷면·오른쪽 옆면을 제공
+- 배치 프로필 카드 8종, 스킬 프로필 카드 8종과 스킬 아이콘 16종, 상하좌우 배치 방향 선택 UI
+- [유물 아이콘과 효과 25종](metadata/README.md#아이템): 256×256 투명 PNG, 통합 시트와 [효과표](docs/유물효과.md)
+- [규격을 통일한 맵 20종](metadata/README.md#맵): 800×600·11×7칸 배경, 층별 좌표와 이동 경로, 도착 지점 2개
+- [한 칸 크기의 반투명 공격 범위 타일](asset/map/range-overlay.png): 64×64
+- [이미지와 데이터 규격](metadata/README.md)
 
 ## 폴더
 
 ```text
+main.py                    던전 맵 출력과 종료 처리
+requirements.txt           실행에 필요한 Python 패키지
+asset/
+  character/               캐릭터, 대기·공격 동작, 배치·스킬 카드, 방향 선택 UI
+  item/                    유물 아이콘 25종과 통합 시트
+  map/                     맵 20종, 지형·목표 지점, 범위 표시 타일
+metadata/                  캐릭터·아이템·맵 JSON 데이터 44개
 docs/                      발표 PPT, 상세 기획서 PPT, 대본
-assets/characters/sprites/ 스프라이트 시트와 개별 프레임
-assets/characters/idle-v1/  3방향 대기 애니메이션과 GIF 미리보기
-assets/characters/idle-v2/  분리 그림 기반 대기 모션, 48프레임 시트와 재생 코드
-assets/characters/idle-v3/  원본 비율·무기 가림을 유지한 최신 대기 모션과 MP4
-assets/characters/deployment/ 배치 프로필 카드
-assets/characters/skills/  스킬 카드, 아이콘, 효과 기획 데이터
-assets/maps/               던전 배경 시안
-assets/ui/                 배치 방향 선택 UI
 ```
+
+JSON 파일은 [metadata 폴더](metadata/README.md)에 종류별로 모았습니다. JSON 안의 파일·폴더 경로는 프로젝트 루트를 기준으로 읽습니다.
 
 공격력, 회복량, 배치 비용, 스킬 재사용 시간과 유물 수치는 전투 구현 후 조정합니다. 6주 개발 계획은 개발 순서를 설명하는 상대 일정이며 실제 수업 일정에 맞춰 조정합니다.

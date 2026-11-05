@@ -1,0 +1,14 @@
+Mode: built-in image_gen
+Intent: edit stage-select-screen-v5.png into a square transparent exploration-map icon.
+
+Use case: precise-object-edit
+Asset type: A square transparent PNG game icon for the dungeon exploration map.
+Input image: The supplied stage-select-screen-v5.png is the EDIT TARGET and the source of the icon's concept and colors.
+Primary request: Turn this centered-start room map into ONE compact SQUARE ICON. Both the overall canvas and each individual room tile should be square. Preserve the simple central starting point and four-direction exploration idea.
+Canvas: Square 1:1, ideally 1024x1024. Genuine transparent background, clean alpha, no baked checkerboard and no paper or background plate.
+Icon: Exactly FIVE equally sized SQUARE room tiles in a symmetrical plus arrangement. One at the exact center; one above, below, left and right. Connect adjacent edges to the center with four short straight bold dark-brown or dark-charcoal connectors. Uniform spacing, no overlap, no perspective. Overall cross-shaped map symbol is centered and occupies about 80 percent of the square canvas, leaving equal transparent safe margins on all four sides.
+Room states and color: Center square is filled cyan with a dark outline and ONE small white position dot centered inside, indicating the starting/current room. The four surrounding squares have simple medium-gray fills and dark outlines. The RIGHT square has a clean gold/yellow selection outline, as in the source. Use the same restrained cyan, gray, dark-brown and gold colors. Very slight corner rounding is acceptable but the five room silhouettes must read as true squares, NOT the horizontal rectangles in the source.
+Rendering: Crisp flat 2D raster game UI pictogram. Bold clear silhouettes and consistent strokes, readable when scaled down to 64x64 or 128x128. Minimal shading at most; no detailed illustration, texture, 3D bevel or glow.
+Remove completely: All text including "탐험 지도", "시작", and "방 이동"; header, footer, buttons, back arrow, parchment background, scenery, frames, labels, shadows outside the symbol and unrelated decorations. Keep ONLY the five square rooms and four connecting lines.
+Constraints: ONE finished icon, not a contact sheet, not separate variants, no lettering, no watermark, no app mockup, no surrounding badge or circular container. Preserve the centered-start map topology. The unused areas, including the four corners, must be genuinely transparent.
+

@@ -1,0 +1,22 @@
+Mode: built-in image_gen
+Intent: edit stage-select-screen.png; preserve the accepted map art and expand to 14 stage markers.
+
+Use case: precise-object-edit
+Asset type: Revised stage-selection exploration map for the game "던전 원정대".
+Input image: The supplied local image is the EDIT TARGET, an existing finished 4:3 game screen.
+Primary request: The user wants MORE CHOICES on this map. Keep the accepted illustrated-map look, and expand the current eight-marker route into a more substantial branching exploration map with FOUR currently selectable next stages.
+Preserve: The same 4:3 aspect ratio, warm parchment with worn edges, dark blue-gray stone surround, simple painted ruins and water, subtle foliage, restrained gold/brass UI, clean non-pixel fantasy painting, the top heading "탐험 지도", upper-left back arrow, and bottom "전투 시작" button. Preserve the same typography, colors, border treatment and overall visual polish. Do not add characters or a dense information panel.
+Change the map graph: Use EXACTLY FOURTEEN stage markers in FIVE progress tiers from left to right:
+- Tier 1: ONE completed marker at the far left, with green checkmark.
+- Tier 2: FOUR separate available stage markers in a vertically spaced column. All four are accessible from the completed marker, giving four obvious next choices. Highlight one of the middle two in cyan as the currently selected stage; the other three use warm brass outlines. Label only the selected marker "폐허 회랑".
+- Tier 3: FOUR future stage markers in a vertically spaced column, gray with small padlocks.
+- Tier 4: FOUR future stage markers in a vertically spaced column, gray with small padlocks.
+- Tier 5: ONE larger final boss marker at the right, crimson with the same skull motif and a small padlock, labeled "보스".
+Thus the visual count must be 1 + 4 + 4 + 4 + 1 = 14 markers. A route still comprises four ordinary battles and a final boss battle, but offers many alternative locations.
+Layout: Spread the nodes across most of the parchment, allowing four comfortable rows. Reduce ordinary marker diameter to approximately 6–7 percent of canvas width so the added choices fit cleanly and remain legible at an 800x600 display size. Keep the boss slightly larger. Keep every circular marker separated, with ample space for paths and the selected-stage label; no overlapping markers, lock icons, labels or frames. The first and boss markers are vertically centered rather than stacked into the four-marker columns.
+Routes: Draw a clear four-way fan from the completed stage to all FOUR tier-2 options. Use a sparse set of branch-and-merge paths between adjacent progression tiers, with several alternative complete routes to the boss. Lines must connect actual markers, never cut through their centers or pass over labels, and stay visually distinct without confusing crossings. Do not fully connect every pair of nodes: preserve clean path reading. Current available routes glow warm gold, with the selected branch subtly cyan at its destination. Unreached routes remain thin muted brown-gray.
+Background adjustment: Quiet or reposition some existing scenic decorations if necessary to make room for the expanded graph, while keeping the same hand-painted exploration-map character. Retain a few broad landmark drawings and open parchment. Do not add tiny props or lots of fine detail.
+Text, verbatim and only these: "탐험 지도", "폐허 회랑", "보스", "전투 시작".
+Avoid: generic flowchart boxes, pixel art, photorealism, 3D plastic, more decorative clutter, tiny densely packed nodes, extra counters, watermarks, new logos or changing the accepted art direction.
+Deliver one finished revised screen image.
+

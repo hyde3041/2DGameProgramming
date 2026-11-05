@@ -1,0 +1,20 @@
+Mode: built-in image_gen
+Intent: edit stage-select-screen-v4.png; place the starting room at the center and reveal four adjacent first destinations.
+
+Use case: precise-object-edit
+Asset type: Minimal room-discovery map, initial exploration screen for the Korean game "던전 원정대".
+Input image: The supplied stage-select-screen-v4.png is the EDIT TARGET.
+User request: Put the STARTING ROOM at the CENTER, then explore outward from it in all four directions. Keep the current very simple minimap style and progressive discovery.
+Preserve exactly in spirit: The 4:3 aspect ratio, quiet parchment-beige map viewport, plain slim navy header and footer, clean dark-brown rectangular room outlines, simple solid fills, the heading "탐험 지도", upper-left back arrow, and plain bottom button labeled "방 이동". No ornate frames or detailed dungeon illustrations.
+Change the map to an INITIAL EXPLORATION STATE:
+- Place ONE cyan START room at the exact horizontal and vertical center of the map viewport. This is both the entrance/start and the player's current room. Put the small, clear white Korean text "시작" centered INSIDE that cyan room.
+- Show exactly FOUR adjacent undiscovered rooms: one directly ABOVE, one BELOW, one LEFT and one RIGHT of the central start room. These are the first four possible destinations.
+- All five rooms use the SAME simple horizontal rectangular size, on a clean orthogonal grid, with generous equal spacing.
+- Connect each neighboring room to the corresponding center of the start room's edge using ONE short, thick, straight dark-brown connector. Make a clear symmetrical plus-shaped arrangement of five rooms.
+- The four surrounding rooms have simple gray fills. The right-hand room has a thin gold outline showing the currently selected destination; the other three have ordinary dark-brown outlines.
+- Distant rooms are undiscovered and must NOT be drawn. Leave quiet empty parchment around the five-room cluster, with substantial expansion space in EVERY direction. Do not reveal a whole floor, and do not draw ghost rooms, fog clouds, question marks, boss symbols or distant endpoints.
+Remove the previous lower-left entrance icon, the old visited path and all older side branches. There must be NO second starting point or entrance in a corner. The only starting point is the cyan room at the center.
+Composition: Center the five-room cluster clearly in the beige viewport. It should read instantly as a small, practical room-exploration minimap. Keep the rooms comfortably sized for an 800x600 screen, with the same crisp flat rendering and restrained palette as the input. Do not invent scenic decoration.
+Text, verbatim and ONLY these: "탐험 지도" in the header, "시작" inside the central cyan room, "방 이동" on the bottom button.
+Constraints: ONE finished raster screen, not multiple panels or an explanatory diagram. Exactly five visible rooms: center, up, down, left, right. Four connectors. No perspective, floor tiles, rock walls, props, textures beyond subtle paper, large icons, characters, checkmarks, extra HUD or watermarks. Correct Korean typography. The design must communicate starting at the center and discovering the dungeon outward.
+
