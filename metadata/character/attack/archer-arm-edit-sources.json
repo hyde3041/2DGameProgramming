@@ -1,0 +1,1236 @@
+{
+  "id": "archer",
+  "workflow": "built-in image_gen localized arm editing; original pixels retained outside arm masks",
+  "views": {
+    "front": {
+      "edited_atlas": "asset/character/icon/layers/archer/front/attack/arm-edit/edited-atlas.png",
+      "frames": [
+        {
+          "index": 1,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                171,
+                203
+              ],
+              "hand": [
+                215,
+                239
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                114,
+                198
+              ],
+              "hand": [
+                146,
+                262
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                157,
+                200
+              ],
+              "hand": [
+                220,
+                215
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                98,
+                183
+              ],
+              "hand": [
+                157,
+                200
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                171,
+                191
+              ],
+              "hand": [
+                240,
+                188
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                75,
+                177
+              ],
+              "hand": [
+                131,
+                173
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                198,
+                185
+              ],
+              "hand": [
+                260,
+                177
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                88,
+                172
+              ],
+              "hand": [
+                150,
+                165
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                191,
+                179
+              ],
+              "hand": [
+                259,
+                172
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                65,
+                170
+              ],
+              "hand": [
+                127,
+                170
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                185,
+                177
+              ],
+              "hand": [
+                257,
+                171
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                48,
+                167
+              ],
+              "hand": [
+                114,
+                157
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                183,
+                178
+              ],
+              "hand": [
+                253,
+                169
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                65,
+                185
+              ],
+              "hand": [
+                33,
+                161
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                205,
+                171
+              ],
+              "hand": [
+                270,
+                160
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                84,
+                173
+              ],
+              "hand": [
+                55,
+                142
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                192,
+                177
+              ],
+              "hand": [
+                255,
+                169
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                73,
+                176
+              ],
+              "hand": [
+                67,
+                143
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                181,
+                181
+              ],
+              "hand": [
+                245,
+                179
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                70,
+                184
+              ],
+              "hand": [
+                64,
+                153
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                165,
+                187
+              ],
+              "hand": [
+                227,
+                196
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                65,
+                176
+              ],
+              "hand": [
+                103,
+                199
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                179,
+                180
+              ],
+              "hand": [
+                222,
+                208
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                102,
+                170
+              ],
+              "hand": [
+                140,
+                224
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                171,
+                179
+              ],
+              "hand": [
+                197,
+                224
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                93,
+                171
+              ],
+              "hand": [
+                132,
+                220
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                161,
+                181
+              ],
+              "hand": [
+                188,
+                226
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                107,
+                166
+              ],
+              "hand": [
+                145,
+                237
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                156,
+                182
+              ],
+              "hand": [
+                179,
+                231
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                96,
+                175
+              ],
+              "hand": [
+                138,
+                245
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "side": {
+      "edited_atlas": "asset/character/icon/layers/archer/side/attack/arm-edit/edited-atlas.png",
+      "frames": [
+        {
+          "index": 1,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                165,
+                205
+              ],
+              "hand": [
+                213,
+                245
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                107,
+                193
+              ],
+              "hand": [
+                142,
+                263
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                162,
+                204
+              ],
+              "hand": [
+                237,
+                214
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                88,
+                181
+              ],
+              "hand": [
+                139,
+                202
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                183,
+                198
+              ],
+              "hand": [
+                257,
+                189
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                74,
+                175
+              ],
+              "hand": [
+                128,
+                190
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                190,
+                191
+              ],
+              "hand": [
+                263,
+                185
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                67,
+                180
+              ],
+              "hand": [
+                126,
+                178
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                191,
+                186
+              ],
+              "hand": [
+                266,
+                180
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                54,
+                173
+              ],
+              "hand": [
+                116,
+                171
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                194,
+                185
+              ],
+              "hand": [
+                268,
+                178
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                47,
+                165
+              ],
+              "hand": [
+                112,
+                164
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                195,
+                185
+              ],
+              "hand": [
+                268,
+                176
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                74,
+                193
+              ],
+              "hand": [
+                33,
+                166
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                201,
+                170
+              ],
+              "hand": [
+                273,
+                162
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                77,
+                172
+              ],
+              "hand": [
+                43,
+                143
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                196,
+                176
+              ],
+              "hand": [
+                265,
+                170
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                64,
+                178
+              ],
+              "hand": [
+                56,
+                144
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                190,
+                183
+              ],
+              "hand": [
+                260,
+                175
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                64,
+                182
+              ],
+              "hand": [
+                58,
+                151
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                181,
+                188
+              ],
+              "hand": [
+                250,
+                196
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                68,
+                176
+              ],
+              "hand": [
+                116,
+                190
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                173,
+                172
+              ],
+              "hand": [
+                214,
+                210
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                89,
+                160
+              ],
+              "hand": [
+                128,
+                213
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                173,
+                174
+              ],
+              "hand": [
+                201,
+                227
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                102,
+                156
+              ],
+              "hand": [
+                138,
+                218
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                167,
+                180
+              ],
+              "hand": [
+                192,
+                233
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                109,
+                159
+              ],
+              "hand": [
+                147,
+                233
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                167,
+                179
+              ],
+              "hand": [
+                200,
+                241
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                109,
+                159
+              ],
+              "hand": [
+                150,
+                238
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "back": {
+      "edited_atlas": "asset/character/icon/layers/archer/back/attack/arm-edit/edited-atlas.png",
+      "frames": [
+        {
+          "index": 1,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                142,
+                209
+              ],
+              "hand": [
+                66,
+                251
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                238,
+                218
+              ],
+              "hand": [
+                225,
+                252
+              ]
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                135,
+                194
+              ],
+              "hand": [
+                59,
+                212
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                236,
+                197
+              ],
+              "hand": [
+                224,
+                226
+              ]
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                128,
+                183
+              ],
+              "hand": [
+                49,
+                181
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                250,
+                180
+              ],
+              "hand": [
+                234,
+                159
+              ]
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                129,
+                164
+              ],
+              "hand": [
+                52,
+                162
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                268,
+                161
+              ],
+              "hand": [
+                238,
+                145
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                121,
+                164
+              ],
+              "hand": [
+                39,
+                156
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                266,
+                162
+              ],
+              "hand": [
+                237,
+                142
+              ]
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                119,
+                167
+              ],
+              "hand": [
+                37,
+                159
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                266,
+                162
+              ],
+              "hand": [
+                232,
+                132
+              ]
+            }
+          ]
+        },
+        {
+          "index": 7,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                121,
+                169
+              ],
+              "hand": [
+                37,
+                165
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                283,
+                180
+              ],
+              "hand": [
+                249,
+                149
+              ]
+            }
+          ]
+        },
+        {
+          "index": 8,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                132,
+                153
+              ],
+              "hand": [
+                49,
+                150
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                285,
+                166
+              ],
+              "hand": [
+                263,
+                146
+              ]
+            }
+          ]
+        },
+        {
+          "index": 9,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                128,
+                155
+              ],
+              "hand": [
+                49,
+                150
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                273,
+                172
+              ],
+              "hand": [
+                251,
+                151
+              ]
+            }
+          ]
+        },
+        {
+          "index": 10,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                125,
+                162
+              ],
+              "hand": [
+                45,
+                159
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                267,
+                174
+              ],
+              "hand": [
+                249,
+                149
+              ]
+            }
+          ]
+        },
+        {
+          "index": 11,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                129,
+                173
+              ],
+              "hand": [
+                48,
+                166
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                247,
+                166
+              ],
+              "hand": [
+                235,
+                194
+              ]
+            }
+          ]
+        },
+        {
+          "index": 12,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                143,
+                160
+              ],
+              "hand": [
+                59,
+                165
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                249,
+                154
+              ],
+              "hand": [
+                237,
+                187
+              ]
+            }
+          ]
+        },
+        {
+          "index": 13,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                147,
+                165
+              ],
+              "hand": [
+                67,
+                185
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                236,
+                164
+              ],
+              "hand": [
+                222,
+                196
+              ]
+            }
+          ]
+        },
+        {
+          "index": 14,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                147,
+                167
+              ],
+              "hand": [
+                78,
+                209
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                232,
+                165
+              ],
+              "hand": [
+                215,
+                198
+              ]
+            }
+          ]
+        },
+        {
+          "index": 15,
+          "arms": [
+            {
+              "arm": "bow",
+              "elbow": [
+                116,
+                178
+              ],
+              "hand": [
+                59,
+                242
+              ]
+            },
+            {
+              "arm": "pull",
+              "elbow": [
+                207,
+                166
+              ],
+              "hand": [
+                201,
+                217
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

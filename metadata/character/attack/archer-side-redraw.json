@@ -1,0 +1,101 @@
+{
+  "id": "archer",
+  "direction": "side",
+  "version": 6,
+  "mode": "approved costume pixels with rigid arm-following cloth motion and masked hidden underpaint",
+  "reference_sheet": "asset/character/icon/layers/archer/side/attack/body-redrawn/original-sheet.png",
+  "reference_frame": 0,
+  "reference_file": "asset/character/icon/layers/archer/side/attack/body-consistent/reference-00.png",
+  "shared_costume": "asset/character/icon/layers/archer/side/attack/body-consistent/native/costume.png",
+  "costume_sha256": "e468944d3a2dff9ce5650bc5c8d1df512e5378fd0d0c9da05499f7de0af9c0f3",
+  "motion_folder": "asset/character/icon/layers/archer/side/attack/body-consistent/native",
+  "prepared_folder": "asset/character/icon/layers/archer/side/attack/body-consistent/prepared",
+  "approved_sheet": "asset/character/icon/layers/archer/side/attack/body-consistent/approved/idle-coat-lift.png",
+  "columns": 4,
+  "rows": 4,
+  "frame_count": 16,
+  "fps": 16,
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "generation_prompts": {
+    "shared_body": "Use case: precise-object-edit / hidden-layer reconstruction.\nCreate ONE reusable headless, armless and weaponless BODY-COSTUME layer for the original archer in the reference. Preserve the EXACT original outfit design: the small olive shoulder capelet with ivory lining, the original fitted dark-brown vest/corset and its original strap/clasp arrangement, the same asymmetric olive coat tails with the same pointed ivory inner panels, the same quiver, trousers and boots. This is one neutral-pose body layer, never a sheet of different interpretations.\nKeep all original visible costume panels, colors, decorative motifs and proportions. Do not add or redesign belts, buckles, armor plates, stitching, corset lacing, straps, pockets or cloth panels. In particular, keep the original narrow fitted leather torso instead of a large triangular armor plate. Reconstruct only the garment surfaces hidden behind the removed head, arms and bow, using continuation of the original simple material and existing seams. No new ornaments in those hidden areas.\nKeep the ORIGINAL complete lower split coat on this layer. Raise its hem only about 5 original-cell pixels while preserving the exact same panel shape, panel count and ivory/olive arrangement, so the original brown legs remain visible. Keep the waist, torso and foot positions fixed. Do not stretch or shorten the body or legs.\nUse the same full-square canvas registration as the reference: logical 320 by 320, neck center around x169,y210, planted foot midpoint x160 and boot sole y287. Preserve the existing slim arm openings, shoulder breadth, original SD body-to-head proportions and existing boot silhouettes. Remove the head and all hair, both arms/hands, and the complete bow/string, leaving actual transparency. Fill the hidden collar, shoulder, torso and coat surfaces naturally. Return the one complete original-costume body, quiver, trousers and boots at that exact registration. No face, mannequin head, hair remnants, hands, bow, effects, text, grid or floating fragments.\nThis same body-costume PNG will be reused unchanged in all 16 attack frames, with the original arm, bow and head art composited on top. Fidelity to the original outfit is the highest priority.",
+    "waist_cleanup": "Edit ONLY the small diamond-shaped metal buckle at the WAIST in the first image. Remove that added waist buckle and continue the same plain dark-brown leather and existing thin diagonal strap underneath it, as in the original costume reference (second image). Keep the separate original gold clasp at the SHOULDER.\nKeep every other part of this one body-costume layer identical: original olive capelet and coat, ivory panel arrangement, vest shape, quiver, trousers, boots, exact outline, registration and transparency. No new seams, lacing, ornament, buckle, panel or color changes. Same square image and exact same body position. This single corrected layer will be shared by all animation frames.",
+    "cloth_underpaint": "Edit the supplied approved archer body layer ONLY to prepare an unseen UNDERPAINT for cloth animation. Keep the exact canvas registration, neck, quiver, fitted brown vest/straps, brown trousers, boots, silhouette and color palette.\nRemove the olive-and-ivory SHOULDER CAPELET and the olive-and-ivory LOWER COAT TAILS. Reconstruct the brown leather vest and brown trouser surfaces hidden underneath those two garments, and the transparent background where a flaring coat had extended outside the body. Leave the existing vest and trouser design simple and continuous. No new seams, belts, buckles, armor, ornaments or garment panels. Keep the original complete quiver and original feet. This remains a fully clothed brown vest/trouser body, with no head, hair, arms or weapon.\nReturn the exact same square full-canvas registration as this image, logical 320 by 320, neck near x169,y210 and foot sole y287. Do not enlarge or reposition the body. Genuine transparent background.\nThis image is NOT the visible outfit and will never replace the approved costume. Only pixels previously covered by the two removed cloth pieces will be used beneath the ACTUAL ORIGINAL cape and coat PNG layers. All already visible original pixels outside those occluded areas will be preserved exactly. The original cape and coat will move by small rigid rotations, retaining their actual original design."
+  },
+  "method": "Use the approved version 5 shared costume as the source of all visible garment art. Split only the shoulder capelet and lower coat into native-coordinate PNG layers, then use small rigid rotations to follow the existing arm action. Composite registered hidden underpaint only inside the source garment masks. Keep the original complete costume in neutral frames and the existing ready-positioned arm, bow, string and head PNGs as foreground.",
+  "coat_motion": {
+    "folder": "asset/character/icon/layers/archer/side/attack/body-consistent/coat-motion",
+    "cape_pivot": [
+      168,
+      214
+    ],
+    "coat_pivot": [
+      164,
+      243
+    ],
+    "cape_angles": [
+      0,
+      0.4,
+      1.1,
+      1.8,
+      2.4,
+      2.8,
+      3,
+      2.5,
+      1.4,
+      0.2,
+      -0.8,
+      -1.2,
+      -0.7,
+      -0.2,
+      0,
+      0
+    ],
+    "coat_angles": [
+      0,
+      0,
+      0.3,
+      0.8,
+      1.4,
+      1.9,
+      2.3,
+      2.5,
+      1.2,
+      -0.9,
+      -2,
+      -1.2,
+      0.1,
+      0.6,
+      0.3,
+      0
+    ],
+    "lower_coat_peak_delay_frames": 1,
+    "unit_scale": [
+      1,
+      1
+    ],
+    "maximum_hem_bottom": 273,
+    "hidden_underpaint": "asset/character/icon/layers/archer/side/attack/body-consistent/coat-motion/underpaint-source.png",
+    "generation_mode": "built-in image_gen edit",
+    "source_pixels": "cape.png, coat.png, waist.png and clasp.png copy approved native/costume.png RGBA at the original cell coordinates",
+    "underpaint_scope": "background.png differs from the approved costume only inside the cape-mask.png and coat-mask.png. New brown vest/trouser pixels come from the registered generated underpaint. Outward flaring regions reveal transparency.",
+    "layer_order": [
+      "background",
+      "rotated coat",
+      "fixed waist",
+      "rotated cape",
+      "fixed clasp",
+      "string",
+      "weapon",
+      "arms",
+      "head"
+    ],
+    "method": "Rotate the original capelet around its shoulder clasp and the original lower coat around its waist. The lower coat peaks one frame after the upper cloth, then makes a small recoil before settling. Clamp the lower hem to its approved neutral bottom. Neutral frames 00 and 15 use the complete approved costume PNG."
+  }
+}

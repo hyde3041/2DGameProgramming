@@ -1,0 +1,193 @@
+{
+  "id": "archer",
+  "direction": "back",
+  "mode": "native layer reflection and clothing occlusion",
+  "request": "손잡이 위쪽과 아래쪽 활의 실제 길이를 같게 맞추고, 아래쪽 활은 옷 뒤에 가려 옷자락 밑으로 보이지 않게 한다.",
+  "source_sheet": "asset/character/icon/layers/archer/back/attack/user-sheet/source.png",
+  "folder": "asset/character/icon/layers/archer/back/attack/bow-proportions",
+  "method": "Reflect each original upper bow limb about a line through its grip. The reflection preserves every distance and uses unit scale. Hide the lower limb behind actual clothing after its first fully occluded cross-section.",
+  "frames": {
+    "13": {
+      "grip": [
+        106,
+        246
+      ],
+      "reflection_axis_degrees": -30,
+      "upper_outline": [
+        [
+          96,
+          242
+        ],
+        [
+          113,
+          242
+        ],
+        [
+          111,
+          230
+        ],
+        [
+          116,
+          212
+        ],
+        [
+          124,
+          187
+        ],
+        [
+          117,
+          186
+        ],
+        [
+          107,
+          191
+        ],
+        [
+          101,
+          201
+        ],
+        [
+          97,
+          214
+        ],
+        [
+          92,
+          228
+        ]
+      ],
+      "erase_outline": [
+        [
+          100,
+          248
+        ],
+        [
+          115,
+          248
+        ],
+        [
+          124,
+          260
+        ],
+        [
+          133,
+          282
+        ],
+        [
+          134,
+          290
+        ],
+        [
+          123,
+          291
+        ],
+        [
+          114,
+          276
+        ],
+        [
+          107,
+          263
+        ]
+      ],
+      "hand_box": [
+        98,
+        238,
+        26,
+        17
+      ],
+      "layer": "asset/character/icon/layers/archer/back/attack/bow-proportions/lower-visible-13.png"
+    },
+    "14": {
+      "grip": [
+        112,
+        258
+      ],
+      "reflection_axis_degrees": -40,
+      "upper_outline": [
+        [
+          99,
+          253
+        ],
+        [
+          116,
+          254
+        ],
+        [
+          114,
+          240
+        ],
+        [
+          118,
+          223
+        ],
+        [
+          130,
+          202
+        ],
+        [
+          122,
+          201
+        ],
+        [
+          111,
+          206
+        ],
+        [
+          105,
+          214
+        ],
+        [
+          102,
+          228
+        ],
+        [
+          98,
+          241
+        ]
+      ],
+      "erase_outline": [
+        [
+          107,
+          258
+        ],
+        [
+          122,
+          257
+        ],
+        [
+          129,
+          269
+        ],
+        [
+          137,
+          283
+        ],
+        [
+          138,
+          291
+        ],
+        [
+          127,
+          291
+        ],
+        [
+          119,
+          280
+        ],
+        [
+          112,
+          269
+        ]
+      ],
+      "hand_box": [
+        102,
+        249,
+        27,
+        19
+      ],
+      "layer": "asset/character/icon/layers/archer/back/attack/bow-proportions/lower-visible-14.png"
+    }
+  },
+  "fps": 16,
+  "frame_count": 16
+}

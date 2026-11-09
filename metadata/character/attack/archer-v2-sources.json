@@ -1,0 +1,708 @@
+{
+  "version": 2,
+  "description": "Connected hand-painted torso/arms/bow poses; original head, hair, legs and gear remain separate.",
+  "views": {
+    "front": {
+      "atlas": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-atlas.png",
+      "scale": 0.44,
+      "target_neck": [
+        169,
+        207
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-00.png",
+          "source_neck": [
+            146.23456790123458,
+            135.15226337448559
+          ],
+          "source_cell": {
+            "left": 0,
+            "top": 0,
+            "width": 311,
+            "height": 315
+          }
+        },
+        {
+          "index": 1,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-01.png",
+          "source_neck": [
+            140.92887029288704,
+            135.10041841004184
+          ],
+          "source_cell": {
+            "left": 311,
+            "top": 0,
+            "width": 312,
+            "height": 315
+          }
+        },
+        {
+          "index": 2,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-02.png",
+          "source_neck": [
+            133.44761904761904,
+            133.4
+          ],
+          "source_cell": {
+            "left": 623,
+            "top": 0,
+            "width": 311,
+            "height": 315
+          }
+        },
+        {
+          "index": 3,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-03.png",
+          "source_neck": [
+            128.41981132075472,
+            133.55188679245282
+          ],
+          "source_cell": {
+            "left": 934,
+            "top": 0,
+            "width": 312,
+            "height": 315
+          }
+        },
+        {
+          "index": 4,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-04.png",
+          "source_neck": [
+            149.99122807017545,
+            135.16228070175438
+          ],
+          "source_cell": {
+            "left": 0,
+            "top": 315,
+            "width": 311,
+            "height": 316
+          }
+        },
+        {
+          "index": 5,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-05.png",
+          "source_neck": [
+            144.54085603112838,
+            134.29182879377433
+          ],
+          "source_cell": {
+            "left": 311,
+            "top": 315,
+            "width": 312,
+            "height": 316
+          }
+        },
+        {
+          "index": 6,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-06.png",
+          "source_neck": [
+            133.9608695652174,
+            136.0304347826087
+          ],
+          "source_cell": {
+            "left": 623,
+            "top": 315,
+            "width": 311,
+            "height": 316
+          }
+        },
+        {
+          "index": 7,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-07.png",
+          "source_neck": [
+            132.38862559241704,
+            136.43601895734596
+          ],
+          "source_cell": {
+            "left": 934,
+            "top": 315,
+            "width": 312,
+            "height": 316
+          }
+        },
+        {
+          "index": 8,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-08.png",
+          "source_neck": [
+            150.8744769874477,
+            124.85774058577405
+          ],
+          "source_cell": {
+            "left": 0,
+            "top": 631,
+            "width": 311,
+            "height": 315
+          }
+        },
+        {
+          "index": 9,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-09.png",
+          "source_neck": [
+            142.72850678733033,
+            124.08144796380091
+          ],
+          "source_cell": {
+            "left": 311,
+            "top": 631,
+            "width": 312,
+            "height": 315
+          }
+        },
+        {
+          "index": 10,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-10.png",
+          "source_neck": [
+            137.27314814814815,
+            125.32870370370371
+          ],
+          "source_cell": {
+            "left": 623,
+            "top": 631,
+            "width": 311,
+            "height": 315
+          }
+        },
+        {
+          "index": 11,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-11.png",
+          "source_neck": [
+            127.12376237623762,
+            124.33168316831683
+          ],
+          "source_cell": {
+            "left": 934,
+            "top": 631,
+            "width": 312,
+            "height": 315
+          }
+        },
+        {
+          "index": 12,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-12.png",
+          "source_neck": [
+            148.03482587064676,
+            110.24378109452736
+          ],
+          "source_cell": {
+            "left": 0,
+            "top": 946,
+            "width": 311,
+            "height": 316
+          }
+        },
+        {
+          "index": 13,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-13.png",
+          "source_neck": [
+            141.34554973821992,
+            110.46073298429319
+          ],
+          "source_cell": {
+            "left": 311,
+            "top": 946,
+            "width": 312,
+            "height": 316
+          }
+        },
+        {
+          "index": 14,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-14.png",
+          "source_neck": [
+            131.9855769230769,
+            111.33173076923077
+          ],
+          "source_cell": {
+            "left": 623,
+            "top": 946,
+            "width": 311,
+            "height": 316
+          }
+        },
+        {
+          "index": 15,
+          "file": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-15.png",
+          "source_neck": [
+            126.50549450549451,
+            110.49450549450549
+          ],
+          "source_cell": {
+            "left": 934,
+            "top": 946,
+            "width": 312,
+            "height": 316
+          }
+        }
+      ]
+    },
+    "side": {
+      "atlas": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-atlas.png",
+      "scale": 0.44,
+      "target_neck": [
+        175,
+        207
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-00.png",
+          "source_neck": [
+            127.69198312236287,
+            130.1012658227848
+          ],
+          "source_cell": {
+            "left": 0,
+            "top": 0,
+            "width": 315,
+            "height": 311
+          }
+        },
+        {
+          "index": 1,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-01.png",
+          "source_neck": [
+            122.78645833333333,
+            129.01041666666666
+          ],
+          "source_cell": {
+            "left": 315,
+            "top": 0,
+            "width": 315,
+            "height": 311
+          }
+        },
+        {
+          "index": 2,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-02.png",
+          "source_neck": [
+            124.4311377245509,
+            129.1437125748503
+          ],
+          "source_cell": {
+            "left": 630,
+            "top": 0,
+            "width": 315,
+            "height": 311
+          }
+        },
+        {
+          "index": 3,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-03.png",
+          "source_neck": [
+            125.45161290322581,
+            129.4247311827957
+          ],
+          "source_cell": {
+            "left": 945,
+            "top": 0,
+            "width": 316,
+            "height": 311
+          }
+        },
+        {
+          "index": 4,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-04.png",
+          "source_neck": [
+            129.15458937198068,
+            136.03381642512076
+          ],
+          "source_cell": {
+            "left": 0,
+            "top": 311,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 5,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-05.png",
+          "source_neck": [
+            131.803738317757,
+            135.83644859813083
+          ],
+          "source_cell": {
+            "left": 315,
+            "top": 311,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 6,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-06.png",
+          "source_neck": [
+            128.06565656565658,
+            136.12626262626262
+          ],
+          "source_cell": {
+            "left": 630,
+            "top": 311,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 7,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-07.png",
+          "source_neck": [
+            132.60700389105057,
+            139.95719844357976
+          ],
+          "source_cell": {
+            "left": 945,
+            "top": 311,
+            "width": 316,
+            "height": 312
+          }
+        },
+        {
+          "index": 8,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-08.png",
+          "source_neck": [
+            137.28076923076924,
+            120.88461538461539
+          ],
+          "source_cell": {
+            "left": 0,
+            "top": 623,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 9,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-09.png",
+          "source_neck": [
+            134.1484375,
+            118.7890625
+          ],
+          "source_cell": {
+            "left": 315,
+            "top": 623,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 10,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-10.png",
+          "source_neck": [
+            131.3625954198473,
+            118.93129770992367
+          ],
+          "source_cell": {
+            "left": 630,
+            "top": 623,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 11,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-11.png",
+          "source_neck": [
+            133.0375,
+            120.00833333333334
+          ],
+          "source_cell": {
+            "left": 945,
+            "top": 623,
+            "width": 316,
+            "height": 312
+          }
+        },
+        {
+          "index": 12,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-12.png",
+          "source_neck": [
+            135.01030927835052,
+            96.29896907216495
+          ],
+          "source_cell": {
+            "left": 0,
+            "top": 935,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 13,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-13.png",
+          "source_neck": [
+            130.273631840796,
+            97.07960199004975
+          ],
+          "source_cell": {
+            "left": 315,
+            "top": 935,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 14,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-14.png",
+          "source_neck": [
+            124.59223300970874,
+            96.55339805825243
+          ],
+          "source_cell": {
+            "left": 630,
+            "top": 935,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 15,
+          "file": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-15.png",
+          "source_neck": [
+            125.5398773006135,
+            95.12883435582822
+          ],
+          "source_cell": {
+            "left": 945,
+            "top": 935,
+            "width": 316,
+            "height": 312
+          }
+        }
+      ]
+    },
+    "back": {
+      "atlas": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-atlas.png",
+      "scale": 0.44,
+      "target_neck": [
+        155,
+        207
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-00.png",
+          "source_neck": [
+            171.784,
+            142.928
+          ],
+          "source_cell": {
+            "left": 0,
+            "top": 0,
+            "width": 315,
+            "height": 311
+          }
+        },
+        {
+          "index": 1,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-01.png",
+          "source_neck": [
+            174.27507163323781,
+            142.89111747851004
+          ],
+          "source_cell": {
+            "left": 315,
+            "top": 0,
+            "width": 316,
+            "height": 311
+          }
+        },
+        {
+          "index": 2,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-02.png",
+          "source_neck": [
+            174.34868421052633,
+            142.27631578947367
+          ],
+          "source_cell": {
+            "left": 631,
+            "top": 0,
+            "width": 315,
+            "height": 311
+          }
+        },
+        {
+          "index": 3,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-03.png",
+          "source_neck": [
+            176.4358108108108,
+            142.08445945945945
+          ],
+          "source_cell": {
+            "left": 946,
+            "top": 0,
+            "width": 316,
+            "height": 311
+          }
+        },
+        {
+          "index": 4,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-04.png",
+          "source_neck": [
+            178.0703125,
+            129.09765625
+          ],
+          "source_cell": {
+            "left": 0,
+            "top": 311,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 5,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-05.png",
+          "source_neck": [
+            176.23758865248226,
+            129.20921985815602
+          ],
+          "source_cell": {
+            "left": 315,
+            "top": 311,
+            "width": 316,
+            "height": 312
+          }
+        },
+        {
+          "index": 6,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-06.png",
+          "source_neck": [
+            175.22535211267606,
+            131.1338028169014
+          ],
+          "source_cell": {
+            "left": 631,
+            "top": 311,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 7,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-07.png",
+          "source_neck": [
+            176.45901639344262,
+            130.92131147540982
+          ],
+          "source_cell": {
+            "left": 946,
+            "top": 311,
+            "width": 316,
+            "height": 312
+          }
+        },
+        {
+          "index": 8,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-08.png",
+          "source_neck": [
+            178.10545454545453,
+            111.88727272727273
+          ],
+          "source_cell": {
+            "left": 0,
+            "top": 623,
+            "width": 315,
+            "height": 311
+          }
+        },
+        {
+          "index": 9,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-09.png",
+          "source_neck": [
+            174.9935691318328,
+            112.93247588424437
+          ],
+          "source_cell": {
+            "left": 315,
+            "top": 623,
+            "width": 316,
+            "height": 311
+          }
+        },
+        {
+          "index": 10,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-10.png",
+          "source_neck": [
+            173.11475409836066,
+            113.14426229508197
+          ],
+          "source_cell": {
+            "left": 631,
+            "top": 623,
+            "width": 315,
+            "height": 311
+          }
+        },
+        {
+          "index": 11,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-11.png",
+          "source_neck": [
+            172.58944281524927,
+            113.90029325513197
+          ],
+          "source_cell": {
+            "left": 946,
+            "top": 623,
+            "width": 316,
+            "height": 311
+          }
+        },
+        {
+          "index": 12,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-12.png",
+          "source_neck": [
+            175.0371517027864,
+            95.77399380804954
+          ],
+          "source_cell": {
+            "left": 0,
+            "top": 934,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 13,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-13.png",
+          "source_neck": [
+            174,
+            94.90588235294118
+          ],
+          "source_cell": {
+            "left": 315,
+            "top": 934,
+            "width": 316,
+            "height": 312
+          }
+        },
+        {
+          "index": 14,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-14.png",
+          "source_neck": [
+            171.65840220385675,
+            94.95592286501378
+          ],
+          "source_cell": {
+            "left": 631,
+            "top": 934,
+            "width": 315,
+            "height": 312
+          }
+        },
+        {
+          "index": 15,
+          "file": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-15.png",
+          "source_neck": [
+            156.1711229946524,
+            94.03208556149733
+          ],
+          "source_cell": {
+            "left": 946,
+            "top": 934,
+            "width": 316,
+            "height": 312
+          }
+        }
+      ]
+    }
+  }
+}

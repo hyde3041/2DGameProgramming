@@ -1,0 +1,899 @@
+{
+  "id": "swordsman",
+  "name": "검사",
+  "version": 17,
+  "workflow": "rear sword drawn behind head; selected motion and shoulder underside repair preserved",
+  "joint_mode": "whole_preseparated_arm",
+  "source_layers_unchanged": false,
+  "source_originals_preserved": true,
+  "cleanup": "metadata/character/attack/swordsman-edge-cleanup.json",
+  "splits_arm": false,
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "fps": 16,
+  "frames_per_direction": 16,
+  "duration_ms": 1000,
+  "impact_frame": 10,
+  "lift_frames": [
+    0,
+    7
+  ],
+  "overhead_transition_frame": 8,
+  "strike_frames": [
+    9,
+    11
+  ],
+  "wrist_locked": true,
+  "loop": false,
+  "return_to": "idle",
+  "motion": "metadata/character/attack/swordsman-motion.json",
+  "effect": {
+    "id": "swordsman-swept-blade",
+    "baked_into_sheet": true,
+    "active_frames": [
+      9,
+      10,
+      11,
+      12,
+      13
+    ],
+    "active_frames_by_direction": {
+      "front": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "back": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "right": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    "metadata": "metadata/character/attack/swordsman-swing-effect.json",
+    "sheets": {
+      "front": "asset/character/icon/layers/swordsman/front/attack/effect/slash-sheet.png",
+      "back": "asset/character/icon/layers/swordsman/back/attack/effect/slash-sheet.png",
+      "right": "asset/character/icon/layers/swordsman/side/attack/effect/slash-sheet.png"
+    },
+    "afterimages": [
+      {
+        "lag_frames": 1.2,
+        "opacity": 0.12
+      },
+      {
+        "lag_frames": 0.8,
+        "opacity": 0.22
+      },
+      {
+        "lag_frames": 0.4,
+        "opacity": 0.34
+      }
+    ]
+  },
+  "animations": {
+    "front": {
+      "file": "asset/character/main/swordsman/front/attack-sheet.png",
+      "width": 1280,
+      "height": 1280,
+      "columns": 4,
+      "rows": 4,
+      "loop": false,
+      "return_to": "front_idle",
+      "duration_ms": 1000,
+      "frame_duration_ms": 62.5,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        }
+      ]
+    },
+    "back": {
+      "file": "asset/character/main/swordsman/back/attack-sheet.png",
+      "width": 1280,
+      "height": 1280,
+      "columns": 4,
+      "rows": 4,
+      "loop": false,
+      "return_to": "back_idle",
+      "duration_ms": 1000,
+      "frame_duration_ms": 62.5,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        }
+      ]
+    },
+    "right": {
+      "file": "asset/character/main/swordsman/side/attack-sheet.png",
+      "width": 1280,
+      "height": 1280,
+      "columns": 4,
+      "rows": 4,
+      "loop": false,
+      "return_to": "right_idle",
+      "duration_ms": 1000,
+      "frame_duration_ms": 62.5,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        }
+      ]
+    }
+  }
+}

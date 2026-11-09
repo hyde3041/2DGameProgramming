@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "source": "asset/character/icon/layers/guardian/attack/reach-source/edited-atlas.png",
+  "mode": "built-in image_gen localized hidden torso and rear plate edit",
+  "views": {
+    "front": {
+      "parts": {
+        "body": "asset/character/icon/layers/guardian/front/attack/push/base-body.png",
+        "under:body": "asset/character/icon/layers/guardian/front/attack/push/base-under-body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/front/attack/push/base-cloth-hem.png",
+        "under:cloth-hem": "asset/character/icon/layers/guardian/front/attack/push/base-under-cloth-hem.png",
+        "gear": "asset/character/icon/layers/guardian/front/attack/push/base-gear.png",
+        "under:gear": "asset/character/icon/layers/guardian/front/attack/push/base-under-gear.png",
+        "torso_patch": "asset/character/icon/layers/guardian/front/attack/push/torso-patch.png",
+        "under:shield": "asset/character/icon/layers/guardian/front/attack/push/under-shield.png"
+      },
+      "torso_mask": "asset/character/icon/layers/guardian/front/attack/push/torso-mask.png",
+      "fixed_translation": [
+        -1,
+        0
+      ],
+      "mask_pixels": 1559
+    },
+    "back": {
+      "parts": {
+        "body": "asset/character/icon/layers/guardian/back/attack/push/base-body.png",
+        "under:body": "asset/character/icon/layers/guardian/back/attack/push/base-under-body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/back/attack/push/base-cloth-hem.png",
+        "under:cloth-hem": "asset/character/icon/layers/guardian/back/attack/push/base-under-cloth-hem.png",
+        "gear": "asset/character/icon/layers/guardian/back/attack/push/base-gear.png",
+        "under:gear": "asset/character/icon/layers/guardian/back/attack/push/base-under-gear.png",
+        "torso_patch": "asset/character/icon/layers/guardian/back/attack/push/torso-patch.png",
+        "under:shield": "asset/character/icon/layers/guardian/back/attack/push/under-shield.png",
+        "shield": "asset/character/icon/layers/guardian/back/attack/push/shield-clean.png"
+      },
+      "torso_mask": "asset/character/icon/layers/guardian/back/attack/push/torso-mask.png",
+      "fixed_translation": [
+        -1,
+        -1
+      ],
+      "mask_pixels": 1640,
+      "plate_fixed_translation": [
+        0,
+        0
+      ],
+      "plate_polygon": [
+        [
+          98,
+          193
+        ],
+        [
+          134,
+          204
+        ],
+        [
+          112,
+          275
+        ],
+        [
+          84,
+          264
+        ]
+      ],
+      "plate_repair_mask": "asset/character/icon/layers/guardian/back/attack/push/shield-repair-mask.png"
+    },
+    "side": {
+      "parts": {
+        "body": "asset/character/icon/layers/guardian/side/attack/push/base-body.png",
+        "under:body": "asset/character/icon/layers/guardian/side/attack/push/base-under-body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/side/attack/push/base-cloth-hem.png",
+        "under:cloth-hem": "asset/character/icon/layers/guardian/side/attack/push/base-under-cloth-hem.png",
+        "gear": "asset/character/icon/layers/guardian/side/attack/push/base-gear.png",
+        "under:gear": "asset/character/icon/layers/guardian/side/attack/push/base-under-gear.png",
+        "torso_patch": "asset/character/icon/layers/guardian/side/attack/push/torso-patch.png",
+        "under:shield": "asset/character/icon/layers/guardian/side/attack/push/under-shield.png"
+      },
+      "torso_mask": "asset/character/icon/layers/guardian/side/attack/push/torso-mask.png",
+      "fixed_translation": [
+        -1,
+        0
+      ],
+      "mask_pixels": 1058
+    }
+  }
+}

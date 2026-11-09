@@ -1,0 +1,13 @@
+Use case: identity-preserve.
+Asset type: transparent 2D cutout animation PARTS ATLAS for the existing SD archer in the reference. Generate ONLY missing arm and arrow parts; do not draw a character/head/torso/legs.
+Reference image: same archer in three directions. Top row idle, bottom row bow-drawing pose. Column1 FRONT three-quarter, column2 BACK, column3 RIGHT SIDE.
+Preserve the existing cream/white short sleeves with green trim, exposed pale upper arms, brown leather forearm bracers and dark fingerless gloves. Match the same clean shaded anime SD game art, brown bracer gold details and pale skin. Do not redesign the costume.
+STRICT 3 columns x 6 rows equal square cells, canvas aspect1:2. Each column is ONE view, front / back / right side. Exactly18 isolated components, transparent alpha, no backdrop/grid/text/labels/shadows.
+ROW1: separate upper BOW-HOLDING ARM, from the complete shoulder underlap to the elbow, cream short sleeve and pale skin, NO forearm or hand.
+ROW2: separate forearm of BOW-HOLDING ARM, from complete elbow underlap through brown bracer to dark fingerless glove HAND gripping an invisible cylindrical bow handle, NO actual bow.
+ROW3: separate upper STRING-PULLING ARM, shoulder underlap to elbow, same original sleeve/skin design, NO forearm or hand.
+ROW4: separate STRING-PULLING forearm, complete elbow underlap, brown bracer and fingerless glove HAND whose thumb/index pinch an invisible arrow nock / bowstring.
+ROW5: an alternate of ROW4 forearm, identical bracer/shape but HAND relaxed and fingers OPEN just after releasing the string.
+ROW6: one complete arrow only in each view, horizontal thin brown shaft, beige quiver-matching feather fletching, small metal point, rightward in front and side, leftward in back. No glow, no trail.
+All upper-arm and forearm pieces drawn with proximal joint at TOP and distal joint or hand at BOTTOM in neutral straight orientation; can be rigged/rotated later. Painted overlapping joints, no visible ball joints or doll sockets, no black cut-end outlines. Never include collar, torso, bow, face, hair or stray pieces in arm cells. Avoid detached fingers.
+Same artwork scale across views, do not enlarge hands into giant props. Complete each piece, keep clear margins within its cell. True transparent background.

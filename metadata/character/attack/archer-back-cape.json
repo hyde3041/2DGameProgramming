@@ -1,0 +1,418 @@
+{
+  "id": "archer",
+  "direction": "back",
+  "frames": 16,
+  "fps": 16,
+  "base_source": "asset/character/icon/layers/archer/back/attack/user-sheet/source.png",
+  "cape": "asset/character/icon/layers/archer/back/attack/cape-consistent/cape-reference.png",
+  "original_cape": "asset/character/icon/layers/archer/back/aligned/cloth-hem.png",
+  "cape_outline": [
+    [
+      139,
+      240
+    ],
+    [
+      168,
+      240
+    ],
+    [
+      175,
+      238
+    ],
+    [
+      186,
+      241
+    ],
+    [
+      193,
+      247
+    ],
+    [
+      196,
+      253
+    ],
+    [
+      204,
+      259
+    ],
+    [
+      205,
+      265
+    ],
+    [
+      202,
+      273
+    ],
+    [
+      198,
+      279
+    ],
+    [
+      192,
+      274
+    ],
+    [
+      190,
+      269
+    ],
+    [
+      188,
+      274
+    ],
+    [
+      162,
+      263
+    ],
+    [
+      161,
+      275
+    ],
+    [
+      143,
+      266
+    ],
+    [
+      128,
+      277
+    ],
+    [
+      130,
+      269
+    ],
+    [
+      133,
+      260
+    ],
+    [
+      137,
+      253
+    ],
+    [
+      141,
+      247
+    ],
+    [
+      138,
+      245
+    ]
+  ],
+  "legs_fill": "asset/character/icon/layers/archer/back/aligned/legs.png",
+  "repair_polygon": [
+    [
+      138,
+      239
+    ],
+    [
+      177,
+      239
+    ],
+    [
+      214,
+      260
+    ],
+    [
+      208,
+      282
+    ],
+    [
+      110,
+      282
+    ],
+    [
+      108,
+      262
+    ]
+  ],
+  "composition": "native legs and complete cape occlude equal-length lower bow limbs",
+  "bow_foreground": {
+    "mask": "asset/character/icon/layers/archer/back/attack/cape-consistent/bow-foreground-mask.png",
+    "source": "asset/character/icon/layers/archer/back/attack/user-sheet/source.png",
+    "end_rows": [
+      260,
+      269,
+      264,
+      270,
+      269,
+      266,
+      268,
+      269,
+      271,
+      273,
+      273,
+      273,
+      276,
+      269,
+      268,
+      259
+    ],
+    "edge_padding_pixels": 3,
+    "exclude_old_green_hem": true
+  },
+  "bow_tip_repair": {
+    "configuration": "metadata/character/attack/archer-back-bow-edit.json",
+    "mode": "native layer reflection and clothing occlusion",
+    "frames": {
+      "13": {
+        "grip": [
+          106,
+          246
+        ],
+        "reflection_axis_degrees": -30,
+        "upper_outline": [
+          [
+            96,
+            242
+          ],
+          [
+            113,
+            242
+          ],
+          [
+            111,
+            230
+          ],
+          [
+            116,
+            212
+          ],
+          [
+            124,
+            187
+          ],
+          [
+            117,
+            186
+          ],
+          [
+            107,
+            191
+          ],
+          [
+            101,
+            201
+          ],
+          [
+            97,
+            214
+          ],
+          [
+            92,
+            228
+          ]
+        ],
+        "erase_outline": [
+          [
+            100,
+            248
+          ],
+          [
+            115,
+            248
+          ],
+          [
+            124,
+            260
+          ],
+          [
+            133,
+            282
+          ],
+          [
+            134,
+            290
+          ],
+          [
+            123,
+            291
+          ],
+          [
+            114,
+            276
+          ],
+          [
+            107,
+            263
+          ]
+        ],
+        "hand_box": [
+          98,
+          238,
+          26,
+          17
+        ],
+        "layer": "asset/character/icon/layers/archer/back/attack/bow-proportions/lower-visible-13.png"
+      },
+      "14": {
+        "grip": [
+          112,
+          258
+        ],
+        "reflection_axis_degrees": -40,
+        "upper_outline": [
+          [
+            99,
+            253
+          ],
+          [
+            116,
+            254
+          ],
+          [
+            114,
+            240
+          ],
+          [
+            118,
+            223
+          ],
+          [
+            130,
+            202
+          ],
+          [
+            122,
+            201
+          ],
+          [
+            111,
+            206
+          ],
+          [
+            105,
+            214
+          ],
+          [
+            102,
+            228
+          ],
+          [
+            98,
+            241
+          ]
+        ],
+        "erase_outline": [
+          [
+            107,
+            258
+          ],
+          [
+            122,
+            257
+          ],
+          [
+            129,
+            269
+          ],
+          [
+            137,
+            283
+          ],
+          [
+            138,
+            291
+          ],
+          [
+            127,
+            291
+          ],
+          [
+            119,
+            280
+          ],
+          [
+            112,
+            269
+          ]
+        ],
+        "hand_box": [
+          102,
+          249,
+          27,
+          19
+        ],
+        "layer": "asset/character/icon/layers/archer/back/attack/bow-proportions/lower-visible-14.png"
+      }
+    },
+    "measurements": [
+      {
+        "frame": 13,
+        "grip": [
+          106,
+          246
+        ],
+        "scale": [
+          1,
+          1
+        ],
+        "reflection_matrix": [
+          0.5000000000000001,
+          -0.8660254037844386,
+          -0.8660254037844386,
+          -0.5000000000000001,
+          266.04224933097186,
+          460.79869280115054
+        ],
+        "upper_length_pixels": 60.03748828856851,
+        "lower_length_pixels": 60.03748828856851,
+        "hidden_after_upper_source_y": 211
+      },
+      {
+        "frame": 14,
+        "grip": [
+          112,
+          258
+        ],
+        "scale": [
+          1,
+          1
+        ],
+        "reflection_matrix": [
+          0.17364817766693041,
+          -0.984807753012208,
+          -0.984807753012208,
+          -0.17364817766693041,
+          346.63180437845347,
+          413.0996981754353
+        ],
+        "upper_length_pixels": 57.29310604252487,
+        "lower_length_pixels": 57.29310604252487,
+        "hidden_after_upper_source_y": 227
+      }
+    ]
+  },
+  "motion": {
+    "scale": [
+      1,
+      1
+    ],
+    "translation": [
+      0,
+      0
+    ],
+    "pivot": [
+      160,
+      241
+    ],
+    "amplitude_degrees": 2,
+    "period_frames": 16,
+    "rotation_degrees": [
+      0,
+      0.7653668647301796,
+      1.414213562373095,
+      1.8477590650225735,
+      2,
+      1.8477590650225735,
+      1.4142135623730951,
+      0.7653668647301798,
+      2.4492935982947064e-16,
+      -0.7653668647301793,
+      -1.414213562373095,
+      -1.847759065022573,
+      -2,
+      -1.8477590650225733,
+      -1.4142135623730954,
+      -0.7653668647301808
+    ]
+  },
+  "prepared_sheet": "asset/character/icon/layers/archer/back/attack/cape-consistent/source-sheet.png"
+}

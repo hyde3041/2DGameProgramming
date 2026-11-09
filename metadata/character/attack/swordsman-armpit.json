@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "applied": true,
+  "mode": "built-in image_gen surface with native local mask",
+  "part": "armpit_fill",
+  "file": "asset/character/icon/layers/swordsman/back/attack/armpit/armpit-fill.png",
+  "source": "asset/character/icon/layers/swordsman/back/attack/armpit/source/body-edit-generated-v2.png",
+  "source_originals_preserved": true,
+  "motion_unchanged": true,
+  "mask_path": "M176 210 Q184 208 189 212 Q192 215 189 219 Q185 223 180 225 L175 221 Z",
+  "texture_offset": [
+    8,
+    2
+  ],
+  "tone_multiplier": 0.84,
+  "pixels": 208,
+  "sources": "metadata/character/attack/swordsman-armpit-sources.json"
+}

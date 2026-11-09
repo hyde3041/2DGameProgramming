@@ -1,0 +1,1091 @@
+{
+  "id": "guardian",
+  "version": 8,
+  "attack_type": "shield_push",
+  "frames": 16,
+  "fps": 16,
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "impact_frame": 8,
+  "workflow": "shield pulls back then leads a stronger shove, following the gripping hand; torso follows one frame later",
+  "source_layers_unchanged": true,
+  "splits_arm": false,
+  "mace_wrist_locked": true,
+  "shield_grip_follows_hand": true,
+  "idle_motion": {
+    "body_rise_px": 1.1,
+    "body_sway_degrees": 0.5,
+    "head_delay_seconds": 0.045,
+    "head_tilt_degrees": 0.55,
+    "arm_rotation_degrees": [
+      1.25,
+      1
+    ],
+    "arm_delay_seconds": [
+      0.055,
+      0.09
+    ],
+    "tail_delay_seconds": [
+      0.12,
+      0.17
+    ],
+    "tail_rotation_degrees": 1.6,
+    "tail_translation_px": 0.3,
+    "cloth_rotation_degrees": 0.9,
+    "cloth_translation_px": 0.25
+  },
+  "views": {
+    "front": {
+      "view": "front",
+      "parts": {
+        "under:legs": "asset/character/icon/layers/guardian/front/attack/push/under-legs-stable.png",
+        "under:body": "asset/character/icon/layers/guardian/front/attack/push/base-under-body.png",
+        "under:cloth-hem": "asset/character/icon/layers/guardian/front/attack/push/base-under-cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/guardian/front/aligned/hidden/arm-left.png",
+        "under:gear": "asset/character/icon/layers/guardian/front/attack/push/base-under-gear.png",
+        "under:weapon": "asset/character/icon/layers/guardian/front/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/guardian/front/attack/push/under-shield.png",
+        "under:hair-tail": "asset/character/icon/layers/guardian/front/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/guardian/front/attack/push/head-under-empty.png",
+        "legs": "asset/character/icon/layers/guardian/front/attack/push/legs-stable.png",
+        "hair-tail": "asset/character/icon/layers/guardian/front/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/guardian/front/attack/push/base-body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/front/attack/push/base-cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/guardian/front/aligned/visible/arm-left.png",
+        "gear": "asset/character/icon/layers/guardian/front/attack/push/base-gear.png",
+        "weapon": "asset/character/icon/layers/guardian/front/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/guardian/front/attack/push/shield-full.png",
+        "head": "asset/character/icon/layers/guardian/front/attack/push/head-complete.png",
+        "torso_patch": "asset/character/icon/layers/guardian/front/attack/push/torso-patch.png",
+        "shield_arm_native": "asset/character/icon/layers/guardian/front/attack/push/arm-native.png"
+      },
+      "layer_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "torso_patch",
+        "under:arm-left",
+        "under:gear",
+        "under:weapon",
+        "under:hair-tail",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "gear",
+        "weapon",
+        "shield_arm_native",
+        "under:shield",
+        "shield",
+        "under:head",
+        "head"
+      ],
+      "source_hashes": {
+        "under:legs": "18ebd78a4bbb11dc2e9b3762a38e589a85fa1dba0965b1224e719dac0ce8ad6a",
+        "under:body": "70cc379624ead0d5cb96971c241a5febe4f38d9ad770b9fd7759e50a2981e786",
+        "under:cloth-hem": "65c9775c4db98f60d793bd0a953f05e032af4b915ac17d69bb29c01d569ba101",
+        "under:arm-left": "a62efcadd8ae415f79c69ce377e08a808ef8920d46ba07f3a9492643c1fc820f",
+        "under:arm-right": "66c37f54456ba112999bad5243509233e97f5e482543cd9b4b1130f0b300cc29",
+        "under:gear": "7cac1fd092f039decd99765aec4ddfd38b5563ca9334518afc68992229eb6a40",
+        "under:weapon": "800f5efbf00040f7f36a8a9e23d7a7e8152c24ec294de44220e2e72153bfd32a",
+        "under:shield": "13ede5d26212b2fa702b1c597e4ea57e6c6ab53ba7073472dec1935e10d4cd74",
+        "under:hair-tail": "7cac1fd092f039decd99765aec4ddfd38b5563ca9334518afc68992229eb6a40",
+        "under:head": "68290336e345fb86f4cb24730c077848fc096d1b7be0929fc74928b1018618e0",
+        "legs": "7aba543b357cfa316e6368651fe99015dbc60a81d76b2f9e47f289fe6adee35b",
+        "hair-tail": "7cac1fd092f039decd99765aec4ddfd38b5563ca9334518afc68992229eb6a40",
+        "body": "15f0b2204e2d3c83cb3efa2be98c2b9bd8d1f383f74cc796cb9f0ac3167d71a0",
+        "cloth-hem": "8ad317134ee6e4d140620846dc03d8140c2034f1a1a4c187b29f264b71c29c51",
+        "arm-left": "878470294503a1c821762f83c286db7090d6a8d531beed1e5e89165b54fd0161",
+        "arm-right": "7cac1fd092f039decd99765aec4ddfd38b5563ca9334518afc68992229eb6a40",
+        "gear": "b64ad87b7f0ae955941e30ef60740e2a9f364e67857558cb89ad264f72325fc2",
+        "weapon": "ffd353263fdb663854f718d5e7413b79bcfee93c2dba57a196ba54b62e57c80c",
+        "shield": "28b4db327df91d501c1edb879af18f959988542797da48b3826db7c989d97e95",
+        "head": "eef8c60434652296041896d2196cee3391386287e867b40e09d5811a6576fc53"
+      },
+      "weapon_arm": "arm-left",
+      "shield_arm": "arm-right",
+      "body_root": [
+        160,
+        280
+      ],
+      "arm_root": [
+        146,
+        219
+      ],
+      "shield_root": [
+        184,
+        214
+      ],
+      "shield_grip": [
+        204.3125,
+        246.40625
+      ],
+      "plate_contact": [
+        198,
+        228
+      ],
+      "grip_location": "center_handle",
+      "arm_base_degrees": -25,
+      "head_root": [
+        167,
+        207
+      ],
+      "hand_root": [
+        137,
+        241
+      ],
+      "weapon_behind_head": false,
+      "shield_behind_body": false,
+      "arm_behind_shield": true,
+      "native_arm_scale": [
+        1,
+        1
+      ],
+      "idle_rig": {
+        "body_root": [
+          164,
+          236
+        ],
+        "head_root": [
+          167,
+          207
+        ],
+        "tail_root": [
+          167,
+          207
+        ],
+        "cloth_root": [
+          164,
+          236
+        ],
+        "arm_roots": {
+          "arm-left": [
+            146,
+            219
+          ],
+          "arm-right": [
+            188,
+            218
+          ]
+        }
+      },
+      "frames": [
+        {
+          "index": 0,
+          "body": 0,
+          "translation": [
+            0,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": 0,
+          "shield_tilt": 0,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 1,
+          "body": -0.024,
+          "translation": [
+            -0.06,
+            -0.02
+          ],
+          "arm": 0,
+          "shield_arm": 2,
+          "shield_tilt": -0.48,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 2,
+          "body": -0.084,
+          "translation": [
+            -0.21000000000000002,
+            -0.07
+          ],
+          "arm": 0,
+          "shield_arm": 7.000000000000001,
+          "shield_tilt": -1.6800000000000002,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 3,
+          "body": -0.192,
+          "translation": [
+            -0.48,
+            -0.16
+          ],
+          "arm": 0,
+          "shield_arm": 15,
+          "shield_tilt": -3.5999999999999996,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 4,
+          "body": -0.336,
+          "translation": [
+            -0.8400000000000001,
+            -0.28
+          ],
+          "arm": 0,
+          "shield_arm": 20,
+          "shield_tilt": -4.800000000000001,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 5,
+          "body": -0.432,
+          "translation": [
+            -1.08,
+            -0.36
+          ],
+          "arm": 0,
+          "shield_arm": 11,
+          "shield_tilt": -2.64,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 6,
+          "body": -0.192,
+          "translation": [
+            -0.48,
+            -0.16
+          ],
+          "arm": 0,
+          "shield_arm": -11,
+          "shield_tilt": 2.64,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 7,
+          "body": 0.624,
+          "translation": [
+            1.56,
+            0.52
+          ],
+          "arm": 0,
+          "shield_arm": -41,
+          "shield_tilt": 9.84,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 8,
+          "body": 1.8719999999999999,
+          "translation": [
+            4.68,
+            1.56
+          ],
+          "arm": 0,
+          "shield_arm": -50,
+          "shield_tilt": 12,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 9,
+          "body": 2.4,
+          "translation": [
+            6,
+            2
+          ],
+          "arm": 0,
+          "shield_arm": -39,
+          "shield_tilt": 9.36,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 10,
+          "body": 1.8719999999999999,
+          "translation": [
+            4.68,
+            1.56
+          ],
+          "arm": 0,
+          "shield_arm": -25,
+          "shield_tilt": 6,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 11,
+          "body": 1.152,
+          "translation": [
+            2.88,
+            0.96
+          ],
+          "arm": 0,
+          "shield_arm": -14.499999999999998,
+          "shield_tilt": 3.4799999999999995,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 12,
+          "body": 0.576,
+          "translation": [
+            1.44,
+            0.48
+          ],
+          "arm": 0,
+          "shield_arm": -7.000000000000001,
+          "shield_tilt": 1.6800000000000002,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 13,
+          "body": 0.216,
+          "translation": [
+            0.54,
+            0.18
+          ],
+          "arm": 0,
+          "shield_arm": -2.75,
+          "shield_tilt": 0.66,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 14,
+          "body": 0.048,
+          "translation": [
+            0.12,
+            0.04
+          ],
+          "arm": 0,
+          "shield_arm": -0.6,
+          "shield_tilt": 0.14400000000000002,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 15,
+          "body": 0.0024,
+          "translation": [
+            0.006,
+            0.002
+          ],
+          "arm": 0,
+          "shield_arm": -0.05,
+          "shield_tilt": 0.012,
+          "head": 0,
+          "cloth": 0
+        }
+      ]
+    },
+    "back": {
+      "view": "back",
+      "parts": {
+        "under:legs": "asset/character/icon/layers/guardian/back/attack/push/under-legs-stable.png",
+        "under:body": "asset/character/icon/layers/guardian/back/attack/push/base-under-body.png",
+        "under:cloth-hem": "asset/character/icon/layers/guardian/back/attack/push/base-under-cloth-hem.png",
+        "under:arm-right": "asset/character/icon/layers/guardian/back/aligned/hidden/arm-right.png",
+        "under:gear": "asset/character/icon/layers/guardian/back/attack/push/base-under-gear.png",
+        "under:weapon": "asset/character/icon/layers/guardian/back/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/guardian/back/attack/push/under-shield.png",
+        "under:hair-tail": "asset/character/icon/layers/guardian/back/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/guardian/back/attack/push/head-under-empty.png",
+        "legs": "asset/character/icon/layers/guardian/back/attack/push/legs-stable.png",
+        "hair-tail": "asset/character/icon/layers/guardian/back/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/guardian/back/attack/push/base-body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/back/attack/push/base-cloth-hem.png",
+        "arm-right": "asset/character/icon/layers/guardian/back/aligned/visible/arm-right.png",
+        "gear": "asset/character/icon/layers/guardian/back/attack/push/base-gear.png",
+        "weapon": "asset/character/icon/layers/guardian/back/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/guardian/back/attack/push/shield-full.png",
+        "head": "asset/character/icon/layers/guardian/back/attack/push/head-complete.png",
+        "torso_patch": "asset/character/icon/layers/guardian/back/attack/push/torso-patch.png",
+        "shield_arm_native": "asset/character/icon/layers/guardian/back/attack/push/arm-native.png"
+      },
+      "layer_order": [
+        "shield_arm_native",
+        "under:shield",
+        "shield",
+        "rear_hand_grip",
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "torso_patch",
+        "under:arm-right",
+        "under:gear",
+        "under:weapon",
+        "under:hair-tail",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-right",
+        "gear",
+        "weapon",
+        "under:head",
+        "head"
+      ],
+      "source_hashes": {
+        "under:legs": "0ce85f118634e015e3f10914d948cc2302d208f660c6ee2cb8f3ccaf642dd953",
+        "under:body": "776983cb36d90172fd671f450a9517ce72f8db70241c0717f4d1716aa9ecf04f",
+        "under:cloth-hem": "ee0bfc8e8d1e55451fc4f91958a3820bf0a4cffc23cdac813660ebb662f0b79d",
+        "under:arm-left": "4c89171873c36ec4edaf8758b167e2b7da7eba55204ac652751d0ea4bfd06528",
+        "under:arm-right": "7fd8ca2ae77b76411f2b05ca69ce72415840bf8949bb424dbd76992886668571",
+        "under:gear": "e7e40622727775a911f79bc0c70158acf4492de33c406d8f68bd84c82cfae000",
+        "under:weapon": "132125169fd8ef1cb7073d3e8f3d5add154a22de913e11596747414d2bb73e21",
+        "under:shield": "8c2f90035f28c3feba98a4f565e82440978c6e794f185b025073fc9490842fef",
+        "under:hair-tail": "7cac1fd092f039decd99765aec4ddfd38b5563ca9334518afc68992229eb6a40",
+        "under:head": "21335d5c7d3aec7da9ad8242cde2a3702da1a54800b2de22c2e1c16719eb0238",
+        "legs": "9231191a1cbcae6e39c435b647530b379c0f1b7df0689294fe8105dcc776270d",
+        "hair-tail": "7cac1fd092f039decd99765aec4ddfd38b5563ca9334518afc68992229eb6a40",
+        "body": "a2337183d88eb8ca88fc19acb360fb4f77b2dc2238df7cad280bd8995f4262f2",
+        "cloth-hem": "3aef0f01d5a9214636eeea7769102dcdb93f36887bd22df6858e4521e463905b",
+        "arm-left": "30d0de0b695660bbf4d19e6cbeaf19e33ffa4c23d5f60580337e56e77503e55a",
+        "arm-right": "8060750aca3c9b033880710694c0699c49af08ff23538a3c10f55a5d72a11eaf",
+        "gear": "e176bc76b095490957d497f5421215acca042432118967e86bbb1bfd2b1bf2e9",
+        "weapon": "080b2aaac6473097b192f6b41776f4489b931e5471674d95cbe913c4e2b883f0",
+        "shield": "13f9435c0f1ce30de99b2a25b5b90e67b1c3b6bf7a9820970773693a2d2c3efa",
+        "head": "6b7c6d84efd371d6dc92ad9736f1f728f7a2f549dd7db7665008ae05381ae818"
+      },
+      "weapon_arm": "arm-right",
+      "shield_arm": "arm-left",
+      "body_root": [
+        160,
+        280
+      ],
+      "arm_root": [
+        184,
+        221
+      ],
+      "shield_root": [
+        138,
+        214
+      ],
+      "shield_grip": [
+        124.76086956521704,
+        240.4420289855081
+      ],
+      "plate_contact": [
+        111,
+        230
+      ],
+      "grip_location": "center_handle",
+      "arm_base_degrees": 25,
+      "head_root": [
+        163,
+        209
+      ],
+      "hand_root": [
+        201,
+        246
+      ],
+      "weapon_behind_head": true,
+      "shield_behind_body": true,
+      "arm_behind_shield": true,
+      "native_arm_scale": [
+        1,
+        1
+      ],
+      "rear_hand_grip": {
+        "center": [
+          124.76086956521704,
+          240.4420289855081
+        ],
+        "radius": 18
+      },
+      "idle_rig": {
+        "body_root": [
+          163,
+          235
+        ],
+        "head_root": [
+          163,
+          209
+        ],
+        "tail_root": [
+          163,
+          209
+        ],
+        "cloth_root": [
+          163,
+          235
+        ],
+        "arm_roots": {
+          "arm-left": [
+            136,
+            221
+          ],
+          "arm-right": [
+            184,
+            221
+          ]
+        }
+      },
+      "frames": [
+        {
+          "index": 0,
+          "body": 0,
+          "translation": [
+            0,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": 0,
+          "shield_tilt": 0,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 1,
+          "body": 0.024,
+          "translation": [
+            0.05,
+            0.025
+          ],
+          "arm": 0,
+          "shield_arm": -2,
+          "shield_tilt": 0.48,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 2,
+          "body": 0.084,
+          "translation": [
+            0.17500000000000002,
+            0.08750000000000001
+          ],
+          "arm": 0,
+          "shield_arm": -7.000000000000001,
+          "shield_tilt": 1.6800000000000002,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 3,
+          "body": 0.192,
+          "translation": [
+            0.4,
+            0.2
+          ],
+          "arm": 0,
+          "shield_arm": -15,
+          "shield_tilt": 3.5999999999999996,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 4,
+          "body": 0.336,
+          "translation": [
+            0.7000000000000001,
+            0.35000000000000003
+          ],
+          "arm": 0,
+          "shield_arm": -20,
+          "shield_tilt": 4.800000000000001,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 5,
+          "body": 0.432,
+          "translation": [
+            0.8999999999999999,
+            0.44999999999999996
+          ],
+          "arm": 0,
+          "shield_arm": -11,
+          "shield_tilt": 2.64,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 6,
+          "body": 0.192,
+          "translation": [
+            0.4,
+            0.2
+          ],
+          "arm": 0,
+          "shield_arm": 11,
+          "shield_tilt": -2.64,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 7,
+          "body": -0.624,
+          "translation": [
+            -1.3,
+            -0.65
+          ],
+          "arm": 0,
+          "shield_arm": 41,
+          "shield_tilt": -9.84,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 8,
+          "body": -1.8719999999999999,
+          "translation": [
+            -3.9000000000000004,
+            -1.9500000000000002
+          ],
+          "arm": 0,
+          "shield_arm": 50,
+          "shield_tilt": -12,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 9,
+          "body": -2.4,
+          "translation": [
+            -5,
+            -2.5
+          ],
+          "arm": 0,
+          "shield_arm": 39,
+          "shield_tilt": -9.36,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 10,
+          "body": -1.8719999999999999,
+          "translation": [
+            -3.9000000000000004,
+            -1.9500000000000002
+          ],
+          "arm": 0,
+          "shield_arm": 25,
+          "shield_tilt": -6,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 11,
+          "body": -1.152,
+          "translation": [
+            -2.4,
+            -1.2
+          ],
+          "arm": 0,
+          "shield_arm": 14.499999999999998,
+          "shield_tilt": -3.4799999999999995,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 12,
+          "body": -0.576,
+          "translation": [
+            -1.2,
+            -0.6
+          ],
+          "arm": 0,
+          "shield_arm": 7.000000000000001,
+          "shield_tilt": -1.6800000000000002,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 13,
+          "body": -0.216,
+          "translation": [
+            -0.44999999999999996,
+            -0.22499999999999998
+          ],
+          "arm": 0,
+          "shield_arm": 2.75,
+          "shield_tilt": -0.66,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 14,
+          "body": -0.048,
+          "translation": [
+            -0.1,
+            -0.05
+          ],
+          "arm": 0,
+          "shield_arm": 0.6,
+          "shield_tilt": -0.14400000000000002,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 15,
+          "body": -0.0024,
+          "translation": [
+            -0.005,
+            -0.0025
+          ],
+          "arm": 0,
+          "shield_arm": 0.05,
+          "shield_tilt": -0.012,
+          "head": 0,
+          "cloth": 0
+        }
+      ]
+    },
+    "side": {
+      "view": "side",
+      "parts": {
+        "under:legs": "asset/character/icon/layers/guardian/side/attack/push/under-legs-stable.png",
+        "under:body": "asset/character/icon/layers/guardian/side/attack/push/base-under-body.png",
+        "under:cloth-hem": "asset/character/icon/layers/guardian/side/attack/push/base-under-cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/guardian/side/aligned/hidden/arm-left.png",
+        "under:gear": "asset/character/icon/layers/guardian/side/attack/push/base-under-gear.png",
+        "under:weapon": "asset/character/icon/layers/guardian/side/aligned/hidden/weapon.png",
+        "under:shield": "asset/character/icon/layers/guardian/side/attack/push/under-shield.png",
+        "under:hair-tail": "asset/character/icon/layers/guardian/side/aligned/hidden/hair-tail.png",
+        "under:head": "asset/character/icon/layers/guardian/side/attack/push/head-under-empty.png",
+        "legs": "asset/character/icon/layers/guardian/side/attack/push/legs-stable.png",
+        "hair-tail": "asset/character/icon/layers/guardian/side/aligned/visible/hair-tail.png",
+        "body": "asset/character/icon/layers/guardian/side/attack/push/base-body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/side/attack/push/base-cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/guardian/side/aligned/visible/arm-left.png",
+        "gear": "asset/character/icon/layers/guardian/side/attack/push/base-gear.png",
+        "weapon": "asset/character/icon/layers/guardian/side/aligned/visible/weapon.png",
+        "shield": "asset/character/icon/layers/guardian/side/attack/push/shield-full.png",
+        "head": "asset/character/icon/layers/guardian/side/attack/push/head-complete.png",
+        "torso_patch": "asset/character/icon/layers/guardian/side/attack/push/torso-patch.png",
+        "shield_arm_native": "asset/character/icon/layers/guardian/side/attack/push/arm-native.png"
+      },
+      "layer_order": [
+        "under:legs",
+        "under:body",
+        "under:cloth-hem",
+        "torso_patch",
+        "under:arm-left",
+        "under:gear",
+        "under:weapon",
+        "under:hair-tail",
+        "legs",
+        "hair-tail",
+        "body",
+        "cloth-hem",
+        "arm-left",
+        "gear",
+        "weapon",
+        "shield_arm_native",
+        "under:shield",
+        "shield",
+        "under:head",
+        "head"
+      ],
+      "source_hashes": {
+        "under:legs": "3efd9608bacb0f3b7bd2b66db7f6451abbe44d57e6780671e62c88d56c39fb84",
+        "under:body": "5416a7d88d36c936528ba0715774742af82a4a65a12bddfa9b2908ae8bf7427c",
+        "under:cloth-hem": "0b83865c55a3842fa5c6a6f8194a426481bb11b96aacb807baa0c1206fb18f97",
+        "under:arm-left": "b21d913afaeb8c0aa6277c173deb4b294ce75ada769c65d0f277c119b1734fe7",
+        "under:arm-right": "19f5d1829137ee5903239bbba526c6ba772277159fa1b5ba17dcab9cf37e3fad",
+        "under:gear": "043f52912cab0ce05fe2bcbf44c8e1c2eab49d56653a9668c0c4c248ec407f62",
+        "under:weapon": "d1d378dae7a8687d4f8080cd72042bc178be15d83f4e0a8b89efdd9f02cbe10b",
+        "under:shield": "b9b8647daf2c4292eb094cc1c146e97372e2ddddf31534d6d8eb20552d60d5c7",
+        "under:hair-tail": "7cac1fd092f039decd99765aec4ddfd38b5563ca9334518afc68992229eb6a40",
+        "under:head": "3d091de58fc27db1376da8ab49580d008b44d1b733ac4e4e36b94bcf1390ea6c",
+        "legs": "b1ee718573527e8a1d46575dc00928c0223df91c36fc201fcbfd447e34051345",
+        "hair-tail": "7cac1fd092f039decd99765aec4ddfd38b5563ca9334518afc68992229eb6a40",
+        "body": "e4b4eec8ee09e405ee0d5cd840fc6140ea16a65f50976c1165df08f9a087d7f3",
+        "cloth-hem": "6ff2debd11edc74c2e1102b671eba83e064e09b1288d3baf7a0448d187011b01",
+        "arm-left": "7e71999ef41fff08a89f37b568fd740da7aa3edb20113dea36d766c7131c84db",
+        "arm-right": "7cac1fd092f039decd99765aec4ddfd38b5563ca9334518afc68992229eb6a40",
+        "gear": "7c79d4d89b65535b5ea02562c1eccf18ac602d204d502377f306b4ffc23de2c5",
+        "weapon": "a823bb955d889a3d52dfea67f0926c58668f6306fcc5ec8ad54a84a9b02a8edc",
+        "shield": "7c160d618e2bbf6d2c36006604fa5e87c5b23fcbff445cbd9affcce48bb69b51",
+        "head": "80942369cfd269810f731fc137a741c18bda70c4a62e4b854d429504091dfc4a"
+      },
+      "weapon_arm": "arm-left",
+      "shield_arm": "arm-right",
+      "body_root": [
+        160,
+        280
+      ],
+      "arm_root": [
+        151,
+        224
+      ],
+      "shield_root": [
+        184,
+        214
+      ],
+      "shield_grip": [
+        198.80530973451332,
+        245.97345132743314
+      ],
+      "plate_contact": [
+        202,
+        228
+      ],
+      "grip_location": "center_handle",
+      "arm_base_degrees": -25,
+      "head_root": [
+        175,
+        209
+      ],
+      "hand_root": [
+        144,
+        247
+      ],
+      "weapon_behind_head": false,
+      "shield_behind_body": false,
+      "arm_behind_shield": true,
+      "native_arm_scale": [
+        1,
+        1
+      ],
+      "idle_rig": {
+        "body_root": [
+          170,
+          238
+        ],
+        "head_root": [
+          175,
+          209
+        ],
+        "tail_root": [
+          175,
+          209
+        ],
+        "cloth_root": [
+          170,
+          238
+        ],
+        "arm_roots": {
+          "arm-left": [
+            151,
+            224
+          ],
+          "arm-right": [
+            187,
+            220
+          ]
+        }
+      },
+      "frames": [
+        {
+          "index": 0,
+          "body": 0,
+          "translation": [
+            0,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": 0,
+          "shield_tilt": 0,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 1,
+          "body": -0.032,
+          "translation": [
+            -0.08,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": 2,
+          "shield_tilt": -0.48,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 2,
+          "body": -0.11200000000000002,
+          "translation": [
+            -0.28,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": 7.000000000000001,
+          "shield_tilt": -1.6800000000000002,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 3,
+          "body": -0.256,
+          "translation": [
+            -0.64,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": 15,
+          "shield_tilt": -3.5999999999999996,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 4,
+          "body": -0.44800000000000006,
+          "translation": [
+            -1.12,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": 20,
+          "shield_tilt": -4.800000000000001,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 5,
+          "body": -0.576,
+          "translation": [
+            -1.44,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": 11,
+          "shield_tilt": -2.64,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 6,
+          "body": -0.256,
+          "translation": [
+            -0.64,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": -11,
+          "shield_tilt": 2.64,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 7,
+          "body": 0.8320000000000001,
+          "translation": [
+            2.08,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": -41,
+          "shield_tilt": 9.84,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 8,
+          "body": 2.4960000000000004,
+          "translation": [
+            6.24,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": -50,
+          "shield_tilt": 12,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 9,
+          "body": 3.2,
+          "translation": [
+            8,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": -39,
+          "shield_tilt": 9.36,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 10,
+          "body": 2.4960000000000004,
+          "translation": [
+            6.24,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": -25,
+          "shield_tilt": 6,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 11,
+          "body": 1.536,
+          "translation": [
+            3.84,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": -14.499999999999998,
+          "shield_tilt": 3.4799999999999995,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 12,
+          "body": 0.768,
+          "translation": [
+            1.92,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": -7.000000000000001,
+          "shield_tilt": 1.6800000000000002,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 13,
+          "body": 0.288,
+          "translation": [
+            0.72,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": -2.75,
+          "shield_tilt": 0.66,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 14,
+          "body": 0.064,
+          "translation": [
+            0.16,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": -0.6,
+          "shield_tilt": 0.14400000000000002,
+          "head": 0,
+          "cloth": 0
+        },
+        {
+          "index": 15,
+          "body": 0.0032,
+          "translation": [
+            0.008,
+            0
+          ],
+          "arm": 0,
+          "shield_arm": -0.05,
+          "shield_tilt": 0.012,
+          "head": 0,
+          "cloth": 0
+        }
+      ]
+    }
+  }
+}

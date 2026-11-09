@@ -1,0 +1,949 @@
+{
+  "id": "crossbowman",
+  "version": 5,
+  "workflow": "connected original poses with three real lift in-betweens; rigid unit scale and original feet fixed",
+  "lift": "metadata/character/attack/crossbowman-lift.json",
+  "frames": 16,
+  "fps": 16,
+  "release_frame": 7,
+  "cell_size": [
+    320,
+    320
+  ],
+  "views": {
+    "front": {
+      "parts": {
+        "idle": "asset/character/icon/layers/crossbowman/front/attack/connected/idle-upper.png",
+        "aim": "asset/character/icon/layers/crossbowman/front/attack/connected/aim-upper.png",
+        "fire": "asset/character/icon/layers/crossbowman/front/attack/connected/fire-upper.png",
+        "recover": "asset/character/icon/layers/crossbowman/front/attack/connected/recover-upper.png",
+        "lift-1": "asset/character/icon/layers/crossbowman/front/attack/connected/lift-1-upper.png",
+        "lift-2": "asset/character/icon/layers/crossbowman/front/attack/connected/lift-2-upper.png",
+        "lift-3": "asset/character/icon/layers/crossbowman/front/attack/connected/lift-3-upper.png",
+        "feet": "asset/character/icon/layers/crossbowman/front/attack/connected/feet.png",
+        "bolt": "asset/character/icon/layers/crossbowman/front/attack/connected/bolt.png"
+      },
+      "sources": {
+        "idle": {
+          "input": "asset/character/main/crossbowman/front/idle-sheet.png",
+          "original_rgba_sha256": "c035d04c588b86a7aa0a63b778bf8da99eef9b1b36e326f28523182a035e4581",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            202,
+            233.6
+          ]
+        },
+        "aim": {
+          "input": "asset/character/icon/source/crossbowman/front/attack_01.png",
+          "original_rgba_sha256": "8e2e3cf0c99eedf01e6e44114effb42058c14dcc2ac7130d8421de121b86ea80",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            238,
+            211.3793103448276
+          ]
+        },
+        "fire": {
+          "input": "asset/character/icon/source/crossbowman/front/attack_02.png",
+          "original_rgba_sha256": "6205ee431585f0b51fb6f67334350c36c32757d6899754bd034480716d9fa181",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            244,
+            215.1875
+          ]
+        },
+        "recover": {
+          "input": "asset/character/icon/source/crossbowman/front/attack_03.png",
+          "original_rgba_sha256": "a7675add6f362789696e4cabbce74d90678f0851fa1a5f717e3e2d8c635e79c4",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            203,
+            195
+          ]
+        },
+        "lift-1": {
+          "input": "asset/character/icon/layers/crossbowman/front/attack/lift/lift-01.png",
+          "original_rgba_sha256": "1e4840a9a6e2a0daf0a4c948390c736cfd54dc6022adfccb7aaa8f9351923995",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            197,
+            207.69230769230768
+          ]
+        },
+        "lift-2": {
+          "input": "asset/character/icon/layers/crossbowman/front/attack/lift/lift-02.png",
+          "original_rgba_sha256": "21a7dfc088982b9f60f9c696ab3b172f591d92d5705cf2b51620e39382d037d4",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            217,
+            233.33333333333334
+          ]
+        },
+        "lift-3": {
+          "input": "asset/character/icon/layers/crossbowman/front/attack/lift/lift-03.png",
+          "original_rgba_sha256": "40f212e4238d7868b81b618fb9eb8bf9c43ddc77e6413fee3612430cdba0c8f1",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            230,
+            221.3913043478261
+          ]
+        }
+      },
+      "pivot": [
+        163,
+        241
+      ],
+      "muzzle": [
+        238,
+        208
+      ],
+      "foot_reference_mask": "asset/character/icon/layers/crossbowman/front/aligned/visible/legs.png",
+      "foot_boxes": [
+        [
+          119,
+          270,
+          39,
+          24
+        ],
+        [
+          161,
+          270,
+          37,
+          24
+        ]
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "pose": "idle",
+          "translation": [
+            0,
+            0
+          ],
+          "angle_degrees": 0,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 1,
+          "pose": "lift-1",
+          "translation": [
+            0,
+            -0.15
+          ],
+          "angle_degrees": -0.12,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 2,
+          "pose": "lift-2",
+          "translation": [
+            0,
+            -0.15
+          ],
+          "angle_degrees": -0.08,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 3,
+          "pose": "lift-3",
+          "translation": [
+            0,
+            -0.3
+          ],
+          "angle_degrees": -0.12,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 4,
+          "pose": "aim",
+          "translation": [
+            0,
+            -0.4
+          ],
+          "angle_degrees": -0.18,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 5,
+          "pose": "aim",
+          "translation": [
+            0,
+            -0.48
+          ],
+          "angle_degrees": -0.22,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 6,
+          "pose": "aim",
+          "translation": [
+            0,
+            -0.52
+          ],
+          "angle_degrees": -0.24,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 7,
+          "pose": "fire",
+          "translation": [
+            -1.3,
+            -0.35
+          ],
+          "angle_degrees": 0.35,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 8,
+          "pose": "fire",
+          "translation": [
+            -0.85,
+            -0.22
+          ],
+          "angle_degrees": 0.24,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 9,
+          "pose": "aim",
+          "translation": [
+            -0.4,
+            -0.28
+          ],
+          "angle_degrees": 0.12,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 10,
+          "pose": "aim",
+          "translation": [
+            -0.1,
+            -0.25
+          ],
+          "angle_degrees": 0.04,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 11,
+          "pose": "lift-3",
+          "translation": [
+            0,
+            -0.2
+          ],
+          "angle_degrees": -0.04,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 12,
+          "pose": "lift-2",
+          "translation": [
+            0,
+            -0.28
+          ],
+          "angle_degrees": -0.04,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 13,
+          "pose": "lift-1",
+          "translation": [
+            0,
+            -0.1
+          ],
+          "angle_degrees": -0.05,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 14,
+          "pose": "idle",
+          "translation": [
+            0,
+            -0.07
+          ],
+          "angle_degrees": -0.03,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 15,
+          "pose": "idle",
+          "translation": [
+            0,
+            -0.03
+          ],
+          "angle_degrees": -0.01,
+          "scale": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    "back": {
+      "parts": {
+        "idle": "asset/character/icon/layers/crossbowman/back/attack/connected/idle-upper.png",
+        "aim": "asset/character/icon/layers/crossbowman/back/attack/connected/aim-upper.png",
+        "fire": "asset/character/icon/layers/crossbowman/back/attack/connected/fire-upper.png",
+        "recover": "asset/character/icon/layers/crossbowman/back/attack/connected/recover-upper.png",
+        "lift-1": "asset/character/icon/layers/crossbowman/back/attack/connected/lift-1-upper.png",
+        "lift-2": "asset/character/icon/layers/crossbowman/back/attack/connected/lift-2-upper.png",
+        "lift-3": "asset/character/icon/layers/crossbowman/back/attack/connected/lift-3-upper.png",
+        "feet": "asset/character/icon/layers/crossbowman/back/attack/connected/feet.png",
+        "bolt": "asset/character/icon/layers/crossbowman/back/attack/connected/bolt.png"
+      },
+      "sources": {
+        "idle": {
+          "input": "asset/character/main/crossbowman/back/idle-sheet.png",
+          "original_rgba_sha256": "e45f5e74e1d6fff6b029d7246242599201fe7ce0edd8c039d43426db41420328",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            197,
+            226.61904761904762
+          ]
+        },
+        "aim": {
+          "input": "asset/character/icon/source/crossbowman/back/attack_01.png",
+          "original_rgba_sha256": "ab20973b073ba6b7ecdbb735a6cf4b3338ce643f56522b60420782e40815fc7a",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            215,
+            207.04761904761904
+          ]
+        },
+        "fire": {
+          "input": "asset/character/icon/source/crossbowman/back/attack_02.png",
+          "original_rgba_sha256": "8aa8a971525c0e847b71219eeee92fc6757e98368a1e74dfa6c858508bd842aa",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            223,
+            197.55555555555554
+          ]
+        },
+        "recover": {
+          "input": "asset/character/icon/source/crossbowman/back/attack_03.png",
+          "original_rgba_sha256": "44cfac28e15292dbb234c03729d3b70f1b21e9ac2d7481c0fcf29aaefc742985",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            213,
+            205.05555555555554
+          ]
+        },
+        "lift-1": {
+          "input": "asset/character/icon/layers/crossbowman/back/attack/lift/lift-01.png",
+          "original_rgba_sha256": "67cf9f512ba5d41c5e617fce0b9df7c9913089b5e37b5720ba9f501314350cef",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            203,
+            221.34782608695653
+          ]
+        },
+        "lift-2": {
+          "input": "asset/character/icon/layers/crossbowman/back/attack/lift/lift-02.png",
+          "original_rgba_sha256": "a072754dcd378c2e42544971e3d99ad9042012f5e32939a60abe0021e0324e2c",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            208,
+            215.7058823529412
+          ]
+        },
+        "lift-3": {
+          "input": "asset/character/icon/layers/crossbowman/back/attack/lift/lift-03.png",
+          "original_rgba_sha256": "83943b211b16f70c79532977724b89a74dac0e5ea59c5d968d0e8517f57d4c61",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            210,
+            209.55555555555554
+          ]
+        }
+      },
+      "pivot": [
+        163,
+        243
+      ],
+      "muzzle": [
+        215,
+        204
+      ],
+      "foot_reference_mask": "asset/character/icon/layers/crossbowman/back/aligned/visible/legs.png",
+      "foot_boxes": [
+        [
+          127,
+          270,
+          28,
+          24
+        ],
+        [
+          162,
+          270,
+          35,
+          24
+        ]
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "pose": "idle",
+          "translation": [
+            0,
+            0
+          ],
+          "angle_degrees": 0,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 1,
+          "pose": "lift-1",
+          "translation": [
+            0,
+            -0.15
+          ],
+          "angle_degrees": -0.12,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 2,
+          "pose": "lift-2",
+          "translation": [
+            0,
+            -0.15
+          ],
+          "angle_degrees": -0.08,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 3,
+          "pose": "lift-3",
+          "translation": [
+            0,
+            -0.3
+          ],
+          "angle_degrees": -0.12,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 4,
+          "pose": "aim",
+          "translation": [
+            0,
+            -0.4
+          ],
+          "angle_degrees": -0.18,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 5,
+          "pose": "aim",
+          "translation": [
+            0,
+            -0.48
+          ],
+          "angle_degrees": -0.22,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 6,
+          "pose": "aim",
+          "translation": [
+            0,
+            -0.52
+          ],
+          "angle_degrees": -0.24,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 7,
+          "pose": "fire",
+          "translation": [
+            -1.3,
+            -0.35
+          ],
+          "angle_degrees": 0.35,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 8,
+          "pose": "fire",
+          "translation": [
+            -0.85,
+            -0.22
+          ],
+          "angle_degrees": 0.24,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 9,
+          "pose": "aim",
+          "translation": [
+            -0.4,
+            -0.28
+          ],
+          "angle_degrees": 0.12,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 10,
+          "pose": "aim",
+          "translation": [
+            -0.1,
+            -0.25
+          ],
+          "angle_degrees": 0.04,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 11,
+          "pose": "lift-3",
+          "translation": [
+            0,
+            -0.2
+          ],
+          "angle_degrees": -0.04,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 12,
+          "pose": "lift-2",
+          "translation": [
+            0,
+            -0.28
+          ],
+          "angle_degrees": -0.04,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 13,
+          "pose": "lift-1",
+          "translation": [
+            0,
+            -0.1
+          ],
+          "angle_degrees": -0.05,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 14,
+          "pose": "idle",
+          "translation": [
+            0,
+            -0.07
+          ],
+          "angle_degrees": -0.03,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 15,
+          "pose": "idle",
+          "translation": [
+            0,
+            -0.03
+          ],
+          "angle_degrees": -0.01,
+          "scale": [
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    "side": {
+      "parts": {
+        "idle": "asset/character/icon/layers/crossbowman/side/attack/connected/idle-upper.png",
+        "aim": "asset/character/icon/layers/crossbowman/side/attack/connected/aim-upper.png",
+        "fire": "asset/character/icon/layers/crossbowman/side/attack/connected/fire-upper.png",
+        "recover": "asset/character/icon/layers/crossbowman/side/attack/connected/recover-upper.png",
+        "lift-1": "asset/character/icon/layers/crossbowman/side/attack/connected/lift-1-upper.png",
+        "lift-2": "asset/character/icon/layers/crossbowman/side/attack/connected/lift-2-upper.png",
+        "lift-3": "asset/character/icon/layers/crossbowman/side/attack/connected/lift-3-upper.png",
+        "feet": "asset/character/icon/layers/crossbowman/side/attack/connected/feet.png",
+        "bolt": "asset/character/icon/layers/crossbowman/side/attack/connected/bolt.png"
+      },
+      "sources": {
+        "idle": {
+          "input": "asset/character/main/crossbowman/side/idle-sheet.png",
+          "original_rgba_sha256": "174769435510b5c654ed3380149a0f07e599f963edba36bbad954388e3f1ca99",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            200,
+            233.75
+          ]
+        },
+        "aim": {
+          "input": "asset/character/icon/source/crossbowman/side/attack_01.png",
+          "original_rgba_sha256": "580f370ee29362227ffd4cf8b88f5a58d5a1a8118dd5f3a509bc703900cddeaf",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            238,
+            207.68965517241378
+          ]
+        },
+        "fire": {
+          "input": "asset/character/icon/source/crossbowman/side/attack_02.png",
+          "original_rgba_sha256": "1e54cccf8b682b13621092ff7974fce5fa524695c394fc7d2cdf2ac93cc8abc9",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            244,
+            211.68965517241378
+          ]
+        },
+        "recover": {
+          "input": "asset/character/icon/source/crossbowman/side/attack_03.png",
+          "original_rgba_sha256": "0497bee323352b75a4b8f6f8c5b302d1378d937d3653555b44e32f5186f17fc2",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            197,
+            195.5
+          ]
+        },
+        "lift-1": {
+          "input": "asset/character/icon/layers/crossbowman/side/attack/lift/lift-01.png",
+          "original_rgba_sha256": "89503048c9fd0fc88b18d3cf7883ceb566bd359294208ccc7d37df2acdf5c6ea",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            204,
+            233.75
+          ]
+        },
+        "lift-2": {
+          "input": "asset/character/icon/layers/crossbowman/side/attack/lift/lift-02.png",
+          "original_rgba_sha256": "6e2fab5fbe98bba0c5689bfa43f442c457d848d437fc4fd9c324a54ff4d5ec5d",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            227,
+            230.3
+          ]
+        },
+        "lift-3": {
+          "input": "asset/character/icon/layers/crossbowman/side/attack/lift/lift-03.png",
+          "original_rgba_sha256": "30f217333ddaf3c52e07dad9cb523c8655096f0f3125558a16e9a4fbd0d7e114",
+          "upper_pixels_unchanged_above_y": 281,
+          "muzzle": [
+            233,
+            217.68
+          ]
+        }
+      },
+      "pivot": [
+        170,
+        241
+      ],
+      "muzzle": [
+        238,
+        204
+      ],
+      "foot_reference_mask": "asset/character/icon/layers/crossbowman/side/aligned/visible/legs.png",
+      "foot_boxes": [
+        [
+          121,
+          270,
+          35,
+          24
+        ],
+        [
+          160,
+          270,
+          39,
+          24
+        ]
+      ],
+      "frames": [
+        {
+          "index": 0,
+          "pose": "idle",
+          "translation": [
+            0,
+            0
+          ],
+          "angle_degrees": 0,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 1,
+          "pose": "lift-1",
+          "translation": [
+            0,
+            -0.15
+          ],
+          "angle_degrees": -0.12,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 2,
+          "pose": "lift-2",
+          "translation": [
+            0,
+            -0.15
+          ],
+          "angle_degrees": -0.08,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 3,
+          "pose": "lift-3",
+          "translation": [
+            0,
+            -0.3
+          ],
+          "angle_degrees": -0.12,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 4,
+          "pose": "aim",
+          "translation": [
+            0,
+            -0.4
+          ],
+          "angle_degrees": -0.18,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 5,
+          "pose": "aim",
+          "translation": [
+            0,
+            -0.48
+          ],
+          "angle_degrees": -0.22,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 6,
+          "pose": "aim",
+          "translation": [
+            0,
+            -0.52
+          ],
+          "angle_degrees": -0.24,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 7,
+          "pose": "fire",
+          "translation": [
+            -1.3,
+            -0.35
+          ],
+          "angle_degrees": 0.35,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 8,
+          "pose": "fire",
+          "translation": [
+            -0.85,
+            -0.22
+          ],
+          "angle_degrees": 0.24,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 9,
+          "pose": "aim",
+          "translation": [
+            -0.4,
+            -0.28
+          ],
+          "angle_degrees": 0.12,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 10,
+          "pose": "aim",
+          "translation": [
+            -0.1,
+            -0.25
+          ],
+          "angle_degrees": 0.04,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 11,
+          "pose": "lift-3",
+          "translation": [
+            0,
+            -0.2
+          ],
+          "angle_degrees": -0.04,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 12,
+          "pose": "lift-2",
+          "translation": [
+            0,
+            -0.28
+          ],
+          "angle_degrees": -0.04,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 13,
+          "pose": "lift-1",
+          "translation": [
+            0,
+            -0.1
+          ],
+          "angle_degrees": -0.05,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 14,
+          "pose": "idle",
+          "translation": [
+            0,
+            -0.07
+          ],
+          "angle_degrees": -0.03,
+          "scale": [
+            1,
+            1
+          ]
+        },
+        {
+          "index": 15,
+          "pose": "idle",
+          "translation": [
+            0,
+            -0.03
+          ],
+          "angle_degrees": -0.01,
+          "scale": [
+            1,
+            1
+          ]
+        }
+      ]
+    }
+  },
+  "renderer": "tools/crossbowman-connected-renderer.js"
+}

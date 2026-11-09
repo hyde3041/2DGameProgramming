@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "workflow": "original-pixel hair recovery and stable foot layers; no generated head or glove",
+  "views": {
+    "front": {
+      "parts": {
+        "head": "asset/character/icon/layers/guardian/front/attack/push/head-complete.png",
+        "under:head": "asset/character/icon/layers/guardian/front/attack/push/head-under-empty.png",
+        "legs": "asset/character/icon/layers/guardian/front/attack/push/legs-stable.png",
+        "under:legs": "asset/character/icon/layers/guardian/front/attack/push/under-legs-stable.png"
+      },
+      "recovered_hair_pixels": 33,
+      "removed_nonhair_pixels": 0,
+      "recovery_mask": "asset/character/icon/layers/guardian/front/attack/push/hair-recovery-mask.png",
+      "nonhair_mask": "asset/character/icon/layers/guardian/front/attack/push/head-nonhair-mask.png",
+      "feet_removed_pixels": {
+        "legs": 46,
+        "under:legs": 18
+      }
+    },
+    "back": {
+      "parts": {
+        "head": "asset/character/icon/layers/guardian/back/attack/push/head-complete.png",
+        "under:head": "asset/character/icon/layers/guardian/back/attack/push/head-under-empty.png",
+        "legs": "asset/character/icon/layers/guardian/back/attack/push/legs-stable.png",
+        "under:legs": "asset/character/icon/layers/guardian/back/attack/push/under-legs-stable.png"
+      },
+      "recovered_hair_pixels": 91,
+      "removed_nonhair_pixels": 0,
+      "recovery_mask": "asset/character/icon/layers/guardian/back/attack/push/hair-recovery-mask.png",
+      "nonhair_mask": "asset/character/icon/layers/guardian/back/attack/push/head-nonhair-mask.png",
+      "feet_removed_pixels": {
+        "legs": 22,
+        "under:legs": 3
+      }
+    },
+    "side": {
+      "parts": {
+        "head": "asset/character/icon/layers/guardian/side/attack/push/head-complete.png",
+        "under:head": "asset/character/icon/layers/guardian/side/attack/push/head-under-empty.png",
+        "legs": "asset/character/icon/layers/guardian/side/attack/push/legs-stable.png",
+        "under:legs": "asset/character/icon/layers/guardian/side/attack/push/under-legs-stable.png"
+      },
+      "recovered_hair_pixels": 97,
+      "removed_nonhair_pixels": 75,
+      "recovery_mask": "asset/character/icon/layers/guardian/side/attack/push/hair-recovery-mask.png",
+      "nonhair_mask": "asset/character/icon/layers/guardian/side/attack/push/head-nonhair-mask.png",
+      "feet_removed_pixels": {
+        "legs": 70,
+        "under:legs": 0
+      }
+    }
+  }
+}

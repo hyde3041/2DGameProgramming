@@ -1,0 +1,268 @@
+{
+  "id": "crossbowman",
+  "version": 1,
+  "applied": true,
+  "mode": "built-in image_gen in-betweens with fixed 2x registration",
+  "source_originals_preserved": true,
+  "no_pose_crossfade": true,
+  "sources": "metadata/character/attack/crossbowman-lift-sources.json",
+  "views": {
+    "front": {
+      "mask": "asset/character/icon/layers/crossbowman/front/attack/lift/edit-mask.png",
+      "edit_region": [
+        [
+          109,
+          205
+        ],
+        [
+          182,
+          202
+        ],
+        [
+          209,
+          208
+        ],
+        [
+          273,
+          201
+        ],
+        [
+          278,
+          245
+        ],
+        [
+          238,
+          270
+        ],
+        [
+          211,
+          280
+        ],
+        [
+          109,
+          280
+        ],
+        [
+          107,
+          223
+        ]
+      ],
+      "poses": [
+        {
+          "name": "lift-1",
+          "file": "asset/character/icon/layers/crossbowman/front/attack/lift/lift-01.png",
+          "registration": {
+            "dx": 0,
+            "dy": 0,
+            "score": 44.472227610734954
+          },
+          "scale": [
+            1,
+            1
+          ],
+          "changed_pixels": 5512,
+          "original_pixels_outside_mask_preserved": true,
+          "rgba_sha256": "1e4840a9a6e2a0daf0a4c948390c736cfd54dc6022adfccb7aaa8f9351923995"
+        },
+        {
+          "name": "lift-2",
+          "file": "asset/character/icon/layers/crossbowman/front/attack/lift/lift-02.png",
+          "registration": {
+            "dx": 0,
+            "dy": 0,
+            "score": 45.58083185941781
+          },
+          "scale": [
+            1,
+            1
+          ],
+          "changed_pixels": 5806,
+          "original_pixels_outside_mask_preserved": true,
+          "rgba_sha256": "21a7dfc088982b9f60f9c696ab3b172f591d92d5705cf2b51620e39382d037d4"
+        },
+        {
+          "name": "lift-3",
+          "file": "asset/character/icon/layers/crossbowman/front/attack/lift/lift-03.png",
+          "registration": {
+            "dx": 0,
+            "dy": 0,
+            "score": 46.41683611951207
+          },
+          "scale": [
+            1,
+            1
+          ],
+          "changed_pixels": 6423,
+          "original_pixels_outside_mask_preserved": true,
+          "rgba_sha256": "40f212e4238d7868b81b618fb9eb8bf9c43ddc77e6413fee3612430cdba0c8f1"
+        }
+      ]
+    },
+    "back": {
+      "mask": "asset/character/icon/layers/crossbowman/back/attack/lift/edit-mask.png",
+      "edit_region": [
+        [
+          94,
+          201
+        ],
+        [
+          215,
+          200
+        ],
+        [
+          264,
+          204
+        ],
+        [
+          267,
+          246
+        ],
+        [
+          219,
+          279
+        ],
+        [
+          94,
+          279
+        ],
+        [
+          92,
+          223
+        ]
+      ],
+      "poses": [
+        {
+          "name": "lift-1",
+          "file": "asset/character/icon/layers/crossbowman/back/attack/lift/lift-01.png",
+          "registration": {
+            "dx": 0,
+            "dy": 0,
+            "score": 25.833408101886572
+          },
+          "scale": [
+            1,
+            1
+          ],
+          "changed_pixels": 5885,
+          "original_pixels_outside_mask_preserved": true,
+          "rgba_sha256": "67cf9f512ba5d41c5e617fce0b9df7c9913089b5e37b5720ba9f501314350cef"
+        },
+        {
+          "name": "lift-2",
+          "file": "asset/character/icon/layers/crossbowman/back/attack/lift/lift-02.png",
+          "registration": {
+            "dx": 0,
+            "dy": 0,
+            "score": 26.35439076230254
+          },
+          "scale": [
+            1,
+            1
+          ],
+          "changed_pixels": 6045,
+          "original_pixels_outside_mask_preserved": true,
+          "rgba_sha256": "a072754dcd378c2e42544971e3d99ad9042012f5e32939a60abe0021e0324e2c"
+        },
+        {
+          "name": "lift-3",
+          "file": "asset/character/icon/layers/crossbowman/back/attack/lift/lift-03.png",
+          "registration": {
+            "dx": 0,
+            "dy": 0,
+            "score": 26.094409580455643
+          },
+          "scale": [
+            1,
+            1
+          ],
+          "changed_pixels": 6125,
+          "original_pixels_outside_mask_preserved": true,
+          "rgba_sha256": "83943b211b16f70c79532977724b89a74dac0e5ea59c5d968d0e8517f57d4c61"
+        }
+      ]
+    },
+    "side": {
+      "mask": "asset/character/icon/layers/crossbowman/side/attack/lift/edit-mask.png",
+      "edit_region": [
+        [
+          94,
+          204
+        ],
+        [
+          204,
+          204
+        ],
+        [
+          272,
+          204
+        ],
+        [
+          279,
+          250
+        ],
+        [
+          238,
+          280
+        ],
+        [
+          94,
+          280
+        ],
+        [
+          92,
+          225
+        ]
+      ],
+      "poses": [
+        {
+          "name": "lift-1",
+          "file": "asset/character/icon/layers/crossbowman/side/attack/lift/lift-01.png",
+          "registration": {
+            "dx": 0,
+            "dy": 0,
+            "score": 35.988050611026296
+          },
+          "scale": [
+            1,
+            1
+          ],
+          "changed_pixels": 5548,
+          "original_pixels_outside_mask_preserved": true,
+          "rgba_sha256": "89503048c9fd0fc88b18d3cf7883ceb566bd359294208ccc7d37df2acdf5c6ea"
+        },
+        {
+          "name": "lift-2",
+          "file": "asset/character/icon/layers/crossbowman/side/attack/lift/lift-02.png",
+          "registration": {
+            "dx": 0,
+            "dy": 0,
+            "score": 36.71739714723609
+          },
+          "scale": [
+            1,
+            1
+          ],
+          "changed_pixels": 6044,
+          "original_pixels_outside_mask_preserved": true,
+          "rgba_sha256": "6e2fab5fbe98bba0c5689bfa43f442c457d848d437fc4fd9c324a54ff4d5ec5d"
+        },
+        {
+          "name": "lift-3",
+          "file": "asset/character/icon/layers/crossbowman/side/attack/lift/lift-03.png",
+          "registration": {
+            "dx": 0,
+            "dy": 0,
+            "score": 37.359714330621884
+          },
+          "scale": [
+            1,
+            1
+          ],
+          "changed_pixels": 6429,
+          "original_pixels_outside_mask_preserved": true,
+          "rgba_sha256": "30f217333ddaf3c52e07dad9cb523c8655096f0f3125558a16e9a4fbd0d7e114"
+        }
+      ]
+    }
+  }
+}

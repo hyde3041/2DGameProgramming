@@ -1,0 +1,1821 @@
+{
+  "id": "archer",
+  "version": 2,
+  "workflow": "built-in image_gen localized arm editing; original pixels retained outside arm masks",
+  "overrides": {
+    "front": {
+      "pose-1": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-01.png",
+      "pose-2": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-02.png",
+      "pose-3": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-03.png",
+      "pose-4": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-04.png",
+      "pose-5": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-05.png",
+      "pose-6": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-06.png",
+      "pose-7": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-07.png",
+      "pose-8": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-08.png",
+      "pose-9": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-09.png",
+      "pose-10": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-10.png",
+      "pose-11": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-11.png",
+      "pose-12": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-12.png",
+      "pose-13": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-13.png",
+      "pose-14": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-14.png",
+      "pose-15": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-15.png"
+    },
+    "back": {
+      "pose-1": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-01.png",
+      "pose-2": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-02.png",
+      "pose-3": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-03.png",
+      "pose-4": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-04.png",
+      "pose-5": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-05.png",
+      "pose-6": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-06.png",
+      "pose-7": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-07.png",
+      "pose-8": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-08.png",
+      "pose-9": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-09.png",
+      "pose-10": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-10.png",
+      "pose-11": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-11.png",
+      "pose-12": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-12.png",
+      "pose-13": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-13.png",
+      "pose-14": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-14.png",
+      "pose-15": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-15.png"
+    },
+    "side": {
+      "pose-1": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-01.png",
+      "pose-2": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-02.png",
+      "pose-3": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-03.png",
+      "pose-4": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-04.png",
+      "pose-5": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-05.png",
+      "pose-6": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-06.png",
+      "pose-7": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-07.png",
+      "pose-8": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-08.png",
+      "pose-9": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-09.png",
+      "pose-10": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-10.png",
+      "pose-11": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-11.png",
+      "pose-12": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-12.png",
+      "pose-13": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-13.png",
+      "pose-14": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-14.png",
+      "pose-15": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-15.png"
+    }
+  },
+  "views": {
+    "front": [
+      {
+        "frame": 1,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-01.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-01.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-01.png",
+        "source_cell": {
+          "left": 311,
+          "top": 0,
+          "width": 312,
+          "height": 315
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              171,
+              203
+            ],
+            "hand": [
+              215,
+              239
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              114,
+              198
+            ],
+            "hand": [
+              146,
+              262
+            ]
+          }
+        ],
+        "source_sha256": "2fb888cdc0eeea8b13e8c1c6c5b01114ec9393da9df5d6b09fb9180d3bdd55cf",
+        "changed_pixels": 6677,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 2,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-02.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-02.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-02.png",
+        "source_cell": {
+          "left": 623,
+          "top": 0,
+          "width": 311,
+          "height": 315
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              157,
+              200
+            ],
+            "hand": [
+              220,
+              215
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              98,
+              183
+            ],
+            "hand": [
+              157,
+              200
+            ]
+          }
+        ],
+        "source_sha256": "84e730f037bf9098c713386284344d1c9080024aae7e90d61d5a131ecb97afca",
+        "changed_pixels": 6211,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 3,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-03.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-03.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-03.png",
+        "source_cell": {
+          "left": 934,
+          "top": 0,
+          "width": 312,
+          "height": 315
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              171,
+              191
+            ],
+            "hand": [
+              240,
+              188
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              75,
+              177
+            ],
+            "hand": [
+              131,
+              173
+            ]
+          }
+        ],
+        "source_sha256": "8caf3fa2c45bad5854cabaec4e59b2c2fc3f845ff57e7dc2b68db9a0481f0060",
+        "changed_pixels": 6171,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 4,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-04.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-04.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-04.png",
+        "source_cell": {
+          "left": 0,
+          "top": 315,
+          "width": 311,
+          "height": 316
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              198,
+              185
+            ],
+            "hand": [
+              260,
+              177
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              88,
+              172
+            ],
+            "hand": [
+              150,
+              165
+            ]
+          }
+        ],
+        "source_sha256": "6ee0e417bbb8eb090bf8daf25dc1b9bc601e41e669847675734162da8b460950",
+        "changed_pixels": 6138,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 5,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-05.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-05.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-05.png",
+        "source_cell": {
+          "left": 311,
+          "top": 315,
+          "width": 312,
+          "height": 316
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              191,
+              179
+            ],
+            "hand": [
+              259,
+              172
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              65,
+              170
+            ],
+            "hand": [
+              127,
+              170
+            ]
+          }
+        ],
+        "source_sha256": "669ca43e4c764f3402ec10ebe335f47e0ba7643aded3404b767528be6c2707ce",
+        "changed_pixels": 6398,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 6,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-06.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-06.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-06.png",
+        "source_cell": {
+          "left": 623,
+          "top": 315,
+          "width": 311,
+          "height": 316
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              185,
+              177
+            ],
+            "hand": [
+              257,
+              171
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              48,
+              167
+            ],
+            "hand": [
+              114,
+              157
+            ]
+          }
+        ],
+        "source_sha256": "00d86ac3e5fe196cd27b402cf105b04b9b7cef214812d4485fe5727a95c21058",
+        "changed_pixels": 6542,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 7,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-07.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-07.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-07.png",
+        "source_cell": {
+          "left": 934,
+          "top": 315,
+          "width": 312,
+          "height": 316
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              183,
+              178
+            ],
+            "hand": [
+              253,
+              169
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              65,
+              185
+            ],
+            "hand": [
+              33,
+              161
+            ]
+          }
+        ],
+        "source_sha256": "280f188275b86317f23e4cb69a164f76e896404f50da74ae3923b2882655f5d4",
+        "changed_pixels": 5483,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 8,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-08.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-08.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-08.png",
+        "source_cell": {
+          "left": 0,
+          "top": 631,
+          "width": 311,
+          "height": 315
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              205,
+              171
+            ],
+            "hand": [
+              270,
+              160
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              84,
+              173
+            ],
+            "hand": [
+              55,
+              142
+            ]
+          }
+        ],
+        "source_sha256": "1b7f9124c29ffcb8078915a1ff0e9c63ded310ce96c2a094e157749d76be7877",
+        "changed_pixels": 5240,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 9,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-09.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-09.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-09.png",
+        "source_cell": {
+          "left": 311,
+          "top": 631,
+          "width": 312,
+          "height": 315
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              192,
+              177
+            ],
+            "hand": [
+              255,
+              169
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              73,
+              176
+            ],
+            "hand": [
+              67,
+              143
+            ]
+          }
+        ],
+        "source_sha256": "169c68c4772b984b8a58291977f0f985c697b1b0d3073bb2c07b69abdc6e397b",
+        "changed_pixels": 4681,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 10,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-10.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-10.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-10.png",
+        "source_cell": {
+          "left": 623,
+          "top": 631,
+          "width": 311,
+          "height": 315
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              181,
+              181
+            ],
+            "hand": [
+              245,
+              179
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              70,
+              184
+            ],
+            "hand": [
+              64,
+              153
+            ]
+          }
+        ],
+        "source_sha256": "ad5296a0c996c36d32c00557f0ad0de5de76bf6335693e17f4e122fe234dda3a",
+        "changed_pixels": 4747,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 11,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-11.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-11.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-11.png",
+        "source_cell": {
+          "left": 934,
+          "top": 631,
+          "width": 312,
+          "height": 315
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              165,
+              187
+            ],
+            "hand": [
+              227,
+              196
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              65,
+              176
+            ],
+            "hand": [
+              103,
+              199
+            ]
+          }
+        ],
+        "source_sha256": "db1a05007e502b3c070d7a3dd64f940584aa4449612d0689cfd4955019a03091",
+        "changed_pixels": 5557,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 12,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-12.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-12.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-12.png",
+        "source_cell": {
+          "left": 0,
+          "top": 946,
+          "width": 311,
+          "height": 316
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              179,
+              180
+            ],
+            "hand": [
+              222,
+              208
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              102,
+              170
+            ],
+            "hand": [
+              140,
+              224
+            ]
+          }
+        ],
+        "source_sha256": "126b3396588dd549293f959c74e3724009cf923e46a166f88601a607f5743d02",
+        "changed_pixels": 6075,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 13,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-13.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-13.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-13.png",
+        "source_cell": {
+          "left": 311,
+          "top": 946,
+          "width": 312,
+          "height": 316
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              171,
+              179
+            ],
+            "hand": [
+              197,
+              224
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              93,
+              171
+            ],
+            "hand": [
+              132,
+              220
+            ]
+          }
+        ],
+        "source_sha256": "d52359862bf522ec1aafbc8062f6a7aeb1031bed3b98c98ba0398ef380d774dc",
+        "changed_pixels": 5706,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 14,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-14.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-14.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-14.png",
+        "source_cell": {
+          "left": 623,
+          "top": 946,
+          "width": 311,
+          "height": 316
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              161,
+              181
+            ],
+            "hand": [
+              188,
+              226
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              107,
+              166
+            ],
+            "hand": [
+              145,
+              237
+            ]
+          }
+        ],
+        "source_sha256": "b571b6a986b5e8c76e2850fa556d9be2277cca4ec3f068128fa80f1581ef384a",
+        "changed_pixels": 6261,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 15,
+        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-15.png",
+        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-15.png",
+        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-15.png",
+        "source_cell": {
+          "left": 934,
+          "top": 946,
+          "width": 312,
+          "height": 316
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              156,
+              182
+            ],
+            "hand": [
+              179,
+              231
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              96,
+              175
+            ],
+            "hand": [
+              138,
+              245
+            ]
+          }
+        ],
+        "source_sha256": "d9b2effff989129d001c8e5154d261568f6e50fa80ce0cc266645f0076128023",
+        "changed_pixels": 6470,
+        "outside_arm_mask_identical": true
+      }
+    ],
+    "side": [
+      {
+        "frame": 1,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-01.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-01.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-01.png",
+        "source_cell": {
+          "left": 315,
+          "top": 0,
+          "width": 315,
+          "height": 311
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              165,
+              205
+            ],
+            "hand": [
+              213,
+              245
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              107,
+              193
+            ],
+            "hand": [
+              142,
+              263
+            ]
+          }
+        ],
+        "source_sha256": "4e38604105d26e63cce44415586fcc4a484c8b841734cefc7bf2087524b644af",
+        "changed_pixels": 7007,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 2,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-02.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-02.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-02.png",
+        "source_cell": {
+          "left": 630,
+          "top": 0,
+          "width": 315,
+          "height": 311
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              162,
+              204
+            ],
+            "hand": [
+              237,
+              214
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              88,
+              181
+            ],
+            "hand": [
+              139,
+              202
+            ]
+          }
+        ],
+        "source_sha256": "d41e3b67be8ed5b465ca2dc5af2be32b5151476c94d3532ff69001227c20385e",
+        "changed_pixels": 6708,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 3,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-03.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-03.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-03.png",
+        "source_cell": {
+          "left": 945,
+          "top": 0,
+          "width": 316,
+          "height": 311
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              183,
+              198
+            ],
+            "hand": [
+              257,
+              189
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              74,
+              175
+            ],
+            "hand": [
+              128,
+              190
+            ]
+          }
+        ],
+        "source_sha256": "ac4c27aed823f5168b8f998bdf476aae6e2a142ce63eb045db2a548088bc2385",
+        "changed_pixels": 6427,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 4,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-04.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-04.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-04.png",
+        "source_cell": {
+          "left": 0,
+          "top": 311,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              190,
+              191
+            ],
+            "hand": [
+              263,
+              185
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              67,
+              180
+            ],
+            "hand": [
+              126,
+              178
+            ]
+          }
+        ],
+        "source_sha256": "15cd740e38101c6ff8363cf6eb5b819facb3f7f736bd6583e6b2a52d216f769a",
+        "changed_pixels": 6347,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 5,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-05.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-05.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-05.png",
+        "source_cell": {
+          "left": 315,
+          "top": 311,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              191,
+              186
+            ],
+            "hand": [
+              266,
+              180
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              54,
+              173
+            ],
+            "hand": [
+              116,
+              171
+            ]
+          }
+        ],
+        "source_sha256": "cad9670343a968675d71f0e4422e88cddd21c85947afa7b562adeb0cec4d6747",
+        "changed_pixels": 6644,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 6,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-06.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-06.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-06.png",
+        "source_cell": {
+          "left": 630,
+          "top": 311,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              194,
+              185
+            ],
+            "hand": [
+              268,
+              178
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              47,
+              165
+            ],
+            "hand": [
+              112,
+              164
+            ]
+          }
+        ],
+        "source_sha256": "b880bbd8d8f037e323026a8244c136fb37b0f837894f4458276ae322ad883cda",
+        "changed_pixels": 6956,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 7,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-07.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-07.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-07.png",
+        "source_cell": {
+          "left": 945,
+          "top": 311,
+          "width": 316,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              195,
+              185
+            ],
+            "hand": [
+              268,
+              176
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              74,
+              193
+            ],
+            "hand": [
+              33,
+              166
+            ]
+          }
+        ],
+        "source_sha256": "dd4ed661f6ed635ed9d8634069ccba71e33450d1447629786d96ebb930605a1f",
+        "changed_pixels": 5979,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 8,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-08.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-08.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-08.png",
+        "source_cell": {
+          "left": 0,
+          "top": 623,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              201,
+              170
+            ],
+            "hand": [
+              273,
+              162
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              77,
+              172
+            ],
+            "hand": [
+              43,
+              143
+            ]
+          }
+        ],
+        "source_sha256": "4cd68ecb3b5f17b84447cd3564f168d54001809519bdd2500f5352d48db748b5",
+        "changed_pixels": 5956,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 9,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-09.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-09.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-09.png",
+        "source_cell": {
+          "left": 315,
+          "top": 623,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              196,
+              176
+            ],
+            "hand": [
+              265,
+              170
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              64,
+              178
+            ],
+            "hand": [
+              56,
+              144
+            ]
+          }
+        ],
+        "source_sha256": "96ec15ea22b56c9c5bcc7fd451161e1514bf542213b3c09aca600594c57800b3",
+        "changed_pixels": 5414,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 10,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-10.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-10.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-10.png",
+        "source_cell": {
+          "left": 630,
+          "top": 623,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              190,
+              183
+            ],
+            "hand": [
+              260,
+              175
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              64,
+              182
+            ],
+            "hand": [
+              58,
+              151
+            ]
+          }
+        ],
+        "source_sha256": "97a46c554c3d381cb7f1cad14e3714421b64910c7fc9c97df99a0d96310fcbb1",
+        "changed_pixels": 5012,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 11,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-11.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-11.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-11.png",
+        "source_cell": {
+          "left": 945,
+          "top": 623,
+          "width": 316,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              181,
+              188
+            ],
+            "hand": [
+              250,
+              196
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              68,
+              176
+            ],
+            "hand": [
+              116,
+              190
+            ]
+          }
+        ],
+        "source_sha256": "f15239ecc9f2c16f07acd66cfed3f7cef081f6c66a10b4d1fb5f8e6ad8bbd5a5",
+        "changed_pixels": 6078,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 12,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-12.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-12.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-12.png",
+        "source_cell": {
+          "left": 0,
+          "top": 935,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              173,
+              172
+            ],
+            "hand": [
+              214,
+              210
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              89,
+              160
+            ],
+            "hand": [
+              128,
+              213
+            ]
+          }
+        ],
+        "source_sha256": "01c3c88c2535b3d9261eee50b2dac7ec174a6136ae2c7f1857ea49e014abfe2d",
+        "changed_pixels": 6104,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 13,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-13.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-13.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-13.png",
+        "source_cell": {
+          "left": 315,
+          "top": 935,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              173,
+              174
+            ],
+            "hand": [
+              201,
+              227
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              102,
+              156
+            ],
+            "hand": [
+              138,
+              218
+            ]
+          }
+        ],
+        "source_sha256": "77ef6a4a88cff517955e42a3d15403925993659bddf49b94710974a19e8edb57",
+        "changed_pixels": 6368,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 14,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-14.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-14.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-14.png",
+        "source_cell": {
+          "left": 630,
+          "top": 935,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              167,
+              180
+            ],
+            "hand": [
+              192,
+              233
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              109,
+              159
+            ],
+            "hand": [
+              147,
+              233
+            ]
+          }
+        ],
+        "source_sha256": "b96765a399875e9dbcda2bfb9f4f857a0d28744b8893c71b6a936ef4f5a016a1",
+        "changed_pixels": 6404,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 15,
+        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-15.png",
+        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-15.png",
+        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-15.png",
+        "source_cell": {
+          "left": 945,
+          "top": 935,
+          "width": 316,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              167,
+              179
+            ],
+            "hand": [
+              200,
+              241
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              109,
+              159
+            ],
+            "hand": [
+              150,
+              238
+            ]
+          }
+        ],
+        "source_sha256": "5c8a5caa0671fd4e5b67c412ba9157d0cb8778c694cd482f9622ca1f8c13e466",
+        "changed_pixels": 7313,
+        "outside_arm_mask_identical": true
+      }
+    ],
+    "back": [
+      {
+        "frame": 1,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-01.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-01.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-01.png",
+        "source_cell": {
+          "left": 315,
+          "top": 0,
+          "width": 316,
+          "height": 311
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              142,
+              209
+            ],
+            "hand": [
+              66,
+              251
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              238,
+              218
+            ],
+            "hand": [
+              225,
+              252
+            ]
+          }
+        ],
+        "source_sha256": "02e1301b28b92451b5f2c388da8d381531e6ac5e1940e029e0b6b6a76f89037a",
+        "changed_pixels": 6073,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 2,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-02.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-02.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-02.png",
+        "source_cell": {
+          "left": 631,
+          "top": 0,
+          "width": 315,
+          "height": 311
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              135,
+              194
+            ],
+            "hand": [
+              59,
+              212
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              236,
+              197
+            ],
+            "hand": [
+              224,
+              226
+            ]
+          }
+        ],
+        "source_sha256": "434567d143ba2381e4163f2661e9b27b9b7ee1df8e4c4463f99fa837f67722b5",
+        "changed_pixels": 4986,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 3,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-03.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-03.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-03.png",
+        "source_cell": {
+          "left": 946,
+          "top": 0,
+          "width": 316,
+          "height": 311
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              128,
+              183
+            ],
+            "hand": [
+              49,
+              181
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              250,
+              180
+            ],
+            "hand": [
+              234,
+              159
+            ]
+          }
+        ],
+        "source_sha256": "bb6e95fdfa671f0a65aae493e0cbc32353803fda100a6f2823a9beecce7ce05d",
+        "changed_pixels": 4697,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 4,
+        "input": "asset/character/icon/layers/archer/back/attack/cleanup/upper-body-04.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-04.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-04.png",
+        "source_cell": {
+          "left": 0,
+          "top": 311,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              129,
+              164
+            ],
+            "hand": [
+              52,
+              162
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              268,
+              161
+            ],
+            "hand": [
+              238,
+              145
+            ]
+          }
+        ],
+        "source_sha256": "b9dc9f9395f49f9c2b33d364109ff55890d074e5901f45f5830754d45d161f38",
+        "changed_pixels": 5572,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 5,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-05.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-05.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-05.png",
+        "source_cell": {
+          "left": 315,
+          "top": 311,
+          "width": 316,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              121,
+              164
+            ],
+            "hand": [
+              39,
+              156
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              266,
+              162
+            ],
+            "hand": [
+              237,
+              142
+            ]
+          }
+        ],
+        "source_sha256": "8df5223eef4a9682570ce7ef800d19caa6e6ab44279c16121222530f6b4ce190",
+        "changed_pixels": 5603,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 6,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-06.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-06.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-06.png",
+        "source_cell": {
+          "left": 631,
+          "top": 311,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              119,
+              167
+            ],
+            "hand": [
+              37,
+              159
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              266,
+              162
+            ],
+            "hand": [
+              232,
+              132
+            ]
+          }
+        ],
+        "source_sha256": "bbc43850506336ded84e1a2e606b3fa066a5fb4991b08e9e70b66481ffb3b248",
+        "changed_pixels": 6663,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 7,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-07.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-07.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-07.png",
+        "source_cell": {
+          "left": 946,
+          "top": 311,
+          "width": 316,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              121,
+              169
+            ],
+            "hand": [
+              37,
+              165
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              283,
+              180
+            ],
+            "hand": [
+              249,
+              149
+            ]
+          }
+        ],
+        "source_sha256": "236b4c54370cac1814bcceecaa40902a664c34eb87e611978153174b3240ffbb",
+        "changed_pixels": 6085,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 8,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-08.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-08.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-08.png",
+        "source_cell": {
+          "left": 0,
+          "top": 623,
+          "width": 315,
+          "height": 311
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              132,
+              153
+            ],
+            "hand": [
+              49,
+              150
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              285,
+              166
+            ],
+            "hand": [
+              263,
+              146
+            ]
+          }
+        ],
+        "source_sha256": "9f9f3fd917b01685904bd60188405c8057bf32ca2051ce9fa89afca30a962e40",
+        "changed_pixels": 4957,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 9,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-09.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-09.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-09.png",
+        "source_cell": {
+          "left": 315,
+          "top": 623,
+          "width": 316,
+          "height": 311
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              128,
+              155
+            ],
+            "hand": [
+              49,
+              150
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              273,
+              172
+            ],
+            "hand": [
+              251,
+              151
+            ]
+          }
+        ],
+        "source_sha256": "50753eeef0ef1af7c9632bcc9444d714782dda6e61dde69983fdce8c073e8789",
+        "changed_pixels": 4904,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 10,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-10.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-10.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-10.png",
+        "source_cell": {
+          "left": 631,
+          "top": 623,
+          "width": 315,
+          "height": 311
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              125,
+              162
+            ],
+            "hand": [
+              45,
+              159
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              267,
+              174
+            ],
+            "hand": [
+              249,
+              149
+            ]
+          }
+        ],
+        "source_sha256": "9a5d5aadbd3aa34e6fd597003e1751c768ebeda136de06698000d20fb85d0270",
+        "changed_pixels": 4430,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 11,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-11.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-11.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-11.png",
+        "source_cell": {
+          "left": 946,
+          "top": 623,
+          "width": 316,
+          "height": 311
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              129,
+              173
+            ],
+            "hand": [
+              48,
+              166
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              247,
+              166
+            ],
+            "hand": [
+              235,
+              194
+            ]
+          }
+        ],
+        "source_sha256": "953fe025d06ff9ee98d6f12ea81cdfb17392a88672d10ef2250653d90cbccca7",
+        "changed_pixels": 5240,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 12,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-12.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-12.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-12.png",
+        "source_cell": {
+          "left": 0,
+          "top": 934,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              143,
+              160
+            ],
+            "hand": [
+              59,
+              165
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              249,
+              154
+            ],
+            "hand": [
+              237,
+              187
+            ]
+          }
+        ],
+        "source_sha256": "6ad44c775ff3ffef3de8146868e4676d6b7f553566a21b57a04d2df9f361a2f0",
+        "changed_pixels": 5752,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 13,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-13.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-13.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-13.png",
+        "source_cell": {
+          "left": 315,
+          "top": 934,
+          "width": 316,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              147,
+              165
+            ],
+            "hand": [
+              67,
+              185
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              236,
+              164
+            ],
+            "hand": [
+              222,
+              196
+            ]
+          }
+        ],
+        "source_sha256": "0cbe9b18ac2cc253e749e4fdb5fb66ac895bb544a7958e9f030d741b9a12b31d",
+        "changed_pixels": 5579,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 14,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-14.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-14.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-14.png",
+        "source_cell": {
+          "left": 631,
+          "top": 934,
+          "width": 315,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              147,
+              167
+            ],
+            "hand": [
+              78,
+              209
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              232,
+              165
+            ],
+            "hand": [
+              215,
+              198
+            ]
+          }
+        ],
+        "source_sha256": "f5cc7b9fdd44802a1f329fb7bb5fd0b5b3a38dd8a6621e25bf2848944085748d",
+        "changed_pixels": 5693,
+        "outside_arm_mask_identical": true
+      },
+      {
+        "frame": 15,
+        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-15.png",
+        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-15.png",
+        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-15.png",
+        "source_cell": {
+          "left": 946,
+          "top": 934,
+          "width": 316,
+          "height": 312
+        },
+        "arms": [
+          {
+            "arm": "bow",
+            "elbow": [
+              116,
+              178
+            ],
+            "hand": [
+              59,
+              242
+            ]
+          },
+          {
+            "arm": "pull",
+            "elbow": [
+              207,
+              166
+            ],
+            "hand": [
+              201,
+              217
+            ]
+          }
+        ],
+        "source_sha256": "2d204a08edaa2f882d1597cceea89c4ce41aba6df9951cf0506e85bc151cb77c",
+        "changed_pixels": 6586,
+        "outside_arm_mask_identical": true
+      }
+    ]
+  }
+}

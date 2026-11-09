@@ -1,0 +1,141 @@
+{
+  "version": 2,
+  "workflow": "complete native reference arm at scale 1; opaque torso socket and central shield handle contact",
+  "views": {
+    "front": {
+      "file": "asset/character/icon/layers/guardian/front/attack/push/arm-native.png",
+      "source": "asset/character/icon/layers/guardian/front/aligned/arm-left.png",
+      "source_shoulder": [
+        139,
+        215
+      ],
+      "shoulder": [
+        184,
+        214
+      ],
+      "source_hand": [
+        118.6875,
+        247.40625
+      ],
+      "arm_hand": [
+        204.3125,
+        246.40625
+      ],
+      "base_degrees": -25,
+      "plate_contact": [
+        198,
+        228
+      ],
+      "contact_kind": "center_handle",
+      "neutral_hand": [
+        216.10484996871648,
+        234.78560328204847
+      ],
+      "neutral_plate_translation": [
+        18.10484996871648,
+        6.78560328204847
+      ],
+      "registration": {
+        "mirror_x": 323,
+        "translate_y": -1,
+        "scale": [
+          1,
+          1
+        ]
+      },
+      "removed_nonlimb_pixels": 0,
+      "nonlimb_mask": "asset/character/icon/layers/guardian/front/attack/push/arm-nonlimb-mask.png",
+      "clipped_pixels": 0
+    },
+    "back": {
+      "file": "asset/character/icon/layers/guardian/back/attack/push/arm-native.png",
+      "source": "asset/character/icon/layers/guardian/back/aligned/arm-right.png",
+      "source_shoulder": [
+        182,
+        215
+      ],
+      "shoulder": [
+        138,
+        214
+      ],
+      "source_hand": [
+        195.23913043478296,
+        241.4420289855081
+      ],
+      "arm_hand": [
+        124.76086956521704,
+        240.4420289855081
+      ],
+      "base_degrees": 25,
+      "plate_contact": [
+        111,
+        230
+      ],
+      "contact_kind": "center_handle",
+      "neutral_hand": [
+        114.82638866660967,
+        232.36951848330844
+      ],
+      "neutral_plate_translation": [
+        3.826388666609674,
+        2.3695184833084397
+      ],
+      "registration": {
+        "mirror_x": 320,
+        "translate_y": -1,
+        "scale": [
+          1,
+          1
+        ]
+      },
+      "removed_nonlimb_pixels": 0,
+      "nonlimb_mask": "asset/character/icon/layers/guardian/back/attack/push/arm-nonlimb-mask.png",
+      "clipped_pixels": 0
+    },
+    "side": {
+      "file": "asset/character/icon/layers/guardian/side/attack/push/arm-native.png",
+      "source": "asset/character/icon/layers/guardian/side/aligned/arm-left.png",
+      "source_shoulder": [
+        149,
+        215
+      ],
+      "shoulder": [
+        184,
+        214
+      ],
+      "source_hand": [
+        134.19469026548668,
+        246.97345132743314
+      ],
+      "arm_hand": [
+        198.80530973451332,
+        245.97345132743314
+      ],
+      "base_degrees": -25,
+      "plate_contact": [
+        202,
+        228
+      ],
+      "contact_kind": "center_handle",
+      "neutral_hand": [
+        210.93073192372958,
+        236.7207936519573
+      ],
+      "neutral_plate_translation": [
+        8.930731923729581,
+        8.720793651957308
+      ],
+      "registration": {
+        "mirror_x": 333,
+        "translate_y": -1,
+        "scale": [
+          1,
+          1
+        ]
+      },
+      "removed_nonlimb_pixels": 162,
+      "nonlimb_mask": "asset/character/icon/layers/guardian/side/attack/push/arm-nonlimb-mask.png",
+      "clipped_pixels": 0
+    }
+  }
+}

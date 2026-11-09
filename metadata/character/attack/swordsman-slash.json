@@ -1,0 +1,26 @@
+{
+  "id": "swordsman-slash",
+  "version": 3,
+  "style": "wide blue-white crescent sweep, readable at game scale 0.5",
+  "cell_size": [320, 320],
+  "frames": 16,
+  "fps": 16,
+  "compositing": "behind character; preserve all existing nontransparent character pixels",
+  "frames_active": {
+    "7": {"start": 0, "end": 1, "width": 36, "opacity": 1, "forward": 0, "glint": 0.75},
+    "8": {"start": 0.08, "end": 1, "width": 32, "opacity": 0.96, "forward": 2, "glint": 1},
+    "9": {"start": 0.3, "end": 1, "width": 21, "opacity": 0.7, "forward": 3, "glint": 0.55},
+    "10": {"start": 0.58, "end": 1, "width": 12, "opacity": 0.42, "forward": 4, "glint": 0.2},
+    "11": {"start": 0.8, "end": 1, "width": 4, "opacity": 0.17, "forward": 4, "glint": 0}
+  },
+  "views": {
+    "front": {"sweep_curve": [[92, 228], [119, 276], [258, 294], [286, 237]], "width_scale": 1},
+    "back": {"sweep_curve": [[109, 218], [158, 268], [280, 244], [274, 153]], "width_scale": 0.9},
+    "side": {"sweep_curve": [[95, 233], [125, 287], [275, 292], [302, 218]], "width_scale": 1}
+  },
+  "sheets": {
+    "front": "asset/character/icon/layers/swordsman/front/attack/effect/slash-sheet.png",
+    "back": "asset/character/icon/layers/swordsman/back/attack/effect/slash-sheet.png",
+    "right": "asset/character/icon/layers/swordsman/side/attack/effect/slash-sheet.png"
+  }
+}

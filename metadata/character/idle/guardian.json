@@ -853,5 +853,8 @@
   },
   "revision": 6,
   "layer_rig": "metadata/character/idle/guardian-layers.json",
-  "anatomy_metadata": "metadata/character/layers/guardian.json"
+  "anatomy_metadata": "metadata/character/layers/guardian.json",
+  "shared_rig": "metadata/character/attack/guardian-motion.json",
+  "neutral_matches_attack": true,
+  "complete_shield_outline": true
 }

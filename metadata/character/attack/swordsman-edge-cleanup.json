@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "mode": "built-in image_gen with local edit masks",
+  "applied": true,
+  "source_originals_preserved": true,
+  "motion_unchanged": true,
+  "views": {
+    "front": {
+      "joints": {
+        "arm_root": [
+          140,
+          215
+        ],
+        "hand_root": [
+          126.37254901960782,
+          239.0196078431372
+        ],
+        "blade_tip": [
+          192,
+          286
+        ],
+        "blade_length": 80.71009583315086,
+        "parts": {
+          "base": "asset/character/icon/layers/swordsman/front/attack/motion/base.png",
+          "feet": "asset/character/icon/layers/swordsman/front/attack/motion/feet.png",
+          "head": "asset/character/icon/layers/swordsman/front/attack/motion/head.png",
+          "arm": "asset/character/icon/layers/swordsman/front/attack/motion/arm.png",
+          "arm_under": "asset/character/icon/layers/swordsman/front/aligned/hidden/arm-left.png",
+          "weapon": "asset/character/icon/layers/swordsman/front/aligned/visible/weapon.png",
+          "blade": "asset/character/icon/layers/swordsman/front/attack/motion/blade.png"
+        }
+      },
+      "parts": {
+        "weapon": {
+          "original": "asset/character/icon/layers/swordsman/front/aligned/visible/weapon.png",
+          "original_sha256": "f99508b44266bedbac83bde90421fd75b2e2df28b59c64644afcf3f41c4b6ca9",
+          "file": "asset/character/icon/layers/swordsman/front/attack/cleanup/weapon.png",
+          "mask": "asset/character/icon/layers/swordsman/front/attack/cleanup/weapon-mask.png",
+          "translation": [
+            0,
+            0
+          ],
+          "registration_error": 70.22363540010592,
+          "masked_pixels": 2320,
+          "changed_pixels": 568,
+          "original_outside_mask_preserved": true
+        },
+        "blade": {
+          "file": "asset/character/icon/layers/swordsman/front/attack/cleanup/blade.png"
+        },
+        "arm": {
+          "original": "asset/character/icon/layers/swordsman/front/attack/motion/arm.png",
+          "original_sha256": "1180cce7db78d73116dba537b2200d4008f770579d199073a7abe61ee76def5f",
+          "file": "asset/character/icon/layers/swordsman/front/attack/cleanup/arm.png",
+          "mask": "asset/character/icon/layers/swordsman/front/attack/cleanup/arm-mask.png",
+          "translation": [
+            0,
+            0
+          ],
+          "registration_error": 61.312916919344985,
+          "masked_pixels": 517,
+          "changed_pixels": 162,
+          "original_outside_mask_preserved": true
+        }
+      }
+    },
+    "back": {
+      "joints": {
+        "arm_root": [
+          182,
+          212
+        ],
+        "hand_root": [
+          195.14516129032256,
+          236.67741935483866
+        ],
+        "blade_tip": [
+          240,
+          271
+        ],
+        "blade_length": 56.48005044097235,
+        "parts": {
+          "base": "asset/character/icon/layers/swordsman/back/attack/motion/base.png",
+          "feet": "asset/character/icon/layers/swordsman/back/attack/motion/feet.png",
+          "head": "asset/character/icon/layers/swordsman/back/attack/motion/head.png",
+          "arm": "asset/character/icon/layers/swordsman/back/attack/motion/arm.png",
+          "arm_under": "asset/character/icon/layers/swordsman/back/aligned/hidden/arm-right.png",
+          "weapon": "asset/character/icon/layers/swordsman/back/aligned/visible/weapon.png",
+          "blade": "asset/character/icon/layers/swordsman/back/attack/motion/blade.png"
+        }
+      },
+      "parts": {
+        "weapon": {
+          "original": "asset/character/icon/layers/swordsman/back/aligned/visible/weapon.png",
+          "original_sha256": "9a9d2a68495798fd532d0332d88439d647c151e1a529c240ef2081e0c1e963fd",
+          "file": "asset/character/icon/layers/swordsman/back/attack/cleanup/weapon.png",
+          "mask": "asset/character/icon/layers/swordsman/back/attack/cleanup/weapon-mask.png",
+          "translation": [
+            0,
+            0
+          ],
+          "registration_error": 74.26511593230457,
+          "masked_pixels": 1532,
+          "changed_pixels": 324,
+          "original_outside_mask_preserved": true
+        },
+        "blade": {
+          "file": "asset/character/icon/layers/swordsman/back/attack/cleanup/blade.png"
+        },
+        "arm": {
+          "original": "asset/character/icon/layers/swordsman/back/attack/motion/arm.png",
+          "original_sha256": "6f9ea5bf495dbbec33d7f632a9ec6f0e23fa115c7a931fb74ada4f553ff3e53f",
+          "file": "asset/character/icon/layers/swordsman/back/attack/cleanup/arm.png",
+          "mask": "asset/character/icon/layers/swordsman/back/attack/cleanup/arm-mask.png",
+          "translation": [
+            -0.25,
+            0
+          ],
+          "registration_error": 48.63571032186465,
+          "masked_pixels": 517,
+          "changed_pixels": 131,
+          "original_outside_mask_preserved": true
+        }
+      }
+    },
+    "side": {
+      "joints": {
+        "arm_root": [
+          149,
+          216
+        ],
+        "hand_root": [
+          142.61538461538464,
+          240.20512820512823
+        ],
+        "blade_tip": [
+          216,
+          284
+        ],
+        "blade_length": 85.45930359344838,
+        "parts": {
+          "base": "asset/character/icon/layers/swordsman/side/attack/motion/base.png",
+          "feet": "asset/character/icon/layers/swordsman/side/attack/motion/feet.png",
+          "head": "asset/character/icon/layers/swordsman/side/attack/motion/head.png",
+          "arm": "asset/character/icon/layers/swordsman/side/attack/motion/arm.png",
+          "arm_under": "asset/character/icon/layers/swordsman/side/aligned/hidden/arm-left.png",
+          "weapon": "asset/character/icon/layers/swordsman/side/aligned/visible/weapon.png",
+          "blade": "asset/character/icon/layers/swordsman/side/attack/motion/blade.png"
+        }
+      },
+      "parts": {
+        "weapon": {
+          "original": "asset/character/icon/layers/swordsman/side/aligned/visible/weapon.png",
+          "original_sha256": "0a3d641a8f06f56fdf4a9ccd18a9615b790b0da2fe2bdd24426a6996f05ff217",
+          "file": "asset/character/icon/layers/swordsman/side/attack/cleanup/weapon.png",
+          "mask": "asset/character/icon/layers/swordsman/side/attack/cleanup/weapon-mask.png",
+          "translation": [
+            0.25,
+            0
+          ],
+          "registration_error": 101.25193606854508,
+          "masked_pixels": 2476,
+          "changed_pixels": 680,
+          "original_outside_mask_preserved": true
+        },
+        "blade": {
+          "file": "asset/character/icon/layers/swordsman/side/attack/cleanup/blade.png"
+        },
+        "arm": {
+          "original": "asset/character/icon/layers/swordsman/side/attack/motion/arm.png",
+          "original_sha256": "324bb1c0878c4a33988a09a3a352cea77fab597fb8f9100435afdbf8eaf6fe30",
+          "file": "asset/character/icon/layers/swordsman/side/attack/cleanup/arm.png",
+          "mask": "asset/character/icon/layers/swordsman/side/attack/cleanup/arm-mask.png",
+          "translation": [
+            -0.25,
+            0
+          ],
+          "registration_error": 159.52496969696935,
+          "masked_pixels": 517,
+          "changed_pixels": 197,
+          "original_outside_mask_preserved": true
+        }
+      }
+    }
+  }
+}

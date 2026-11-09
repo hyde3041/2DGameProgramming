@@ -1,0 +1,232 @@
+{
+  "version": 1,
+  "source": "asset/character/icon/layers/guardian/attack/source/joint-edited-atlas.png",
+  "registration": "entire atlas resized uniformly to 1920x640, then each 640 cell uniformly to 320; no per-part fitting",
+  "views": {
+    "front": {
+      "parts": {
+        "under:legs": "asset/character/icon/layers/guardian/front/attack/support/under-legs.png",
+        "under:body": "asset/character/icon/layers/guardian/front/attack/support/under-body.png",
+        "under:cloth-hem": "asset/character/icon/layers/guardian/front/attack/support/under-cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/guardian/front/attack/support/under-arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/guardian/front/attack/support/under-arm-right.png",
+        "under:gear": "asset/character/icon/layers/guardian/front/attack/support/under-gear.png",
+        "under:weapon": "asset/character/icon/layers/guardian/front/attack/support/under-weapon.png",
+        "under:shield": "asset/character/icon/layers/guardian/front/attack/support/under-shield.png",
+        "under:hair-tail": "asset/character/icon/layers/guardian/front/attack/support/under-hair-tail.png",
+        "under:head": "asset/character/icon/layers/guardian/front/attack/support/under-head.png",
+        "legs": "asset/character/icon/layers/guardian/front/attack/support/legs.png",
+        "hair-tail": "asset/character/icon/layers/guardian/front/attack/support/hair-tail.png",
+        "body": "asset/character/icon/layers/guardian/front/attack/support/body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/front/attack/support/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/guardian/front/attack/support/arm-left.png",
+        "arm-right": "asset/character/icon/layers/guardian/front/attack/support/arm-right.png",
+        "gear": "asset/character/icon/layers/guardian/front/attack/support/gear.png",
+        "weapon": "asset/character/icon/layers/guardian/front/attack/support/weapon.png",
+        "shield": "asset/character/icon/layers/guardian/front/attack/support/shield.png",
+        "head": "asset/character/icon/layers/guardian/front/attack/support/head.png"
+      },
+      "cleanup": {
+        "under:legs": 0,
+        "under:body": 86,
+        "under:cloth-hem": 0,
+        "under:arm-left": 11,
+        "under:arm-right": 0,
+        "under:gear": 0,
+        "under:weapon": 9,
+        "under:shield": 0,
+        "under:hair-tail": 0,
+        "under:head": 0,
+        "legs": 46,
+        "hair-tail": 0,
+        "body": 6,
+        "cloth-hem": 37,
+        "arm-left": 23,
+        "arm-right": 0,
+        "gear": 18,
+        "weapon": 77,
+        "shield": 119,
+        "head": 113
+      },
+      "fill": "asset/character/icon/layers/guardian/front/attack/support/torso-fill.png",
+      "mask": "asset/character/icon/layers/guardian/front/attack/support/torso-mask.png",
+      "polygon": [
+        [
+          141,
+          211
+        ],
+        [
+          153,
+          214
+        ],
+        [
+          151,
+          236
+        ],
+        [
+          133,
+          253
+        ],
+        [
+          122,
+          253
+        ],
+        [
+          130,
+          233
+        ]
+      ],
+      "fill_pixels": 288
+    },
+    "back": {
+      "parts": {
+        "under:legs": "asset/character/icon/layers/guardian/back/attack/support/under-legs.png",
+        "under:body": "asset/character/icon/layers/guardian/back/attack/support/under-body.png",
+        "under:cloth-hem": "asset/character/icon/layers/guardian/back/attack/support/under-cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/guardian/back/attack/support/under-arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/guardian/back/attack/support/under-arm-right.png",
+        "under:gear": "asset/character/icon/layers/guardian/back/attack/support/under-gear.png",
+        "under:weapon": "asset/character/icon/layers/guardian/back/attack/support/under-weapon.png",
+        "under:shield": "asset/character/icon/layers/guardian/back/attack/support/under-shield.png",
+        "under:hair-tail": "asset/character/icon/layers/guardian/back/attack/support/under-hair-tail.png",
+        "under:head": "asset/character/icon/layers/guardian/back/attack/support/under-head.png",
+        "legs": "asset/character/icon/layers/guardian/back/attack/support/legs.png",
+        "hair-tail": "asset/character/icon/layers/guardian/back/attack/support/hair-tail.png",
+        "body": "asset/character/icon/layers/guardian/back/attack/support/body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/back/attack/support/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/guardian/back/attack/support/arm-left.png",
+        "arm-right": "asset/character/icon/layers/guardian/back/attack/support/arm-right.png",
+        "gear": "asset/character/icon/layers/guardian/back/attack/support/gear.png",
+        "weapon": "asset/character/icon/layers/guardian/back/attack/support/weapon.png",
+        "shield": "asset/character/icon/layers/guardian/back/attack/support/shield.png",
+        "head": "asset/character/icon/layers/guardian/back/attack/support/head.png"
+      },
+      "cleanup": {
+        "under:legs": 3,
+        "under:body": 50,
+        "under:cloth-hem": 3,
+        "under:arm-left": 0,
+        "under:arm-right": 0,
+        "under:gear": 34,
+        "under:weapon": 0,
+        "under:shield": 13,
+        "under:hair-tail": 0,
+        "under:head": 9,
+        "legs": 22,
+        "hair-tail": 0,
+        "body": 13,
+        "cloth-hem": 42,
+        "arm-left": 0,
+        "arm-right": 14,
+        "gear": 188,
+        "weapon": 78,
+        "shield": 185,
+        "head": 86
+      },
+      "fill": "asset/character/icon/layers/guardian/back/attack/support/torso-fill.png",
+      "mask": "asset/character/icon/layers/guardian/back/attack/support/torso-mask.png",
+      "polygon": [
+        [
+          179,
+          214
+        ],
+        [
+          194,
+          216
+        ],
+        [
+          197,
+          231
+        ],
+        [
+          191,
+          235
+        ],
+        [
+          182,
+          234
+        ],
+        [
+          177,
+          229
+        ]
+      ],
+      "fill_pixels": 149
+    },
+    "side": {
+      "parts": {
+        "under:legs": "asset/character/icon/layers/guardian/side/attack/support/under-legs.png",
+        "under:body": "asset/character/icon/layers/guardian/side/attack/support/under-body.png",
+        "under:cloth-hem": "asset/character/icon/layers/guardian/side/attack/support/under-cloth-hem.png",
+        "under:arm-left": "asset/character/icon/layers/guardian/side/attack/support/under-arm-left.png",
+        "under:arm-right": "asset/character/icon/layers/guardian/side/attack/support/under-arm-right.png",
+        "under:gear": "asset/character/icon/layers/guardian/side/attack/support/under-gear.png",
+        "under:weapon": "asset/character/icon/layers/guardian/side/attack/support/under-weapon.png",
+        "under:shield": "asset/character/icon/layers/guardian/side/attack/support/under-shield.png",
+        "under:hair-tail": "asset/character/icon/layers/guardian/side/attack/support/under-hair-tail.png",
+        "under:head": "asset/character/icon/layers/guardian/side/attack/support/under-head.png",
+        "legs": "asset/character/icon/layers/guardian/side/attack/support/legs.png",
+        "hair-tail": "asset/character/icon/layers/guardian/side/attack/support/hair-tail.png",
+        "body": "asset/character/icon/layers/guardian/side/attack/support/body.png",
+        "cloth-hem": "asset/character/icon/layers/guardian/side/attack/support/cloth-hem.png",
+        "arm-left": "asset/character/icon/layers/guardian/side/attack/support/arm-left.png",
+        "arm-right": "asset/character/icon/layers/guardian/side/attack/support/arm-right.png",
+        "gear": "asset/character/icon/layers/guardian/side/attack/support/gear.png",
+        "weapon": "asset/character/icon/layers/guardian/side/attack/support/weapon.png",
+        "shield": "asset/character/icon/layers/guardian/side/attack/support/shield.png",
+        "head": "asset/character/icon/layers/guardian/side/attack/support/head.png"
+      },
+      "cleanup": {
+        "under:legs": 0,
+        "under:body": 82,
+        "under:cloth-hem": 11,
+        "under:arm-left": 0,
+        "under:arm-right": 0,
+        "under:gear": 15,
+        "under:weapon": 0,
+        "under:shield": 7,
+        "under:hair-tail": 0,
+        "under:head": 16,
+        "legs": 70,
+        "hair-tail": 0,
+        "body": 49,
+        "cloth-hem": 10,
+        "arm-left": 0,
+        "arm-right": 0,
+        "gear": 126,
+        "weapon": 52,
+        "shield": 103,
+        "head": 120
+      },
+      "fill": "asset/character/icon/layers/guardian/side/attack/support/torso-fill.png",
+      "mask": "asset/character/icon/layers/guardian/side/attack/support/torso-mask.png",
+      "polygon": [
+        [
+          146,
+          212
+        ],
+        [
+          162,
+          215
+        ],
+        [
+          158,
+          240
+        ],
+        [
+          139,
+          259
+        ],
+        [
+          124,
+          253
+        ],
+        [
+          126,
+          232
+        ]
+      ],
+      "fill_pixels": 809
+    }
+  }
+}

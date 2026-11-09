@@ -380,20 +380,17 @@
   "directional_attack_sheets": {
     "front": {
       "file": "asset/character/main/archer/front/attack-sheet.png",
-      "width": 960,
-      "height": 320,
-      "cell_size": [
-        320,
-        320
-      ],
-      "columns": 3,
-      "rows": 1,
+      "width": 1280,
+      "height": 1280,
+      "columns": 4,
+      "rows": 4,
       "loop": false,
       "return_to": "front_idle",
-      "duration_ms": 510,
+      "duration_ms": 1000,
+      "frame_duration_ms": 62.5,
       "frames": [
         {
-          "id": "front_attack_01",
+          "index": 0,
           "rect": [
             0,
             0,
@@ -402,14 +399,14 @@
           ],
           "pico2d_rect": [
             0,
-            0,
+            960,
             320,
             320
           ],
-          "duration_ms": 210
+          "duration_ms": 62.5
         },
         {
-          "id": "front_attack_02",
+          "index": 1,
           "rect": [
             320,
             0,
@@ -418,14 +415,14 @@
           ],
           "pico2d_rect": [
             320,
-            0,
+            960,
             320,
             320
           ],
-          "duration_ms": 80
+          "duration_ms": 62.5
         },
         {
-          "id": "front_attack_03",
+          "index": 2,
           "rect": [
             640,
             0,
@@ -434,30 +431,235 @@
           ],
           "pico2d_rect": [
             640,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
             0,
             320,
             320
           ],
-          "duration_ms": 220
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
         }
       ]
     },
     "back": {
       "file": "asset/character/main/archer/back/attack-sheet.png",
-      "width": 960,
-      "height": 320,
-      "cell_size": [
-        320,
-        320
-      ],
-      "columns": 3,
-      "rows": 1,
+      "width": 1280,
+      "height": 1280,
+      "columns": 4,
+      "rows": 4,
       "loop": false,
       "return_to": "back_idle",
-      "duration_ms": 510,
+      "duration_ms": 1000,
+      "frame_duration_ms": 62.5,
       "frames": [
         {
-          "id": "back_attack_01",
+          "index": 0,
           "rect": [
             0,
             0,
@@ -466,14 +668,14 @@
           ],
           "pico2d_rect": [
             0,
-            0,
+            960,
             320,
             320
           ],
-          "duration_ms": 210
+          "duration_ms": 62.5
         },
         {
-          "id": "back_attack_02",
+          "index": 1,
           "rect": [
             320,
             0,
@@ -482,14 +684,14 @@
           ],
           "pico2d_rect": [
             320,
-            0,
+            960,
             320,
             320
           ],
-          "duration_ms": 80
+          "duration_ms": 62.5
         },
         {
-          "id": "back_attack_03",
+          "index": 2,
           "rect": [
             640,
             0,
@@ -498,30 +700,235 @@
           ],
           "pico2d_rect": [
             640,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
             0,
             320,
             320
           ],
-          "duration_ms": 220
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
         }
       ]
     },
     "right": {
       "file": "asset/character/main/archer/side/attack-sheet.png",
-      "width": 960,
-      "height": 320,
-      "cell_size": [
-        320,
-        320
-      ],
-      "columns": 3,
-      "rows": 1,
+      "width": 1280,
+      "height": 1280,
+      "columns": 4,
+      "rows": 4,
       "loop": false,
       "return_to": "right_idle",
-      "duration_ms": 510,
+      "duration_ms": 1000,
+      "frame_duration_ms": 62.5,
       "frames": [
         {
-          "id": "right_attack_01",
+          "index": 0,
           "rect": [
             0,
             0,
@@ -530,14 +937,14 @@
           ],
           "pico2d_rect": [
             0,
-            0,
+            960,
             320,
             320
           ],
-          "duration_ms": 210
+          "duration_ms": 62.5
         },
         {
-          "id": "right_attack_02",
+          "index": 1,
           "rect": [
             320,
             0,
@@ -546,14 +953,14 @@
           ],
           "pico2d_rect": [
             320,
-            0,
+            960,
             320,
             320
           ],
-          "duration_ms": 80
+          "duration_ms": 62.5
         },
         {
-          "id": "right_attack_03",
+          "index": 2,
           "rect": [
             640,
             0,
@@ -562,11 +969,219 @@
           ],
           "pico2d_rect": [
             640,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
             0,
             320,
             320
           ],
-          "duration_ms": 220
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "duration_ms": 62.5
         }
       ]
     }

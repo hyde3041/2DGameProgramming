@@ -1,0 +1,834 @@
+{
+  "id": "swordsman",
+  "version": 15,
+  "workflow": "rear sword drawn behind head; selected motion and shoulder underside repair preserved",
+  "joint_mode": "whole_preseparated_arm",
+  "source_layers_unchanged": false,
+  "source_originals_preserved": true,
+  "splits_arm": false,
+  "cleanup": "metadata/character/attack/swordsman-edge-cleanup.json",
+  "frames": 16,
+  "fps": 16,
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "impact_frame": 10,
+  "lift_frames": [
+    0,
+    7
+  ],
+  "overhead_transition_frame": 8,
+  "strike_frames": [
+    9,
+    11
+  ],
+  "wrist_locked": true,
+  "wrist_limit_degrees": 0,
+  "views": {
+    "front": {
+      "view": "front",
+      "parts": {
+        "base": "asset/character/icon/layers/swordsman/front/attack/motion/base.png",
+        "feet": "asset/character/icon/layers/swordsman/front/attack/motion/feet.png",
+        "head": "asset/character/icon/layers/swordsman/front/attack/motion/head.png",
+        "arm": "asset/character/icon/layers/swordsman/front/attack/cleanup/arm.png",
+        "arm_under": "asset/character/icon/layers/swordsman/front/aligned/hidden/arm-left.png",
+        "cape": "asset/character/icon/layers/swordsman/front/aligned/cloth-hem.png",
+        "weapon": "asset/character/icon/layers/swordsman/front/attack/cleanup/weapon.png",
+        "blade": "asset/character/icon/layers/swordsman/front/attack/cleanup/blade.png",
+        "arm_mask": "asset/character/icon/layers/swordsman/front/attack/cleanup/arm-mask.png",
+        "weapon_mask": "asset/character/icon/layers/swordsman/front/attack/cleanup/weapon-mask.png"
+      },
+      "layer_order": [
+        "cape",
+        "arm_under",
+        "base",
+        "feet",
+        "head",
+        "arm",
+        "shoulder_overlap",
+        "weapon"
+      ],
+      "weapon_arm": "arm",
+      "attack_facing": "front",
+      "attack_sweep": "existing",
+      "weapon_behind_head_only": false,
+      "shoulder_overlap_radius_px": 6,
+      "shoulder_overlap_feather_px": 2,
+      "source_hashes": {
+        "base": "898d9c6b74ab4a9f73160032550e64884d4bb3a14cc5625fa1e0493f9465fdd1",
+        "feet": "5e36459fdd4df3b4f7e34ef4845a44e0848c45034fa412eb86658da0f7883ed2",
+        "head": "620f810bfb6b2446116ac47bc9b760e6d074aec5e40bbf0a67563e89394ed256",
+        "arm": "bfcfdf1eb1871cc317c0b4d772af62f5d5bde575b1b04fc65704fb3b23ce96f2",
+        "arm_under": "653731c0b308ee1e2986ceaa6744ad933960dbc2c012c034f591772ccb3ca357",
+        "cape": "098f24380dc336a98e7321a1ae6ba19e876338ba998cc06496d3d0361d64cac2",
+        "weapon": "6f997d3d805cd4ad78690f0157ee94020481e5e85d6ae5b1e3991a06e27b3563",
+        "blade": "e168a348eb4b17242c5726bdf170b59b647c2aaecde9d0569094a12bf2a45431",
+        "arm_mask": "bed947d7da55788268d8258f388347279dff7a4bc4fb9f0dc4d43876cd59370c",
+        "weapon_mask": "69b112f211ed35898f5a8d6e25afe9a9149795ff65bca5ce75f305248cd2760b"
+      },
+      "original_weapon": "asset/character/icon/layers/swordsman/front/aligned/visible/weapon.png",
+      "original_arm": "asset/character/icon/layers/swordsman/front/attack/motion/arm.png",
+      "weapon_unchanged": false,
+      "body_root": [
+        160,
+        280
+      ],
+      "arm_root": [
+        140,
+        215
+      ],
+      "previous_arm_root": [
+        145,
+        220
+      ],
+      "shoulder_raise_px": 5,
+      "hand_root": [
+        126.37254901960782,
+        239.0196078431372
+      ],
+      "blade_tip": [
+        192,
+        286
+      ],
+      "blade_length": 80.71009583315086,
+      "frames": [
+        {
+          "index": 0,
+          "arm": 0,
+          "forearm": 0,
+          "weapon": 0,
+          "wrist": 0,
+          "body": 0,
+          "translation": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "arm": -10,
+          "forearm": -10,
+          "weapon": -10,
+          "wrist": 0,
+          "body": -0.072,
+          "translation": [
+            0,
+            -0.034999999999999996
+          ]
+        },
+        {
+          "index": 2,
+          "arm": -28,
+          "forearm": -28,
+          "weapon": -28,
+          "wrist": 0,
+          "body": -0.252,
+          "translation": [
+            0,
+            -0.06999999999999999
+          ]
+        },
+        {
+          "index": 3,
+          "arm": -55,
+          "forearm": -55,
+          "weapon": -55,
+          "wrist": 0,
+          "body": -0.432,
+          "translation": [
+            0,
+            -0.105
+          ]
+        },
+        {
+          "index": 4,
+          "arm": -88,
+          "forearm": -88,
+          "weapon": -88,
+          "wrist": 0,
+          "body": -0.6839999999999999,
+          "translation": [
+            0,
+            -0.175
+          ]
+        },
+        {
+          "index": 5,
+          "arm": -120,
+          "forearm": -120,
+          "weapon": -120,
+          "wrist": 0,
+          "body": -1.008,
+          "translation": [
+            0,
+            -0.24499999999999997
+          ]
+        },
+        {
+          "index": 6,
+          "arm": -146,
+          "forearm": -146,
+          "weapon": -146,
+          "wrist": 0,
+          "body": -1.3679999999999999,
+          "translation": [
+            0,
+            -0.315
+          ]
+        },
+        {
+          "index": 7,
+          "arm": -165,
+          "forearm": -165,
+          "weapon": -165,
+          "wrist": 0,
+          "body": -1.6199999999999999,
+          "translation": [
+            0,
+            -0.42
+          ]
+        },
+        {
+          "index": 8,
+          "arm": -130,
+          "forearm": -130,
+          "weapon": -130,
+          "wrist": 0,
+          "body": -0.828,
+          "translation": [
+            0.6,
+            -0.21
+          ]
+        },
+        {
+          "index": 9,
+          "arm": -65,
+          "forearm": -65,
+          "weapon": -65,
+          "wrist": 0,
+          "body": 0.36,
+          "translation": [
+            0.6,
+            0.034999999999999996
+          ]
+        },
+        {
+          "index": 10,
+          "arm": 5,
+          "forearm": 5,
+          "weapon": 5,
+          "wrist": 0,
+          "body": 1.728,
+          "translation": [
+            0.6,
+            0.27999999999999997
+          ]
+        },
+        {
+          "index": 11,
+          "arm": 15,
+          "forearm": 15,
+          "weapon": 15,
+          "wrist": 0,
+          "body": 1.7999999999999998,
+          "translation": [
+            0.6,
+            0.21
+          ]
+        },
+        {
+          "index": 12,
+          "arm": 12,
+          "forearm": 12,
+          "weapon": 12,
+          "wrist": 0,
+          "body": 1.188,
+          "translation": [
+            0,
+            0.105
+          ]
+        },
+        {
+          "index": 13,
+          "arm": 6,
+          "forearm": 6,
+          "weapon": 6,
+          "wrist": 0,
+          "body": 0.54,
+          "translation": [
+            0,
+            0.034999999999999996
+          ]
+        },
+        {
+          "index": 14,
+          "arm": 2,
+          "forearm": 2,
+          "weapon": 2,
+          "wrist": 0,
+          "body": 0.144,
+          "translation": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 15,
+          "arm": 0.4,
+          "forearm": 0.4,
+          "weapon": 0.4,
+          "wrist": 0,
+          "body": 0.018,
+          "translation": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "back": {
+      "view": "back",
+      "parts": {
+        "base": "asset/character/icon/layers/swordsman/back/attack/motion/base.png",
+        "feet": "asset/character/icon/layers/swordsman/back/attack/motion/feet.png",
+        "head": "asset/character/icon/layers/swordsman/back/attack/motion/head.png",
+        "arm": "asset/character/icon/layers/swordsman/back/attack/cleanup/arm.png",
+        "arm_under": "asset/character/icon/layers/swordsman/back/aligned/hidden/arm-right.png",
+        "cape": "asset/character/icon/layers/swordsman/back/aligned/cloth-hem.png",
+        "weapon": "asset/character/icon/layers/swordsman/back/attack/cleanup/weapon.png",
+        "blade": "asset/character/icon/layers/swordsman/back/attack/cleanup/blade.png",
+        "arm_mask": "asset/character/icon/layers/swordsman/back/attack/cleanup/arm-mask.png",
+        "weapon_mask": "asset/character/icon/layers/swordsman/back/attack/cleanup/weapon-mask.png",
+        "armpit_fill": "asset/character/icon/layers/swordsman/back/attack/armpit/armpit-fill.png"
+      },
+      "layer_order": [
+        "cape",
+        "armpit_fill",
+        "arm_under",
+        "base",
+        "feet",
+        "shoulder_socket",
+        "weapon",
+        "head",
+        "arm",
+        "shoulder_overlap"
+      ],
+      "weapon_arm": "arm",
+      "attack_facing": "selected_cape_fixed",
+      "attack_sweep": "selected_cape_fixed",
+      "weapon_behind_head_only": true,
+      "shoulder_socket_radius_px": 13,
+      "shoulder_socket_feather_px": 2,
+      "shoulder_socket_offset": [
+        -3,
+        -6
+      ],
+      "shoulder_socket_fade_degrees": [
+        2,
+        8
+      ],
+      "shoulder_overlap_radius_px": 6,
+      "shoulder_overlap_feather_px": 2,
+      "source_hashes": {
+        "base": "e6032195e416d80289ace88c741ce955dfc8fb9664066d21baca52e8fa5a9863",
+        "feet": "cc0e87d7c691521edfaf37a5dfd7ad4983f012fa96310a9353538e58c3e08cb6",
+        "head": "301bcd461bc1b20a643d856bb48b230a9414fa7baea6f1ce063724c33b44e011",
+        "arm": "4891af771530dd18313fbf0f221efeb8a4083f44977a3a2cb336ca98278140da",
+        "arm_under": "c776c65c6da4d615b144ebe99eb33db88d89b28e10fd47217f1db91452926b4c",
+        "cape": "36b127bdec6c86b190587fd2b26c43cb8409ac8d02a0f936314ffa141fcca5af",
+        "weapon": "0c8468c421fd70b00a1f3481fc521af0cb06e723ca7fd88f0e1d1a82f96f29ac",
+        "blade": "f92337f74868f39fe460e49bb54c714707a6b024566fb504c2503680a24ea717",
+        "arm_mask": "3723c899041a6373026aa7ef9c088a8c064496eef9d71778244a716dda21a82d",
+        "weapon_mask": "d579d06a3614df290af6782499378807e0ef9d3d6d7da62f0fdbc8512d99800d",
+        "armpit_fill": "a3dc08515c08e519ffed0aa1293e810682188c9c4b66cb41ff8d3c1f7ab87e7f"
+      },
+      "original_weapon": "asset/character/icon/layers/swordsman/back/aligned/visible/weapon.png",
+      "original_arm": "asset/character/icon/layers/swordsman/back/attack/motion/arm.png",
+      "weapon_unchanged": false,
+      "body_root": [
+        160,
+        280
+      ],
+      "arm_root": [
+        182,
+        212
+      ],
+      "previous_arm_root": [
+        184,
+        222
+      ],
+      "shoulder_raise_px": 10,
+      "hand_root": [
+        195.14516129032256,
+        236.67741935483866
+      ],
+      "blade_tip": [
+        240,
+        271
+      ],
+      "blade_length": 56.48005044097235,
+      "frames": [
+        {
+          "index": 0,
+          "arm": 0,
+          "forearm": 0,
+          "weapon": 0,
+          "wrist": 0,
+          "body": 0,
+          "translation": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "arm": -8,
+          "forearm": -8,
+          "weapon": -8,
+          "wrist": 0,
+          "body": 0.05600000000000001,
+          "translation": [
+            0,
+            -0.034999999999999996
+          ]
+        },
+        {
+          "index": 2,
+          "arm": -22,
+          "forearm": -22,
+          "weapon": -22,
+          "wrist": 0,
+          "body": 0.196,
+          "translation": [
+            0,
+            -0.06999999999999999
+          ]
+        },
+        {
+          "index": 3,
+          "arm": -48,
+          "forearm": -48,
+          "weapon": -48,
+          "wrist": 0,
+          "body": 0.336,
+          "translation": [
+            0,
+            -0.105
+          ]
+        },
+        {
+          "index": 4,
+          "arm": -80,
+          "forearm": -80,
+          "weapon": -80,
+          "wrist": 0,
+          "body": 0.532,
+          "translation": [
+            0,
+            -0.175
+          ]
+        },
+        {
+          "index": 5,
+          "arm": -112,
+          "forearm": -112,
+          "weapon": -112,
+          "wrist": 0,
+          "body": 0.784,
+          "translation": [
+            0,
+            -0.24499999999999997
+          ]
+        },
+        {
+          "index": 6,
+          "arm": -140,
+          "forearm": -140,
+          "weapon": -140,
+          "wrist": 0,
+          "body": 1.064,
+          "translation": [
+            0,
+            -0.315
+          ]
+        },
+        {
+          "index": 7,
+          "arm": -160,
+          "forearm": -160,
+          "weapon": -160,
+          "wrist": 0,
+          "body": 1.2600000000000002,
+          "translation": [
+            0,
+            -0.42
+          ]
+        },
+        {
+          "index": 8,
+          "arm": -125,
+          "forearm": -125,
+          "weapon": -125,
+          "wrist": 0,
+          "body": 0.644,
+          "translation": [
+            0.6,
+            -0.21
+          ]
+        },
+        {
+          "index": 9,
+          "arm": -60,
+          "forearm": -60,
+          "weapon": -60,
+          "wrist": 0,
+          "body": -0.28,
+          "translation": [
+            0.6,
+            0.034999999999999996
+          ]
+        },
+        {
+          "index": 10,
+          "arm": 0,
+          "forearm": 0,
+          "weapon": 0,
+          "wrist": 0,
+          "body": -1.344,
+          "translation": [
+            0.6,
+            0.27999999999999997
+          ]
+        },
+        {
+          "index": 11,
+          "arm": 12,
+          "forearm": 12,
+          "weapon": 12,
+          "wrist": 0,
+          "body": -1.4000000000000001,
+          "translation": [
+            0.6,
+            0.21
+          ]
+        },
+        {
+          "index": 12,
+          "arm": 8,
+          "forearm": 8,
+          "weapon": 8,
+          "wrist": 0,
+          "body": -0.924,
+          "translation": [
+            0,
+            0.105
+          ]
+        },
+        {
+          "index": 13,
+          "arm": 4,
+          "forearm": 4,
+          "weapon": 4,
+          "wrist": 0,
+          "body": -0.42000000000000004,
+          "translation": [
+            0,
+            0.034999999999999996
+          ]
+        },
+        {
+          "index": 14,
+          "arm": 1,
+          "forearm": 1,
+          "weapon": 1,
+          "wrist": 0,
+          "body": -0.11200000000000002,
+          "translation": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 15,
+          "arm": 0.2,
+          "forearm": 0.2,
+          "weapon": 0.2,
+          "wrist": 0,
+          "body": -0.014000000000000002,
+          "translation": [
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "side": {
+      "view": "side",
+      "parts": {
+        "base": "asset/character/icon/layers/swordsman/side/attack/motion/base.png",
+        "feet": "asset/character/icon/layers/swordsman/side/attack/motion/feet.png",
+        "head": "asset/character/icon/layers/swordsman/side/attack/motion/head.png",
+        "arm": "asset/character/icon/layers/swordsman/side/attack/cleanup/arm.png",
+        "arm_under": "asset/character/icon/layers/swordsman/side/aligned/hidden/arm-left.png",
+        "cape": "asset/character/icon/layers/swordsman/side/aligned/cloth-hem.png",
+        "weapon": "asset/character/icon/layers/swordsman/side/attack/cleanup/weapon.png",
+        "blade": "asset/character/icon/layers/swordsman/side/attack/cleanup/blade.png",
+        "arm_mask": "asset/character/icon/layers/swordsman/side/attack/cleanup/arm-mask.png",
+        "weapon_mask": "asset/character/icon/layers/swordsman/side/attack/cleanup/weapon-mask.png"
+      },
+      "layer_order": [
+        "cape",
+        "arm_under",
+        "base",
+        "feet",
+        "head",
+        "arm",
+        "shoulder_overlap",
+        "weapon"
+      ],
+      "weapon_arm": "arm",
+      "attack_facing": "right",
+      "attack_sweep": "existing",
+      "weapon_behind_head_only": false,
+      "shoulder_overlap_radius_px": 6,
+      "shoulder_overlap_feather_px": 2,
+      "source_hashes": {
+        "base": "1dd5be7c9b40fcbf9db326fa6d284224ce7ab05d93dba418708ad99a1144f481",
+        "feet": "a57f003750d6ef66c1b2786a2c4aa046df3426a4fd145bad6403042917dbbab0",
+        "head": "b47463f3f8246dfd2b597f301e5790dfb9013d6aa8da850e8396e8a72f9dad18",
+        "arm": "7fd2750d7c581d9cc66368a19b4a1806b3ff65d7338c8763dcc8d92ffea4efd3",
+        "arm_under": "aa53a1ac312f5736fa8692ca83981f4eb5d59d4082bd73f5f315c14504d80fb1",
+        "cape": "01576af37049fbf7e406f59da07a3064d9886b2eb8678def59f3bbc021d28840",
+        "weapon": "8fe75fb8f3557185134524fe48fe86a15e45dc70759ff32ba1fb2ead989817ae",
+        "blade": "85b6da9145aec6d6d1f4e7fc64506ddf1c08981e0148d750b2e6f1f40bc0f941",
+        "arm_mask": "9b95ed048199e43dd74e3337b092a3f715225e4ef64a0b9db86f47fa6d5682ce",
+        "weapon_mask": "a0dfd8c54e0727f879b38c350bdbc2143f3b931d87d2e826ee69ad50100748c6"
+      },
+      "original_weapon": "asset/character/icon/layers/swordsman/side/aligned/visible/weapon.png",
+      "original_arm": "asset/character/icon/layers/swordsman/side/attack/motion/arm.png",
+      "weapon_unchanged": false,
+      "body_root": [
+        160,
+        280
+      ],
+      "arm_root": [
+        149,
+        216
+      ],
+      "previous_arm_root": [
+        156,
+        224
+      ],
+      "shoulder_raise_px": 8,
+      "hand_root": [
+        142.61538461538464,
+        240.20512820512823
+      ],
+      "blade_tip": [
+        216,
+        284
+      ],
+      "blade_length": 85.45930359344838,
+      "frames": [
+        {
+          "index": 0,
+          "arm": 0,
+          "forearm": 0,
+          "weapon": 0,
+          "wrist": 0,
+          "body": 0,
+          "translation": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 1,
+          "arm": -10,
+          "forearm": -10,
+          "weapon": -10,
+          "wrist": 0,
+          "body": -0.072,
+          "translation": [
+            0,
+            -0.034999999999999996
+          ]
+        },
+        {
+          "index": 2,
+          "arm": -28,
+          "forearm": -28,
+          "weapon": -28,
+          "wrist": 0,
+          "body": -0.252,
+          "translation": [
+            0,
+            -0.06999999999999999
+          ]
+        },
+        {
+          "index": 3,
+          "arm": -55,
+          "forearm": -55,
+          "weapon": -55,
+          "wrist": 0,
+          "body": -0.432,
+          "translation": [
+            0,
+            -0.105
+          ]
+        },
+        {
+          "index": 4,
+          "arm": -88,
+          "forearm": -88,
+          "weapon": -88,
+          "wrist": 0,
+          "body": -0.6839999999999999,
+          "translation": [
+            0,
+            -0.175
+          ]
+        },
+        {
+          "index": 5,
+          "arm": -120,
+          "forearm": -120,
+          "weapon": -120,
+          "wrist": 0,
+          "body": -1.008,
+          "translation": [
+            0,
+            -0.24499999999999997
+          ]
+        },
+        {
+          "index": 6,
+          "arm": -146,
+          "forearm": -146,
+          "weapon": -146,
+          "wrist": 0,
+          "body": -1.3679999999999999,
+          "translation": [
+            0,
+            -0.315
+          ]
+        },
+        {
+          "index": 7,
+          "arm": -165,
+          "forearm": -165,
+          "weapon": -165,
+          "wrist": 0,
+          "body": -1.6199999999999999,
+          "translation": [
+            0,
+            -0.42
+          ]
+        },
+        {
+          "index": 8,
+          "arm": -130,
+          "forearm": -130,
+          "weapon": -130,
+          "wrist": 0,
+          "body": -0.828,
+          "translation": [
+            0.6,
+            -0.21
+          ]
+        },
+        {
+          "index": 9,
+          "arm": -65,
+          "forearm": -65,
+          "weapon": -65,
+          "wrist": 0,
+          "body": 0.36,
+          "translation": [
+            0.6,
+            0.034999999999999996
+          ]
+        },
+        {
+          "index": 10,
+          "arm": 5,
+          "forearm": 5,
+          "weapon": 5,
+          "wrist": 0,
+          "body": 1.728,
+          "translation": [
+            0.6,
+            0.27999999999999997
+          ]
+        },
+        {
+          "index": 11,
+          "arm": 15,
+          "forearm": 15,
+          "weapon": 15,
+          "wrist": 0,
+          "body": 1.7999999999999998,
+          "translation": [
+            0.6,
+            0.21
+          ]
+        },
+        {
+          "index": 12,
+          "arm": 12,
+          "forearm": 12,
+          "weapon": 12,
+          "wrist": 0,
+          "body": 1.188,
+          "translation": [
+            0,
+            0.105
+          ]
+        },
+        {
+          "index": 13,
+          "arm": 6,
+          "forearm": 6,
+          "weapon": 6,
+          "wrist": 0,
+          "body": 0.54,
+          "translation": [
+            0,
+            0.034999999999999996
+          ]
+        },
+        {
+          "index": 14,
+          "arm": 2,
+          "forearm": 2,
+          "weapon": 2,
+          "wrist": 0,
+          "body": 0.144,
+          "translation": [
+            0,
+            0
+          ]
+        },
+        {
+          "index": 15,
+          "arm": 0.4,
+          "forearm": 0.4,
+          "weapon": 0.4,
+          "wrist": 0,
+          "body": 0.018,
+          "translation": [
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  }
+}

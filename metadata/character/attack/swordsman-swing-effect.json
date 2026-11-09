@@ -1,0 +1,25 @@
+{
+  "id": "swordsman-swept-blade",
+  "version": 4,
+  "swing_start_frame": 8,
+  "frames": 16,
+  "fps": 16,
+  "style": "thick swept blade area with three actual previous-blade afterimages",
+  "outer_radius": 1.24,
+  "minimum_radius_px": 90,
+  "inner_radius": 0.18,
+  "history_frames": 1.3,
+  "afterimages": [
+    {"lag_frames": 1.2, "opacity": 0.12},
+    {"lag_frames": 0.8, "opacity": 0.22},
+    {"lag_frames": 0.4, "opacity": 0.34}
+  ],
+  "opacity_by_frame": {"9": 1, "10": 1, "11": 0.7, "12": 0.3, "13": 0.08},
+  "ghost_opacity_by_frame": {"9": 1, "10": 1, "11": 0.8, "12": 0.35, "13": 0.12},
+  "view_overrides": {},
+  "sheets": {
+    "front": "asset/character/icon/layers/swordsman/front/attack/effect/slash-sheet.png",
+    "back": "asset/character/icon/layers/swordsman/back/attack/effect/slash-sheet.png",
+    "right": "asset/character/icon/layers/swordsman/side/attack/effect/slash-sheet.png"
+  }
+}

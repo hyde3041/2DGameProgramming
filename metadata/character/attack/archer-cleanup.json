@@ -1,0 +1,83 @@
+{
+  "id": "archer",
+  "purpose": "remove confirmed attack-only layer remnants; retain original character, bow and projectile",
+  "overrides": {
+    "front": {
+      "under:hair-tail": "asset/character/icon/layers/archer/front/attack/cleanup/hair-tail-under.png"
+    },
+    "back": {
+      "under:hair-tail": "asset/character/icon/layers/archer/back/attack/cleanup/hair-tail-under.png",
+      "pose-4": "asset/character/icon/layers/archer/back/attack/cleanup/upper-body-04.png"
+    },
+    "side": {
+      "gear": "asset/character/icon/layers/archer/side/attack/cleanup/gear.png"
+    }
+  },
+  "repairs": [
+    {
+      "view": "front",
+      "key": "under:hair-tail",
+      "input": "asset/character/icon/layers/archer/front/aligned/hidden/hair-tail.png",
+      "output": "asset/character/icon/layers/archer/front/attack/cleanup/hair-tail-under.png",
+      "removed_pixels": 135,
+      "cleared_source_rect": [
+        0,
+        247,
+        320,
+        73
+      ]
+    },
+    {
+      "view": "back",
+      "key": "under:hair-tail",
+      "input": "asset/character/icon/layers/archer/back/aligned/hidden/hair-tail.png",
+      "output": "asset/character/icon/layers/archer/back/attack/cleanup/hair-tail-under.png",
+      "removed_pixels": 148,
+      "cleared_source_rect": [
+        0,
+        235,
+        320,
+        85
+      ]
+    },
+    {
+      "view": "side",
+      "key": "gear",
+      "input": "asset/character/icon/layers/archer/side/aligned/visible/gear.png",
+      "output": "asset/character/icon/layers/archer/side/attack/cleanup/gear.png",
+      "removed_pixels": 75,
+      "cleared_source_rect": [
+        188,
+        178,
+        27,
+        40
+      ]
+    },
+    {
+      "view": "back",
+      "key": "pose-4",
+      "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-04.png",
+      "output": "asset/character/icon/layers/archer/back/attack/cleanup/upper-body-04.png",
+      "removed_pixels": 64,
+      "cleared_source_rect": [
+        0,
+        0,
+        315,
+        20
+      ]
+    }
+  ],
+  "output_pixel_removals": [
+    {
+      "view": "back",
+      "frame": 2,
+      "pixels": [
+        [
+          128,
+          220
+        ]
+      ],
+      "reason": "isolated low-alpha pixel above the wrist"
+    }
+  ]
+}

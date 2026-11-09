@@ -1,0 +1,122 @@
+{
+  "id": "archer",
+  "direction": "side",
+  "source_sheet": "asset/character/icon/layers/archer/side/attack/user-sheet/source.png",
+  "prepared_folder": "asset/character/icon/layers/archer/side/attack/body-aligned",
+  "frame_count": 16,
+  "fps": 16,
+  "cell_size": [
+    320,
+    320
+  ],
+  "body_translation_x": [
+    0,
+    -3,
+    -5,
+    -6,
+    -6,
+    -6,
+    -6,
+    -5,
+    -4,
+    -4,
+    -4,
+    -4,
+    -5,
+    -5,
+    -3,
+    0
+  ],
+  "head_outline": [
+    [
+      75,
+      105
+    ],
+    [
+      185,
+      105
+    ],
+    [
+      210,
+      140
+    ],
+    [
+      210,
+      177
+    ],
+    [
+      196,
+      190
+    ],
+    [
+      187,
+      199
+    ],
+    [
+      181,
+      210
+    ],
+    [
+      173,
+      213
+    ],
+    [
+      156,
+      207
+    ],
+    [
+      147,
+      194
+    ],
+    [
+      119,
+      196
+    ],
+    [
+      98,
+      185
+    ],
+    [
+      75,
+      165
+    ]
+  ],
+  "feet_region": [
+    133,
+    273,
+    58,
+    32
+  ],
+  "scale": [
+    1,
+    1
+  ],
+  "method": "Translate the connected torso, arms, bow and clothing by integer pixels behind the original head, hair and planted feet.",
+  "neck_bridge_outline": [
+    [
+      142,
+      205
+    ],
+    [
+      160,
+      204
+    ],
+    [
+      180,
+      209
+    ],
+    [
+      188,
+      228
+    ],
+    [
+      166,
+      229
+    ],
+    [
+      142,
+      220
+    ]
+  ],
+  "neck_underpaint": "asset/character/icon/layers/archer/side/aligned/body.png"
+}

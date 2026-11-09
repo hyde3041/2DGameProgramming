@@ -1,12 +1,13 @@
 # 게임 데이터
 
-프로젝트의 JSON 63개를 모았습니다.
+프로젝트의 JSON 데이터를 모았습니다.
 
 ```text
 metadata/
   character/
     sprites/     정적 시트·프레임 좌표와 목록, 9개
     idle/        최신 대기 모션 좌표·시간과 목록, 캐릭터별 레이어 설정, 17개
+    attack/      궁수·석궁병·검사 16프레임 공격 좌표·시간, 원본과 제작 기록
     layers/      8명×3방향의 새 분리 원본·연결점·배치·원본 기준점과 목록, 11개
     direction/   배치 방향 선택 UI 정보, 1개
     skills.json  캐릭터 스킬 설계 데이터
@@ -16,9 +17,9 @@ metadata/
   map/           맵 20종의 좌표, 전체 배치와 목록, 22개
 ```
 
-JSON 안의 파일·폴더 경로는 모두 **프로젝트 루트**를 기준으로 읽습니다. 예를 들어 `asset/map/stage/main/dungeon-room.png`는 `main.py`와 같은 폴더에서 찾습니다. `metadata/map/manifest.json`의 좌표 파일 경로도 프로젝트 루트 기준입니다.
+JSON의 `asset/...` 이미지 경로는 **`game/` 폴더**를 기준으로 읽습니다. 예를 들어 `asset/map/stage/main/dungeon-room.png`의 실제 위치는 `game/asset/map/stage/main/dungeon-room.png`입니다. `metadata/...` 데이터 경로는 저장소 루트 기준입니다.
 
-이미지는 `asset/character/`, `asset/item/`, `asset/map/`에 있습니다. `main.py`는 맵 PNG를 직접 불러오고, `IdleSprite`는 캐릭터 Idle JSON의 좌표와 시간을 읽습니다. 다른 데이터는 이후 게임 기능에 연결할 예정입니다.
+이미지는 `game/asset/character/`, `game/asset/item/`, `game/asset/map/`에 있습니다. `game/code/main.py`는 맵 PNG를 불러오고, `IdleSprite`와 `ArcherSprite`는 대기·공격 JSON의 좌표와 시간을 읽습니다. 아래 `asset/...` 표기는 `game/`에 대한 상대 경로입니다.
 
 ## 캐릭터
 
@@ -33,7 +34,7 @@ JSON 안의 파일·폴더 경로는 모두 **프로젝트 루트**를 기준으
 - `asset/character/main/<캐릭터명>/skill/profile/skill-card.png`: 스킬 프로필 카드
 - `asset/character/icon/source/<캐릭터명>/`: 원본 개별 프레임과 정적 통합 시트 보관
 
-각 방향 폴더에는 `idle-sheet.png`와 `attack-sheet.png`만 보관합니다. 공격 시트는 원본 공격 3프레임을 가로로 묶은 960×320 PNG이며, 한 프레임은 320×320입니다. 원본 픽셀과 프레임별 동작 시간을 유지했습니다. `metadata/character/sprites/` JSON의 `directional_attack_sheets`에 방향별 공격 시트 경로와 좌표·시간을 정리했습니다.
+각 방향 폴더에는 `idle-sheet.png`와 `attack-sheet.png`만 보관합니다. **궁수·석궁병·검사 공격은 각 방향 16프레임·16FPS·1초, 4열×4행의 1280×1280 PNG**입니다. 다른 5명의 공격은 기존 3프레임·960×320 시트를 유지합니다. 한 프레임은 모두 320×320입니다. `metadata/character/sprites/` JSON의 `directional_attack_sheets`에 방향별 공격 시트 경로와 좌표·시간을 정리했습니다. [궁수 제작 기록](character/attack/README.md), [석궁병 제작 기록](character/attack/crossbowman-connected.md), [검사 제작 기록](character/attack/swordsman.md)에 재생 데이터와 원본을 기록합니다.
 
 전체 동료 목록 그림은 `asset/character/character-overview.png`, 검사 소개 그림은 `asset/character/main/swordsman/skill/profile/cover.png`입니다.
 
@@ -53,9 +54,9 @@ JSON 안의 파일·폴더 경로는 모두 **프로젝트 루트**를 기준으
 
 원본 정렬은 Node.js와 `sharp`가 있는 환경에서 `node tools/align_character_layers.mjs <검사 폴더> [캐릭터 ID]`로 재생성합니다. 시트는 `sharp`, `playwright`, Chrome이 있는 환경에서 `node tools/build_archer_idle.mjs <출력 폴더> [캐릭터 ID]`로 생성합니다. 캐릭터 ID를 생략하면 궁수입니다. 이 도구는 각 레이어 설정의 실제 프레임 수와 FPS를 읽습니다. 현재 8명 모두 16개 시점의 서로 다른 동작을 새로 렌더링하며, 기존 게임 시트를 자동으로 덮어쓰지 않습니다.
 
-`idle_sprite.py`는 JSON의 실제 FPS와 프레임 수를 사용합니다. `update(delta_time)`만 시간을 진행시키며, `draw()`는 현재 프레임을 `clip_draw()`로 표시합니다. 렌더링 횟수가 달라도 같은 경과 시간에는 같은 애니메이션 프레임을 표시합니다. `main.py`는 맵의 높은 칸 중심 (208, 444)에 궁수를 표시합니다.
+`idle_sprite.py`와 `attack_sprite.py`는 JSON의 실제 FPS와 프레임 수를 사용합니다. `update(delta_time)`만 시간을 진행시키며, `draw()`는 현재 프레임을 `clip_draw()`로 표시합니다. 렌더링 횟수가 달라도 같은 경과 시간에는 같은 프레임을 표시합니다. `main.py`는 맵의 높은 칸 중심 (208, 444)에 선택한 캐릭터를 표시합니다. 1은 궁수, 2는 석궁병, 3은 검사입니다.
 
-현재 프로젝트에는 Walk·Run 상태 전환과 충돌 판정이 아직 없으므로 해당 기능에 대한 연결 변경은 없습니다. 기존 공격 시트와 개별 공격 프레임은 수정하지 않았습니다.
+현재 프로젝트에는 Walk·Run과 충돌 판정이 아직 없습니다. 궁수·석궁병·검사의 공격 시트 총 9개를 16프레임으로 교체했고, 원본 개별 공격 프레임과 다른 5명의 공격 15개는 보존했습니다. 스페이스바로 공격을 한 번 재생한 뒤 Idle로 돌아갑니다. 화살·볼트·베기는 공격 그림의 연출이며 실제 피해 계산은 아직 없습니다.
 
 ## 아이템
 

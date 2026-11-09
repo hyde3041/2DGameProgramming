@@ -1,0 +1,80 @@
+{
+  "id": "archer",
+  "version": 7,
+  "frames": 16,
+  "fps": 16,
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "renderer": "whole_sheet",
+  "direction_overrides": {
+    "front": "metadata/character/attack/archer-import.json",
+    "back": "metadata/character/attack/archer-import.json",
+    "right": "metadata/character/attack/archer-import.json"
+  },
+  "views": {
+    "back": {
+      "enabled": true,
+      "source_sheet": "asset/character/icon/layers/archer/back/attack/cape-consistent/source-sheet.png",
+      "file": "asset/character/icon/layers/archer/back/attack/user-sheet/current-sheet.png",
+      "source_size": [
+        1280,
+        1280
+      ],
+      "uniform_scale": 1,
+      "background_key": {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "maximum_channel": 12
+      },
+      "preserve_source_alpha": true,
+      "cape_assembly": "metadata/character/attack/archer-back-cape.json"
+    },
+    "side": {
+      "enabled": true,
+      "source_sheet": "asset/character/icon/layers/archer/side/attack/body-consistent/approved/idle-coat-lift.png",
+      "file": "asset/character/icon/layers/archer/side/attack/user-sheet/current-sheet.png",
+      "source_size": [
+        1280,
+        1280
+      ],
+      "uniform_scale": 1,
+      "background_key": {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "maximum_channel": 12
+      },
+      "preserve_source_alpha": true,
+      "body_redraw": "metadata/character/attack/archer-side-redraw.json"
+    },
+    "front": {
+      "enabled": true,
+      "source_sheet": "asset/character/icon/layers/archer/front/attack/user-sheet/source.png",
+      "file": "asset/character/icon/layers/archer/front/attack/user-sheet/current-sheet.png",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "uniform_scale": 1.0207336523125996,
+      "background_key": {
+        "color": [
+          0,
+          0,
+          0
+        ],
+        "maximum_channel": 12
+      }
+    }
+  }
+}

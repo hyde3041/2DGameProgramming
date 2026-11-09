@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "applied": true,
+  "frames": 16,
+  "fps": 16,
+  "pose_index": [
+    0,
+    0,
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    1,
+    1,
+    0,
+    0
+  ],
+  "source_originals_preserved": true,
+  "sources": "metadata/character/attack/archer-hair-sources.json",
+  "tail": {
+    "lag_frames": 1.25,
+    "lag_strength": 0.7,
+    "parented_to_head": true,
+    "scale": [
+      1,
+      1
+    ]
+  },
+  "views": {
+    "front": {
+      "original": "asset/character/icon/layers/archer/front/aligned/visible/head.png",
+      "mask": "asset/character/icon/layers/archer/front/attack/hair/edit-mask.png",
+      "protected_boxes": [
+        [
+          136,
+          135,
+          30,
+          39
+        ],
+        [
+          152,
+          186,
+          19,
+          18
+        ],
+        [
+          177,
+          187,
+          20,
+          18
+        ],
+        [
+          164,
+          202,
+          25,
+          17
+        ]
+      ],
+      "edge_cleanup_regions": [
+        [
+          203,
+          200,
+          10,
+          12
+        ]
+      ],
+      "poses": [
+        {
+          "index": 1,
+          "file": "asset/character/icon/layers/archer/front/attack/hair/head-1.png",
+          "registration": {
+            "dx": 0,
+            "dy": 0,
+            "score": 36.69966699528891
+          },
+          "changed_pixels": 1374,
+          "removed_loose_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "asset/character/icon/layers/archer/front/attack/hair/head-2.png",
+          "registration": {
+            "dx": -0.25,
+            "dy": -0.25,
+            "score": 34.88950377916444
+          },
+          "changed_pixels": 1375,
+          "removed_loose_pixels": 0
+        }
+      ]
+    },
+    "back": {
+      "original": "asset/character/icon/layers/archer/back/aligned/visible/head.png",
+      "mask": "asset/character/icon/layers/archer/back/attack/hair/edit-mask.png",
+      "protected_boxes": [
+        [
+          156,
+          131,
+          23,
+          30
+        ]
+      ],
+      "edge_cleanup_regions": [],
+      "poses": [
+        {
+          "index": 1,
+          "file": "asset/character/icon/layers/archer/back/attack/hair/head-1.png",
+          "registration": {
+            "dx": 0,
+            "dy": 0,
+            "score": 30.462979539641992
+          },
+          "changed_pixels": 1313,
+          "removed_loose_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "asset/character/icon/layers/archer/back/attack/hair/head-2.png",
+          "registration": {
+            "dx": -0.5,
+            "dy": 0,
+            "score": 31.563166027280523
+          },
+          "changed_pixels": 1358,
+          "removed_loose_pixels": 0
+        }
+      ]
+    },
+    "side": {
+      "original": "asset/character/icon/layers/archer/side/aligned/visible/head.png",
+      "mask": "asset/character/icon/layers/archer/side/attack/hair/edit-mask.png",
+      "protected_boxes": [
+        [
+          134,
+          135,
+          32,
+          39
+        ],
+        [
+          173,
+          184,
+          27,
+          21
+        ],
+        [
+          171,
+          202,
+          30,
+          18
+        ]
+      ],
+      "edge_cleanup_regions": [],
+      "poses": [
+        {
+          "index": 1,
+          "file": "asset/character/icon/layers/archer/side/attack/hair/head-1.png",
+          "registration": {
+            "dx": -0.25,
+            "dy": 0,
+            "score": 42.69338765809318
+          },
+          "changed_pixels": 969,
+          "removed_loose_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "asset/character/icon/layers/archer/side/attack/hair/head-2.png",
+          "registration": {
+            "dx": -0.5,
+            "dy": -0.25,
+            "score": 42.03295621278745
+          },
+          "changed_pixels": 965,
+          "removed_loose_pixels": 0
+        }
+      ]
+    }
+  }
+}

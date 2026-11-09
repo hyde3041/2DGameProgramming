@@ -1,0 +1,1030 @@
+{
+  "id": "archer",
+  "version": 4,
+  "cell_size": [
+    320,
+    320
+  ],
+  "frames": 16,
+  "fps": 16,
+  "duration_ms": 1000,
+  "release_frame": 7,
+  "workflow": "one fixed upper-arm, forearm, hand and bow texture per direction; translation and rotation only",
+  "views": {
+    "front": {
+      "bowShoulder": [
+        176,
+        226
+      ],
+      "pullShoulder": [
+        140,
+        222
+      ],
+      "restGrip": [
+        194,
+        248
+      ],
+      "aimGrip": [
+        211,
+        220
+      ],
+      "restPull": [
+        150,
+        238
+      ],
+      "aimPull": [
+        163,
+        216
+      ],
+      "bowBranch": 1,
+      "pullBranch": 1,
+      "bowAngle": -25,
+      "tips": [
+        [
+          220,
+          182
+        ],
+        [
+          162,
+          277
+        ]
+      ],
+      "armMasks": [
+        [
+          [
+            135,
+            220
+          ],
+          [
+            144,
+            220
+          ],
+          [
+            155,
+            230
+          ],
+          [
+            162,
+            237
+          ],
+          [
+            155,
+            245
+          ],
+          [
+            142,
+            243
+          ],
+          [
+            133,
+            234
+          ]
+        ],
+        [
+          [
+            172,
+            222
+          ],
+          [
+            184,
+            223
+          ],
+          [
+            192,
+            233
+          ],
+          [
+            202,
+            241
+          ],
+          [
+            203,
+            253
+          ],
+          [
+            191,
+            258
+          ],
+          [
+            180,
+            248
+          ],
+          [
+            173,
+            235
+          ]
+        ]
+      ],
+      "torso": [
+        [
+          143,
+          208
+        ],
+        [
+          176,
+          210
+        ],
+        [
+          190,
+          232
+        ],
+        [
+          196,
+          263
+        ],
+        [
+          170,
+          276
+        ],
+        [
+          123,
+          271
+        ],
+        [
+          132,
+          246
+        ]
+      ],
+      "parts": {
+        "bow-upper": "asset/character/icon/layers/archer/front/attack/rigid/bow-upper.png",
+        "pull-upper": "asset/character/icon/layers/archer/front/attack/rigid/pull-upper.png",
+        "bow-forearm": "asset/character/icon/layers/archer/front/attack/rigid/bow-forearm.png",
+        "pull-forearm": "asset/character/icon/layers/archer/front/attack/rigid/pull-forearm.png",
+        "bow-hand": "asset/character/icon/layers/archer/front/attack/rigid/bow-hand.png",
+        "pull-hand": "asset/character/icon/layers/archer/front/attack/rigid/pull-hand.png",
+        "base": "asset/character/icon/layers/archer/front/attack/rigid/base.png",
+        "under": "asset/character/icon/layers/archer/front/attack/rigid/under.png",
+        "head": "asset/character/icon/layers/archer/front/attack/rigid/head.png",
+        "hair": "asset/character/icon/layers/archer/front/attack/rigid/hair.png",
+        "bow": "asset/character/icon/layers/archer/front/attack/rigid/bow.png",
+        "arrow": "asset/character/icon/layers/archer/front/attack/rigid/arrow.png"
+      },
+      "calibration": {
+        "bow-upper": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            33,
+            32
+          ],
+          "length": 17,
+          "source_cell": {
+            "left": 0,
+            "top": 0,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            102.85,
+            301
+          ],
+          "source_end": [
+            405.15,
+            301
+          ],
+          "source_scale_once": 0.056235527621567985
+        },
+        "pull-upper": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            33,
+            32
+          ],
+          "length": 17,
+          "source_cell": {
+            "left": 512,
+            "top": 0,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            105.35,
+            300
+          ],
+          "source_end": [
+            398.65,
+            300
+          ],
+          "source_scale_once": 0.05796113194681215
+        },
+        "bow-forearm": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            35,
+            32
+          ],
+          "length": 19,
+          "source_cell": {
+            "left": 0,
+            "top": 512,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            98.15,
+            260.5
+          ],
+          "source_end": [
+            405.85,
+            260.5
+          ],
+          "source_scale_once": 0.061748456288592775
+        },
+        "pull-forearm": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            35,
+            32
+          ],
+          "length": 19,
+          "source_cell": {
+            "left": 512,
+            "top": 512,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            105.1,
+            260.5
+          ],
+          "source_end": [
+            411.9,
+            260.5
+          ],
+          "source_scale_once": 0.06192959582790092
+        },
+        "bow-hand": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            23,
+            32
+          ],
+          "length": 7,
+          "source_cell": {
+            "left": 0,
+            "top": 1024,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            154.4,
+            247.5
+          ],
+          "source_end": [
+            332.92,
+            247.5
+          ],
+          "source_scale_once": 0.03921129285234147
+        },
+        "pull-hand": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            23,
+            32
+          ],
+          "length": 7,
+          "source_cell": {
+            "left": 512,
+            "top": 1024,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            141.7,
+            242
+          ],
+          "source_end": [
+            329.06,
+            242
+          ],
+          "source_scale_once": 0.03736122971818958
+        }
+      },
+      "hashes": {
+        "bow-upper": "09f26649a9831607d80c8de431bde625cf5b2c3eb290a190417628db5cbd3646",
+        "pull-upper": "96bf79cfdf4186e0aa28ce332c2ca7d1893d1ec660a7ce8b8c348c7804eee8eb",
+        "bow-forearm": "f31dc4b9b6a586ae5c4c0c5fe33c5977ddbbdd5734608a2f3e3070dc669757ca",
+        "pull-forearm": "22258f9c75fab5d18577f20b2a391aa531d845d9a10343616f5bed4991efa81c",
+        "bow-hand": "0e8526d696afc8f28d043654a420fe3cc27d33e3d6da7b12c86ef3778c2656b1",
+        "pull-hand": "5863db43ced9c5dcf7068e9ea537db9a4eda2d46275113ce527a9bd9fe4b5ec1",
+        "base": "02f270e72fbd31f840662f4ee1aa0416493e7d37bbc1fbcfce24e78c416d182d",
+        "under": "28714487e8eb5b3c4ea018227690611458f7369937c03b70f24db0c8cdb1afa7",
+        "head": "9d0456d34690a5688ad5f0395313b763fae6267522c96a0808b0b69b7d0300cf",
+        "hair": "efedf1174bf126ae9f42897423876ab1d930cb16a35091e63156638bb3c29220",
+        "bow": "a7c000c8c9c2acb154420d174c8d06a3be89fd8926910ad5647037f0480f3fff",
+        "arrow": "cd3a29bb41ea00725a5e16104000ddb97a177fbbec9e4f3b3e13ebccc99c5942"
+      },
+      "removed_old_limb_pixels": 1885,
+      "arm_lengths": [
+        17,
+        19
+      ],
+      "hand_length": 7,
+      "bowPivot": [
+        199,
+        249
+      ],
+      "headPivot": [
+        169,
+        213
+      ],
+      "hairPivot": [
+        145,
+        155
+      ],
+      "source_atlas": "asset/character/icon/layers/archer/front/attack/rigid/limb-atlas.png",
+      "shared_limb_art": "front"
+    },
+    "back": {
+      "bowShoulder": [
+        139,
+        223
+      ],
+      "pullShoulder": [
+        180,
+        228
+      ],
+      "restGrip": [
+        125,
+        253
+      ],
+      "aimGrip": [
+        106,
+        221
+      ],
+      "restPull": [
+        184,
+        244
+      ],
+      "aimPull": [
+        164,
+        216
+      ],
+      "bowBranch": -1,
+      "pullBranch": -1,
+      "bowAngle": 20,
+      "tips": [
+        [
+          99,
+          182
+        ],
+        [
+          157,
+          277
+        ]
+      ],
+      "armMasks": [
+        [
+          [
+            134,
+            220
+          ],
+          [
+            144,
+            219
+          ],
+          [
+            144,
+            233
+          ],
+          [
+            136,
+            246
+          ],
+          [
+            130,
+            257
+          ],
+          [
+            120,
+            259
+          ],
+          [
+            117,
+            248
+          ],
+          [
+            125,
+            234
+          ]
+        ],
+        [
+          [
+            174,
+            223
+          ],
+          [
+            184,
+            223
+          ],
+          [
+            191,
+            234
+          ],
+          [
+            190,
+            247
+          ],
+          [
+            180,
+            251
+          ],
+          [
+            173,
+            242
+          ]
+        ]
+      ],
+      "torso": [
+        [
+          139,
+          208
+        ],
+        [
+          178,
+          208
+        ],
+        [
+          188,
+          237
+        ],
+        [
+          199,
+          268
+        ],
+        [
+          157,
+          277
+        ],
+        [
+          126,
+          270
+        ],
+        [
+          134,
+          242
+        ]
+      ],
+      "parts": {
+        "bow-upper": "asset/character/icon/layers/archer/back/attack/rigid/bow-upper.png",
+        "pull-upper": "asset/character/icon/layers/archer/back/attack/rigid/pull-upper.png",
+        "bow-forearm": "asset/character/icon/layers/archer/back/attack/rigid/bow-forearm.png",
+        "pull-forearm": "asset/character/icon/layers/archer/back/attack/rigid/pull-forearm.png",
+        "bow-hand": "asset/character/icon/layers/archer/back/attack/rigid/bow-hand.png",
+        "pull-hand": "asset/character/icon/layers/archer/back/attack/rigid/pull-hand.png",
+        "base": "asset/character/icon/layers/archer/back/attack/rigid/base.png",
+        "under": "asset/character/icon/layers/archer/back/attack/rigid/under.png",
+        "head": "asset/character/icon/layers/archer/back/attack/rigid/head.png",
+        "hair": "asset/character/icon/layers/archer/back/attack/rigid/hair.png",
+        "bow": "asset/character/icon/layers/archer/back/attack/rigid/bow.png",
+        "arrow": "asset/character/icon/layers/archer/back/attack/rigid/arrow.png"
+      },
+      "calibration": {
+        "bow-upper": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            33,
+            32
+          ],
+          "length": 17,
+          "source_cell": {
+            "left": 0,
+            "top": 0,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            106.15,
+            339.5
+          ],
+          "source_end": [
+            413.85,
+            339.5
+          ],
+          "source_scale_once": 0.05524861878453038
+        },
+        "pull-upper": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            33,
+            32
+          ],
+          "length": 17,
+          "source_cell": {
+            "left": 512,
+            "top": 0,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            97.2,
+            333
+          ],
+          "source_end": [
+            405.8,
+            333
+          ],
+          "source_scale_once": 0.05508749189889824
+        },
+        "bow-forearm": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            35,
+            32
+          ],
+          "length": 19,
+          "source_cell": {
+            "left": 0,
+            "top": 512,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            126.85,
+            269.5
+          ],
+          "source_end": [
+            393.15,
+            269.5
+          ],
+          "source_scale_once": 0.07134810364250846
+        },
+        "pull-forearm": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            35,
+            32
+          ],
+          "length": 19,
+          "source_cell": {
+            "left": 512,
+            "top": 512,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            119.25,
+            273
+          ],
+          "source_end": [
+            392.75,
+            273
+          ],
+          "source_scale_once": 0.06946983546617916
+        },
+        "bow-hand": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            23,
+            32
+          ],
+          "length": 7,
+          "source_cell": {
+            "left": 0,
+            "top": 1024,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            365.1,
+            235.5
+          ],
+          "source_end": [
+            217.18,
+            235.5
+          ],
+          "source_scale_once": 0.04732287723093564
+        },
+        "pull-hand": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            23,
+            32
+          ],
+          "length": 7,
+          "source_cell": {
+            "left": 512,
+            "top": 1024,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            325.9,
+            232
+          ],
+          "source_end": [
+            169.82,
+            232
+          ],
+          "source_scale_once": 0.044848795489492575
+        }
+      },
+      "hashes": {
+        "bow-upper": "ebd5f8d6e9ad323a6950250ff8cd2aaa568e6c3739528ba2157f3fefb4c4733b",
+        "pull-upper": "54ad0f8b20149d986ca86ee2420bc0f62451c959d7000c578be0e03f8d841624",
+        "bow-forearm": "1a7b124de01c7e41f4115eaf348e1474aa2d703168814bcc46d7f106a68d9156",
+        "pull-forearm": "560c33837d1aff5f9553164bff48952f35efae68906e349e5029c2f2af982854",
+        "bow-hand": "68b014061cd1392ba14beab71f616e72d053b20da036eb81bd04721ae8b4d0a8",
+        "pull-hand": "3394f5677a86cfdfca0bb299cdeb0a314c15e107be7ab5fe5655c3e2d5ba4161",
+        "base": "7b833b55e012892041bbf16dc3a04084fed2a32b57a47811036cb17762e426b5",
+        "under": "6d9638fd097ed80f866cf6d7070eafa74de061dceeda0c5360291417cbd03e9f",
+        "head": "9d7a50eab93a8fe5230ce21d70c6dc4b33c9e91ef5837d444618013b06021197",
+        "hair": "4fe5a3c2c8b04d8995d1f0f3a03db48301fb09978c1e0342a36bb0dd99b1a1ed",
+        "bow": "9eff318bc9a1f9d491487906cf67e1c4196a5d38dcb9358bcbc9380c7f12e46d",
+        "arrow": "cd3a29bb41ea00725a5e16104000ddb97a177fbbec9e4f3b3e13ebccc99c5942"
+      },
+      "removed_old_limb_pixels": 1361,
+      "arm_lengths": [
+        17,
+        19
+      ],
+      "hand_length": 7,
+      "bowPivot": [
+        120,
+        249
+      ],
+      "headPivot": [
+        155,
+        211
+      ],
+      "hairPivot": [
+        174,
+        154
+      ],
+      "source_atlas": "asset/character/icon/layers/archer/back/attack/rigid/limb-atlas.png",
+      "shared_limb_art": "back"
+    },
+    "side": {
+      "bowShoulder": [
+        178,
+        228
+      ],
+      "pullShoulder": [
+        145,
+        223
+      ],
+      "restGrip": [
+        192,
+        249
+      ],
+      "aimGrip": [
+        213,
+        220
+      ],
+      "restPull": [
+        157,
+        239
+      ],
+      "aimPull": [
+        171,
+        216
+      ],
+      "bowBranch": 1,
+      "pullBranch": 1,
+      "bowAngle": -20,
+      "tips": [
+        [
+          220,
+          182
+        ],
+        [
+          162,
+          277
+        ]
+      ],
+      "armMasks": [
+        [
+          [
+            138,
+            220
+          ],
+          [
+            149,
+            219
+          ],
+          [
+            162,
+            229
+          ],
+          [
+            169,
+            240
+          ],
+          [
+            160,
+            247
+          ],
+          [
+            148,
+            241
+          ],
+          [
+            140,
+            234
+          ]
+        ],
+        [
+          [
+            174,
+            224
+          ],
+          [
+            185,
+            223
+          ],
+          [
+            195,
+            235
+          ],
+          [
+            201,
+            248
+          ],
+          [
+            196,
+            257
+          ],
+          [
+            184,
+            250
+          ],
+          [
+            176,
+            240
+          ]
+        ]
+      ],
+      "torso": [
+        [
+          148,
+          207
+        ],
+        [
+          177,
+          211
+        ],
+        [
+          190,
+          232
+        ],
+        [
+          196,
+          263
+        ],
+        [
+          165,
+          276
+        ],
+        [
+          126,
+          270
+        ],
+        [
+          138,
+          243
+        ]
+      ],
+      "parts": {
+        "bow-upper": "asset/character/icon/layers/archer/side/attack/rigid/bow-upper.png",
+        "pull-upper": "asset/character/icon/layers/archer/side/attack/rigid/pull-upper.png",
+        "bow-forearm": "asset/character/icon/layers/archer/side/attack/rigid/bow-forearm.png",
+        "pull-forearm": "asset/character/icon/layers/archer/side/attack/rigid/pull-forearm.png",
+        "bow-hand": "asset/character/icon/layers/archer/side/attack/rigid/bow-hand.png",
+        "pull-hand": "asset/character/icon/layers/archer/side/attack/rigid/pull-hand.png",
+        "base": "asset/character/icon/layers/archer/side/attack/rigid/base.png",
+        "under": "asset/character/icon/layers/archer/side/attack/rigid/under.png",
+        "head": "asset/character/icon/layers/archer/side/attack/rigid/head.png",
+        "hair": "asset/character/icon/layers/archer/side/attack/rigid/hair.png",
+        "bow": "asset/character/icon/layers/archer/side/attack/rigid/bow.png",
+        "arrow": "asset/character/icon/layers/archer/side/attack/rigid/arrow.png"
+      },
+      "calibration": {
+        "bow-upper": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            33,
+            32
+          ],
+          "length": 17,
+          "source_cell": {
+            "left": 0,
+            "top": 0,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            102.85,
+            301
+          ],
+          "source_end": [
+            405.15,
+            301
+          ],
+          "source_scale_once": 0.056235527621567985
+        },
+        "pull-upper": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            33,
+            32
+          ],
+          "length": 17,
+          "source_cell": {
+            "left": 512,
+            "top": 0,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            105.35,
+            300
+          ],
+          "source_end": [
+            398.65,
+            300
+          ],
+          "source_scale_once": 0.05796113194681215
+        },
+        "bow-forearm": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            35,
+            32
+          ],
+          "length": 19,
+          "source_cell": {
+            "left": 0,
+            "top": 512,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            98.15,
+            260.5
+          ],
+          "source_end": [
+            405.85,
+            260.5
+          ],
+          "source_scale_once": 0.061748456288592775
+        },
+        "pull-forearm": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            35,
+            32
+          ],
+          "length": 19,
+          "source_cell": {
+            "left": 512,
+            "top": 512,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            105.1,
+            260.5
+          ],
+          "source_end": [
+            411.9,
+            260.5
+          ],
+          "source_scale_once": 0.06192959582790092
+        },
+        "bow-hand": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            23,
+            32
+          ],
+          "length": 7,
+          "source_cell": {
+            "left": 0,
+            "top": 1024,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            154.4,
+            247.5
+          ],
+          "source_end": [
+            332.92,
+            247.5
+          ],
+          "source_scale_once": 0.03921129285234147
+        },
+        "pull-hand": {
+          "start": [
+            16,
+            32
+          ],
+          "end": [
+            23,
+            32
+          ],
+          "length": 7,
+          "source_cell": {
+            "left": 512,
+            "top": 1024,
+            "width": 512,
+            "height": 512
+          },
+          "source_start": [
+            141.7,
+            242
+          ],
+          "source_end": [
+            329.06,
+            242
+          ],
+          "source_scale_once": 0.03736122971818958
+        }
+      },
+      "hashes": {
+        "bow-upper": "09f26649a9831607d80c8de431bde625cf5b2c3eb290a190417628db5cbd3646",
+        "pull-upper": "96bf79cfdf4186e0aa28ce332c2ca7d1893d1ec660a7ce8b8c348c7804eee8eb",
+        "bow-forearm": "f31dc4b9b6a586ae5c4c0c5fe33c5977ddbbdd5734608a2f3e3070dc669757ca",
+        "pull-forearm": "22258f9c75fab5d18577f20b2a391aa531d845d9a10343616f5bed4991efa81c",
+        "bow-hand": "0e8526d696afc8f28d043654a420fe3cc27d33e3d6da7b12c86ef3778c2656b1",
+        "pull-hand": "5863db43ced9c5dcf7068e9ea537db9a4eda2d46275113ce527a9bd9fe4b5ec1",
+        "base": "60bbe2f4e9b80b685b34ee0d0ba29fd519ca484dc263641d6020e30b4ef629bd",
+        "under": "6ecb0d44cda3a01ed285a212072898fab8de12475c3ca832f9e5ecb343de0f88",
+        "head": "acfa8b26fbad50463f12f9416c2902a8cc12fe1c777a6be5fa05d89cfe1ee302",
+        "hair": "ff43fd3fd503174b036ee28d7f1a908e6f8457ced57aa0ddc5bb7aab7f5287db",
+        "bow": "a7c000c8c9c2acb154420d174c8d06a3be89fd8926910ad5647037f0480f3fff",
+        "arrow": "cd3a29bb41ea00725a5e16104000ddb97a177fbbec9e4f3b3e13ebccc99c5942"
+      },
+      "removed_old_limb_pixels": 1891,
+      "arm_lengths": [
+        17,
+        19
+      ],
+      "hand_length": 7,
+      "bowPivot": [
+        199,
+        249
+      ],
+      "headPivot": [
+        175,
+        213
+      ],
+      "hairPivot": [
+        141,
+        155
+      ],
+      "source_atlas": "asset/character/icon/layers/archer/side/attack/rigid/limb-atlas.png",
+      "shared_limb_art": "front"
+    }
+  }
+}

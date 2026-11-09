@@ -1,0 +1,794 @@
+{
+  "id": "guardian",
+  "name": "수호기사",
+  "version": 8,
+  "attack_type": "shield_push",
+  "action_label": "방패 밀기",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "fps": 16,
+  "frames_per_direction": 16,
+  "duration_ms": 1000,
+  "impact_frame": 8,
+  "loop": false,
+  "return_to": "idle",
+  "mace_wrist_locked": true,
+  "shield_grip_follows_hand": true,
+  "grip_location": "center_handle",
+  "rear_shield_behind_body": true,
+  "arm_behind_shield": true,
+  "native_complete_arm": true,
+  "complete_shield_outline": true,
+  "shared_idle_appearance": true,
+  "rear_hand_visible": true,
+  "hair_last": true,
+  "shield_arm": "metadata/character/attack/guardian-shield-arm.json",
+  "shield_outline": "metadata/character/attack/guardian-shield-outline.json",
+  "consistency": "metadata/character/attack/guardian-consistency.json",
+  "source_layers_unchanged": true,
+  "motion": "metadata/character/attack/guardian-motion.json",
+  "animations": {
+    "front": {
+      "file": "asset/character/main/guardian/front/attack-sheet.png",
+      "sheet_size": [
+        1280,
+        1280
+      ],
+      "columns": 4,
+      "rows": 4,
+      "loop": false,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ]
+        }
+      ]
+    },
+    "back": {
+      "file": "asset/character/main/guardian/back/attack-sheet.png",
+      "sheet_size": [
+        1280,
+        1280
+      ],
+      "columns": 4,
+      "rows": 4,
+      "loop": false,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ]
+        }
+      ]
+    },
+    "right": {
+      "file": "asset/character/main/guardian/side/attack-sheet.png",
+      "sheet_size": [
+        1280,
+        1280
+      ],
+      "columns": 4,
+      "rows": 4,
+      "loop": false,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ]
+        }
+      ]
+    }
+  }
+}

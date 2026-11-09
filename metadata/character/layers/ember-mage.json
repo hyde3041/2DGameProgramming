@@ -1,0 +1,430 @@
+{
+  "character": "ember-mage",
+  "name": "화염술사",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "phase": "neutral",
+  "layer_type": "visible_pixel_layers",
+  "view_order": [
+    "front",
+    "side",
+    "back"
+  ],
+  "views": {
+    "front": {
+      "anchors": {
+        "head": [
+          155,
+          198
+        ],
+        "tail": [
+          152,
+          145
+        ],
+        "body": [
+          157,
+          233
+        ],
+        "shoulder_left": [
+          175,
+          220
+        ],
+        "shoulder_right": [
+          137,
+          220
+        ],
+        "wrist_left": [
+          189,
+          232
+        ],
+        "wrist_right": [
+          129,
+          233
+        ]
+      },
+      "layer_order": [
+        "legs",
+        "cloth-hem",
+        "body",
+        "arm-left",
+        "arm-right",
+        "gauntlet-left",
+        "gauntlet-right",
+        "mantle",
+        "head",
+        "hair-tail"
+      ],
+      "layer_files": {
+        "legs": "asset/character/icon/layers/ember-mage/front/legs.png",
+        "cloth-hem": "asset/character/icon/layers/ember-mage/front/cloth-hem.png",
+        "body": "asset/character/icon/layers/ember-mage/front/body.png",
+        "arm-left": "asset/character/icon/layers/ember-mage/front/arm-left.png",
+        "arm-right": "asset/character/icon/layers/ember-mage/front/arm-right.png",
+        "gauntlet-left": "asset/character/icon/layers/ember-mage/front/gauntlet-left.png",
+        "gauntlet-right": "asset/character/icon/layers/ember-mage/front/gauntlet-right.png",
+        "mantle": "asset/character/icon/layers/ember-mage/front/mantle.png",
+        "head": "asset/character/icon/layers/ember-mage/front/head.png",
+        "hair-tail": "asset/character/icon/layers/ember-mage/front/hair-tail.png"
+      },
+      "neutral": "asset/character/icon/layers/ember-mage/front/neutral.png",
+      "casting_underpaint": "asset/character/icon/layers/ember-mage/front/attack/casting-underpaint.png",
+      "casting_arm": {
+        "root": [
+          137,
+          220
+        ],
+        "elbow": [
+          132,
+          227
+        ],
+        "grip": [
+          127,
+          241
+        ]
+      },
+      "attack_hand_centers": [
+        [
+          127,
+          241
+        ],
+        [
+          125.03,
+          237.85
+        ],
+        [
+          123.07,
+          232.59
+        ],
+        [
+          121.02,
+          229.39
+        ],
+        [
+          119.69,
+          226.67
+        ],
+        [
+          119.42,
+          225.87
+        ],
+        [
+          119.33,
+          225.57
+        ],
+        [
+          119.94,
+          227.07
+        ],
+        [
+          121.92,
+          230.38
+        ],
+        [
+          127.69,
+          236.82
+        ],
+        [
+          128.12,
+          241.81
+        ],
+        [
+          127.88,
+          241.87
+        ],
+        [
+          126.88,
+          239.98
+        ],
+        [
+          125.92,
+          239.03
+        ],
+        [
+          125.97,
+          239.01
+        ],
+        [
+          127,
+          241
+        ]
+      ]
+    },
+    "side": {
+      "anchors": {
+        "head": [
+          164,
+          199
+        ],
+        "tail": [
+          140,
+          145
+        ],
+        "body": [
+          164,
+          233
+        ],
+        "shoulder_right": [
+          153,
+          219
+        ],
+        "wrist_right": [
+          153,
+          234
+        ],
+        "shoulder_left": null,
+        "wrist_left": null
+      },
+      "layer_order": [
+        "legs",
+        "cloth-hem",
+        "body",
+        "arm-right",
+        "gauntlet-right",
+        "mantle",
+        "head",
+        "hair-tail"
+      ],
+      "layer_files": {
+        "legs": "asset/character/icon/layers/ember-mage/side/legs.png",
+        "cloth-hem": "asset/character/icon/layers/ember-mage/side/cloth-hem.png",
+        "body": "asset/character/icon/layers/ember-mage/side/body.png",
+        "arm-right": "asset/character/icon/layers/ember-mage/side/arm-right.png",
+        "gauntlet-right": "asset/character/icon/layers/ember-mage/side/gauntlet-right.png",
+        "mantle": "asset/character/icon/layers/ember-mage/side/mantle.png",
+        "head": "asset/character/icon/layers/ember-mage/side/head.png",
+        "hair-tail": "asset/character/icon/layers/ember-mage/side/hair-tail.png"
+      },
+      "neutral": "asset/character/icon/layers/ember-mage/side/neutral.png",
+      "casting_underpaint": "asset/character/icon/layers/ember-mage/side/attack/casting-underpaint.png",
+      "casting_arm": {
+        "root": [
+          153,
+          219
+        ],
+        "elbow": [
+          152,
+          227
+        ],
+        "grip": [
+          154,
+          242
+        ]
+      },
+      "attack_hand_centers": [
+        [
+          154,
+          242
+        ],
+        [
+          156.98,
+          237.16
+        ],
+        [
+          162.61,
+          234.73
+        ],
+        [
+          168.74,
+          228.73
+        ],
+        [
+          171.01,
+          223.64
+        ],
+        [
+          171.68,
+          222.03
+        ],
+        [
+          172.77,
+          220.96
+        ],
+        [
+          173.26,
+          219.94
+        ],
+        [
+          173.87,
+          218.7
+        ],
+        [
+          177.08,
+          213.68
+        ],
+        [
+          177.34,
+          213.94
+        ],
+        [
+          176.97,
+          216.22
+        ],
+        [
+          173.62,
+          221.74
+        ],
+        [
+          167.71,
+          230.48
+        ],
+        [
+          158.99,
+          236.62
+        ],
+        [
+          154,
+          242
+        ]
+      ]
+    },
+    "back": {
+      "anchors": {
+        "head": [
+          163,
+          200
+        ],
+        "tail": [
+          154,
+          151
+        ],
+        "body": [
+          164,
+          233
+        ],
+        "shoulder_left": [
+          137,
+          220
+        ],
+        "shoulder_right": [
+          187,
+          219
+        ],
+        "wrist_left": [
+          130,
+          233
+        ],
+        "wrist_right": [
+          192,
+          233
+        ]
+      },
+      "layer_order": [
+        "legs",
+        "cloth-hem",
+        "body",
+        "arm-left",
+        "arm-right",
+        "gauntlet-left",
+        "gauntlet-right",
+        "mantle",
+        "head",
+        "hair-tail"
+      ],
+      "layer_files": {
+        "legs": "asset/character/icon/layers/ember-mage/back/legs.png",
+        "cloth-hem": "asset/character/icon/layers/ember-mage/back/cloth-hem.png",
+        "body": "asset/character/icon/layers/ember-mage/back/body.png",
+        "arm-left": "asset/character/icon/layers/ember-mage/back/arm-left.png",
+        "arm-right": "asset/character/icon/layers/ember-mage/back/arm-right.png",
+        "gauntlet-left": "asset/character/icon/layers/ember-mage/back/gauntlet-left.png",
+        "gauntlet-right": "asset/character/icon/layers/ember-mage/back/gauntlet-right.png",
+        "mantle": "asset/character/icon/layers/ember-mage/back/mantle.png",
+        "head": "asset/character/icon/layers/ember-mage/back/head.png",
+        "hair-tail": "asset/character/icon/layers/ember-mage/back/hair-tail.png"
+      },
+      "neutral": "asset/character/icon/layers/ember-mage/back/neutral.png",
+      "casting_underpaint": "asset/character/icon/layers/ember-mage/back/attack/casting-underpaint.png",
+      "casting_arm": {
+        "root": [
+          187,
+          219
+        ],
+        "elbow": [
+          190,
+          227
+        ],
+        "grip": [
+          196,
+          242
+        ]
+      },
+      "attack_hand_centers": [
+        [
+          196,
+          242
+        ],
+        [
+          197.97,
+          236.85
+        ],
+        [
+          201.46,
+          232.07
+        ],
+        [
+          204.49,
+          227.97
+        ],
+        [
+          206.06,
+          223.95
+        ],
+        [
+          206.43,
+          221.77
+        ],
+        [
+          206.56,
+          219.75
+        ],
+        [
+          206.55,
+          216.51
+        ],
+        [
+          205.74,
+          211.98
+        ],
+        [
+          203.14,
+          205.64
+        ],
+        [
+          201.56,
+          200.99
+        ],
+        [
+          201.57,
+          205.15
+        ],
+        [
+          205.88,
+          213.56
+        ],
+        [
+          206.25,
+          224.17
+        ],
+        [
+          201.25,
+          232.84
+        ],
+        [
+          196,
+          242
+        ]
+      ]
+    }
+  },
+  "cast_parts": {
+    "gauntlet": "asset/character/icon/layers/ember-mage/attack/casting-gauntlet.png",
+    "charge": "asset/character/icon/layers/ember-mage/attack/charge-orb.png",
+    "blast": "asset/character/icon/layers/ember-mage/attack/fire-blast.png"
+  }
+}

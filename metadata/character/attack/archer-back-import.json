@@ -1,0 +1,37 @@
+{
+  "id": "archer",
+  "direction": "back",
+  "enabled": true,
+  "file": "asset/character/icon/layers/archer/back/attack/imported/current-sheet.png",
+  "source_sheet": "asset/character/icon/layers/archer/back/attack/imported/source-clean.png",
+  "sheet_size": [
+    1280,
+    1280
+  ],
+  "cell_size": [
+    320,
+    320
+  ],
+  "source_cell_size": [
+    256,
+    256
+  ],
+  "uniform_import_scale": 1.25,
+  "pivot": [
+    160,
+    288
+  ],
+  "frames": 16,
+  "fps": 16,
+  "duration_ms": 1000,
+  "release_frame": 7,
+  "projectile_visual": false,
+  "logo_repair": {
+    "frame": 15,
+    "mode": "built-in image_gen",
+    "prompt": "Use case: precise-object-edit. Asset: a game sprite frame with a solid white background. Image 1 is the EDIT TARGET, a rear-facing dark teal haired female archer. Image 2 is a clean neighboring frame of the SAME character and is a REFERENCE for the hair strands. Remove the translucent gray four-point Gemini star/logo centered over the hair near x=548,y=548 in Image 1 (approximately x=448..646,y=454..650 on the 1024x1024 target). Restore only the dark teal hair and its curved strand lines beneath the logo, matching Image 2 and continuing the visible lines in Image 1. Keep Image 1's existing pose, body, head placement, outer hair silhouette, character proportions, bow, clothes, colors, soft sprite resolution and plain white background exactly registered. Preserve the whole 1024x1024 canvas and character location. No logo, star, text, watermark or extra detail. This is localized repair of the existing hair, not a character redesign. Return the repaired version of Image 1.",
+    "source_frame_mask_pixels": 1308,
+    "mask_path": "M136 109 C143 127 146 129 165 136 C146 143 143 147 136 165 C130 147 126 143 108 136 C126 130 130 126 136 109Z"
+  },
+  "white_background_to_alpha": true
+}

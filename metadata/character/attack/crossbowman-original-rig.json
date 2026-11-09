@@ -1,0 +1,629 @@
+{
+  "id": "crossbowman",
+  "version": 3,
+  "workflow": "original Idle head/neck RGBA fixed; original Idle and existing attack artwork cutouts; no generated or resized torso",
+  "cell_size": [
+    320,
+    320
+  ],
+  "frames": 16,
+  "fps": 16,
+  "release_frame": 7,
+  "views": {
+    "front": {
+      "pivot": [
+        136,
+        216
+      ],
+      "support": [
+        181,
+        226
+      ],
+      "elbow": [
+        185,
+        245
+      ],
+      "muzzle": [
+        209,
+        261
+      ],
+      "angle": -27,
+      "masks": [
+        [
+          [
+            124,
+            211
+          ],
+          [
+            140,
+            211
+          ],
+          [
+            143,
+            223
+          ],
+          [
+            153,
+            229
+          ],
+          [
+            163,
+            239
+          ],
+          [
+            158,
+            248
+          ],
+          [
+            143,
+            250
+          ],
+          [
+            127,
+            242
+          ],
+          [
+            120,
+            234
+          ],
+          [
+            122,
+            223
+          ]
+        ],
+        [
+          [
+            173,
+            222
+          ],
+          [
+            183,
+            222
+          ],
+          [
+            191,
+            233
+          ],
+          [
+            196,
+            253
+          ],
+          [
+            193,
+            264
+          ],
+          [
+            181,
+            257
+          ],
+          [
+            176,
+            240
+          ]
+        ],
+        [
+          [
+            141,
+            232
+          ],
+          [
+            157,
+            231
+          ],
+          [
+            177,
+            238
+          ],
+          [
+            197,
+            247
+          ],
+          [
+            212,
+            256
+          ],
+          [
+            218,
+            265
+          ],
+          [
+            214,
+            273
+          ],
+          [
+            202,
+            273
+          ],
+          [
+            185,
+            265
+          ],
+          [
+            173,
+            260
+          ],
+          [
+            151,
+            248
+          ],
+          [
+            140,
+            243
+          ]
+        ]
+      ],
+      "torso": [
+        [
+          144,
+          217
+        ],
+        [
+          171,
+          218
+        ],
+        [
+          184,
+          233
+        ],
+        [
+          190,
+          258
+        ],
+        [
+          155,
+          267
+        ],
+        [
+          132,
+          260
+        ],
+        [
+          144,
+          244
+        ]
+      ],
+      "connector": [
+        [
+          173,
+          222
+        ],
+        [
+          182,
+          222
+        ],
+        [
+          189,
+          230
+        ],
+        [
+          191,
+          245
+        ],
+        [
+          183,
+          248
+        ],
+        [
+          176,
+          237
+        ]
+      ],
+      "parts": {
+        "neutral": "asset/character/icon/layers/crossbowman/front/attack/original-rig/neutral.png",
+        "base": "asset/character/icon/layers/crossbowman/front/attack/original-rig/base.png",
+        "moving": "asset/character/icon/layers/crossbowman/front/attack/original-rig/moving.png",
+        "head": "asset/character/icon/layers/crossbowman/front/attack/original-rig/head.png",
+        "under": "asset/character/icon/layers/crossbowman/front/attack/original-rig/under.png",
+        "connector": "asset/character/icon/layers/crossbowman/front/attack/original-rig/connector.png",
+        "scarf": "asset/character/icon/layers/crossbowman/front/attack/original-rig/scarf.png"
+      },
+      "source": "asset/character/main/crossbowman/front/idle-sheet.png",
+      "original_pixels": 11840,
+      "moving_pixels": 2302,
+      "hidden_fill_pixels": 940,
+      "scale": 1
+    },
+    "back": {
+      "pivot": [
+        180,
+        216
+      ],
+      "support": [
+        142,
+        223
+      ],
+      "elbow": [
+        145,
+        238
+      ],
+      "muzzle": [
+        212,
+        207
+      ],
+      "angle": 0,
+      "masks": [
+        [
+          [
+            174,
+            211
+          ],
+          [
+            186,
+            212
+          ],
+          [
+            194,
+            221
+          ],
+          [
+            198,
+            235
+          ],
+          [
+            188,
+            244
+          ],
+          [
+            178,
+            241
+          ],
+          [
+            173,
+            229
+          ]
+        ],
+        [
+          [
+            133,
+            220
+          ],
+          [
+            145,
+            219
+          ],
+          [
+            153,
+            228
+          ],
+          [
+            155,
+            241
+          ],
+          [
+            143,
+            245
+          ],
+          [
+            134,
+            238
+          ]
+        ],
+        [
+          [
+            124,
+            214
+          ],
+          [
+            142,
+            208
+          ],
+          [
+            166,
+            209
+          ],
+          [
+            185,
+            214
+          ],
+          [
+            200,
+            221
+          ],
+          [
+            202,
+            232
+          ],
+          [
+            191,
+            239
+          ],
+          [
+            172,
+            230
+          ],
+          [
+            150,
+            225
+          ],
+          [
+            128,
+            227
+          ]
+        ]
+      ],
+      "torso": [
+        [
+          146,
+          209
+        ],
+        [
+          175,
+          209
+        ],
+        [
+          183,
+          236
+        ],
+        [
+          201,
+          262
+        ],
+        [
+          160,
+          269
+        ],
+        [
+          135,
+          257
+        ],
+        [
+          146,
+          236
+        ]
+      ],
+      "connector": [
+        [
+          134,
+          219
+        ],
+        [
+          144,
+          219
+        ],
+        [
+          151,
+          227
+        ],
+        [
+          153,
+          241
+        ],
+        [
+          142,
+          243
+        ],
+        [
+          136,
+          234
+        ]
+      ],
+      "parts": {
+        "neutral": "asset/character/icon/layers/crossbowman/back/attack/original-rig/neutral.png",
+        "base": "asset/character/icon/layers/crossbowman/back/attack/original-rig/base.png",
+        "moving": "asset/character/icon/layers/crossbowman/back/attack/original-rig/moving.png",
+        "head": "asset/character/icon/layers/crossbowman/back/attack/original-rig/head.png",
+        "under": "asset/character/icon/layers/crossbowman/back/attack/original-rig/under.png",
+        "connector": "asset/character/icon/layers/crossbowman/back/attack/original-rig/connector.png",
+        "scarf": "asset/character/icon/layers/crossbowman/back/attack/original-rig/scarf.png"
+      },
+      "source": "asset/character/main/crossbowman/back/idle-sheet.png",
+      "original_pixels": 11540,
+      "moving_pixels": 1133,
+      "hidden_fill_pixels": 289,
+      "scale": 1
+    },
+    "side": {
+      "pivot": [
+        150,
+        217
+      ],
+      "support": [
+        183,
+        225
+      ],
+      "elbow": [
+        190,
+        241
+      ],
+      "muzzle": [
+        215,
+        248
+      ],
+      "angle": -22,
+      "masks": [
+        [
+          [
+            143,
+            211
+          ],
+          [
+            155,
+            211
+          ],
+          [
+            161,
+            219
+          ],
+          [
+            169,
+            225
+          ],
+          [
+            179,
+            234
+          ],
+          [
+            177,
+            244
+          ],
+          [
+            162,
+            248
+          ],
+          [
+            148,
+            241
+          ],
+          [
+            143,
+            230
+          ]
+        ],
+        [
+          [
+            176,
+            222
+          ],
+          [
+            186,
+            222
+          ],
+          [
+            196,
+            232
+          ],
+          [
+            207,
+            239
+          ],
+          [
+            217,
+            245
+          ],
+          [
+            215,
+            254
+          ],
+          [
+            200,
+            253
+          ],
+          [
+            183,
+            244
+          ],
+          [
+            177,
+            233
+          ]
+        ],
+        [
+          [
+            163,
+            230
+          ],
+          [
+            176,
+            228
+          ],
+          [
+            192,
+            232
+          ],
+          [
+            212,
+            241
+          ],
+          [
+            224,
+            246
+          ],
+          [
+            225,
+            256
+          ],
+          [
+            213,
+            262
+          ],
+          [
+            199,
+            256
+          ],
+          [
+            188,
+            249
+          ],
+          [
+            169,
+            246
+          ],
+          [
+            159,
+            242
+          ]
+        ]
+      ],
+      "torso": [
+        [
+          157,
+          214
+        ],
+        [
+          178,
+          218
+        ],
+        [
+          191,
+          239
+        ],
+        [
+          201,
+          261
+        ],
+        [
+          175,
+          269
+        ],
+        [
+          142,
+          263
+        ],
+        [
+          155,
+          241
+        ]
+      ],
+      "connector": [
+        [
+          176,
+          221
+        ],
+        [
+          186,
+          222
+        ],
+        [
+          194,
+          231
+        ],
+        [
+          198,
+          242
+        ],
+        [
+          187,
+          248
+        ],
+        [
+          180,
+          235
+        ]
+      ],
+      "parts": {
+        "neutral": "asset/character/icon/layers/crossbowman/side/attack/original-rig/neutral.png",
+        "base": "asset/character/icon/layers/crossbowman/side/attack/original-rig/base.png",
+        "moving": "asset/character/icon/layers/crossbowman/side/attack/original-rig/moving.png",
+        "head": "asset/character/icon/layers/crossbowman/side/attack/original-rig/head.png",
+        "under": "asset/character/icon/layers/crossbowman/side/attack/original-rig/under.png",
+        "connector": "asset/character/icon/layers/crossbowman/side/attack/original-rig/connector.png",
+        "scarf": "asset/character/icon/layers/crossbowman/side/attack/original-rig/scarf.png"
+      },
+      "source": "asset/character/main/crossbowman/side/idle-sheet.png",
+      "original_pixels": 11609,
+      "moving_pixels": 1506,
+      "hidden_fill_pixels": 643,
+      "scale": 1
+    }
+  }
+}
