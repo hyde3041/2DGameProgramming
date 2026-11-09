@@ -25,7 +25,7 @@
       },
       "sources": {
         "idle": {
-          "input": "asset/character/main/crossbowman/front/idle-sheet.png",
+          "input": "asset/character/main/3-crossbowman/front/idle-sheet.png",
           "original_rgba_sha256": "c035d04c588b86a7aa0a63b778bf8da99eef9b1b36e326f28523182a035e4581",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -336,7 +336,7 @@
       },
       "sources": {
         "idle": {
-          "input": "asset/character/main/crossbowman/back/idle-sheet.png",
+          "input": "asset/character/main/3-crossbowman/back/idle-sheet.png",
           "original_rgba_sha256": "e45f5e74e1d6fff6b029d7246242599201fe7ce0edd8c039d43426db41420328",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -647,7 +647,7 @@
       },
       "sources": {
         "idle": {
-          "input": "asset/character/main/crossbowman/side/idle-sheet.png",
+          "input": "asset/character/main/3-crossbowman/side/idle-sheet.png",
           "original_rgba_sha256": "174769435510b5c654ed3380149a0f07e599f963edba36bbad954388e3f1ca99",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [

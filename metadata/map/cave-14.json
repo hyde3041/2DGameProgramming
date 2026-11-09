@@ -1,8 +1,8 @@
 {
-  "id": "alchemy-laboratory",
-  "name": "연금술 실험실",
-  "number": 18,
-  "file": "asset/map/stage/main/alchemy-laboratory.png",
+  "id": "cave-14",
+  "name": "대장간",
+  "number": 14,
+  "file": "asset/map/stage/main/cave/cave-14.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -184,51 +184,6 @@
       "id": "3,0",
       "column": 3,
       "row": 0,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        240,
-        76,
-        64,
-        64
-      ],
-      "surface_rect": [
-        240,
-        76,
-        64,
-        64
-      ],
-      "draw_rect": [
-        240,
-        76,
-        64,
-        64
-      ],
-      "canvas_center": [
-        272,
-        108
-      ],
-      "pico2d_center": [
-        272,
-        492
-      ],
-      "pico2d_surface_rect": [
-        240,
-        460,
-        64,
-        64
-      ],
-      "prop": "물약 탁자",
-      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-0.png"
-    },
-    {
-      "id": "4,0",
-      "column": 4,
-      "row": 0,
       "type": ".",
       "floor": 1,
       "height_level": 0,
@@ -236,6 +191,49 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
+        240,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        240,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        240,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        272,
+        108
+      ],
+      "pico2d_center": [
+        272,
+        492
+      ],
+      "pico2d_surface_rect": [
+        240,
+        460,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "4,0",
+      "column": 4,
+      "row": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
         304,
         76,
         64,
@@ -243,27 +241,27 @@
       ],
       "surface_rect": [
         304,
-        76,
+        60,
         64,
         64
       ],
       "draw_rect": [
         304,
-        76,
+        60,
         64,
-        64
+        80
       ],
       "canvas_center": [
         336,
-        108
+        92
       ],
       "pico2d_center": [
         336,
-        492
+        508
       ],
       "pico2d_surface_rect": [
         304,
-        460,
+        476,
         64,
         64
       ]
@@ -315,12 +313,12 @@
       "id": "6,0",
       "column": 6,
       "row": 0,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         432,
         76,
@@ -329,27 +327,27 @@
       ],
       "surface_rect": [
         432,
-        60,
+        76,
         64,
         64
       ],
       "draw_rect": [
         432,
-        60,
+        76,
         64,
-        80
+        64
       ],
       "canvas_center": [
         464,
-        92
+        108
       ],
       "pico2d_center": [
         464,
-        508
+        492
       ],
       "pico2d_surface_rect": [
         432,
-        476,
+        460,
         64,
         64
       ]
@@ -358,12 +356,12 @@
       "id": "7,0",
       "column": 7,
       "row": 0,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         496,
         76,
@@ -395,9 +393,7 @@
         460,
         64,
         64
-      ],
-      "hazard": "마력 유출",
-      "hazard_file": "asset/map/stage/icon/themes/alchemy-laboratory/hazard.png"
+      ]
     },
     {
       "id": "8,0",
@@ -667,51 +663,6 @@
       "id": "3,1",
       "column": 3,
       "row": 1,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        240,
-        140,
-        64,
-        64
-      ],
-      "surface_rect": [
-        240,
-        140,
-        64,
-        64
-      ],
-      "draw_rect": [
-        240,
-        140,
-        64,
-        64
-      ],
-      "canvas_center": [
-        272,
-        172
-      ],
-      "pico2d_center": [
-        272,
-        428
-      ],
-      "pico2d_surface_rect": [
-        240,
-        396,
-        64,
-        64
-      ],
-      "prop": "돌 가마솥",
-      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-1.png"
-    },
-    {
-      "id": "4,1",
-      "column": 4,
-      "row": 1,
       "type": ".",
       "floor": 1,
       "height_level": 0,
@@ -719,6 +670,49 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
+        240,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        240,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        240,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        272,
+        172
+      ],
+      "pico2d_center": [
+        272,
+        428
+      ],
+      "pico2d_surface_rect": [
+        240,
+        396,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "4,1",
+      "column": 4,
+      "row": 1,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
         304,
         140,
         64,
@@ -726,27 +720,27 @@
       ],
       "surface_rect": [
         304,
-        140,
+        124,
         64,
         64
       ],
       "draw_rect": [
         304,
-        140,
+        124,
         64,
-        64
+        80
       ],
       "canvas_center": [
         336,
-        172
+        156
       ],
       "pico2d_center": [
         336,
-        428
+        444
       ],
       "pico2d_surface_rect": [
         304,
-        396,
+        412,
         64,
         64
       ]
@@ -841,12 +835,12 @@
       "id": "7,1",
       "column": 7,
       "row": 1,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         496,
         140,
@@ -855,27 +849,27 @@
       ],
       "surface_rect": [
         496,
-        140,
+        124,
         64,
         64
       ],
       "draw_rect": [
         496,
-        140,
+        124,
         64,
-        64
+        80
       ],
       "canvas_center": [
         528,
-        172
+        156
       ],
       "pico2d_center": [
         528,
-        428
+        444
       ],
       "pico2d_surface_rect": [
         496,
-        396,
+        412,
         64,
         64
       ]
@@ -927,12 +921,12 @@
       "id": "9,1",
       "column": 9,
       "row": 1,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         624,
         140,
@@ -964,9 +958,7 @@
         396,
         64,
         64
-      ],
-      "prop": "재료 통",
-      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-2.png"
+      ]
     },
     {
       "id": "10,1",
@@ -1064,12 +1056,12 @@
       "id": "1,2",
       "column": 1,
       "row": 2,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         112,
         204,
@@ -1101,13 +1093,56 @@
         332,
         64,
         64
-      ],
-      "hazard": "마력 유출",
-      "hazard_file": "asset/map/stage/icon/themes/alchemy-laboratory/hazard.png"
+      ]
     },
     {
       "id": "2,2",
       "column": 2,
+      "row": 2,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        176,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        204,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        204,
+        64,
+        64
+      ],
+      "canvas_center": [
+        208,
+        236
+      ],
+      "pico2d_center": [
+        208,
+        364
+      ],
+      "pico2d_surface_rect": [
+        176,
+        332,
+        64,
+        64
+      ],
+      "hazard": "달아오른 철망",
+      "hazard_file": "asset/map/stage/icon/themes/dwarven-forge/hazard.png"
+    },
+    {
+      "id": "3,2",
+      "column": 3,
       "row": 2,
       "type": ".",
       "floor": 1,
@@ -1116,82 +1151,37 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
-        176,
+        240,
         204,
         64,
         64
       ],
       "surface_rect": [
-        176,
+        240,
         204,
         64,
         64
       ],
       "draw_rect": [
-        176,
+        240,
         204,
         64,
         64
       ],
       "canvas_center": [
-        208,
+        272,
         236
       ],
       "pico2d_center": [
-        208,
+        272,
         364
       ],
       "pico2d_surface_rect": [
-        176,
+        240,
         332,
         64,
         64
       ]
-    },
-    {
-      "id": "3,2",
-      "column": 3,
-      "row": 2,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        240,
-        204,
-        64,
-        64
-      ],
-      "surface_rect": [
-        240,
-        204,
-        64,
-        64
-      ],
-      "draw_rect": [
-        240,
-        204,
-        64,
-        64
-      ],
-      "canvas_center": [
-        272,
-        236
-      ],
-      "pico2d_center": [
-        272,
-        364
-      ],
-      "pico2d_surface_rect": [
-        240,
-        332,
-        64,
-        64
-      ],
-      "prop": "물약 탁자",
-      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-0.png"
     },
     {
       "id": "4,2",
@@ -1240,12 +1230,12 @@
       "id": "5,2",
       "column": 5,
       "row": 2,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         204,
@@ -1277,18 +1267,20 @@
         332,
         64,
         64
-      ]
+      ],
+      "hazard": "달아오른 철망",
+      "hazard_file": "asset/map/stage/icon/themes/dwarven-forge/hazard.png"
     },
     {
       "id": "6,2",
       "column": 6,
       "row": 2,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         432,
         204,
@@ -1297,27 +1289,27 @@
       ],
       "surface_rect": [
         432,
-        204,
+        188,
         64,
         64
       ],
       "draw_rect": [
         432,
-        204,
+        188,
         64,
-        64
+        80
       ],
       "canvas_center": [
         464,
-        236
+        220
       ],
       "pico2d_center": [
         464,
-        364
+        380
       ],
       "pico2d_surface_rect": [
         432,
-        332,
+        348,
         64,
         64
       ]
@@ -1326,12 +1318,12 @@
       "id": "7,2",
       "column": 7,
       "row": 2,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         496,
         204,
@@ -1340,27 +1332,27 @@
       ],
       "surface_rect": [
         496,
-        204,
+        188,
         64,
         64
       ],
       "draw_rect": [
         496,
-        204,
+        188,
         64,
-        64
+        80
       ],
       "canvas_center": [
         528,
-        236
+        220
       ],
       "pico2d_center": [
         528,
-        364
+        380
       ],
       "pico2d_surface_rect": [
         496,
-        332,
+        348,
         64,
         64
       ]
@@ -1369,12 +1361,12 @@
       "id": "8,2",
       "column": 8,
       "row": 2,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         560,
         204,
@@ -1383,41 +1375,43 @@
       ],
       "surface_rect": [
         560,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         560,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         592,
-        220
+        236
       ],
       "pico2d_center": [
         592,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         560,
-        348,
+        332,
         64,
         64
-      ]
+      ],
+      "hazard": "달아오른 철망",
+      "hazard_file": "asset/map/stage/icon/themes/dwarven-forge/hazard.png"
     },
     {
       "id": "9,2",
       "column": 9,
       "row": 2,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         624,
         204,
@@ -1426,27 +1420,27 @@
       ],
       "surface_rect": [
         624,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         624,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         656,
-        220
+        236
       ],
       "pico2d_center": [
         656,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         624,
-        348,
+        332,
         64,
         64
       ]
@@ -1547,7 +1541,7 @@
       "id": "1,3",
       "column": 1,
       "row": 3,
-      "type": "~",
+      "type": "O",
       "floor": null,
       "height_level": 0,
       "walkable": false,
@@ -1585,19 +1579,19 @@
         64,
         64
       ],
-      "hazard": "마력 유출",
-      "hazard_file": "asset/map/stage/icon/themes/alchemy-laboratory/hazard.png"
+      "prop": "모루",
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-0.png"
     },
     {
       "id": "2,3",
       "column": 2,
       "row": 3,
-      "type": ".",
-      "floor": 1,
+      "type": "O",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         176,
         268,
@@ -1629,7 +1623,9 @@
         268,
         64,
         64
-      ]
+      ],
+      "prop": "소형 화로",
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-1.png"
     },
     {
       "id": "3,3",
@@ -1678,12 +1674,12 @@
       "id": "4,3",
       "column": 4,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         304,
         268,
@@ -1692,41 +1688,43 @@
       ],
       "surface_rect": [
         304,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         304,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         336,
-        284
+        300
       ],
       "pico2d_center": [
         336,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         304,
-        284,
+        268,
         64,
         64
-      ]
+      ],
+      "prop": "석탄 상자",
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-2.png"
     },
     {
       "id": "5,3",
       "column": 5,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         268,
@@ -1735,41 +1733,43 @@
       ],
       "surface_rect": [
         368,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         368,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         400,
-        284
+        300
       ],
       "pico2d_center": [
         400,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         368,
-        284,
+        268,
         64,
         64
-      ]
+      ],
+      "prop": "소형 화로",
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-1.png"
     },
     {
       "id": "6,3",
       "column": 6,
       "row": 3,
-      "type": ".",
-      "floor": 1,
+      "type": "O",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         432,
         268,
@@ -1801,7 +1801,9 @@
         268,
         64,
         64
-      ]
+      ],
+      "prop": "소형 화로",
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-1.png"
     },
     {
       "id": "7,3",
@@ -1850,12 +1852,12 @@
       "id": "8,3",
       "column": 8,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         560,
         268,
@@ -1864,41 +1866,43 @@
       ],
       "surface_rect": [
         560,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         560,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         592,
-        284
+        300
       ],
       "pico2d_center": [
         592,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         560,
-        284,
+        268,
         64,
         64
-      ]
+      ],
+      "prop": "석탄 상자",
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-2.png"
     },
     {
       "id": "9,3",
       "column": 9,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         624,
         268,
@@ -1907,30 +1911,32 @@
       ],
       "surface_rect": [
         624,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         624,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         656,
-        284
+        300
       ],
       "pico2d_center": [
         656,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         624,
-        284,
+        268,
         64,
         64
-      ]
+      ],
+      "prop": "모루",
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-0.png"
     },
     {
       "id": "10,3",
@@ -2022,12 +2028,12 @@
       "id": "1,4",
       "column": 1,
       "row": 4,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         112,
         332,
@@ -2059,20 +2065,18 @@
         204,
         64,
         64
-      ],
-      "prop": "돌 가마솥",
-      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-1.png"
+      ]
     },
     {
       "id": "2,4",
       "column": 2,
       "row": 4,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         176,
         332,
@@ -2081,41 +2085,43 @@
       ],
       "surface_rect": [
         176,
-        316,
+        332,
         64,
         64
       ],
       "draw_rect": [
         176,
-        316,
+        332,
         64,
-        80
+        64
       ],
       "canvas_center": [
         208,
-        348
+        364
       ],
       "pico2d_center": [
         208,
-        252
+        236
       ],
       "pico2d_surface_rect": [
         176,
-        220,
+        204,
         64,
         64
-      ]
+      ],
+      "hazard": "달아오른 철망",
+      "hazard_file": "asset/map/stage/icon/themes/dwarven-forge/hazard.png"
     },
     {
       "id": "3,4",
       "column": 3,
       "row": 4,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         240,
         332,
@@ -2124,27 +2130,27 @@
       ],
       "surface_rect": [
         240,
-        316,
+        332,
         64,
         64
       ],
       "draw_rect": [
         240,
-        316,
+        332,
         64,
-        80
+        64
       ],
       "canvas_center": [
         272,
-        348
+        364
       ],
       "pico2d_center": [
         272,
-        252
+        236
       ],
       "pico2d_surface_rect": [
         240,
-        220,
+        204,
         64,
         64
       ]
@@ -2196,12 +2202,12 @@
       "id": "5,4",
       "column": 5,
       "row": 4,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         332,
@@ -2233,7 +2239,9 @@
         204,
         64,
         64
-      ]
+      ],
+      "hazard": "달아오른 철망",
+      "hazard_file": "asset/map/stage/icon/themes/dwarven-forge/hazard.png"
     },
     {
       "id": "6,4",
@@ -2282,51 +2290,6 @@
       "id": "7,4",
       "column": 7,
       "row": 4,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        496,
-        332,
-        64,
-        64
-      ],
-      "surface_rect": [
-        496,
-        332,
-        64,
-        64
-      ],
-      "draw_rect": [
-        496,
-        332,
-        64,
-        64
-      ],
-      "canvas_center": [
-        528,
-        364
-      ],
-      "pico2d_center": [
-        528,
-        236
-      ],
-      "pico2d_surface_rect": [
-        496,
-        204,
-        64,
-        64
-      ],
-      "prop": "재료 통",
-      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-2.png"
-    },
-    {
-      "id": "8,4",
-      "column": 8,
-      "row": 4,
       "type": ".",
       "floor": 1,
       "height_level": 0,
@@ -2334,6 +2297,49 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
+        496,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        332,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        332,
+        64,
+        64
+      ],
+      "canvas_center": [
+        528,
+        364
+      ],
+      "pico2d_center": [
+        528,
+        236
+      ],
+      "pico2d_surface_rect": [
+        496,
+        204,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "8,4",
+      "column": 8,
+      "row": 4,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
         560,
         332,
         64,
@@ -2364,7 +2370,9 @@
         204,
         64,
         64
-      ]
+      ],
+      "hazard": "달아오른 철망",
+      "hazard_file": "asset/map/stage/icon/themes/dwarven-forge/hazard.png"
     },
     {
       "id": "9,4",
@@ -2505,12 +2513,12 @@
       "id": "1,5",
       "column": 1,
       "row": 5,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         112,
         396,
@@ -2542,9 +2550,7 @@
         140,
         64,
         64
-      ],
-      "prop": "물약 탁자",
-      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-0.png"
+      ]
     },
     {
       "id": "2,5",
@@ -2636,12 +2642,12 @@
       "id": "4,5",
       "column": 4,
       "row": 5,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         304,
         396,
@@ -2673,20 +2679,18 @@
         140,
         64,
         64
-      ],
-      "hazard": "마력 유출",
-      "hazard_file": "asset/map/stage/icon/themes/alchemy-laboratory/hazard.png"
+      ]
     },
     {
       "id": "5,5",
       "column": 5,
       "row": 5,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         368,
         396,
@@ -2718,9 +2722,7 @@
         140,
         64,
         64
-      ],
-      "hazard": "마력 유출",
-      "hazard_file": "asset/map/stage/icon/themes/alchemy-laboratory/hazard.png"
+      ]
     },
     {
       "id": "6,5",
@@ -2769,12 +2771,12 @@
       "id": "7,5",
       "column": 7,
       "row": 5,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         496,
         396,
@@ -2806,9 +2808,7 @@
         140,
         64,
         64
-      ],
-      "prop": "돌 가마솥",
-      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-1.png"
+      ]
     },
     {
       "id": "8,5",
@@ -3035,12 +3035,12 @@
       "id": "2,6",
       "column": 2,
       "row": 6,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         176,
         460,
@@ -3049,27 +3049,27 @@
       ],
       "surface_rect": [
         176,
-        460,
+        444,
         64,
         64
       ],
       "draw_rect": [
         176,
-        460,
+        444,
         64,
-        64
+        80
       ],
       "canvas_center": [
         208,
-        492
+        476
       ],
       "pico2d_center": [
         208,
-        108
+        124
       ],
       "pico2d_surface_rect": [
         176,
-        76,
+        92,
         64,
         64
       ]
@@ -3078,12 +3078,12 @@
       "id": "3,6",
       "column": 3,
       "row": 6,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         240,
         460,
@@ -3092,27 +3092,27 @@
       ],
       "surface_rect": [
         240,
-        460,
+        444,
         64,
         64
       ],
       "draw_rect": [
         240,
-        460,
+        444,
         64,
-        64
+        80
       ],
       "canvas_center": [
         272,
-        492
+        476
       ],
       "pico2d_center": [
         272,
-        108
+        124
       ],
       "pico2d_surface_rect": [
         240,
-        76,
+        92,
         64,
         64
       ]
@@ -3207,49 +3207,6 @@
       "id": "6,6",
       "column": 6,
       "row": 6,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
-      "base_rect": [
-        432,
-        460,
-        64,
-        64
-      ],
-      "surface_rect": [
-        432,
-        460,
-        64,
-        64
-      ],
-      "draw_rect": [
-        432,
-        460,
-        64,
-        64
-      ],
-      "canvas_center": [
-        464,
-        492
-      ],
-      "pico2d_center": [
-        464,
-        108
-      ],
-      "pico2d_surface_rect": [
-        432,
-        76,
-        64,
-        64
-      ]
-    },
-    {
-      "id": "7,6",
-      "column": 7,
-      "row": 6,
       "type": "O",
       "floor": null,
       "height_level": 0,
@@ -3257,43 +3214,43 @@
       "deployable": false,
       "placement": null,
       "base_rect": [
-        496,
+        432,
         460,
         64,
         64
       ],
       "surface_rect": [
-        496,
+        432,
         460,
         64,
         64
       ],
       "draw_rect": [
-        496,
+        432,
         460,
         64,
         64
       ],
       "canvas_center": [
-        528,
+        464,
         492
       ],
       "pico2d_center": [
-        528,
+        464,
         108
       ],
       "pico2d_surface_rect": [
-        496,
+        432,
         76,
         64,
         64
       ],
-      "prop": "재료 통",
-      "prop_file": "asset/map/stage/icon/themes/alchemy-laboratory/prop-2.png"
+      "prop": "소형 화로",
+      "prop_file": "asset/map/stage/icon/themes/dwarven-forge/prop-1.png"
     },
     {
-      "id": "8,6",
-      "column": 8,
+      "id": "7,6",
+      "column": 7,
       "row": 6,
       "type": ".",
       "floor": 1,
@@ -3302,6 +3259,49 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
+        496,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        528,
+        492
+      ],
+      "pico2d_center": [
+        528,
+        108
+      ],
+      "pico2d_surface_rect": [
+        496,
+        76,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "8,6",
+      "column": 8,
+      "row": 6,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
         560,
         460,
         64,
@@ -3309,27 +3309,27 @@
       ],
       "surface_rect": [
         560,
-        460,
+        444,
         64,
         64
       ],
       "draw_rect": [
         560,
-        460,
+        444,
         64,
-        64
+        80
       ],
       "canvas_center": [
         592,
-        492
+        476
       ],
       "pico2d_center": [
         592,
-        108
+        124
       ],
       "pico2d_surface_rect": [
         560,
-        76,
+        92,
         64,
         64
       ]
@@ -3338,12 +3338,12 @@
       "id": "9,6",
       "column": 9,
       "row": 6,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         624,
         460,
@@ -3352,27 +3352,27 @@
       ],
       "surface_rect": [
         624,
-        460,
+        444,
         64,
         64
       ],
       "draw_rect": [
         624,
-        460,
+        444,
         64,
-        64
+        80
       ],
       "canvas_center": [
         656,
-        492
+        476
       ],
       "pico2d_center": [
         656,
-        108
+        124
       ],
       "pico2d_surface_rect": [
         624,
-        76,
+        92,
         64,
         64
       ]
@@ -3431,88 +3431,72 @@
           1
         ],
         [
-          0,
-          2
-        ],
-        [
-          0,
-          3
-        ],
-        [
-          0,
-          4
-        ],
-        [
-          0,
-          5
-        ],
-        [
-          0,
-          6
-        ],
-        [
           1,
-          6
+          1
         ],
         [
           2,
-          6
+          1
         ],
         [
           3,
-          6
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
         ],
         [
           4,
-          6
+          4
+        ],
+        [
+          4,
+          5
         ],
         [
           5,
-          6
-        ],
-        [
-          6,
-          6
+          5
         ],
         [
           6,
           5
         ],
         [
-          6,
-          4
-        ],
-        [
-          6,
-          3
-        ],
-        [
           7,
-          3
-        ],
-        [
-          7,
-          2
-        ],
-        [
-          7,
-          1
+          5
         ],
         [
           8,
-          1
-        ],
-        [
-          8,
-          0
+          5
         ],
         [
           9,
-          0
+          5
         ],
         [
           10,
-          0
+          5
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          2
         ],
         [
           10,
@@ -3529,104 +3513,56 @@
           1
         ],
         [
-          0,
-          2
-        ],
-        [
-          0,
-          3
-        ],
-        [
-          0,
-          4
-        ],
-        [
-          0,
-          5
-        ],
-        [
-          0,
-          6
-        ],
-        [
           1,
-          6
+          1
         ],
         [
           2,
-          6
+          1
         ],
         [
           3,
-          6
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
         ],
         [
           4,
-          6
+          4
+        ],
+        [
+          4,
+          5
         ],
         [
           5,
-          6
-        ],
-        [
-          6,
-          6
+          5
         ],
         [
           6,
           5
         ],
         [
-          6,
-          4
-        ],
-        [
-          6,
-          3
-        ],
-        [
           7,
-          3
-        ],
-        [
-          7,
-          2
-        ],
-        [
-          7,
-          1
+          5
         ],
         [
           8,
-          1
-        ],
-        [
-          8,
-          0
+          5
         ],
         [
           9,
-          0
-        ],
-        [
-          10,
-          0
-        ],
-        [
-          10,
-          1
-        ],
-        [
-          10,
-          2
-        ],
-        [
-          10,
-          3
-        ],
-        [
-          10,
-          4
+          5
         ],
         [
           10,
@@ -3644,79 +3580,79 @@
         ],
         [
           0,
-          4
-        ],
-        [
-          0,
-          5
-        ],
-        [
-          0,
-          6
-        ],
-        [
-          1,
-          6
-        ],
-        [
-          2,
-          6
-        ],
-        [
-          3,
-          6
-        ],
-        [
-          4,
-          6
-        ],
-        [
-          5,
-          6
-        ],
-        [
-          6,
-          6
-        ],
-        [
-          6,
-          5
-        ],
-        [
-          6,
-          4
-        ],
-        [
-          6,
-          3
-        ],
-        [
-          7,
-          3
-        ],
-        [
-          7,
           2
         ],
         [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
           7,
-          1
+          5
         ],
         [
           8,
-          1
-        ],
-        [
-          8,
-          0
+          5
         ],
         [
           9,
-          0
+          5
         ],
         [
           10,
-          0
+          5
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          2
         ],
         [
           10,
@@ -3734,95 +3670,63 @@
         ],
         [
           0,
-          4
-        ],
-        [
-          0,
-          5
-        ],
-        [
-          0,
-          6
+          2
         ],
         [
           1,
-          6
+          2
+        ],
+        [
+          1,
+          1
         ],
         [
           2,
-          6
+          1
         ],
         [
           3,
-          6
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
         ],
         [
           4,
-          6
+          4
+        ],
+        [
+          4,
+          5
         ],
         [
           5,
-          6
-        ],
-        [
-          6,
-          6
+          5
         ],
         [
           6,
           5
         ],
         [
-          6,
-          4
-        ],
-        [
-          6,
-          3
-        ],
-        [
           7,
-          3
-        ],
-        [
-          7,
-          2
-        ],
-        [
-          7,
-          1
+          5
         ],
         [
           8,
-          1
-        ],
-        [
-          8,
-          0
+          5
         ],
         [
           9,
-          0
-        ],
-        [
-          10,
-          0
-        ],
-        [
-          10,
-          1
-        ],
-        [
-          10,
-          2
-        ],
-        [
-          10,
-          3
-        ],
-        [
-          10,
-          4
+          5
         ],
         [
           10,
@@ -3840,71 +3744,87 @@
         ],
         [
           0,
-          6
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
         ],
         [
           1,
-          6
+          2
+        ],
+        [
+          1,
+          1
         ],
         [
           2,
-          6
+          1
         ],
         [
           3,
-          6
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
         ],
         [
           4,
-          6
+          4
+        ],
+        [
+          4,
+          5
         ],
         [
           5,
-          6
-        ],
-        [
-          6,
-          6
+          5
         ],
         [
           6,
           5
         ],
         [
-          6,
-          4
-        ],
-        [
-          6,
-          3
-        ],
-        [
           7,
-          3
-        ],
-        [
-          7,
-          2
-        ],
-        [
-          7,
-          1
+          5
         ],
         [
           8,
-          1
-        ],
-        [
-          8,
-          0
+          5
         ],
         [
           9,
-          0
+          5
         ],
         [
           10,
-          0
+          5
+        ],
+        [
+          10,
+          4
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          2
         ],
         [
           10,
@@ -3922,87 +3842,71 @@
         ],
         [
           0,
-          6
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
         ],
         [
           1,
-          6
+          2
+        ],
+        [
+          1,
+          1
         ],
         [
           2,
-          6
+          1
         ],
         [
           3,
-          6
+          1
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
         ],
         [
           4,
-          6
+          4
+        ],
+        [
+          4,
+          5
         ],
         [
           5,
-          6
-        ],
-        [
-          6,
-          6
+          5
         ],
         [
           6,
           5
         ],
         [
-          6,
-          4
-        ],
-        [
-          6,
-          3
-        ],
-        [
           7,
-          3
-        ],
-        [
-          7,
-          2
-        ],
-        [
-          7,
-          1
+          5
         ],
         [
           8,
-          1
-        ],
-        [
-          8,
-          0
+          5
         ],
         [
           9,
-          0
-        ],
-        [
-          10,
-          0
-        ],
-        [
-          10,
-          1
-        ],
-        [
-          10,
-          2
-        ],
-        [
-          10,
-          3
-        ],
-        [
-          10,
-          4
+          5
         ],
         [
           10,

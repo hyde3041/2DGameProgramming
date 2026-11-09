@@ -27,7 +27,7 @@ const browser=await chromium.launch({headless:true,channel:'chrome'});try{
    const baked=await page.evaluate(async({url,start,end,length})=>{const im=new Image;im.src=url;await im.decode();const ctx=c.getContext('2d');ctx.clearRect(0,0,64,64);ctx.save();ctx.translate(16,32);ctx.rotate(-Math.atan2(end[1]-start[1],end[0]-start[0]));const s=length/Math.hypot(end[0]-start[0],end[1]-start[1]);ctx.scale(s,s);ctx.drawImage(im,-start[0],-start[1]);ctx.restore();return c.toDataURL();},{url,start,end,length});
    const file=`${folder}/${name}.png`;await fs.writeFile(path.join(game,file),Buffer.from(baked.split(',')[1],'base64'));parts[name]=file;calibration[name]={start:[16,32],end:[16+length,32],length,source_cell:cell,source_start:start,source_end:end,source_scale_once:length/Math.hypot(end[0]-start[0],end[1]-start[1])};
   }
-  const original=await sharp(path.join(game,`asset/character/main/archer/${view}/idle-sheet.png`)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
+  const original=await sharp(path.join(game,`asset/character/main/2-archer/${view}/idle-sheet.png`)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
   const get=async name=>await sharp(path.join(game,a.idle_groups[name])).ensureAlpha().raw().toBuffer();
   const head=await get('head'),hair=await get('hair-tail'),weapon=await get('weapon'),left=await get('arm-left'),right=await get('arm-right');
   const hiddenBody=await sharp(path.join(game,`asset/character/icon/layers/archer/${view}/redrawn/source/body.png`)).resize(refs[view].body_box[2],refs[view].body_box[3],{fit:'fill'}).ensureAlpha().raw().toBuffer();

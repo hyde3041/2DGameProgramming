@@ -1,8 +1,8 @@
 {
-  "id": "frontier-outpost",
-  "name": "전초기지",
-  "number": 3,
-  "file": "asset/map/stage/main/frontier-outpost.png",
+  "id": "cave-1",
+  "name": "숲길",
+  "number": 1,
+  "file": "asset/map/stage/main/cave/cave-1.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -98,12 +98,12 @@
       "id": "1,0",
       "column": 1,
       "row": 0,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         112,
         76,
@@ -112,27 +112,27 @@
       ],
       "surface_rect": [
         112,
-        76,
+        60,
         64,
         64
       ],
       "draw_rect": [
         112,
-        76,
+        60,
         64,
-        64
+        80
       ],
       "canvas_center": [
         144,
-        108
+        92
       ],
       "pico2d_center": [
         144,
-        492
+        508
       ],
       "pico2d_surface_rect": [
         112,
-        460,
+        476,
         64,
         64
       ]
@@ -141,12 +141,12 @@
       "id": "2,0",
       "column": 2,
       "row": 0,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         176,
         76,
@@ -155,27 +155,27 @@
       ],
       "surface_rect": [
         176,
-        76,
+        60,
         64,
         64
       ],
       "draw_rect": [
         176,
-        76,
+        60,
         64,
-        64
+        80
       ],
       "canvas_center": [
         208,
-        108
+        92
       ],
       "pico2d_center": [
         208,
-        492
+        508
       ],
       "pico2d_surface_rect": [
         176,
-        460,
+        476,
         64,
         64
       ]
@@ -184,12 +184,12 @@
       "id": "3,0",
       "column": 3,
       "row": 0,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         240,
         76,
@@ -221,9 +221,7 @@
         460,
         64,
         64
-      ],
-      "prop": "나무 방책",
-      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-0.png"
+      ]
     },
     {
       "id": "4,0",
@@ -267,143 +265,12 @@
         64,
         64
       ],
-      "hazard": "무너진 해자",
-      "hazard_file": "asset/map/stage/icon/themes/fortified-kit/hazard.png"
+      "hazard": "가시덤불",
+      "hazard_file": "asset/map/stage/icon/themes/forest-kit/hazard.png"
     },
     {
       "id": "5,0",
       "column": 5,
-      "row": 0,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
-      "base_rect": [
-        368,
-        76,
-        64,
-        64
-      ],
-      "surface_rect": [
-        368,
-        60,
-        64,
-        64
-      ],
-      "draw_rect": [
-        368,
-        60,
-        64,
-        80
-      ],
-      "canvas_center": [
-        400,
-        92
-      ],
-      "pico2d_center": [
-        400,
-        508
-      ],
-      "pico2d_surface_rect": [
-        368,
-        476,
-        64,
-        64
-      ]
-    },
-    {
-      "id": "6,0",
-      "column": 6,
-      "row": 0,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
-      "base_rect": [
-        432,
-        76,
-        64,
-        64
-      ],
-      "surface_rect": [
-        432,
-        60,
-        64,
-        64
-      ],
-      "draw_rect": [
-        432,
-        60,
-        64,
-        80
-      ],
-      "canvas_center": [
-        464,
-        92
-      ],
-      "pico2d_center": [
-        464,
-        508
-      ],
-      "pico2d_surface_rect": [
-        432,
-        476,
-        64,
-        64
-      ]
-    },
-    {
-      "id": "7,0",
-      "column": 7,
-      "row": 0,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        496,
-        76,
-        64,
-        64
-      ],
-      "surface_rect": [
-        496,
-        76,
-        64,
-        64
-      ],
-      "draw_rect": [
-        496,
-        76,
-        64,
-        64
-      ],
-      "canvas_center": [
-        528,
-        108
-      ],
-      "pico2d_center": [
-        528,
-        492
-      ],
-      "pico2d_surface_rect": [
-        496,
-        460,
-        64,
-        64
-      ],
-      "prop": "붉은 깃발",
-      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-1.png"
-    },
-    {
-      "id": "8,0",
-      "column": 8,
       "row": 0,
       "type": ".",
       "floor": 1,
@@ -412,6 +279,135 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
+        368,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        368,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        368,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        400,
+        108
+      ],
+      "pico2d_center": [
+        400,
+        492
+      ],
+      "pico2d_surface_rect": [
+        368,
+        460,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "6,0",
+      "column": 6,
+      "row": 0,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        432,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        108
+      ],
+      "pico2d_center": [
+        464,
+        492
+      ],
+      "pico2d_surface_rect": [
+        432,
+        460,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "7,0",
+      "column": 7,
+      "row": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        496,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        60,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        60,
+        64,
+        80
+      ],
+      "canvas_center": [
+        528,
+        92
+      ],
+      "pico2d_center": [
+        528,
+        508
+      ],
+      "pico2d_surface_rect": [
+        496,
+        476,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "8,0",
+      "column": 8,
+      "row": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
         560,
         76,
         64,
@@ -419,27 +415,27 @@
       ],
       "surface_rect": [
         560,
-        76,
+        60,
         64,
         64
       ],
       "draw_rect": [
         560,
-        76,
+        60,
         64,
-        64
+        80
       ],
       "canvas_center": [
         592,
-        108
+        92
       ],
       "pico2d_center": [
         592,
-        492
+        508
       ],
       "pico2d_surface_rect": [
         560,
-        460,
+        476,
         64,
         64
       ]
@@ -583,12 +579,12 @@
       "id": "1,1",
       "column": 1,
       "row": 1,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         112,
         140,
@@ -597,27 +593,27 @@
       ],
       "surface_rect": [
         112,
-        140,
+        124,
         64,
         64
       ],
       "draw_rect": [
         112,
-        140,
+        124,
         64,
-        64
+        80
       ],
       "canvas_center": [
         144,
-        172
+        156
       ],
       "pico2d_center": [
         144,
-        428
+        444
       ],
       "pico2d_surface_rect": [
         112,
-        396,
+        412,
         64,
         64
       ]
@@ -626,12 +622,12 @@
       "id": "2,1",
       "column": 2,
       "row": 1,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         176,
         140,
@@ -640,27 +636,27 @@
       ],
       "surface_rect": [
         176,
-        140,
+        124,
         64,
         64
       ],
       "draw_rect": [
         176,
-        140,
+        124,
         64,
-        64
+        80
       ],
       "canvas_center": [
         208,
-        172
+        156
       ],
       "pico2d_center": [
         208,
-        428
+        444
       ],
       "pico2d_surface_rect": [
         176,
-        396,
+        412,
         64,
         64
       ]
@@ -669,12 +665,12 @@
       "id": "3,1",
       "column": 3,
       "row": 1,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         240,
         140,
@@ -706,13 +702,56 @@
         396,
         64,
         64
-      ],
-      "prop": "보급 상자",
-      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-2.png"
+      ]
     },
     {
       "id": "4,1",
       "column": 4,
+      "row": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        336,
+        172
+      ],
+      "pico2d_center": [
+        336,
+        428
+      ],
+      "pico2d_surface_rect": [
+        304,
+        396,
+        64,
+        64
+      ],
+      "hazard": "가시덤불",
+      "hazard_file": "asset/map/stage/icon/themes/forest-kit/hazard.png"
+    },
+    {
+      "id": "5,1",
+      "column": 5,
       "row": 1,
       "type": ".",
       "floor": 1,
@@ -721,77 +760,34 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
-        304,
+        368,
         140,
         64,
         64
       ],
       "surface_rect": [
-        304,
+        368,
         140,
         64,
         64
       ],
       "draw_rect": [
-        304,
+        368,
         140,
         64,
         64
       ],
       "canvas_center": [
-        336,
+        400,
         172
       ],
       "pico2d_center": [
-        336,
+        400,
         428
       ],
       "pico2d_surface_rect": [
-        304,
+        368,
         396,
-        64,
-        64
-      ]
-    },
-    {
-      "id": "5,1",
-      "column": 5,
-      "row": 1,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
-      "base_rect": [
-        368,
-        140,
-        64,
-        64
-      ],
-      "surface_rect": [
-        368,
-        124,
-        64,
-        64
-      ],
-      "draw_rect": [
-        368,
-        124,
-        64,
-        80
-      ],
-      "canvas_center": [
-        400,
-        156
-      ],
-      "pico2d_center": [
-        400,
-        444
-      ],
-      "pico2d_surface_rect": [
-        368,
-        412,
         64,
         64
       ]
@@ -800,12 +796,12 @@
       "id": "6,1",
       "column": 6,
       "row": 1,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         432,
         140,
@@ -814,27 +810,27 @@
       ],
       "surface_rect": [
         432,
-        124,
+        140,
         64,
         64
       ],
       "draw_rect": [
         432,
-        124,
+        140,
         64,
-        80
+        64
       ],
       "canvas_center": [
         464,
-        156
+        172
       ],
       "pico2d_center": [
         464,
-        444
+        428
       ],
       "pico2d_surface_rect": [
         432,
-        412,
+        396,
         64,
         64
       ]
@@ -843,12 +839,12 @@
       "id": "7,1",
       "column": 7,
       "row": 1,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         496,
         140,
@@ -857,27 +853,27 @@
       ],
       "surface_rect": [
         496,
-        140,
+        124,
         64,
         64
       ],
       "draw_rect": [
         496,
-        140,
+        124,
         64,
-        64
+        80
       ],
       "canvas_center": [
         528,
-        172
+        156
       ],
       "pico2d_center": [
         528,
-        428
+        444
       ],
       "pico2d_surface_rect": [
         496,
-        396,
+        412,
         64,
         64
       ]
@@ -886,12 +882,12 @@
       "id": "8,1",
       "column": 8,
       "row": 1,
-      "type": "~",
-      "floor": null,
-      "height_level": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "deployable": true,
+      "placement": "elevated",
       "base_rect": [
         560,
         140,
@@ -900,43 +896,41 @@
       ],
       "surface_rect": [
         560,
-        140,
+        124,
         64,
         64
       ],
       "draw_rect": [
         560,
-        140,
+        124,
         64,
-        64
+        80
       ],
       "canvas_center": [
         592,
-        172
+        156
       ],
       "pico2d_center": [
         592,
-        428
+        444
       ],
       "pico2d_surface_rect": [
         560,
-        396,
+        412,
         64,
         64
-      ],
-      "hazard": "무너진 해자",
-      "hazard_file": "asset/map/stage/icon/themes/fortified-kit/hazard.png"
+      ]
     },
     {
       "id": "9,1",
       "column": 9,
       "row": 1,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         624,
         140,
@@ -968,9 +962,7 @@
         396,
         64,
         64
-      ],
-      "hazard": "무너진 해자",
-      "hazard_file": "asset/map/stage/icon/themes/fortified-kit/hazard.png"
+      ]
     },
     {
       "id": "10,1",
@@ -1197,6 +1189,51 @@
       "id": "4,2",
       "column": 4,
       "row": 2,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        304,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        304,
+        204,
+        64,
+        64
+      ],
+      "draw_rect": [
+        304,
+        204,
+        64,
+        64
+      ],
+      "canvas_center": [
+        336,
+        236
+      ],
+      "pico2d_center": [
+        336,
+        364
+      ],
+      "pico2d_surface_rect": [
+        304,
+        332,
+        64,
+        64
+      ],
+      "hazard": "가시덤불",
+      "hazard_file": "asset/map/stage/icon/themes/forest-kit/hazard.png"
+    },
+    {
+      "id": "5,2",
+      "column": 5,
+      "row": 2,
       "type": ".",
       "floor": 1,
       "height_level": 0,
@@ -1204,82 +1241,37 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
-        304,
+        368,
         204,
         64,
         64
       ],
       "surface_rect": [
-        304,
+        368,
         204,
         64,
         64
       ],
       "draw_rect": [
-        304,
+        368,
         204,
         64,
         64
       ],
       "canvas_center": [
-        336,
+        400,
         236
       ],
       "pico2d_center": [
-        336,
+        400,
         364
       ],
       "pico2d_surface_rect": [
-        304,
+        368,
         332,
         64,
         64
       ]
-    },
-    {
-      "id": "5,2",
-      "column": 5,
-      "row": 2,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        368,
-        204,
-        64,
-        64
-      ],
-      "surface_rect": [
-        368,
-        204,
-        64,
-        64
-      ],
-      "draw_rect": [
-        368,
-        204,
-        64,
-        64
-      ],
-      "canvas_center": [
-        400,
-        236
-      ],
-      "pico2d_center": [
-        400,
-        364
-      ],
-      "pico2d_surface_rect": [
-        368,
-        332,
-        64,
-        64
-      ],
-      "prop": "나무 방책",
-      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-0.png"
     },
     {
       "id": "6,2",
@@ -1549,12 +1541,12 @@
       "id": "1,3",
       "column": 1,
       "row": 3,
-      "type": ".",
-      "floor": 1,
+      "type": "O",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         112,
         268,
@@ -1586,12 +1578,59 @@
         268,
         64,
         64
-      ]
+      ],
+      "prop": "숲 나무",
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-0.png"
     },
     {
       "id": "2,3",
       "column": 2,
       "row": 3,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        176,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        268,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        268,
+        64,
+        64
+      ],
+      "canvas_center": [
+        208,
+        300
+      ],
+      "pico2d_center": [
+        208,
+        300
+      ],
+      "pico2d_surface_rect": [
+        176,
+        268,
+        64,
+        64
+      ],
+      "prop": "이끼 바위",
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-1.png"
+    },
+    {
+      "id": "3,3",
+      "column": 3,
+      "row": 3,
       "type": ".",
       "floor": 1,
       "height_level": 0,
@@ -1599,93 +1638,48 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
-        176,
+        240,
         268,
         64,
         64
       ],
       "surface_rect": [
-        176,
+        240,
         268,
         64,
         64
       ],
       "draw_rect": [
-        176,
+        240,
         268,
         64,
         64
       ],
       "canvas_center": [
-        208,
+        272,
         300
       ],
       "pico2d_center": [
-        208,
+        272,
         300
       ],
       "pico2d_surface_rect": [
-        176,
+        240,
         268,
         64,
         64
       ]
     },
     {
-      "id": "3,3",
-      "column": 3,
-      "row": 3,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        240,
-        268,
-        64,
-        64
-      ],
-      "surface_rect": [
-        240,
-        268,
-        64,
-        64
-      ],
-      "draw_rect": [
-        240,
-        268,
-        64,
-        64
-      ],
-      "canvas_center": [
-        272,
-        300
-      ],
-      "pico2d_center": [
-        272,
-        300
-      ],
-      "pico2d_surface_rect": [
-        240,
-        268,
-        64,
-        64
-      ],
-      "prop": "붉은 깃발",
-      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-1.png"
-    },
-    {
       "id": "4,3",
       "column": 4,
       "row": 3,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         304,
         268,
@@ -1717,9 +1711,7 @@
         268,
         64,
         64
-      ],
-      "prop": "보급 상자",
-      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-2.png"
+      ]
     },
     {
       "id": "5,3",
@@ -1768,49 +1760,6 @@
       "id": "6,3",
       "column": 6,
       "row": 3,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
-      "base_rect": [
-        432,
-        268,
-        64,
-        64
-      ],
-      "surface_rect": [
-        432,
-        268,
-        64,
-        64
-      ],
-      "draw_rect": [
-        432,
-        268,
-        64,
-        64
-      ],
-      "canvas_center": [
-        464,
-        300
-      ],
-      "pico2d_center": [
-        464,
-        300
-      ],
-      "pico2d_surface_rect": [
-        432,
-        268,
-        64,
-        64
-      ]
-    },
-    {
-      "id": "7,3",
-      "column": 7,
-      "row": 3,
       "type": "O",
       "floor": null,
       "height_level": 0,
@@ -1818,6 +1767,51 @@
       "deployable": false,
       "placement": null,
       "base_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        300
+      ],
+      "pico2d_center": [
+        464,
+        300
+      ],
+      "pico2d_surface_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "prop": "쓰러진 통나무",
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-2.png"
+    },
+    {
+      "id": "7,3",
+      "column": 7,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
         496,
         268,
         64,
@@ -1848,9 +1842,7 @@
         268,
         64,
         64
-      ],
-      "prop": "나무 방책",
-      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-0.png"
+      ]
     },
     {
       "id": "8,3",
@@ -2028,12 +2020,12 @@
       "id": "1,4",
       "column": 1,
       "row": 4,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         112,
         332,
@@ -2042,41 +2034,43 @@
       ],
       "surface_rect": [
         112,
-        316,
+        332,
         64,
         64
       ],
       "draw_rect": [
         112,
-        316,
+        332,
         64,
-        80
+        64
       ],
       "canvas_center": [
         144,
-        348
+        364
       ],
       "pico2d_center": [
         144,
-        252
+        236
       ],
       "pico2d_surface_rect": [
         112,
-        220,
+        204,
         64,
         64
-      ]
+      ],
+      "prop": "숲 나무",
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-0.png"
     },
     {
       "id": "2,4",
       "column": 2,
       "row": 4,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         176,
         332,
@@ -2085,27 +2079,27 @@
       ],
       "surface_rect": [
         176,
-        316,
+        332,
         64,
         64
       ],
       "draw_rect": [
         176,
-        316,
+        332,
         64,
-        80
+        64
       ],
       "canvas_center": [
         208,
-        348
+        364
       ],
       "pico2d_center": [
         208,
-        252
+        236
       ],
       "pico2d_surface_rect": [
         176,
-        220,
+        204,
         64,
         64
       ]
@@ -2157,12 +2151,12 @@
       "id": "4,4",
       "column": 4,
       "row": 4,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         304,
         332,
@@ -2171,27 +2165,27 @@
       ],
       "surface_rect": [
         304,
-        316,
+        332,
         64,
         64
       ],
       "draw_rect": [
         304,
-        316,
+        332,
         64,
-        80
+        64
       ],
       "canvas_center": [
         336,
-        348
+        364
       ],
       "pico2d_center": [
         336,
-        252
+        236
       ],
       "pico2d_surface_rect": [
         304,
-        220,
+        204,
         64,
         64
       ]
@@ -2200,12 +2194,12 @@
       "id": "5,4",
       "column": 5,
       "row": 4,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         368,
         332,
@@ -2214,27 +2208,27 @@
       ],
       "surface_rect": [
         368,
-        316,
+        332,
         64,
         64
       ],
       "draw_rect": [
         368,
-        316,
+        332,
         64,
-        80
+        64
       ],
       "canvas_center": [
         400,
-        348
+        364
       ],
       "pico2d_center": [
         400,
-        252
+        236
       ],
       "pico2d_surface_rect": [
         368,
-        220,
+        204,
         64,
         64
       ]
@@ -2243,12 +2237,12 @@
       "id": "6,4",
       "column": 6,
       "row": 4,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         432,
         332,
@@ -2280,18 +2274,20 @@
         204,
         64,
         64
-      ]
+      ],
+      "hazard": "가시덤불",
+      "hazard_file": "asset/map/stage/icon/themes/forest-kit/hazard.png"
     },
     {
       "id": "7,4",
       "column": 7,
       "row": 4,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         496,
         332,
@@ -2300,27 +2296,27 @@
       ],
       "surface_rect": [
         496,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         496,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         528,
-        364
+        348
       ],
       "pico2d_center": [
         528,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         496,
-        204,
+        220,
         64,
         64
       ]
@@ -2372,12 +2368,12 @@
       "id": "9,4",
       "column": 9,
       "row": 4,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         624,
         332,
@@ -2386,30 +2382,32 @@
       ],
       "surface_rect": [
         624,
-        316,
+        332,
         64,
         64
       ],
       "draw_rect": [
         624,
-        316,
+        332,
         64,
-        80
+        64
       ],
       "canvas_center": [
         656,
-        348
+        364
       ],
       "pico2d_center": [
         656,
-        252
+        236
       ],
       "pico2d_surface_rect": [
         624,
-        220,
+        204,
         64,
         64
-      ]
+      ],
+      "prop": "이끼 바위",
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-1.png"
     },
     {
       "id": "10,4",
@@ -2507,12 +2505,12 @@
       "id": "1,5",
       "column": 1,
       "row": 5,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         112,
         396,
@@ -2521,27 +2519,27 @@
       ],
       "surface_rect": [
         112,
-        380,
+        396,
         64,
         64
       ],
       "draw_rect": [
         112,
-        380,
+        396,
         64,
-        80
+        64
       ],
       "canvas_center": [
         144,
-        412
+        428
       ],
       "pico2d_center": [
         144,
-        188
+        172
       ],
       "pico2d_surface_rect": [
         112,
-        156,
+        140,
         64,
         64
       ]
@@ -2550,12 +2548,12 @@
       "id": "2,5",
       "column": 2,
       "row": 5,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         176,
         396,
@@ -2564,30 +2562,32 @@
       ],
       "surface_rect": [
         176,
-        380,
+        396,
         64,
         64
       ],
       "draw_rect": [
         176,
-        380,
+        396,
         64,
-        80
+        64
       ],
       "canvas_center": [
         208,
-        412
+        428
       ],
       "pico2d_center": [
         208,
-        188
+        172
       ],
       "pico2d_surface_rect": [
         176,
-        156,
+        140,
         64,
         64
-      ]
+      ],
+      "prop": "쓰러진 통나무",
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-2.png"
     },
     {
       "id": "3,5",
@@ -2722,56 +2722,58 @@
       "id": "6,5",
       "column": 6,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
-      "base_rect": [
-        432,
-        396,
-        64,
-        64
-      ],
-      "surface_rect": [
-        432,
-        396,
-        64,
-        64
-      ],
-      "draw_rect": [
-        432,
-        396,
-        64,
-        64
-      ],
-      "canvas_center": [
-        464,
-        428
-      ],
-      "pico2d_center": [
-        464,
-        172
-      ],
-      "pico2d_surface_rect": [
-        432,
-        140,
-        64,
-        64
-      ]
-    },
-    {
-      "id": "7,5",
-      "column": 7,
-      "row": 5,
-      "type": "O",
+      "type": "~",
       "floor": null,
       "height_level": 0,
       "walkable": false,
       "deployable": false,
       "placement": null,
       "base_rect": [
+        432,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        396,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        396,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        428
+      ],
+      "pico2d_center": [
+        464,
+        172
+      ],
+      "pico2d_surface_rect": [
+        432,
+        140,
+        64,
+        64
+      ],
+      "hazard": "가시덤불",
+      "hazard_file": "asset/map/stage/icon/themes/forest-kit/hazard.png"
+    },
+    {
+      "id": "7,5",
+      "column": 7,
+      "row": 5,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
         496,
         396,
         64,
@@ -2779,43 +2781,41 @@
       ],
       "surface_rect": [
         496,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         496,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         528,
-        428
+        412
       ],
       "pico2d_center": [
         528,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         496,
-        140,
+        156,
         64,
         64
-      ],
-      "prop": "붉은 깃발",
-      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-1.png"
+      ]
     },
     {
       "id": "8,5",
       "column": 8,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         560,
         396,
@@ -2824,27 +2824,27 @@
       ],
       "surface_rect": [
         560,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         560,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         592,
-        428
+        412
       ],
       "pico2d_center": [
         592,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         560,
-        140,
+        156,
         64,
         64
       ]
@@ -3074,12 +3074,12 @@
       "id": "3,6",
       "column": 3,
       "row": 6,
-      "type": ".",
-      "floor": 1,
+      "type": "O",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         240,
         460,
@@ -3111,18 +3111,20 @@
         76,
         64,
         64
-      ]
+      ],
+      "prop": "숲 나무",
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-0.png"
     },
     {
       "id": "4,6",
       "column": 4,
       "row": 6,
-      "type": ".",
-      "floor": 1,
+      "type": "O",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         304,
         460,
@@ -3154,18 +3156,20 @@
         76,
         64,
         64
-      ]
+      ],
+      "prop": "이끼 바위",
+      "prop_file": "asset/map/stage/icon/themes/forest-kit/prop-1.png"
     },
     {
       "id": "5,6",
       "column": 5,
       "row": 6,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         368,
         460,
@@ -3197,13 +3201,56 @@
         76,
         64,
         64
-      ],
-      "prop": "보급 상자",
-      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-2.png"
+      ]
     },
     {
       "id": "6,6",
       "column": 6,
+      "row": 6,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        432,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        492
+      ],
+      "pico2d_center": [
+        464,
+        108
+      ],
+      "pico2d_surface_rect": [
+        432,
+        76,
+        64,
+        64
+      ],
+      "hazard": "가시덤불",
+      "hazard_file": "asset/map/stage/icon/themes/forest-kit/hazard.png"
+    },
+    {
+      "id": "7,6",
+      "column": 7,
       "row": 6,
       "type": ".",
       "floor": 1,
@@ -3212,82 +3259,37 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
-        432,
+        496,
         460,
         64,
         64
       ],
       "surface_rect": [
-        432,
+        496,
         460,
         64,
         64
       ],
       "draw_rect": [
-        432,
+        496,
         460,
         64,
         64
       ],
       "canvas_center": [
-        464,
+        528,
         492
       ],
       "pico2d_center": [
-        464,
+        528,
         108
       ],
       "pico2d_surface_rect": [
-        432,
+        496,
         76,
         64,
         64
       ]
-    },
-    {
-      "id": "7,6",
-      "column": 7,
-      "row": 6,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        496,
-        460,
-        64,
-        64
-      ],
-      "surface_rect": [
-        496,
-        460,
-        64,
-        64
-      ],
-      "draw_rect": [
-        496,
-        460,
-        64,
-        64
-      ],
-      "canvas_center": [
-        528,
-        492
-      ],
-      "pico2d_center": [
-        528,
-        108
-      ],
-      "pico2d_surface_rect": [
-        496,
-        76,
-        64,
-        64
-      ],
-      "prop": "나무 방책",
-      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-0.png"
     },
     {
       "id": "8,6",
@@ -3433,56 +3435,32 @@
           2
         ],
         [
-          0,
-          3
-        ],
-        [
-          0,
-          4
-        ],
-        [
-          0,
-          5
-        ],
-        [
-          0,
-          6
-        ],
-        [
           1,
-          6
+          2
         ],
         [
           2,
-          6
+          2
         ],
         [
           3,
-          6
+          2
+        ],
+        [
+          3,
+          3
         ],
         [
           4,
-          6
-        ],
-        [
-          4,
-          5
+          3
         ],
         [
           5,
-          5
-        ],
-        [
-          6,
-          5
-        ],
-        [
-          6,
-          4
-        ],
-        [
-          6,
           3
+        ],
+        [
+          5,
+          2
         ],
         [
           6,
@@ -3523,56 +3501,32 @@
           2
         ],
         [
-          0,
-          3
-        ],
-        [
-          0,
-          4
-        ],
-        [
-          0,
-          5
-        ],
-        [
-          0,
-          6
-        ],
-        [
           1,
-          6
+          2
         ],
         [
           2,
-          6
+          2
         ],
         [
           3,
-          6
+          2
+        ],
+        [
+          3,
+          3
         ],
         [
           4,
-          6
-        ],
-        [
-          4,
-          5
+          3
         ],
         [
           5,
-          5
-        ],
-        [
-          6,
-          5
-        ],
-        [
-          6,
-          4
-        ],
-        [
-          6,
           3
+        ],
+        [
+          5,
+          2
         ],
         [
           6,
@@ -3618,51 +3572,35 @@
         ],
         [
           0,
-          4
-        ],
-        [
-          0,
-          5
-        ],
-        [
-          0,
-          6
+          2
         ],
         [
           1,
-          6
+          2
         ],
         [
           2,
-          6
+          2
         ],
         [
           3,
-          6
+          2
+        ],
+        [
+          3,
+          3
         ],
         [
           4,
-          6
-        ],
-        [
-          4,
-          5
+          3
         ],
         [
           5,
-          5
-        ],
-        [
-          6,
-          5
-        ],
-        [
-          6,
-          4
-        ],
-        [
-          6,
           3
+        ],
+        [
+          5,
+          2
         ],
         [
           6,
@@ -3700,51 +3638,35 @@
         ],
         [
           0,
-          4
-        ],
-        [
-          0,
-          5
-        ],
-        [
-          0,
-          6
+          2
         ],
         [
           1,
-          6
+          2
         ],
         [
           2,
-          6
+          2
         ],
         [
           3,
-          6
+          2
+        ],
+        [
+          3,
+          3
         ],
         [
           4,
-          6
-        ],
-        [
-          4,
-          5
+          3
         ],
         [
           5,
-          5
-        ],
-        [
-          6,
-          5
-        ],
-        [
-          6,
-          4
-        ],
-        [
-          6,
           3
+        ],
+        [
+          5,
+          2
         ],
         [
           6,
@@ -3790,43 +3712,43 @@
         ],
         [
           0,
-          6
-        ],
-        [
-          1,
-          6
-        ],
-        [
-          2,
-          6
-        ],
-        [
-          3,
-          6
-        ],
-        [
-          4,
-          6
-        ],
-        [
-          4,
-          5
-        ],
-        [
-          5,
-          5
-        ],
-        [
-          6,
-          5
-        ],
-        [
-          6,
           4
         ],
         [
-          6,
+          0,
           3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          2
         ],
         [
           6,
@@ -3864,43 +3786,43 @@
         ],
         [
           0,
-          6
-        ],
-        [
-          1,
-          6
-        ],
-        [
-          2,
-          6
-        ],
-        [
-          3,
-          6
-        ],
-        [
-          4,
-          6
-        ],
-        [
-          4,
-          5
-        ],
-        [
-          5,
-          5
-        ],
-        [
-          6,
-          5
-        ],
-        [
-          6,
           4
         ],
         [
-          6,
+          0,
           3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          2
         ],
         [
           6,

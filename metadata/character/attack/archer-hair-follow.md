@@ -11,7 +11,7 @@
 
 ## 파일
 
-- 실제 게임: `game/asset/character/main/archer/<front|back|side>/attack-sheet.png`
+- 실제 게임: `game/asset/character/main/2-archer/<front|back|side>/attack-sheet.png`
 - 머리 보완 그림·마스크: `game/asset/character/icon/layers/archer/<방향>/attack/hair/`
 - 입력·편집 아틀라스: `game/asset/character/icon/layers/archer/attack/hair/source/`
 - [전체 프롬프트·생성 모드·원본](archer-hair-sources.json)

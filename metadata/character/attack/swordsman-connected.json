@@ -21,7 +21,7 @@
     "front": {
       "poses": {
         "idle": {
-          "input": "asset/character/main/swordsman/front/idle-sheet.png",
+          "input": "asset/character/main/0-swordsman/front/idle-sheet.png",
           "original_rgba_sha256": "e60d7589f8e2ec82f3d963b426b6933f491af2b457746c29df7576a89e8f891c",
           "registration": [
             0,
@@ -347,7 +347,7 @@
     "back": {
       "poses": {
         "idle": {
-          "input": "asset/character/main/swordsman/back/idle-sheet.png",
+          "input": "asset/character/main/0-swordsman/back/idle-sheet.png",
           "original_rgba_sha256": "b8bd6485980a2f78362f9f1d77753f53146b3438903e6c769c8fcbec0a634f18",
           "registration": [
             0,
@@ -673,7 +673,7 @@
     "side": {
       "poses": {
         "idle": {
-          "input": "asset/character/main/swordsman/side/idle-sheet.png",
+          "input": "asset/character/main/0-swordsman/side/idle-sheet.png",
           "original_rgba_sha256": "32a97919d3e8fd74aebea72353b402c0435f7743142540591f4bf61e1bfea676",
           "registration": [
             0,

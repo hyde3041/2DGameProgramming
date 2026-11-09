@@ -16,7 +16,7 @@ function sample(data,u,v){const x=Math.floor(u),y=Math.floor(v),fx=u-x,fy=v-y;le
 const metadata={id:'crossbowman',version:1,applied:true,mode:'built-in image_gen in-betweens with fixed 2x registration',source_originals_preserved:true,no_pose_crossfade:true,sources:'metadata/character/attack/crossbowman-lift-sources.json',views:{}};
 for(const view of ['front','back','side']){
  const folder=`asset/character/icon/layers/crossbowman/${view}/attack/lift`,atlas=await sharp(path.join(game,folder,'source/edited-atlas.png')).ensureAlpha().raw().toBuffer();
- const idle=await sharp(path.join(game,`asset/character/main/crossbowman/${view}/idle-sheet.png`)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
+ const idle=await sharp(path.join(game,`asset/character/main/3-crossbowman/${view}/idle-sheet.png`)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
  const head=await sharp(path.join(game,`asset/character/icon/layers/crossbowman/${view}/aligned/visible/head.png`)).ensureAlpha().raw().toBuffer();
  const control=[];for(let y=120;y<207;y++)for(let x=105;x<219;x++){const k=(y*320+x)*4;if(head[k+3]>160&&idle[k+3]>180)control.push([x,y,k]);}
  const allowed=new Uint8Array(102400),mask=Buffer.alloc(idle.length);

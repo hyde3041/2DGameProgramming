@@ -39,13 +39,13 @@ python -m pip install -r requirements.txt
 python game/code/main.py
 ```
 
-맵은 `game/asset/map/stage/main/dungeon-room.png`입니다. 코드가 프로젝트와 `game` 폴더의 위치를 계산하므로 실행 터미널의 현재 폴더와 관계없이 리소스를 찾습니다.
+맵은 `game/asset/map/stage/main/cave/cave-0.png`입니다. 코드가 프로젝트와 `game` 폴더의 위치를 계산하므로 실행 터미널의 현재 폴더와 관계없이 리소스를 찾습니다.
 
 ## 제작한 이미지
 
 ![캐릭터 디자인 시안](game/asset/character/character-overview.png)
 
-![던전 배경 시안](game/asset/map/stage/main/dungeon-room.png)
+![던전 배경 시안](game/asset/map/stage/main/cave/cave-0.png)
 
 - [캐릭터 8명](metadata/README.md#캐릭터): 방향별 대기 시트 24개와 공격 시트 24개
 - 원본 통합 시트 8개와 개별 프레임 96장은 `asset/character/icon/source/`에 보관

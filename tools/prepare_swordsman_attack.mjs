@@ -58,7 +58,7 @@ for (const view of ['front','back','side']) {
   const poses = {};
   for (const [pose, filename] of Object.entries({idle:'idle-sheet',windup:'attack_01',strike:'attack_02',recover:'attack_03'})) {
     const input = pose === 'idle'
-      ? `asset/character/main/swordsman/${view}/idle-sheet.png`
+      ? `asset/character/main/0-swordsman/${view}/idle-sheet.png`
       : `asset/character/icon/source/swordsman/${view}/${filename}.png`;
     let image = sharp(path.join(game, input));
     if (pose === 'idle') image = image.extract({left:0,top:0,width:320,height:320});

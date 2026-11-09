@@ -379,7 +379,7 @@
   "revision": 2,
   "directional_attack_sheets": {
     "front": {
-      "file": "asset/character/main/guardian/front/attack-sheet.png",
+      "file": "asset/character/main/1-guardian/front/attack-sheet.png",
       "sheet_size": [
         1280,
         1280
@@ -631,7 +631,7 @@
       ]
     },
     "back": {
-      "file": "asset/character/main/guardian/back/attack-sheet.png",
+      "file": "asset/character/main/1-guardian/back/attack-sheet.png",
       "sheet_size": [
         1280,
         1280
@@ -883,7 +883,7 @@
       ]
     },
     "right": {
-      "file": "asset/character/main/guardian/side/attack-sheet.png",
+      "file": "asset/character/main/1-guardian/side/attack-sheet.png",
       "sheet_size": [
         1280,
         1280

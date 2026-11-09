@@ -1,8 +1,8 @@
 {
-  "id": "frost-cavern",
-  "name": "얼음 동굴",
-  "number": 11,
-  "file": "asset/map/stage/main/frost-cavern.png",
+  "id": "cave-2",
+  "name": "전초기지",
+  "number": 2,
+  "file": "asset/map/stage/main/cave/cave-2.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -141,12 +141,12 @@
       "id": "2,0",
       "column": 2,
       "row": 0,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         176,
         76,
@@ -178,13 +178,56 @@
         460,
         64,
         64
-      ],
-      "prop": "얼음 결정",
-      "prop_file": "asset/map/stage/icon/themes/frost-cavern/prop-0.png"
+      ]
     },
     {
       "id": "3,0",
       "column": 3,
+      "row": 0,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        240,
+        76,
+        64,
+        64
+      ],
+      "surface_rect": [
+        240,
+        76,
+        64,
+        64
+      ],
+      "draw_rect": [
+        240,
+        76,
+        64,
+        64
+      ],
+      "canvas_center": [
+        272,
+        108
+      ],
+      "pico2d_center": [
+        272,
+        492
+      ],
+      "pico2d_surface_rect": [
+        240,
+        460,
+        64,
+        64
+      ],
+      "prop": "나무 방책",
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-0.png"
+    },
+    {
+      "id": "4,0",
+      "column": 4,
       "row": 0,
       "type": "~",
       "floor": null,
@@ -193,51 +236,6 @@
       "deployable": false,
       "placement": null,
       "base_rect": [
-        240,
-        76,
-        64,
-        64
-      ],
-      "surface_rect": [
-        240,
-        76,
-        64,
-        64
-      ],
-      "draw_rect": [
-        240,
-        76,
-        64,
-        64
-      ],
-      "canvas_center": [
-        272,
-        108
-      ],
-      "pico2d_center": [
-        272,
-        492
-      ],
-      "pico2d_surface_rect": [
-        240,
-        460,
-        64,
-        64
-      ],
-      "hazard": "얼음 균열",
-      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
-    },
-    {
-      "id": "4,0",
-      "column": 4,
-      "row": 0,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
-      "base_rect": [
         304,
         76,
         64,
@@ -268,7 +266,9 @@
         460,
         64,
         64
-      ]
+      ],
+      "hazard": "무너진 해자",
+      "hazard_file": "asset/map/stage/icon/themes/fortified-kit/hazard.png"
     },
     {
       "id": "5,0",
@@ -360,7 +360,7 @@
       "id": "7,0",
       "column": 7,
       "row": 0,
-      "type": "~",
+      "type": "O",
       "floor": null,
       "height_level": 0,
       "walkable": false,
@@ -398,8 +398,8 @@
         64,
         64
       ],
-      "hazard": "얼음 균열",
-      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
+      "prop": "붉은 깃발",
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-1.png"
     },
     {
       "id": "8,0",
@@ -669,12 +669,12 @@
       "id": "3,1",
       "column": 3,
       "row": 1,
-      "type": ".",
-      "floor": 1,
+      "type": "O",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         240,
         140,
@@ -706,7 +706,9 @@
         396,
         64,
         64
-      ]
+      ],
+      "prop": "보급 상자",
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-2.png"
     },
     {
       "id": "4,1",
@@ -841,6 +843,49 @@
       "id": "7,1",
       "column": 7,
       "row": 1,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        496,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        528,
+        172
+      ],
+      "pico2d_center": [
+        528,
+        428
+      ],
+      "pico2d_surface_rect": [
+        496,
+        396,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "8,1",
+      "column": 8,
+      "row": 1,
       "type": "~",
       "floor": null,
       "height_level": 0,
@@ -848,51 +893,6 @@
       "deployable": false,
       "placement": null,
       "base_rect": [
-        496,
-        140,
-        64,
-        64
-      ],
-      "surface_rect": [
-        496,
-        140,
-        64,
-        64
-      ],
-      "draw_rect": [
-        496,
-        140,
-        64,
-        64
-      ],
-      "canvas_center": [
-        528,
-        172
-      ],
-      "pico2d_center": [
-        528,
-        428
-      ],
-      "pico2d_surface_rect": [
-        496,
-        396,
-        64,
-        64
-      ],
-      "hazard": "얼음 균열",
-      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
-    },
-    {
-      "id": "8,1",
-      "column": 8,
-      "row": 1,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
-      "base_rect": [
         560,
         140,
         64,
@@ -923,18 +923,20 @@
         396,
         64,
         64
-      ]
+      ],
+      "hazard": "무너진 해자",
+      "hazard_file": "asset/map/stage/icon/themes/fortified-kit/hazard.png"
     },
     {
       "id": "9,1",
       "column": 9,
       "row": 1,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         624,
         140,
@@ -966,7 +968,9 @@
         396,
         64,
         64
-      ]
+      ],
+      "hazard": "무너진 해자",
+      "hazard_file": "asset/map/stage/icon/themes/fortified-kit/hazard.png"
     },
     {
       "id": "10,1",
@@ -1064,12 +1068,12 @@
       "id": "1,2",
       "column": 1,
       "row": 2,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         112,
         204,
@@ -1078,27 +1082,27 @@
       ],
       "surface_rect": [
         112,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         112,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         144,
-        220
+        236
       ],
       "pico2d_center": [
         144,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         112,
-        348,
+        332,
         64,
         64
       ]
@@ -1107,12 +1111,12 @@
       "id": "2,2",
       "column": 2,
       "row": 2,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         176,
         204,
@@ -1121,27 +1125,27 @@
       ],
       "surface_rect": [
         176,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         176,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         208,
-        220
+        236
       ],
       "pico2d_center": [
         208,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         176,
-        348,
+        332,
         64,
         64
       ]
@@ -1150,12 +1154,12 @@
       "id": "3,2",
       "column": 3,
       "row": 2,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         240,
         204,
@@ -1187,9 +1191,7 @@
         332,
         64,
         64
-      ],
-      "hazard": "얼음 균열",
-      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
+      ]
     },
     {
       "id": "4,2",
@@ -1238,12 +1240,12 @@
       "id": "5,2",
       "column": 5,
       "row": 2,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         204,
@@ -1252,41 +1254,43 @@
       ],
       "surface_rect": [
         368,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         368,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         400,
-        220
+        236
       ],
       "pico2d_center": [
         400,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         368,
-        348,
+        332,
         64,
         64
-      ]
+      ],
+      "prop": "나무 방책",
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-0.png"
     },
     {
       "id": "6,2",
       "column": 6,
       "row": 2,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         432,
         204,
@@ -1295,27 +1299,27 @@
       ],
       "surface_rect": [
         432,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         432,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         464,
-        220
+        236
       ],
       "pico2d_center": [
         464,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         432,
-        348,
+        332,
         64,
         64
       ]
@@ -1324,12 +1328,12 @@
       "id": "7,2",
       "column": 7,
       "row": 2,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         496,
         204,
@@ -1361,9 +1365,7 @@
         332,
         64,
         64
-      ],
-      "prop": "서리 바위",
-      "prop_file": "asset/map/stage/icon/themes/frost-cavern/prop-1.png"
+      ]
     },
     {
       "id": "8,2",
@@ -1547,12 +1549,12 @@
       "id": "1,3",
       "column": 1,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         112,
         268,
@@ -1561,27 +1563,27 @@
       ],
       "surface_rect": [
         112,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         112,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         144,
-        284
+        300
       ],
       "pico2d_center": [
         144,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         112,
-        284,
+        268,
         64,
         64
       ]
@@ -1590,12 +1592,12 @@
       "id": "2,3",
       "column": 2,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         176,
         268,
@@ -1604,27 +1606,27 @@
       ],
       "surface_rect": [
         176,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         176,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         208,
-        284
+        300
       ],
       "pico2d_center": [
         208,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         176,
-        284,
+        268,
         64,
         64
       ]
@@ -1633,7 +1635,7 @@
       "id": "3,3",
       "column": 3,
       "row": 3,
-      "type": "~",
+      "type": "O",
       "floor": null,
       "height_level": 0,
       "walkable": false,
@@ -1671,19 +1673,19 @@
         64,
         64
       ],
-      "hazard": "얼음 균열",
-      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
+      "prop": "붉은 깃발",
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-1.png"
     },
     {
       "id": "4,3",
       "column": 4,
       "row": 3,
-      "type": ".",
-      "floor": 1,
+      "type": "O",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         304,
         268,
@@ -1715,7 +1717,9 @@
         268,
         64,
         64
-      ]
+      ],
+      "prop": "보급 상자",
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-2.png"
     },
     {
       "id": "5,3",
@@ -1807,7 +1811,7 @@
       "id": "7,3",
       "column": 7,
       "row": 3,
-      "type": "~",
+      "type": "O",
       "floor": null,
       "height_level": 0,
       "walkable": false,
@@ -1845,19 +1849,19 @@
         64,
         64
       ],
-      "hazard": "얼음 균열",
-      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
+      "prop": "나무 방책",
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-0.png"
     },
     {
       "id": "8,3",
       "column": 8,
       "row": 3,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         560,
         268,
@@ -1866,27 +1870,27 @@
       ],
       "surface_rect": [
         560,
-        268,
+        252,
         64,
         64
       ],
       "draw_rect": [
         560,
-        268,
+        252,
         64,
-        64
+        80
       ],
       "canvas_center": [
         592,
-        300
+        284
       ],
       "pico2d_center": [
         592,
-        300
+        316
       ],
       "pico2d_surface_rect": [
         560,
-        268,
+        284,
         64,
         64
       ]
@@ -1895,12 +1899,12 @@
       "id": "9,3",
       "column": 9,
       "row": 3,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "deployable": true,
+      "placement": "elevated",
       "base_rect": [
         624,
         268,
@@ -1909,32 +1913,30 @@
       ],
       "surface_rect": [
         624,
-        268,
+        252,
         64,
         64
       ],
       "draw_rect": [
         624,
-        268,
+        252,
         64,
-        64
+        80
       ],
       "canvas_center": [
         656,
-        300
+        284
       ],
       "pico2d_center": [
         656,
-        300
+        316
       ],
       "pico2d_surface_rect": [
         624,
-        268,
+        284,
         64,
         64
-      ],
-      "prop": "얼어붙은 기둥",
-      "prop_file": "asset/map/stage/icon/themes/frost-cavern/prop-2.png"
+      ]
     },
     {
       "id": "10,3",
@@ -2026,12 +2028,12 @@
       "id": "1,4",
       "column": 1,
       "row": 4,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         112,
         332,
@@ -2040,27 +2042,27 @@
       ],
       "surface_rect": [
         112,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         112,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         144,
-        364
+        348
       ],
       "pico2d_center": [
         144,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         112,
-        204,
+        220,
         64,
         64
       ]
@@ -2069,12 +2071,12 @@
       "id": "2,4",
       "column": 2,
       "row": 4,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         176,
         332,
@@ -2083,27 +2085,27 @@
       ],
       "surface_rect": [
         176,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         176,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         208,
-        364
+        348
       ],
       "pico2d_center": [
         208,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         176,
-        204,
+        220,
         64,
         64
       ]
@@ -2284,51 +2286,6 @@
       "id": "7,4",
       "column": 7,
       "row": 4,
-      "type": "~",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        496,
-        332,
-        64,
-        64
-      ],
-      "surface_rect": [
-        496,
-        332,
-        64,
-        64
-      ],
-      "draw_rect": [
-        496,
-        332,
-        64,
-        64
-      ],
-      "canvas_center": [
-        528,
-        364
-      ],
-      "pico2d_center": [
-        528,
-        236
-      ],
-      "pico2d_surface_rect": [
-        496,
-        204,
-        64,
-        64
-      ],
-      "hazard": "얼음 균열",
-      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
-    },
-    {
-      "id": "8,4",
-      "column": 8,
-      "row": 4,
       "type": ".",
       "floor": 1,
       "height_level": 0,
@@ -2336,6 +2293,49 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
+        496,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        332,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        332,
+        64,
+        64
+      ],
+      "canvas_center": [
+        528,
+        364
+      ],
+      "pico2d_center": [
+        528,
+        236
+      ],
+      "pico2d_surface_rect": [
+        496,
+        204,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "8,4",
+      "column": 8,
+      "row": 4,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
         560,
         332,
         64,
@@ -2343,27 +2343,27 @@
       ],
       "surface_rect": [
         560,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         560,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         592,
-        364
+        348
       ],
       "pico2d_center": [
         592,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         560,
-        204,
+        220,
         64,
         64
       ]
@@ -2372,12 +2372,12 @@
       "id": "9,4",
       "column": 9,
       "row": 4,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         624,
         332,
@@ -2386,27 +2386,27 @@
       ],
       "surface_rect": [
         624,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         624,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         656,
-        364
+        348
       ],
       "pico2d_center": [
         656,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         624,
-        204,
+        220,
         64,
         64
       ]
@@ -2507,12 +2507,12 @@
       "id": "1,5",
       "column": 1,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         112,
         396,
@@ -2521,27 +2521,27 @@
       ],
       "surface_rect": [
         112,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         112,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         144,
-        428
+        412
       ],
       "pico2d_center": [
         144,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         112,
-        140,
+        156,
         64,
         64
       ]
@@ -2550,96 +2550,6 @@
       "id": "2,5",
       "column": 2,
       "row": 5,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        176,
-        396,
-        64,
-        64
-      ],
-      "surface_rect": [
-        176,
-        396,
-        64,
-        64
-      ],
-      "draw_rect": [
-        176,
-        396,
-        64,
-        64
-      ],
-      "canvas_center": [
-        208,
-        428
-      ],
-      "pico2d_center": [
-        208,
-        172
-      ],
-      "pico2d_surface_rect": [
-        176,
-        140,
-        64,
-        64
-      ],
-      "prop": "얼음 결정",
-      "prop_file": "asset/map/stage/icon/themes/frost-cavern/prop-0.png"
-    },
-    {
-      "id": "3,5",
-      "column": 3,
-      "row": 5,
-      "type": "~",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        240,
-        396,
-        64,
-        64
-      ],
-      "surface_rect": [
-        240,
-        396,
-        64,
-        64
-      ],
-      "draw_rect": [
-        240,
-        396,
-        64,
-        64
-      ],
-      "canvas_center": [
-        272,
-        428
-      ],
-      "pico2d_center": [
-        272,
-        172
-      ],
-      "pico2d_surface_rect": [
-        240,
-        140,
-        64,
-        64
-      ],
-      "hazard": "얼음 균열",
-      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
-    },
-    {
-      "id": "4,5",
-      "column": 4,
-      "row": 5,
       "type": "H",
       "floor": 2,
       "height_level": 1,
@@ -2647,6 +2557,92 @@
       "deployable": true,
       "placement": "elevated",
       "base_rect": [
+        176,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        380,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        380,
+        64,
+        80
+      ],
+      "canvas_center": [
+        208,
+        412
+      ],
+      "pico2d_center": [
+        208,
+        188
+      ],
+      "pico2d_surface_rect": [
+        176,
+        156,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "3,5",
+      "column": 3,
+      "row": 5,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        240,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        240,
+        396,
+        64,
+        64
+      ],
+      "draw_rect": [
+        240,
+        396,
+        64,
+        64
+      ],
+      "canvas_center": [
+        272,
+        428
+      ],
+      "pico2d_center": [
+        272,
+        172
+      ],
+      "pico2d_surface_rect": [
+        240,
+        140,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "4,5",
+      "column": 4,
+      "row": 5,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
         304,
         396,
         64,
@@ -2654,27 +2650,27 @@
       ],
       "surface_rect": [
         304,
-        380,
+        396,
         64,
         64
       ],
       "draw_rect": [
         304,
-        380,
+        396,
         64,
-        80
+        64
       ],
       "canvas_center": [
         336,
-        412
+        428
       ],
       "pico2d_center": [
         336,
-        188
+        172
       ],
       "pico2d_surface_rect": [
         304,
-        156,
+        140,
         64,
         64
       ]
@@ -2683,12 +2679,12 @@
       "id": "5,5",
       "column": 5,
       "row": 5,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         368,
         396,
@@ -2697,27 +2693,27 @@
       ],
       "surface_rect": [
         368,
-        380,
+        396,
         64,
         64
       ],
       "draw_rect": [
         368,
-        380,
+        396,
         64,
-        80
+        64
       ],
       "canvas_center": [
         400,
-        412
+        428
       ],
       "pico2d_center": [
         400,
-        188
+        172
       ],
       "pico2d_surface_rect": [
         368,
-        156,
+        140,
         64,
         64
       ]
@@ -2769,12 +2765,12 @@
       "id": "7,5",
       "column": 7,
       "row": 5,
-      "type": ".",
-      "floor": 1,
+      "type": "O",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         496,
         396,
@@ -2806,7 +2802,9 @@
         140,
         64,
         64
-      ]
+      ],
+      "prop": "붉은 깃발",
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-1.png"
     },
     {
       "id": "8,5",
@@ -3076,12 +3074,12 @@
       "id": "3,6",
       "column": 3,
       "row": 6,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         240,
         460,
@@ -3113,58 +3111,11 @@
         76,
         64,
         64
-      ],
-      "hazard": "얼음 균열",
-      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
+      ]
     },
     {
       "id": "4,6",
       "column": 4,
-      "row": 6,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        304,
-        460,
-        64,
-        64
-      ],
-      "surface_rect": [
-        304,
-        460,
-        64,
-        64
-      ],
-      "draw_rect": [
-        304,
-        460,
-        64,
-        64
-      ],
-      "canvas_center": [
-        336,
-        492
-      ],
-      "pico2d_center": [
-        336,
-        108
-      ],
-      "pico2d_surface_rect": [
-        304,
-        76,
-        64,
-        64
-      ],
-      "prop": "서리 바위",
-      "prop_file": "asset/map/stage/icon/themes/frost-cavern/prop-1.png"
-    },
-    {
-      "id": "5,6",
-      "column": 5,
       "row": 6,
       "type": ".",
       "floor": 1,
@@ -3173,6 +3124,49 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
+        304,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        304,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        304,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        336,
+        492
+      ],
+      "pico2d_center": [
+        336,
+        108
+      ],
+      "pico2d_surface_rect": [
+        304,
+        76,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "5,6",
+      "column": 5,
+      "row": 6,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
         368,
         460,
         64,
@@ -3203,7 +3197,9 @@
         76,
         64,
         64
-      ]
+      ],
+      "prop": "보급 상자",
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-2.png"
     },
     {
       "id": "6,6",
@@ -3252,51 +3248,6 @@
       "id": "7,6",
       "column": 7,
       "row": 6,
-      "type": "~",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        496,
-        460,
-        64,
-        64
-      ],
-      "surface_rect": [
-        496,
-        460,
-        64,
-        64
-      ],
-      "draw_rect": [
-        496,
-        460,
-        64,
-        64
-      ],
-      "canvas_center": [
-        528,
-        492
-      ],
-      "pico2d_center": [
-        528,
-        108
-      ],
-      "pico2d_surface_rect": [
-        496,
-        76,
-        64,
-        64
-      ],
-      "hazard": "얼음 균열",
-      "hazard_file": "asset/map/stage/icon/themes/frost-cavern/hazard.png"
-    },
-    {
-      "id": "8,6",
-      "column": 8,
-      "row": 6,
       "type": "O",
       "floor": null,
       "height_level": 0,
@@ -3304,6 +3255,51 @@
       "deployable": false,
       "placement": null,
       "base_rect": [
+        496,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        496,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        496,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        528,
+        492
+      ],
+      "pico2d_center": [
+        528,
+        108
+      ],
+      "pico2d_surface_rect": [
+        496,
+        76,
+        64,
+        64
+      ],
+      "prop": "나무 방책",
+      "prop_file": "asset/map/stage/icon/themes/fortified-kit/prop-0.png"
+    },
+    {
+      "id": "8,6",
+      "column": 8,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
         560,
         460,
         64,
@@ -3334,9 +3330,7 @@
         76,
         64,
         64
-      ],
-      "prop": "얼어붙은 기둥",
-      "prop_file": "asset/map/stage/icon/themes/frost-cavern/prop-2.png"
+      ]
     },
     {
       "id": "9,6",
@@ -3435,36 +3429,52 @@
           1
         ],
         [
-          1,
-          1
-        ],
-        [
-          2,
-          1
-        ],
-        [
-          3,
-          1
-        ],
-        [
-          4,
-          1
-        ],
-        [
-          4,
+          0,
           2
         ],
         [
-          4,
+          0,
           3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          5
         ],
         [
           5,
-          3
+          5
         ],
         [
           6,
-          3
+          5
         ],
         [
           6,
@@ -3472,31 +3482,23 @@
         ],
         [
           6,
-          5
+          3
+        ],
+        [
+          6,
+          2
         ],
         [
           7,
-          5
+          2
         ],
         [
           8,
-          5
+          2
         ],
         [
           9,
-          5
-        ],
-        [
-          10,
-          5
-        ],
-        [
-          10,
-          4
-        ],
-        [
-          10,
-          3
+          2
         ],
         [
           10,
@@ -3517,36 +3519,52 @@
           1
         ],
         [
-          1,
-          1
-        ],
-        [
-          2,
-          1
-        ],
-        [
-          3,
-          1
-        ],
-        [
-          4,
-          1
-        ],
-        [
-          4,
+          0,
           2
         ],
         [
-          4,
+          0,
           3
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          5
         ],
         [
           5,
-          3
+          5
         ],
         [
           6,
-          3
+          5
         ],
         [
           6,
@@ -3554,19 +3572,35 @@
         ],
         [
           6,
-          5
+          3
+        ],
+        [
+          6,
+          2
         ],
         [
           7,
-          5
+          2
         ],
         [
           8,
-          5
+          2
         ],
         [
           9,
-          5
+          2
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
         ],
         [
           10,
@@ -3584,43 +3618,43 @@
         ],
         [
           0,
-          2
+          4
         ],
         [
           0,
-          1
+          5
+        ],
+        [
+          0,
+          6
         ],
         [
           1,
-          1
+          6
         ],
         [
           2,
-          1
+          6
         ],
         [
           3,
-          1
+          6
         ],
         [
           4,
-          1
+          6
         ],
         [
           4,
-          2
-        ],
-        [
-          4,
-          3
+          5
         ],
         [
           5,
-          3
+          5
         ],
         [
           6,
-          3
+          5
         ],
         [
           6,
@@ -3628,31 +3662,23 @@
         ],
         [
           6,
-          5
+          3
+        ],
+        [
+          6,
+          2
         ],
         [
           7,
-          5
+          2
         ],
         [
           8,
-          5
+          2
         ],
         [
           9,
-          5
-        ],
-        [
-          10,
-          5
-        ],
-        [
-          10,
-          4
-        ],
-        [
-          10,
-          3
+          2
         ],
         [
           10,
@@ -3674,43 +3700,43 @@
         ],
         [
           0,
-          2
+          4
         ],
         [
           0,
-          1
+          5
+        ],
+        [
+          0,
+          6
         ],
         [
           1,
-          1
+          6
         ],
         [
           2,
-          1
+          6
         ],
         [
           3,
-          1
+          6
         ],
         [
           4,
-          1
+          6
         ],
         [
           4,
-          2
-        ],
-        [
-          4,
-          3
+          5
         ],
         [
           5,
-          3
+          5
         ],
         [
           6,
-          3
+          5
         ],
         [
           6,
@@ -3718,19 +3744,35 @@
         ],
         [
           6,
-          5
+          3
+        ],
+        [
+          6,
+          2
         ],
         [
           7,
-          5
+          2
         ],
         [
           8,
-          5
+          2
         ],
         [
           9,
-          5
+          2
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
         ],
         [
           10,
@@ -3748,51 +3790,35 @@
         ],
         [
           0,
-          4
-        ],
-        [
-          0,
-          3
-        ],
-        [
-          0,
-          2
-        ],
-        [
-          0,
-          1
+          6
         ],
         [
           1,
-          1
+          6
         ],
         [
           2,
-          1
+          6
         ],
         [
           3,
-          1
+          6
         ],
         [
           4,
-          1
+          6
         ],
         [
           4,
-          2
-        ],
-        [
-          4,
-          3
+          5
         ],
         [
           5,
-          3
+          5
         ],
         [
           6,
-          3
+          5
         ],
         [
           6,
@@ -3800,31 +3826,23 @@
         ],
         [
           6,
-          5
+          3
+        ],
+        [
+          6,
+          2
         ],
         [
           7,
-          5
+          2
         ],
         [
           8,
-          5
+          2
         ],
         [
           9,
-          5
-        ],
-        [
-          10,
-          5
-        ],
-        [
-          10,
-          4
-        ],
-        [
-          10,
-          3
+          2
         ],
         [
           10,
@@ -3846,51 +3864,35 @@
         ],
         [
           0,
-          4
-        ],
-        [
-          0,
-          3
-        ],
-        [
-          0,
-          2
-        ],
-        [
-          0,
-          1
+          6
         ],
         [
           1,
-          1
+          6
         ],
         [
           2,
-          1
+          6
         ],
         [
           3,
-          1
+          6
         ],
         [
           4,
-          1
+          6
         ],
         [
           4,
-          2
-        ],
-        [
-          4,
-          3
+          5
         ],
         [
           5,
-          3
+          5
         ],
         [
           6,
-          3
+          5
         ],
         [
           6,
@@ -3898,19 +3900,35 @@
         ],
         [
           6,
-          5
+          3
+        ],
+        [
+          6,
+          2
         ],
         [
           7,
-          5
+          2
         ],
         [
           8,
-          5
+          2
         ],
         [
           9,
-          5
+          2
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
         ],
         [
           10,
@@ -3922,5 +3940,5 @@
   "art_version": 6,
   "shared_tiles": "asset/map/stage/icon/common",
   "shared_objects": "asset/map/stage/icon/objects",
-  "origin": "new theme"
+  "origin": "legacy theme rebuilt on the standard grid"
 }

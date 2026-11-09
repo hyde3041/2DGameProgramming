@@ -58,7 +58,7 @@ if(apply){
  for(const view of views){
   const file=path.join(output,`${view}-attack-sheet.png`);
   await fs.copyFile(file,path.join(game,configuration.views[view].file));
-  await fs.copyFile(file,path.join(game,`asset/character/main/archer/${view}/attack-sheet.png`));
+  await fs.copyFile(file,path.join(game,`asset/character/main/2-archer/${view}/attack-sheet.png`));
  }
  const runtimeFile=path.join(root,'metadata/character/attack/archer.json');
  const runtime=JSON.parse(await fs.readFile(runtimeFile,'utf8'));

@@ -5,7 +5,7 @@
 ## 실제 적용
 
 - 별도 숨은 그림: `game/asset/character/icon/layers/swordsman/back/attack/armpit/armpit-fill.png`
-- 실제 게임 시트: `game/asset/character/main/swordsman/back/attack-sheet.png`
+- 실제 게임 시트: `game/asset/character/main/0-swordsman/back/attack-sheet.png`
 - 원본 몸통·팔·머리·검·Idle PNG는 수정하지 않았다. 작은 연결면을 몸통 뒤에 그리며 몸통의 이동·회전만 따른다. 늘이기나 팔 재분할을 하지 않는다.
 - 첫 공격 프레임에도 연결면의 마스크 안에서만 보완 결과를 반영한다. 기존 Idle 시트와 Python의 재생·상태 전환 코드는 보존한다.
 

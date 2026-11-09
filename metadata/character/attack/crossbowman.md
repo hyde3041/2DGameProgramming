@@ -14,7 +14,7 @@
 
 ## 파일
 
-- 게임: `game/asset/character/main/crossbowman/<front|back|side>/attack-sheet.png`
+- 게임: `game/asset/character/main/3-crossbowman/<front|back|side>/attack-sheet.png`
 - 분리 부위: `game/asset/character/icon/layers/crossbowman/<방향>/attack/original-rig/`
 - 연결점·원본 경로: [crossbowman-original-rig.json](crossbowman-original-rig.json)
 - 게임 재생: [crossbowman.json](crossbowman.json)

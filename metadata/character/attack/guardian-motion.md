@@ -4,7 +4,7 @@
 
 ## 이미지와 연결
 
-- 게임 시트: `game/asset/character/main/guardian/{front,back,side}/attack-sheet.png`
+- 게임 시트: `game/asset/character/main/1-guardian/{front,back,side}/attack-sheet.png`
 - 시트 1280×1280, 4열×4행, 프레임 320×320, 발 기준점 (160,288).
 - 원본: `game/asset/character/icon/layers/guardian/<방향>/aligned/`. 원본 PNG는 보존하며 수호기사 Idle은 아래 전환 수정에 따라 공격과 함께 출력한다.
 - 기존 `attack/support/`의 gear·shield 정리 복사본을 사용한다. 크게 움직일 때 드러나는 몸통의 옛 방패 테두리와 후면 방패에 섞인 옷·손은 `attack/push/`의 제한된 편집 복사본에서 보완했다. 앞선 철퇴 버전의 재작화 몸통·어깨 보완은 사용하지 않는다.

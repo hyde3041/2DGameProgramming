@@ -119,7 +119,7 @@ if(apply){
  await fs.mkdir(assets,{recursive:true});
  await fs.copyFile(cleanFile,path.join(assets,'source-clean.png'));
  await fs.copyFile(sheetFile,path.join(assets,'current-sheet.png'));
- await fs.copyFile(sheetFile,path.join(root,'game/asset/character/main/archer/back/attack-sheet.png'));
+ await fs.copyFile(sheetFile,path.join(root,'game/asset/character/main/2-archer/back/attack-sheet.png'));
  await fs.writeFile(metadataFile,JSON.stringify(record,null,2)+'\n');
  const runtimeFile=path.join(root,'metadata/character/attack/archer.json');
  const runtime=JSON.parse(await fs.readFile(runtimeFile,'utf8'));

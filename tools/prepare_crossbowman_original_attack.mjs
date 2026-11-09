@@ -23,7 +23,7 @@ const configs={
 const meta={id:'crossbowman',version:3,workflow:'original Idle head/neck RGBA fixed; original Idle and existing attack artwork cutouts; no generated or resized torso',cell_size:[320,320],frames:16,fps:16,release_frame:7,views:{}};
 for(const[view,c]of Object.entries(configs)){
  const rel=`asset/character/icon/layers/crossbowman/${view}/attack/original-rig`,dir=path.join(game,rel);await fs.mkdir(dir,{recursive:true});
- const source=`asset/character/main/crossbowman/${view}/idle-sheet.png`;
+ const source=`asset/character/main/3-crossbowman/${view}/idle-sheet.png`;
  const neutral=await sharp(path.join(game,source)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
  const attack=await sharp(path.join(game,`asset/character/icon/source/crossbowman/${view}/attack_01.png`)).ensureAlpha().raw().toBuffer();
  const layer=async n=>await sharp(path.join(game,`asset/character/icon/layers/crossbowman/${view}/aligned/visible/${n}.png`)).ensureAlpha().raw().toBuffer();

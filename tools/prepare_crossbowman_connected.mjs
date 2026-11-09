@@ -11,7 +11,7 @@ const timing=[
 const metadata={id:'crossbowman',version:5,workflow:'connected original poses with three real lift in-betweens; rigid unit scale and original feet fixed',lift:'metadata/character/attack/crossbowman-lift.json',frames:16,fps:16,release_frame:7,cell_size:[320,320],views:{}};
 for(const view of['front','back','side']){
  const folder=`asset/character/icon/layers/crossbowman/${view}/attack/connected`,dir=path.join(game,folder);await fs.mkdir(dir,{recursive:true});
- const idleFile=`asset/character/main/crossbowman/${view}/idle-sheet.png`,idle=await sharp(path.join(game,idleFile)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
+ const idleFile=`asset/character/main/3-crossbowman/${view}/idle-sheet.png`,idle=await sharp(path.join(game,idleFile)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
  const sourceFiles={idle:idleFile,aim:`asset/character/icon/source/crossbowman/${view}/attack_01.png`,fire:`asset/character/icon/source/crossbowman/${view}/attack_02.png`,recover:`asset/character/icon/source/crossbowman/${view}/attack_03.png`};
  for(let n=1;n<=3;n++)sourceFiles['lift-'+n]=`asset/character/icon/layers/crossbowman/${view}/attack/lift/lift-${String(n).padStart(2,'0')}.png`;
  const footBoxes=view==='front'?[[119,270,39,24],[161,270,37,24]]:view==='back'?[[127,270,28,24],[162,270,35,24]]:[[121,270,35,24],[160,270,39,24]];

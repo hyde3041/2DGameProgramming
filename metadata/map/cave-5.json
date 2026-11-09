@@ -1,8 +1,8 @@
 {
-  "id": "ancient-temple",
-  "name": "고대 신전",
-  "number": 13,
-  "file": "asset/map/stage/main/ancient-temple.png",
+  "id": "cave-5",
+  "name": "침수 유적",
+  "number": 5,
+  "file": "asset/map/stage/main/cave/cave-5.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -42,11 +42,11 @@
   "goals": [
     [
       10,
-      0
+      1
     ],
     [
       10,
-      6
+      5
     ]
   ],
   "coordinates": "pixel rectangles and centers use top-left origin unless named pico2d",
@@ -98,12 +98,12 @@
       "id": "1,0",
       "column": 1,
       "row": 0,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         112,
         76,
@@ -112,27 +112,27 @@
       ],
       "surface_rect": [
         112,
-        60,
+        76,
         64,
         64
       ],
       "draw_rect": [
         112,
-        60,
+        76,
         64,
-        80
+        64
       ],
       "canvas_center": [
         144,
-        92
+        108
       ],
       "pico2d_center": [
         144,
-        508
+        492
       ],
       "pico2d_surface_rect": [
         112,
-        476,
+        460,
         64,
         64
       ]
@@ -141,12 +141,12 @@
       "id": "2,0",
       "column": 2,
       "row": 0,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         176,
         76,
@@ -155,27 +155,27 @@
       ],
       "surface_rect": [
         176,
-        60,
+        76,
         64,
         64
       ],
       "draw_rect": [
         176,
-        60,
+        76,
         64,
-        80
+        64
       ],
       "canvas_center": [
         208,
-        92
+        108
       ],
       "pico2d_center": [
         208,
-        508
+        492
       ],
       "pico2d_surface_rect": [
         176,
-        476,
+        460,
         64,
         64
       ]
@@ -222,19 +222,19 @@
         64,
         64
       ],
-      "hazard": "봉인 균열",
-      "hazard_file": "asset/map/stage/icon/themes/ancient-temple/hazard.png"
+      "hazard": "물",
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "4,0",
       "column": 4,
       "row": 0,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         304,
         76,
@@ -266,20 +266,18 @@
         460,
         64,
         64
-      ],
-      "prop": "신전 기둥",
-      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-0.png"
+      ]
     },
     {
       "id": "5,0",
       "column": 5,
       "row": 0,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         368,
         76,
@@ -311,9 +309,7 @@
         460,
         64,
         64
-      ],
-      "hazard": "봉인 균열",
-      "hazard_file": "asset/map/stage/icon/themes/ancient-temple/hazard.png"
+      ]
     },
     {
       "id": "6,0",
@@ -405,12 +401,12 @@
       "id": "8,0",
       "column": 8,
       "row": 0,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         560,
         76,
@@ -442,7 +438,9 @@
         460,
         64,
         64
-      ]
+      ],
+      "hazard": "물",
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "9,0",
@@ -491,12 +489,12 @@
       "id": "10,0",
       "column": 10,
       "row": 0,
-      "type": "B",
+      "type": ".",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         688,
         76,
@@ -526,12 +524,6 @@
       "pico2d_surface_rect": [
         688,
         460,
-        64,
-        64
-      ],
-      "portal_rect": [
-        688,
-        76,
         64,
         64
       ]
@@ -675,93 +667,50 @@
       "id": "3,1",
       "column": 3,
       "row": 1,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
-      "base_rect": [
-        240,
-        140,
-        64,
-        64
-      ],
-      "surface_rect": [
-        240,
-        140,
-        64,
-        64
-      ],
-      "draw_rect": [
-        240,
-        140,
-        64,
-        64
-      ],
-      "canvas_center": [
-        272,
-        172
-      ],
-      "pico2d_center": [
-        272,
-        428
-      ],
-      "pico2d_surface_rect": [
-        240,
-        396,
-        64,
-        64
-      ]
-    },
-    {
-      "id": "4,1",
-      "column": 4,
-      "row": 1,
-      "type": "O",
+      "type": "~",
       "floor": null,
       "height_level": 0,
       "walkable": false,
       "deployable": false,
       "placement": null,
       "base_rect": [
-        304,
+        240,
         140,
         64,
         64
       ],
       "surface_rect": [
-        304,
+        240,
         140,
         64,
         64
       ],
       "draw_rect": [
-        304,
+        240,
         140,
         64,
         64
       ],
       "canvas_center": [
-        336,
+        272,
         172
       ],
       "pico2d_center": [
-        336,
+        272,
         428
       ],
       "pico2d_surface_rect": [
-        304,
+        240,
         396,
         64,
         64
       ],
-      "prop": "기하학 석상",
-      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-1.png"
+      "hazard": "물",
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
-      "id": "5,1",
-      "column": 5,
+      "id": "4,1",
+      "column": 4,
       "row": 1,
       "type": ".",
       "floor": 1,
@@ -770,6 +719,49 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        336,
+        172
+      ],
+      "pico2d_center": [
+        336,
+        428
+      ],
+      "pico2d_surface_rect": [
+        304,
+        396,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "5,1",
+      "column": 5,
+      "row": 1,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
         368,
         140,
         64,
@@ -777,27 +769,27 @@
       ],
       "surface_rect": [
         368,
-        140,
+        124,
         64,
         64
       ],
       "draw_rect": [
         368,
-        140,
+        124,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        172
+        156
       ],
       "pico2d_center": [
         400,
-        428
+        444
       ],
       "pico2d_surface_rect": [
         368,
-        396,
+        412,
         64,
         64
       ]
@@ -806,12 +798,12 @@
       "id": "6,1",
       "column": 6,
       "row": 1,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         432,
         140,
@@ -820,27 +812,27 @@
       ],
       "surface_rect": [
         432,
-        140,
+        124,
         64,
         64
       ],
       "draw_rect": [
         432,
-        140,
+        124,
         64,
-        64
+        80
       ],
       "canvas_center": [
         464,
-        172
+        156
       ],
       "pico2d_center": [
         464,
-        428
+        444
       ],
       "pico2d_surface_rect": [
         432,
-        396,
+        412,
         64,
         64
       ]
@@ -849,12 +841,12 @@
       "id": "7,1",
       "column": 7,
       "row": 1,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         496,
         140,
@@ -863,27 +855,27 @@
       ],
       "surface_rect": [
         496,
-        124,
+        140,
         64,
         64
       ],
       "draw_rect": [
         496,
-        124,
+        140,
         64,
-        80
+        64
       ],
       "canvas_center": [
         528,
-        156
+        172
       ],
       "pico2d_center": [
         528,
-        444
+        428
       ],
       "pico2d_surface_rect": [
         496,
-        412,
+        396,
         64,
         64
       ]
@@ -892,12 +884,12 @@
       "id": "8,1",
       "column": 8,
       "row": 1,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         560,
         140,
@@ -906,30 +898,32 @@
       ],
       "surface_rect": [
         560,
-        124,
+        140,
         64,
         64
       ],
       "draw_rect": [
         560,
-        124,
+        140,
         64,
-        80
+        64
       ],
       "canvas_center": [
         592,
-        156
+        172
       ],
       "pico2d_center": [
         592,
-        444
+        428
       ],
       "pico2d_surface_rect": [
         560,
-        412,
+        396,
         64,
         64
-      ]
+      ],
+      "hazard": "물",
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "9,1",
@@ -978,12 +972,12 @@
       "id": "10,1",
       "column": 10,
       "row": 1,
-      "type": ".",
+      "type": "B",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         688,
         140,
@@ -1013,6 +1007,12 @@
       "pico2d_surface_rect": [
         688,
         396,
+        64,
+        64
+      ],
+      "portal_rect": [
+        688,
+        140,
         64,
         64
       ]
@@ -1064,12 +1064,12 @@
       "id": "1,2",
       "column": 1,
       "row": 2,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         112,
         204,
@@ -1078,27 +1078,27 @@
       ],
       "surface_rect": [
         112,
-        204,
+        188,
         64,
         64
       ],
       "draw_rect": [
         112,
-        204,
+        188,
         64,
-        64
+        80
       ],
       "canvas_center": [
         144,
-        236
+        220
       ],
       "pico2d_center": [
         144,
-        364
+        380
       ],
       "pico2d_surface_rect": [
         112,
-        332,
+        348,
         64,
         64
       ]
@@ -1193,12 +1193,12 @@
       "id": "4,2",
       "column": 4,
       "row": 2,
-      "type": "#",
-      "floor": null,
-      "height_level": 1,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         304,
         204,
@@ -1207,27 +1207,27 @@
       ],
       "surface_rect": [
         304,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         304,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         336,
-        220
+        236
       ],
       "pico2d_center": [
         336,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         304,
-        348,
+        332,
         64,
         64
       ]
@@ -1236,12 +1236,12 @@
       "id": "5,2",
       "column": 5,
       "row": 2,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "deployable": true,
+      "placement": "elevated",
       "base_rect": [
         368,
         204,
@@ -1250,43 +1250,41 @@
       ],
       "surface_rect": [
         368,
-        204,
+        188,
         64,
         64
       ],
       "draw_rect": [
         368,
-        204,
+        188,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        236
+        220
       ],
       "pico2d_center": [
         400,
-        364
+        380
       ],
       "pico2d_surface_rect": [
         368,
-        332,
+        348,
         64,
         64
-      ],
-      "prop": "부서진 제단",
-      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-2.png"
+      ]
     },
     {
       "id": "6,2",
       "column": 6,
       "row": 2,
-      "type": "#",
-      "floor": null,
+      "type": "H",
+      "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "deployable": true,
+      "placement": "elevated",
       "base_rect": [
         432,
         204,
@@ -1324,12 +1322,12 @@
       "id": "7,2",
       "column": 7,
       "row": 2,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         496,
         204,
@@ -1338,27 +1336,27 @@
       ],
       "surface_rect": [
         496,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         496,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         528,
-        220
+        236
       ],
       "pico2d_center": [
         528,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         496,
-        348,
+        332,
         64,
         64
       ]
@@ -1367,12 +1365,12 @@
       "id": "8,2",
       "column": 8,
       "row": 2,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         560,
         204,
@@ -1381,30 +1379,32 @@
       ],
       "surface_rect": [
         560,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         560,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         592,
-        220
+        236
       ],
       "pico2d_center": [
         592,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         560,
-        348,
+        332,
         64,
         64
-      ]
+      ],
+      "hazard": "물",
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "9,2",
@@ -1631,12 +1631,12 @@
       "id": "3,3",
       "column": 3,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         240,
         268,
@@ -1645,41 +1645,43 @@
       ],
       "surface_rect": [
         240,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         240,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         272,
-        284
+        300
       ],
       "pico2d_center": [
         272,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         240,
-        284,
+        268,
         64,
         64
-      ]
+      ],
+      "hazard": "물",
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "4,3",
       "column": 4,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         304,
         268,
@@ -1688,27 +1690,27 @@
       ],
       "surface_rect": [
         304,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         304,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         336,
-        284
+        300
       ],
       "pico2d_center": [
         336,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         304,
-        284,
+        268,
         64,
         64
       ]
@@ -1717,12 +1719,12 @@
       "id": "5,3",
       "column": 5,
       "row": 3,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         368,
         268,
@@ -1754,9 +1756,7 @@
         268,
         64,
         64
-      ],
-      "prop": "기하학 석상",
-      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-1.png"
+      ]
     },
     {
       "id": "6,3",
@@ -1848,12 +1848,12 @@
       "id": "8,3",
       "column": 8,
       "row": 3,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         560,
         268,
@@ -1885,20 +1885,18 @@
         268,
         64,
         64
-      ],
-      "prop": "기하학 석상",
-      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-1.png"
+      ]
     },
     {
       "id": "9,3",
       "column": 9,
       "row": 3,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         624,
         268,
@@ -1930,9 +1928,7 @@
         268,
         64,
         64
-      ],
-      "prop": "부서진 제단",
-      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-2.png"
+      ]
     },
     {
       "id": "10,3",
@@ -2024,12 +2020,12 @@
       "id": "1,4",
       "column": 1,
       "row": 4,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         112,
         332,
@@ -2038,27 +2034,27 @@
       ],
       "surface_rect": [
         112,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         112,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         144,
-        364
+        348
       ],
       "pico2d_center": [
         144,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         112,
-        204,
+        220,
         64,
         64
       ]
@@ -2067,12 +2063,12 @@
       "id": "2,4",
       "column": 2,
       "row": 4,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         176,
         332,
@@ -2081,27 +2077,27 @@
       ],
       "surface_rect": [
         176,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         176,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         208,
-        364
+        348
       ],
       "pico2d_center": [
         208,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         176,
-        204,
+        220,
         64,
         64
       ]
@@ -2110,12 +2106,12 @@
       "id": "3,4",
       "column": 3,
       "row": 4,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         240,
         332,
@@ -2147,18 +2143,20 @@
         204,
         64,
         64
-      ]
+      ],
+      "hazard": "물",
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "4,4",
       "column": 4,
       "row": 4,
-      "type": "#",
-      "floor": null,
-      "height_level": 1,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         304,
         332,
@@ -2167,27 +2165,27 @@
       ],
       "surface_rect": [
         304,
-        316,
+        332,
         64,
         64
       ],
       "draw_rect": [
         304,
-        316,
+        332,
         64,
-        80
+        64
       ],
       "canvas_center": [
         336,
-        348
+        364
       ],
       "pico2d_center": [
         336,
-        252
+        236
       ],
       "pico2d_surface_rect": [
         304,
-        220,
+        204,
         64,
         64
       ]
@@ -2196,12 +2194,12 @@
       "id": "5,4",
       "column": 5,
       "row": 4,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         368,
         332,
@@ -2210,27 +2208,27 @@
       ],
       "surface_rect": [
         368,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         368,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        364
+        348
       ],
       "pico2d_center": [
         400,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         368,
-        204,
+        220,
         64,
         64
       ]
@@ -2239,12 +2237,12 @@
       "id": "6,4",
       "column": 6,
       "row": 4,
-      "type": "#",
-      "floor": null,
+      "type": "H",
+      "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "deployable": true,
+      "placement": "elevated",
       "base_rect": [
         432,
         332,
@@ -2325,12 +2323,12 @@
       "id": "8,4",
       "column": 8,
       "row": 4,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         560,
         332,
@@ -2362,7 +2360,9 @@
         204,
         64,
         64
-      ]
+      ],
+      "hazard": "물",
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "9,4",
@@ -2503,12 +2503,12 @@
       "id": "1,5",
       "column": 1,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         112,
         396,
@@ -2517,27 +2517,27 @@
       ],
       "surface_rect": [
         112,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         112,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         144,
-        428
+        412
       ],
       "pico2d_center": [
         144,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         112,
-        140,
+        156,
         64,
         64
       ]
@@ -2546,58 +2546,56 @@
       "id": "2,5",
       "column": 2,
       "row": 5,
-      "type": "O",
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
+        176,
+        396,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        380,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        380,
+        64,
+        80
+      ],
+      "canvas_center": [
+        208,
+        412
+      ],
+      "pico2d_center": [
+        208,
+        188
+      ],
+      "pico2d_surface_rect": [
+        176,
+        156,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "3,5",
+      "column": 3,
+      "row": 5,
+      "type": "~",
       "floor": null,
       "height_level": 0,
       "walkable": false,
       "deployable": false,
       "placement": null,
       "base_rect": [
-        176,
-        396,
-        64,
-        64
-      ],
-      "surface_rect": [
-        176,
-        396,
-        64,
-        64
-      ],
-      "draw_rect": [
-        176,
-        396,
-        64,
-        64
-      ],
-      "canvas_center": [
-        208,
-        428
-      ],
-      "pico2d_center": [
-        208,
-        172
-      ],
-      "pico2d_surface_rect": [
-        176,
-        140,
-        64,
-        64
-      ],
-      "prop": "신전 기둥",
-      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-0.png"
-    },
-    {
-      "id": "3,5",
-      "column": 3,
-      "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
-      "base_rect": [
         240,
         396,
         64,
@@ -2628,7 +2626,9 @@
         140,
         64,
         64
-      ]
+      ],
+      "hazard": "물",
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "4,5",
@@ -2677,12 +2677,12 @@
       "id": "5,5",
       "column": 5,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         368,
         396,
@@ -2691,27 +2691,27 @@
       ],
       "surface_rect": [
         368,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         368,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        428
+        412
       ],
       "pico2d_center": [
         400,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         368,
-        140,
+        156,
         64,
         64
       ]
@@ -2720,12 +2720,12 @@
       "id": "6,5",
       "column": 6,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         432,
         396,
@@ -2734,27 +2734,27 @@
       ],
       "surface_rect": [
         432,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         432,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         464,
-        428
+        412
       ],
       "pico2d_center": [
         464,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         432,
-        140,
+        156,
         64,
         64
       ]
@@ -2806,12 +2806,12 @@
       "id": "8,5",
       "column": 8,
       "row": 5,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         560,
         396,
@@ -2820,27 +2820,27 @@
       ],
       "surface_rect": [
         560,
-        380,
+        396,
         64,
         64
       ],
       "draw_rect": [
         560,
-        380,
+        396,
         64,
-        80
+        64
       ],
       "canvas_center": [
         592,
-        412
+        428
       ],
       "pico2d_center": [
         592,
-        188
+        172
       ],
       "pico2d_surface_rect": [
         560,
-        156,
+        140,
         64,
         64
       ]
@@ -2849,12 +2849,12 @@
       "id": "9,5",
       "column": 9,
       "row": 5,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         624,
         396,
@@ -2863,27 +2863,27 @@
       ],
       "surface_rect": [
         624,
-        380,
+        396,
         64,
         64
       ],
       "draw_rect": [
         624,
-        380,
+        396,
         64,
-        80
+        64
       ],
       "canvas_center": [
         656,
-        412
+        428
       ],
       "pico2d_center": [
         656,
-        188
+        172
       ],
       "pico2d_surface_rect": [
         624,
-        156,
+        140,
         64,
         64
       ]
@@ -2892,12 +2892,12 @@
       "id": "10,5",
       "column": 10,
       "row": 5,
-      "type": ".",
+      "type": "B",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         688,
         396,
@@ -2927,6 +2927,12 @@
       "pico2d_surface_rect": [
         688,
         140,
+        64,
+        64
+      ],
+      "portal_rect": [
+        688,
+        396,
         64,
         64
       ]
@@ -3021,51 +3027,6 @@
       "id": "2,6",
       "column": 2,
       "row": 6,
-      "type": "~",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        176,
-        460,
-        64,
-        64
-      ],
-      "surface_rect": [
-        176,
-        460,
-        64,
-        64
-      ],
-      "draw_rect": [
-        176,
-        460,
-        64,
-        64
-      ],
-      "canvas_center": [
-        208,
-        492
-      ],
-      "pico2d_center": [
-        208,
-        108
-      ],
-      "pico2d_surface_rect": [
-        176,
-        76,
-        64,
-        64
-      ],
-      "hazard": "봉인 균열",
-      "hazard_file": "asset/map/stage/icon/themes/ancient-temple/hazard.png"
-    },
-    {
-      "id": "3,6",
-      "column": 3,
-      "row": 6,
       "type": ".",
       "floor": 1,
       "height_level": 0,
@@ -3073,6 +3034,49 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
+        176,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        208,
+        492
+      ],
+      "pico2d_center": [
+        208,
+        108
+      ],
+      "pico2d_surface_rect": [
+        176,
+        76,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "3,6",
+      "column": 3,
+      "row": 6,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
         240,
         460,
         64,
@@ -3103,7 +3107,9 @@
         76,
         64,
         64
-      ]
+      ],
+      "hazard": "물",
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "4,6",
@@ -3152,12 +3158,12 @@
       "id": "5,6",
       "column": 5,
       "row": 6,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         368,
         460,
@@ -3189,9 +3195,7 @@
         76,
         64,
         64
-      ],
-      "hazard": "봉인 균열",
-      "hazard_file": "asset/map/stage/icon/themes/ancient-temple/hazard.png"
+      ]
     },
     {
       "id": "6,6",
@@ -3240,12 +3244,12 @@
       "id": "7,6",
       "column": 7,
       "row": 6,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         496,
         460,
@@ -3277,20 +3281,18 @@
         76,
         64,
         64
-      ],
-      "prop": "기하학 석상",
-      "prop_file": "asset/map/stage/icon/themes/ancient-temple/prop-1.png"
+      ]
     },
     {
       "id": "8,6",
       "column": 8,
       "row": 6,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         560,
         460,
@@ -3299,41 +3301,43 @@
       ],
       "surface_rect": [
         560,
-        444,
+        460,
         64,
         64
       ],
       "draw_rect": [
         560,
-        444,
+        460,
         64,
-        80
+        64
       ],
       "canvas_center": [
         592,
-        476
+        492
       ],
       "pico2d_center": [
         592,
-        124
+        108
       ],
       "pico2d_surface_rect": [
         560,
-        92,
+        76,
         64,
         64
-      ]
+      ],
+      "hazard": "물",
+      "hazard_file": "asset/map/stage/icon/common/water.png"
     },
     {
       "id": "9,6",
       "column": 9,
       "row": 6,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         624,
         460,
@@ -3342,27 +3346,27 @@
       ],
       "surface_rect": [
         624,
-        444,
+        460,
         64,
         64
       ],
       "draw_rect": [
         624,
-        444,
+        460,
         64,
-        80
+        64
       ],
       "canvas_center": [
         656,
-        476
+        492
       ],
       "pico2d_center": [
         656,
-        124
+        108
       ],
       "pico2d_surface_rect": [
         624,
-        92,
+        76,
         64,
         64
       ]
@@ -3371,12 +3375,12 @@
       "id": "10,6",
       "column": 10,
       "row": 6,
-      "type": "B",
+      "type": ".",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         688,
         460,
@@ -3406,12 +3410,6 @@
       "pico2d_surface_rect": [
         688,
         76,
-        64,
-        64
-      ],
-      "portal_rect": [
-        688,
-        460,
         64,
         64
       ]
@@ -3431,12 +3429,12 @@
           2
         ],
         [
-          1,
-          2
+          0,
+          3
         ],
         [
-          2,
-          2
+          1,
+          3
         ],
         [
           2,
@@ -3444,47 +3442,39 @@
         ],
         [
           2,
-          4
+          2
         ],
         [
           3,
-          4
-        ],
-        [
-          3,
-          5
+          2
         ],
         [
           4,
-          5
+          2
+        ],
+        [
+          4,
+          3
         ],
         [
           5,
-          5
+          3
         ],
         [
           6,
-          5
+          3
         ],
         [
           7,
-          5
-        ],
-        [
-          7,
-          4
+          3
         ],
         [
           8,
-          4
+          3
         ],
         [
           9,
-          4
-        ],
-        [
-          10,
-          4
+          3
         ],
         [
           10,
@@ -3497,10 +3487,6 @@
         [
           10,
           1
-        ],
-        [
-          10,
-          0
         ]
       ]
     },
@@ -3517,12 +3503,12 @@
           2
         ],
         [
-          1,
-          2
+          0,
+          3
         ],
         [
-          2,
-          2
+          1,
+          3
         ],
         [
           2,
@@ -3530,43 +3516,43 @@
         ],
         [
           2,
-          4
+          2
         ],
         [
           3,
-          4
-        ],
-        [
-          3,
-          5
+          2
         ],
         [
           4,
-          5
+          2
+        ],
+        [
+          4,
+          3
         ],
         [
           5,
-          5
+          3
         ],
         [
           6,
-          5
+          3
         ],
         [
           7,
-          5
-        ],
-        [
-          7,
-          4
+          3
         ],
         [
           8,
-          4
+          3
         ],
         [
           9,
-          4
+          3
+        ],
+        [
+          10,
+          3
         ],
         [
           10,
@@ -3575,10 +3561,6 @@
         [
           10,
           5
-        ],
-        [
-          10,
-          6
         ]
       ]
     },
@@ -3600,47 +3582,39 @@
         ],
         [
           2,
-          4
+          2
         ],
         [
           3,
-          4
-        ],
-        [
-          3,
-          5
+          2
         ],
         [
           4,
-          5
+          2
+        ],
+        [
+          4,
+          3
         ],
         [
           5,
-          5
+          3
         ],
         [
           6,
-          5
+          3
         ],
         [
           7,
-          5
-        ],
-        [
-          7,
-          4
+          3
         ],
         [
           8,
-          4
+          3
         ],
         [
           9,
-          4
-        ],
-        [
-          10,
-          4
+          3
         ],
         [
           10,
@@ -3653,10 +3627,6 @@
         [
           10,
           1
-        ],
-        [
-          10,
-          0
         ]
       ]
     },
@@ -3678,43 +3648,43 @@
         ],
         [
           2,
-          4
+          2
         ],
         [
           3,
-          4
-        ],
-        [
-          3,
-          5
+          2
         ],
         [
           4,
-          5
+          2
+        ],
+        [
+          4,
+          3
         ],
         [
           5,
-          5
+          3
         ],
         [
           6,
-          5
+          3
         ],
         [
           7,
-          5
-        ],
-        [
-          7,
-          4
+          3
         ],
         [
           8,
-          4
+          3
         ],
         [
           9,
-          4
+          3
+        ],
+        [
+          10,
+          3
         ],
         [
           10,
@@ -3723,10 +3693,6 @@
         [
           10,
           5
-        ],
-        [
-          10,
-          6
         ]
       ]
     },
@@ -3739,56 +3705,56 @@
           5
         ],
         [
-          1,
-          5
+          0,
+          4
+        ],
+        [
+          0,
+          3
         ],
         [
           1,
-          4
+          3
         ],
         [
           2,
-          4
+          3
+        ],
+        [
+          2,
+          2
         ],
         [
           3,
-          4
-        ],
-        [
-          3,
-          5
+          2
         ],
         [
           4,
-          5
+          2
+        ],
+        [
+          4,
+          3
         ],
         [
           5,
-          5
+          3
         ],
         [
           6,
-          5
+          3
         ],
         [
           7,
-          5
-        ],
-        [
-          7,
-          4
+          3
         ],
         [
           8,
-          4
+          3
         ],
         [
           9,
-          4
-        ],
-        [
-          10,
-          4
+          3
         ],
         [
           10,
@@ -3801,10 +3767,6 @@
         [
           10,
           1
-        ],
-        [
-          10,
-          0
         ]
       ]
     },
@@ -3817,52 +3779,60 @@
           5
         ],
         [
-          1,
-          5
+          0,
+          4
+        ],
+        [
+          0,
+          3
         ],
         [
           1,
-          4
+          3
         ],
         [
           2,
-          4
+          3
+        ],
+        [
+          2,
+          2
         ],
         [
           3,
-          4
-        ],
-        [
-          3,
-          5
+          2
         ],
         [
           4,
-          5
+          2
+        ],
+        [
+          4,
+          3
         ],
         [
           5,
-          5
+          3
         ],
         [
           6,
-          5
+          3
         ],
         [
           7,
-          5
-        ],
-        [
-          7,
-          4
+          3
         ],
         [
           8,
-          4
+          3
         ],
         [
           9,
-          4
+          3
+        ],
+        [
+          10,
+          3
         ],
         [
           10,
@@ -3871,10 +3841,6 @@
         [
           10,
           5
-        ],
-        [
-          10,
-          6
         ]
       ]
     }
@@ -3882,5 +3848,5 @@
   "art_version": 6,
   "shared_tiles": "asset/map/stage/icon/common",
   "shared_objects": "asset/map/stage/icon/objects",
-  "origin": "new theme"
+  "origin": "existing v4 layout preserved"
 }

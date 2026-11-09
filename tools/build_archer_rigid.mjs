@@ -17,7 +17,7 @@ try{
  await page.evaluate(async bundles=>{window.players={};for(const[v,b]of Object.entries(bundles))players[v]=await ArcherRigid.load(b);},bundles);
  for(const view of Object.keys(bundles)){
   const folder=path.join(out,view);await fs.mkdir(folder,{recursive:true});const frames=[];
-  const idle0=await sharp(path.join(game,`asset/character/main/archer/${view}/idle-sheet.png`)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
+  const idle0=await sharp(path.join(game,`asset/character/main/2-archer/${view}/idle-sheet.png`)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
   const rigChecks=[];let trimmed=0;
   for(let f=0;f<16;f++){
    const result=await page.evaluate(({v,f})=>{const c=document.querySelector('canvas'),rig=ArcherRigid.draw(c.getContext('2d'),players[v],f);return{url:c.toDataURL(),rig};},{v:view,f});
@@ -29,7 +29,7 @@ try{
   }
   const atlas=Buffer.alloc(1280*1280*4);for(let f=0;f<16;f++)for(let y=0;y<320;y++)frames[f].copy(atlas,((Math.floor(f/4)*320+y)*1280+f%4*320)*4,y*320*4,(y+1)*320*4);
   const file=path.join(out,`${view}-attack-sheet.png`);await sharp(atlas,{raw:{width:1280,height:1280,channels:4}}).png().toFile(file);
-  const dir=view==='side'?'right':view;animations[dir]={file:`asset/character/main/archer/${view}/attack-sheet.png`,width:1280,height:1280,columns:4,rows:4,loop:false,return_to:`${dir}_idle`,duration_ms:1000,frame_duration_ms:62.5,frames:frames.map((_,f)=>({index:f,rect:[f%4*320,Math.floor(f/4)*320,320,320],pico2d_rect:[f%4*320,960-Math.floor(f/4)*320,320,320],duration_ms:62.5}))};
+  const dir=view==='side'?'right':view;animations[dir]={file:`asset/character/main/2-archer/${view}/attack-sheet.png`,width:1280,height:1280,columns:4,rows:4,loop:false,return_to:`${dir}_idle`,duration_ms:1000,frame_duration_ms:62.5,frames:frames.map((_,f)=>({index:f,rect:[f%4*320,Math.floor(f/4)*320,320,320],pico2d_rect:[f%4*320,960-Math.floor(f/4)*320,320,320],duration_ms:62.5}))};
   let maxMatrixError=0,maxBoneError=0;
   for(const frame of rigChecks){for(const t of frame.transforms)maxMatrixError=Math.max(maxMatrixError,Math.abs(t.a*t.a+t.b*t.b-1),Math.abs(t.c*t.c+t.d*t.d-1),Math.abs(t.a*t.d-t.b*t.c-1));for(const arm of[frame.pose.bow,frame.pose.drawing])maxBoneError=Math.max(maxBoneError,Math.abs(Math.hypot(arm.elbow[0]-arm.shoulder[0],arm.elbow[1]-arm.shoulder[1])-17),Math.abs(Math.hypot(arm.wrist[0]-arm.elbow[0],arm.wrist[1]-arm.elbow[1])-19),Math.abs(Math.hypot(arm.grip[0]-arm.wrist[0],arm.grip[1]-arm.wrist[1])-7));}
   if(maxMatrixError>1e-8||maxBoneError>1e-8)throw Error('Part scale or limb length changed');
@@ -42,7 +42,7 @@ try{
  const mp4=await page.evaluate(async()=>{const c=document.querySelector('canvas'),mime='video/mp4;codecs=avc1.42001E',stream=c.captureStream(60),rec=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:1800000}),chunks=[];rec.ondataavailable=e=>chunks.push(e.data);const stopped=new Promise(r=>rec.onstop=r);rec.start();const start=performance.now();await new Promise(resolve=>{function tick(now){const sec=(now-start)/1000;renderPreview(sec%1.55);if(sec<6.2)requestAnimationFrame(tick);else resolve();}requestAnimationFrame(tick);});rec.stop();await stopped;stream.getTracks().forEach(x=>x.stop());return await new Promise(resolve=>{const r=new FileReader;r.onload=()=>resolve(r.result);r.readAsDataURL(new Blob(chunks,{type:mime}));});});
  await fs.writeFile(path.join(out,'preview.mp4'),Buffer.from(mp4.split(',')[1],'base64'));
  if(apply){
-  if(views.length!==3)throw Error('Prepare all three directions before applying');for(const view of views)await fs.copyFile(path.join(out,`${view}-attack-sheet.png`),path.join(game,`asset/character/main/archer/${view}/attack-sheet.png`));
+  if(views.length!==3)throw Error('Prepare all three directions before applying');for(const view of views)await fs.copyFile(path.join(out,`${view}-attack-sheet.png`),path.join(game,`asset/character/main/2-archer/${view}/attack-sheet.png`));
   const runtime={id:'archer',name:'궁수',version:4,cell_size:[320,320],pivot:[160,288],fps:16,frames_per_direction:16,duration_ms:1000,release_frame:7,loop:false,return_to:'idle',first_frame:'rig-rest',animations};await fs.writeFile(path.join(root,'metadata/character/attack/archer.json'),JSON.stringify(runtime,null,2)+'\n');
   for(const name of['archer.json','manifest.json']){const file=path.join(root,'metadata/character/sprites',name),json=JSON.parse(await fs.readFile(file,'utf8'));function update(x){if(!x||typeof x!=='object')return;if(x.id==='archer'&&x.directional_attack_sheets)x.directional_attack_sheets=animations;for(const y of Object.values(x))if(y&&typeof y==='object')update(y);}update(json);await fs.writeFile(file,JSON.stringify(json,null,2)+'\n');}
   await fs.writeFile(path.join(root,'metadata/character/attack/archer-rig.json'),JSON.stringify({...sources,renderer:'tools/archer-rigid-renderer.js'},null,2)+'\n');

@@ -1,8 +1,8 @@
 {
-  "id": "royal-treasury",
-  "name": "왕실 보물고",
-  "number": 17,
-  "file": "asset/map/stage/main/royal-treasury.png",
+  "id": "cave-0",
+  "name": "기본 던전",
+  "number": 0,
+  "file": "asset/map/stage/main/cave/cave-0.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -42,7 +42,7 @@
   "goals": [
     [
       10,
-      2
+      1
     ],
     [
       10,
@@ -98,12 +98,12 @@
       "id": "1,0",
       "column": 1,
       "row": 0,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         112,
         76,
@@ -112,27 +112,27 @@
       ],
       "surface_rect": [
         112,
-        60,
+        76,
         64,
         64
       ],
       "draw_rect": [
         112,
-        60,
+        76,
         64,
-        80
+        64
       ],
       "canvas_center": [
         144,
-        92
+        108
       ],
       "pico2d_center": [
         144,
-        508
+        492
       ],
       "pico2d_surface_rect": [
         112,
-        476,
+        460,
         64,
         64
       ]
@@ -141,12 +141,12 @@
       "id": "2,0",
       "column": 2,
       "row": 0,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         176,
         76,
@@ -155,27 +155,27 @@
       ],
       "surface_rect": [
         176,
-        60,
+        76,
         64,
         64
       ],
       "draw_rect": [
         176,
-        60,
+        76,
         64,
-        80
+        64
       ],
       "canvas_center": [
         208,
-        92
+        108
       ],
       "pico2d_center": [
         208,
-        508
+        492
       ],
       "pico2d_surface_rect": [
         176,
-        476,
+        460,
         64,
         64
       ]
@@ -270,12 +270,12 @@
       "id": "5,0",
       "column": 5,
       "row": 0,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "type": "#",
+      "floor": null,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         76,
@@ -284,27 +284,27 @@
       ],
       "surface_rect": [
         368,
-        76,
+        60,
         64,
         64
       ],
       "draw_rect": [
         368,
-        76,
+        60,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        108
+        92
       ],
       "pico2d_center": [
         400,
-        492
+        508
       ],
       "pico2d_surface_rect": [
         368,
-        460,
+        476,
         64,
         64
       ]
@@ -313,12 +313,12 @@
       "id": "6,0",
       "column": 6,
       "row": 0,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         432,
         76,
@@ -350,9 +350,7 @@
         460,
         64,
         64
-      ],
-      "prop": "보물 상자",
-      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-0.png"
+      ]
     },
     {
       "id": "7,0",
@@ -579,12 +577,12 @@
       "id": "1,1",
       "column": 1,
       "row": 1,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         112,
         140,
@@ -593,27 +591,27 @@
       ],
       "surface_rect": [
         112,
-        124,
+        140,
         64,
         64
       ],
       "draw_rect": [
         112,
-        124,
+        140,
         64,
-        80
+        64
       ],
       "canvas_center": [
         144,
-        156
+        172
       ],
       "pico2d_center": [
         144,
-        444
+        428
       ],
       "pico2d_surface_rect": [
         112,
-        412,
+        396,
         64,
         64
       ]
@@ -665,12 +663,12 @@
       "id": "3,1",
       "column": 3,
       "row": 1,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         240,
         140,
@@ -679,27 +677,27 @@
       ],
       "surface_rect": [
         240,
-        140,
+        124,
         64,
         64
       ],
       "draw_rect": [
         240,
-        140,
+        124,
         64,
-        64
+        80
       ],
       "canvas_center": [
         272,
-        172
+        156
       ],
       "pico2d_center": [
         272,
-        428
+        444
       ],
       "pico2d_surface_rect": [
         240,
-        396,
+        412,
         64,
         64
       ]
@@ -751,12 +749,12 @@
       "id": "5,1",
       "column": 5,
       "row": 1,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "type": "#",
+      "floor": null,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         140,
@@ -765,27 +763,27 @@
       ],
       "surface_rect": [
         368,
-        140,
+        124,
         64,
         64
       ],
       "draw_rect": [
         368,
-        140,
+        124,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        172
+        156
       ],
       "pico2d_center": [
         400,
-        428
+        444
       ],
       "pico2d_surface_rect": [
         368,
-        396,
+        412,
         64,
         64
       ]
@@ -880,12 +878,12 @@
       "id": "8,1",
       "column": 8,
       "row": 1,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         560,
         140,
@@ -894,27 +892,27 @@
       ],
       "surface_rect": [
         560,
-        124,
+        140,
         64,
         64
       ],
       "draw_rect": [
         560,
-        124,
+        140,
         64,
-        80
+        64
       ],
       "canvas_center": [
         592,
-        156
+        172
       ],
       "pico2d_center": [
         592,
-        444
+        428
       ],
       "pico2d_surface_rect": [
         560,
-        412,
+        396,
         64,
         64
       ]
@@ -923,12 +921,12 @@
       "id": "9,1",
       "column": 9,
       "row": 1,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         624,
         140,
@@ -937,27 +935,27 @@
       ],
       "surface_rect": [
         624,
-        124,
+        140,
         64,
         64
       ],
       "draw_rect": [
         624,
-        124,
+        140,
         64,
-        80
+        64
       ],
       "canvas_center": [
         656,
-        156
+        172
       ],
       "pico2d_center": [
         656,
-        444
+        428
       ],
       "pico2d_surface_rect": [
         624,
-        412,
+        396,
         64,
         64
       ]
@@ -966,12 +964,12 @@
       "id": "10,1",
       "column": 10,
       "row": 1,
-      "type": ".",
+      "type": "B",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         688,
         140,
@@ -1001,6 +999,12 @@
       "pico2d_surface_rect": [
         688,
         396,
+        64,
+        64
+      ],
+      "portal_rect": [
+        688,
+        140,
         64,
         64
       ]
@@ -1052,12 +1056,12 @@
       "id": "1,2",
       "column": 1,
       "row": 2,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         112,
         204,
@@ -1066,27 +1070,27 @@
       ],
       "surface_rect": [
         112,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         112,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         144,
-        220
+        236
       ],
       "pico2d_center": [
         144,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         112,
-        348,
+        332,
         64,
         64
       ]
@@ -1138,12 +1142,12 @@
       "id": "3,2",
       "column": 3,
       "row": 2,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         240,
         204,
@@ -1152,27 +1156,27 @@
       ],
       "surface_rect": [
         240,
-        204,
+        188,
         64,
         64
       ],
       "draw_rect": [
         240,
-        204,
+        188,
         64,
-        64
+        80
       ],
       "canvas_center": [
         272,
-        236
+        220
       ],
       "pico2d_center": [
         272,
-        364
+        380
       ],
       "pico2d_surface_rect": [
         240,
-        332,
+        348,
         64,
         64
       ]
@@ -1181,12 +1185,12 @@
       "id": "4,2",
       "column": 4,
       "row": 2,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         304,
         204,
@@ -1218,17 +1222,15 @@
         332,
         64,
         64
-      ],
-      "hazard": "압력 함정",
-      "hazard_file": "asset/map/stage/icon/themes/royal-treasury/hazard.png"
+      ]
     },
     {
       "id": "5,2",
       "column": 5,
       "row": 2,
-      "type": "O",
+      "type": "#",
       "floor": null,
-      "height_level": 0,
+      "height_level": 1,
       "walkable": false,
       "deployable": false,
       "placement": null,
@@ -1240,81 +1242,34 @@
       ],
       "surface_rect": [
         368,
-        204,
+        188,
         64,
         64
       ],
       "draw_rect": [
         368,
-        204,
+        188,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        236
+        220
       ],
       "pico2d_center": [
         400,
-        364
+        380
       ],
       "pico2d_surface_rect": [
         368,
-        332,
+        348,
         64,
         64
-      ],
-      "prop": "금괴 받침대",
-      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-1.png"
+      ]
     },
     {
       "id": "6,2",
       "column": 6,
-      "row": 2,
-      "type": "~",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        432,
-        204,
-        64,
-        64
-      ],
-      "surface_rect": [
-        432,
-        204,
-        64,
-        64
-      ],
-      "draw_rect": [
-        432,
-        204,
-        64,
-        64
-      ],
-      "canvas_center": [
-        464,
-        236
-      ],
-      "pico2d_center": [
-        464,
-        364
-      ],
-      "pico2d_surface_rect": [
-        432,
-        332,
-        64,
-        64
-      ],
-      "hazard": "압력 함정",
-      "hazard_file": "asset/map/stage/icon/themes/royal-treasury/hazard.png"
-    },
-    {
-      "id": "7,2",
-      "column": 7,
       "row": 2,
       "type": ".",
       "floor": 1,
@@ -1323,6 +1278,49 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
+        432,
+        204,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        204,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        204,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        236
+      ],
+      "pico2d_center": [
+        464,
+        364
+      ],
+      "pico2d_surface_rect": [
+        432,
+        332,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "7,2",
+      "column": 7,
+      "row": 2,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
         496,
         204,
         64,
@@ -1330,27 +1328,27 @@
       ],
       "surface_rect": [
         496,
-        204,
+        188,
         64,
         64
       ],
       "draw_rect": [
         496,
-        204,
+        188,
         64,
-        64
+        80
       ],
       "canvas_center": [
         528,
-        236
+        220
       ],
       "pico2d_center": [
         528,
-        364
+        380
       ],
       "pico2d_surface_rect": [
         496,
-        332,
+        348,
         64,
         64
       ]
@@ -1402,12 +1400,12 @@
       "id": "9,2",
       "column": 9,
       "row": 2,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         624,
         204,
@@ -1416,27 +1414,27 @@
       ],
       "surface_rect": [
         624,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         624,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         656,
-        220
+        236
       ],
       "pico2d_center": [
         656,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         624,
-        348,
+        332,
         64,
         64
       ]
@@ -1445,12 +1443,12 @@
       "id": "10,2",
       "column": 10,
       "row": 2,
-      "type": "B",
+      "type": ".",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         688,
         204,
@@ -1480,12 +1478,6 @@
       "pico2d_surface_rect": [
         688,
         332,
-        64,
-        64
-      ],
-      "portal_rect": [
-        688,
-        204,
         64,
         64
       ]
@@ -1543,12 +1535,12 @@
       "id": "1,3",
       "column": 1,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         112,
         268,
@@ -1557,27 +1549,27 @@
       ],
       "surface_rect": [
         112,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         112,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         144,
-        284
+        300
       ],
       "pico2d_center": [
         144,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         112,
-        284,
+        268,
         64,
         64
       ]
@@ -1586,12 +1578,12 @@
       "id": "2,3",
       "column": 2,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         176,
         268,
@@ -1600,27 +1592,27 @@
       ],
       "surface_rect": [
         176,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         176,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         208,
-        284
+        300
       ],
       "pico2d_center": [
         208,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         176,
-        284,
+        268,
         64,
         64
       ]
@@ -1672,12 +1664,12 @@
       "id": "4,3",
       "column": 4,
       "row": 3,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         304,
         268,
@@ -1709,103 +1701,11 @@
         268,
         64,
         64
-      ],
-      "prop": "금고",
-      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-2.png"
+      ]
     },
     {
       "id": "5,3",
       "column": 5,
-      "row": 3,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        368,
-        268,
-        64,
-        64
-      ],
-      "surface_rect": [
-        368,
-        268,
-        64,
-        64
-      ],
-      "draw_rect": [
-        368,
-        268,
-        64,
-        64
-      ],
-      "canvas_center": [
-        400,
-        300
-      ],
-      "pico2d_center": [
-        400,
-        300
-      ],
-      "pico2d_surface_rect": [
-        368,
-        268,
-        64,
-        64
-      ],
-      "prop": "금고",
-      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-2.png"
-    },
-    {
-      "id": "6,3",
-      "column": 6,
-      "row": 3,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        432,
-        268,
-        64,
-        64
-      ],
-      "surface_rect": [
-        432,
-        268,
-        64,
-        64
-      ],
-      "draw_rect": [
-        432,
-        268,
-        64,
-        64
-      ],
-      "canvas_center": [
-        464,
-        300
-      ],
-      "pico2d_center": [
-        464,
-        300
-      ],
-      "pico2d_surface_rect": [
-        432,
-        268,
-        64,
-        64
-      ],
-      "prop": "금괴 받침대",
-      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-1.png"
-    },
-    {
-      "id": "7,3",
-      "column": 7,
       "row": 3,
       "type": ".",
       "floor": 1,
@@ -1814,6 +1714,92 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
+        368,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        368,
+        268,
+        64,
+        64
+      ],
+      "draw_rect": [
+        368,
+        268,
+        64,
+        64
+      ],
+      "canvas_center": [
+        400,
+        300
+      ],
+      "pico2d_center": [
+        400,
+        300
+      ],
+      "pico2d_surface_rect": [
+        368,
+        268,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "6,3",
+      "column": 6,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        300
+      ],
+      "pico2d_center": [
+        464,
+        300
+      ],
+      "pico2d_surface_rect": [
+        432,
+        268,
+        64,
+        64
+      ]
+    },
+    {
+      "id": "7,3",
+      "column": 7,
+      "row": 3,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": true,
+      "placement": "elevated",
+      "base_rect": [
         496,
         268,
         64,
@@ -1821,27 +1807,27 @@
       ],
       "surface_rect": [
         496,
-        268,
+        252,
         64,
         64
       ],
       "draw_rect": [
         496,
-        268,
+        252,
         64,
-        64
+        80
       ],
       "canvas_center": [
         528,
-        300
+        284
       ],
       "pico2d_center": [
         528,
-        300
+        316
       ],
       "pico2d_surface_rect": [
         496,
-        268,
+        284,
         64,
         64
       ]
@@ -1850,12 +1836,12 @@
       "id": "8,3",
       "column": 8,
       "row": 3,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         560,
         268,
@@ -1864,27 +1850,27 @@
       ],
       "surface_rect": [
         560,
-        268,
+        252,
         64,
         64
       ],
       "draw_rect": [
         560,
-        268,
+        252,
         64,
-        64
+        80
       ],
       "canvas_center": [
         592,
-        300
+        284
       ],
       "pico2d_center": [
         592,
-        300
+        316
       ],
       "pico2d_surface_rect": [
         560,
-        268,
+        284,
         64,
         64
       ]
@@ -2065,12 +2051,12 @@
       "id": "2,4",
       "column": 2,
       "row": 4,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "deployable": true,
+      "placement": "elevated",
       "base_rect": [
         176,
         332,
@@ -2079,43 +2065,41 @@
       ],
       "surface_rect": [
         176,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         176,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         208,
-        364
+        348
       ],
       "pico2d_center": [
         208,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         176,
-        204,
+        220,
         64,
         64
-      ],
-      "prop": "금고",
-      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-2.png"
+      ]
     },
     {
       "id": "3,4",
       "column": 3,
       "row": 4,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         240,
         332,
@@ -2124,27 +2108,27 @@
       ],
       "surface_rect": [
         240,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         240,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         272,
-        364
+        348
       ],
       "pico2d_center": [
         272,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         240,
-        204,
+        220,
         64,
         64
       ]
@@ -2153,12 +2137,12 @@
       "id": "4,4",
       "column": 4,
       "row": 4,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         304,
         332,
@@ -2190,17 +2174,15 @@
         204,
         64,
         64
-      ],
-      "hazard": "압력 함정",
-      "hazard_file": "asset/map/stage/icon/themes/royal-treasury/hazard.png"
+      ]
     },
     {
       "id": "5,4",
       "column": 5,
       "row": 4,
-      "type": "O",
+      "type": "#",
       "floor": null,
-      "height_level": 0,
+      "height_level": 1,
       "walkable": false,
       "deployable": false,
       "placement": null,
@@ -2212,43 +2194,41 @@
       ],
       "surface_rect": [
         368,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         368,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        364
+        348
       ],
       "pico2d_center": [
         400,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         368,
-        204,
+        220,
         64,
         64
-      ],
-      "prop": "보물 상자",
-      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-0.png"
+      ]
     },
     {
       "id": "6,4",
       "column": 6,
       "row": 4,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         432,
         332,
@@ -2280,9 +2260,7 @@
         204,
         64,
         64
-      ],
-      "hazard": "압력 함정",
-      "hazard_file": "asset/map/stage/icon/themes/royal-treasury/hazard.png"
+      ]
     },
     {
       "id": "7,4",
@@ -2331,12 +2309,12 @@
       "id": "8,4",
       "column": 8,
       "row": 4,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         560,
         332,
@@ -2345,27 +2323,27 @@
       ],
       "surface_rect": [
         560,
-        316,
+        332,
         64,
         64
       ],
       "draw_rect": [
         560,
-        316,
+        332,
         64,
-        80
+        64
       ],
       "canvas_center": [
         592,
-        348
+        364
       ],
       "pico2d_center": [
         592,
-        252
+        236
       ],
       "pico2d_surface_rect": [
         560,
-        220,
+        204,
         64,
         64
       ]
@@ -2374,12 +2352,12 @@
       "id": "9,4",
       "column": 9,
       "row": 4,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         624,
         332,
@@ -2388,27 +2366,27 @@
       ],
       "surface_rect": [
         624,
-        316,
+        332,
         64,
         64
       ],
       "draw_rect": [
         624,
-        316,
+        332,
         64,
-        80
+        64
       ],
       "canvas_center": [
         656,
-        348
+        364
       ],
       "pico2d_center": [
         656,
-        252
+        236
       ],
       "pico2d_surface_rect": [
         624,
-        220,
+        204,
         64,
         64
       ]
@@ -2552,12 +2530,12 @@
       "id": "2,5",
       "column": 2,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         176,
         396,
@@ -2566,27 +2544,27 @@
       ],
       "surface_rect": [
         176,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         176,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         208,
-        428
+        412
       ],
       "pico2d_center": [
         208,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         176,
-        140,
+        156,
         64,
         64
       ]
@@ -2595,12 +2573,12 @@
       "id": "3,5",
       "column": 3,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         240,
         396,
@@ -2609,27 +2587,27 @@
       ],
       "surface_rect": [
         240,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         240,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         272,
-        428
+        412
       ],
       "pico2d_center": [
         272,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         240,
-        140,
+        156,
         64,
         64
       ]
@@ -2681,12 +2659,12 @@
       "id": "5,5",
       "column": 5,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "type": "#",
+      "floor": null,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         396,
@@ -2695,27 +2673,27 @@
       ],
       "surface_rect": [
         368,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         368,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        428
+        412
       ],
       "pico2d_center": [
         400,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         368,
-        140,
+        156,
         64,
         64
       ]
@@ -2810,12 +2788,12 @@
       "id": "8,5",
       "column": 8,
       "row": 5,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         560,
         396,
@@ -2824,27 +2802,27 @@
       ],
       "surface_rect": [
         560,
-        380,
+        396,
         64,
         64
       ],
       "draw_rect": [
         560,
-        380,
+        396,
         64,
-        80
+        64
       ],
       "canvas_center": [
         592,
-        412
+        428
       ],
       "pico2d_center": [
         592,
-        188
+        172
       ],
       "pico2d_surface_rect": [
         560,
-        156,
+        140,
         64,
         64
       ]
@@ -2853,12 +2831,12 @@
       "id": "9,5",
       "column": 9,
       "row": 5,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         624,
         396,
@@ -2867,27 +2845,27 @@
       ],
       "surface_rect": [
         624,
-        380,
+        396,
         64,
         64
       ],
       "draw_rect": [
         624,
-        380,
+        396,
         64,
-        80
+        64
       ],
       "canvas_center": [
         656,
-        412
+        428
       ],
       "pico2d_center": [
         656,
-        188
+        172
       ],
       "pico2d_surface_rect": [
         624,
-        156,
+        140,
         64,
         64
       ]
@@ -3160,12 +3138,12 @@
       "id": "5,6",
       "column": 5,
       "row": 6,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "type": "#",
+      "floor": null,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         460,
@@ -3174,27 +3152,27 @@
       ],
       "surface_rect": [
         368,
-        460,
+        444,
         64,
         64
       ],
       "draw_rect": [
         368,
-        460,
+        444,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        492
+        476
       ],
       "pico2d_center": [
         400,
-        108
+        124
       ],
       "pico2d_surface_rect": [
         368,
-        76,
+        92,
         64,
         64
       ]
@@ -3203,12 +3181,12 @@
       "id": "6,6",
       "column": 6,
       "row": 6,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         432,
         460,
@@ -3240,9 +3218,7 @@
         76,
         64,
         64
-      ],
-      "prop": "금괴 받침대",
-      "prop_file": "asset/map/stage/icon/themes/royal-treasury/prop-1.png"
+      ]
     },
     {
       "id": "7,6",
@@ -3427,72 +3403,60 @@
           1
         ],
         [
-          0,
+          1,
+          1
+        ],
+        [
+          1,
           2
         ],
         [
-          0,
+          1,
           3
-        ],
-        [
-          0,
-          4
-        ],
-        [
-          1,
-          4
-        ],
-        [
-          1,
-          5
         ],
         [
           2,
-          5
+          3
         ],
         [
           3,
-          5
+          3
         ],
         [
           4,
-          5
+          3
         ],
         [
           5,
-          5
+          3
         ],
         [
           6,
-          5
-        ],
-        [
-          7,
-          5
-        ],
-        [
-          7,
-          4
-        ],
-        [
-          7,
           3
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
         ],
         [
           8,
-          3
+          1
         ],
         [
           9,
-          3
+          1
         ],
         [
           10,
-          3
-        ],
-        [
-          10,
-          2
+          1
         ]
       ]
     },
@@ -3505,64 +3469,56 @@
           1
         ],
         [
-          0,
+          1,
+          1
+        ],
+        [
+          1,
           2
         ],
         [
-          0,
+          1,
           3
         ],
         [
-          0,
-          4
-        ],
-        [
-          1,
-          4
-        ],
-        [
-          1,
-          5
-        ],
-        [
           2,
-          5
+          3
         ],
         [
           3,
-          5
+          3
         ],
         [
           4,
-          5
+          3
         ],
         [
           5,
-          5
+          3
         ],
         [
           6,
-          5
+          3
+        ],
+        [
+          6,
+          4
         ],
         [
           7,
-          5
-        ],
-        [
-          7,
-          6
+          4
         ],
         [
           8,
-          6
+          4
         ],
         [
           9,
-          6
+          4
         ],
         [
           10,
-          6
+          4
         ],
         [
           10,
@@ -3579,64 +3535,52 @@
           3
         ],
         [
-          0,
-          4
-        ],
-        [
           1,
-          4
-        ],
-        [
-          1,
-          5
+          3
         ],
         [
           2,
-          5
+          3
         ],
         [
           3,
-          5
+          3
         ],
         [
           4,
-          5
+          3
         ],
         [
           5,
-          5
+          3
         ],
         [
           6,
-          5
-        ],
-        [
-          7,
-          5
-        ],
-        [
-          7,
-          4
-        ],
-        [
-          7,
           3
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
         ],
         [
           8,
-          3
+          1
         ],
         [
           9,
-          3
+          1
         ],
         [
           10,
-          3
-        ],
-        [
-          10,
-          2
+          1
         ]
       ]
     },
@@ -3649,56 +3593,48 @@
           3
         ],
         [
-          0,
-          4
-        ],
-        [
           1,
-          4
-        ],
-        [
-          1,
-          5
+          3
         ],
         [
           2,
-          5
+          3
         ],
         [
           3,
-          5
+          3
         ],
         [
           4,
-          5
+          3
         ],
         [
           5,
-          5
+          3
         ],
         [
           6,
-          5
+          3
+        ],
+        [
+          6,
+          4
         ],
         [
           7,
-          5
-        ],
-        [
-          7,
-          6
+          4
         ],
         [
           8,
-          6
+          4
         ],
         [
           9,
-          6
+          4
         ],
         [
           10,
-          6
+          4
         ],
         [
           10,
@@ -3719,52 +3655,56 @@
           5
         ],
         [
-          2,
-          5
-        ],
-        [
-          3,
-          5
-        ],
-        [
-          4,
-          5
-        ],
-        [
-          5,
-          5
-        ],
-        [
-          6,
-          5
-        ],
-        [
-          7,
-          5
-        ],
-        [
-          7,
+          1,
           4
         ],
         [
-          7,
+          1,
           3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
         ],
         [
           8,
-          3
+          1
         ],
         [
           9,
-          3
+          1
         ],
         [
           10,
-          3
-        ],
-        [
-          10,
-          2
+          1
         ]
       ]
     },
@@ -3781,44 +3721,52 @@
           5
         ],
         [
+          1,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
           2,
-          5
+          3
         ],
         [
           3,
-          5
+          3
         ],
         [
           4,
-          5
+          3
         ],
         [
           5,
-          5
+          3
         ],
         [
           6,
-          5
+          3
+        ],
+        [
+          6,
+          4
         ],
         [
           7,
-          5
-        ],
-        [
-          7,
-          6
+          4
         ],
         [
           8,
-          6
+          4
         ],
         [
           9,
-          6
+          4
         ],
         [
           10,
-          6
+          4
         ],
         [
           10,
@@ -3830,5 +3778,5 @@
   "art_version": 6,
   "shared_tiles": "asset/map/stage/icon/common",
   "shared_objects": "asset/map/stage/icon/objects",
-  "origin": "new theme"
+  "origin": "legacy theme rebuilt on the standard grid"
 }

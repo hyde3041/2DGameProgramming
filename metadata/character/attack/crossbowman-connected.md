@@ -14,7 +14,7 @@
 
 ## 적용 파일
 
-- 게임: `game/asset/character/main/crossbowman/<front|back|side>/attack-sheet.png`
+- 게임: `game/asset/character/main/3-crossbowman/<front|back|side>/attack-sheet.png`
 - 연결된 원본·발: `game/asset/character/icon/layers/crossbowman/<방향>/attack/connected/`
 - [원본 경로·시간·행렬](crossbowman-connected.json), [게임 프레임 좌표](crossbowman.json)
 - [수정본 재생](../../../game/asset/character/icon/preview/crossbowman-attack-shape-fixed.mp4), [수정 전후 비교](../../../game/asset/character/icon/preview/crossbowman-shape-comparison.mp4)

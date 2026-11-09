@@ -29,7 +29,7 @@
   },
   "maps": [
     {
-      "id": "dungeon-room",
+      "id": "cave-0",
       "name": "기본 던전",
       "description": "중앙 석벽의 교차로와 좌우 단상을 잇는 기본 전투실",
       "origin": "legacy theme rebuilt on the standard grid",
@@ -45,10 +45,10 @@
       "props": [],
       "prop_names": [],
       "hazard": null,
-      "number": 1
+      "number": 0
     },
     {
-      "id": "forest-path",
+      "id": "cave-1",
       "name": "숲길",
       "kit": "forest-kit",
       "description": "엇갈린 가시덤불과 나무 사이를 굽어 이동하는 길",
@@ -110,10 +110,10 @@
         "쓰러진 통나무"
       ],
       "hazard": "가시덤불",
-      "number": 2
+      "number": 1
     },
     {
-      "id": "frontier-outpost",
+      "id": "cave-2",
       "name": "전초기지",
       "kit": "fortified-kit",
       "description": "나무 방책을 돌아 보급 구역의 두 출구를 방어",
@@ -185,10 +185,10 @@
         "보급 상자"
       ],
       "hazard": "무너진 해자",
-      "number": 3
+      "number": 2
     },
     {
-      "id": "castle-gate",
+      "id": "cave-3",
       "name": "성문 앞",
       "kit": "fortified-kit",
       "description": "해자를 건너 중앙 성벽의 두 관문을 통과하는 전장",
@@ -240,10 +240,10 @@
         "보급 상자"
       ],
       "hazard": "무너진 해자",
-      "number": 4
+      "number": 3
     },
     {
-      "id": "prison-cellblock",
+      "id": "cave-4",
       "name": "지하 감옥",
       "grid": [
         "....#......",
@@ -261,10 +261,10 @@
       "hazard": null,
       "hazard_material": "lava",
       "origin": "existing v4 layout preserved",
-      "number": 5
+      "number": 4
     },
     {
-      "id": "flooded-ruins",
+      "id": "cave-5",
       "name": "침수 유적",
       "grid": [
         "...~....~..",
@@ -282,10 +282,10 @@
       "hazard": "물",
       "hazard_material": "water",
       "origin": "existing v4 layout preserved",
-      "number": 6
+      "number": 5
     },
     {
-      "id": "magma-altar",
+      "id": "cave-6",
       "name": "용암 제단",
       "grid": [
         ".....~.....",
@@ -303,10 +303,10 @@
       "hazard": "용암",
       "hazard_material": "lava",
       "origin": "existing v4 layout preserved",
-      "number": 7
+      "number": 6
     },
     {
-      "id": "abandoned-mine",
+      "id": "cave-7",
       "name": "폐광",
       "description": "두 갱도 사이를 어긋난 연결 통로로 건너는 구조",
       "grid": [
@@ -358,10 +358,10 @@
       "hazard": "갱도",
       "kit": "abandoned-mine",
       "origin": "existing v5 layout preserved",
-      "number": 8
+      "number": 7
     },
     {
-      "id": "underground-garden",
+      "id": "cave-8",
       "name": "지하 정원",
       "description": "화단과 연못 사이를 돌아가는 굽은 통로",
       "grid": [
@@ -413,10 +413,10 @@
       "hazard": "연못",
       "kit": "underground-garden",
       "origin": "existing v5 layout preserved",
-      "number": 9
+      "number": 8
     },
     {
-      "id": "arcane-library",
+      "id": "cave-9",
       "name": "마법 도서관",
       "description": "책장과 수납장으로 나뉜 통로를 꺾어 이동하는 구조",
       "grid": [
@@ -498,10 +498,10 @@
       "hazard": "마법 함정",
       "kit": "arcane-library",
       "origin": "existing v5 layout preserved",
-      "number": 10
+      "number": 9
     },
     {
-      "id": "frost-cavern",
+      "id": "cave-10",
       "name": "얼음 동굴",
       "kit": "frost-cavern",
       "description": "두 얼음 균열의 어긋난 틈을 지나가는 굽은 통로",
@@ -553,10 +553,10 @@
       ],
       "hazard": "얼음 균열",
       "origin": "new theme",
-      "number": 11
+      "number": 10
     },
     {
-      "id": "ancient-graveyard",
+      "id": "cave-11",
       "name": "고대 묘지",
       "kit": "ancient-graveyard",
       "description": "두 묘비 열 사이를 교차해 이동하는 묘역",
@@ -628,10 +628,10 @@
       ],
       "hazard": "열린 묘혈",
       "origin": "new theme",
-      "number": 12
+      "number": 11
     },
     {
-      "id": "ancient-temple",
+      "id": "cave-12",
       "name": "고대 신전",
       "kit": "ancient-temple",
       "description": "중앙 제단과 봉인 지형 주위를 순환하는 회랑",
@@ -693,10 +693,10 @@
       ],
       "hazard": "봉인 균열",
       "origin": "new theme",
-      "number": 13
+      "number": 12
     },
     {
-      "id": "poison-marsh",
+      "id": "cave-13",
       "name": "독늪",
       "kit": "poison-marsh",
       "description": "독 웅덩이 두 줄을 상하로 크게 우회하는 S자 길",
@@ -753,10 +753,10 @@
       ],
       "hazard": "독 웅덩이",
       "origin": "new theme",
-      "number": 14
+      "number": 13
     },
     {
-      "id": "dwarven-forge",
+      "id": "cave-14",
       "name": "대장간",
       "kit": "dwarven-forge",
       "description": "화로 사이의 두 연결로와 달아오른 철망을 넘나드는 작업장",
@@ -818,10 +818,10 @@
       ],
       "hazard": "달아오른 철망",
       "origin": "new theme",
-      "number": 15
+      "number": 14
     },
     {
-      "id": "undercity-sewer",
+      "id": "cave-15",
       "name": "지하 수로",
       "kit": "undercity-sewer",
       "description": "좌우 배수로의 다리를 서로 다른 높이에서 건너는 길",
@@ -873,10 +873,10 @@
       ],
       "hazard": "배수로",
       "origin": "new theme",
-      "number": 16
+      "number": 15
     },
     {
-      "id": "royal-treasury",
+      "id": "cave-16",
       "name": "왕실 보물고",
       "kit": "royal-treasury",
       "description": "중앙 보물 구역과 압력 함정 양쪽을 우회하는 금고실",
@@ -938,10 +938,10 @@
       ],
       "hazard": "압력 함정",
       "origin": "new theme",
-      "number": 17
+      "number": 16
     },
     {
-      "id": "alchemy-laboratory",
+      "id": "cave-17",
       "name": "연금술 실험실",
       "kit": "alchemy-laboratory",
       "description": "엇갈린 실험대와 마력 유출을 돌아가는 작업 구역",
@@ -1008,10 +1008,10 @@
       ],
       "hazard": "마력 유출",
       "origin": "new theme",
-      "number": 18
+      "number": 17
     },
     {
-      "id": "abandoned-chapel",
+      "id": "cave-18",
       "name": "버려진 예배당",
       "kit": "abandoned-chapel",
       "description": "긴의자 열 사이 중앙 통로와 양쪽 회랑을 잇는 구조",
@@ -1083,10 +1083,10 @@
       ],
       "hazard": "저주받은 바닥",
       "origin": "new theme",
-      "number": 19
+      "number": 18
     },
     {
-      "id": "demon-throne",
+      "id": "cave-19",
       "name": "마왕의 왕좌",
       "kit": "demon-throne",
       "description": "중앙 왕좌와 심연 문양을 여러 방향에서 에워싸는 최종 전장",
@@ -1143,7 +1143,7 @@
       ],
       "hazard": "심연의 문양",
       "origin": "new theme",
-      "number": 20
+      "number": 19
     }
   ]
 }

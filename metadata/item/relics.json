@@ -36,9 +36,9 @@
       "effect_status": "첫 플레이테스트 기준",
       "duration": "current_expedition",
       "consumable": false,
-      "icon": "asset/item/warrior-emblem.png",
+      "icon": "asset/item/0-warrior-emblem.png",
       "icon_files": {
-        "256": "asset/item/warrior-emblem.png"
+        "256": "asset/item/0-warrior-emblem.png"
       },
       "atlas_rect": [
         0,
@@ -57,7 +57,7 @@
         128
       ],
       "plan_role": "initial_set",
-      "number": 1,
+      "number": 0,
       "effect_lines": [
         "아군 공격력 +12%"
       ],
@@ -80,9 +80,9 @@
       "effect_status": "첫 플레이테스트 기준",
       "duration": "current_expedition",
       "consumable": false,
-      "icon": "asset/item/guardian-stone.png",
+      "icon": "asset/item/1-guardian-stone.png",
       "icon_files": {
-        "256": "asset/item/guardian-stone.png"
+        "256": "asset/item/1-guardian-stone.png"
       },
       "atlas_rect": [
         256,
@@ -101,7 +101,7 @@
         128
       ],
       "plan_role": "initial_set",
-      "number": 2,
+      "number": 1,
       "effect_lines": [
         "아군 최대 체력 +18%"
       ],
@@ -124,9 +124,9 @@
       "effect_status": "첫 플레이테스트 기준",
       "duration": "current_expedition",
       "consumable": false,
-      "icon": "asset/item/seed-of-life.png",
+      "icon": "asset/item/2-seed-of-life.png",
       "icon_files": {
-        "256": "asset/item/seed-of-life.png"
+        "256": "asset/item/2-seed-of-life.png"
       },
       "atlas_rect": [
         512,
@@ -145,7 +145,7 @@
         128
       ],
       "plan_role": "initial_set",
-      "number": 3,
+      "number": 2,
       "effect_lines": [
         "직접 회복량 +20%"
       ],
@@ -168,9 +168,9 @@
       "effect_status": "첫 플레이테스트 기준",
       "duration": "current_expedition",
       "consumable": false,
-      "icon": "asset/item/mana-hourglass.png",
+      "icon": "asset/item/3-mana-hourglass.png",
       "icon_files": {
-        "256": "asset/item/mana-hourglass.png"
+        "256": "asset/item/3-mana-hourglass.png"
       },
       "atlas_rect": [
         768,
@@ -189,7 +189,7 @@
         128
       ],
       "plan_role": "initial_set",
-      "number": 4,
+      "number": 3,
       "effect_lines": [
         "배치 자원 회복 속도 +20%"
       ],
@@ -212,9 +212,9 @@
       "effect_status": "첫 플레이테스트 기준",
       "duration": "current_expedition",
       "consumable": false,
-      "icon": "asset/item/scout-lens.png",
+      "icon": "asset/item/4-scout-lens.png",
       "icon_files": {
-        "256": "asset/item/scout-lens.png"
+        "256": "asset/item/4-scout-lens.png"
       },
       "atlas_rect": [
         1024,
@@ -233,7 +233,7 @@
         128
       ],
       "plan_role": "initial_set",
-      "number": 5,
+      "number": 4,
       "effect_lines": [
         "원거리·힐러·특수",
         "기본 범위 전방 +1칸"
@@ -265,9 +265,9 @@
       "effect_status": "첫 플레이테스트 기준",
       "duration": "current_expedition",
       "consumable": false,
-      "icon": "asset/item/restoration-chalice.png",
+      "icon": "asset/item/5-restoration-chalice.png",
       "icon_files": {
-        "256": "asset/item/restoration-chalice.png"
+        "256": "asset/item/5-restoration-chalice.png"
       },
       "atlas_rect": [
         0,
@@ -286,7 +286,7 @@
         128
       ],
       "plan_role": "initial_set",
-      "number": 6,
+      "number": 5,
       "effect_lines": [
         "탐험대 최대 체력 +3",
         "획득 시 현재 체력 +3"
@@ -310,15 +310,15 @@
       "plan_role": "extension",
       "duration": "current_expedition",
       "consumable": false,
-      "icon": "asset/item/gale-feather.png",
+      "icon": "asset/item/6-gale-feather.png",
       "icon_files": {
-        "256": "asset/item/gale-feather.png"
+        "256": "asset/item/6-gale-feather.png"
       },
       "center": [
         128,
         128
       ],
-      "number": 7,
+      "number": 6,
       "atlas_rect": [
         256,
         256,
@@ -354,15 +354,15 @@
       "plan_role": "extension",
       "duration": "current_expedition",
       "consumable": false,
-      "icon": "asset/item/ancient-grimoire.png",
+      "icon": "asset/item/7-ancient-grimoire.png",
       "icon_files": {
-        "256": "asset/item/ancient-grimoire.png"
+        "256": "asset/item/7-ancient-grimoire.png"
       },
       "center": [
         128,
         128
       ],
-      "number": 8,
+      "number": 7,
       "atlas_rect": [
         512,
         256,
@@ -400,15 +400,15 @@
       "plan_role": "extension",
       "duration": "current_expedition",
       "consumable": false,
-      "icon": "asset/item/unyielding-warhorn.png",
+      "icon": "asset/item/8-unyielding-warhorn.png",
       "icon_files": {
-        "256": "asset/item/unyielding-warhorn.png"
+        "256": "asset/item/8-unyielding-warhorn.png"
       },
       "center": [
         128,
         128
       ],
-      "number": 9,
+      "number": 8,
       "atlas_rect": [
         768,
         256,
@@ -442,15 +442,15 @@
       "plan_role": "extension",
       "duration": "current_expedition",
       "consumable": false,
-      "icon": "asset/item/pioneers-compass.png",
+      "icon": "asset/item/9-pioneers-compass.png",
       "icon_files": {
-        "256": "asset/item/pioneers-compass.png"
+        "256": "asset/item/9-pioneers-compass.png"
       },
       "center": [
         128,
         128
       ],
-      "number": 10,
+      "number": 9,
       "atlas_rect": [
         1024,
         256,
@@ -486,15 +486,15 @@
       "plan_role": "extension",
       "duration": "current_expedition",
       "consumable": false,
-      "icon": "asset/item/resonant-bell.png",
+      "icon": "asset/item/10-resonant-bell.png",
       "icon_files": {
-        "256": "asset/item/resonant-bell.png"
+        "256": "asset/item/10-resonant-bell.png"
       },
       "center": [
         128,
         128
       ],
-      "number": 11,
+      "number": 10,
       "atlas_rect": [
         0,
         512,
@@ -530,15 +530,15 @@
       "plan_role": "extension",
       "duration": "current_expedition",
       "consumable": false,
-      "icon": "asset/item/hunters-fang.png",
+      "icon": "asset/item/11-hunters-fang.png",
       "icon_files": {
-        "256": "asset/item/hunters-fang.png"
+        "256": "asset/item/11-hunters-fang.png"
       },
       "center": [
         128,
         128
       ],
-      "number": 12,
+      "number": 11,
       "atlas_rect": [
         256,
         512,
@@ -573,9 +573,9 @@
     {
       "id": "vanguard-banner",
       "name": "선봉의 군기",
-      "icon": "asset/item/vanguard-banner.png",
+      "icon": "asset/item/12-vanguard-banner.png",
       "icon_files": {
-        "256": "asset/item/vanguard-banner.png"
+        "256": "asset/item/12-vanguard-banner.png"
       },
       "center": [
         128,
@@ -598,7 +598,7 @@
       "detail": "근접 직업군 동료의 최종 배치 코스트에서 2를 뺀다. 1 미만으로 내려가지 않는다.",
       "synergy": "개척자의 나침반·수호석",
       "priority": "extension",
-      "number": 13,
+      "number": 12,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",
@@ -619,9 +619,9 @@
     {
       "id": "renewal-bracelet",
       "name": "재생의 팔찌",
-      "icon": "asset/item/renewal-bracelet.png",
+      "icon": "asset/item/13-renewal-bracelet.png",
       "icon_files": {
-        "256": "asset/item/renewal-bracelet.png"
+        "256": "asset/item/13-renewal-bracelet.png"
       },
       "center": [
         128,
@@ -644,7 +644,7 @@
       "detail": "각 동료가 배치된 뒤 2초마다 회복한다. 증가한 최대 체력을 기준으로 계산하고 현재 체력은 최대치를 넘지 않는다. 전투 불능 동료는 되살리지 않는다.",
       "synergy": "수호석·불굴의 뿔피리",
       "priority": "extension",
-      "number": 14,
+      "number": 13,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",
@@ -665,9 +665,9 @@
     {
       "id": "frost-crystal",
       "name": "혹한의 수정",
-      "icon": "asset/item/frost-crystal.png",
+      "icon": "asset/item/14-frost-crystal.png",
       "icon_files": {
-        "256": "asset/item/frost-crystal.png"
+        "256": "asset/item/14-frost-crystal.png"
       },
       "center": [
         128,
@@ -691,7 +691,7 @@
       "detail": "특수 직업군이 부여하는 둔화의 지속시간에 적용한다. 둔화 강도와 기절 시간은 바꾸지 않는다.",
       "synergy": "고대의 마도서·정찰의 렌즈",
       "priority": "extension",
-      "number": 15,
+      "number": 14,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",
@@ -712,9 +712,9 @@
     {
       "id": "adventurers-map",
       "name": "모험가의 지도",
-      "icon": "asset/item/adventurers-map.png",
+      "icon": "asset/item/15-adventurers-map.png",
       "icon_files": {
-        "256": "asset/item/adventurers-map.png"
+        "256": "asset/item/15-adventurers-map.png"
       },
       "center": [
         128,
@@ -735,7 +735,7 @@
       "detail": "모집 보상을 선택하면 미보유 동료 중 최대 4명을 보여주고 1명을 고른다. 미보유 동료가 4명보다 적으면 남은 인원만 제시한다.",
       "synergy": "선봉의 군기·사냥꾼의 송곳니",
       "priority": "extension",
-      "number": 16,
+      "number": 15,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",
@@ -756,9 +756,9 @@
     {
       "id": "honing-whetstone",
       "name": "연마의 숫돌",
-      "icon": "asset/item/honing-whetstone.png",
+      "icon": "asset/item/16-honing-whetstone.png",
       "icon_files": {
-        "256": "asset/item/honing-whetstone.png"
+        "256": "asset/item/16-honing-whetstone.png"
       },
       "center": [
         128,
@@ -781,7 +781,7 @@
       "detail": "이 유물을 획득한 이후 각 동료가 처음 강화 보상을 받을 때 추가 효과를 얻는다. 기존 강화 효과에 더해 적용하며 같은 동료를 반복 강화해도 중첩되지 않는다.",
       "synergy": "전사의 문장·생명의 씨앗",
       "priority": "extension",
-      "number": 17,
+      "number": 16,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",
@@ -802,9 +802,9 @@
     {
       "id": "phoenix-ember",
       "name": "불사조의 잿불",
-      "icon": "asset/item/phoenix-ember.png",
+      "icon": "asset/item/17-phoenix-ember.png",
       "icon_files": {
-        "256": "asset/item/phoenix-ember.png"
+        "256": "asset/item/17-phoenix-ember.png"
       },
       "center": [
         128,
@@ -828,7 +828,7 @@
       "detail": "탐험대 체력으로 패배 처리되기 직전에 1회 발동한다. 최대 체력의 30%를 올림해 회복하고 발동을 사용한 상태로 기록한다. 동료 개인을 부활시키지는 않는다.",
       "synergy": "회복의 성배",
       "priority": "extension",
-      "number": 18,
+      "number": 17,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",
@@ -849,9 +849,9 @@
     {
       "id": "bulwark-helmet",
       "name": "철벽의 투구",
-      "icon": "asset/item/bulwark-helmet.png",
+      "icon": "asset/item/18-bulwark-helmet.png",
       "icon_files": {
-        "256": "asset/item/bulwark-helmet.png"
+        "256": "asset/item/18-bulwark-helmet.png"
       },
       "center": [
         128,
@@ -872,7 +872,7 @@
       "detail": "근접 동료가 받는 최종 피해에 0.85를 곱한다. 불굴의 뿔피리와 함께 사용하면 피해 배율은 0.88×0.85=0.748이다. 탐험대 체력 피해에는 적용하지 않는다.",
       "synergy": "수호석·불굴의 뿔피리",
       "priority": "extension",
-      "number": 19,
+      "number": 18,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",
@@ -893,9 +893,9 @@
     {
       "id": "mercy-bandage",
       "name": "구원의 붕대",
-      "icon": "asset/item/mercy-bandage.png",
+      "icon": "asset/item/19-mercy-bandage.png",
       "icon_files": {
-        "256": "asset/item/mercy-bandage.png"
+        "256": "asset/item/19-mercy-bandage.png"
       },
       "center": [
         128,
@@ -921,7 +921,7 @@
       "detail": "회복 직전 대상의 현재 체력이 최대 체력의 50% 이하일 때 적용한다. 광역 회복은 대상마다 따로 판정하며 생명의 씨앗·연마의 숫돌과 같은 직접 회복 보너스에 합산한다. 최대 체력 비례 재생과 탐험대 회복은 대상에서 제외한다.",
       "synergy": "생명의 씨앗·바람의 깃털",
       "priority": "extension",
-      "number": 20,
+      "number": 19,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",
@@ -942,9 +942,9 @@
     {
       "id": "lucky-die",
       "name": "행운의 주사위",
-      "icon": "asset/item/lucky-die.png",
+      "icon": "asset/item/20-lucky-die.png",
       "icon_files": {
-        "256": "asset/item/lucky-die.png"
+        "256": "asset/item/20-lucky-die.png"
       },
       "center": [
         128,
@@ -969,7 +969,7 @@
       "detail": "획득한 이후 유물 보상에서 선택 전 후보를 갱신할 수 있다. 보유 유물과 현재 후보를 제외한 목록에서 최대 3개를 다시 제시한다. 새 후보가 없으면 갱신을 비활성화하고 횟수를 소모하지 않는다. 횟수는 새 탐험에서 초기화한다.",
       "synergy": "전사의 문장·불사조의 잿불",
       "priority": "extension",
-      "number": 21,
+      "number": 20,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",
@@ -990,9 +990,9 @@
     {
       "id": "marching-drum",
       "name": "진군의 북",
-      "icon": "asset/item/marching-drum.png",
+      "icon": "asset/item/21-marching-drum.png",
       "icon_files": {
-        "256": "asset/item/marching-drum.png"
+        "256": "asset/item/21-marching-drum.png"
       },
       "center": [
         128,
@@ -1018,7 +1018,7 @@
       "detail": "전투 시작 시각을 기준으로 15초 동안 적용한다. 그 시간 안에 새로 배치한 동료도 남은 시간만 효과를 받는다. 바람의 깃털과 합산하면 처음 15초에는 기본 행동 속도 +32%, 이후에는 +12%다. 일시정지 동안 전투 타이머는 흐르지 않는다.",
       "synergy": "개척자의 나침반·선봉의 군기",
       "priority": "extension",
-      "number": 22,
+      "number": 21,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",
@@ -1039,9 +1039,9 @@
     {
       "id": "binding-chain",
       "name": "속박의 사슬",
-      "icon": "asset/item/binding-chain.png",
+      "icon": "asset/item/22-binding-chain.png",
       "icon_files": {
-        "256": "asset/item/binding-chain.png"
+        "256": "asset/item/22-binding-chain.png"
       },
       "center": [
         128,
@@ -1066,7 +1066,7 @@
       "detail": "특수 동료가 거는 둔화율에 10%p를 더하되 추가 보정으로 80%를 넘기지 않는다. 기존 둔화가 이미 80% 이상이면 기존 값을 유지한다. 예를 들어 40% 둔화는 50%, 75% 둔화는 80%가 된다. 둔화 지속시간·기절은 바꾸지 않는다.",
       "synergy": "혹한의 수정·고대의 마도서",
       "priority": "extension",
-      "number": 23,
+      "number": 22,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",
@@ -1087,9 +1087,9 @@
     {
       "id": "giant-slayer-arrowhead",
       "name": "거인 사냥의 화살촉",
-      "icon": "asset/item/giant-slayer-arrowhead.png",
+      "icon": "asset/item/23-giant-slayer-arrowhead.png",
       "icon_files": {
-        "256": "asset/item/giant-slayer-arrowhead.png"
+        "256": "asset/item/23-giant-slayer-arrowhead.png"
       },
       "center": [
         128,
@@ -1117,7 +1117,7 @@
       "detail": "보스로 표시된 적에게 주는 기본 공격과 직접 피해 스킬에 적용한다. 사냥꾼의 송곳니·공명의 방울·연마의 숫돌 중 해당 행동에 적용되는 최종 피해 보너스와 합산한다. 일반 적에게는 효과가 없다.",
       "synergy": "공명의 방울·사냥꾼의 송곳니",
       "priority": "extension",
-      "number": 24,
+      "number": 23,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",
@@ -1138,9 +1138,9 @@
     {
       "id": "travelers-canteen",
       "name": "여행자의 수통",
-      "icon": "asset/item/travelers-canteen.png",
+      "icon": "asset/item/24-travelers-canteen.png",
       "icon_files": {
-        "256": "asset/item/travelers-canteen.png"
+        "256": "asset/item/24-travelers-canteen.png"
       },
       "center": [
         128,
@@ -1167,7 +1167,7 @@
       "detail": "이미 보유한 상태로 일반 전투에서 승리하면 보상 선택 전에 탐험대 체력을 2 회복한다. 같은 스테이지의 클리어는 1회만 인정하며 획득한 순간에는 발동하지 않는다. 이후 일반 전투가 남지 않은 경우 신규 유물 후보에서 제외한다. 현재 체력은 최대치를 넘지 않는다.",
       "synergy": "회복의 성배·불사조의 잿불",
       "priority": "extension",
-      "number": 25,
+      "number": 24,
       "effect_status": "첫 플레이테스트 기준",
       "plan_role": "extension",
       "duration": "current_expedition",

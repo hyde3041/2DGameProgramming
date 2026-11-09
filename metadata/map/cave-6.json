@@ -1,8 +1,8 @@
 {
-  "id": "prison-cellblock",
-  "name": "지하 감옥",
-  "number": 5,
-  "file": "asset/map/stage/main/prison-cellblock.png",
+  "id": "cave-6",
+  "name": "용암 제단",
+  "number": 6,
+  "file": "asset/map/stage/main/cave/cave-6.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -227,12 +227,12 @@
       "id": "4,0",
       "column": 4,
       "row": 0,
-      "type": "#",
-      "floor": null,
-      "height_level": 1,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         304,
         76,
@@ -241,27 +241,27 @@
       ],
       "surface_rect": [
         304,
-        60,
+        76,
         64,
         64
       ],
       "draw_rect": [
         304,
-        60,
+        76,
         64,
-        80
+        64
       ],
       "canvas_center": [
         336,
-        92
+        108
       ],
       "pico2d_center": [
         336,
-        508
+        492
       ],
       "pico2d_surface_rect": [
         304,
-        476,
+        460,
         64,
         64
       ]
@@ -270,12 +270,12 @@
       "id": "5,0",
       "column": 5,
       "row": 0,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         76,
@@ -307,7 +307,9 @@
         460,
         64,
         64
-      ]
+      ],
+      "hazard": "용암",
+      "hazard_file": "asset/map/stage/icon/common/lava.png"
     },
     {
       "id": "6,0",
@@ -706,12 +708,12 @@
       "id": "4,1",
       "column": 4,
       "row": 1,
-      "type": "#",
-      "floor": null,
-      "height_level": 1,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         304,
         140,
@@ -720,27 +722,27 @@
       ],
       "surface_rect": [
         304,
-        124,
+        140,
         64,
         64
       ],
       "draw_rect": [
         304,
-        124,
+        140,
         64,
-        80
+        64
       ],
       "canvas_center": [
         336,
-        156
+        172
       ],
       "pico2d_center": [
         336,
-        444
+        428
       ],
       "pico2d_surface_rect": [
         304,
-        412,
+        396,
         64,
         64
       ]
@@ -1185,12 +1187,12 @@
       "id": "4,2",
       "column": 4,
       "row": 2,
-      "type": "#",
-      "floor": null,
-      "height_level": 1,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         304,
         204,
@@ -1199,27 +1201,27 @@
       ],
       "surface_rect": [
         304,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         304,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         336,
-        220
+        236
       ],
       "pico2d_center": [
         336,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         304,
-        348,
+        332,
         64,
         64
       ]
@@ -1228,12 +1230,12 @@
       "id": "5,2",
       "column": 5,
       "row": 2,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "type": "#",
+      "floor": null,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         204,
@@ -1242,27 +1244,27 @@
       ],
       "surface_rect": [
         368,
-        204,
+        188,
         64,
         64
       ],
       "draw_rect": [
         368,
-        204,
+        188,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        236
+        220
       ],
       "pico2d_center": [
         400,
-        364
+        380
       ],
       "pico2d_surface_rect": [
         368,
-        332,
+        348,
         64,
         64
       ]
@@ -1664,12 +1666,12 @@
       "id": "4,3",
       "column": 4,
       "row": 3,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         304,
         268,
@@ -1701,18 +1703,20 @@
         268,
         64,
         64
-      ]
+      ],
+      "hazard": "용암",
+      "hazard_file": "asset/map/stage/icon/common/lava.png"
     },
     {
       "id": "5,3",
       "column": 5,
       "row": 3,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "type": "#",
+      "floor": null,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         268,
@@ -1721,27 +1725,27 @@
       ],
       "surface_rect": [
         368,
-        268,
+        252,
         64,
         64
       ],
       "draw_rect": [
         368,
-        268,
+        252,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        300
+        284
       ],
       "pico2d_center": [
         400,
-        300
+        316
       ],
       "pico2d_surface_rect": [
         368,
-        268,
+        284,
         64,
         64
       ]
@@ -1750,12 +1754,12 @@
       "id": "6,3",
       "column": 6,
       "row": 3,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         432,
         268,
@@ -1787,7 +1791,9 @@
         268,
         64,
         64
-      ]
+      ],
+      "hazard": "용암",
+      "hazard_file": "asset/map/stage/icon/common/lava.png"
     },
     {
       "id": "7,3",
@@ -2180,12 +2186,12 @@
       "id": "5,4",
       "column": 5,
       "row": 4,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "type": "#",
+      "floor": null,
+      "height_level": 1,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         332,
@@ -2194,27 +2200,27 @@
       ],
       "surface_rect": [
         368,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         368,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        364
+        348
       ],
       "pico2d_center": [
         400,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         368,
-        204,
+        220,
         64,
         64
       ]
@@ -2223,12 +2229,12 @@
       "id": "6,4",
       "column": 6,
       "row": 4,
-      "type": "#",
-      "floor": null,
-      "height_level": 1,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         432,
         332,
@@ -2237,27 +2243,27 @@
       ],
       "surface_rect": [
         432,
-        316,
+        332,
         64,
         64
       ],
       "draw_rect": [
         432,
-        316,
+        332,
         64,
-        80
+        64
       ],
       "canvas_center": [
         464,
-        348
+        364
       ],
       "pico2d_center": [
         464,
-        252
+        236
       ],
       "pico2d_surface_rect": [
         432,
-        220,
+        204,
         64,
         64
       ]
@@ -2702,12 +2708,12 @@
       "id": "6,5",
       "column": 6,
       "row": 5,
-      "type": "#",
-      "floor": null,
-      "height_level": 1,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         432,
         396,
@@ -2716,27 +2722,27 @@
       ],
       "surface_rect": [
         432,
-        380,
+        396,
         64,
         64
       ],
       "draw_rect": [
         432,
-        380,
+        396,
         64,
-        80
+        64
       ],
       "canvas_center": [
         464,
-        412
+        428
       ],
       "pico2d_center": [
         464,
-        188
+        172
       ],
       "pico2d_surface_rect": [
         432,
-        156,
+        140,
         64,
         64
       ]
@@ -3138,12 +3144,12 @@
       "id": "5,6",
       "column": 5,
       "row": 6,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         368,
         460,
@@ -3175,18 +3181,20 @@
         76,
         64,
         64
-      ]
+      ],
+      "hazard": "용암",
+      "hazard_file": "asset/map/stage/icon/common/lava.png"
     },
     {
       "id": "6,6",
       "column": 6,
       "row": 6,
-      "type": "#",
-      "floor": null,
-      "height_level": 1,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         432,
         460,
@@ -3195,27 +3203,27 @@
       ],
       "surface_rect": [
         432,
-        444,
+        460,
         64,
         64
       ],
       "draw_rect": [
         432,
-        444,
+        460,
         64,
-        80
+        64
       ],
       "canvas_center": [
         464,
-        476
+        492
       ],
       "pico2d_center": [
         464,
-        124
+        108
       ],
       "pico2d_surface_rect": [
         432,
-        92,
+        76,
         64,
         64
       ]
@@ -3408,51 +3416,51 @@
         ],
         [
           1,
-          2
-        ],
-        [
-          1,
-          3
+          0
         ],
         [
           2,
-          3
+          0
         ],
         [
           3,
-          3
+          0
         ],
         [
           4,
-          3
+          0
+        ],
+        [
+          4,
+          1
         ],
         [
           5,
-          3
+          1
         ],
         [
           6,
-          3
+          1
+        ],
+        [
+          6,
+          0
         ],
         [
           7,
-          3
+          0
         ],
         [
           8,
-          3
+          0
         ],
         [
           9,
-          3
+          0
         ],
         [
           10,
-          3
-        ],
-        [
-          10,
-          2
+          0
         ],
         [
           10,
@@ -3481,44 +3489,60 @@
           3
         ],
         [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
           2,
-          3
+          6
         ],
         [
           3,
-          3
+          6
         ],
         [
           4,
-          3
+          6
+        ],
+        [
+          4,
+          5
         ],
         [
           5,
-          3
+          5
         ],
         [
           6,
-          3
+          5
+        ],
+        [
+          6,
+          6
         ],
         [
           7,
-          3
+          6
         ],
         [
           8,
-          3
+          6
         ],
         [
           9,
-          3
+          6
         ],
         [
           10,
-          3
-        ],
-        [
-          10,
-          4
+          6
         ],
         [
           10,
@@ -3539,44 +3563,60 @@
           3
         ],
         [
+          1,
+          2
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
           2,
-          3
+          0
         ],
         [
           3,
-          3
+          0
         ],
         [
           4,
-          3
+          0
+        ],
+        [
+          4,
+          1
         ],
         [
           5,
-          3
+          1
         ],
         [
           6,
-          3
+          1
+        ],
+        [
+          6,
+          0
         ],
         [
           7,
-          3
+          0
         ],
         [
           8,
-          3
+          0
         ],
         [
           9,
-          3
+          0
         ],
         [
           10,
-          3
-        ],
-        [
-          10,
-          2
+          0
         ],
         [
           10,
@@ -3597,44 +3637,60 @@
           3
         ],
         [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
           2,
-          3
+          6
         ],
         [
           3,
-          3
+          6
         ],
         [
           4,
-          3
+          6
+        ],
+        [
+          4,
+          5
         ],
         [
           5,
-          3
+          5
         ],
         [
           6,
-          3
+          5
+        ],
+        [
+          6,
+          6
         ],
         [
           7,
-          3
+          6
         ],
         [
           8,
-          3
+          6
         ],
         [
           9,
-          3
+          6
         ],
         [
           10,
-          3
-        ],
-        [
-          10,
-          4
+          6
         ],
         [
           10,
@@ -3656,43 +3712,59 @@
         ],
         [
           1,
-          4
-        ],
-        [
-          1,
-          3
+          6
         ],
         [
           2,
-          3
+          6
         ],
         [
           3,
-          3
+          6
         ],
         [
           4,
-          3
+          6
+        ],
+        [
+          4,
+          5
         ],
         [
           5,
-          3
+          5
         ],
         [
           6,
-          3
+          5
+        ],
+        [
+          6,
+          6
         ],
         [
           7,
-          3
+          6
         ],
         [
           8,
-          3
+          6
         ],
         [
           9,
-          3
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          4
         ],
         [
           10,
@@ -3722,51 +3794,51 @@
         ],
         [
           1,
-          4
-        ],
-        [
-          1,
-          3
+          6
         ],
         [
           2,
-          3
+          6
         ],
         [
           3,
-          3
+          6
         ],
         [
           4,
-          3
+          6
+        ],
+        [
+          4,
+          5
         ],
         [
           5,
-          3
+          5
         ],
         [
           6,
-          3
+          5
+        ],
+        [
+          6,
+          6
         ],
         [
           7,
-          3
+          6
         ],
         [
           8,
-          3
+          6
         ],
         [
           9,
-          3
+          6
         ],
         [
           10,
-          3
-        ],
-        [
-          10,
-          4
+          6
         ],
         [
           10,

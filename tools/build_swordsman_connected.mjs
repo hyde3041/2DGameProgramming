@@ -78,7 +78,7 @@ try {
     await sharp(atlas,{raw:{width:1280,height:1280,channels:4}}).png().toFile(path.join(out,view+'-attack-sheet.png'));
     await sharp(effectAtlas,{raw:{width:1280,height:1280,channels:4}}).png().toFile(path.join(effectFolder,'slash-sheet.png'));
     const direction=view==='side'?'right':view;
-    animations[direction]={file:`asset/character/main/swordsman/${view}/attack-sheet.png`,width:1280,height:1280,columns:4,rows:4,loop:false,return_to:direction+'_idle',duration_ms:1000,frame_duration_ms:62.5,
+    animations[direction]={file:`asset/character/main/0-swordsman/${view}/attack-sheet.png`,width:1280,height:1280,columns:4,rows:4,loop:false,return_to:direction+'_idle',duration_ms:1000,frame_duration_ms:62.5,
       frames:frames.map((_,f)=>({index:f,rect:[f%4*320,Math.floor(f/4)*320,320,320],pico2d_rect:[f%4*320,960-Math.floor(f/4)*320,320,320],duration_ms:62.5}))};
     const error=Math.max(...traces.map(({matrix:[a,b,c,d]})=>Math.max(Math.abs(a*a+b*b-1),Math.abs(c*c+d*d-1),Math.abs(a*d-b*c-1))));
     qa[view]={frames:16,unique:new Set(frames.map(b=>b.toString('base64'))).size,max_unit_matrix_error:error,original_key_poses:4};
@@ -88,7 +88,7 @@ try {
   const sheets={}, idles={};
   for(const view of views) {
     sheets[view]='data:image/png;base64,'+(await fs.readFile(path.join(out,view+'-attack-sheet.png'))).toString('base64');
-    idles[view]='data:image/png;base64,'+(await fs.readFile(path.join(game,`asset/character/main/swordsman/${view}/idle-sheet.png`))).toString('base64');
+    idles[view]='data:image/png;base64,'+(await fs.readFile(path.join(game,`asset/character/main/0-swordsman/${view}/idle-sheet.png`))).toString('base64');
   }
   await page.evaluate(async({sheets,idles,views})=>{
     window.sheets={}; window.idles={};
@@ -121,7 +121,7 @@ try {
   await fs.writeFile(path.join(out,'preview.mp4'),Buffer.from(movie.split(',')[1],'base64'));
   if(apply) {
     for(const view of views) {
-      await fs.copyFile(path.join(out,view+'-attack-sheet.png'),path.join(game,`asset/character/main/swordsman/${view}/attack-sheet.png`));
+      await fs.copyFile(path.join(out,view+'-attack-sheet.png'),path.join(game,`asset/character/main/0-swordsman/${view}/attack-sheet.png`));
       const destination=path.join(game,`asset/character/icon/layers/swordsman/${view}/attack/effect`);
       await fs.mkdir(destination,{recursive:true});
       for(const name of await fs.readdir(path.join(out,view,'effect')))

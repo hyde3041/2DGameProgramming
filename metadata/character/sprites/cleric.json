@@ -379,7 +379,7 @@
   "revision": 2,
   "directional_attack_sheets": {
     "front": {
-      "file": "asset/character/main/cleric/front/attack-sheet.png",
+      "file": "asset/character/main/4-cleric/front/attack-sheet.png",
       "width": 960,
       "height": 320,
       "cell_size": [
@@ -443,7 +443,7 @@
       ]
     },
     "back": {
-      "file": "asset/character/main/cleric/back/attack-sheet.png",
+      "file": "asset/character/main/4-cleric/back/attack-sheet.png",
       "width": 960,
       "height": 320,
       "cell_size": [
@@ -507,7 +507,7 @@
       ]
     },
     "right": {
-      "file": "asset/character/main/cleric/side/attack-sheet.png",
+      "file": "asset/character/main/4-cleric/side/attack-sheet.png",
       "width": 960,
       "height": 320,
       "cell_size": [

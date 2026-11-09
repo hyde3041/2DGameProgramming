@@ -379,7 +379,7 @@
   "revision": 2,
   "directional_attack_sheets": {
     "front": {
-      "file": "asset/character/main/swordsman/front/attack-sheet.png",
+      "file": "asset/character/main/0-swordsman/front/attack-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -648,7 +648,7 @@
       ]
     },
     "back": {
-      "file": "asset/character/main/swordsman/back/attack-sheet.png",
+      "file": "asset/character/main/0-swordsman/back/attack-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -917,7 +917,7 @@
       ]
     },
     "right": {
-      "file": "asset/character/main/swordsman/side/attack-sheet.png",
+      "file": "asset/character/main/0-swordsman/side/attack-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,

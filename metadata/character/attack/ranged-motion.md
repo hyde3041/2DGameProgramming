@@ -10,7 +10,7 @@
 
 - 설정: [archer-head-motion.json](archer-head-motion.json)
 - 제작기: `tools/archer-attack-v2-renderer.js`, `tools/build_archer_attack_v2.mjs`
-- 실제 적용: `game/asset/character/main/archer/<front|back|side>/attack-sheet.png`
+- 실제 적용: `game/asset/character/main/2-archer/<front|back|side>/attack-sheet.png`
 
 ## 석궁병
 
@@ -21,7 +21,7 @@
 - 원본·중간 그림: `game/asset/character/icon/layers/crossbowman/<방향>/attack/lift/`
 - [전체 프롬프트와 생성 결과 경로](crossbowman-lift-sources.json), [등록 값·적용 마스크](crossbowman-lift.json)
 - 제작기: `tools/prepare_crossbowman_lift.mjs`, `tools/prepare_crossbowman_connected.mjs`, `tools/build_crossbowman_connected.mjs`
-- 실제 적용: `game/asset/character/main/crossbowman/<front|back|side>/attack-sheet.png`
+- 실제 적용: `game/asset/character/main/3-crossbowman/<front|back|side>/attack-sheet.png`
 
 ```text
 node tools/build_archer_attack.mjs --apply

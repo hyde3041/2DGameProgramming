@@ -20,7 +20,7 @@
   "return_to": "idle",
   "animations": {
     "front": {
-      "file": "asset/character/main/ember-mage/front/attack-sheet.png",
+      "file": "asset/character/main/8-ember-mage/front/attack-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -293,7 +293,7 @@
       ]
     },
     "right": {
-      "file": "asset/character/main/ember-mage/side/attack-sheet.png",
+      "file": "asset/character/main/8-ember-mage/side/attack-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -566,7 +566,7 @@
       ]
     },
     "back": {
-      "file": "asset/character/main/ember-mage/back/attack-sheet.png",
+      "file": "asset/character/main/8-ember-mage/back/attack-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,

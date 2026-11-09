@@ -6,7 +6,7 @@
 
 ## 현행 파일
 
-- 게임 시트: `game/asset/character/main/archer/<front|back|side>/attack-sheet.png`
+- 게임 시트: `game/asset/character/main/2-archer/<front|back|side>/attack-sheet.png`
 - 부위 원본: `game/asset/character/icon/layers/archer/<방향>/attack/rigid/`
 - [연결점·부위 경로·해시](archer-rigid-rig.json), [게임 시간·프레임 좌표](archer.json)
 - [실제 시트 재생 미리보기](../../../game/asset/character/icon/preview/archer-attack-rigid.mp4)

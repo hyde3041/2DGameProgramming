@@ -14,7 +14,7 @@
   "frames_per_direction": 16,
   "animations": {
     "front": {
-      "file": "asset/character/main/shadow-thief/front/idle-sheet.png",
+      "file": "asset/character/main/7-shadow-thief/front/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -293,7 +293,7 @@
       }
     },
     "back": {
-      "file": "asset/character/main/shadow-thief/back/idle-sheet.png",
+      "file": "asset/character/main/7-shadow-thief/back/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -572,7 +572,7 @@
       }
     },
     "right": {
-      "file": "asset/character/main/shadow-thief/side/idle-sheet.png",
+      "file": "asset/character/main/7-shadow-thief/side/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,

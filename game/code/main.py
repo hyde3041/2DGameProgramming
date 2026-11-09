@@ -16,13 +16,18 @@ from pico2d import (
 
 WIDTH = 800
 HEIGHT = 600
-MAP_PATH = Path(__file__).resolve().parents[1] / "asset/map/stage/main/dungeon-room.png"
+MAP_DIRECTORY = Path(__file__).resolve().parents[1] / "asset/map/stage/main/cave"
+
+map_index = 0
+dungeon_map = None
 
 
 def main():
+    global dungeon_map
+
     open_canvas(WIDTH, HEIGHT)
     try:
-        dungeon_map = load_image(str(MAP_PATH))
+        dungeon_map = load_image(str(MAP_DIRECTORY / f"cave-{map_index}.png"))
         while True:
             for event in get_events():
                 if event.type == SDL_QUIT:
@@ -35,6 +40,7 @@ def main():
             update_canvas()
             delay(1 / 60)
     finally:
+        dungeon_map = None
         close_canvas()
 
 

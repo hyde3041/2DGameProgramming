@@ -1,8 +1,8 @@
 {
-  "id": "abandoned-mine",
-  "name": "폐광",
-  "number": 8,
-  "file": "asset/map/stage/main/abandoned-mine.png",
+  "id": "cave-13",
+  "name": "독늪",
+  "number": 13,
+  "file": "asset/map/stage/main/cave/cave-13.png",
   "canvas": {
     "width": 800,
     "height": 600
@@ -28,7 +28,7 @@
   "entrances": [
     [
       0,
-      0
+      1
     ],
     [
       0,
@@ -36,7 +36,7 @@
     ],
     [
       0,
-      6
+      5
     ]
   ],
   "goals": [
@@ -55,12 +55,12 @@
       "id": "0,0",
       "column": 0,
       "row": 0,
-      "type": "R",
+      "type": ".",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         48,
         76,
@@ -92,24 +92,18 @@
         460,
         64,
         64
-      ],
-      "portal_rect": [
-        48,
-        76,
-        64,
-        64
       ]
     },
     {
       "id": "1,0",
       "column": 1,
       "row": 0,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         112,
         76,
@@ -118,27 +112,27 @@
       ],
       "surface_rect": [
         112,
-        60,
+        76,
         64,
         64
       ],
       "draw_rect": [
         112,
-        60,
+        76,
         64,
-        80
+        64
       ],
       "canvas_center": [
         144,
-        92
+        108
       ],
       "pico2d_center": [
         144,
-        508
+        492
       ],
       "pico2d_surface_rect": [
         112,
-        476,
+        460,
         64,
         64
       ]
@@ -147,12 +141,12 @@
       "id": "2,0",
       "column": 2,
       "row": 0,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         176,
         76,
@@ -161,27 +155,27 @@
       ],
       "surface_rect": [
         176,
-        60,
+        76,
         64,
         64
       ],
       "draw_rect": [
         176,
-        60,
+        76,
         64,
-        80
+        64
       ],
       "canvas_center": [
         208,
-        92
+        108
       ],
       "pico2d_center": [
         208,
-        508
+        492
       ],
       "pico2d_surface_rect": [
         176,
-        476,
+        460,
         64,
         64
       ]
@@ -190,7 +184,7 @@
       "id": "3,0",
       "column": 3,
       "row": 0,
-      "type": "~",
+      "type": "O",
       "floor": null,
       "height_level": 0,
       "walkable": false,
@@ -228,19 +222,19 @@
         64,
         64
       ],
-      "hazard": "갱도",
-      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
+      "prop": "독버섯",
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-0.png"
     },
     {
       "id": "4,0",
       "column": 4,
       "row": 0,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         304,
         76,
@@ -249,30 +243,32 @@
       ],
       "surface_rect": [
         304,
-        60,
+        76,
         64,
         64
       ],
       "draw_rect": [
         304,
-        60,
+        76,
         64,
-        80
+        64
       ],
       "canvas_center": [
         336,
-        92
+        108
       ],
       "pico2d_center": [
         336,
-        508
+        492
       ],
       "pico2d_surface_rect": [
         304,
-        476,
+        460,
         64,
         64
-      ]
+      ],
+      "hazard": "독 웅덩이",
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "5,0",
@@ -321,12 +317,12 @@
       "id": "6,0",
       "column": 6,
       "row": 0,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         432,
         76,
@@ -335,27 +331,27 @@
       ],
       "surface_rect": [
         432,
-        76,
+        60,
         64,
         64
       ],
       "draw_rect": [
         432,
-        76,
+        60,
         64,
-        64
+        80
       ],
       "canvas_center": [
         464,
-        108
+        92
       ],
       "pico2d_center": [
         464,
-        492
+        508
       ],
       "pico2d_surface_rect": [
         432,
-        460,
+        476,
         64,
         64
       ]
@@ -364,7 +360,7 @@
       "id": "7,0",
       "column": 7,
       "row": 0,
-      "type": "~",
+      "type": "O",
       "floor": null,
       "height_level": 0,
       "walkable": false,
@@ -402,8 +398,8 @@
         64,
         64
       ],
-      "hazard": "갱도",
-      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
+      "prop": "뒤엉킨 뿌리",
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-1.png"
     },
     {
       "id": "8,0",
@@ -490,8 +486,8 @@
         64,
         64
       ],
-      "prop": "광석 결정",
-      "prop_file": "asset/map/stage/icon/themes/abandoned-mine/prop-1.png"
+      "prop": "시든 화단",
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-2.png"
     },
     {
       "id": "10,0",
@@ -540,12 +536,12 @@
       "id": "0,1",
       "column": 0,
       "row": 1,
-      "type": ".",
+      "type": "R",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         48,
         140,
@@ -575,6 +571,12 @@
       "pico2d_surface_rect": [
         48,
         396,
+        64,
+        64
+      ],
+      "portal_rect": [
+        48,
+        140,
         64,
         64
       ]
@@ -669,12 +671,12 @@
       "id": "3,1",
       "column": 3,
       "row": 1,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         240,
         140,
@@ -706,13 +708,56 @@
         396,
         64,
         64
-      ],
-      "hazard": "갱도",
-      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
+      ]
     },
     {
       "id": "4,1",
       "column": 4,
+      "row": 1,
+      "type": "~",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "surface_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "draw_rect": [
+        304,
+        140,
+        64,
+        64
+      ],
+      "canvas_center": [
+        336,
+        172
+      ],
+      "pico2d_center": [
+        336,
+        428
+      ],
+      "pico2d_surface_rect": [
+        304,
+        396,
+        64,
+        64
+      ],
+      "hazard": "독 웅덩이",
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
+    },
+    {
+      "id": "5,1",
+      "column": 5,
       "row": 1,
       "type": ".",
       "floor": 1,
@@ -721,82 +766,37 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
-        304,
+        368,
         140,
         64,
         64
       ],
       "surface_rect": [
-        304,
+        368,
         140,
         64,
         64
       ],
       "draw_rect": [
-        304,
+        368,
         140,
         64,
         64
       ],
       "canvas_center": [
-        336,
+        400,
         172
       ],
       "pico2d_center": [
-        336,
+        400,
         428
       ],
       "pico2d_surface_rect": [
-        304,
+        368,
         396,
         64,
         64
       ]
-    },
-    {
-      "id": "5,1",
-      "column": 5,
-      "row": 1,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        368,
-        140,
-        64,
-        64
-      ],
-      "surface_rect": [
-        368,
-        140,
-        64,
-        64
-      ],
-      "draw_rect": [
-        368,
-        140,
-        64,
-        64
-      ],
-      "canvas_center": [
-        400,
-        172
-      ],
-      "pico2d_center": [
-        400,
-        428
-      ],
-      "pico2d_surface_rect": [
-        368,
-        396,
-        64,
-        64
-      ],
-      "prop": "나무 상자",
-      "prop_file": "asset/map/stage/icon/themes/abandoned-mine/prop-0.png"
     },
     {
       "id": "6,1",
@@ -1066,12 +1066,12 @@
       "id": "1,2",
       "column": 1,
       "row": 2,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         112,
         204,
@@ -1080,27 +1080,27 @@
       ],
       "surface_rect": [
         112,
-        204,
+        188,
         64,
         64
       ],
       "draw_rect": [
         112,
-        204,
+        188,
         64,
-        64
+        80
       ],
       "canvas_center": [
         144,
-        236
+        220
       ],
       "pico2d_center": [
         144,
-        364
+        380
       ],
       "pico2d_surface_rect": [
         112,
-        332,
+        348,
         64,
         64
       ]
@@ -1109,12 +1109,12 @@
       "id": "2,2",
       "column": 2,
       "row": 2,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         176,
         204,
@@ -1123,27 +1123,27 @@
       ],
       "surface_rect": [
         176,
-        204,
+        188,
         64,
         64
       ],
       "draw_rect": [
         176,
-        204,
+        188,
         64,
-        64
+        80
       ],
       "canvas_center": [
         208,
-        236
+        220
       ],
       "pico2d_center": [
         208,
-        364
+        380
       ],
       "pico2d_surface_rect": [
         176,
-        332,
+        348,
         64,
         64
       ]
@@ -1195,12 +1195,12 @@
       "id": "4,2",
       "column": 4,
       "row": 2,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         304,
         204,
@@ -1232,7 +1232,9 @@
         332,
         64,
         64
-      ]
+      ],
+      "hazard": "독 웅덩이",
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "5,2",
@@ -1324,7 +1326,7 @@
       "id": "7,2",
       "column": 7,
       "row": 2,
-      "type": "~",
+      "type": "O",
       "floor": null,
       "height_level": 0,
       "walkable": false,
@@ -1362,8 +1364,8 @@
         64,
         64
       ],
-      "hazard": "갱도",
-      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
+      "prop": "독버섯",
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-0.png"
     },
     {
       "id": "8,2",
@@ -1412,12 +1414,12 @@
       "id": "9,2",
       "column": 9,
       "row": 2,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         624,
         204,
@@ -1426,27 +1428,27 @@
       ],
       "surface_rect": [
         624,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         624,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         656,
-        220
+        236
       ],
       "pico2d_center": [
         656,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         624,
-        348,
+        332,
         64,
         64
       ]
@@ -1455,12 +1457,12 @@
       "id": "10,2",
       "column": 10,
       "row": 2,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         688,
         204,
@@ -1469,27 +1471,27 @@
       ],
       "surface_rect": [
         688,
-        188,
+        204,
         64,
         64
       ],
       "draw_rect": [
         688,
-        188,
+        204,
         64,
-        80
+        64
       ],
       "canvas_center": [
         720,
-        220
+        236
       ],
       "pico2d_center": [
         720,
-        380
+        364
       ],
       "pico2d_surface_rect": [
         688,
-        348,
+        332,
         64,
         64
       ]
@@ -1547,12 +1549,12 @@
       "id": "1,3",
       "column": 1,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         112,
         268,
@@ -1561,27 +1563,27 @@
       ],
       "surface_rect": [
         112,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         112,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         144,
-        284
+        300
       ],
       "pico2d_center": [
         144,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         112,
-        284,
+        268,
         64,
         64
       ]
@@ -1590,12 +1592,12 @@
       "id": "2,3",
       "column": 2,
       "row": 3,
-      "type": "O",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         176,
         268,
@@ -1627,20 +1629,18 @@
         268,
         64,
         64
-      ],
-      "prop": "광석 결정",
-      "prop_file": "asset/map/stage/icon/themes/abandoned-mine/prop-1.png"
+      ]
     },
     {
       "id": "3,3",
       "column": 3,
       "row": 3,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         240,
         268,
@@ -1672,101 +1672,56 @@
         268,
         64,
         64
-      ],
-      "hazard": "갱도",
-      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
+      ]
     },
     {
       "id": "4,3",
       "column": 4,
       "row": 3,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
-      "base_rect": [
-        304,
-        268,
-        64,
-        64
-      ],
-      "surface_rect": [
-        304,
-        268,
-        64,
-        64
-      ],
-      "draw_rect": [
-        304,
-        268,
-        64,
-        64
-      ],
-      "canvas_center": [
-        336,
-        300
-      ],
-      "pico2d_center": [
-        336,
-        300
-      ],
-      "pico2d_surface_rect": [
-        304,
-        268,
-        64,
-        64
-      ]
-    },
-    {
-      "id": "5,3",
-      "column": 5,
-      "row": 3,
-      "type": "O",
+      "type": "~",
       "floor": null,
       "height_level": 0,
       "walkable": false,
       "deployable": false,
       "placement": null,
       "base_rect": [
-        368,
+        304,
         268,
         64,
         64
       ],
       "surface_rect": [
-        368,
+        304,
         268,
         64,
         64
       ],
       "draw_rect": [
-        368,
+        304,
         268,
         64,
         64
       ],
       "canvas_center": [
-        400,
+        336,
         300
       ],
       "pico2d_center": [
-        400,
+        336,
         300
       ],
       "pico2d_surface_rect": [
-        368,
+        304,
         268,
         64,
         64
       ],
-      "prop": "광차",
-      "prop_file": "asset/map/stage/icon/themes/abandoned-mine/prop-2.png"
+      "hazard": "독 웅덩이",
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
-      "id": "6,3",
-      "column": 6,
+      "id": "5,3",
+      "column": 5,
       "row": 3,
       "type": ".",
       "floor": 1,
@@ -1775,41 +1730,41 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
-        432,
+        368,
         268,
         64,
         64
       ],
       "surface_rect": [
-        432,
+        368,
         268,
         64,
         64
       ],
       "draw_rect": [
-        432,
+        368,
         268,
         64,
         64
       ],
       "canvas_center": [
-        464,
+        400,
         300
       ],
       "pico2d_center": [
-        464,
+        400,
         300
       ],
       "pico2d_surface_rect": [
-        432,
+        368,
         268,
         64,
         64
       ]
     },
     {
-      "id": "7,3",
-      "column": 7,
+      "id": "6,3",
+      "column": 6,
       "row": 3,
       "type": "~",
       "floor": null,
@@ -1818,6 +1773,51 @@
       "deployable": false,
       "placement": null,
       "base_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        300
+      ],
+      "pico2d_center": [
+        464,
+        300
+      ],
+      "pico2d_surface_rect": [
+        432,
+        268,
+        64,
+        64
+      ],
+      "hazard": "독 웅덩이",
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
+    },
+    {
+      "id": "7,3",
+      "column": 7,
+      "row": 3,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
         496,
         268,
         64,
@@ -1848,9 +1848,7 @@
         268,
         64,
         64
-      ],
-      "hazard": "갱도",
-      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
+      ]
     },
     {
       "id": "8,3",
@@ -1899,12 +1897,12 @@
       "id": "9,3",
       "column": 9,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         624,
         268,
@@ -1913,27 +1911,27 @@
       ],
       "surface_rect": [
         624,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         624,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         656,
-        284
+        300
       ],
       "pico2d_center": [
         656,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         624,
-        284,
+        268,
         64,
         64
       ]
@@ -1942,12 +1940,12 @@
       "id": "10,3",
       "column": 10,
       "row": 3,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         688,
         268,
@@ -1956,27 +1954,27 @@
       ],
       "surface_rect": [
         688,
-        252,
+        268,
         64,
         64
       ],
       "draw_rect": [
         688,
-        252,
+        268,
         64,
-        80
+        64
       ],
       "canvas_center": [
         720,
-        284
+        300
       ],
       "pico2d_center": [
         720,
-        316
+        300
       ],
       "pico2d_surface_rect": [
         688,
-        284,
+        268,
         64,
         64
       ]
@@ -2028,12 +2026,12 @@
       "id": "1,4",
       "column": 1,
       "row": 4,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         112,
         332,
@@ -2042,27 +2040,27 @@
       ],
       "surface_rect": [
         112,
-        316,
+        332,
         64,
         64
       ],
       "draw_rect": [
         112,
-        316,
+        332,
         64,
-        80
+        64
       ],
       "canvas_center": [
         144,
-        348
+        364
       ],
       "pico2d_center": [
         144,
-        252
+        236
       ],
       "pico2d_surface_rect": [
         112,
-        220,
+        204,
         64,
         64
       ]
@@ -2071,6 +2069,51 @@
       "id": "2,4",
       "column": 2,
       "row": 4,
+      "type": "O",
+      "floor": null,
+      "height_level": 0,
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
+      "base_rect": [
+        176,
+        332,
+        64,
+        64
+      ],
+      "surface_rect": [
+        176,
+        332,
+        64,
+        64
+      ],
+      "draw_rect": [
+        176,
+        332,
+        64,
+        64
+      ],
+      "canvas_center": [
+        208,
+        364
+      ],
+      "pico2d_center": [
+        208,
+        236
+      ],
+      "pico2d_surface_rect": [
+        176,
+        204,
+        64,
+        64
+      ],
+      "prop": "뒤엉킨 뿌리",
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-1.png"
+    },
+    {
+      "id": "3,4",
+      "column": 3,
+      "row": 4,
       "type": ".",
       "floor": 1,
       "height_level": 0,
@@ -2078,82 +2121,37 @@
       "deployable": true,
       "placement": "ground",
       "base_rect": [
-        176,
+        240,
         332,
         64,
         64
       ],
       "surface_rect": [
-        176,
+        240,
         332,
         64,
         64
       ],
       "draw_rect": [
-        176,
+        240,
         332,
         64,
         64
       ],
       "canvas_center": [
-        208,
+        272,
         364
       ],
       "pico2d_center": [
-        208,
+        272,
         236
       ],
       "pico2d_surface_rect": [
-        176,
+        240,
         204,
         64,
         64
       ]
-    },
-    {
-      "id": "3,4",
-      "column": 3,
-      "row": 4,
-      "type": "~",
-      "floor": null,
-      "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
-      "base_rect": [
-        240,
-        332,
-        64,
-        64
-      ],
-      "surface_rect": [
-        240,
-        332,
-        64,
-        64
-      ],
-      "draw_rect": [
-        240,
-        332,
-        64,
-        64
-      ],
-      "canvas_center": [
-        272,
-        364
-      ],
-      "pico2d_center": [
-        272,
-        236
-      ],
-      "pico2d_surface_rect": [
-        240,
-        204,
-        64,
-        64
-      ],
-      "hazard": "갱도",
-      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
     },
     {
       "id": "4,4",
@@ -2245,12 +2243,12 @@
       "id": "6,4",
       "column": 6,
       "row": 4,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         432,
         332,
@@ -2282,7 +2280,9 @@
         204,
         64,
         64
-      ]
+      ],
+      "hazard": "독 웅덩이",
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "7,4",
@@ -2331,12 +2331,12 @@
       "id": "8,4",
       "column": 8,
       "row": 4,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         560,
         332,
@@ -2345,27 +2345,27 @@
       ],
       "surface_rect": [
         560,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         560,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         592,
-        364
+        348
       ],
       "pico2d_center": [
         592,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         560,
-        204,
+        220,
         64,
         64
       ]
@@ -2374,12 +2374,12 @@
       "id": "9,4",
       "column": 9,
       "row": 4,
-      "type": "O",
-      "floor": null,
-      "height_level": 0,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "deployable": true,
+      "placement": "elevated",
       "base_rect": [
         624,
         332,
@@ -2388,32 +2388,30 @@
       ],
       "surface_rect": [
         624,
-        332,
+        316,
         64,
         64
       ],
       "draw_rect": [
         624,
-        332,
+        316,
         64,
-        64
+        80
       ],
       "canvas_center": [
         656,
-        364
+        348
       ],
       "pico2d_center": [
         656,
-        236
+        252
       ],
       "pico2d_surface_rect": [
         624,
-        204,
+        220,
         64,
         64
-      ],
-      "prop": "광차",
-      "prop_file": "asset/map/stage/icon/themes/abandoned-mine/prop-2.png"
+      ]
     },
     {
       "id": "10,4",
@@ -2462,12 +2460,12 @@
       "id": "0,5",
       "column": 0,
       "row": 5,
-      "type": ".",
+      "type": "R",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         48,
         396,
@@ -2497,6 +2495,12 @@
       "pico2d_surface_rect": [
         48,
         140,
+        64,
+        64
+      ],
+      "portal_rect": [
+        48,
+        396,
         64,
         64
       ]
@@ -2548,12 +2552,12 @@
       "id": "2,5",
       "column": 2,
       "row": 5,
-      "type": ".",
-      "floor": 1,
+      "type": "O",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         176,
         396,
@@ -2585,7 +2589,9 @@
         140,
         64,
         64
-      ]
+      ],
+      "prop": "시든 화단",
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-2.png"
     },
     {
       "id": "3,5",
@@ -2634,12 +2640,12 @@
       "id": "4,5",
       "column": 4,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         304,
         396,
@@ -2648,27 +2654,27 @@
       ],
       "surface_rect": [
         304,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         304,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         336,
-        428
+        412
       ],
       "pico2d_center": [
         336,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         304,
-        140,
+        156,
         64,
         64
       ]
@@ -2677,12 +2683,12 @@
       "id": "5,5",
       "column": 5,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         368,
         396,
@@ -2691,27 +2697,27 @@
       ],
       "surface_rect": [
         368,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         368,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         400,
-        428
+        412
       ],
       "pico2d_center": [
         400,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         368,
-        140,
+        156,
         64,
         64
       ]
@@ -2720,12 +2726,12 @@
       "id": "6,5",
       "column": 6,
       "row": 5,
-      "type": ".",
-      "floor": 1,
+      "type": "~",
+      "floor": null,
       "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "walkable": false,
+      "deployable": false,
+      "placement": null,
       "base_rect": [
         432,
         396,
@@ -2757,13 +2763,15 @@
         140,
         64,
         64
-      ]
+      ],
+      "hazard": "독 웅덩이",
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "7,5",
       "column": 7,
       "row": 5,
-      "type": "~",
+      "type": "O",
       "floor": null,
       "height_level": 0,
       "walkable": false,
@@ -2801,19 +2809,19 @@
         64,
         64
       ],
-      "hazard": "갱도",
-      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
+      "prop": "독버섯",
+      "prop_file": "asset/map/stage/icon/themes/poison-marsh/prop-0.png"
     },
     {
       "id": "8,5",
       "column": 8,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         560,
         396,
@@ -2822,27 +2830,27 @@
       ],
       "surface_rect": [
         560,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         560,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         592,
-        428
+        412
       ],
       "pico2d_center": [
         592,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         560,
-        140,
+        156,
         64,
         64
       ]
@@ -2851,12 +2859,12 @@
       "id": "9,5",
       "column": 9,
       "row": 5,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
+      "type": "H",
+      "floor": 2,
+      "height_level": 1,
+      "walkable": false,
       "deployable": true,
-      "placement": "ground",
+      "placement": "elevated",
       "base_rect": [
         624,
         396,
@@ -2865,27 +2873,27 @@
       ],
       "surface_rect": [
         624,
-        396,
+        380,
         64,
         64
       ],
       "draw_rect": [
         624,
-        396,
+        380,
         64,
-        64
+        80
       ],
       "canvas_center": [
         656,
-        428
+        412
       ],
       "pico2d_center": [
         656,
-        172
+        188
       ],
       "pico2d_surface_rect": [
         624,
-        140,
+        156,
         64,
         64
       ]
@@ -2943,12 +2951,12 @@
       "id": "0,6",
       "column": 0,
       "row": 6,
-      "type": "R",
+      "type": ".",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         48,
         460,
@@ -2980,19 +2988,13 @@
         76,
         64,
         64
-      ],
-      "portal_rect": [
-        48,
-        460,
-        64,
-        64
       ]
     },
     {
       "id": "1,6",
       "column": 1,
       "row": 6,
-      "type": "O",
+      "type": "~",
       "floor": null,
       "height_level": 0,
       "walkable": false,
@@ -3030,8 +3032,8 @@
         64,
         64
       ],
-      "prop": "나무 상자",
-      "prop_file": "asset/map/stage/icon/themes/abandoned-mine/prop-0.png"
+      "hazard": "독 웅덩이",
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
     },
     {
       "id": "2,6",
@@ -3080,12 +3082,12 @@
       "id": "3,6",
       "column": 3,
       "row": 6,
-      "type": "~",
-      "floor": null,
+      "type": ".",
+      "floor": 1,
       "height_level": 0,
-      "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
       "base_rect": [
         240,
         460,
@@ -3117,9 +3119,7 @@
         76,
         64,
         64
-      ],
-      "hazard": "갱도",
-      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
+      ]
     },
     {
       "id": "4,6",
@@ -3211,49 +3211,6 @@
       "id": "6,6",
       "column": 6,
       "row": 6,
-      "type": ".",
-      "floor": 1,
-      "height_level": 0,
-      "walkable": true,
-      "deployable": true,
-      "placement": "ground",
-      "base_rect": [
-        432,
-        460,
-        64,
-        64
-      ],
-      "surface_rect": [
-        432,
-        460,
-        64,
-        64
-      ],
-      "draw_rect": [
-        432,
-        460,
-        64,
-        64
-      ],
-      "canvas_center": [
-        464,
-        492
-      ],
-      "pico2d_center": [
-        464,
-        108
-      ],
-      "pico2d_surface_rect": [
-        432,
-        76,
-        64,
-        64
-      ]
-    },
-    {
-      "id": "7,6",
-      "column": 7,
-      "row": 6,
       "type": "~",
       "floor": null,
       "height_level": 0,
@@ -3261,6 +3218,51 @@
       "deployable": false,
       "placement": null,
       "base_rect": [
+        432,
+        460,
+        64,
+        64
+      ],
+      "surface_rect": [
+        432,
+        460,
+        64,
+        64
+      ],
+      "draw_rect": [
+        432,
+        460,
+        64,
+        64
+      ],
+      "canvas_center": [
+        464,
+        492
+      ],
+      "pico2d_center": [
+        464,
+        108
+      ],
+      "pico2d_surface_rect": [
+        432,
+        76,
+        64,
+        64
+      ],
+      "hazard": "독 웅덩이",
+      "hazard_file": "asset/map/stage/icon/themes/poison-marsh/hazard.png"
+    },
+    {
+      "id": "7,6",
+      "column": 7,
+      "row": 6,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
+      "deployable": true,
+      "placement": "ground",
+      "base_rect": [
         496,
         460,
         64,
@@ -3291,20 +3293,18 @@
         76,
         64,
         64
-      ],
-      "hazard": "갱도",
-      "hazard_file": "asset/map/stage/icon/themes/abandoned-mine/hazard.png"
+      ]
     },
     {
       "id": "8,6",
       "column": 8,
       "row": 6,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         560,
         460,
@@ -3313,27 +3313,27 @@
       ],
       "surface_rect": [
         560,
-        444,
+        460,
         64,
         64
       ],
       "draw_rect": [
         560,
-        444,
+        460,
         64,
-        80
+        64
       ],
       "canvas_center": [
         592,
-        476
+        492
       ],
       "pico2d_center": [
         592,
-        124
+        108
       ],
       "pico2d_surface_rect": [
         560,
-        92,
+        76,
         64,
         64
       ]
@@ -3342,12 +3342,12 @@
       "id": "9,6",
       "column": 9,
       "row": 6,
-      "type": "H",
-      "floor": 2,
-      "height_level": 1,
-      "walkable": false,
+      "type": ".",
+      "floor": 1,
+      "height_level": 0,
+      "walkable": true,
       "deployable": true,
-      "placement": "elevated",
+      "placement": "ground",
       "base_rect": [
         624,
         460,
@@ -3356,27 +3356,27 @@
       ],
       "surface_rect": [
         624,
-        444,
+        460,
         64,
         64
       ],
       "draw_rect": [
         624,
-        444,
+        460,
         64,
-        80
+        64
       ],
       "canvas_center": [
         656,
-        476
+        492
       ],
       "pico2d_center": [
         656,
-        124
+        108
       ],
       "pico2d_surface_rect": [
         624,
-        92,
+        76,
         64,
         64
       ]
@@ -3432,10 +3432,6 @@
       "cells": [
         [
           0,
-          0
-        ],
-        [
-          0,
           1
         ],
         [
@@ -3443,20 +3439,36 @@
           2
         ],
         [
+          0,
+          3
+        ],
+        [
           1,
-          2
+          3
         ],
         [
           2,
-          2
+          3
         ],
         [
           3,
-          2
+          3
+        ],
+        [
+          3,
+          4
         ],
         [
           4,
-          2
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          3
         ],
         [
           5,
@@ -3494,10 +3506,6 @@
       "cells": [
         [
           0,
-          0
-        ],
-        [
-          0,
           1
         ],
         [
@@ -3505,20 +3513,36 @@
           2
         ],
         [
+          0,
+          3
+        ],
+        [
           1,
-          2
+          3
         ],
         [
           2,
-          2
+          3
         ],
         [
           3,
-          2
+          3
+        ],
+        [
+          3,
+          4
         ],
         [
           4,
-          2
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          3
         ],
         [
           5,
@@ -3530,27 +3554,35 @@
         ],
         [
           6,
-          3
-        ],
-        [
-          6,
-          4
+          1
         ],
         [
           7,
-          4
+          1
         ],
         [
           8,
-          4
-        ],
-        [
-          8,
-          5
+          1
         ],
         [
           9,
-          5
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
         ],
         [
           10,
@@ -3567,24 +3599,32 @@
           3
         ],
         [
-          0,
-          2
-        ],
-        [
           1,
-          2
+          3
         ],
         [
           2,
-          2
+          3
         ],
         [
           3,
-          2
+          3
+        ],
+        [
+          3,
+          4
         ],
         [
           4,
-          2
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          3
         ],
         [
           5,
@@ -3625,56 +3665,72 @@
           3
         ],
         [
-          0,
-          4
-        ],
-        [
-          0,
-          5
-        ],
-        [
           1,
-          5
+          3
         ],
         [
           2,
-          5
+          3
         ],
         [
           3,
-          5
+          3
+        ],
+        [
+          3,
+          4
         ],
         [
           4,
-          5
+          4
         ],
         [
           5,
-          5
-        ],
-        [
-          6,
-          5
-        ],
-        [
-          6,
           4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          1
         ],
         [
           7,
-          4
+          1
         ],
         [
           8,
-          4
-        ],
-        [
-          8,
-          5
+          1
         ],
         [
           9,
-          5
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
         ],
         [
           10,
@@ -3688,10 +3744,6 @@
       "cells": [
         [
           0,
-          6
-        ],
-        [
-          0,
           5
         ],
         [
@@ -3699,44 +3751,52 @@
           5
         ],
         [
-          2,
-          5
-        ],
-        [
-          3,
-          5
-        ],
-        [
-          4,
-          5
-        ],
-        [
-          5,
-          5
-        ],
-        [
-          6,
-          5
-        ],
-        [
-          6,
+          1,
           4
         ],
         [
-          7,
-          4
-        ],
-        [
-          8,
-          4
-        ],
-        [
-          8,
+          1,
           3
         ],
         [
-          8,
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
           2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
         ],
         [
           8,
@@ -3758,10 +3818,6 @@
       "cells": [
         [
           0,
-          6
-        ],
-        [
-          0,
           5
         ],
         [
@@ -3769,44 +3825,76 @@
           5
         ],
         [
+          1,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
           2,
-          5
+          3
         ],
         [
           3,
-          5
+          3
+        ],
+        [
+          3,
+          4
         ],
         [
           4,
-          5
+          4
         ],
         [
           5,
-          5
-        ],
-        [
-          6,
-          5
-        ],
-        [
-          6,
           4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          1
         ],
         [
           7,
-          4
+          1
         ],
         [
           8,
-          4
-        ],
-        [
-          8,
-          5
+          1
         ],
         [
           9,
-          5
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          10,
+          3
+        ],
+        [
+          10,
+          4
         ],
         [
           10,
@@ -3818,5 +3906,5 @@
   "art_version": 6,
   "shared_tiles": "asset/map/stage/icon/common",
   "shared_objects": "asset/map/stage/icon/objects",
-  "origin": "existing v5 layout preserved"
+  "origin": "new theme"
 }

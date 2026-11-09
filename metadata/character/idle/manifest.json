@@ -19,6 +19,17 @@
     288
   ],
   "atlas_count": 24,
+  "number_by_character": {
+    "swordsman": 0,
+    "guardian": 1,
+    "archer": 2,
+    "crossbowman": 3,
+    "cleric": 4,
+    "herbalist": 5,
+    "frost-mage": 6,
+    "shadow-thief": 7,
+    "ember-mage": 8
+  },
   "assets": [
     {
       "id": "swordsman",
@@ -36,7 +47,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/swordsman/front/idle-sheet.png",
+          "file": "asset/character/main/0-swordsman/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -315,7 +326,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/swordsman/back/idle-sheet.png",
+          "file": "asset/character/main/0-swordsman/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -594,7 +605,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/swordsman/side/idle-sheet.png",
+          "file": "asset/character/main/0-swordsman/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -893,7 +904,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/guardian/front/idle-sheet.png",
+          "file": "asset/character/main/1-guardian/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -1172,7 +1183,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/guardian/back/idle-sheet.png",
+          "file": "asset/character/main/1-guardian/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -1451,7 +1462,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/guardian/side/idle-sheet.png",
+          "file": "asset/character/main/1-guardian/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -1750,7 +1761,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/archer/front/idle-sheet.png",
+          "file": "asset/character/main/2-archer/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -2029,7 +2040,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/archer/back/idle-sheet.png",
+          "file": "asset/character/main/2-archer/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -2308,7 +2319,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/archer/side/idle-sheet.png",
+          "file": "asset/character/main/2-archer/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -2607,7 +2618,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/crossbowman/front/idle-sheet.png",
+          "file": "asset/character/main/3-crossbowman/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -2886,7 +2897,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/crossbowman/back/idle-sheet.png",
+          "file": "asset/character/main/3-crossbowman/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -3165,7 +3176,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/crossbowman/side/idle-sheet.png",
+          "file": "asset/character/main/3-crossbowman/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -3464,7 +3475,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/cleric/front/idle-sheet.png",
+          "file": "asset/character/main/4-cleric/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -3743,7 +3754,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/cleric/back/idle-sheet.png",
+          "file": "asset/character/main/4-cleric/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -4022,7 +4033,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/cleric/side/idle-sheet.png",
+          "file": "asset/character/main/4-cleric/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -4321,7 +4332,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/herbalist/front/idle-sheet.png",
+          "file": "asset/character/main/5-herbalist/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -4600,7 +4611,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/herbalist/back/idle-sheet.png",
+          "file": "asset/character/main/5-herbalist/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -4879,7 +4890,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/herbalist/side/idle-sheet.png",
+          "file": "asset/character/main/5-herbalist/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -5178,7 +5189,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/frost-mage/front/idle-sheet.png",
+          "file": "asset/character/main/6-frost-mage/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -5457,7 +5468,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/frost-mage/back/idle-sheet.png",
+          "file": "asset/character/main/6-frost-mage/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -5736,7 +5747,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/frost-mage/side/idle-sheet.png",
+          "file": "asset/character/main/6-frost-mage/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -6035,7 +6046,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/shadow-thief/front/idle-sheet.png",
+          "file": "asset/character/main/7-shadow-thief/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -6314,7 +6325,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/shadow-thief/back/idle-sheet.png",
+          "file": "asset/character/main/7-shadow-thief/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -6593,7 +6604,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/shadow-thief/side/idle-sheet.png",
+          "file": "asset/character/main/7-shadow-thief/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,

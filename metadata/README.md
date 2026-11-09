@@ -17,7 +17,7 @@ metadata/
   map/           맵 20종의 좌표, 전체 배치와 목록, 22개
 ```
 
-JSON의 `asset/...` 이미지 경로는 **`game/` 폴더**를 기준으로 읽습니다. 예를 들어 `asset/map/stage/main/dungeon-room.png`의 실제 위치는 `game/asset/map/stage/main/dungeon-room.png`입니다. `metadata/...` 데이터 경로는 저장소 루트 기준입니다.
+JSON의 `asset/...` 이미지 경로는 **`game/` 폴더**를 기준으로 읽습니다. 예를 들어 `asset/map/stage/main/cave/cave-0.png`의 실제 위치는 `game/asset/map/stage/main/cave/cave-0.png`입니다. `metadata/...` 데이터 경로는 저장소 루트 기준입니다.
 
 이미지는 `game/asset/character/`, `game/asset/item/`, `game/asset/map/`에 있습니다. `game/code/main.py`는 맵 PNG를 불러오고, `IdleSprite`와 `ArcherSprite`는 대기·공격 JSON의 좌표와 시간을 읽습니다. 아래 `asset/...` 표기는 `game/`에 대한 상대 경로입니다.
 
@@ -25,18 +25,18 @@ JSON의 `asset/...` 이미지 경로는 **`game/` 폴더**를 기준으로 읽�
 
 검사, 수호기사, 궁수, 석궁병, 성직자, 약초사, 냉기술사, 그림자 도적의 8명입니다.
 
-- `asset/character/main/<캐릭터명>/skill/icon/`: 캐릭터별 스킬 아이콘 2개씩, 총 16개
+- `asset/character/main/<번호>-<캐릭터명>/skill/icon/`: 캐릭터별 스킬 아이콘 2개씩, 총 16개
 - `asset/etc/direction/`: 상하좌우 배치 방향 선택 UI, 256×256 PNG와 통합 시트
-- `asset/character/main/<캐릭터명>/front/`: 정면 대기·공격 시트 2개
-- `asset/character/main/<캐릭터명>/back/`: 뒷면 대기·공격 시트 2개
-- `asset/character/main/<캐릭터명>/side/`: 오른쪽 측면 대기·공격 시트 2개
-- `asset/character/main/<캐릭터명>/skill/profile/deployment.png`: 배치 프로필 카드
-- `asset/character/main/<캐릭터명>/skill/profile/skill-card.png`: 스킬 프로필 카드
+- `asset/character/main/<번호>-<캐릭터명>/front/`: 정면 대기·공격 시트 2개
+- `asset/character/main/<번호>-<캐릭터명>/back/`: 뒷면 대기·공격 시트 2개
+- `asset/character/main/<번호>-<캐릭터명>/side/`: 오른쪽 측면 대기·공격 시트 2개
+- `asset/character/main/<번호>-<캐릭터명>/skill/profile/deployment.png`: 배치 프로필 카드
+- `asset/character/main/<번호>-<캐릭터명>/skill/profile/skill-card.png`: 스킬 프로필 카드
 - `asset/character/icon/source/<캐릭터명>/`: 원본 개별 프레임과 정적 통합 시트 보관
 
 각 방향 폴더에는 `idle-sheet.png`와 `attack-sheet.png`만 보관합니다. **궁수·석궁병·검사 공격은 각 방향 16프레임·16FPS·1초, 4열×4행의 1280×1280 PNG**입니다. 다른 5명의 공격은 기존 3프레임·960×320 시트를 유지합니다. 한 프레임은 모두 320×320입니다. `metadata/character/sprites/` JSON의 `directional_attack_sheets`에 방향별 공격 시트 경로와 좌표·시간을 정리했습니다. [궁수 제작 기록](character/attack/README.md), [석궁병 제작 기록](character/attack/crossbowman-connected.md), [검사 제작 기록](character/attack/swordsman.md)에 재생 데이터와 원본을 기록합니다.
 
-전체 동료 목록 그림은 `asset/character/character-overview.png`, 검사 소개 그림은 `asset/character/main/swordsman/skill/profile/cover.png`입니다.
+전체 동료 목록 그림은 `asset/character/character-overview.png`, 검사 소개 그림은 `asset/character/main/0-swordsman/skill/profile/cover.png`입니다.
 
 8명 모두 방향별 16프레임·16FPS, 한 주기 1초입니다. 시트는 4열×4행의 1280×1280, 프레임은 기존과 같은 320×320입니다. 총 24개 시트에 384프레임을 저장합니다. 발 기준점은 왼쪽 위 원점에서 (160, 288)입니다. 메타데이터에서 `right` 방향으로 기록된 이미지는 `side/`에 있습니다. 전체 목록의 시간 설정은 `manifest.json`의 `timing_by_character`와 각 캐릭터 JSON을 확인합니다.
 
@@ -60,7 +60,7 @@ JSON의 `asset/...` 이미지 경로는 **`game/` 폴더**를 기준으로 읽�
 
 ## 아이템
 
-유물 아이콘 25개는 `asset/item/`의 개별 256×256 투명 PNG입니다. `atlas.png`는 5열×5행, 1280×1280 시트이며, `overview.png`는 전체 목록 이미지입니다.
+유물 아이콘 파일에는 0부터 24까지 번호를 붙입니다. 유물 아이콘 25개는 `asset/item/`의 개별 256×256 투명 PNG입니다. `atlas.png`는 5열×5행, 1280×1280 시트이며, `overview.png`는 전체 목록 이미지입니다.
 
 [유물 효과표](../docs/유물효과.md)에 수치·적용 대상·발동 조건을 정리했습니다. 수치는 첫 플레이테스트용 설계 값이며, 초기 구현 목표 6종과 확장 19종을 함께 보관합니다.
 
@@ -70,7 +70,7 @@ JSON의 `asset/...` 이미지 경로는 **`game/` 폴더**를 기준으로 읽�
 
 `asset/map/field/icon/`의 탐험 지도 타일은 모두 여백 없는 64×64입니다. 전투 방(`battle-room.png`), 기본 방(`basic-room.png`), 좌우 연결선(`path-horizontal.png`), 상하 연결선(`path-vertical.png`), 빈 배경(`empty.png`)의 5종이며, 연결선은 타일 끝까지 이어집니다.
 
-`asset/map/stage/main/`의 전투 맵 20개는 모두 800×600입니다. 격자는 11열×7행, 한 칸은 64×64, 왼쪽 위 기준 시작 좌표는 (48, 76)입니다. 높은 칸의 윗면은 16픽셀 위로 올라갑니다. 적 출현 지점은 3개, 도착 지점은 2개입니다.
+`asset/map/stage/main/`의 광산 1스테이지 전투 맵 20개는 cave-0.png부터 cave-19.png까지 번호를 사용하며 모두 800×600입니다. 격자는 11열×7행, 한 칸은 64×64, 왼쪽 위 기준 시작 좌표는 (48, 76)입니다. 높은 칸의 윗면은 16픽셀 위로 올라갑니다. 적 출현 지점은 3개, 도착 지점은 2개입니다.
 
 - `asset/map/stage/icon/`: 공통·테마별 지형 타일
 - `asset/map/stage/icon/objects/`: 적 출현 지점, 도착 지점, 횃불과 창문
