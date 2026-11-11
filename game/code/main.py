@@ -17,7 +17,8 @@ from pico2d import (
 )
 
 import map as dungeon
-from player import Player
+from battle_preview import BattlePreview
+from user import User
 
 
 WIDTH = 800
@@ -26,9 +27,10 @@ TITLE_PATH = Path(__file__).resolve().parents[1] / "asset/etc/title/title-screen
 
 
 def main():
-    player = Player(scene=0)
+    user = User(scene=0)
     title_image = None
     route_image = None
+    battle_preview = None
     visited_rooms = set()
     open_canvas(WIDTH, HEIGHT)
     try:
@@ -42,32 +44,34 @@ def main():
                         dungeon.map_type == dungeon.MapType.BATTLE
                         and event.key in (SDLK_ESCAPE, SDLK_q)
                     ):
-                        player.finish_battle(cleared=event.key == SDLK_q)
+                        user.finish_battle(cleared=event.key == SDLK_q)
+                        battle_preview = None
                         dungeon.clear_map()
                         continue
                     if event.key == SDLK_ESCAPE:
                         return
-                if player.scene == 0 and event.type in (SDL_KEYDOWN, SDL_MOUSEBUTTONDOWN):
+                if user.scene == 0 and event.type in (SDL_KEYDOWN, SDL_MOUSEBUTTONDOWN):
                     route_image = dungeon.load_route()
                     title_image = None
-                    player.scene = 1
+                    user.scene = 1
                 elif (
-                    player.scene == 1
+                    user.scene == 1
                     and event.type == SDL_MOUSEBUTTONDOWN
                     and event.button == SDL_BUTTON_LEFT
                 ):
                     room_number = dungeon.room_at(event.x, event.y)
-                    if room_number not in dungeon.visible_rooms(visited_rooms, player.pos):
+                    if room_number not in dungeon.visible_rooms(visited_rooms, user.pos):
                         continue
 
                     room = dungeon.route_rooms[room_number]
                     if (
                         room.map_type == dungeon.MapType.BATTLE
-                        and room_number not in player.pos
+                        and room_number not in user.pos
                     ):
                         dungeon.load_map(room.map_index)
-                        player.battle_room = room_number
-                        player.scene = 2
+                        battle_preview = BattlePreview(room)
+                        user.battle_room = room_number
+                        user.scene = 2
                     elif room.map_type in (
                         dungeon.MapType.START,
                         dungeon.MapType.SHOP,
@@ -76,17 +80,19 @@ def main():
                         visited_rooms.add(room_number)
 
             clear_canvas()
-            if player.scene == 0:
+            if user.scene == 0:
                 title_image.draw(WIDTH // 2, HEIGHT // 2, WIDTH, HEIGHT)
-            elif player.scene == 1:
-                dungeon.draw_route(route_image, visited_rooms, player.pos)
+            elif user.scene == 1:
+                dungeon.draw_route(route_image, visited_rooms, user.pos)
             else:
                 dungeon.dungeon_map.draw(WIDTH // 2, HEIGHT // 2)
+                battle_preview.draw()
             update_canvas()
             delay(1 / 60)
     finally:
         title_image = None
         route_image = None
+        battle_preview = None
         dungeon.clear_map()
         dungeon.route_cover = None
         close_canvas()
