@@ -5,7 +5,8 @@ from typing import ClassVar
 
 from pico2d import load_image
 
-from character import Player
+from battle_hud import BattleHUD
+from character import DEPLOYMENT_COSTS, Player
 from map import GAME_DIRECTORY, METADATA_DIRECTORY, Room
 
 
@@ -47,7 +48,9 @@ class BattlePreview:
                 candidates.append((x, y))
         x, y = min(candidates, key=lambda pos: abs(pos[0] - 5) + abs(pos[1] + 2))
 
-        self.player = Player(attackSpeed=1.0, damage=10, hp=40, cost=0, pos=[x, y])
+        self.player = Player(
+            attackSpeed=1.0, damage=10, hp=40, cost=DEPLOYMENT_COSTS["0-swordsman"], pos=[x, y]
+        )
         self.player_feet = cells[x, y]["pico2d_center"]
         self.monster_start = (x - 1, y - 1)
         self.monster_end = (x, y - 1)
@@ -72,9 +75,11 @@ class BattlePreview:
         self.monster_frame_count = monster_metadata["frame_count"]
         self.monster_columns = monster_metadata["columns"]
         self.monster_pivot = monster_metadata["pivot"]
+        self.hud = BattleHUD()
+        self.remaining_enemies = sum(room.monsters.values())
         self.started_at = self.state_started_at = monotonic()
 
-    def draw(self):
+    def draw(self, *, cost, defense_points):
         now = monotonic()
         phase = (now - self.started_at) % PREVIEW_SECONDS
         moving = phase < APPROACH_SECONDS
@@ -98,3 +103,4 @@ class BattlePreview:
         left = frame % self.monster_columns * width
         bottom = self.monster_image.h - (frame // self.monster_columns + 1) * height
         draw_frame(self.monster_image, (left, bottom, width, height), self.monster_pivot, feet)
+        self.hud.draw(cost=cost, defense_points=defense_points, remaining_enemies=self.remaining_enemies)

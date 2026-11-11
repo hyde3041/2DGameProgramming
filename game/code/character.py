@@ -2,6 +2,19 @@ from dataclasses import dataclass, field
 from typing import ClassVar
 
 
+# Fixed deployment prices for the available character profiles.
+DEPLOYMENT_COSTS = {
+    "0-swordsman": 5,
+    "1-guardian": 7,
+    "2-archer": 6,
+    "3-crossbowman": 8,
+    "4-cleric": 6,
+    "5-herbalist": 5,
+    "6-frost-mage": 8,
+    "7-shadow-thief": 7,
+}
+
+
 @dataclass(kw_only=True)
 class Player:
     race: ClassVar[str] = "people"

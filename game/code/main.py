@@ -1,4 +1,5 @@
 from pathlib import Path
+from time import monotonic
 
 from pico2d import (
     SDL_BUTTON_LEFT,
@@ -27,7 +28,7 @@ TITLE_PATH = Path(__file__).resolve().parents[1] / "asset/etc/title/title-screen
 
 
 def main():
-    user = User(scene=0)
+    user = User(hp=3, scene=0)
     title_image = None
     route_image = None
     battle_preview = None
@@ -70,8 +71,7 @@ def main():
                     ):
                         dungeon.load_map(room.map_index)
                         battle_preview = BattlePreview(room)
-                        user.battle_room = room_number
-                        user.scene = 2
+                        user.begin_battle(room_number, monotonic())
                     elif room.map_type in (
                         dungeon.MapType.START,
                         dungeon.MapType.SHOP,
@@ -86,7 +86,8 @@ def main():
                 dungeon.draw_route(route_image, visited_rooms, user.pos)
             else:
                 dungeon.dungeon_map.draw(WIDTH // 2, HEIGHT // 2)
-                battle_preview.draw()
+                user.update_cost(monotonic())
+                battle_preview.draw(cost=user.cost, defense_points=user.hp)
             update_canvas()
             delay(1 / 60)
     finally:
