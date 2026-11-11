@@ -10,14 +10,14 @@ const timing=[
 ];
 const metadata={id:'crossbowman',version:5,workflow:'connected original poses with three real lift in-betweens; rigid unit scale and original feet fixed',lift:'metadata/character/attack/crossbowman-lift.json',frames:16,fps:16,release_frame:7,cell_size:[320,320],views:{}};
 for(const view of['front','back','side']){
- const folder=`asset/character/icon/layers/crossbowman/${view}/attack/connected`,dir=path.join(game,folder);await fs.mkdir(dir,{recursive:true});
- const idleFile=`asset/character/main/3-crossbowman/${view}/idle-sheet.png`,idle=await sharp(path.join(game,idleFile)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
- const sourceFiles={idle:idleFile,aim:`asset/character/icon/source/crossbowman/${view}/attack_01.png`,fire:`asset/character/icon/source/crossbowman/${view}/attack_02.png`,recover:`asset/character/icon/source/crossbowman/${view}/attack_03.png`};
- for(let n=1;n<=3;n++)sourceFiles['lift-'+n]=`asset/character/icon/layers/crossbowman/${view}/attack/lift/lift-${String(n).padStart(2,'0')}.png`;
+ const folder=`asset/character/player/icon/layers/crossbowman/${view}/attack/connected`,dir=path.join(game,folder);await fs.mkdir(dir,{recursive:true});
+ const idleFile=`asset/character/player/main/3-crossbowman/${view}/idle-sheet.png`,idle=await sharp(path.join(game,idleFile)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
+ const sourceFiles={idle:idleFile,aim:`asset/character/player/icon/source/crossbowman/${view}/attack_01.png`,fire:`asset/character/player/icon/source/crossbowman/${view}/attack_02.png`,recover:`asset/character/player/icon/source/crossbowman/${view}/attack_03.png`};
+ for(let n=1;n<=3;n++)sourceFiles['lift-'+n]=`asset/character/player/icon/layers/crossbowman/${view}/attack/lift/lift-${String(n).padStart(2,'0')}.png`;
  const footBoxes=view==='front'?[[119,270,39,24],[161,270,37,24]]:view==='back'?[[127,270,28,24],[162,270,35,24]]:[[121,270,35,24],[160,270,39,24]];
  const inFoot=(x,y)=>footBoxes.some(([bx,by,w,h])=>x>=bx&&x<bx+w&&y>=by&&y<by+h);
  const feet=Buffer.alloc(idle.length),parts={},sources={};
- const legMaskFile=`asset/character/icon/layers/crossbowman/${view}/aligned/visible/legs.png`,legMask=await sharp(path.join(game,legMaskFile)).ensureAlpha().raw().toBuffer();
+ const legMaskFile=`asset/character/player/icon/layers/crossbowman/${view}/aligned/visible/legs.png`,legMask=await sharp(path.join(game,legMaskFile)).ensureAlpha().raw().toBuffer();
  const isScarf=(pixels,p)=>pixels[p]>130&&pixels[p]>pixels[p+1]*1.3&&pixels[p+1]>pixels[p+2]*1.45;
  for(let y=277;y<320;y++)for(let x=100;x<225;x++)if(inFoot(x,y)){const p=(y*320+x)*4;if(legMask[p+3]&&!isScarf(idle,p))idle.copy(feet,p,p,p+4);}
  for(const[name,input]of Object.entries(sourceFiles)){
@@ -32,7 +32,7 @@ for(const view of['front','back','side']){
   sources[name]={input,original_rgba_sha256:crypto.createHash('sha256').update(original).digest('hex'),upper_pixels_unchanged_above_y:281,muzzle:[tipX,count?sumY/count:215]};
  }
  const feetFile=`${folder}/feet.png`;await sharp(feet,{raw:{width:320,height:320,channels:4}}).png().toFile(path.join(game,feetFile));parts.feet=feetFile;
- const bolt=await sharp(path.join(game,'asset/character/icon/layers/crossbowman/attack/bolt.png')).resize({width:38}).png().toBuffer(),boltFile=`${folder}/bolt.png`;await fs.writeFile(path.join(game,boltFile),bolt);parts.bolt=boltFile;
+ const bolt=await sharp(path.join(game,'asset/character/player/icon/layers/crossbowman/attack/bolt.png')).resize({width:38}).png().toBuffer(),boltFile=`${folder}/bolt.png`;await fs.writeFile(path.join(game,boltFile),bolt);parts.bolt=boltFile;
  const aim=await sharp(path.join(game,sourceFiles.aim)).ensureAlpha().raw().toBuffer();let muzzleX=0,muzzleY=215;
  for(let y=195;y<231;y++)for(let x=180;x<260;x++){const p=(y*320+x)*4;if(aim[p+3]>180&&x>muzzleX){muzzleX=x;muzzleY=y;}}
  metadata.views[view]={parts,sources,pivot:{front:[163,241],back:[163,243],side:[170,241]}[view],muzzle:[muzzleX,muzzleY],foot_reference_mask:legMaskFile,foot_boxes:footBoxes,frames:timing.map(([pose,x,y,angle],index)=>({index,pose,translation:[x,y],angle_degrees:angle,scale:[1,1]}))};

@@ -4,9 +4,9 @@
 
 ## 이미지와 연결
 
-- 게임 시트: `game/asset/character/main/1-guardian/{front,back,side}/attack-sheet.png`
+- 게임 시트: `game/asset/character/player/main/1-guardian/{front,back,side}/attack-sheet.png`
 - 시트 1280×1280, 4열×4행, 프레임 320×320, 발 기준점 (160,288).
-- 원본: `game/asset/character/icon/layers/guardian/<방향>/aligned/`. 원본 PNG는 보존하며 수호기사 Idle은 아래 전환 수정에 따라 공격과 함께 출력한다.
+- 원본: `game/asset/character/player/icon/layers/guardian/<방향>/aligned/`. 원본 PNG는 보존하며 수호기사 Idle은 아래 전환 수정에 따라 공격과 함께 출력한다.
 - 기존 `attack/support/`의 gear·shield 정리 복사본을 사용한다. 크게 움직일 때 드러나는 몸통의 옛 방패 테두리와 후면 방패에 섞인 옷·손은 `attack/push/`의 제한된 편집 복사본에서 보완했다. 앞선 철퇴 버전의 재작화 몸통·어깨 보완은 사용하지 않는다.
 - `guardian-motion.json`: 원본 해시, 그리기 순서, 관절, 16장 이동·회전.
 - `guardian-reach.json`: 드러나는 몸통의 편집 마스크·고정 등록 이동, 후면 방패의 가림 조각 정리 범위.
@@ -21,7 +21,7 @@
 
 최신 팔 깊이 수정에 따라 세 방향 모두 팔을 먼저 그리고 방패를 그린다. 정면·옆면은 몸통→팔→방패→머리이며, 후면은 팔→방패→몸통·망토·다리→머리다. 후면 방패는 몸통·망토·머리 뒤에 유지하되 팔은 방패보다 앞으로 덧그리지 않는다.
 
-후면 손 표시의 최신 요청에 따라 손잡이를 잡은 장갑·손목은 방패 안쪽면 앞에 표시한다. `rear_hand_grip`이 기존 `shield_arm_native`를 동일 행렬로 참조하고 손 중심 반경 18px 안의 부분을 클립해 노출한다. 몸통·망토·머리는 그 위에서 가린다. 후면 대기·공격 32프레임에서 손 중심 반경 7px 안에 실제로 보이는 픽셀은 최소 104개이며 손잡이 좌표 오차는 1e-10px 미만이다. 이번에 변경된 게임 이미지는 후면 대기·공격 2개이며 최신 후면 재생은 `game/asset/character/icon/preview/guardian-back-hand-visible-back.gif`다. 백업·픽셀 범위·pico2d 검증은 `.git-pull-backups/guardian-back-hand-visible-20261107/`에 있다.
+후면 손 표시의 최신 요청에 따라 손잡이를 잡은 장갑·손목은 방패 안쪽면 앞에 표시한다. `rear_hand_grip`이 기존 `shield_arm_native`를 동일 행렬로 참조하고 손 중심 반경 18px 안의 부분을 클립해 노출한다. 몸통·망토·머리는 그 위에서 가린다. 후면 대기·공격 32프레임에서 손 중심 반경 7px 안에 실제로 보이는 픽셀은 최소 104개이며 손잡이 좌표 오차는 1e-10px 미만이다. 이번에 변경된 게임 이미지는 후면 대기·공격 2개이며 최신 후면 재생은 `game/asset/character/player/icon/preview/guardian-back-hand-visible-back.gif`다. 백업·픽셀 범위·pico2d 검증은 `.git-pull-backups/guardian-back-hand-visible-20261107/`에 있다.
 
 ## 대기·공격 전환, 손과 머리카락 수정
 
@@ -51,7 +51,7 @@ node tools/prepare_guardian_attack.mjs
 node tools/build_guardian_attack.mjs --apply
 ```
 
-`prepare_guardian_reach.mjs`의 마지막 단계가 `prepare_guardian_shield_outline.mjs`를 실행해 완전한 방패를 준비한다. `--apply` 없이 실행하면 `.build/guardian-motion/`에 대기·공격 검사본을 출력한다. 기존 정리 복사본이 이미 있으므로 `prepare_guardian_support.mjs`는 다시 실행할 필요가 없다. 실제 게임 PNG와 같은 프레임으로 만든 최신 미리보기는 `game/asset/character/icon/preview/guardian-center-handle.gif`다. 16장 공격 1초와 16장 Idle 1초를 이어서 반복한다. GIF는 60·60·60·70ms를 반복해 전체 2초를 맞췄으며 실제 게임은 62.5ms 간격이다.
+`prepare_guardian_reach.mjs`의 마지막 단계가 `prepare_guardian_shield_outline.mjs`를 실행해 완전한 방패를 준비한다. `--apply` 없이 실행하면 `.build/guardian-motion/`에 대기·공격 검사본을 출력한다. 기존 정리 복사본이 이미 있으므로 `prepare_guardian_support.mjs`는 다시 실행할 필요가 없다. 실제 게임 PNG와 같은 프레임으로 만든 최신 미리보기는 `game/asset/character/player/icon/preview/guardian-center-handle.gif`다. 16장 공격 1초와 16장 Idle 1초를 이어서 반복한다. GIF는 60·60·60·70ms를 반복해 전체 2초를 맞췄으며 실제 게임은 62.5ms 간격이다.
 
 ## 코드와 검증
 

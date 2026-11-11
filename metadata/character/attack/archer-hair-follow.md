@@ -11,9 +11,9 @@
 
 ## 파일
 
-- 실제 게임: `game/asset/character/main/2-archer/<front|back|side>/attack-sheet.png`
-- 머리 보완 그림·마스크: `game/asset/character/icon/layers/archer/<방향>/attack/hair/`
-- 입력·편집 아틀라스: `game/asset/character/icon/layers/archer/attack/hair/source/`
+- 실제 게임: `game/asset/character/player/main/2-archer/<front|back|side>/attack-sheet.png`
+- 머리 보완 그림·마스크: `game/asset/character/player/icon/layers/archer/<방향>/attack/hair/`
+- 입력·편집 아틀라스: `game/asset/character/player/icon/layers/archer/attack/hair/source/`
 - [전체 프롬프트·생성 모드·원본](archer-hair-sources.json)
 - [그림 경로·등록 값·보호 영역·반응 설정](archer-hair-motion.json)
 - 제작기: `tools/prepare_archer_attack_hair.mjs`, `tools/archer-attack-v2-renderer.js`, `tools/build_archer_attack_v2.mjs`
@@ -35,7 +35,7 @@ python tools/export_attack_sheets.py archer
 
 수정 전 리소스·제작기·설정과 검증 결과는 저장소 옆 `.git-pull-backups/archer-hair-follow-20261107/`에 보관한다.
 
-- [수정 전후](../../../game/asset/character/icon/preview/archer-hair-follow-before-after.gif)
-- [앞·뒤·옆](../../../game/asset/character/icon/preview/archer-attack-hair-follow.gif)
-- [세 방향 확대 비교](../../../game/asset/character/icon/preview/archer-hair-follow-all-views-compare.gif)
+- [수정 전후](../../../game/asset/character/player/icon/preview/archer-hair-follow-before-after.gif)
+- [앞·뒤·옆](../../../game/asset/character/player/icon/preview/archer-attack-hair-follow.gif)
+- [세 방향 확대 비교](../../../game/asset/character/player/icon/preview/archer-hair-follow-all-views-compare.gif)
 - ZIP: `.build/deliverables/archer-attack-16frames-hair-follow.zip`

@@ -68,9 +68,9 @@
     },
     "metadata": "metadata/character/attack/swordsman-swing-effect.json",
     "sheets": {
-      "front": "asset/character/icon/layers/swordsman/front/attack/effect/slash-sheet.png",
-      "back": "asset/character/icon/layers/swordsman/back/attack/effect/slash-sheet.png",
-      "right": "asset/character/icon/layers/swordsman/side/attack/effect/slash-sheet.png"
+      "front": "asset/character/player/icon/layers/swordsman/front/attack/effect/slash-sheet.png",
+      "back": "asset/character/player/icon/layers/swordsman/back/attack/effect/slash-sheet.png",
+      "right": "asset/character/player/icon/layers/swordsman/side/attack/effect/slash-sheet.png"
     },
     "afterimages": [
       {
@@ -89,7 +89,7 @@
   },
   "animations": {
     "front": {
-      "file": "asset/character/main/0-swordsman/front/attack-sheet.png",
+      "file": "asset/character/player/main/0-swordsman/front/attack-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -358,7 +358,7 @@
       ]
     },
     "back": {
-      "file": "asset/character/main/0-swordsman/back/attack-sheet.png",
+      "file": "asset/character/player/main/0-swordsman/back/attack-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -627,7 +627,7 @@
       ]
     },
     "right": {
-      "file": "asset/character/main/0-swordsman/side/attack-sheet.png",
+      "file": "asset/character/player/main/0-swordsman/side/attack-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,

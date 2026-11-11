@@ -3,8 +3,8 @@
   "direction": "back",
   "mode": "native layer reflection and clothing occlusion",
   "request": "손잡이 위쪽과 아래쪽 활의 실제 길이를 같게 맞추고, 아래쪽 활은 옷 뒤에 가려 옷자락 밑으로 보이지 않게 한다.",
-  "source_sheet": "asset/character/icon/layers/archer/back/attack/user-sheet/source.png",
-  "folder": "asset/character/icon/layers/archer/back/attack/bow-proportions",
+  "source_sheet": "asset/character/player/icon/layers/archer/back/attack/user-sheet/source.png",
+  "folder": "asset/character/player/icon/layers/archer/back/attack/bow-proportions",
   "method": "Reflect each original upper bow limb about a line through its grip. The reflection preserves every distance and uses unit scale. Hide the lower limb behind actual clothing after its first fully occluded cross-section.",
   "frames": {
     "13": {
@@ -95,7 +95,7 @@
         26,
         17
       ],
-      "layer": "asset/character/icon/layers/archer/back/attack/bow-proportions/lower-visible-13.png"
+      "layer": "asset/character/player/icon/layers/archer/back/attack/bow-proportions/lower-visible-13.png"
     },
     "14": {
       "grip": [
@@ -185,7 +185,7 @@
         27,
         19
       ],
-      "layer": "asset/character/icon/layers/archer/back/attack/bow-proportions/lower-visible-14.png"
+      "layer": "asset/character/player/icon/layers/archer/back/attack/bow-proportions/lower-visible-14.png"
     }
   },
   "fps": 16,

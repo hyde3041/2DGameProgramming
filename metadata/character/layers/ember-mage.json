@@ -61,19 +61,19 @@
         "hair-tail"
       ],
       "layer_files": {
-        "legs": "asset/character/icon/layers/ember-mage/front/legs.png",
-        "cloth-hem": "asset/character/icon/layers/ember-mage/front/cloth-hem.png",
-        "body": "asset/character/icon/layers/ember-mage/front/body.png",
-        "arm-left": "asset/character/icon/layers/ember-mage/front/arm-left.png",
-        "arm-right": "asset/character/icon/layers/ember-mage/front/arm-right.png",
-        "gauntlet-left": "asset/character/icon/layers/ember-mage/front/gauntlet-left.png",
-        "gauntlet-right": "asset/character/icon/layers/ember-mage/front/gauntlet-right.png",
-        "mantle": "asset/character/icon/layers/ember-mage/front/mantle.png",
-        "head": "asset/character/icon/layers/ember-mage/front/head.png",
-        "hair-tail": "asset/character/icon/layers/ember-mage/front/hair-tail.png"
+        "legs": "asset/character/player/icon/layers/ember-mage/front/legs.png",
+        "cloth-hem": "asset/character/player/icon/layers/ember-mage/front/cloth-hem.png",
+        "body": "asset/character/player/icon/layers/ember-mage/front/body.png",
+        "arm-left": "asset/character/player/icon/layers/ember-mage/front/arm-left.png",
+        "arm-right": "asset/character/player/icon/layers/ember-mage/front/arm-right.png",
+        "gauntlet-left": "asset/character/player/icon/layers/ember-mage/front/gauntlet-left.png",
+        "gauntlet-right": "asset/character/player/icon/layers/ember-mage/front/gauntlet-right.png",
+        "mantle": "asset/character/player/icon/layers/ember-mage/front/mantle.png",
+        "head": "asset/character/player/icon/layers/ember-mage/front/head.png",
+        "hair-tail": "asset/character/player/icon/layers/ember-mage/front/hair-tail.png"
       },
-      "neutral": "asset/character/icon/layers/ember-mage/front/neutral.png",
-      "casting_underpaint": "asset/character/icon/layers/ember-mage/front/attack/casting-underpaint.png",
+      "neutral": "asset/character/player/icon/layers/ember-mage/front/neutral.png",
+      "casting_underpaint": "asset/character/player/icon/layers/ember-mage/front/attack/casting-underpaint.png",
       "casting_arm": {
         "root": [
           137,
@@ -191,17 +191,17 @@
         "hair-tail"
       ],
       "layer_files": {
-        "legs": "asset/character/icon/layers/ember-mage/side/legs.png",
-        "cloth-hem": "asset/character/icon/layers/ember-mage/side/cloth-hem.png",
-        "body": "asset/character/icon/layers/ember-mage/side/body.png",
-        "arm-right": "asset/character/icon/layers/ember-mage/side/arm-right.png",
-        "gauntlet-right": "asset/character/icon/layers/ember-mage/side/gauntlet-right.png",
-        "mantle": "asset/character/icon/layers/ember-mage/side/mantle.png",
-        "head": "asset/character/icon/layers/ember-mage/side/head.png",
-        "hair-tail": "asset/character/icon/layers/ember-mage/side/hair-tail.png"
+        "legs": "asset/character/player/icon/layers/ember-mage/side/legs.png",
+        "cloth-hem": "asset/character/player/icon/layers/ember-mage/side/cloth-hem.png",
+        "body": "asset/character/player/icon/layers/ember-mage/side/body.png",
+        "arm-right": "asset/character/player/icon/layers/ember-mage/side/arm-right.png",
+        "gauntlet-right": "asset/character/player/icon/layers/ember-mage/side/gauntlet-right.png",
+        "mantle": "asset/character/player/icon/layers/ember-mage/side/mantle.png",
+        "head": "asset/character/player/icon/layers/ember-mage/side/head.png",
+        "hair-tail": "asset/character/player/icon/layers/ember-mage/side/hair-tail.png"
       },
-      "neutral": "asset/character/icon/layers/ember-mage/side/neutral.png",
-      "casting_underpaint": "asset/character/icon/layers/ember-mage/side/attack/casting-underpaint.png",
+      "neutral": "asset/character/player/icon/layers/ember-mage/side/neutral.png",
+      "casting_underpaint": "asset/character/player/icon/layers/ember-mage/side/attack/casting-underpaint.png",
       "casting_arm": {
         "root": [
           153,
@@ -327,19 +327,19 @@
         "hair-tail"
       ],
       "layer_files": {
-        "legs": "asset/character/icon/layers/ember-mage/back/legs.png",
-        "cloth-hem": "asset/character/icon/layers/ember-mage/back/cloth-hem.png",
-        "body": "asset/character/icon/layers/ember-mage/back/body.png",
-        "arm-left": "asset/character/icon/layers/ember-mage/back/arm-left.png",
-        "arm-right": "asset/character/icon/layers/ember-mage/back/arm-right.png",
-        "gauntlet-left": "asset/character/icon/layers/ember-mage/back/gauntlet-left.png",
-        "gauntlet-right": "asset/character/icon/layers/ember-mage/back/gauntlet-right.png",
-        "mantle": "asset/character/icon/layers/ember-mage/back/mantle.png",
-        "head": "asset/character/icon/layers/ember-mage/back/head.png",
-        "hair-tail": "asset/character/icon/layers/ember-mage/back/hair-tail.png"
+        "legs": "asset/character/player/icon/layers/ember-mage/back/legs.png",
+        "cloth-hem": "asset/character/player/icon/layers/ember-mage/back/cloth-hem.png",
+        "body": "asset/character/player/icon/layers/ember-mage/back/body.png",
+        "arm-left": "asset/character/player/icon/layers/ember-mage/back/arm-left.png",
+        "arm-right": "asset/character/player/icon/layers/ember-mage/back/arm-right.png",
+        "gauntlet-left": "asset/character/player/icon/layers/ember-mage/back/gauntlet-left.png",
+        "gauntlet-right": "asset/character/player/icon/layers/ember-mage/back/gauntlet-right.png",
+        "mantle": "asset/character/player/icon/layers/ember-mage/back/mantle.png",
+        "head": "asset/character/player/icon/layers/ember-mage/back/head.png",
+        "hair-tail": "asset/character/player/icon/layers/ember-mage/back/hair-tail.png"
       },
-      "neutral": "asset/character/icon/layers/ember-mage/back/neutral.png",
-      "casting_underpaint": "asset/character/icon/layers/ember-mage/back/attack/casting-underpaint.png",
+      "neutral": "asset/character/player/icon/layers/ember-mage/back/neutral.png",
+      "casting_underpaint": "asset/character/player/icon/layers/ember-mage/back/attack/casting-underpaint.png",
       "casting_arm": {
         "root": [
           187,
@@ -423,8 +423,8 @@
     }
   },
   "cast_parts": {
-    "gauntlet": "asset/character/icon/layers/ember-mage/attack/casting-gauntlet.png",
-    "charge": "asset/character/icon/layers/ember-mage/attack/charge-orb.png",
-    "blast": "asset/character/icon/layers/ember-mage/attack/fire-blast.png"
+    "gauntlet": "asset/character/player/icon/layers/ember-mage/attack/casting-gauntlet.png",
+    "charge": "asset/character/player/icon/layers/ember-mage/attack/charge-orb.png",
+    "blast": "asset/character/player/icon/layers/ember-mage/attack/fire-blast.png"
   }
 }

@@ -2,7 +2,7 @@
   "id": "guardian",
   "name": "수호기사",
   "action_label": "철퇴 공격",
-  "file": "asset/character/icon/source/guardian/sprite-sheet.png",
+  "file": "asset/character/player/icon/source/guardian/sprite-sheet.png",
   "width": 1280,
   "height": 960,
   "cell_size": [
@@ -74,7 +74,7 @@
       "id": "front_idle",
       "direction": "front",
       "phase": "idle",
-      "file": "asset/character/icon/source/guardian/front/idle.png",
+      "file": "asset/character/player/icon/source/guardian/front/idle.png",
       "row": 0,
       "column": 0,
       "rect": [
@@ -99,7 +99,7 @@
       "id": "front_attack_01",
       "direction": "front",
       "phase": "attack_01",
-      "file": "asset/character/icon/source/guardian/front/attack_01.png",
+      "file": "asset/character/player/icon/source/guardian/front/attack_01.png",
       "row": 0,
       "column": 1,
       "rect": [
@@ -124,7 +124,7 @@
       "id": "front_attack_02",
       "direction": "front",
       "phase": "attack_02",
-      "file": "asset/character/icon/source/guardian/front/attack_02.png",
+      "file": "asset/character/player/icon/source/guardian/front/attack_02.png",
       "row": 0,
       "column": 2,
       "rect": [
@@ -149,7 +149,7 @@
       "id": "front_attack_03",
       "direction": "front",
       "phase": "attack_03",
-      "file": "asset/character/icon/source/guardian/front/attack_03.png",
+      "file": "asset/character/player/icon/source/guardian/front/attack_03.png",
       "row": 0,
       "column": 3,
       "rect": [
@@ -174,7 +174,7 @@
       "id": "back_idle",
       "direction": "back",
       "phase": "idle",
-      "file": "asset/character/icon/source/guardian/back/idle.png",
+      "file": "asset/character/player/icon/source/guardian/back/idle.png",
       "row": 1,
       "column": 0,
       "rect": [
@@ -200,7 +200,7 @@
       "id": "back_attack_01",
       "direction": "back",
       "phase": "attack_01",
-      "file": "asset/character/icon/source/guardian/back/attack_01.png",
+      "file": "asset/character/player/icon/source/guardian/back/attack_01.png",
       "row": 1,
       "column": 1,
       "rect": [
@@ -226,7 +226,7 @@
       "id": "back_attack_02",
       "direction": "back",
       "phase": "attack_02",
-      "file": "asset/character/icon/source/guardian/back/attack_02.png",
+      "file": "asset/character/player/icon/source/guardian/back/attack_02.png",
       "row": 1,
       "column": 2,
       "rect": [
@@ -252,7 +252,7 @@
       "id": "back_attack_03",
       "direction": "back",
       "phase": "attack_03",
-      "file": "asset/character/icon/source/guardian/back/attack_03.png",
+      "file": "asset/character/player/icon/source/guardian/back/attack_03.png",
       "row": 1,
       "column": 3,
       "rect": [
@@ -278,7 +278,7 @@
       "id": "right_idle",
       "direction": "right",
       "phase": "idle",
-      "file": "asset/character/icon/source/guardian/side/idle.png",
+      "file": "asset/character/player/icon/source/guardian/side/idle.png",
       "row": 2,
       "column": 0,
       "rect": [
@@ -303,7 +303,7 @@
       "id": "right_attack_01",
       "direction": "right",
       "phase": "attack_01",
-      "file": "asset/character/icon/source/guardian/side/attack_01.png",
+      "file": "asset/character/player/icon/source/guardian/side/attack_01.png",
       "row": 2,
       "column": 1,
       "rect": [
@@ -328,7 +328,7 @@
       "id": "right_attack_02",
       "direction": "right",
       "phase": "attack_02",
-      "file": "asset/character/icon/source/guardian/side/attack_02.png",
+      "file": "asset/character/player/icon/source/guardian/side/attack_02.png",
       "row": 2,
       "column": 2,
       "rect": [
@@ -353,7 +353,7 @@
       "id": "right_attack_03",
       "direction": "right",
       "phase": "attack_03",
-      "file": "asset/character/icon/source/guardian/side/attack_03.png",
+      "file": "asset/character/player/icon/source/guardian/side/attack_03.png",
       "row": 2,
       "column": 3,
       "rect": [
@@ -379,7 +379,7 @@
   "revision": 2,
   "directional_attack_sheets": {
     "front": {
-      "file": "asset/character/main/1-guardian/front/attack-sheet.png",
+      "file": "asset/character/player/main/1-guardian/front/attack-sheet.png",
       "sheet_size": [
         1280,
         1280
@@ -631,7 +631,7 @@
       ]
     },
     "back": {
-      "file": "asset/character/main/1-guardian/back/attack-sheet.png",
+      "file": "asset/character/player/main/1-guardian/back/attack-sheet.png",
       "sheet_size": [
         1280,
         1280
@@ -883,7 +883,7 @@
       ]
     },
     "right": {
-      "file": "asset/character/main/1-guardian/side/attack-sheet.png",
+      "file": "asset/character/player/main/1-guardian/side/attack-sheet.png",
       "sheet_size": [
         1280,
         1280

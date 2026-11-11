@@ -18,7 +18,7 @@ function cleanFeet(data){const seen=new Uint8Array(102400),keep=new Uint8Array(1
 }
 const bounds={front:[106,121,218,205],back:[99,122,217,202],side:[96,123,216,207]},result={version:1,workflow:'original-pixel hair recovery and stable foot layers; no generated head or glove',views:{}};
 for(const v of idle.views){
- const folder=`asset/character/icon/layers/guardian/${v.view}/attack/push`,head=await raw(v.parts.head),original=await raw(`asset/character/icon/layers/guardian/${v.view}/aligned/neutral.png`);
+ const folder=`asset/character/player/icon/layers/guardian/${v.view}/attack/push`,head=await raw(v.parts.head),original=await raw(`asset/character/player/icon/layers/guardian/${v.view}/aligned/neutral.png`);
  const recovered=Buffer.alloc(head.length),removed=Buffer.alloc(head.length),base=Buffer.from(head),[l,t,r,b]=bounds[v.view];let recoveredCount=0,removedCount=0;
  for(let y=t;y<b;y++)for(let x=l;x<r;x++){
   const p=(y*320+x)*4;if(head[p+3]||original[p+3]<24)continue;

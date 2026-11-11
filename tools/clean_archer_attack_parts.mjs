@@ -12,7 +12,7 @@ for(const[view,key,source,name,rect]of[
  ['side','gear','aligned/visible/gear.png','gear.png',[188,178,27,40]],
  ['back','pose-4','attack/source-v2/upper-body-04.png','upper-body-04.png',[0,0,315,20]]
 ]){
- const input=`asset/character/icon/layers/archer/${view}/${source}`,output=`asset/character/icon/layers/archer/${view}/attack/cleanup/${name}`;
+ const input=`asset/character/player/icon/layers/archer/${view}/${source}`,output=`asset/character/player/icon/layers/archer/${view}/attack/cleanup/${name}`;
  const {data,info}=await sharp(path.join(game,input)).ensureAlpha().raw().toBuffer({resolveWithObject:true});let removed=0;
  for(let y=rect[1];y<rect[1]+rect[3];y++)for(let x=rect[0];x<rect[0]+rect[2];x++){const p=(y*info.width+x)*4;if(data[p+3])removed++;data.fill(0,p,p+4);}
  await fs.mkdir(path.dirname(path.join(game,output)),{recursive:true});await sharp(data,{raw:info}).png().toFile(path.join(game,output));manifest.overrides[view][key]=output;manifest.repairs.push({view,key,input,output,removed_pixels:removed,cleared_source_rect:rect});

@@ -58,7 +58,7 @@ if(apply){
  for(const view of views){
   const file=path.join(output,`${view}-attack-sheet.png`);
   await fs.copyFile(file,path.join(game,configuration.views[view].file));
-  await fs.copyFile(file,path.join(game,`asset/character/main/2-archer/${view}/attack-sheet.png`));
+  await fs.copyFile(file,path.join(game,`asset/character/player/main/2-archer/${view}/attack-sheet.png`));
  }
  const runtimeFile=path.join(root,'metadata/character/attack/archer.json');
  const runtime=JSON.parse(await fs.readFile(runtimeFile,'utf8'));
@@ -67,7 +67,7 @@ if(apply){
  runtime.direction_overrides=overrides;
  await fs.writeFile(runtimeFile,JSON.stringify(runtime,null,2)+'\n');
  await fs.writeFile(path.join(root,'metadata/character/attack/archer-rig.json'),JSON.stringify({id:'archer',version:7,frames:16,fps:16,cell_size:[320,320],pivot:[160,288],renderer:'whole_sheet',direction_overrides:overrides,views:configuration.views},null,2)+'\n');
- await fs.copyFile(path.join(output,'preview.gif'),path.join(game,'asset/character/icon/preview/archer-user-three-directions.gif'));
+ await fs.copyFile(path.join(output,'preview.gif'),path.join(game,'asset/character/player/icon/preview/archer-user-three-directions.gif'));
 }
 await fs.writeFile(path.join(output,'qa.json'),JSON.stringify({applied:apply,views:qa},null,2)+'\n');
 console.log(JSON.stringify({applied:apply,views:qa,output}));

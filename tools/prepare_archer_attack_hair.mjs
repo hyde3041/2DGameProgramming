@@ -2,7 +2,7 @@
 import fs from 'node:fs/promises';import path from 'node:path';import{fileURLToPath}from'node:url';import{createRequire}from'node:module';
 const require=createRequire(import.meta.url),sharp=require('sharp'),root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),game=path.join(root,'game');
 const alignment=JSON.parse(await fs.readFile(path.join(root,'metadata/character/layers/archer.json'),'utf8'));
-const atlasFile='asset/character/icon/layers/archer/attack/hair/source/edited-atlas.png';
+const atlasFile='asset/character/player/icon/layers/archer/attack/hair/source/edited-atlas.png';
 const atlas=await sharp(path.join(game,atlasFile)).resize(1536,1024).ensureAlpha().raw().toBuffer();
 const rects={front:[126,129],back:[106,128],side:[126,130]};
 const protectedBoxes={front:[[136,135,30,39],[152,186,19,18],[177,187,20,18],[164,202,25,17]],back:[[156,131,23,30]],side:[[134,135,32,39],[173,184,27,21],[171,202,30,18]]};
@@ -26,7 +26,7 @@ for(const [col,view]of['front','back','side'].entries()){
  // Repaint that small hair-edge footprint too, without touching the face.
  const edgeCleanupRegions=view==='front'?[[203,200,10,12]]:[];
  for(const[bx,by,w,h]of edgeCleanupRegions)for(let y=by;y<by+h;y++)for(let x=bx;x<bx+w;x++){const n=y*320+x,k=n*4;if(warm[n]||inProtected(x,y))continue;weights[n]=255;mask.fill(255,k,k+4);}
- const folder=`asset/character/icon/layers/archer/${view}/attack/hair`;await fs.mkdir(path.join(game,folder),{recursive:true});await sharp(mask,{raw:{width:320,height:320,channels:4}}).png().toFile(path.join(game,folder,'edit-mask.png'));
+ const folder=`asset/character/player/icon/layers/archer/${view}/attack/hair`;await fs.mkdir(path.join(game,folder),{recursive:true});await sharp(mask,{raw:{width:320,height:320,channels:4}}).png().toFile(path.join(game,folder,'edit-mask.png'));
  const poses=[];
  for(let row=0;row<2;row++){
   const at=(x,y,dx,dy)=>sample(col*512+56+(x-rx+.5-dx)*4-.5,row*512+36+(y-ry+.5-dy)*4-.5);let best={dx:0,dy:0,score:Infinity};

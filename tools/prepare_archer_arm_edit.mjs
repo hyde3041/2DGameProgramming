@@ -28,7 +28,7 @@ for(const[view,vr]of Object.entries(sources.views)){
    if(!output.subarray(p,p+4).equals(original.subarray(p,p+4)))changed++;
   }
   for(let p=0;p<output.length;p+=4)if(!mask[p+3]&&!original.subarray(p,p+4).equals(output.subarray(p,p+4)))throw Error('Pixels changed outside arm mask');
-  const folder=`asset/character/icon/layers/archer/${view}/attack/arm-edit`,file=`${folder}/upper-body-${String(f.index).padStart(2,'0')}.png`,maskFile=`${folder}/mask-${String(f.index).padStart(2,'0')}.png`;
+  const folder=`asset/character/player/icon/layers/archer/${view}/attack/arm-edit`,file=`${folder}/upper-body-${String(f.index).padStart(2,'0')}.png`,maskFile=`${folder}/mask-${String(f.index).padStart(2,'0')}.png`;
   await sharp(output,{raw:info}).png().toFile(path.join(game,file));await sharp(mask,{raw:info}).png().toFile(path.join(game,maskFile));metadata.overrides[view]['pose-'+f.index]=file;metadata.views[view].push({frame:f.index,input,file,mask:maskFile,source_cell:pose.source_cell,arms:f.arms,source_sha256:crypto.createHash('sha256').update(original).digest('hex'),changed_pixels:changed,outside_arm_mask_identical:true});
  }
 }

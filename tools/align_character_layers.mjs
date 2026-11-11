@@ -49,9 +49,9 @@ for(const c of manifest.characters){
  if(process.argv[3]&&c.id!==process.argv[3])continue;
  const previous=JSON.parse(await fs.readFile(root+'/'+c.metadata,'utf8')),views=[];
  for(const direction of ['front','back','side']){
-  const ref=refs.characters[c.id][direction],base=`asset/character/icon/layers/${c.id}/${direction}`,dest=base+'/aligned';
+  const ref=refs.characters[c.id][direction],base=`asset/character/player/icon/layers/${c.id}/${direction}`,dest=base+'/aligned';
   await fs.mkdir(root+'/'+dest+'/render',{recursive:true});await fs.mkdir(root+'/'+dest+'/visible',{recursive:true});await fs.mkdir(root+'/'+dest+'/hidden',{recursive:true});
-  const originalPath=`asset/character/icon/source/${c.id}/${direction}/idle.png`,original=await raw(originalPath),old={};
+  const originalPath=`asset/character/player/icon/source/${c.id}/${direction}/idle.png`,original=await raw(originalPath),old={};
   for(const n of [...coreNames,'hair-front'])old[n]=await raw(base+'/anatomy/'+n+'.png');
   const visible=Object.fromEntries(roles.map(n=>[n,empty()]));
   for(const n of ['legs','body','cloth-hem','arm-left','arm-right','hair-tail'])visible[n]=old[n];

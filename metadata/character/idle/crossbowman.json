@@ -14,7 +14,7 @@
   "frames_per_direction": 16,
   "animations": {
     "front": {
-      "file": "asset/character/main/3-crossbowman/front/idle-sheet.png",
+      "file": "asset/character/player/main/3-crossbowman/front/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -265,8 +265,8 @@
       ],
       "motion": {
         "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-        "source": "asset/character/icon/layers/crossbowman/front/aligned/neutral.png",
-        "original_reference": "asset/character/icon/source/crossbowman/front/idle.png",
+        "source": "asset/character/player/icon/layers/crossbowman/front/aligned/neutral.png",
+        "original_reference": "asset/character/player/icon/source/crossbowman/front/idle.png",
         "layer_rig": "metadata/character/idle/crossbowman-layers.json",
         "anatomy_metadata": "metadata/character/layers/crossbowman.json",
         "body_rise_px": 1.6,
@@ -293,7 +293,7 @@
       }
     },
     "back": {
-      "file": "asset/character/main/3-crossbowman/back/idle-sheet.png",
+      "file": "asset/character/player/main/3-crossbowman/back/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -544,8 +544,8 @@
       ],
       "motion": {
         "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-        "source": "asset/character/icon/layers/crossbowman/back/aligned/neutral.png",
-        "original_reference": "asset/character/icon/source/crossbowman/back/idle.png",
+        "source": "asset/character/player/icon/layers/crossbowman/back/aligned/neutral.png",
+        "original_reference": "asset/character/player/icon/source/crossbowman/back/idle.png",
         "layer_rig": "metadata/character/idle/crossbowman-layers.json",
         "anatomy_metadata": "metadata/character/layers/crossbowman.json",
         "body_rise_px": 1.6,
@@ -572,7 +572,7 @@
       }
     },
     "right": {
-      "file": "asset/character/main/3-crossbowman/side/idle-sheet.png",
+      "file": "asset/character/player/main/3-crossbowman/side/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -823,8 +823,8 @@
       ],
       "motion": {
         "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-        "source": "asset/character/icon/layers/crossbowman/side/aligned/neutral.png",
-        "original_reference": "asset/character/icon/source/crossbowman/side/idle.png",
+        "source": "asset/character/player/icon/layers/crossbowman/side/aligned/neutral.png",
+        "original_reference": "asset/character/player/icon/source/crossbowman/side/idle.png",
         "layer_rig": "metadata/character/idle/crossbowman-layers.json",
         "anatomy_metadata": "metadata/character/layers/crossbowman.json",
         "body_rise_px": 1.6,

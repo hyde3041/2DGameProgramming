@@ -2,11 +2,11 @@
 // mask and old shirt-collar fragments from the head. Original Idle files stay intact.
 import fs from'node:fs/promises';import path from'node:path';import{fileURLToPath}from'node:url';import{createRequire}from'node:module';
 const require=createRequire(import.meta.url),sharp=require('sharp'),root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-const destination=path.join(root,'game/asset/character/icon/layers/crossbowman/attack');await fs.mkdir(destination,{recursive:true});
+const destination=path.join(root,'game/asset/character/player/icon/layers/crossbowman/attack');await fs.mkdir(destination,{recursive:true});
 function feet(data,w,h){let bottom=0;for(let y=0;y<h;y++)for(let x=0;x<w;x++)if(data[(y*w+x)*4+3]>64)bottom=y;const sums=[[0,0],[0,0]];for(let y=bottom-3;y<=bottom;y++)for(let x=0;x<w;x++){const alpha=data[(y*w+x)*4+3];if(alpha>64){const s=sums[x<w/2?0:1];s[0]+=x*alpha;s[1]+=alpha;}}return{bottom,x:sums.map(s=>s[0]/s[1])};}
 const report=[];
 for(const view of['front','back','side']){
- const base=path.join(root,`game/asset/character/icon/layers/crossbowman/${view}`),original=await sharp(base+'/aligned/visible/legs.png').ensureAlpha().raw().toBuffer(),sourcePath=base+'/redrawn/source/legs.png';
+ const base=path.join(root,`game/asset/character/player/icon/layers/crossbowman/${view}`),original=await sharp(base+'/aligned/visible/legs.png').ensureAlpha().raw().toBuffer(),sourcePath=base+'/redrawn/source/legs.png';
  const{data,info}=await sharp(sourcePath).ensureAlpha().raw().toBuffer({resolveWithObject:true}),from=feet(data,info.width,info.height),to=feet(original,320,320);
  let sourceTop=info.height;for(let y=0;y<info.height;y++)for(let x=0;x<info.width;x++)if(data[(y*info.width+x)*4+3]>64)sourceTop=Math.min(sourceTop,y);
  const waist={front:[163,241],back:[163,243],side:[170,241]}[view],fits=[];

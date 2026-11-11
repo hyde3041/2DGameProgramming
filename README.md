@@ -43,18 +43,18 @@ python game/code/main.py
 
 ## 제작한 이미지
 
-![캐릭터 디자인 시안](game/asset/character/character-overview.png)
+![캐릭터 디자인 시안](game/asset/character/player/character-overview.png)
 
 ![던전 배경 시안](game/asset/map/stage/main/cave/cave-0.png)
 
 - [캐릭터 8명](metadata/README.md#캐릭터): 방향별 대기 시트 24개와 공격 시트 24개
-- 원본 통합 시트 8개와 개별 프레임 96장은 `asset/character/icon/source/`에 보관
+- 원본 통합 시트 8개와 개별 프레임 96장은 `asset/character/player/icon/source/`에 보관
 - 8명 모두 앞·뒤·옆 대기를 방향별 16프레임·16FPS·1초 반복으로 통일. 4열×4행의 1280×1280 시트, 프레임 320×320
-- 궁수 앞·뒤·옆 공격은 사용자가 제공한 3개 시트를 적용하며 각 16프레임·16FPS·1초로 재생합니다. 1254×1254 원본을 전체 동일 배율로 1280×1280에 맞추고 검은 배경을 투명하게 처리했습니다. 왼쪽은 옆면 반전을 사용합니다. [현재 시트 미리보기](game/asset/character/icon/preview/archer-user-three-directions.gif), [현재 입력과 변환 설정](metadata/character/attack/archer-import.json)
-- 석궁병 앞·뒤·옆 공격은 몸통·양팔·석궁이 연결된 기존 원본 자세로 비율을 유지하도록 수정, 각 16프레임·16FPS·1초. 작은 반동과 발사 후 복귀. [실제 시트 미리보기](game/asset/character/icon/preview/crossbowman-attack-no-projectile.mp4), [원본과 검증 기록](metadata/character/attack/crossbowman-connected.md)
-- 검사 앞·뒤·옆 공격: 기존 분리 스프라이트를 다시 자르지 않고 사용하는 각 16개 자세·16FPS·1초. 어깨축을 위로 맞추고, 온전한 팔·손·원본 검을 함께 회전하며 어깨 연결부·검날 윤곽·망토를 보완. 손목은 고정하며 이펙트 없이 들어 올린 뒤 타격할 때만 검기·잔상을 표시. 뒤쪽은 선택한 동작과 어깨 보완을 유지하고 머리와 겹친 검만 뒤로 가림. 정면·옆면 시트는 보존. [3방향 재생](game/asset/character/icon/preview/swordsman-attack-depth-fixed.mp4), [뒷방향 GIF](game/asset/character/icon/preview/swordsman-attack-depth-fixed-back.gif), [어깨 위치](game/asset/character/icon/preview/swordsman-shoulder-pivots.png), [기존 레이어·검증 기록](metadata/character/attack/swordsman-motion.md)
+- 궁수 앞·뒤·옆 공격은 사용자가 제공한 3개 시트를 적용하며 각 16프레임·16FPS·1초로 재생합니다. 1254×1254 원본을 전체 동일 배율로 1280×1280에 맞추고 검은 배경을 투명하게 처리했습니다. 왼쪽은 옆면 반전을 사용합니다. [현재 시트 미리보기](game/asset/character/player/icon/preview/archer-user-three-directions.gif), [현재 입력과 변환 설정](metadata/character/attack/archer-import.json)
+- 석궁병 앞·뒤·옆 공격은 몸통·양팔·석궁이 연결된 기존 원본 자세로 비율을 유지하도록 수정, 각 16프레임·16FPS·1초. 작은 반동과 발사 후 복귀. [실제 시트 미리보기](game/asset/character/player/icon/preview/crossbowman-attack-no-projectile.mp4), [원본과 검증 기록](metadata/character/attack/crossbowman-connected.md)
+- 검사 앞·뒤·옆 공격: 기존 분리 스프라이트를 다시 자르지 않고 사용하는 각 16개 자세·16FPS·1초. 어깨축을 위로 맞추고, 온전한 팔·손·원본 검을 함께 회전하며 어깨 연결부·검날 윤곽·망토를 보완. 손목은 고정하며 이펙트 없이 들어 올린 뒤 타격할 때만 검기·잔상을 표시. 뒤쪽은 선택한 동작과 어깨 보완을 유지하고 머리와 겹친 검만 뒤로 가림. 정면·옆면 시트는 보존. [3방향 재생](game/asset/character/player/icon/preview/swordsman-attack-depth-fixed.mp4), [뒷방향 GIF](game/asset/character/player/icon/preview/swordsman-attack-depth-fixed-back.gif), [어깨 위치](game/asset/character/player/icon/preview/swordsman-shoulder-pivots.png), [기존 레이어·검증 기록](metadata/character/attack/swordsman-motion.md)
 - `python tools/export_attack_sheets.py archer`, `crossbowman` 또는 `swordsman`으로 방향별 시트 3개를 `.build/deliverables/`의 ZIP으로 묶음. 원본 PNG를 확대·축소하지 않고 그대로 보관
-- 8명 모두 원본의 신체 비율과 위치로 복원. 보이는 원본과 가려진 연결부의 보완 그림은 `asset/character/icon/layers/<캐릭터>/<방향>/aligned/`에 보관
+- 8명 모두 원본의 신체 비율과 위치로 복원. 보이는 원본과 가려진 연결부의 보완 그림은 `asset/character/player/icon/layers/<캐릭터>/<방향>/aligned/`에 보관
 - 8명 모두 몸통·팔·머리·머리카락·옷자락의 움직임에 시차를 적용. 팔은 어깨에 붙어 움직이고, 무기는 손을 따라가며 발은 고정. 재생 중 늘이기 없이 이동·회전만 사용
 - 배치 프로필 카드 8종, 스킬 프로필 카드 8종과 스킬 아이콘 16종, 상하좌우 배치 방향 선택 UI
 - [유물 아이콘과 효과 25종](metadata/README.md#아이템): 256×256 투명 PNG, 통합 시트와 [효과표](docs/유물효과.md)
@@ -98,10 +98,10 @@ JSON 파일은 [metadata 폴더](metadata/README.md)에 종류별로 모았습�
 
 공격력, 회복량, 배치 비용, 스킬 재사용 시간과 유물 수치는 전투 구현 후 조정합니다. 6주 개발 계획은 개발 순서를 설명하는 상대 일정이며 실제 수업 일정에 맞춰 조정합니다.
 
-궁수 머리 반동·석궁병 들기 보완: [앞·뒤·옆 재생](game/asset/character/icon/preview/ranged-attacks-motion-fixed.gif), [수정 전후](game/asset/character/icon/preview/ranged-attacks-before-after.gif), [제작·검증 기록](metadata/character/attack/ranged-motion.md).
+궁수 머리 반동·석궁병 들기 보완: [앞·뒤·옆 재생](game/asset/character/player/icon/preview/ranged-attacks-motion-fixed.gif), [수정 전후](game/asset/character/player/icon/preview/ranged-attacks-before-after.gif), [제작·검증 기록](metadata/character/attack/ranged-motion.md).
 
-궁수 머리카락 반응: [수정 전후](game/asset/character/icon/preview/archer-hair-follow-before-after.gif), [앞·뒤·옆](game/asset/character/icon/preview/archer-attack-hair-follow.gif), [편집·검증 기록](metadata/character/attack/archer-hair-follow.md).
+궁수 머리카락 반응: [수정 전후](game/asset/character/player/icon/preview/archer-hair-follow-before-after.gif), [앞·뒤·옆](game/asset/character/player/icon/preview/archer-attack-hair-follow.gif), [편집·검증 기록](metadata/character/attack/archer-hair-follow.md).
 
-현재 궁수·석궁병 공격은 날아가는 화살·볼트를 제외한 [캐릭터 동작만 표시](game/asset/character/icon/preview/ranged-attacks-no-projectiles.gif)합니다.
+현재 궁수·석궁병 공격은 날아가는 화살·볼트를 제외한 [캐릭터 동작만 표시](game/asset/character/player/icon/preview/ranged-attacks-no-projectiles.gif)합니다.
 
-수호기사 방패 밀기: [손끝·중앙 손잡이 연결 수정 재생](game/asset/character/icon/preview/guardian-center-handle.gif), [제작·검증 기록](metadata/character/attack/guardian-motion.md). 원본 크기의 팔을 어깨에 연결하고 방패 중앙 손잡이를 잡도록 맞췄습니다. 팔은 방패 뒤에 둡니다. 수호기사 대기·공격은 같은 부위와 순서로 만들며 각각 16프레임·16FPS·1초입니다. 게임에서 **4 → 스페이스바**로 확인합니다.
+수호기사 방패 밀기: [손끝·중앙 손잡이 연결 수정 재생](game/asset/character/player/icon/preview/guardian-center-handle.gif), [제작·검증 기록](metadata/character/attack/guardian-motion.md). 원본 크기의 팔을 어깨에 연결하고 방패 중앙 손잡이를 잡도록 맞췄습니다. 팔은 방패 뒤에 둡니다. 수호기사 대기·공격은 같은 부위와 순서로 만들며 각각 16프레임·16FPS·1초입니다. 게임에서 **4 → 스페이스바**로 확인합니다.

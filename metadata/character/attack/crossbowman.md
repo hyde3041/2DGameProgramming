@@ -14,11 +14,11 @@
 
 ## 파일
 
-- 게임: `game/asset/character/main/3-crossbowman/<front|back|side>/attack-sheet.png`
-- 분리 부위: `game/asset/character/icon/layers/crossbowman/<방향>/attack/original-rig/`
+- 게임: `game/asset/character/player/main/3-crossbowman/<front|back|side>/attack-sheet.png`
+- 분리 부위: `game/asset/character/player/icon/layers/crossbowman/<방향>/attack/original-rig/`
 - 연결점·원본 경로: [crossbowman-original-rig.json](crossbowman-original-rig.json)
 - 게임 재생: [crossbowman.json](crossbowman.json)
-- 미리보기: `game/asset/character/icon/preview/crossbowman-attack-original.mp4`
+- 미리보기: `game/asset/character/player/icon/preview/crossbowman-attack-original.mp4`
 - ZIP: `.build/deliverables/crossbowman-attack-16frames-original-parts.zip`
 
 분리 파일의 `base`는 정지한 몸과 하체, `head`는 기존 머리 및 옷깃, `moving`은 팔과 석궁, `under`는 가려진 접합면이다. 기존 정렬 원본과 24개 Idle 시트, 승인된 궁수는 수정하지 않는다. 이전 `source-v2/`의 생성 그림은 이력 보존용이며 현행 제작기에서 참조하지 않는다.

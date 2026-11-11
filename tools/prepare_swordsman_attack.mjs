@@ -53,13 +53,13 @@ const metadata = {
   impact_frame: 7, scale: [1,1], views: {},
 };
 for (const view of ['front','back','side']) {
-  const folder = `asset/character/icon/layers/swordsman/${view}/attack/connected`;
+  const folder = `asset/character/player/icon/layers/swordsman/${view}/attack/connected`;
   await fs.mkdir(path.join(game, folder), {recursive: true});
   const poses = {};
   for (const [pose, filename] of Object.entries({idle:'idle-sheet',windup:'attack_01',strike:'attack_02',recover:'attack_03'})) {
     const input = pose === 'idle'
-      ? `asset/character/main/0-swordsman/${view}/idle-sheet.png`
-      : `asset/character/icon/source/swordsman/${view}/${filename}.png`;
+      ? `asset/character/player/main/0-swordsman/${view}/idle-sheet.png`
+      : `asset/character/player/icon/source/swordsman/${view}/${filename}.png`;
     let image = sharp(path.join(game, input));
     if (pose === 'idle') image = image.extract({left:0,top:0,width:320,height:320});
     const original = await image.ensureAlpha().raw().toBuffer();

@@ -7,7 +7,7 @@ import {createRequire} from 'node:module';
 const require=createRequire(import.meta.url),sharp=require('sharp');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),game=path.join(root,'game');
 const idle=JSON.parse(await fs.readFile(path.join(root,'metadata/character/idle/guardian-layers.json'),'utf8'));
-const source='asset/character/icon/layers/guardian/attack/source/joint-edited-atlas.png';
+const source='asset/character/player/icon/layers/guardian/attack/source/joint-edited-atlas.png';
 const atlas=await sharp(path.join(game,source)).resize(1920,640).ensureAlpha().raw().toBuffer();
 const polygons={front:[[141,211],[153,214],[151,236],[133,253],[122,253],[130,233]],
  back:[[179,214],[194,216],[197,231],[191,235],[182,234],[177,229]],
@@ -22,7 +22,7 @@ function clean(data,threshold){const seen=new Uint8Array(102400),keep=new Uint8A
 }
 const result={version:1,source,registration:'entire atlas resized uniformly to 1920x640, then each 640 cell uniformly to 320; no per-part fitting',views:{}};
 for(const [col,v]of idle.views.entries()){
- const folder=`asset/character/icon/layers/guardian/${v.view}/attack/support`;await fs.mkdir(path.join(game,folder),{recursive:true});
+ const folder=`asset/character/player/icon/layers/guardian/${v.view}/attack/support`;await fs.mkdir(path.join(game,folder),{recursive:true});
  const generated=await sharp(atlas,{raw:{width:1920,height:640,channels:4}}).extract({left:col*640,top:0,width:640,height:640}).resize(320,320).raw().toBuffer();
  const restArm=await sharp(path.join(game,v.parts[v.weapon_arm])).ensureAlpha().raw().toBuffer();
  const fill=Buffer.alloc(320*320*4),mask=Buffer.alloc(fill.length);let count=0;

@@ -10,7 +10,7 @@
 
 - 설정: [archer-head-motion.json](archer-head-motion.json)
 - 제작기: `tools/archer-attack-v2-renderer.js`, `tools/build_archer_attack_v2.mjs`
-- 실제 적용: `game/asset/character/main/2-archer/<front|back|side>/attack-sheet.png`
+- 실제 적용: `game/asset/character/player/main/2-archer/<front|back|side>/attack-sheet.png`
 
 ## 석궁병
 
@@ -18,10 +18,10 @@
 
 - 00 Idle → 01 약간 들기 → 02 중간 → 03 조준 직전 → 04~06 Aim → 07~08 Fire → 09~10 Aim → 11~13 중간 자세를 역순으로 내려오기 → 14~15 Idle.
 - 자세 사이를 반투명하게 겹치지 않는다. 중간 그림 9장이 실제로 서로 다른 동작이다.
-- 원본·중간 그림: `game/asset/character/icon/layers/crossbowman/<방향>/attack/lift/`
+- 원본·중간 그림: `game/asset/character/player/icon/layers/crossbowman/<방향>/attack/lift/`
 - [전체 프롬프트와 생성 결과 경로](crossbowman-lift-sources.json), [등록 값·적용 마스크](crossbowman-lift.json)
 - 제작기: `tools/prepare_crossbowman_lift.mjs`, `tools/prepare_crossbowman_connected.mjs`, `tools/build_crossbowman_connected.mjs`
-- 실제 적용: `game/asset/character/main/3-crossbowman/<front|back|side>/attack-sheet.png`
+- 실제 적용: `game/asset/character/player/main/3-crossbowman/<front|back|side>/attack-sheet.png`
 
 ```text
 node tools/build_archer_attack.mjs --apply
@@ -40,13 +40,13 @@ node tools/build_crossbowman_attack.mjs --apply
 
 수정 전 리소스·제작기·설정·검증 결과는 저장소 옆 `.git-pull-backups/ranged-attack-motion-20261106/`에 보관한다.
 
-- [앞·뒤·옆 새 모션](../../../game/asset/character/icon/preview/ranged-attacks-motion-fixed.gif)
-- [수정 전후 비교](../../../game/asset/character/icon/preview/ranged-attacks-before-after.gif)
-- [석궁 들기 단계](../../../game/asset/character/icon/preview/crossbowman-lift-stages.png)
+- [앞·뒤·옆 새 모션](../../../game/asset/character/player/icon/preview/ranged-attacks-motion-fixed.gif)
+- [수정 전후 비교](../../../game/asset/character/player/icon/preview/ranged-attacks-before-after.gif)
+- [석궁 들기 단계](../../../game/asset/character/player/icon/preview/crossbowman-lift-stages.png)
 - ZIP: `.build/deliverables/ranged-attack-motion-fixed.zip`
 
 ## 최신: 날아가는 화살·볼트 제거
 
 사용자 요청에 따라 두 현행 제작기의 별도 발사체 그리기만 제거했다. 원본 발사체 PNG는 보관하며 활·석궁과 발사 반동·머리 움직임은 유지한다. runtime 메타데이터의 `projectile_visual`은 false다. 16프레임·16FPS·1초와 07 발사 동작 시점도 유지한다.
 
-수정 전과 비교해 발사체 영역 밖의 게임 픽셀 변경은 여섯 방향 모두 0이다. 발사체를 제외한 실제 그리기 호출·좌표·행렬도 같다. 기존 파일 1,156개의 SHA-256을 보존했고, 실제 pico2d에서 재생과 Idle 복귀를 확인했다. 수정 전 리소스와 검증은 `.git-pull-backups/ranged-no-projectiles-20261107/`에 있다. [현재 재생](../../../game/asset/character/icon/preview/ranged-attacks-no-projectiles.gif), ZIP은 `.build/deliverables/ranged-attacks-no-projectiles.zip`이다.
+수정 전과 비교해 발사체 영역 밖의 게임 픽셀 변경은 여섯 방향 모두 0이다. 발사체를 제외한 실제 그리기 호출·좌표·행렬도 같다. 기존 파일 1,156개의 SHA-256을 보존했고, 실제 pico2d에서 재생과 Idle 복귀를 확인했다. 수정 전 리소스와 검증은 `.git-pull-backups/ranged-no-projectiles-20261107/`에 있다. [현재 재생](../../../game/asset/character/player/icon/preview/ranged-attacks-no-projectiles.gif), ZIP은 `.build/deliverables/ranged-attacks-no-projectiles.zip`이다.

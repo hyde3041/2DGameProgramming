@@ -6,7 +6,7 @@
 
 ## 실제 이미지 수정 범위
 
-원래 `attack/motion/arm.png`와 `aligned/visible/weapon.png`는 그대로 보관한다. 적용한 복사본은 방향별 `game/asset/character/icon/layers/swordsman/<front|back|side>/attack/cleanup/`의 `arm.png`, `weapon.png`, `blade.png`다. `arm-mask.png`·`weapon-mask.png`는 변경을 허용한 범위다.
+원래 `attack/motion/arm.png`와 `aligned/visible/weapon.png`는 그대로 보관한다. 적용한 복사본은 방향별 `game/asset/character/player/icon/layers/swordsman/<front|back|side>/attack/cleanup/`의 `arm.png`, `weapon.png`, `blade.png`다. `arm-mask.png`·`weapon-mask.png`는 변경을 허용한 범위다.
 
 - 검: 손잡이에서 16px 이내는 보호하고, 검날 중심부를 보존하면서 가장자리와 끝에 붙은 잔여 조각을 정리한다. 검의 파란색 장식·손잡이·손은 유지한다.
 - 어깨: 어깨축 반경 13px 안에서만 편집하며 가장자리 2px는 부드럽게 섞는다. 들쭉날쭉한 끝을 닫힌 둥근 소매·갑옷 윤곽으로 보완한다. 손·손목·흰 소맷단과 팔 아래쪽은 원본 그대로다.
@@ -19,7 +19,7 @@
 | 뒤 | 131 | 324 |
 | 옆 | 197 | 680 |
 
-이미지 편집은 **built-in image_gen 모드**를 사용했다. [정확한 전체 프롬프트와 생성 원본 경로](swordsman-edge-cleanup-sources.json), [등록 좌표](swordsman-edge-cleanup-registration.json), [마스크·보호 범위·적용 경로](swordsman-edge-cleanup.json)를 저장했다. 생성 아틀라스와 입력 아틀라스는 `game/asset/character/icon/layers/swordsman/attack/cleanup/source/`에 보관한다.
+이미지 편집은 **built-in image_gen 모드**를 사용했다. [정확한 전체 프롬프트와 생성 원본 경로](swordsman-edge-cleanup-sources.json), [등록 좌표](swordsman-edge-cleanup-registration.json), [마스크·보호 범위·적용 경로](swordsman-edge-cleanup.json)를 저장했다. 생성 아틀라스와 입력 아틀라스는 `game/asset/character/player/icon/layers/swordsman/attack/cleanup/source/`에 보관한다.
 
 ## 움직임과 그리기 순서
 
@@ -51,13 +51,13 @@ python tools/export_attack_sheets.py swordsman
 
 편집한 아틀라스를 다시 생성할 필요는 없다. 첫 단계는 저장된 결과를 원본에 등록하고 마스크 안에만 반영한다. `prepare_swordsman_motion.mjs`는 정리 복사본을 연결하고 기존 관절 좌표를 유지한다. Python의 `load_image()`·`clip_draw()`·`update(delta_time)` 구조는 유지한다. 게임에서는 **3: 검사, 스페이스바: 공격**이다.
 
-- [3방향 재생](../../../game/asset/character/icon/preview/swordsman-attack-depth-fixed.mp4)
-- [뒷방향 공격 GIF](../../../game/asset/character/icon/preview/swordsman-attack-depth-fixed-back.gif)
-- [타격 회전 수정 전후](../../../game/asset/character/icon/preview/swordsman-armpit-fixed-comparison.png)
-- [어깨·망토 수정 전후](../../../game/asset/character/icon/preview/swordsman-cape-join-comparison.png)
-- [검·어깨 수정 전후](../../../game/asset/character/icon/preview/swordsman-edge-clean-comparison.png)
+- [3방향 재생](../../../game/asset/character/player/icon/preview/swordsman-attack-depth-fixed.mp4)
+- [뒷방향 공격 GIF](../../../game/asset/character/player/icon/preview/swordsman-attack-depth-fixed-back.gif)
+- [타격 회전 수정 전후](../../../game/asset/character/player/icon/preview/swordsman-armpit-fixed-comparison.png)
+- [어깨·망토 수정 전후](../../../game/asset/character/player/icon/preview/swordsman-cape-join-comparison.png)
+- [검·어깨 수정 전후](../../../game/asset/character/player/icon/preview/swordsman-edge-clean-comparison.png)
 - ZIP: `.build/deliverables/swordsman-attack-16frames-depth-fixed.zip`
-- [실제 게임 표시 크기](../../../game/asset/character/icon/preview/swordsman-cape-fixed-game-scale.png)
+- [실제 게임 표시 크기](../../../game/asset/character/player/icon/preview/swordsman-cape-fixed-game-scale.png)
 
 ## 검증
 
@@ -81,5 +81,5 @@ python tools/export_attack_sheets.py swordsman
 
 수정 전과 비교해 05·06·07·08에서만 각각 105·639·677·406개 픽셀이 바뀌고, 머리 밖 변경은 0이다. 나머지 12프레임, 기존 소스·어깨 보완 레이어·후면 효과·정면·옆면·Python 등 354개 파일은 그대로다. 프레임별 이동·회전 값과 손목 0도, 16FPS·1초를 유지한다. 검증·수정 전 자료는 `.git-pull-backups/swordsman-sword-behind-head-20261106/`에 저장한다.
 
-- [완성된 세 캐릭터의 앞·뒤·옆 공격](../../../game/asset/character/icon/preview/completed-attacks-all-directions-depth-fixed.gif)
-- [8명 전체 대기 모션](../../../game/asset/character/icon/preview/party-idle-current-8.gif)
+- [완성된 세 캐릭터의 앞·뒤·옆 공격](../../../game/asset/character/player/icon/preview/completed-attacks-all-directions-depth-fixed.gif)
+- [8명 전체 대기 모션](../../../game/asset/character/player/icon/preview/party-idle-current-8.gif)

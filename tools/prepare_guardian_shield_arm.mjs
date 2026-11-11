@@ -18,7 +18,7 @@ function rotatePoint(p,root,angle){const a=angle*Math.PI/180,c=Math.cos(a),s=Mat
 function largest(data){const seen=new Uint8Array(102400);let main=[];for(let p=0;p<102400;p++){if(seen[p]||data[p*4+3]<128)continue;const q=[p];seen[p]=1;for(let i=0;i<q.length;i++){const k=q[i],x=k%320,y=Math.floor(k/320);for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){const xx=x+dx,yy=y+dy,s=yy*320+xx;if(xx<0||xx>=320||yy<0||yy>=320||seen[s]||data[s*4+3]<128)continue;seen[s]=1;q.push(s);}}if(q.length>main.length)main=q;}return new Set(main);}
 const result={version:2,workflow:'complete native reference arm at scale 1; opaque torso socket and central shield handle contact',views:{}};
 for(const v of idle.views){
- const cfg=configs[v.view],source=`asset/character/icon/layers/guardian/${v.view}/aligned/${v.weapon_arm}.png`,arm=await raw(source),weapon=await raw(v.parts.weapon);
+ const cfg=configs[v.view],source=`asset/character/player/icon/layers/guardian/${v.view}/aligned/${v.weapon_arm}.png`,arm=await raw(source),weapon=await raw(v.parts.weapon);
  const sourceMain=largest(arm),sourceRoot=nearest(cfg.source,(x,y)=>sourceMain.has(y*320+x)&&arm[(y*320+x)*4+3]>=224,3);
  const parts={...v.parts,...repaired.views[v.view].parts},torso=Buffer.alloc(arm.length);
  for(const n of ['under:body','torso_patch','body']){const b=await raw(parts[n]);for(let p=0;p<102400;p++)torso[p*4+3]=Math.max(torso[p*4+3],b[p*4+3]);}
@@ -43,7 +43,7 @@ for(const v of idle.views){
  const armHand=[mirrorX-hand[0],hand[1]+shiftY],restHand=rotatePoint(armHand,target,cfg.base);
  const plateContact=cfg.grip,shield=await raw(outlines.views[v.view].file);
  if(shield[(plateContact[1]*320+plateContact[0])*4+3]<224)throw Error(v.view+': central handle must be inside the shield');
- const folder=`asset/character/icon/layers/guardian/${v.view}/attack/push`,file=`${folder}/arm-native.png`,mask=`${folder}/arm-nonlimb-mask.png`;
+ const folder=`asset/character/player/icon/layers/guardian/${v.view}/attack/push`,file=`${folder}/arm-native.png`,mask=`${folder}/arm-nonlimb-mask.png`;
  for(const[f,data]of [[file,registered],[mask,removedMask]])await sharp(data,{raw:{width:320,height:320,channels:4}}).png().toFile(path.join(game,f));
  result.views[v.view]={file,source,source_shoulder:sourceRoot,shoulder:target,source_hand:hand,arm_hand:armHand,base_degrees:cfg.base,plate_contact:plateContact,contact_kind:'center_handle',neutral_hand:restHand,neutral_plate_translation:restHand.map((n,i)=>n-plateContact[i]),registration:{mirror_x:mirrorX,translate_y:shiftY,scale:[1,1]},removed_nonlimb_pixels:removed,nonlimb_mask:mask,clipped_pixels:clipped};
 }

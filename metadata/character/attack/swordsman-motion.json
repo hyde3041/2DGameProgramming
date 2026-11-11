@@ -33,16 +33,16 @@
     "front": {
       "view": "front",
       "parts": {
-        "base": "asset/character/icon/layers/swordsman/front/attack/motion/base.png",
-        "feet": "asset/character/icon/layers/swordsman/front/attack/motion/feet.png",
-        "head": "asset/character/icon/layers/swordsman/front/attack/motion/head.png",
-        "arm": "asset/character/icon/layers/swordsman/front/attack/cleanup/arm.png",
-        "arm_under": "asset/character/icon/layers/swordsman/front/aligned/hidden/arm-left.png",
-        "cape": "asset/character/icon/layers/swordsman/front/aligned/cloth-hem.png",
-        "weapon": "asset/character/icon/layers/swordsman/front/attack/cleanup/weapon.png",
-        "blade": "asset/character/icon/layers/swordsman/front/attack/cleanup/blade.png",
-        "arm_mask": "asset/character/icon/layers/swordsman/front/attack/cleanup/arm-mask.png",
-        "weapon_mask": "asset/character/icon/layers/swordsman/front/attack/cleanup/weapon-mask.png"
+        "base": "asset/character/player/icon/layers/swordsman/front/attack/motion/base.png",
+        "feet": "asset/character/player/icon/layers/swordsman/front/attack/motion/feet.png",
+        "head": "asset/character/player/icon/layers/swordsman/front/attack/motion/head.png",
+        "arm": "asset/character/player/icon/layers/swordsman/front/attack/cleanup/arm.png",
+        "arm_under": "asset/character/player/icon/layers/swordsman/front/aligned/hidden/arm-left.png",
+        "cape": "asset/character/player/icon/layers/swordsman/front/aligned/cloth-hem.png",
+        "weapon": "asset/character/player/icon/layers/swordsman/front/attack/cleanup/weapon.png",
+        "blade": "asset/character/player/icon/layers/swordsman/front/attack/cleanup/blade.png",
+        "arm_mask": "asset/character/player/icon/layers/swordsman/front/attack/cleanup/arm-mask.png",
+        "weapon_mask": "asset/character/player/icon/layers/swordsman/front/attack/cleanup/weapon-mask.png"
       },
       "layer_order": [
         "cape",
@@ -72,8 +72,8 @@
         "arm_mask": "bed947d7da55788268d8258f388347279dff7a4bc4fb9f0dc4d43876cd59370c",
         "weapon_mask": "69b112f211ed35898f5a8d6e25afe9a9149795ff65bca5ce75f305248cd2760b"
       },
-      "original_weapon": "asset/character/icon/layers/swordsman/front/aligned/visible/weapon.png",
-      "original_arm": "asset/character/icon/layers/swordsman/front/attack/motion/arm.png",
+      "original_weapon": "asset/character/player/icon/layers/swordsman/front/aligned/visible/weapon.png",
+      "original_arm": "asset/character/player/icon/layers/swordsman/front/attack/motion/arm.png",
       "weapon_unchanged": false,
       "body_root": [
         160,
@@ -295,17 +295,17 @@
     "back": {
       "view": "back",
       "parts": {
-        "base": "asset/character/icon/layers/swordsman/back/attack/motion/base.png",
-        "feet": "asset/character/icon/layers/swordsman/back/attack/motion/feet.png",
-        "head": "asset/character/icon/layers/swordsman/back/attack/motion/head.png",
-        "arm": "asset/character/icon/layers/swordsman/back/attack/cleanup/arm.png",
-        "arm_under": "asset/character/icon/layers/swordsman/back/aligned/hidden/arm-right.png",
-        "cape": "asset/character/icon/layers/swordsman/back/aligned/cloth-hem.png",
-        "weapon": "asset/character/icon/layers/swordsman/back/attack/cleanup/weapon.png",
-        "blade": "asset/character/icon/layers/swordsman/back/attack/cleanup/blade.png",
-        "arm_mask": "asset/character/icon/layers/swordsman/back/attack/cleanup/arm-mask.png",
-        "weapon_mask": "asset/character/icon/layers/swordsman/back/attack/cleanup/weapon-mask.png",
-        "armpit_fill": "asset/character/icon/layers/swordsman/back/attack/armpit/armpit-fill.png"
+        "base": "asset/character/player/icon/layers/swordsman/back/attack/motion/base.png",
+        "feet": "asset/character/player/icon/layers/swordsman/back/attack/motion/feet.png",
+        "head": "asset/character/player/icon/layers/swordsman/back/attack/motion/head.png",
+        "arm": "asset/character/player/icon/layers/swordsman/back/attack/cleanup/arm.png",
+        "arm_under": "asset/character/player/icon/layers/swordsman/back/aligned/hidden/arm-right.png",
+        "cape": "asset/character/player/icon/layers/swordsman/back/aligned/cloth-hem.png",
+        "weapon": "asset/character/player/icon/layers/swordsman/back/attack/cleanup/weapon.png",
+        "blade": "asset/character/player/icon/layers/swordsman/back/attack/cleanup/blade.png",
+        "arm_mask": "asset/character/player/icon/layers/swordsman/back/attack/cleanup/arm-mask.png",
+        "weapon_mask": "asset/character/player/icon/layers/swordsman/back/attack/cleanup/weapon-mask.png",
+        "armpit_fill": "asset/character/player/icon/layers/swordsman/back/attack/armpit/armpit-fill.png"
       },
       "layer_order": [
         "cape",
@@ -348,8 +348,8 @@
         "weapon_mask": "d579d06a3614df290af6782499378807e0ef9d3d6d7da62f0fdbc8512d99800d",
         "armpit_fill": "a3dc08515c08e519ffed0aa1293e810682188c9c4b66cb41ff8d3c1f7ab87e7f"
       },
-      "original_weapon": "asset/character/icon/layers/swordsman/back/aligned/visible/weapon.png",
-      "original_arm": "asset/character/icon/layers/swordsman/back/attack/motion/arm.png",
+      "original_weapon": "asset/character/player/icon/layers/swordsman/back/aligned/visible/weapon.png",
+      "original_arm": "asset/character/player/icon/layers/swordsman/back/attack/motion/arm.png",
       "weapon_unchanged": false,
       "body_root": [
         160,
@@ -571,16 +571,16 @@
     "side": {
       "view": "side",
       "parts": {
-        "base": "asset/character/icon/layers/swordsman/side/attack/motion/base.png",
-        "feet": "asset/character/icon/layers/swordsman/side/attack/motion/feet.png",
-        "head": "asset/character/icon/layers/swordsman/side/attack/motion/head.png",
-        "arm": "asset/character/icon/layers/swordsman/side/attack/cleanup/arm.png",
-        "arm_under": "asset/character/icon/layers/swordsman/side/aligned/hidden/arm-left.png",
-        "cape": "asset/character/icon/layers/swordsman/side/aligned/cloth-hem.png",
-        "weapon": "asset/character/icon/layers/swordsman/side/attack/cleanup/weapon.png",
-        "blade": "asset/character/icon/layers/swordsman/side/attack/cleanup/blade.png",
-        "arm_mask": "asset/character/icon/layers/swordsman/side/attack/cleanup/arm-mask.png",
-        "weapon_mask": "asset/character/icon/layers/swordsman/side/attack/cleanup/weapon-mask.png"
+        "base": "asset/character/player/icon/layers/swordsman/side/attack/motion/base.png",
+        "feet": "asset/character/player/icon/layers/swordsman/side/attack/motion/feet.png",
+        "head": "asset/character/player/icon/layers/swordsman/side/attack/motion/head.png",
+        "arm": "asset/character/player/icon/layers/swordsman/side/attack/cleanup/arm.png",
+        "arm_under": "asset/character/player/icon/layers/swordsman/side/aligned/hidden/arm-left.png",
+        "cape": "asset/character/player/icon/layers/swordsman/side/aligned/cloth-hem.png",
+        "weapon": "asset/character/player/icon/layers/swordsman/side/attack/cleanup/weapon.png",
+        "blade": "asset/character/player/icon/layers/swordsman/side/attack/cleanup/blade.png",
+        "arm_mask": "asset/character/player/icon/layers/swordsman/side/attack/cleanup/arm-mask.png",
+        "weapon_mask": "asset/character/player/icon/layers/swordsman/side/attack/cleanup/weapon-mask.png"
       },
       "layer_order": [
         "cape",
@@ -610,8 +610,8 @@
         "arm_mask": "9b95ed048199e43dd74e3337b092a3f715225e4ef64a0b9db86f47fa6d5682ce",
         "weapon_mask": "a0dfd8c54e0727f879b38c350bdbc2143f3b931d87d2e826ee69ad50100748c6"
       },
-      "original_weapon": "asset/character/icon/layers/swordsman/side/aligned/visible/weapon.png",
-      "original_arm": "asset/character/icon/layers/swordsman/side/attack/motion/arm.png",
+      "original_weapon": "asset/character/player/icon/layers/swordsman/side/aligned/visible/weapon.png",
+      "original_arm": "asset/character/player/icon/layers/swordsman/side/attack/motion/arm.png",
       "weapon_unchanged": false,
       "body_root": [
         160,

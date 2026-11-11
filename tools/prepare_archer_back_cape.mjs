@@ -10,8 +10,8 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const game=path.join(root,'game');
 const output=path.join(root,'.build/archer-back-cape');
 const apply=process.argv.includes('--apply');
-const source='asset/character/icon/layers/archer/back/attack/user-sheet/source.png';
-const layerRoot='asset/character/icon/layers/archer/back/aligned';
+const source='asset/character/player/icon/layers/archer/back/attack/user-sheet/source.png';
+const layerRoot='asset/character/player/icon/layers/archer/back/aligned';
 const raw=file=>sharp(path.join(game,file)).ensureAlpha().raw().toBuffer();
 await fs.mkdir(output,{recursive:true});
 
@@ -225,7 +225,7 @@ for(const [column,frame] of [0,4,8,12,15].entries()){
 await sharp({create:{width:1650,height:240,channels:4,background:'#706a61'}}).composite(tiles).png().toFile(path.join(output,'after-cloth.png'));
 await fs.writeFile(path.join(output,'qa.json'),JSON.stringify({cape:layerRoot+'/cloth-hem.png',cape_outline:capeOutline,source,reports},null,2)+'\n');
 if(apply){
- const folder='asset/character/icon/layers/archer/back/attack/cape-consistent';
+ const folder='asset/character/player/icon/layers/archer/back/attack/cape-consistent';
  await fs.mkdir(path.join(game,folder),{recursive:true});
  await fs.copyFile(path.join(output,'source-sheet.png'),path.join(game,folder,'source-sheet.png'));
  await fs.copyFile(path.join(output,'cape-reference.png'),path.join(game,folder,'cape-reference.png'));

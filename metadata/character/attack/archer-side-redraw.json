@@ -3,14 +3,14 @@
   "direction": "side",
   "version": 6,
   "mode": "approved costume pixels with rigid arm-following cloth motion and masked hidden underpaint",
-  "reference_sheet": "asset/character/icon/layers/archer/side/attack/body-redrawn/original-sheet.png",
+  "reference_sheet": "asset/character/player/icon/layers/archer/side/attack/body-redrawn/original-sheet.png",
   "reference_frame": 0,
-  "reference_file": "asset/character/icon/layers/archer/side/attack/body-consistent/reference-00.png",
-  "shared_costume": "asset/character/icon/layers/archer/side/attack/body-consistent/native/costume.png",
+  "reference_file": "asset/character/player/icon/layers/archer/side/attack/body-consistent/reference-00.png",
+  "shared_costume": "asset/character/player/icon/layers/archer/side/attack/body-consistent/native/costume.png",
   "costume_sha256": "e468944d3a2dff9ce5650bc5c8d1df512e5378fd0d0c9da05499f7de0af9c0f3",
-  "motion_folder": "asset/character/icon/layers/archer/side/attack/body-consistent/native",
-  "prepared_folder": "asset/character/icon/layers/archer/side/attack/body-consistent/prepared",
-  "approved_sheet": "asset/character/icon/layers/archer/side/attack/body-consistent/approved/idle-coat-lift.png",
+  "motion_folder": "asset/character/player/icon/layers/archer/side/attack/body-consistent/native",
+  "prepared_folder": "asset/character/player/icon/layers/archer/side/attack/body-consistent/prepared",
+  "approved_sheet": "asset/character/player/icon/layers/archer/side/attack/body-consistent/approved/idle-coat-lift.png",
   "columns": 4,
   "rows": 4,
   "frame_count": 16,
@@ -30,7 +30,7 @@
   },
   "method": "Use the approved version 5 shared costume as the source of all visible garment art. Split only the shoulder capelet and lower coat into native-coordinate PNG layers, then use small rigid rotations to follow the existing arm action. Composite registered hidden underpaint only inside the source garment masks. Keep the original complete costume in neutral frames and the existing ready-positioned arm, bow, string and head PNGs as foreground.",
   "coat_motion": {
-    "folder": "asset/character/icon/layers/archer/side/attack/body-consistent/coat-motion",
+    "folder": "asset/character/player/icon/layers/archer/side/attack/body-consistent/coat-motion",
     "cape_pivot": [
       168,
       214
@@ -81,7 +81,7 @@
       1
     ],
     "maximum_hem_bottom": 273,
-    "hidden_underpaint": "asset/character/icon/layers/archer/side/attack/body-consistent/coat-motion/underpaint-source.png",
+    "hidden_underpaint": "asset/character/player/icon/layers/archer/side/attack/body-consistent/coat-motion/underpaint-source.png",
     "generation_mode": "built-in image_gen edit",
     "source_pixels": "cape.png, coat.png, waist.png and clasp.png copy approved native/costume.png RGBA at the original cell coordinates",
     "underpaint_scope": "background.png differs from the approved costume only inside the cape-mask.png and coat-mask.png. New brown vest/trouser pixels come from the registered generated underpaint. Outward flaring regions reveal transparency.",

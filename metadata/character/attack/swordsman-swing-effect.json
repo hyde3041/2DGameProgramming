@@ -18,8 +18,8 @@
   "ghost_opacity_by_frame": {"9": 1, "10": 1, "11": 0.8, "12": 0.35, "13": 0.12},
   "view_overrides": {},
   "sheets": {
-    "front": "asset/character/icon/layers/swordsman/front/attack/effect/slash-sheet.png",
-    "back": "asset/character/icon/layers/swordsman/back/attack/effect/slash-sheet.png",
-    "right": "asset/character/icon/layers/swordsman/side/attack/effect/slash-sheet.png"
+    "front": "asset/character/player/icon/layers/swordsman/front/attack/effect/slash-sheet.png",
+    "back": "asset/character/player/icon/layers/swordsman/back/attack/effect/slash-sheet.png",
+    "right": "asset/character/player/icon/layers/swordsman/side/attack/effect/slash-sheet.png"
   }
 }

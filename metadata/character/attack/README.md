@@ -11,7 +11,7 @@
 아르게토 참고 영상의 활 들기, 시위 당기기, 빠른 발사와 후속 움직임을 확인하고 궁수 공격을 다시 제작했다. 기존 머리·머리카락·다리·화살통 레이어를 사용하고, 몸통·양팔·의상·활은 원래 디자인을 참고한 16개의 연결된 자세로 다시 그렸다. 상체 그림은 v1과 다르며, 원본 상체의 픽셀이 그대로인 것은 아니다. [영상 분석 기록](reference.md)에 관찰한 구간과 적용 방식을 기록했다.
 
 - 각 방향 16프레임, 16FPS, 1초. 무한 반복하지 않고 Idle로 복귀한다.
-- 시트: `game/asset/character/main/2-archer/<front|back|side>/attack-sheet.png`
+- 시트: `game/asset/character/player/main/2-archer/<front|back|side>/attack-sheet.png`
 - 규격: 1280×1280, 4열×4행, 프레임 320×320, 발 기준점 (160, 288).
 - 00–02 준비와 활 들기, 03–06 시위 당기기와 조준, **07 발사**, 08–10 반동, 11–15 회복.
 - 몸통·팔·손·활을 같은 자세 그림 안에서 연결해 그렸다. v1의 위팔·팔뚝 조각과 추정 관절 길이로 팔을 조립하지 않는다. 뒤쪽은 전 구간에서 왼손에 활을 유지한다.
@@ -26,7 +26,7 @@
 내장 **image_gen** 도구로 앞·뒤·옆의 연결된 상체 자세를 제작했다. 기존 머리·다리 등과 Canvas에서 합치고 Sharp로 시트를 패킹했다. 각 자세의 목둘레 위치를 같은 좌표에 맞춘다. 상체의 최초 맞춤 배율은 0.44로 모든 방향·프레임에서 고정하며, 재생 중 늘이기나 확대·축소를 하지 않는다.
 
 - [정면 프롬프트](archer-v2-front-prompt.txt), [뒷면 프롬프트](archer-v2-back-prompt.txt), [옆면 프롬프트](archer-v2-side-prompt.txt), [뒷면 활 방향 수정](archer-v2-back-edit-prompt.txt)
-- 선택한 상체 아틀라스: `game/asset/character/icon/layers/archer/<방향>/attack/source-v2/upper-body-atlas.png`
+- 선택한 상체 아틀라스: `game/asset/character/player/icon/layers/archer/<방향>/attack/source-v2/upper-body-atlas.png`
 - 방향별 투명 상체 16장: 같은 폴더의 `upper-body-00.png` ~ `upper-body-15.png`
 - [원본 등록 좌표](archer-v2-sources.json), [합성 레이어 설정](archer-rig.json), [게임용 프레임 좌표·FPS](archer.json)
 
@@ -40,7 +40,7 @@
 
 시트 재생성에는 Node.js, `sharp`, `playwright`, Chrome이 필요하다. 먼저 `node tools/clean_archer_attack_parts.mjs`로 공격용 정리 부위를 만들고, `node tools/prepare_archer_arm_edit.mjs`로 [팔 두께 수정](archer-arm-edit.md)을 반영한다. `node tools/build_archer_attack_v2.mjs`는 `.build/archer-attack-v2/`에만 생성한다. 검사 후 `--apply`를 붙이면 세 방향 시트·게임용 JSON·미리보기를 교체하므로 적용 전에 백업한다. `build_archer_attack.mjs`도 같은 v2 제작기를 사용한다. Python 게임 실행에는 이 제작 의존성이 필요 없다.
 
-실제 시트의 16FPS 재생을 보여주는 미리보기는 `game/asset/character/icon/preview/archer-attack-v2.mp4`이다. 연속 관절 계산을 60FPS로 보여주는 미리보기가 아니라, 게임에 들어간 16개 장을 순서대로 재생한다. 기존 `archer-attack.mp4`도 현재 v2를 가리킨다.
+실제 시트의 16FPS 재생을 보여주는 미리보기는 `game/asset/character/player/icon/preview/archer-attack-v2.mp4`이다. 연속 관절 계산을 60FPS로 보여주는 미리보기가 아니라, 게임에 들어간 16개 장을 순서대로 재생한다. 기존 `archer-attack.mp4`도 현재 v2를 가리킨다.
 
 ## 검사 결과 (2026-11-05)
 
@@ -57,8 +57,8 @@ v1 공격과 코드는 저장소 옆 `.git-pull-backups/archer-attack-v2-2026110
 
 2026-11-05 사용자 지적에 따라 원본 파일을 대조하고 공격용 복사본 네 개를 정리했다. 정면·뒷면의 숨은 머리카락층 아래에 남은 조각, 옆면 장비층에 섞여 있던 옛 활의 가는 선, 뒷면 04번 상체 위쪽에 섞인 이웃 프레임의 조각을 제거했다. 뒷면 02번 손목 위의 독립 픽셀 하나도 제거했다. 발 아래는 투명 영역을 포함한 전체 y≥284 영역을 Idle 원본에서 복사해 복귀 중 잔상을 막는다.
 
-- 원본은 유지하고 `game/asset/character/icon/layers/archer/<방향>/attack/cleanup/`에 정리한 부위를 저장했다. [정리 범위와 입력 교체](archer-cleanup.json)를 재생성 시 적용한다.
-- [정리한 미리보기](../../../game/asset/character/icon/preview/archer-attack-clean.mp4), ZIP `.build/deliverables/archer-attack-16frames-clean.zip`.
+- 원본은 유지하고 `game/asset/character/player/icon/layers/archer/<방향>/attack/cleanup/`에 정리한 부위를 저장했다. [정리 범위와 입력 교체](archer-cleanup.json)를 재생성 시 적용한다.
+- [정리한 미리보기](../../../game/asset/character/player/icon/preview/archer-attack-clean.mp4), ZIP `.build/deliverables/archer-attack-16frames-clean.zip`.
 - 48개 공격 프레임에서 별도로 떠 있는 조각을 검사했다. 화살 외의 불필요한 조각은 없으며, 분리된 화살의 RGBA는 수정 전과 일치했다. 프레임 수·속도·규격은 유지했다.
 - 실제 pico2d/SDL에서 궁수·석궁병 6방향의 각 16장 출력과 Idle 복귀, main의 캐릭터 선택·공격·종료를 확인했다. MP4의 실제 재생과 ZIP 내용도 확인했다.
 - 해시 대조로 Idle 24개, 다른 공격 21개, 궁수 기존 분리 원본 338개를 보존했다. 변경 픽셀은 확인한 잔여 조각 주변과 발 아래에 한정된다.

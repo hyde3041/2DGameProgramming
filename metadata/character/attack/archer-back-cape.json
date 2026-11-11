@@ -3,9 +3,9 @@
   "direction": "back",
   "frames": 16,
   "fps": 16,
-  "base_source": "asset/character/icon/layers/archer/back/attack/user-sheet/source.png",
-  "cape": "asset/character/icon/layers/archer/back/attack/cape-consistent/cape-reference.png",
-  "original_cape": "asset/character/icon/layers/archer/back/aligned/cloth-hem.png",
+  "base_source": "asset/character/player/icon/layers/archer/back/attack/user-sheet/source.png",
+  "cape": "asset/character/player/icon/layers/archer/back/attack/cape-consistent/cape-reference.png",
+  "original_cape": "asset/character/player/icon/layers/archer/back/aligned/cloth-hem.png",
   "cape_outline": [
     [
       139,
@@ -96,7 +96,7 @@
       245
     ]
   ],
-  "legs_fill": "asset/character/icon/layers/archer/back/aligned/legs.png",
+  "legs_fill": "asset/character/player/icon/layers/archer/back/aligned/legs.png",
   "repair_polygon": [
     [
       138,
@@ -125,8 +125,8 @@
   ],
   "composition": "native legs and complete cape occlude equal-length lower bow limbs",
   "bow_foreground": {
-    "mask": "asset/character/icon/layers/archer/back/attack/cape-consistent/bow-foreground-mask.png",
-    "source": "asset/character/icon/layers/archer/back/attack/user-sheet/source.png",
+    "mask": "asset/character/player/icon/layers/archer/back/attack/cape-consistent/bow-foreground-mask.png",
+    "source": "asset/character/player/icon/layers/archer/back/attack/user-sheet/source.png",
     "end_rows": [
       260,
       269,
@@ -240,7 +240,7 @@
           26,
           17
         ],
-        "layer": "asset/character/icon/layers/archer/back/attack/bow-proportions/lower-visible-13.png"
+        "layer": "asset/character/player/icon/layers/archer/back/attack/bow-proportions/lower-visible-13.png"
       },
       "14": {
         "grip": [
@@ -330,7 +330,7 @@
           27,
           19
         ],
-        "layer": "asset/character/icon/layers/archer/back/attack/bow-proportions/lower-visible-14.png"
+        "layer": "asset/character/player/icon/layers/archer/back/attack/bow-proportions/lower-visible-14.png"
       }
     },
     "measurements": [
@@ -414,5 +414,5 @@
       -0.7653668647301808
     ]
   },
-  "prepared_sheet": "asset/character/icon/layers/archer/back/attack/cape-consistent/source-sheet.png"
+  "prepared_sheet": "asset/character/player/icon/layers/archer/back/attack/cape-consistent/source-sheet.png"
 }

@@ -32,14 +32,14 @@ const rig = {
 };
 const raw = file => sharp(path.join(game, file)).ensureAlpha().raw().toBuffer();
 for (const source of idle.views) {
- const view = source.view, folder = `asset/character/icon/layers/swordsman/${view}/attack/motion`;
+ const view = source.view, folder = `asset/character/player/icon/layers/swordsman/${view}/attack/motion`;
  // These complete layers predate the rejected upper_arm/forearm split.
  // Refer to them in place; do not regenerate a mask, crop or replacement art.
  const parts = {
   base:`${folder}/base.png`, feet:`${folder}/feet.png`,
   head:`${folder}/head.png`, arm:`${folder}/arm.png`,
   arm_under:source.parts['under:'+source.weapon_arm],
-  cape:`asset/character/icon/layers/swordsman/${view}/aligned/cloth-hem.png`,
+  cape:`asset/character/player/icon/layers/swordsman/${view}/aligned/cloth-hem.png`,
   weapon:source.parts.weapon, blade:`${folder}/blade.png`
  };
  const originals={...parts};

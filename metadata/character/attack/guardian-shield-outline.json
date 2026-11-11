@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "source": "asset/character/icon/layers/guardian/attack/outline-source/edited-atlas.png",
+  "source": "asset/character/player/icon/layers/guardian/attack/outline-source/edited-atlas.png",
   "workflow": "complete shield outline; existing surface retained inside an eroded mask; no polygon clips the game shield",
   "views": {
     "front": {
-      "file": "asset/character/icon/layers/guardian/front/attack/push/shield-full.png",
-      "reference": "asset/character/icon/layers/guardian/front/attack/support/shield.png",
-      "protected_mask": "asset/character/icon/layers/guardian/front/attack/push/shield-interior-mask.png",
+      "file": "asset/character/player/icon/layers/guardian/front/attack/push/shield-full.png",
+      "reference": "asset/character/player/icon/layers/guardian/front/attack/support/shield.png",
+      "protected_mask": "asset/character/player/icon/layers/guardian/front/attack/push/shield-interior-mask.png",
       "protected_pixels": 2574,
       "fixed_translation": [
         0,
@@ -28,9 +28,9 @@
       ]
     },
     "back": {
-      "file": "asset/character/icon/layers/guardian/back/attack/push/shield-full.png",
-      "reference": "asset/character/icon/layers/guardian/back/attack/push/shield-clean.png",
-      "protected_mask": "asset/character/icon/layers/guardian/back/attack/push/shield-interior-mask.png",
+      "file": "asset/character/player/icon/layers/guardian/back/attack/push/shield-full.png",
+      "reference": "asset/character/player/icon/layers/guardian/back/attack/push/shield-clean.png",
+      "protected_mask": "asset/character/player/icon/layers/guardian/back/attack/push/shield-interior-mask.png",
       "protected_pixels": 1718,
       "fixed_translation": [
         0,
@@ -40,7 +40,7 @@
         1,
         1
       ],
-      "full_source": "asset/character/icon/layers/guardian/attack/reach-source/edited-atlas.png",
+      "full_source": "asset/character/player/icon/layers/guardian/attack/reach-source/edited-atlas.png",
       "source_cell": [
         640,
         640,
@@ -50,9 +50,9 @@
       "old_polygon_not_applied": true
     },
     "side": {
-      "file": "asset/character/icon/layers/guardian/side/attack/push/shield-full.png",
-      "reference": "asset/character/icon/layers/guardian/side/attack/support/shield.png",
-      "protected_mask": "asset/character/icon/layers/guardian/side/attack/push/shield-interior-mask.png",
+      "file": "asset/character/player/icon/layers/guardian/side/attack/push/shield-full.png",
+      "reference": "asset/character/player/icon/layers/guardian/side/attack/support/shield.png",
+      "protected_mask": "asset/character/player/icon/layers/guardian/side/attack/push/shield-interior-mask.png",
       "protected_pixels": 1537,
       "fixed_translation": [
         -2,

@@ -14,7 +14,7 @@
   "frames_per_direction": 16,
   "animations": {
     "front": {
-      "file": "asset/character/main/7-shadow-thief/front/idle-sheet.png",
+      "file": "asset/character/player/main/7-shadow-thief/front/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -265,8 +265,8 @@
       ],
       "motion": {
         "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-        "source": "asset/character/icon/layers/shadow-thief/front/aligned/neutral.png",
-        "original_reference": "asset/character/icon/source/shadow-thief/front/idle.png",
+        "source": "asset/character/player/icon/layers/shadow-thief/front/aligned/neutral.png",
+        "original_reference": "asset/character/player/icon/source/shadow-thief/front/idle.png",
         "layer_rig": "metadata/character/idle/shadow-thief-layers.json",
         "anatomy_metadata": "metadata/character/layers/shadow-thief.json",
         "body_rise_px": 1.6,
@@ -293,7 +293,7 @@
       }
     },
     "back": {
-      "file": "asset/character/main/7-shadow-thief/back/idle-sheet.png",
+      "file": "asset/character/player/main/7-shadow-thief/back/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -544,8 +544,8 @@
       ],
       "motion": {
         "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-        "source": "asset/character/icon/layers/shadow-thief/back/aligned/neutral.png",
-        "original_reference": "asset/character/icon/source/shadow-thief/back/idle.png",
+        "source": "asset/character/player/icon/layers/shadow-thief/back/aligned/neutral.png",
+        "original_reference": "asset/character/player/icon/source/shadow-thief/back/idle.png",
         "layer_rig": "metadata/character/idle/shadow-thief-layers.json",
         "anatomy_metadata": "metadata/character/layers/shadow-thief.json",
         "body_rise_px": 1.6,
@@ -572,7 +572,7 @@
       }
     },
     "right": {
-      "file": "asset/character/main/7-shadow-thief/side/idle-sheet.png",
+      "file": "asset/character/player/main/7-shadow-thief/side/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -823,8 +823,8 @@
       ],
       "motion": {
         "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-        "source": "asset/character/icon/layers/shadow-thief/side/aligned/neutral.png",
-        "original_reference": "asset/character/icon/source/shadow-thief/side/idle.png",
+        "source": "asset/character/player/icon/layers/shadow-thief/side/aligned/neutral.png",
+        "original_reference": "asset/character/player/icon/source/shadow-thief/side/idle.png",
         "layer_rig": "metadata/character/idle/shadow-thief-layers.json",
         "anatomy_metadata": "metadata/character/layers/shadow-thief.json",
         "body_rise_px": 1.6,

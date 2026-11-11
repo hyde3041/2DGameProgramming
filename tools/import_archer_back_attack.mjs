@@ -19,7 +19,7 @@ if(currentImport?.enabled){
 }
 const output=path.join(root,'.build/archer-back-import');
 const apply=process.argv.includes('--apply');
-const assetFolder='asset/character/icon/layers/archer/back/attack/imported';
+const assetFolder='asset/character/player/icon/layers/archer/back/attack/imported';
 const metadataFile=path.join(root,'metadata/character/attack/archer-back-import.json');
 const record=JSON.parse(await fs.readFile(metadataFile,'utf8'));
 const input=path.join(root,'game',record.source_sheet);
@@ -119,7 +119,7 @@ if(apply){
  await fs.mkdir(assets,{recursive:true});
  await fs.copyFile(cleanFile,path.join(assets,'source-clean.png'));
  await fs.copyFile(sheetFile,path.join(assets,'current-sheet.png'));
- await fs.copyFile(sheetFile,path.join(root,'game/asset/character/main/2-archer/back/attack-sheet.png'));
+ await fs.copyFile(sheetFile,path.join(root,'game/asset/character/player/main/2-archer/back/attack-sheet.png'));
  await fs.writeFile(metadataFile,JSON.stringify(record,null,2)+'\n');
  const runtimeFile=path.join(root,'metadata/character/attack/archer.json');
  const runtime=JSON.parse(await fs.readFile(runtimeFile,'utf8'));
@@ -130,7 +130,7 @@ if(apply){
  const rig=JSON.parse(await fs.readFile(rigFile,'utf8'));
  rig.direction_overrides={...rig.direction_overrides,back:'metadata/character/attack/archer-back-import.json'};
  await fs.writeFile(rigFile,JSON.stringify(rig,null,2)+'\n');
- await fs.copyFile(path.join(output,'preview.gif'),path.join(root,'game/asset/character/icon/preview/archer-back-imported-no-logo.gif'));
+ await fs.copyFile(path.join(output,'preview.gif'),path.join(root,'game/asset/character/player/icon/preview/archer-back-imported-no-logo.gif'));
 }
 await fs.writeFile(path.join(output,'qa.json'),JSON.stringify({applied:apply,frames:16,unique_frames:unique,source_logo_repair_frame:15,logo_repair_pixels:record.logo_repair.source_frame_mask_pixels,background_corners_transparent:true,uniform_scale:1.25},null,2)+'\n');
 console.log(JSON.stringify({applied:apply,frames:unique,output}));

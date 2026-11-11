@@ -5,7 +5,7 @@ import {fileURLToPath} from 'node:url';
 import {createRequire} from 'node:module';
 const require=createRequire(import.meta.url),sharp=require('sharp');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),game=path.join(root,'game');
-const folder='asset/character/icon/layers/swordsman/back/attack/armpit';
+const folder='asset/character/player/icon/layers/swordsman/back/attack/armpit';
 const source=`${folder}/source/body-edit-generated-v2.png`;
 const atlas=await sharp(path.join(game,source)).resize(1024,1024).ensureAlpha().raw().toBuffer();
 // Native coordinates: compact, tapered underside, ending above the waist.

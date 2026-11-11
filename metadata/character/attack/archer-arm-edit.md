@@ -8,11 +8,11 @@
 
 ## 파일과 재생성
 
-- 편집 원본·마스크·적용 부위: `game/asset/character/icon/layers/archer/<방향>/attack/arm-edit/`
+- 편집 원본·마스크·적용 부위: `game/asset/character/player/icon/layers/archer/<방향>/attack/arm-edit/`
 - [원본 아틀라스와 관절 좌표](archer-arm-edit-sources.json), [적용된 부위와 마스크](archer-arm-proportions.json)
-- 게임: `game/asset/character/main/2-archer/<방향>/attack-sheet.png`
-- [전후 비교](../../../game/asset/character/icon/preview/archer-arm-comparison.mp4): 왼쪽 수정 전, 오른쪽 수정 후. 실제 16장 시트를 같은 시간에 재생한다.
-- [수정본 미리보기](../../../game/asset/character/icon/preview/archer-attack-arm-fixed.mp4)
+- 게임: `game/asset/character/player/main/2-archer/<방향>/attack-sheet.png`
+- [전후 비교](../../../game/asset/character/player/icon/preview/archer-arm-comparison.mp4): 왼쪽 수정 전, 오른쪽 수정 후. 실제 16장 시트를 같은 시간에 재생한다.
+- [수정본 미리보기](../../../game/asset/character/player/icon/preview/archer-attack-arm-fixed.mp4)
 - ZIP: `.build/deliverables/archer-attack-16frames-arm-fixed.zip`
 
 재생성은 다음 순서이다. 편집 아틀라스는 이미 프로젝트에 저장되어 있으므로 이미지 생성 도구를 다시 호출할 필요가 없다.

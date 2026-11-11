@@ -47,7 +47,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/0-swordsman/front/idle-sheet.png",
+          "file": "asset/character/player/main/0-swordsman/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -298,8 +298,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/swordsman/front/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/swordsman/front/idle.png",
+            "source": "asset/character/player/icon/layers/swordsman/front/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/swordsman/front/idle.png",
             "layer_rig": "metadata/character/idle/swordsman-layers.json",
             "anatomy_metadata": "metadata/character/layers/swordsman.json",
             "body_rise_px": 1.6,
@@ -326,7 +326,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/0-swordsman/back/idle-sheet.png",
+          "file": "asset/character/player/main/0-swordsman/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -577,8 +577,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/swordsman/back/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/swordsman/back/idle.png",
+            "source": "asset/character/player/icon/layers/swordsman/back/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/swordsman/back/idle.png",
             "layer_rig": "metadata/character/idle/swordsman-layers.json",
             "anatomy_metadata": "metadata/character/layers/swordsman.json",
             "body_rise_px": 1.6,
@@ -605,7 +605,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/0-swordsman/side/idle-sheet.png",
+          "file": "asset/character/player/main/0-swordsman/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -856,8 +856,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/swordsman/side/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/swordsman/side/idle.png",
+            "source": "asset/character/player/icon/layers/swordsman/side/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/swordsman/side/idle.png",
             "layer_rig": "metadata/character/idle/swordsman-layers.json",
             "anatomy_metadata": "metadata/character/layers/swordsman.json",
             "body_rise_px": 1.6,
@@ -904,7 +904,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/1-guardian/front/idle-sheet.png",
+          "file": "asset/character/player/main/1-guardian/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -1155,8 +1155,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/guardian/front/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/guardian/front/idle.png",
+            "source": "asset/character/player/icon/layers/guardian/front/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/guardian/front/idle.png",
             "layer_rig": "metadata/character/idle/guardian-layers.json",
             "anatomy_metadata": "metadata/character/layers/guardian.json",
             "body_rise_px": 1.1,
@@ -1183,7 +1183,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/1-guardian/back/idle-sheet.png",
+          "file": "asset/character/player/main/1-guardian/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -1434,8 +1434,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/guardian/back/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/guardian/back/idle.png",
+            "source": "asset/character/player/icon/layers/guardian/back/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/guardian/back/idle.png",
             "layer_rig": "metadata/character/idle/guardian-layers.json",
             "anatomy_metadata": "metadata/character/layers/guardian.json",
             "body_rise_px": 1.1,
@@ -1462,7 +1462,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/1-guardian/side/idle-sheet.png",
+          "file": "asset/character/player/main/1-guardian/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -1713,8 +1713,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/guardian/side/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/guardian/side/idle.png",
+            "source": "asset/character/player/icon/layers/guardian/side/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/guardian/side/idle.png",
             "layer_rig": "metadata/character/idle/guardian-layers.json",
             "anatomy_metadata": "metadata/character/layers/guardian.json",
             "body_rise_px": 1.1,
@@ -1761,7 +1761,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/2-archer/front/idle-sheet.png",
+          "file": "asset/character/player/main/2-archer/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -2012,8 +2012,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/archer/front/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/archer/front/idle.png",
+            "source": "asset/character/player/icon/layers/archer/front/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/archer/front/idle.png",
             "layer_rig": "metadata/character/idle/archer-layers.json",
             "anatomy_metadata": "metadata/character/layers/archer.json",
             "body_rise_px": 1.6,
@@ -2040,7 +2040,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/2-archer/back/idle-sheet.png",
+          "file": "asset/character/player/main/2-archer/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -2291,8 +2291,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/archer/back/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/archer/back/idle.png",
+            "source": "asset/character/player/icon/layers/archer/back/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/archer/back/idle.png",
             "layer_rig": "metadata/character/idle/archer-layers.json",
             "anatomy_metadata": "metadata/character/layers/archer.json",
             "body_rise_px": 1.6,
@@ -2319,7 +2319,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/2-archer/side/idle-sheet.png",
+          "file": "asset/character/player/main/2-archer/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -2570,8 +2570,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/archer/side/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/archer/side/idle.png",
+            "source": "asset/character/player/icon/layers/archer/side/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/archer/side/idle.png",
             "layer_rig": "metadata/character/idle/archer-layers.json",
             "anatomy_metadata": "metadata/character/layers/archer.json",
             "body_rise_px": 1.6,
@@ -2618,7 +2618,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/3-crossbowman/front/idle-sheet.png",
+          "file": "asset/character/player/main/3-crossbowman/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -2869,8 +2869,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/crossbowman/front/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/crossbowman/front/idle.png",
+            "source": "asset/character/player/icon/layers/crossbowman/front/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/crossbowman/front/idle.png",
             "layer_rig": "metadata/character/idle/crossbowman-layers.json",
             "anatomy_metadata": "metadata/character/layers/crossbowman.json",
             "body_rise_px": 1.6,
@@ -2897,7 +2897,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/3-crossbowman/back/idle-sheet.png",
+          "file": "asset/character/player/main/3-crossbowman/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -3148,8 +3148,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/crossbowman/back/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/crossbowman/back/idle.png",
+            "source": "asset/character/player/icon/layers/crossbowman/back/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/crossbowman/back/idle.png",
             "layer_rig": "metadata/character/idle/crossbowman-layers.json",
             "anatomy_metadata": "metadata/character/layers/crossbowman.json",
             "body_rise_px": 1.6,
@@ -3176,7 +3176,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/3-crossbowman/side/idle-sheet.png",
+          "file": "asset/character/player/main/3-crossbowman/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -3427,8 +3427,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/crossbowman/side/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/crossbowman/side/idle.png",
+            "source": "asset/character/player/icon/layers/crossbowman/side/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/crossbowman/side/idle.png",
             "layer_rig": "metadata/character/idle/crossbowman-layers.json",
             "anatomy_metadata": "metadata/character/layers/crossbowman.json",
             "body_rise_px": 1.6,
@@ -3475,7 +3475,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/4-cleric/front/idle-sheet.png",
+          "file": "asset/character/player/main/4-cleric/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -3726,8 +3726,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/cleric/front/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/cleric/front/idle.png",
+            "source": "asset/character/player/icon/layers/cleric/front/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/cleric/front/idle.png",
             "layer_rig": "metadata/character/idle/cleric-layers.json",
             "anatomy_metadata": "metadata/character/layers/cleric.json",
             "body_rise_px": 1.6,
@@ -3754,7 +3754,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/4-cleric/back/idle-sheet.png",
+          "file": "asset/character/player/main/4-cleric/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -4005,8 +4005,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/cleric/back/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/cleric/back/idle.png",
+            "source": "asset/character/player/icon/layers/cleric/back/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/cleric/back/idle.png",
             "layer_rig": "metadata/character/idle/cleric-layers.json",
             "anatomy_metadata": "metadata/character/layers/cleric.json",
             "body_rise_px": 1.6,
@@ -4033,7 +4033,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/4-cleric/side/idle-sheet.png",
+          "file": "asset/character/player/main/4-cleric/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -4284,8 +4284,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/cleric/side/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/cleric/side/idle.png",
+            "source": "asset/character/player/icon/layers/cleric/side/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/cleric/side/idle.png",
             "layer_rig": "metadata/character/idle/cleric-layers.json",
             "anatomy_metadata": "metadata/character/layers/cleric.json",
             "body_rise_px": 1.6,
@@ -4332,7 +4332,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/5-herbalist/front/idle-sheet.png",
+          "file": "asset/character/player/main/5-herbalist/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -4583,8 +4583,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/herbalist/front/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/herbalist/front/idle.png",
+            "source": "asset/character/player/icon/layers/herbalist/front/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/herbalist/front/idle.png",
             "layer_rig": "metadata/character/idle/herbalist-layers.json",
             "anatomy_metadata": "metadata/character/layers/herbalist.json",
             "body_rise_px": 1.6,
@@ -4611,7 +4611,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/5-herbalist/back/idle-sheet.png",
+          "file": "asset/character/player/main/5-herbalist/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -4862,8 +4862,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/herbalist/back/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/herbalist/back/idle.png",
+            "source": "asset/character/player/icon/layers/herbalist/back/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/herbalist/back/idle.png",
             "layer_rig": "metadata/character/idle/herbalist-layers.json",
             "anatomy_metadata": "metadata/character/layers/herbalist.json",
             "body_rise_px": 1.6,
@@ -4890,7 +4890,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/5-herbalist/side/idle-sheet.png",
+          "file": "asset/character/player/main/5-herbalist/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -5141,8 +5141,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/herbalist/side/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/herbalist/side/idle.png",
+            "source": "asset/character/player/icon/layers/herbalist/side/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/herbalist/side/idle.png",
             "layer_rig": "metadata/character/idle/herbalist-layers.json",
             "anatomy_metadata": "metadata/character/layers/herbalist.json",
             "body_rise_px": 1.6,
@@ -5189,7 +5189,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/6-frost-mage/front/idle-sheet.png",
+          "file": "asset/character/player/main/6-frost-mage/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -5440,8 +5440,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/frost-mage/front/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/frost-mage/front/idle.png",
+            "source": "asset/character/player/icon/layers/frost-mage/front/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/frost-mage/front/idle.png",
             "layer_rig": "metadata/character/idle/frost-mage-layers.json",
             "anatomy_metadata": "metadata/character/layers/frost-mage.json",
             "body_rise_px": 1.6,
@@ -5468,7 +5468,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/6-frost-mage/back/idle-sheet.png",
+          "file": "asset/character/player/main/6-frost-mage/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -5719,8 +5719,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/frost-mage/back/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/frost-mage/back/idle.png",
+            "source": "asset/character/player/icon/layers/frost-mage/back/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/frost-mage/back/idle.png",
             "layer_rig": "metadata/character/idle/frost-mage-layers.json",
             "anatomy_metadata": "metadata/character/layers/frost-mage.json",
             "body_rise_px": 1.6,
@@ -5747,7 +5747,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/6-frost-mage/side/idle-sheet.png",
+          "file": "asset/character/player/main/6-frost-mage/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -5998,8 +5998,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/frost-mage/side/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/frost-mage/side/idle.png",
+            "source": "asset/character/player/icon/layers/frost-mage/side/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/frost-mage/side/idle.png",
             "layer_rig": "metadata/character/idle/frost-mage-layers.json",
             "anatomy_metadata": "metadata/character/layers/frost-mage.json",
             "body_rise_px": 1.6,
@@ -6046,7 +6046,7 @@
       "frames_per_direction": 16,
       "animations": {
         "front": {
-          "file": "asset/character/main/7-shadow-thief/front/idle-sheet.png",
+          "file": "asset/character/player/main/7-shadow-thief/front/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -6297,8 +6297,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/shadow-thief/front/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/shadow-thief/front/idle.png",
+            "source": "asset/character/player/icon/layers/shadow-thief/front/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/shadow-thief/front/idle.png",
             "layer_rig": "metadata/character/idle/shadow-thief-layers.json",
             "anatomy_metadata": "metadata/character/layers/shadow-thief.json",
             "body_rise_px": 1.6,
@@ -6325,7 +6325,7 @@
           }
         },
         "back": {
-          "file": "asset/character/main/7-shadow-thief/back/idle-sheet.png",
+          "file": "asset/character/player/main/7-shadow-thief/back/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -6576,8 +6576,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/shadow-thief/back/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/shadow-thief/back/idle.png",
+            "source": "asset/character/player/icon/layers/shadow-thief/back/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/shadow-thief/back/idle.png",
             "layer_rig": "metadata/character/idle/shadow-thief-layers.json",
             "anatomy_metadata": "metadata/character/layers/shadow-thief.json",
             "body_rise_px": 1.6,
@@ -6604,7 +6604,7 @@
           }
         },
         "right": {
-          "file": "asset/character/main/7-shadow-thief/side/idle-sheet.png",
+          "file": "asset/character/player/main/7-shadow-thief/side/idle-sheet.png",
           "width": 1280,
           "height": 1280,
           "columns": 4,
@@ -6855,8 +6855,8 @@
           ],
           "motion": {
             "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-            "source": "asset/character/icon/layers/shadow-thief/side/aligned/neutral.png",
-            "original_reference": "asset/character/icon/source/shadow-thief/side/idle.png",
+            "source": "asset/character/player/icon/layers/shadow-thief/side/aligned/neutral.png",
+            "original_reference": "asset/character/player/icon/source/shadow-thief/side/idle.png",
             "layer_rig": "metadata/character/idle/shadow-thief-layers.json",
             "anatomy_metadata": "metadata/character/layers/shadow-thief.json",
             "body_rise_px": 1.6,

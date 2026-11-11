@@ -83,7 +83,7 @@ for(const id of ids.filter(id=>!process.argv[3]||id===process.argv[3])){
   }
   for(let k=0;k<320*320;k++)if(owner[k]===5&&!headAllowed[k])owner[k]=force[k]||2;
   for(let k=0;k<320*320;k++)if(source[k*4+3])source.copy(parts[order[owner[k]-1]],k*4,k*4,k*4+4);
-  const base=`asset/character/icon/layers/${id}/${view.direction}/anatomy`;await fs.mkdir(root+'/'+base+'/render',{recursive:true});
+  const base=`asset/character/player/icon/layers/${id}/${view.direction}/anatomy`;await fs.mkdir(root+'/'+base+'/render',{recursive:true});
   view.parts={};view.render_parts={};view.pixel_counts={};
   let visible=0,headGuard=0;const rebuilt=Buffer.alloc(source.length),labels=Buffer.alloc(source.length);
   for(const [j,n] of order.entries()){

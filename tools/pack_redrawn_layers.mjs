@@ -10,7 +10,7 @@ const id=process.argv[2];if(!id)throw Error('Supply a character id');
 const names=['head','hair-tail','body','arm-left','arm-right','cloth-hem','legs','equipment'];
 const layout=JSON.parse(await fs.readFile(root+'/metadata/character/layers/redraw-layout.json','utf8'));
 const config=layout.characters[id];if(!config)throw Error('Missing placement for '+id);
-const atlasRel=`asset/character/icon/layers/${id}/layer-atlas-redrawn.png`;
+const atlasRel=`asset/character/player/icon/layers/${id}/layer-atlas-redrawn.png`;
 const {data,info}=await sharp(root+'/'+atlasRel).ensureAlpha().raw().toBuffer({resolveWithObject:true});
 const w=info.width,h=info.height,cw=w/4,ch=h/6;
 if(cw!==ch)throw Error('Expected equal square cells in a 4 by 6 atlas');
@@ -27,7 +27,7 @@ for(let start=0;start<w*h;start++){
 }
 const views=[];
 for(let vi=0;vi<3;vi++){
- const direction=['front','back','side'][vi],v=config.views[direction],base=`asset/character/icon/layers/${id}/${direction}/redrawn`;
+ const direction=['front','back','side'][vi],v=config.views[direction],base=`asset/character/player/icon/layers/${id}/${direction}/redrawn`;
  await fs.mkdir(root+'/'+base+'/source',{recursive:true});
  const parts={},placements={},qa=[];
  const jobs=names.map((name,j)=>({name,j}));
@@ -79,7 +79,7 @@ for(let vi=0;vi<3;vi++){
  const order=v.order||['hair-tail','legs','cloth-hem','arm-left','body','equipment','arm-right','head'];
  const neutral=base+'/neutral.png';
  await sharp({create:{width:320,height:320,channels:4,background:'#00000000'}}).composite(await Promise.all(order.map(async name=>({input:await fs.readFile(root+'/'+parts[name]),left:0,top:0})))).png().toFile(root+'/'+neutral);
- views.push({direction,source:neutral,original_reference:`asset/character/icon/source/${id}/${direction}/idle.png`,parts,idle_groups:parts,idle_order:order,pivots:v.pivots,placements,validation:{independently_drawn:true,complete_hidden_joins:true,parts:qa}});
+ views.push({direction,source:neutral,original_reference:`asset/character/player/icon/source/${id}/${direction}/idle.png`,parts,idle_groups:parts,idle_order:order,pivots:v.pivots,placements,validation:{independently_drawn:true,complete_hidden_joins:true,parts:qa}});
 }
 const meta={version:2,id,name:config.name,workflow:'AI redrawn isolated parts, completed occluded anatomy; whole-part alpha-island atlas packing, no semantic slicing',cell_size:[320,320],pivot:[160,288],atlas:atlasRel,prompt:`metadata/character/layers/redraw-prompts/${id}.txt`,animation_applied:id==='archer',notes:['Original source and attack sprites are preserved.','Parts were drawn separately before assembly.','A static uniform resize registers each independently drawn part to the 320px canvas. Animation uses translation and rotation only.'],views};
 await fs.writeFile(root+'/metadata/character/layers/'+id+'.json',JSON.stringify(meta,null,2)+'\n');

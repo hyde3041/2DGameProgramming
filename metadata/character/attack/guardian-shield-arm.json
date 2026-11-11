@@ -3,8 +3,8 @@
   "workflow": "complete native reference arm at scale 1; opaque torso socket and central shield handle contact",
   "views": {
     "front": {
-      "file": "asset/character/icon/layers/guardian/front/attack/push/arm-native.png",
-      "source": "asset/character/icon/layers/guardian/front/aligned/arm-left.png",
+      "file": "asset/character/player/icon/layers/guardian/front/attack/push/arm-native.png",
+      "source": "asset/character/player/icon/layers/guardian/front/aligned/arm-left.png",
       "source_shoulder": [
         139,
         215
@@ -44,12 +44,12 @@
         ]
       },
       "removed_nonlimb_pixels": 0,
-      "nonlimb_mask": "asset/character/icon/layers/guardian/front/attack/push/arm-nonlimb-mask.png",
+      "nonlimb_mask": "asset/character/player/icon/layers/guardian/front/attack/push/arm-nonlimb-mask.png",
       "clipped_pixels": 0
     },
     "back": {
-      "file": "asset/character/icon/layers/guardian/back/attack/push/arm-native.png",
-      "source": "asset/character/icon/layers/guardian/back/aligned/arm-right.png",
+      "file": "asset/character/player/icon/layers/guardian/back/attack/push/arm-native.png",
+      "source": "asset/character/player/icon/layers/guardian/back/aligned/arm-right.png",
       "source_shoulder": [
         182,
         215
@@ -89,12 +89,12 @@
         ]
       },
       "removed_nonlimb_pixels": 0,
-      "nonlimb_mask": "asset/character/icon/layers/guardian/back/attack/push/arm-nonlimb-mask.png",
+      "nonlimb_mask": "asset/character/player/icon/layers/guardian/back/attack/push/arm-nonlimb-mask.png",
       "clipped_pixels": 0
     },
     "side": {
-      "file": "asset/character/icon/layers/guardian/side/attack/push/arm-native.png",
-      "source": "asset/character/icon/layers/guardian/side/aligned/arm-left.png",
+      "file": "asset/character/player/icon/layers/guardian/side/attack/push/arm-native.png",
+      "source": "asset/character/player/icon/layers/guardian/side/aligned/arm-left.png",
       "source_shoulder": [
         149,
         215
@@ -134,7 +134,7 @@
         ]
       },
       "removed_nonlimb_pixels": 162,
-      "nonlimb_mask": "asset/character/icon/layers/guardian/side/attack/push/arm-nonlimb-mask.png",
+      "nonlimb_mask": "asset/character/player/icon/layers/guardian/side/attack/push/arm-nonlimb-mask.png",
       "clipped_pixels": 0
     }
   }

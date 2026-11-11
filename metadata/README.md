@@ -23,26 +23,28 @@ JSON의 `asset/...` 이미지 경로는 **`game/` 폴더**를 기준으로 읽�
 
 ## 캐릭터
 
+플레이어 이미지와 분리 원본은 `asset/character/player/`에, 몬스터 걷기·공격 시트와 분리 원본은 `asset/character/monster/`에 둡니다. 몬스터 시트 경로와 재생 설정은 [monster-motion.json](character/monster-motion.json)에 있습니다.
+
 검사, 수호기사, 궁수, 석궁병, 성직자, 약초사, 냉기술사, 그림자 도적의 8명입니다.
 
-- `asset/character/main/<번호>-<캐릭터명>/skill/icon/`: 캐릭터별 스킬 아이콘 2개씩, 총 16개
+- `asset/character/player/main/<번호>-<캐릭터명>/skill/icon/`: 캐릭터별 스킬 아이콘 2개씩, 총 16개
 - `asset/etc/direction/`: 상하좌우 배치 방향 선택 UI, 256×256 PNG와 통합 시트
-- `asset/character/main/<번호>-<캐릭터명>/front/`: 정면 대기·공격 시트 2개
-- `asset/character/main/<번호>-<캐릭터명>/back/`: 뒷면 대기·공격 시트 2개
-- `asset/character/main/<번호>-<캐릭터명>/side/`: 오른쪽 측면 대기·공격 시트 2개
-- `asset/character/main/<번호>-<캐릭터명>/skill/profile/deployment.png`: 배치 프로필 카드
-- `asset/character/main/<번호>-<캐릭터명>/skill/profile/skill-card.png`: 스킬 프로필 카드
-- `asset/character/icon/source/<캐릭터명>/`: 원본 개별 프레임과 정적 통합 시트 보관
+- `asset/character/player/main/<번호>-<캐릭터명>/front/`: 정면 대기·공격 시트 2개
+- `asset/character/player/main/<번호>-<캐릭터명>/back/`: 뒷면 대기·공격 시트 2개
+- `asset/character/player/main/<번호>-<캐릭터명>/side/`: 오른쪽 측면 대기·공격 시트 2개
+- `asset/character/player/main/<번호>-<캐릭터명>/skill/profile/deployment.png`: 배치 프로필 카드
+- `asset/character/player/main/<번호>-<캐릭터명>/skill/profile/skill-card.png`: 스킬 프로필 카드
+- `asset/character/player/icon/source/<캐릭터명>/`: 원본 개별 프레임과 정적 통합 시트 보관
 
 각 방향 폴더에는 `idle-sheet.png`와 `attack-sheet.png`만 보관합니다. **궁수·석궁병·검사 공격은 각 방향 16프레임·16FPS·1초, 4열×4행의 1280×1280 PNG**입니다. 다른 5명의 공격은 기존 3프레임·960×320 시트를 유지합니다. 한 프레임은 모두 320×320입니다. `metadata/character/sprites/` JSON의 `directional_attack_sheets`에 방향별 공격 시트 경로와 좌표·시간을 정리했습니다. [궁수 제작 기록](character/attack/README.md), [석궁병 제작 기록](character/attack/crossbowman-connected.md), [검사 제작 기록](character/attack/swordsman.md)에 재생 데이터와 원본을 기록합니다.
 
-전체 동료 목록 그림은 `asset/character/character-overview.png`, 검사 소개 그림은 `asset/character/main/0-swordsman/skill/profile/cover.png`입니다.
+전체 동료 목록 그림은 `asset/character/player/character-overview.png`, 검사 소개 그림은 `asset/character/player/main/0-swordsman/skill/profile/cover.png`입니다.
 
 8명 모두 방향별 16프레임·16FPS, 한 주기 1초입니다. 시트는 4열×4행의 1280×1280, 프레임은 기존과 같은 320×320입니다. 총 24개 시트에 384프레임을 저장합니다. 발 기준점은 왼쪽 위 원점에서 (160, 288)입니다. 메타데이터에서 `right` 방향으로 기록된 이미지는 `side/`에 있습니다. 전체 목록의 시간 설정은 `manifest.json`의 `timing_by_character`와 각 캐릭터 JSON을 확인합니다.
 
 8명 모두 원본 스프라이트의 비율과 위치를 기준으로 다시 정렬했습니다. 보이는 얼굴·머리·몸통·팔·다리·의상·장비는 원본 픽셀과 좌표를 유지합니다. 재작화된 부위는 머리와 팔 아래에 가려진 목·어깨 등 연결부를 완성하는 데 사용합니다. 이전 재작화 과정에서 달라진 얼굴 크기, 발 간격, 무기 위치를 그대로 사용하지 않습니다.
 
-현재 원본은 `asset/character/icon/layers/<캐릭터>/<방향>/aligned/`입니다. 부위별 완성 원본 PNG와 `visible/`(원본 표면), `hidden/`(가려진 부분)을 함께 저장합니다. 실제 재생은 JSON의 `idle_order` 순서로 숨은 부분을 먼저 그리고 원본 표면을 그립니다. 임의 순서로 완성 PNG를 겹치지 않습니다. 부위 PNG는 320×320이며 기준점은 (160, 288)입니다. 원본과 공격 시트, 이전 재작화 원본은 보존합니다.
+현재 원본은 `asset/character/player/icon/layers/<캐릭터>/<방향>/aligned/`입니다. 부위별 완성 원본 PNG와 `visible/`(원본 표면), `hidden/`(가려진 부분)을 함께 저장합니다. 실제 재생은 JSON의 `idle_order` 순서로 숨은 부분을 먼저 그리고 원본 표면을 그립니다. 임의 순서로 완성 PNG를 겹치지 않습니다. 부위 PNG는 320×320이며 기준점은 (160, 288)입니다. 원본과 공격 시트, 이전 재작화 원본은 보존합니다.
 
 `metadata/character/layers/reference-alignment.json`에는 원본의 목·허리·어깨·손 좌표와 무기 영역을 기록합니다. `layers/<캐릭터>.json`에는 부위 파일, 완성 원본, 가려진 부분, 그리는 순서, 검사 결과를 기록합니다. 24방향 모두 원본 표면의 RGBA 픽셀과 좌표가 보존되는지 확인했습니다.
 

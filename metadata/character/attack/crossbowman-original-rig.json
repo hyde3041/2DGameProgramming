@@ -209,15 +209,15 @@
         ]
       ],
       "parts": {
-        "neutral": "asset/character/icon/layers/crossbowman/front/attack/original-rig/neutral.png",
-        "base": "asset/character/icon/layers/crossbowman/front/attack/original-rig/base.png",
-        "moving": "asset/character/icon/layers/crossbowman/front/attack/original-rig/moving.png",
-        "head": "asset/character/icon/layers/crossbowman/front/attack/original-rig/head.png",
-        "under": "asset/character/icon/layers/crossbowman/front/attack/original-rig/under.png",
-        "connector": "asset/character/icon/layers/crossbowman/front/attack/original-rig/connector.png",
-        "scarf": "asset/character/icon/layers/crossbowman/front/attack/original-rig/scarf.png"
+        "neutral": "asset/character/player/icon/layers/crossbowman/front/attack/original-rig/neutral.png",
+        "base": "asset/character/player/icon/layers/crossbowman/front/attack/original-rig/base.png",
+        "moving": "asset/character/player/icon/layers/crossbowman/front/attack/original-rig/moving.png",
+        "head": "asset/character/player/icon/layers/crossbowman/front/attack/original-rig/head.png",
+        "under": "asset/character/player/icon/layers/crossbowman/front/attack/original-rig/under.png",
+        "connector": "asset/character/player/icon/layers/crossbowman/front/attack/original-rig/connector.png",
+        "scarf": "asset/character/player/icon/layers/crossbowman/front/attack/original-rig/scarf.png"
       },
-      "source": "asset/character/main/3-crossbowman/front/idle-sheet.png",
+      "source": "asset/character/player/main/3-crossbowman/front/idle-sheet.png",
       "original_pixels": 11840,
       "moving_pixels": 2302,
       "hidden_fill_pixels": 940,
@@ -398,15 +398,15 @@
         ]
       ],
       "parts": {
-        "neutral": "asset/character/icon/layers/crossbowman/back/attack/original-rig/neutral.png",
-        "base": "asset/character/icon/layers/crossbowman/back/attack/original-rig/base.png",
-        "moving": "asset/character/icon/layers/crossbowman/back/attack/original-rig/moving.png",
-        "head": "asset/character/icon/layers/crossbowman/back/attack/original-rig/head.png",
-        "under": "asset/character/icon/layers/crossbowman/back/attack/original-rig/under.png",
-        "connector": "asset/character/icon/layers/crossbowman/back/attack/original-rig/connector.png",
-        "scarf": "asset/character/icon/layers/crossbowman/back/attack/original-rig/scarf.png"
+        "neutral": "asset/character/player/icon/layers/crossbowman/back/attack/original-rig/neutral.png",
+        "base": "asset/character/player/icon/layers/crossbowman/back/attack/original-rig/base.png",
+        "moving": "asset/character/player/icon/layers/crossbowman/back/attack/original-rig/moving.png",
+        "head": "asset/character/player/icon/layers/crossbowman/back/attack/original-rig/head.png",
+        "under": "asset/character/player/icon/layers/crossbowman/back/attack/original-rig/under.png",
+        "connector": "asset/character/player/icon/layers/crossbowman/back/attack/original-rig/connector.png",
+        "scarf": "asset/character/player/icon/layers/crossbowman/back/attack/original-rig/scarf.png"
       },
-      "source": "asset/character/main/3-crossbowman/back/idle-sheet.png",
+      "source": "asset/character/player/main/3-crossbowman/back/idle-sheet.png",
       "original_pixels": 11540,
       "moving_pixels": 1133,
       "hidden_fill_pixels": 289,
@@ -611,15 +611,15 @@
         ]
       ],
       "parts": {
-        "neutral": "asset/character/icon/layers/crossbowman/side/attack/original-rig/neutral.png",
-        "base": "asset/character/icon/layers/crossbowman/side/attack/original-rig/base.png",
-        "moving": "asset/character/icon/layers/crossbowman/side/attack/original-rig/moving.png",
-        "head": "asset/character/icon/layers/crossbowman/side/attack/original-rig/head.png",
-        "under": "asset/character/icon/layers/crossbowman/side/attack/original-rig/under.png",
-        "connector": "asset/character/icon/layers/crossbowman/side/attack/original-rig/connector.png",
-        "scarf": "asset/character/icon/layers/crossbowman/side/attack/original-rig/scarf.png"
+        "neutral": "asset/character/player/icon/layers/crossbowman/side/attack/original-rig/neutral.png",
+        "base": "asset/character/player/icon/layers/crossbowman/side/attack/original-rig/base.png",
+        "moving": "asset/character/player/icon/layers/crossbowman/side/attack/original-rig/moving.png",
+        "head": "asset/character/player/icon/layers/crossbowman/side/attack/original-rig/head.png",
+        "under": "asset/character/player/icon/layers/crossbowman/side/attack/original-rig/under.png",
+        "connector": "asset/character/player/icon/layers/crossbowman/side/attack/original-rig/connector.png",
+        "scarf": "asset/character/player/icon/layers/crossbowman/side/attack/original-rig/scarf.png"
       },
-      "source": "asset/character/main/3-crossbowman/side/idle-sheet.png",
+      "source": "asset/character/player/main/3-crossbowman/side/idle-sheet.png",
       "original_pixels": 11609,
       "moving_pixels": 1506,
       "hidden_fill_pixels": 643,

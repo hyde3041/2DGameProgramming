@@ -3,7 +3,7 @@
   "workflow": "built-in image_gen localized arm editing; original pixels retained outside arm masks",
   "views": {
     "front": {
-      "edited_atlas": "asset/character/icon/layers/archer/front/attack/arm-edit/edited-atlas.png",
+      "edited_atlas": "asset/character/player/icon/layers/archer/front/attack/arm-edit/edited-atlas.png",
       "frames": [
         {
           "index": 1,
@@ -413,7 +413,7 @@
       ]
     },
     "side": {
-      "edited_atlas": "asset/character/icon/layers/archer/side/attack/arm-edit/edited-atlas.png",
+      "edited_atlas": "asset/character/player/icon/layers/archer/side/attack/arm-edit/edited-atlas.png",
       "frames": [
         {
           "index": 1,
@@ -823,7 +823,7 @@
       ]
     },
     "back": {
-      "edited_atlas": "asset/character/icon/layers/archer/back/attack/arm-edit/edited-atlas.png",
+      "edited_atlas": "asset/character/player/icon/layers/archer/back/attack/arm-edit/edited-atlas.png",
       "frames": [
         {
           "index": 1,

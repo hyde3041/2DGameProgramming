@@ -4,7 +4,7 @@
   "registration": "Uniform body fit around the original waist; original head and foot coordinates stay fixed",
   "views": {
     "front": {
-      "atlas": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-atlas.png",
+      "atlas": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-atlas.png",
       "scale": 0.5,
       "target_neck": [
         164.2066326530612,
@@ -31,7 +31,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-00.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-00.png",
           "source_neck": [
             135.94685990338164,
             96.17874396135265
@@ -45,7 +45,7 @@
         },
         {
           "index": 1,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-01.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-01.png",
           "source_neck": [
             136.15196078431373,
             96.15686274509804
@@ -59,7 +59,7 @@
         },
         {
           "index": 2,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-02.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-02.png",
           "source_neck": [
             134.55665024630542,
             96.17241379310344
@@ -73,7 +73,7 @@
         },
         {
           "index": 3,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-03.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-03.png",
           "source_neck": [
             134.39,
             96.155
@@ -87,7 +87,7 @@
         },
         {
           "index": 4,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-04.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-04.png",
           "source_neck": [
             133.41326530612244,
             99.17857142857143
@@ -101,7 +101,7 @@
         },
         {
           "index": 5,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-05.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-05.png",
           "source_neck": [
             134.02083333333334,
             99.18229166666667
@@ -115,7 +115,7 @@
         },
         {
           "index": 6,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-06.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-06.png",
           "source_neck": [
             134.41326530612244,
             99.17857142857143
@@ -129,7 +129,7 @@
         },
         {
           "index": 7,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-07.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-07.png",
           "source_neck": [
             133.6290322580645,
             99.18279569892474
@@ -143,7 +143,7 @@
         },
         {
           "index": 8,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-08.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-08.png",
           "source_neck": [
             133.41326530612244,
             98.17857142857143
@@ -157,7 +157,7 @@
         },
         {
           "index": 9,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-09.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-09.png",
           "source_neck": [
             134.7128205128205,
             98.17435897435898
@@ -171,7 +171,7 @@
         },
         {
           "index": 10,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-10.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-10.png",
           "source_neck": [
             134.13989637305698,
             98.18652849740933
@@ -185,7 +185,7 @@
         },
         {
           "index": 11,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-11.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-11.png",
           "source_neck": [
             133.81770833333334,
             98.171875
@@ -199,7 +199,7 @@
         },
         {
           "index": 12,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-12.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-12.png",
           "source_neck": [
             132.78306878306879,
             102.2010582010582
@@ -213,7 +213,7 @@
         },
         {
           "index": 13,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-13.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-13.png",
           "source_neck": [
             135.34653465346534,
             103.18316831683168
@@ -227,7 +227,7 @@
         },
         {
           "index": 14,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-14.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-14.png",
           "source_neck": [
             134.12041884816753,
             103.18848167539267
@@ -241,7 +241,7 @@
         },
         {
           "index": 15,
-          "file": "asset/character/icon/layers/crossbowman/front/attack/source-v2/upper-body-15.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/source-v2/upper-body-15.png",
           "source_neck": [
             136.0253807106599,
             104.16751269035532
@@ -256,7 +256,7 @@
       ]
     },
     "back": {
-      "atlas": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-atlas.png",
+      "atlas": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-atlas.png",
       "scale": 0.5,
       "target_neck": [
         160.7077922077922,
@@ -283,7 +283,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-00.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-00.png",
           "source_neck": [
             159.42561983471074,
             111.24793388429752
@@ -297,7 +297,7 @@
         },
         {
           "index": 1,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-01.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-01.png",
           "source_neck": [
             160.64628820960698,
             109.24017467248909
@@ -311,7 +311,7 @@
         },
         {
           "index": 2,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-02.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-02.png",
           "source_neck": [
             157.4075630252101,
             105.21848739495799
@@ -325,7 +325,7 @@
         },
         {
           "index": 3,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-03.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-03.png",
           "source_neck": [
             158.8904109589041,
             101.21917808219177
@@ -339,7 +339,7 @@
         },
         {
           "index": 4,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-04.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-04.png",
           "source_neck": [
             157.4093023255814,
             103.25581395348837
@@ -353,7 +353,7 @@
         },
         {
           "index": 5,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-05.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-05.png",
           "source_neck": [
             157.50222222222223,
             104.21777777777778
@@ -367,7 +367,7 @@
         },
         {
           "index": 6,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-06.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-06.png",
           "source_neck": [
             157.41558441558442,
             105.23809523809524
@@ -381,7 +381,7 @@
         },
         {
           "index": 7,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-07.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-07.png",
           "source_neck": [
             157.5909090909091,
             105.25
@@ -395,7 +395,7 @@
         },
         {
           "index": 8,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-08.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-08.png",
           "source_neck": [
             155.15315315315314,
             103.23423423423424
@@ -409,7 +409,7 @@
         },
         {
           "index": 9,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-09.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-09.png",
           "source_neck": [
             154.74180327868854,
             106.23360655737704
@@ -423,7 +423,7 @@
         },
         {
           "index": 10,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-10.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-10.png",
           "source_neck": [
             154,
             108.22784810126582
@@ -437,7 +437,7 @@
         },
         {
           "index": 11,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-11.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-11.png",
           "source_neck": [
             153.15837104072398,
             110.26696832579185
@@ -451,7 +451,7 @@
         },
         {
           "index": 12,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-12.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-12.png",
           "source_neck": [
             153.53515625,
             113.22265625
@@ -465,7 +465,7 @@
         },
         {
           "index": 13,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-13.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-13.png",
           "source_neck": [
             155.84615384615384,
             113.21153846153847
@@ -479,7 +479,7 @@
         },
         {
           "index": 14,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-14.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-14.png",
           "source_neck": [
             158.3399209486166,
             113.23320158102767
@@ -493,7 +493,7 @@
         },
         {
           "index": 15,
-          "file": "asset/character/icon/layers/crossbowman/back/attack/source-v2/upper-body-15.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/source-v2/upper-body-15.png",
           "source_neck": [
             159.3050847457627,
             113.27118644067797
@@ -508,7 +508,7 @@
       ]
     },
     "side": {
-      "atlas": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-atlas.png",
+      "atlas": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-atlas.png",
       "scale": 0.5,
       "target_neck": [
         159.28947368421052,
@@ -535,7 +535,7 @@
       "frames": [
         {
           "index": 0,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-00.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-00.png",
           "source_neck": [
             129.17361111111111,
             105.19444444444444
@@ -549,7 +549,7 @@
         },
         {
           "index": 1,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-01.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-01.png",
           "source_neck": [
             129.78846153846155,
             106.17307692307692
@@ -563,7 +563,7 @@
         },
         {
           "index": 2,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-02.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-02.png",
           "source_neck": [
             131.16867469879517,
             104.16867469879519
@@ -577,7 +577,7 @@
         },
         {
           "index": 3,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-03.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-03.png",
           "source_neck": [
             130.34463276836158,
             103.19209039548022
@@ -591,7 +591,7 @@
         },
         {
           "index": 4,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-04.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-04.png",
           "source_neck": [
             129.4438202247191,
             105.18539325842697
@@ -605,7 +605,7 @@
         },
         {
           "index": 5,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-05.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-05.png",
           "source_neck": [
             130.15254237288136,
             105.18079096045197
@@ -619,7 +619,7 @@
         },
         {
           "index": 6,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-06.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-06.png",
           "source_neck": [
             129.57894736842104,
             105.19298245614036
@@ -633,7 +633,7 @@
         },
         {
           "index": 7,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-07.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-07.png",
           "source_neck": [
             129.88165680473372,
             105.23668639053254
@@ -647,7 +647,7 @@
         },
         {
           "index": 8,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-08.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-08.png",
           "source_neck": [
             128.9217877094972,
             105.17877094972067
@@ -661,7 +661,7 @@
         },
         {
           "index": 9,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-09.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-09.png",
           "source_neck": [
             128.41618497109826,
             105.20809248554913
@@ -675,7 +675,7 @@
         },
         {
           "index": 10,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-10.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-10.png",
           "source_neck": [
             128.51829268292684,
             105.21341463414635
@@ -689,7 +689,7 @@
         },
         {
           "index": 11,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-11.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-11.png",
           "source_neck": [
             128.20529801324503,
             105.21854304635761
@@ -703,7 +703,7 @@
         },
         {
           "index": 12,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-12.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-12.png",
           "source_neck": [
             128.73214285714286,
             109.20238095238095
@@ -717,7 +717,7 @@
         },
         {
           "index": 13,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-13.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-13.png",
           "source_neck": [
             129.13253012048193,
             109.21084337349397
@@ -731,7 +731,7 @@
         },
         {
           "index": 14,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-14.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-14.png",
           "source_neck": [
             127.9,
             109.2
@@ -745,7 +745,7 @@
         },
         {
           "index": 15,
-          "file": "asset/character/icon/layers/crossbowman/side/attack/source-v2/upper-body-15.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/source-v2/upper-body-15.png",
           "source_neck": [
             128.79354838709676,
             109.20645161290322

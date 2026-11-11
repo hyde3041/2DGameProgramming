@@ -14,7 +14,7 @@
   "frames_per_direction": 16,
   "animations": {
     "front": {
-      "file": "asset/character/main/1-guardian/front/idle-sheet.png",
+      "file": "asset/character/player/main/1-guardian/front/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -265,8 +265,8 @@
       ],
       "motion": {
         "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-        "source": "asset/character/icon/layers/guardian/front/aligned/neutral.png",
-        "original_reference": "asset/character/icon/source/guardian/front/idle.png",
+        "source": "asset/character/player/icon/layers/guardian/front/aligned/neutral.png",
+        "original_reference": "asset/character/player/icon/source/guardian/front/idle.png",
         "layer_rig": "metadata/character/idle/guardian-layers.json",
         "anatomy_metadata": "metadata/character/layers/guardian.json",
         "body_rise_px": 1.1,
@@ -293,7 +293,7 @@
       }
     },
     "back": {
-      "file": "asset/character/main/1-guardian/back/idle-sheet.png",
+      "file": "asset/character/player/main/1-guardian/back/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -544,8 +544,8 @@
       ],
       "motion": {
         "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-        "source": "asset/character/icon/layers/guardian/back/aligned/neutral.png",
-        "original_reference": "asset/character/icon/source/guardian/back/idle.png",
+        "source": "asset/character/player/icon/layers/guardian/back/aligned/neutral.png",
+        "original_reference": "asset/character/player/icon/source/guardian/back/idle.png",
         "layer_rig": "metadata/character/idle/guardian-layers.json",
         "anatomy_metadata": "metadata/character/layers/guardian.json",
         "body_rise_px": 1.1,
@@ -572,7 +572,7 @@
       }
     },
     "right": {
-      "file": "asset/character/main/1-guardian/side/idle-sheet.png",
+      "file": "asset/character/player/main/1-guardian/side/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -823,8 +823,8 @@
       ],
       "motion": {
         "method": "original visible design and positions, completed occluded joints, shoulder-attached arm phases, hand-bound weapons",
-        "source": "asset/character/icon/layers/guardian/side/aligned/neutral.png",
-        "original_reference": "asset/character/icon/source/guardian/side/idle.png",
+        "source": "asset/character/player/icon/layers/guardian/side/aligned/neutral.png",
+        "original_reference": "asset/character/player/icon/source/guardian/side/idle.png",
         "layer_rig": "metadata/character/idle/guardian-layers.json",
         "anatomy_metadata": "metadata/character/layers/guardian.json",
         "body_rise_px": 1.1,

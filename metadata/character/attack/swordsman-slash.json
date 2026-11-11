@@ -19,8 +19,8 @@
     "side": {"sweep_curve": [[95, 233], [125, 287], [275, 292], [302, 218]], "width_scale": 1}
   },
   "sheets": {
-    "front": "asset/character/icon/layers/swordsman/front/attack/effect/slash-sheet.png",
-    "back": "asset/character/icon/layers/swordsman/back/attack/effect/slash-sheet.png",
-    "right": "asset/character/icon/layers/swordsman/side/attack/effect/slash-sheet.png"
+    "front": "asset/character/player/icon/layers/swordsman/front/attack/effect/slash-sheet.png",
+    "back": "asset/character/player/icon/layers/swordsman/back/attack/effect/slash-sheet.png",
+    "right": "asset/character/player/icon/layers/swordsman/side/attack/effect/slash-sheet.png"
   }
 }

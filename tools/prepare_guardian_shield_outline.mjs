@@ -8,7 +8,7 @@ const require=createRequire(import.meta.url),sharp=require('sharp');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),game=path.join(root,'game');
 const old=JSON.parse(await fs.readFile(path.join(root,'metadata/character/attack/guardian-support.json'),'utf8'));
 const reach=JSON.parse(await fs.readFile(path.join(root,'metadata/character/attack/guardian-reach.json'),'utf8'));
-const source='asset/character/icon/layers/guardian/attack/outline-source/edited-atlas.png';
+const source='asset/character/player/icon/layers/guardian/attack/outline-source/edited-atlas.png';
 const atlas=await sharp(path.join(game,source)).resize(1536,512).ensureAlpha().raw().toBuffer();
 const backAtlas=await sharp(path.join(game,reach.source)).resize(1280,1280).ensureAlpha().raw().toBuffer();
 const crops={front:[171,180],back:[78,183],side:[179,180]};
@@ -46,7 +46,7 @@ for(const [i,v]of ['front','back','side'].entries()){
  }
  candidate=translate(candidate,...shift);const protectedMask=Buffer.alloc(candidate.length);let protectedPixels=0;
  for(const[x,y]of interior){const p=(y*320+x)*4;if(candidate[p+3]>=128){original.copy(candidate,p,p,p+4);protectedMask.fill(255,p,p+4);protectedPixels++;}}
- const folder=`asset/character/icon/layers/guardian/${v}/attack/push`;
+ const folder=`asset/character/player/icon/layers/guardian/${v}/attack/push`;
  const file=`${folder}/shield-full.png`,mask=`${folder}/shield-interior-mask.png`;
  for(const[f,data]of [[file,candidate],[mask,protectedMask]])await sharp(data,{raw:{width:320,height:320,channels:4}}).png().toFile(path.join(game,f));
  result.views[v]={file,reference,protected_mask:mask,protected_pixels:protectedPixels,fixed_translation:shift,

@@ -8,7 +8,7 @@
   "sources": "metadata/character/attack/crossbowman-lift-sources.json",
   "views": {
     "front": {
-      "mask": "asset/character/icon/layers/crossbowman/front/attack/lift/edit-mask.png",
+      "mask": "asset/character/player/icon/layers/crossbowman/front/attack/lift/edit-mask.png",
       "edit_region": [
         [
           109,
@@ -50,7 +50,7 @@
       "poses": [
         {
           "name": "lift-1",
-          "file": "asset/character/icon/layers/crossbowman/front/attack/lift/lift-01.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/lift/lift-01.png",
           "registration": {
             "dx": 0,
             "dy": 0,
@@ -66,7 +66,7 @@
         },
         {
           "name": "lift-2",
-          "file": "asset/character/icon/layers/crossbowman/front/attack/lift/lift-02.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/lift/lift-02.png",
           "registration": {
             "dx": 0,
             "dy": 0,
@@ -82,7 +82,7 @@
         },
         {
           "name": "lift-3",
-          "file": "asset/character/icon/layers/crossbowman/front/attack/lift/lift-03.png",
+          "file": "asset/character/player/icon/layers/crossbowman/front/attack/lift/lift-03.png",
           "registration": {
             "dx": 0,
             "dy": 0,
@@ -99,7 +99,7 @@
       ]
     },
     "back": {
-      "mask": "asset/character/icon/layers/crossbowman/back/attack/lift/edit-mask.png",
+      "mask": "asset/character/player/icon/layers/crossbowman/back/attack/lift/edit-mask.png",
       "edit_region": [
         [
           94,
@@ -133,7 +133,7 @@
       "poses": [
         {
           "name": "lift-1",
-          "file": "asset/character/icon/layers/crossbowman/back/attack/lift/lift-01.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/lift/lift-01.png",
           "registration": {
             "dx": 0,
             "dy": 0,
@@ -149,7 +149,7 @@
         },
         {
           "name": "lift-2",
-          "file": "asset/character/icon/layers/crossbowman/back/attack/lift/lift-02.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/lift/lift-02.png",
           "registration": {
             "dx": 0,
             "dy": 0,
@@ -165,7 +165,7 @@
         },
         {
           "name": "lift-3",
-          "file": "asset/character/icon/layers/crossbowman/back/attack/lift/lift-03.png",
+          "file": "asset/character/player/icon/layers/crossbowman/back/attack/lift/lift-03.png",
           "registration": {
             "dx": 0,
             "dy": 0,
@@ -182,7 +182,7 @@
       ]
     },
     "side": {
-      "mask": "asset/character/icon/layers/crossbowman/side/attack/lift/edit-mask.png",
+      "mask": "asset/character/player/icon/layers/crossbowman/side/attack/lift/edit-mask.png",
       "edit_region": [
         [
           94,
@@ -216,7 +216,7 @@
       "poses": [
         {
           "name": "lift-1",
-          "file": "asset/character/icon/layers/crossbowman/side/attack/lift/lift-01.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/lift/lift-01.png",
           "registration": {
             "dx": 0,
             "dy": 0,
@@ -232,7 +232,7 @@
         },
         {
           "name": "lift-2",
-          "file": "asset/character/icon/layers/crossbowman/side/attack/lift/lift-02.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/lift/lift-02.png",
           "registration": {
             "dx": 0,
             "dy": 0,
@@ -248,7 +248,7 @@
         },
         {
           "name": "lift-3",
-          "file": "asset/character/icon/layers/crossbowman/side/attack/lift/lift-03.png",
+          "file": "asset/character/player/icon/layers/crossbowman/side/attack/lift/lift-03.png",
           "registration": {
             "dx": 0,
             "dy": 0,

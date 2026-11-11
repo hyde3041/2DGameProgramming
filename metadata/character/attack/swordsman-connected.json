@@ -21,16 +21,16 @@
     "front": {
       "poses": {
         "idle": {
-          "input": "asset/character/main/0-swordsman/front/idle-sheet.png",
+          "input": "asset/character/player/main/0-swordsman/front/idle-sheet.png",
           "original_rgba_sha256": "e60d7589f8e2ec82f3d963b426b6933f491af2b457746c29df7576a89e8f891c",
           "registration": [
             0,
             0
           ],
           "files": {
-            "reference": "asset/character/icon/layers/swordsman/front/attack/connected/idle.png",
-            "upper": "asset/character/icon/layers/swordsman/front/attack/connected/idle-upper.png",
-            "feet": "asset/character/icon/layers/swordsman/front/attack/connected/idle-feet.png"
+            "reference": "asset/character/player/icon/layers/swordsman/front/attack/connected/idle.png",
+            "upper": "asset/character/player/icon/layers/swordsman/front/attack/connected/idle-upper.png",
+            "feet": "asset/character/player/icon/layers/swordsman/front/attack/connected/idle-feet.png"
           },
           "boot_boxes": [
             [
@@ -48,16 +48,16 @@
           ]
         },
         "windup": {
-          "input": "asset/character/icon/source/swordsman/front/attack_01.png",
+          "input": "asset/character/player/icon/source/swordsman/front/attack_01.png",
           "original_rgba_sha256": "88bf09eae5d58f4322cfce590f2e6a516545cabcaf002fb4e6beae6c6a2d7adc",
           "registration": [
             14,
             0
           ],
           "files": {
-            "reference": "asset/character/icon/layers/swordsman/front/attack/connected/windup.png",
-            "upper": "asset/character/icon/layers/swordsman/front/attack/connected/windup-upper.png",
-            "feet": "asset/character/icon/layers/swordsman/front/attack/connected/windup-feet.png"
+            "reference": "asset/character/player/icon/layers/swordsman/front/attack/connected/windup.png",
+            "upper": "asset/character/player/icon/layers/swordsman/front/attack/connected/windup-upper.png",
+            "feet": "asset/character/player/icon/layers/swordsman/front/attack/connected/windup-feet.png"
           },
           "boot_boxes": [
             [
@@ -75,16 +75,16 @@
           ]
         },
         "strike": {
-          "input": "asset/character/icon/source/swordsman/front/attack_02.png",
+          "input": "asset/character/player/icon/source/swordsman/front/attack_02.png",
           "original_rgba_sha256": "5851822992dbc9843db497580884ea699ca2a789352cec65578befddd1c968cc",
           "registration": [
             12,
             0
           ],
           "files": {
-            "reference": "asset/character/icon/layers/swordsman/front/attack/connected/strike.png",
-            "upper": "asset/character/icon/layers/swordsman/front/attack/connected/strike-upper.png",
-            "feet": "asset/character/icon/layers/swordsman/front/attack/connected/strike-feet.png"
+            "reference": "asset/character/player/icon/layers/swordsman/front/attack/connected/strike.png",
+            "upper": "asset/character/player/icon/layers/swordsman/front/attack/connected/strike-upper.png",
+            "feet": "asset/character/player/icon/layers/swordsman/front/attack/connected/strike-feet.png"
           },
           "boot_boxes": [
             [
@@ -102,16 +102,16 @@
           ]
         },
         "recover": {
-          "input": "asset/character/icon/source/swordsman/front/attack_03.png",
+          "input": "asset/character/player/icon/source/swordsman/front/attack_03.png",
           "original_rgba_sha256": "f9985965cf8326a24ae5cae3907016d08c7f7c588aa4ca866f0e7f5ca216a758",
           "registration": [
             -2,
             0
           ],
           "files": {
-            "reference": "asset/character/icon/layers/swordsman/front/attack/connected/recover.png",
-            "upper": "asset/character/icon/layers/swordsman/front/attack/connected/recover-upper.png",
-            "feet": "asset/character/icon/layers/swordsman/front/attack/connected/recover-feet.png"
+            "reference": "asset/character/player/icon/layers/swordsman/front/attack/connected/recover.png",
+            "upper": "asset/character/player/icon/layers/swordsman/front/attack/connected/recover-upper.png",
+            "feet": "asset/character/player/icon/layers/swordsman/front/attack/connected/recover-feet.png"
           },
           "boot_boxes": [
             [
@@ -347,16 +347,16 @@
     "back": {
       "poses": {
         "idle": {
-          "input": "asset/character/main/0-swordsman/back/idle-sheet.png",
+          "input": "asset/character/player/main/0-swordsman/back/idle-sheet.png",
           "original_rgba_sha256": "b8bd6485980a2f78362f9f1d77753f53146b3438903e6c769c8fcbec0a634f18",
           "registration": [
             0,
             0
           ],
           "files": {
-            "reference": "asset/character/icon/layers/swordsman/back/attack/connected/idle.png",
-            "upper": "asset/character/icon/layers/swordsman/back/attack/connected/idle-upper.png",
-            "feet": "asset/character/icon/layers/swordsman/back/attack/connected/idle-feet.png"
+            "reference": "asset/character/player/icon/layers/swordsman/back/attack/connected/idle.png",
+            "upper": "asset/character/player/icon/layers/swordsman/back/attack/connected/idle-upper.png",
+            "feet": "asset/character/player/icon/layers/swordsman/back/attack/connected/idle-feet.png"
           },
           "boot_boxes": [
             [
@@ -374,16 +374,16 @@
           ]
         },
         "windup": {
-          "input": "asset/character/icon/source/swordsman/back/attack_01.png",
+          "input": "asset/character/player/icon/source/swordsman/back/attack_01.png",
           "original_rgba_sha256": "2c9ec0b1e341c3d7856cbc3138943aea1adcf8006b8cbe63fa2a23254bbbf14b",
           "registration": [
             -1,
             0
           ],
           "files": {
-            "reference": "asset/character/icon/layers/swordsman/back/attack/connected/windup.png",
-            "upper": "asset/character/icon/layers/swordsman/back/attack/connected/windup-upper.png",
-            "feet": "asset/character/icon/layers/swordsman/back/attack/connected/windup-feet.png"
+            "reference": "asset/character/player/icon/layers/swordsman/back/attack/connected/windup.png",
+            "upper": "asset/character/player/icon/layers/swordsman/back/attack/connected/windup-upper.png",
+            "feet": "asset/character/player/icon/layers/swordsman/back/attack/connected/windup-feet.png"
           },
           "boot_boxes": [
             [
@@ -401,16 +401,16 @@
           ]
         },
         "strike": {
-          "input": "asset/character/icon/source/swordsman/back/attack_02.png",
+          "input": "asset/character/player/icon/source/swordsman/back/attack_02.png",
           "original_rgba_sha256": "ad0d5aa646942708ebe36898943d037df5f4638092d37994d8a2be5f4c34760c",
           "registration": [
             32,
             0
           ],
           "files": {
-            "reference": "asset/character/icon/layers/swordsman/back/attack/connected/strike.png",
-            "upper": "asset/character/icon/layers/swordsman/back/attack/connected/strike-upper.png",
-            "feet": "asset/character/icon/layers/swordsman/back/attack/connected/strike-feet.png"
+            "reference": "asset/character/player/icon/layers/swordsman/back/attack/connected/strike.png",
+            "upper": "asset/character/player/icon/layers/swordsman/back/attack/connected/strike-upper.png",
+            "feet": "asset/character/player/icon/layers/swordsman/back/attack/connected/strike-feet.png"
           },
           "boot_boxes": [
             [
@@ -428,16 +428,16 @@
           ]
         },
         "recover": {
-          "input": "asset/character/icon/source/swordsman/back/attack_03.png",
+          "input": "asset/character/player/icon/source/swordsman/back/attack_03.png",
           "original_rgba_sha256": "5885cd3f9063ea56ba908e225d8ca54366ef78a1cad15cc18604764bd2d450ab",
           "registration": [
             1,
             0
           ],
           "files": {
-            "reference": "asset/character/icon/layers/swordsman/back/attack/connected/recover.png",
-            "upper": "asset/character/icon/layers/swordsman/back/attack/connected/recover-upper.png",
-            "feet": "asset/character/icon/layers/swordsman/back/attack/connected/recover-feet.png"
+            "reference": "asset/character/player/icon/layers/swordsman/back/attack/connected/recover.png",
+            "upper": "asset/character/player/icon/layers/swordsman/back/attack/connected/recover-upper.png",
+            "feet": "asset/character/player/icon/layers/swordsman/back/attack/connected/recover-feet.png"
           },
           "boot_boxes": [
             [
@@ -673,16 +673,16 @@
     "side": {
       "poses": {
         "idle": {
-          "input": "asset/character/main/0-swordsman/side/idle-sheet.png",
+          "input": "asset/character/player/main/0-swordsman/side/idle-sheet.png",
           "original_rgba_sha256": "32a97919d3e8fd74aebea72353b402c0435f7743142540591f4bf61e1bfea676",
           "registration": [
             0,
             0
           ],
           "files": {
-            "reference": "asset/character/icon/layers/swordsman/side/attack/connected/idle.png",
-            "upper": "asset/character/icon/layers/swordsman/side/attack/connected/idle-upper.png",
-            "feet": "asset/character/icon/layers/swordsman/side/attack/connected/idle-feet.png"
+            "reference": "asset/character/player/icon/layers/swordsman/side/attack/connected/idle.png",
+            "upper": "asset/character/player/icon/layers/swordsman/side/attack/connected/idle-upper.png",
+            "feet": "asset/character/player/icon/layers/swordsman/side/attack/connected/idle-feet.png"
           },
           "boot_boxes": [
             [
@@ -700,16 +700,16 @@
           ]
         },
         "windup": {
-          "input": "asset/character/icon/source/swordsman/side/attack_01.png",
+          "input": "asset/character/player/icon/source/swordsman/side/attack_01.png",
           "original_rgba_sha256": "b1966aca6b142e6c48cbbe051551cf6cb6db7e360cb162cea9483759cc85e381",
           "registration": [
             9,
             0
           ],
           "files": {
-            "reference": "asset/character/icon/layers/swordsman/side/attack/connected/windup.png",
-            "upper": "asset/character/icon/layers/swordsman/side/attack/connected/windup-upper.png",
-            "feet": "asset/character/icon/layers/swordsman/side/attack/connected/windup-feet.png"
+            "reference": "asset/character/player/icon/layers/swordsman/side/attack/connected/windup.png",
+            "upper": "asset/character/player/icon/layers/swordsman/side/attack/connected/windup-upper.png",
+            "feet": "asset/character/player/icon/layers/swordsman/side/attack/connected/windup-feet.png"
           },
           "boot_boxes": [
             [
@@ -727,16 +727,16 @@
           ]
         },
         "strike": {
-          "input": "asset/character/icon/source/swordsman/side/attack_02.png",
+          "input": "asset/character/player/icon/source/swordsman/side/attack_02.png",
           "original_rgba_sha256": "f36ac088af3d190b33f3012dac6d287038a17c60b53e325004be71cb050035e4",
           "registration": [
             19,
             0
           ],
           "files": {
-            "reference": "asset/character/icon/layers/swordsman/side/attack/connected/strike.png",
-            "upper": "asset/character/icon/layers/swordsman/side/attack/connected/strike-upper.png",
-            "feet": "asset/character/icon/layers/swordsman/side/attack/connected/strike-feet.png"
+            "reference": "asset/character/player/icon/layers/swordsman/side/attack/connected/strike.png",
+            "upper": "asset/character/player/icon/layers/swordsman/side/attack/connected/strike-upper.png",
+            "feet": "asset/character/player/icon/layers/swordsman/side/attack/connected/strike-feet.png"
           },
           "boot_boxes": [
             [
@@ -754,16 +754,16 @@
           ]
         },
         "recover": {
-          "input": "asset/character/icon/source/swordsman/side/attack_03.png",
+          "input": "asset/character/player/icon/source/swordsman/side/attack_03.png",
           "original_rgba_sha256": "46a1f80261db7dbb9f057a59dbc475d9272543c02cadbfae728713d285ea7ed3",
           "registration": [
             0,
             0
           ],
           "files": {
-            "reference": "asset/character/icon/layers/swordsman/side/attack/connected/recover.png",
-            "upper": "asset/character/icon/layers/swordsman/side/attack/connected/recover-upper.png",
-            "feet": "asset/character/icon/layers/swordsman/side/attack/connected/recover-feet.png"
+            "reference": "asset/character/player/icon/layers/swordsman/side/attack/connected/recover.png",
+            "upper": "asset/character/player/icon/layers/swordsman/side/attack/connected/recover-upper.png",
+            "feet": "asset/character/player/icon/layers/swordsman/side/attack/connected/recover-feet.png"
           },
           "boot_boxes": [
             [

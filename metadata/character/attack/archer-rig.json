@@ -20,8 +20,8 @@
   "views": {
     "back": {
       "enabled": true,
-      "source_sheet": "asset/character/icon/layers/archer/back/attack/cape-consistent/source-sheet.png",
-      "file": "asset/character/icon/layers/archer/back/attack/user-sheet/current-sheet.png",
+      "source_sheet": "asset/character/player/icon/layers/archer/back/attack/cape-consistent/source-sheet.png",
+      "file": "asset/character/player/icon/layers/archer/back/attack/user-sheet/current-sheet.png",
       "source_size": [
         1280,
         1280
@@ -40,8 +40,8 @@
     },
     "side": {
       "enabled": true,
-      "source_sheet": "asset/character/icon/layers/archer/side/attack/body-consistent/approved/idle-coat-lift.png",
-      "file": "asset/character/icon/layers/archer/side/attack/user-sheet/current-sheet.png",
+      "source_sheet": "asset/character/player/icon/layers/archer/side/attack/body-consistent/approved/idle-coat-lift.png",
+      "file": "asset/character/player/icon/layers/archer/side/attack/user-sheet/current-sheet.png",
       "source_size": [
         1280,
         1280
@@ -60,8 +60,8 @@
     },
     "front": {
       "enabled": true,
-      "source_sheet": "asset/character/icon/layers/archer/front/attack/user-sheet/source.png",
-      "file": "asset/character/icon/layers/archer/front/attack/user-sheet/current-sheet.png",
+      "source_sheet": "asset/character/player/icon/layers/archer/front/attack/user-sheet/source.png",
+      "file": "asset/character/player/icon/layers/archer/front/attack/user-sheet/current-sheet.png",
       "source_size": [
         1254,
         1254

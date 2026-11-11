@@ -146,18 +146,18 @@
         ]
       ],
       "parts": {
-        "bow-upper": "asset/character/icon/layers/archer/front/attack/rigid/bow-upper.png",
-        "pull-upper": "asset/character/icon/layers/archer/front/attack/rigid/pull-upper.png",
-        "bow-forearm": "asset/character/icon/layers/archer/front/attack/rigid/bow-forearm.png",
-        "pull-forearm": "asset/character/icon/layers/archer/front/attack/rigid/pull-forearm.png",
-        "bow-hand": "asset/character/icon/layers/archer/front/attack/rigid/bow-hand.png",
-        "pull-hand": "asset/character/icon/layers/archer/front/attack/rigid/pull-hand.png",
-        "base": "asset/character/icon/layers/archer/front/attack/rigid/base.png",
-        "under": "asset/character/icon/layers/archer/front/attack/rigid/under.png",
-        "head": "asset/character/icon/layers/archer/front/attack/rigid/head.png",
-        "hair": "asset/character/icon/layers/archer/front/attack/rigid/hair.png",
-        "bow": "asset/character/icon/layers/archer/front/attack/rigid/bow.png",
-        "arrow": "asset/character/icon/layers/archer/front/attack/rigid/arrow.png"
+        "bow-upper": "asset/character/player/icon/layers/archer/front/attack/rigid/bow-upper.png",
+        "pull-upper": "asset/character/player/icon/layers/archer/front/attack/rigid/pull-upper.png",
+        "bow-forearm": "asset/character/player/icon/layers/archer/front/attack/rigid/bow-forearm.png",
+        "pull-forearm": "asset/character/player/icon/layers/archer/front/attack/rigid/pull-forearm.png",
+        "bow-hand": "asset/character/player/icon/layers/archer/front/attack/rigid/bow-hand.png",
+        "pull-hand": "asset/character/player/icon/layers/archer/front/attack/rigid/pull-hand.png",
+        "base": "asset/character/player/icon/layers/archer/front/attack/rigid/base.png",
+        "under": "asset/character/player/icon/layers/archer/front/attack/rigid/under.png",
+        "head": "asset/character/player/icon/layers/archer/front/attack/rigid/head.png",
+        "hair": "asset/character/player/icon/layers/archer/front/attack/rigid/hair.png",
+        "bow": "asset/character/player/icon/layers/archer/front/attack/rigid/bow.png",
+        "arrow": "asset/character/player/icon/layers/archer/front/attack/rigid/arrow.png"
       },
       "calibration": {
         "bow-upper": {
@@ -349,7 +349,7 @@
         145,
         155
       ],
-      "source_atlas": "asset/character/icon/layers/archer/front/attack/rigid/limb-atlas.png",
+      "source_atlas": "asset/character/player/icon/layers/archer/front/attack/rigid/limb-atlas.png",
       "shared_limb_art": "front"
     },
     "back": {
@@ -483,18 +483,18 @@
         ]
       ],
       "parts": {
-        "bow-upper": "asset/character/icon/layers/archer/back/attack/rigid/bow-upper.png",
-        "pull-upper": "asset/character/icon/layers/archer/back/attack/rigid/pull-upper.png",
-        "bow-forearm": "asset/character/icon/layers/archer/back/attack/rigid/bow-forearm.png",
-        "pull-forearm": "asset/character/icon/layers/archer/back/attack/rigid/pull-forearm.png",
-        "bow-hand": "asset/character/icon/layers/archer/back/attack/rigid/bow-hand.png",
-        "pull-hand": "asset/character/icon/layers/archer/back/attack/rigid/pull-hand.png",
-        "base": "asset/character/icon/layers/archer/back/attack/rigid/base.png",
-        "under": "asset/character/icon/layers/archer/back/attack/rigid/under.png",
-        "head": "asset/character/icon/layers/archer/back/attack/rigid/head.png",
-        "hair": "asset/character/icon/layers/archer/back/attack/rigid/hair.png",
-        "bow": "asset/character/icon/layers/archer/back/attack/rigid/bow.png",
-        "arrow": "asset/character/icon/layers/archer/back/attack/rigid/arrow.png"
+        "bow-upper": "asset/character/player/icon/layers/archer/back/attack/rigid/bow-upper.png",
+        "pull-upper": "asset/character/player/icon/layers/archer/back/attack/rigid/pull-upper.png",
+        "bow-forearm": "asset/character/player/icon/layers/archer/back/attack/rigid/bow-forearm.png",
+        "pull-forearm": "asset/character/player/icon/layers/archer/back/attack/rigid/pull-forearm.png",
+        "bow-hand": "asset/character/player/icon/layers/archer/back/attack/rigid/bow-hand.png",
+        "pull-hand": "asset/character/player/icon/layers/archer/back/attack/rigid/pull-hand.png",
+        "base": "asset/character/player/icon/layers/archer/back/attack/rigid/base.png",
+        "under": "asset/character/player/icon/layers/archer/back/attack/rigid/under.png",
+        "head": "asset/character/player/icon/layers/archer/back/attack/rigid/head.png",
+        "hair": "asset/character/player/icon/layers/archer/back/attack/rigid/hair.png",
+        "bow": "asset/character/player/icon/layers/archer/back/attack/rigid/bow.png",
+        "arrow": "asset/character/player/icon/layers/archer/back/attack/rigid/arrow.png"
       },
       "calibration": {
         "bow-upper": {
@@ -686,7 +686,7 @@
         174,
         154
       ],
-      "source_atlas": "asset/character/icon/layers/archer/back/attack/rigid/limb-atlas.png",
+      "source_atlas": "asset/character/player/icon/layers/archer/back/attack/rigid/limb-atlas.png",
       "shared_limb_art": "back"
     },
     "side": {
@@ -820,18 +820,18 @@
         ]
       ],
       "parts": {
-        "bow-upper": "asset/character/icon/layers/archer/side/attack/rigid/bow-upper.png",
-        "pull-upper": "asset/character/icon/layers/archer/side/attack/rigid/pull-upper.png",
-        "bow-forearm": "asset/character/icon/layers/archer/side/attack/rigid/bow-forearm.png",
-        "pull-forearm": "asset/character/icon/layers/archer/side/attack/rigid/pull-forearm.png",
-        "bow-hand": "asset/character/icon/layers/archer/side/attack/rigid/bow-hand.png",
-        "pull-hand": "asset/character/icon/layers/archer/side/attack/rigid/pull-hand.png",
-        "base": "asset/character/icon/layers/archer/side/attack/rigid/base.png",
-        "under": "asset/character/icon/layers/archer/side/attack/rigid/under.png",
-        "head": "asset/character/icon/layers/archer/side/attack/rigid/head.png",
-        "hair": "asset/character/icon/layers/archer/side/attack/rigid/hair.png",
-        "bow": "asset/character/icon/layers/archer/side/attack/rigid/bow.png",
-        "arrow": "asset/character/icon/layers/archer/side/attack/rigid/arrow.png"
+        "bow-upper": "asset/character/player/icon/layers/archer/side/attack/rigid/bow-upper.png",
+        "pull-upper": "asset/character/player/icon/layers/archer/side/attack/rigid/pull-upper.png",
+        "bow-forearm": "asset/character/player/icon/layers/archer/side/attack/rigid/bow-forearm.png",
+        "pull-forearm": "asset/character/player/icon/layers/archer/side/attack/rigid/pull-forearm.png",
+        "bow-hand": "asset/character/player/icon/layers/archer/side/attack/rigid/bow-hand.png",
+        "pull-hand": "asset/character/player/icon/layers/archer/side/attack/rigid/pull-hand.png",
+        "base": "asset/character/player/icon/layers/archer/side/attack/rigid/base.png",
+        "under": "asset/character/player/icon/layers/archer/side/attack/rigid/under.png",
+        "head": "asset/character/player/icon/layers/archer/side/attack/rigid/head.png",
+        "hair": "asset/character/player/icon/layers/archer/side/attack/rigid/hair.png",
+        "bow": "asset/character/player/icon/layers/archer/side/attack/rigid/bow.png",
+        "arrow": "asset/character/player/icon/layers/archer/side/attack/rigid/arrow.png"
       },
       "calibration": {
         "bow-upper": {
@@ -1023,7 +1023,7 @@
         141,
         155
       ],
-      "source_atlas": "asset/character/icon/layers/archer/side/attack/rigid/limb-atlas.png",
+      "source_atlas": "asset/character/player/icon/layers/archer/side/attack/rigid/limb-atlas.png",
       "shared_limb_art": "front"
     }
   }

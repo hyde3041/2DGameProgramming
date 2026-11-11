@@ -34,8 +34,8 @@
   },
   "views": {
     "front": {
-      "original": "asset/character/icon/layers/archer/front/aligned/visible/head.png",
-      "mask": "asset/character/icon/layers/archer/front/attack/hair/edit-mask.png",
+      "original": "asset/character/player/icon/layers/archer/front/aligned/visible/head.png",
+      "mask": "asset/character/player/icon/layers/archer/front/attack/hair/edit-mask.png",
       "protected_boxes": [
         [
           136,
@@ -73,7 +73,7 @@
       "poses": [
         {
           "index": 1,
-          "file": "asset/character/icon/layers/archer/front/attack/hair/head-1.png",
+          "file": "asset/character/player/icon/layers/archer/front/attack/hair/head-1.png",
           "registration": {
             "dx": 0,
             "dy": 0,
@@ -84,7 +84,7 @@
         },
         {
           "index": 2,
-          "file": "asset/character/icon/layers/archer/front/attack/hair/head-2.png",
+          "file": "asset/character/player/icon/layers/archer/front/attack/hair/head-2.png",
           "registration": {
             "dx": -0.25,
             "dy": -0.25,
@@ -96,8 +96,8 @@
       ]
     },
     "back": {
-      "original": "asset/character/icon/layers/archer/back/aligned/visible/head.png",
-      "mask": "asset/character/icon/layers/archer/back/attack/hair/edit-mask.png",
+      "original": "asset/character/player/icon/layers/archer/back/aligned/visible/head.png",
+      "mask": "asset/character/player/icon/layers/archer/back/attack/hair/edit-mask.png",
       "protected_boxes": [
         [
           156,
@@ -110,7 +110,7 @@
       "poses": [
         {
           "index": 1,
-          "file": "asset/character/icon/layers/archer/back/attack/hair/head-1.png",
+          "file": "asset/character/player/icon/layers/archer/back/attack/hair/head-1.png",
           "registration": {
             "dx": 0,
             "dy": 0,
@@ -121,7 +121,7 @@
         },
         {
           "index": 2,
-          "file": "asset/character/icon/layers/archer/back/attack/hair/head-2.png",
+          "file": "asset/character/player/icon/layers/archer/back/attack/hair/head-2.png",
           "registration": {
             "dx": -0.5,
             "dy": 0,
@@ -133,8 +133,8 @@
       ]
     },
     "side": {
-      "original": "asset/character/icon/layers/archer/side/aligned/visible/head.png",
-      "mask": "asset/character/icon/layers/archer/side/attack/hair/edit-mask.png",
+      "original": "asset/character/player/icon/layers/archer/side/aligned/visible/head.png",
+      "mask": "asset/character/player/icon/layers/archer/side/attack/hair/edit-mask.png",
       "protected_boxes": [
         [
           134,
@@ -159,7 +159,7 @@
       "poses": [
         {
           "index": 1,
-          "file": "asset/character/icon/layers/archer/side/attack/hair/head-1.png",
+          "file": "asset/character/player/icon/layers/archer/side/attack/hair/head-1.png",
           "registration": {
             "dx": -0.25,
             "dy": 0,
@@ -170,7 +170,7 @@
         },
         {
           "index": 2,
-          "file": "asset/character/icon/layers/archer/side/attack/hair/head-2.png",
+          "file": "asset/character/player/icon/layers/archer/side/attack/hair/head-2.png",
           "registration": {
             "dx": -0.5,
             "dy": -0.25,

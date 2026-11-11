@@ -4,64 +4,64 @@
   "workflow": "built-in image_gen localized arm editing; original pixels retained outside arm masks",
   "overrides": {
     "front": {
-      "pose-1": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-01.png",
-      "pose-2": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-02.png",
-      "pose-3": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-03.png",
-      "pose-4": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-04.png",
-      "pose-5": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-05.png",
-      "pose-6": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-06.png",
-      "pose-7": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-07.png",
-      "pose-8": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-08.png",
-      "pose-9": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-09.png",
-      "pose-10": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-10.png",
-      "pose-11": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-11.png",
-      "pose-12": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-12.png",
-      "pose-13": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-13.png",
-      "pose-14": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-14.png",
-      "pose-15": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-15.png"
+      "pose-1": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-01.png",
+      "pose-2": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-02.png",
+      "pose-3": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-03.png",
+      "pose-4": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-04.png",
+      "pose-5": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-05.png",
+      "pose-6": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-06.png",
+      "pose-7": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-07.png",
+      "pose-8": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-08.png",
+      "pose-9": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-09.png",
+      "pose-10": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-10.png",
+      "pose-11": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-11.png",
+      "pose-12": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-12.png",
+      "pose-13": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-13.png",
+      "pose-14": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-14.png",
+      "pose-15": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-15.png"
     },
     "back": {
-      "pose-1": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-01.png",
-      "pose-2": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-02.png",
-      "pose-3": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-03.png",
-      "pose-4": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-04.png",
-      "pose-5": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-05.png",
-      "pose-6": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-06.png",
-      "pose-7": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-07.png",
-      "pose-8": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-08.png",
-      "pose-9": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-09.png",
-      "pose-10": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-10.png",
-      "pose-11": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-11.png",
-      "pose-12": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-12.png",
-      "pose-13": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-13.png",
-      "pose-14": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-14.png",
-      "pose-15": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-15.png"
+      "pose-1": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-01.png",
+      "pose-2": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-02.png",
+      "pose-3": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-03.png",
+      "pose-4": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-04.png",
+      "pose-5": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-05.png",
+      "pose-6": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-06.png",
+      "pose-7": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-07.png",
+      "pose-8": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-08.png",
+      "pose-9": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-09.png",
+      "pose-10": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-10.png",
+      "pose-11": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-11.png",
+      "pose-12": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-12.png",
+      "pose-13": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-13.png",
+      "pose-14": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-14.png",
+      "pose-15": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-15.png"
     },
     "side": {
-      "pose-1": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-01.png",
-      "pose-2": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-02.png",
-      "pose-3": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-03.png",
-      "pose-4": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-04.png",
-      "pose-5": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-05.png",
-      "pose-6": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-06.png",
-      "pose-7": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-07.png",
-      "pose-8": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-08.png",
-      "pose-9": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-09.png",
-      "pose-10": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-10.png",
-      "pose-11": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-11.png",
-      "pose-12": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-12.png",
-      "pose-13": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-13.png",
-      "pose-14": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-14.png",
-      "pose-15": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-15.png"
+      "pose-1": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-01.png",
+      "pose-2": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-02.png",
+      "pose-3": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-03.png",
+      "pose-4": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-04.png",
+      "pose-5": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-05.png",
+      "pose-6": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-06.png",
+      "pose-7": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-07.png",
+      "pose-8": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-08.png",
+      "pose-9": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-09.png",
+      "pose-10": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-10.png",
+      "pose-11": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-11.png",
+      "pose-12": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-12.png",
+      "pose-13": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-13.png",
+      "pose-14": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-14.png",
+      "pose-15": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-15.png"
     }
   },
   "views": {
     "front": [
       {
         "frame": 1,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-01.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-01.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-01.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-01.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-01.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-01.png",
         "source_cell": {
           "left": 311,
           "top": 0,
@@ -98,9 +98,9 @@
       },
       {
         "frame": 2,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-02.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-02.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-02.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-02.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-02.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-02.png",
         "source_cell": {
           "left": 623,
           "top": 0,
@@ -137,9 +137,9 @@
       },
       {
         "frame": 3,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-03.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-03.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-03.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-03.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-03.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-03.png",
         "source_cell": {
           "left": 934,
           "top": 0,
@@ -176,9 +176,9 @@
       },
       {
         "frame": 4,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-04.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-04.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-04.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-04.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-04.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-04.png",
         "source_cell": {
           "left": 0,
           "top": 315,
@@ -215,9 +215,9 @@
       },
       {
         "frame": 5,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-05.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-05.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-05.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-05.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-05.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-05.png",
         "source_cell": {
           "left": 311,
           "top": 315,
@@ -254,9 +254,9 @@
       },
       {
         "frame": 6,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-06.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-06.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-06.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-06.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-06.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-06.png",
         "source_cell": {
           "left": 623,
           "top": 315,
@@ -293,9 +293,9 @@
       },
       {
         "frame": 7,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-07.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-07.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-07.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-07.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-07.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-07.png",
         "source_cell": {
           "left": 934,
           "top": 315,
@@ -332,9 +332,9 @@
       },
       {
         "frame": 8,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-08.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-08.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-08.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-08.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-08.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-08.png",
         "source_cell": {
           "left": 0,
           "top": 631,
@@ -371,9 +371,9 @@
       },
       {
         "frame": 9,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-09.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-09.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-09.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-09.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-09.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-09.png",
         "source_cell": {
           "left": 311,
           "top": 631,
@@ -410,9 +410,9 @@
       },
       {
         "frame": 10,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-10.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-10.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-10.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-10.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-10.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-10.png",
         "source_cell": {
           "left": 623,
           "top": 631,
@@ -449,9 +449,9 @@
       },
       {
         "frame": 11,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-11.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-11.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-11.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-11.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-11.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-11.png",
         "source_cell": {
           "left": 934,
           "top": 631,
@@ -488,9 +488,9 @@
       },
       {
         "frame": 12,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-12.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-12.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-12.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-12.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-12.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-12.png",
         "source_cell": {
           "left": 0,
           "top": 946,
@@ -527,9 +527,9 @@
       },
       {
         "frame": 13,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-13.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-13.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-13.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-13.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-13.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-13.png",
         "source_cell": {
           "left": 311,
           "top": 946,
@@ -566,9 +566,9 @@
       },
       {
         "frame": 14,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-14.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-14.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-14.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-14.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-14.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-14.png",
         "source_cell": {
           "left": 623,
           "top": 946,
@@ -605,9 +605,9 @@
       },
       {
         "frame": 15,
-        "input": "asset/character/icon/layers/archer/front/attack/source-v2/upper-body-15.png",
-        "file": "asset/character/icon/layers/archer/front/attack/arm-edit/upper-body-15.png",
-        "mask": "asset/character/icon/layers/archer/front/attack/arm-edit/mask-15.png",
+        "input": "asset/character/player/icon/layers/archer/front/attack/source-v2/upper-body-15.png",
+        "file": "asset/character/player/icon/layers/archer/front/attack/arm-edit/upper-body-15.png",
+        "mask": "asset/character/player/icon/layers/archer/front/attack/arm-edit/mask-15.png",
         "source_cell": {
           "left": 934,
           "top": 946,
@@ -646,9 +646,9 @@
     "side": [
       {
         "frame": 1,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-01.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-01.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-01.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-01.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-01.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-01.png",
         "source_cell": {
           "left": 315,
           "top": 0,
@@ -685,9 +685,9 @@
       },
       {
         "frame": 2,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-02.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-02.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-02.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-02.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-02.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-02.png",
         "source_cell": {
           "left": 630,
           "top": 0,
@@ -724,9 +724,9 @@
       },
       {
         "frame": 3,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-03.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-03.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-03.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-03.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-03.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-03.png",
         "source_cell": {
           "left": 945,
           "top": 0,
@@ -763,9 +763,9 @@
       },
       {
         "frame": 4,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-04.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-04.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-04.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-04.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-04.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-04.png",
         "source_cell": {
           "left": 0,
           "top": 311,
@@ -802,9 +802,9 @@
       },
       {
         "frame": 5,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-05.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-05.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-05.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-05.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-05.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-05.png",
         "source_cell": {
           "left": 315,
           "top": 311,
@@ -841,9 +841,9 @@
       },
       {
         "frame": 6,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-06.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-06.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-06.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-06.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-06.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-06.png",
         "source_cell": {
           "left": 630,
           "top": 311,
@@ -880,9 +880,9 @@
       },
       {
         "frame": 7,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-07.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-07.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-07.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-07.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-07.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-07.png",
         "source_cell": {
           "left": 945,
           "top": 311,
@@ -919,9 +919,9 @@
       },
       {
         "frame": 8,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-08.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-08.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-08.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-08.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-08.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-08.png",
         "source_cell": {
           "left": 0,
           "top": 623,
@@ -958,9 +958,9 @@
       },
       {
         "frame": 9,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-09.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-09.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-09.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-09.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-09.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-09.png",
         "source_cell": {
           "left": 315,
           "top": 623,
@@ -997,9 +997,9 @@
       },
       {
         "frame": 10,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-10.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-10.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-10.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-10.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-10.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-10.png",
         "source_cell": {
           "left": 630,
           "top": 623,
@@ -1036,9 +1036,9 @@
       },
       {
         "frame": 11,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-11.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-11.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-11.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-11.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-11.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-11.png",
         "source_cell": {
           "left": 945,
           "top": 623,
@@ -1075,9 +1075,9 @@
       },
       {
         "frame": 12,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-12.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-12.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-12.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-12.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-12.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-12.png",
         "source_cell": {
           "left": 0,
           "top": 935,
@@ -1114,9 +1114,9 @@
       },
       {
         "frame": 13,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-13.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-13.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-13.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-13.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-13.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-13.png",
         "source_cell": {
           "left": 315,
           "top": 935,
@@ -1153,9 +1153,9 @@
       },
       {
         "frame": 14,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-14.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-14.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-14.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-14.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-14.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-14.png",
         "source_cell": {
           "left": 630,
           "top": 935,
@@ -1192,9 +1192,9 @@
       },
       {
         "frame": 15,
-        "input": "asset/character/icon/layers/archer/side/attack/source-v2/upper-body-15.png",
-        "file": "asset/character/icon/layers/archer/side/attack/arm-edit/upper-body-15.png",
-        "mask": "asset/character/icon/layers/archer/side/attack/arm-edit/mask-15.png",
+        "input": "asset/character/player/icon/layers/archer/side/attack/source-v2/upper-body-15.png",
+        "file": "asset/character/player/icon/layers/archer/side/attack/arm-edit/upper-body-15.png",
+        "mask": "asset/character/player/icon/layers/archer/side/attack/arm-edit/mask-15.png",
         "source_cell": {
           "left": 945,
           "top": 935,
@@ -1233,9 +1233,9 @@
     "back": [
       {
         "frame": 1,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-01.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-01.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-01.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-01.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-01.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-01.png",
         "source_cell": {
           "left": 315,
           "top": 0,
@@ -1272,9 +1272,9 @@
       },
       {
         "frame": 2,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-02.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-02.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-02.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-02.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-02.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-02.png",
         "source_cell": {
           "left": 631,
           "top": 0,
@@ -1311,9 +1311,9 @@
       },
       {
         "frame": 3,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-03.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-03.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-03.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-03.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-03.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-03.png",
         "source_cell": {
           "left": 946,
           "top": 0,
@@ -1350,9 +1350,9 @@
       },
       {
         "frame": 4,
-        "input": "asset/character/icon/layers/archer/back/attack/cleanup/upper-body-04.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-04.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-04.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/cleanup/upper-body-04.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-04.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-04.png",
         "source_cell": {
           "left": 0,
           "top": 311,
@@ -1389,9 +1389,9 @@
       },
       {
         "frame": 5,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-05.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-05.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-05.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-05.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-05.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-05.png",
         "source_cell": {
           "left": 315,
           "top": 311,
@@ -1428,9 +1428,9 @@
       },
       {
         "frame": 6,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-06.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-06.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-06.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-06.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-06.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-06.png",
         "source_cell": {
           "left": 631,
           "top": 311,
@@ -1467,9 +1467,9 @@
       },
       {
         "frame": 7,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-07.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-07.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-07.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-07.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-07.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-07.png",
         "source_cell": {
           "left": 946,
           "top": 311,
@@ -1506,9 +1506,9 @@
       },
       {
         "frame": 8,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-08.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-08.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-08.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-08.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-08.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-08.png",
         "source_cell": {
           "left": 0,
           "top": 623,
@@ -1545,9 +1545,9 @@
       },
       {
         "frame": 9,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-09.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-09.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-09.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-09.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-09.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-09.png",
         "source_cell": {
           "left": 315,
           "top": 623,
@@ -1584,9 +1584,9 @@
       },
       {
         "frame": 10,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-10.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-10.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-10.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-10.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-10.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-10.png",
         "source_cell": {
           "left": 631,
           "top": 623,
@@ -1623,9 +1623,9 @@
       },
       {
         "frame": 11,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-11.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-11.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-11.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-11.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-11.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-11.png",
         "source_cell": {
           "left": 946,
           "top": 623,
@@ -1662,9 +1662,9 @@
       },
       {
         "frame": 12,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-12.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-12.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-12.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-12.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-12.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-12.png",
         "source_cell": {
           "left": 0,
           "top": 934,
@@ -1701,9 +1701,9 @@
       },
       {
         "frame": 13,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-13.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-13.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-13.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-13.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-13.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-13.png",
         "source_cell": {
           "left": 315,
           "top": 934,
@@ -1740,9 +1740,9 @@
       },
       {
         "frame": 14,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-14.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-14.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-14.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-14.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-14.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-14.png",
         "source_cell": {
           "left": 631,
           "top": 934,
@@ -1779,9 +1779,9 @@
       },
       {
         "frame": 15,
-        "input": "asset/character/icon/layers/archer/back/attack/source-v2/upper-body-15.png",
-        "file": "asset/character/icon/layers/archer/back/attack/arm-edit/upper-body-15.png",
-        "mask": "asset/character/icon/layers/archer/back/attack/arm-edit/mask-15.png",
+        "input": "asset/character/player/icon/layers/archer/back/attack/source-v2/upper-body-15.png",
+        "file": "asset/character/player/icon/layers/archer/back/attack/arm-edit/upper-body-15.png",
+        "mask": "asset/character/player/icon/layers/archer/back/attack/arm-edit/mask-15.png",
         "source_cell": {
           "left": 946,
           "top": 934,

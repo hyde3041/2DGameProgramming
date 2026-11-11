@@ -13,19 +13,19 @@
   "views": {
     "front": {
       "parts": {
-        "idle": "asset/character/icon/layers/crossbowman/front/attack/connected/idle-upper.png",
-        "aim": "asset/character/icon/layers/crossbowman/front/attack/connected/aim-upper.png",
-        "fire": "asset/character/icon/layers/crossbowman/front/attack/connected/fire-upper.png",
-        "recover": "asset/character/icon/layers/crossbowman/front/attack/connected/recover-upper.png",
-        "lift-1": "asset/character/icon/layers/crossbowman/front/attack/connected/lift-1-upper.png",
-        "lift-2": "asset/character/icon/layers/crossbowman/front/attack/connected/lift-2-upper.png",
-        "lift-3": "asset/character/icon/layers/crossbowman/front/attack/connected/lift-3-upper.png",
-        "feet": "asset/character/icon/layers/crossbowman/front/attack/connected/feet.png",
-        "bolt": "asset/character/icon/layers/crossbowman/front/attack/connected/bolt.png"
+        "idle": "asset/character/player/icon/layers/crossbowman/front/attack/connected/idle-upper.png",
+        "aim": "asset/character/player/icon/layers/crossbowman/front/attack/connected/aim-upper.png",
+        "fire": "asset/character/player/icon/layers/crossbowman/front/attack/connected/fire-upper.png",
+        "recover": "asset/character/player/icon/layers/crossbowman/front/attack/connected/recover-upper.png",
+        "lift-1": "asset/character/player/icon/layers/crossbowman/front/attack/connected/lift-1-upper.png",
+        "lift-2": "asset/character/player/icon/layers/crossbowman/front/attack/connected/lift-2-upper.png",
+        "lift-3": "asset/character/player/icon/layers/crossbowman/front/attack/connected/lift-3-upper.png",
+        "feet": "asset/character/player/icon/layers/crossbowman/front/attack/connected/feet.png",
+        "bolt": "asset/character/player/icon/layers/crossbowman/front/attack/connected/bolt.png"
       },
       "sources": {
         "idle": {
-          "input": "asset/character/main/3-crossbowman/front/idle-sheet.png",
+          "input": "asset/character/player/main/3-crossbowman/front/idle-sheet.png",
           "original_rgba_sha256": "c035d04c588b86a7aa0a63b778bf8da99eef9b1b36e326f28523182a035e4581",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -34,7 +34,7 @@
           ]
         },
         "aim": {
-          "input": "asset/character/icon/source/crossbowman/front/attack_01.png",
+          "input": "asset/character/player/icon/source/crossbowman/front/attack_01.png",
           "original_rgba_sha256": "8e2e3cf0c99eedf01e6e44114effb42058c14dcc2ac7130d8421de121b86ea80",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -43,7 +43,7 @@
           ]
         },
         "fire": {
-          "input": "asset/character/icon/source/crossbowman/front/attack_02.png",
+          "input": "asset/character/player/icon/source/crossbowman/front/attack_02.png",
           "original_rgba_sha256": "6205ee431585f0b51fb6f67334350c36c32757d6899754bd034480716d9fa181",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -52,7 +52,7 @@
           ]
         },
         "recover": {
-          "input": "asset/character/icon/source/crossbowman/front/attack_03.png",
+          "input": "asset/character/player/icon/source/crossbowman/front/attack_03.png",
           "original_rgba_sha256": "a7675add6f362789696e4cabbce74d90678f0851fa1a5f717e3e2d8c635e79c4",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -61,7 +61,7 @@
           ]
         },
         "lift-1": {
-          "input": "asset/character/icon/layers/crossbowman/front/attack/lift/lift-01.png",
+          "input": "asset/character/player/icon/layers/crossbowman/front/attack/lift/lift-01.png",
           "original_rgba_sha256": "1e4840a9a6e2a0daf0a4c948390c736cfd54dc6022adfccb7aaa8f9351923995",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -70,7 +70,7 @@
           ]
         },
         "lift-2": {
-          "input": "asset/character/icon/layers/crossbowman/front/attack/lift/lift-02.png",
+          "input": "asset/character/player/icon/layers/crossbowman/front/attack/lift/lift-02.png",
           "original_rgba_sha256": "21a7dfc088982b9f60f9c696ab3b172f591d92d5705cf2b51620e39382d037d4",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -79,7 +79,7 @@
           ]
         },
         "lift-3": {
-          "input": "asset/character/icon/layers/crossbowman/front/attack/lift/lift-03.png",
+          "input": "asset/character/player/icon/layers/crossbowman/front/attack/lift/lift-03.png",
           "original_rgba_sha256": "40f212e4238d7868b81b618fb9eb8bf9c43ddc77e6413fee3612430cdba0c8f1",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -96,7 +96,7 @@
         238,
         208
       ],
-      "foot_reference_mask": "asset/character/icon/layers/crossbowman/front/aligned/visible/legs.png",
+      "foot_reference_mask": "asset/character/player/icon/layers/crossbowman/front/aligned/visible/legs.png",
       "foot_boxes": [
         [
           119,
@@ -324,19 +324,19 @@
     },
     "back": {
       "parts": {
-        "idle": "asset/character/icon/layers/crossbowman/back/attack/connected/idle-upper.png",
-        "aim": "asset/character/icon/layers/crossbowman/back/attack/connected/aim-upper.png",
-        "fire": "asset/character/icon/layers/crossbowman/back/attack/connected/fire-upper.png",
-        "recover": "asset/character/icon/layers/crossbowman/back/attack/connected/recover-upper.png",
-        "lift-1": "asset/character/icon/layers/crossbowman/back/attack/connected/lift-1-upper.png",
-        "lift-2": "asset/character/icon/layers/crossbowman/back/attack/connected/lift-2-upper.png",
-        "lift-3": "asset/character/icon/layers/crossbowman/back/attack/connected/lift-3-upper.png",
-        "feet": "asset/character/icon/layers/crossbowman/back/attack/connected/feet.png",
-        "bolt": "asset/character/icon/layers/crossbowman/back/attack/connected/bolt.png"
+        "idle": "asset/character/player/icon/layers/crossbowman/back/attack/connected/idle-upper.png",
+        "aim": "asset/character/player/icon/layers/crossbowman/back/attack/connected/aim-upper.png",
+        "fire": "asset/character/player/icon/layers/crossbowman/back/attack/connected/fire-upper.png",
+        "recover": "asset/character/player/icon/layers/crossbowman/back/attack/connected/recover-upper.png",
+        "lift-1": "asset/character/player/icon/layers/crossbowman/back/attack/connected/lift-1-upper.png",
+        "lift-2": "asset/character/player/icon/layers/crossbowman/back/attack/connected/lift-2-upper.png",
+        "lift-3": "asset/character/player/icon/layers/crossbowman/back/attack/connected/lift-3-upper.png",
+        "feet": "asset/character/player/icon/layers/crossbowman/back/attack/connected/feet.png",
+        "bolt": "asset/character/player/icon/layers/crossbowman/back/attack/connected/bolt.png"
       },
       "sources": {
         "idle": {
-          "input": "asset/character/main/3-crossbowman/back/idle-sheet.png",
+          "input": "asset/character/player/main/3-crossbowman/back/idle-sheet.png",
           "original_rgba_sha256": "e45f5e74e1d6fff6b029d7246242599201fe7ce0edd8c039d43426db41420328",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -345,7 +345,7 @@
           ]
         },
         "aim": {
-          "input": "asset/character/icon/source/crossbowman/back/attack_01.png",
+          "input": "asset/character/player/icon/source/crossbowman/back/attack_01.png",
           "original_rgba_sha256": "ab20973b073ba6b7ecdbb735a6cf4b3338ce643f56522b60420782e40815fc7a",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -354,7 +354,7 @@
           ]
         },
         "fire": {
-          "input": "asset/character/icon/source/crossbowman/back/attack_02.png",
+          "input": "asset/character/player/icon/source/crossbowman/back/attack_02.png",
           "original_rgba_sha256": "8aa8a971525c0e847b71219eeee92fc6757e98368a1e74dfa6c858508bd842aa",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -363,7 +363,7 @@
           ]
         },
         "recover": {
-          "input": "asset/character/icon/source/crossbowman/back/attack_03.png",
+          "input": "asset/character/player/icon/source/crossbowman/back/attack_03.png",
           "original_rgba_sha256": "44cfac28e15292dbb234c03729d3b70f1b21e9ac2d7481c0fcf29aaefc742985",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -372,7 +372,7 @@
           ]
         },
         "lift-1": {
-          "input": "asset/character/icon/layers/crossbowman/back/attack/lift/lift-01.png",
+          "input": "asset/character/player/icon/layers/crossbowman/back/attack/lift/lift-01.png",
           "original_rgba_sha256": "67cf9f512ba5d41c5e617fce0b9df7c9913089b5e37b5720ba9f501314350cef",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -381,7 +381,7 @@
           ]
         },
         "lift-2": {
-          "input": "asset/character/icon/layers/crossbowman/back/attack/lift/lift-02.png",
+          "input": "asset/character/player/icon/layers/crossbowman/back/attack/lift/lift-02.png",
           "original_rgba_sha256": "a072754dcd378c2e42544971e3d99ad9042012f5e32939a60abe0021e0324e2c",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -390,7 +390,7 @@
           ]
         },
         "lift-3": {
-          "input": "asset/character/icon/layers/crossbowman/back/attack/lift/lift-03.png",
+          "input": "asset/character/player/icon/layers/crossbowman/back/attack/lift/lift-03.png",
           "original_rgba_sha256": "83943b211b16f70c79532977724b89a74dac0e5ea59c5d968d0e8517f57d4c61",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -407,7 +407,7 @@
         215,
         204
       ],
-      "foot_reference_mask": "asset/character/icon/layers/crossbowman/back/aligned/visible/legs.png",
+      "foot_reference_mask": "asset/character/player/icon/layers/crossbowman/back/aligned/visible/legs.png",
       "foot_boxes": [
         [
           127,
@@ -635,19 +635,19 @@
     },
     "side": {
       "parts": {
-        "idle": "asset/character/icon/layers/crossbowman/side/attack/connected/idle-upper.png",
-        "aim": "asset/character/icon/layers/crossbowman/side/attack/connected/aim-upper.png",
-        "fire": "asset/character/icon/layers/crossbowman/side/attack/connected/fire-upper.png",
-        "recover": "asset/character/icon/layers/crossbowman/side/attack/connected/recover-upper.png",
-        "lift-1": "asset/character/icon/layers/crossbowman/side/attack/connected/lift-1-upper.png",
-        "lift-2": "asset/character/icon/layers/crossbowman/side/attack/connected/lift-2-upper.png",
-        "lift-3": "asset/character/icon/layers/crossbowman/side/attack/connected/lift-3-upper.png",
-        "feet": "asset/character/icon/layers/crossbowman/side/attack/connected/feet.png",
-        "bolt": "asset/character/icon/layers/crossbowman/side/attack/connected/bolt.png"
+        "idle": "asset/character/player/icon/layers/crossbowman/side/attack/connected/idle-upper.png",
+        "aim": "asset/character/player/icon/layers/crossbowman/side/attack/connected/aim-upper.png",
+        "fire": "asset/character/player/icon/layers/crossbowman/side/attack/connected/fire-upper.png",
+        "recover": "asset/character/player/icon/layers/crossbowman/side/attack/connected/recover-upper.png",
+        "lift-1": "asset/character/player/icon/layers/crossbowman/side/attack/connected/lift-1-upper.png",
+        "lift-2": "asset/character/player/icon/layers/crossbowman/side/attack/connected/lift-2-upper.png",
+        "lift-3": "asset/character/player/icon/layers/crossbowman/side/attack/connected/lift-3-upper.png",
+        "feet": "asset/character/player/icon/layers/crossbowman/side/attack/connected/feet.png",
+        "bolt": "asset/character/player/icon/layers/crossbowman/side/attack/connected/bolt.png"
       },
       "sources": {
         "idle": {
-          "input": "asset/character/main/3-crossbowman/side/idle-sheet.png",
+          "input": "asset/character/player/main/3-crossbowman/side/idle-sheet.png",
           "original_rgba_sha256": "174769435510b5c654ed3380149a0f07e599f963edba36bbad954388e3f1ca99",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -656,7 +656,7 @@
           ]
         },
         "aim": {
-          "input": "asset/character/icon/source/crossbowman/side/attack_01.png",
+          "input": "asset/character/player/icon/source/crossbowman/side/attack_01.png",
           "original_rgba_sha256": "580f370ee29362227ffd4cf8b88f5a58d5a1a8118dd5f3a509bc703900cddeaf",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -665,7 +665,7 @@
           ]
         },
         "fire": {
-          "input": "asset/character/icon/source/crossbowman/side/attack_02.png",
+          "input": "asset/character/player/icon/source/crossbowman/side/attack_02.png",
           "original_rgba_sha256": "1e54cccf8b682b13621092ff7974fce5fa524695c394fc7d2cdf2ac93cc8abc9",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -674,7 +674,7 @@
           ]
         },
         "recover": {
-          "input": "asset/character/icon/source/crossbowman/side/attack_03.png",
+          "input": "asset/character/player/icon/source/crossbowman/side/attack_03.png",
           "original_rgba_sha256": "0497bee323352b75a4b8f6f8c5b302d1378d937d3653555b44e32f5186f17fc2",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -683,7 +683,7 @@
           ]
         },
         "lift-1": {
-          "input": "asset/character/icon/layers/crossbowman/side/attack/lift/lift-01.png",
+          "input": "asset/character/player/icon/layers/crossbowman/side/attack/lift/lift-01.png",
           "original_rgba_sha256": "89503048c9fd0fc88b18d3cf7883ceb566bd359294208ccc7d37df2acdf5c6ea",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -692,7 +692,7 @@
           ]
         },
         "lift-2": {
-          "input": "asset/character/icon/layers/crossbowman/side/attack/lift/lift-02.png",
+          "input": "asset/character/player/icon/layers/crossbowman/side/attack/lift/lift-02.png",
           "original_rgba_sha256": "6e2fab5fbe98bba0c5689bfa43f442c457d848d437fc4fd9c324a54ff4d5ec5d",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -701,7 +701,7 @@
           ]
         },
         "lift-3": {
-          "input": "asset/character/icon/layers/crossbowman/side/attack/lift/lift-03.png",
+          "input": "asset/character/player/icon/layers/crossbowman/side/attack/lift/lift-03.png",
           "original_rgba_sha256": "30f217333ddaf3c52e07dad9cb523c8655096f0f3125558a16e9a4fbd0d7e114",
           "upper_pixels_unchanged_above_y": 281,
           "muzzle": [
@@ -718,7 +718,7 @@
         238,
         204
       ],
-      "foot_reference_mask": "asset/character/icon/layers/crossbowman/side/aligned/visible/legs.png",
+      "foot_reference_mask": "asset/character/player/icon/layers/crossbowman/side/aligned/visible/legs.png",
       "foot_boxes": [
         [
           121,

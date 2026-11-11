@@ -8,14 +8,14 @@ try{
  const page=await browser.newPage();await page.setContent('<canvas id="c" width="320" height="320"></canvas>');await page.addScriptTag({path:path.join(root,'tools/crossbowman-original-renderer.js')});const bundles={};
  for(const view of ['front','back','side'].filter(v=>sources.views[v])){
   const rig=sources.views[view];
-  const files={...rig.parts,idle:`asset/character/main/3-crossbowman/${view}/idle-sheet.png`,arrow:'asset/character/icon/layers/crossbowman/attack/bolt.png'};
+  const files={...rig.parts,idle:`asset/character/player/main/3-crossbowman/${view}/idle-sheet.png`,arrow:'asset/character/player/icon/layers/crossbowman/attack/bolt.png'};
   const urls={};for(const[n,p]of Object.entries(files))urls[n]='data:image/png;base64,'+(await fs.readFile(path.join(game,p))).toString('base64');bundles[view]={view,rig,urls};
  }
  await page.evaluate(async bundles=>{window.players={};for(const[v,b]of Object.entries(bundles))players[v]=await CrossbowAttack.load(b);},bundles);
  for(const view of Object.keys(bundles)){
   const folder=path.join(out,view);await fs.mkdir(folder,{recursive:true});const frames=[];
-  const idle0=await sharp(path.join(game,`asset/character/main/3-crossbowman/${view}/idle-sheet.png`)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
-  const soleMask=await sharp(path.join(game,`asset/character/icon/layers/crossbowman/${view}/aligned/visible/legs.png`)).ensureAlpha().raw().toBuffer();
+  const idle0=await sharp(path.join(game,`asset/character/player/main/3-crossbowman/${view}/idle-sheet.png`)).extract({left:0,top:0,width:320,height:320}).ensureAlpha().raw().toBuffer();
+  const soleMask=await sharp(path.join(game,`asset/character/player/icon/layers/crossbowman/${view}/aligned/visible/legs.png`)).ensureAlpha().raw().toBuffer();
   const headMask=await sharp(path.join(game,sources.views[view].parts.head)).ensureAlpha().raw().toBuffer();
   for(let f=0;f<16;f++){
    const url=await page.evaluate(({v,f})=>{const c=document.querySelector('canvas');CrossbowAttack.draw(c.getContext('2d'),players[v],f);return c.toDataURL();},{v:view,f});
@@ -32,7 +32,7 @@ try{
   }
   const atlas=Buffer.alloc(1280*1280*4);for(let f=0;f<16;f++)for(let y=0;y<320;y++)frames[f].copy(atlas,((Math.floor(f/4)*320+y)*1280+f%4*320)*4,y*320*4,(y+1)*320*4);
   const file=path.join(out,`${view}-attack-sheet.png`);await sharp(atlas,{raw:{width:1280,height:1280,channels:4}}).png().toFile(file);
-  const dir=view==='side'?'right':view;animations[dir]={file:`asset/character/main/3-crossbowman/${view}/attack-sheet.png`,width:1280,height:1280,columns:4,rows:4,loop:false,return_to:`${dir}_idle`,duration_ms:1000,frame_duration_ms:62.5,frames:frames.map((_,f)=>({index:f,rect:[f%4*320,Math.floor(f/4)*320,320,320],pico2d_rect:[f%4*320,960-Math.floor(f/4)*320,320,320],duration_ms:62.5}))};
+  const dir=view==='side'?'right':view;animations[dir]={file:`asset/character/player/main/3-crossbowman/${view}/attack-sheet.png`,width:1280,height:1280,columns:4,rows:4,loop:false,return_to:`${dir}_idle`,duration_ms:1000,frame_duration_ms:62.5,frames:frames.map((_,f)=>({index:f,rect:[f%4*320,Math.floor(f/4)*320,320,320],pico2d_rect:[f%4*320,960-Math.floor(f/4)*320,320,320],duration_ms:62.5}))};
   qa[view]={frames:16,unique:new Set(frames.map(x=>x.toString('base64'))).size};
  }
  const views=Object.keys(bundles);const previewWidth=views.length*400;
@@ -42,11 +42,11 @@ try{
  const mp4=await page.evaluate(async()=>{const c=document.querySelector('canvas'),mime='video/mp4;codecs=avc1.42001E',stream=c.captureStream(60),rec=new MediaRecorder(stream,{mimeType:mime,videoBitsPerSecond:1800000}),chunks=[];rec.ondataavailable=e=>chunks.push(e.data);const stopped=new Promise(r=>rec.onstop=r);rec.start();const start=performance.now();await new Promise(resolve=>{function tick(now){const sec=(now-start)/1000;renderPreview(sec%1.55);if(sec<6.2)requestAnimationFrame(tick);else resolve();}requestAnimationFrame(tick);});rec.stop();await stopped;stream.getTracks().forEach(x=>x.stop());return await new Promise(resolve=>{const r=new FileReader;r.onload=()=>resolve(r.result);r.readAsDataURL(new Blob(chunks,{type:mime}));});});
  await fs.writeFile(path.join(out,'preview.mp4'),Buffer.from(mp4.split(',')[1],'base64'));
  if(apply){
-  if(views.length!==3)throw Error('Prepare all three directions before applying');for(const view of views)await fs.copyFile(path.join(out,`${view}-attack-sheet.png`),path.join(game,`asset/character/main/3-crossbowman/${view}/attack-sheet.png`));
+  if(views.length!==3)throw Error('Prepare all three directions before applying');for(const view of views)await fs.copyFile(path.join(out,`${view}-attack-sheet.png`),path.join(game,`asset/character/player/main/3-crossbowman/${view}/attack-sheet.png`));
   const runtime={id:'crossbowman',name:'석궁병',version:3,cell_size:[320,320],pivot:[160,288],fps:16,frames_per_direction:16,duration_ms:1000,release_frame:7,loop:false,return_to:'idle',animations};await fs.writeFile(path.join(root,'metadata/character/attack/crossbowman.json'),JSON.stringify(runtime,null,2)+'\n');
   for(const name of['crossbowman.json','manifest.json']){const file=path.join(root,'metadata/character/sprites',name),json=JSON.parse(await fs.readFile(file,'utf8'));function update(x){if(!x||typeof x!=='object')return;if(x.id==='crossbowman'&&x.directional_attack_sheets)x.directional_attack_sheets=animations;for(const y of Object.values(x))if(y&&typeof y==='object')update(y);}update(json);await fs.writeFile(file,JSON.stringify(json,null,2)+'\n');}
   await fs.writeFile(path.join(root,'metadata/character/attack/crossbowman-rig.json'),JSON.stringify({...sources,renderer:'tools/crossbowman-original-renderer.js'},null,2)+'\n');
-  const preview=path.join(game,'asset/character/icon/preview');for(const ext of['png','mp4'])for(const name of['crossbowman-attack-original','crossbowman-attack'])await fs.copyFile(path.join(out,'preview.'+ext),path.join(preview,name+'.'+ext));
+  const preview=path.join(game,'asset/character/player/icon/preview');for(const ext of['png','mp4'])for(const name of['crossbowman-attack-original','crossbowman-attack'])await fs.copyFile(path.join(out,'preview.'+ext),path.join(preview,name+'.'+ext));
  }
  await fs.writeFile(path.join(out,'qa.json'),JSON.stringify(qa,null,2)+'\n');console.log(JSON.stringify({views,qa,applied:apply,preview:out}));
 }finally{await browser.close();}

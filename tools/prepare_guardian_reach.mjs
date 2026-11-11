@@ -7,7 +7,7 @@ const require=createRequire(import.meta.url),sharp=require('sharp');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..'),game=path.join(root,'game');
 const idle=JSON.parse(await fs.readFile(path.join(root,'metadata/character/idle/guardian-layers.json'),'utf8'));
 const clean=JSON.parse(await fs.readFile(path.join(root,'metadata/character/attack/guardian-support.json'),'utf8'));
-const source='asset/character/icon/layers/guardian/attack/reach-source/edited-atlas.png';
+const source='asset/character/player/icon/layers/guardian/attack/reach-source/edited-atlas.png';
 const atlas=await sharp(path.join(game,source)).resize(1280,1280).ensureAlpha().raw().toBuffer();
 const raw=f=>sharp(path.join(game,f)).ensureAlpha().raw().toBuffer();
 const write=(b,f)=>sharp(b,{raw:{width:320,height:320,channels:4}}).png().toFile(path.join(game,f));
@@ -16,10 +16,10 @@ function translate(data,dx,dy){const b=Buffer.alloc(data.length);for(let y=0;y<3
 function inside(x,y,p){let hit=false;for(let i=0,j=p.length-1;i<p.length;j=i++){const a=p[i],b=p[j];if((a[1]>y)!==(b[1]>y)&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0])hit=!hit;}return hit;}
 const result={version:1,source,mode:'built-in image_gen localized hidden torso and rear plate edit',views:{}};
 for(const [i,v]of idle.views.entries()){
- const folder=`asset/character/icon/layers/guardian/${v.view}/attack/push`;await fs.mkdir(path.join(game,folder),{recursive:true});
+ const folder=`asset/character/player/icon/layers/guardian/${v.view}/attack/push`;await fs.mkdir(path.join(game,folder),{recursive:true});
  let generated=await sharp(atlas,{raw:{width:1280,height:1280,channels:4}}).extract({left:i%2*640,top:Math.floor(i/2)*640,width:640,height:640}).resize(320,320).raw().toBuffer();
  // Register the entire generated view using the unchanged head silhouette.
- const original=await raw(`asset/character/icon/layers/guardian/${v.view}/aligned/neutral.png`);
+ const original=await raw(`asset/character/player/icon/layers/guardian/${v.view}/aligned/neutral.png`);
  let best=Infinity,shift=[0,0];for(let dy=-16;dy<=16;dy++)for(let dx=-16;dx<=16;dx++){
    let error=0;for(let y=112;y<200;y+=2)for(let x=90;x<230;x+=2){const xx=x-dx,yy=y-dy,a=original[(y*320+x)*4+3]>128,b=xx>=0&&xx<320&&yy>=0&&yy<320&&generated[(yy*320+xx)*4+3]>128;error+=a!==b?1:0;}
    if(error<best){best=error;shift=[dx,dy];}

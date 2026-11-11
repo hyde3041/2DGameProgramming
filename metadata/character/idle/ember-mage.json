@@ -15,7 +15,7 @@
   "cycle_ms": 1000,
   "animations": {
     "front": {
-      "file": "asset/character/main/8-ember-mage/front/idle-sheet.png",
+      "file": "asset/character/player/main/8-ember-mage/front/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -266,7 +266,7 @@
       ]
     },
     "right": {
-      "file": "asset/character/main/8-ember-mage/side/idle-sheet.png",
+      "file": "asset/character/player/main/8-ember-mage/side/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,
@@ -517,7 +517,7 @@
       ]
     },
     "back": {
-      "file": "asset/character/main/8-ember-mage/back/idle-sheet.png",
+      "file": "asset/character/player/main/8-ember-mage/back/idle-sheet.png",
       "width": 1280,
       "height": 1280,
       "columns": 4,

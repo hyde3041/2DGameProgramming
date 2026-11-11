@@ -2,8 +2,8 @@
   "id": "archer",
   "direction": "back",
   "enabled": true,
-  "file": "asset/character/icon/layers/archer/back/attack/imported/current-sheet.png",
-  "source_sheet": "asset/character/icon/layers/archer/back/attack/imported/source-clean.png",
+  "file": "asset/character/player/icon/layers/archer/back/attack/imported/current-sheet.png",
+  "source_sheet": "asset/character/player/icon/layers/archer/back/attack/imported/source-clean.png",
   "sheet_size": [
     1280,
     1280

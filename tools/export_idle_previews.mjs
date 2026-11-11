@@ -8,8 +8,9 @@ import {createRequire} from 'node:module';
 import {fileURLToPath} from 'node:url';
 const require=createRequire(import.meta.url),sharp=require('sharp'),{chromium}=require('playwright');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const game=path.join(root,'game');
 const ids=process.argv.slice(2);if(!ids.length)throw Error('Supply character ids');
-const dest=root+'/asset/character/icon/preview',reports=[];
+const dest=path.join(game,'asset/character/player/icon/preview'),reports=[];
 await fs.mkdir(dest,{recursive:true});
 const browser=await chromium.launch({channel:'chrome',headless:true});
 try{
@@ -20,7 +21,7 @@ try{
   const views=[];
   for(const direction of ['front','back','side']){
    const a=meta.animations[direction==='side'?'right':direction];
-   const bytes=await fs.readFile(root+'/'+a.file);
+   const bytes=await fs.readFile(path.join(game,a.file));
    views.push({direction,columns:a.columns,count:a.frames.length,image:'data:image/png;base64,'+bytes.toString('base64'),file:a.file,sha256:crypto.createHash('sha256').update(bytes).digest('hex')});
   }
   await page.setContent('<style>body{margin:0}</style><canvas width="1056" height="384"></canvas>');
@@ -48,12 +49,12 @@ try{
   if(played<.1||info.width!==1056||info.height!==384||info.duration<5.8)throw Error('Video playback failed');
   const panels=[];
   for(let i=0;i<3;i++)for(let row=0;row<2;row++){
-   const v=views[i],p=row===0?`${root}/asset/character/icon/source/${id}/${v.direction}/idle.png`:root+'/'+v.file;
+   const v=views[i],p=row===0?path.join(game,`asset/character/player/icon/source/${id}/${v.direction}/idle.png`):path.join(game,v.file);
    panels.push({input:await sharp(p).extract({left:65,top:115,width:200,height:182}).resize(400,364).png().toBuffer(),left:i*400,top:row*390+26});
    panels.push({input:Buffer.from(`<svg width="400" height="26"><text x="8" y="20" font-size="18">${row===0?'Original':'Corrected'} / ${v.direction}</text></svg>`),left:i*400,top:row*390});
   }
   await sharp({create:{width:1200,height:780,channels:4,background:'#e6e3dd'}}).composite(panels).png().toFile(dest+'/'+id+'-original-comparison.png');
-  for(const v of views){const now=crypto.createHash('sha256').update(await fs.readFile(root+'/'+v.file)).digest('hex');if(now!==v.sha256)throw Error('Source sheet changed while exporting');}
+  for(const v of views){const now=crypto.createHash('sha256').update(await fs.readFile(path.join(game,v.file))).digest('hex');if(now!==v.sha256)throw Error('Source sheet changed while exporting');}
   const report={id,name:meta.name,file,fps:meta.fps,frames:views[0].count,cycle_ms:meta.cycle_ms,...info,seen_frames:encoded.seenFrames,played_seconds:played,source_sheets_unchanged:true};reports.push(report);console.log(JSON.stringify(report));
  }
 }finally{await browser.close();}
