@@ -6,7 +6,6 @@ class Player:
         self.hp = hp
         self.money = money
         self.scene = scene
-        self.map: int = 0
         self.battle_room: int | None = None
 
     def finish_battle(self, cleared: bool):
@@ -16,5 +15,4 @@ class Player:
             self.pos.append(self.battle_room)
 
         self.battle_room = None
-        self.map = 0
         self.scene = 1

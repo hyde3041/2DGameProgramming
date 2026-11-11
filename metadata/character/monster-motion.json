@@ -1,0 +1,282 @@
+{
+  "version": 1,
+  "source": "OpenAI ImageGen (built-in)",
+  "direction": "side-right",
+  "frame_size": [320, 320],
+  "columns": 4,
+  "frame_count": 16,
+  "pivot": [154, 286],
+  "attack_keyframe_columns": [
+    "frame",
+    "body_shift_x",
+    "body_drop_y",
+    "torso_angle",
+    "head_angle",
+    "upper_arm_angle",
+    "forearm_angle",
+    "weapon_angle",
+    "near_foot_shift_x"
+  ],
+  "part_layout": {
+    "head": [
+      "size",
+      "neck"
+    ],
+    "torso": [
+      "size",
+      "hip",
+      "neck",
+      "shoulder",
+      "cloth_attachment"
+    ],
+    "upper-arm": [
+      "size",
+      "shoulder",
+      "elbow"
+    ],
+    "forearm": [
+      "size",
+      "elbow",
+      "grip"
+    ],
+    "thigh": [
+      "size",
+      "hip",
+      "knee"
+    ],
+    "shin": [
+      "size",
+      "knee",
+      "ankle"
+    ],
+    "boot": [
+      "size",
+      "ankle"
+    ],
+    "weapon": [
+      "size",
+      "grip"
+    ],
+    "cloth": [
+      "size",
+      "attachment"
+    ]
+  },
+  "monsters": {
+    "goblin-scout": {
+      "name": "고블린 정찰병",
+      "folder": "9-goblin-scout",
+      "action": "단검 찌르기",
+      "walk_fps": 16,
+      "attack_fps": 18,
+      "impact_frame": 7,
+      "stride": 30,
+      "lift": 12,
+      "parts": {
+        "head": [
+          [79, 62],
+          [0.66, 0.88]
+        ],
+        "torso": [
+          [40, 59],
+          [0.52, 0.8],
+          [0.54, 0.12],
+          [0.27, 0.31],
+          [0.17, 0.7]
+        ],
+        "upper-arm": [
+          [20, 39],
+          [0.53, 0.23],
+          [0.42, 0.82]
+        ],
+        "forearm": [
+          [17, 37],
+          [0.49, 0.15],
+          [0.67, 0.86]
+        ],
+        "thigh": [
+          [23, 39],
+          [0.49, 0.17],
+          [0.54, 0.83]
+        ],
+        "shin": [
+          [15, 34],
+          [0.52, 0.18],
+          [0.44, 0.86]
+        ],
+        "boot": [
+          [30, 25],
+          [0.34, 0.26]
+        ],
+        "weapon": [
+          [64, 23],
+          [0.28, 0.52]
+        ],
+        "cloth": [
+          [14, 31],
+          [0.58, 0.12]
+        ]
+      },
+      "attack": [
+        [0, 0, 0, 0, 0, 78, 18, 0, 0],
+        [3, -5, 1, -7, 4, 108, 61, -14, 0],
+        [5, -8, 3, -10, 5, 129, 31, -16, 3],
+        [7, 15, 3, 14, 0, 4, -3, -5, 17],
+        [8, 16, 3, 15, -1, 1, 1, 0, 18],
+        [10, 9, 0, 9, -2, 34, 14, 11, 15],
+        [13, 2, 0, 2, 0, 68, 18, 3, 5],
+        [15, 0, 0, 0, 0, 78, 18, 0, 0]
+      ],
+      "parts_directory": "asset/character/icon/layers/9-goblin-scout/side",
+      "walk_sheet": "asset/character/main/9-goblin-scout/side/walk-sheet.png",
+      "attack_sheet": "asset/character/main/9-goblin-scout/side/attack-sheet.png",
+      "walk_loop": true,
+      "attack_loop": false,
+      "generation_prompt": "Create a production game art sprite PARTS ATLAS for ONE right-facing fantasy side-view monster. A quick small goblin scout. Olive-green skin, very large swept pointed ears, narrow amber eye, one tiny lower tusk, dark moss hair tuft, battered brown leather vest over forest-green cloth, worn ochre waist sash, light boots. Small triangular chipped iron dagger with wrapped wooden handle. Goblin leg and arm proportions are chibi but agile. Cloth flap is a short moss green scarf tail.\nThe provided image is a stylistic reference for hand-drawn outline thickness, painterly color shading and compact oversized-head proportions only. Design original enemy art, entirely side-on facing screen right, with restrained colors, readable forms, dark ink outlines and clean antialiasing. Output must be a square invisible regular 3-by-3 grid of nine isolated transparent components with generous blank space between them and all parts wholly inside their own equal-sized cell. Each cell should contain exactly ONE component centered independently, with no contact across cells, no full character, no tiles, no captions, no dividers, no ground or shadow.\nThe exact placement, left to right, top to bottom:\nROW 1: (1) entire side-profile head facing right, detached at neck, absolutely no torso; (2) complete sleeveless torso in side profile, short neck at top and belt at bottom, no attached arms, legs, or head; (3) single compact upper arm from rounded shoulder at top to elbow at bottom, vertically hanging relaxed, no forearm.\nROW 2: (4) single forearm from elbow at top to a closed gripping fist at bottom, straight vertical overall, gripping fist must be visually clear, no weapon; (5) a single thigh from hip at top to knee at bottom, vertical and compact; (6) a single shank from knee at top to ankle at bottom, vertical, no foot.\nROW 3: (7) one boot or stone foot in side profile, toe points right and ankle at left, no leg; (8) only the handheld weapon laid horizontally, handle on the left and blade or hammer head on the right, easy to isolate with clear edges; (9) a separate small hanging cloth tail, vertical, no body or buckle.\nParts are source pieces for a jointed 2D animation, ready to place by overlap. Draw the shoulder, neck, knee and elbow ends solid with slight rounded overlap so joints look clean when rotated. All nine components are required. Transparent background. High quality hand-drawn fantasy game art. No words."
+    },
+    "armored-skeleton": {
+      "name": "중갑 스켈레톤",
+      "folder": "10-armored-skeleton",
+      "action": "도끼 내려치기",
+      "walk_fps": 13,
+      "attack_fps": 14,
+      "impact_frame": 9,
+      "stride": 27,
+      "lift": 10,
+      "parts": {
+        "head": [
+          [64, 71],
+          [0.55, 0.83]
+        ],
+        "torso": [
+          [51, 72],
+          [0.52, 0.78],
+          [0.55, 0.1],
+          [0.3, 0.34],
+          [0.21, 0.72]
+        ],
+        "upper-arm": [
+          [28, 46],
+          [0.53, 0.22],
+          [0.46, 0.85]
+        ],
+        "forearm": [
+          [21, 45],
+          [0.5, 0.14],
+          [0.6, 0.87]
+        ],
+        "thigh": [
+          [28, 49],
+          [0.49, 0.19],
+          [0.57, 0.83]
+        ],
+        "shin": [
+          [19, 43],
+          [0.57, 0.17],
+          [0.43, 0.85]
+        ],
+        "boot": [
+          [37, 28],
+          [0.3, 0.24]
+        ],
+        "weapon": [
+          [103, 58],
+          [0.24, 0.43]
+        ],
+        "cloth": [
+          [17, 38],
+          [0.57, 0.13]
+        ]
+      },
+      "attack": [
+        [0, 0, 0, 0, 0, 76, 19, -24, 0],
+        [3, -4, 2, -7, 3, 119, 48, -55, 0],
+        [6, -7, 0, -12, 8, 194, 133, -125, 4],
+        [7, -6, 0, -10, 6, 238, 178, -140, 7],
+        [8, 4, 1, 1, 0, 306, 270, -58, 13],
+        [9, 13, 7, 12, 3, 371, 354, 12, 18],
+        [10, 14, 8, 13, 4, 401, 385, 42, 18],
+        [12, 8, 3, 6, 2, 432, 387, 16, 12],
+        [15, 0, 0, 0, 0, 436, 379, -24, 0]
+      ],
+      "parts_directory": "asset/character/icon/layers/10-armored-skeleton/side",
+      "walk_sheet": "asset/character/main/10-armored-skeleton/side/walk-sheet.png",
+      "attack_sheet": "asset/character/main/10-armored-skeleton/side/attack-sheet.png",
+      "walk_loop": true,
+      "attack_loop": false,
+      "generation_prompt": "Create a production game art sprite PARTS ATLAS for ONE right-facing fantasy side-view monster. An elite heavy-armored skeleton. Old cream bone skull with clear jaw and black eye socket with a tiny ember of red, charcoal iron helmet with a broken horn, bulky charcoal iron cuirass with worn gunmetal edges and rust-copper rivets, pale bone showing only at the joints, split burgundy fabric at the hip, dark armored boots. Weapon is a broad single-bladed medieval battle axe, chipped silver edge and dark hickory haft. Cloth flap is a ragged dark burgundy tabard tail.\nThe provided image is a stylistic reference for hand-drawn outline thickness, painterly color shading and compact oversized-head proportions only. Design original enemy art, entirely side-on facing screen right, with restrained colors, readable forms, dark ink outlines and clean antialiasing. Output must be a square invisible regular 3-by-3 grid of nine isolated transparent components with generous blank space between them and all parts wholly inside their own equal-sized cell. Each cell should contain exactly ONE component centered independently, with no contact across cells, no full character, no tiles, no captions, no dividers, no ground or shadow.\nThe exact placement, left to right, top to bottom:\nROW 1: (1) entire side-profile head facing right, detached at neck, absolutely no torso; (2) complete sleeveless torso in side profile, short neck at top and belt at bottom, no attached arms, legs, or head; (3) single compact upper arm from rounded shoulder at top to elbow at bottom, vertically hanging relaxed, no forearm.\nROW 2: (4) single forearm from elbow at top to a closed gripping fist at bottom, straight vertical overall, gripping fist must be visually clear, no weapon; (5) a single thigh from hip at top to knee at bottom, vertical and compact; (6) a single shank from knee at top to ankle at bottom, vertical, no foot.\nROW 3: (7) one boot or stone foot in side profile, toe points right and ankle at left, no leg; (8) only the handheld weapon laid horizontally, handle on the left and blade or hammer head on the right, easy to isolate with clear edges; (9) a separate small hanging cloth tail, vertical, no body or buckle.\nParts are source pieces for a jointed 2D animation, ready to place by overlap. Draw the shoulder, neck, knee and elbow ends solid with slight rounded overlap so joints look clean when rotated. All nine components are required. Transparent background. High quality hand-drawn fantasy game art. No words."
+    },
+    "ancient-guardian": {
+      "name": "고대 수호자",
+      "folder": "11-ancient-guardian",
+      "action": "대형 망치 내려치기",
+      "walk_fps": 11,
+      "attack_fps": 12,
+      "impact_frame": 10,
+      "stride": 25,
+      "lift": 8,
+      "parts": {
+        "head": [
+          [75, 76],
+          [0.58, 0.81]
+        ],
+        "torso": [
+          [81, 86],
+          [0.52, 0.87],
+          [0.56, 0.1],
+          [0.3, 0.34],
+          [0.25, 0.81]
+        ],
+        "upper-arm": [
+          [32, 57],
+          [0.58, 0.2],
+          [0.41, 0.85]
+        ],
+        "forearm": [
+          [30, 56],
+          [0.48, 0.15],
+          [0.65, 0.85]
+        ],
+        "thigh": [
+          [35, 58],
+          [0.5, 0.16],
+          [0.54, 0.85]
+        ],
+        "shin": [
+          [25, 53],
+          [0.54, 0.15],
+          [0.42, 0.86]
+        ],
+        "boot": [
+          [48, 31],
+          [0.34, 0.24]
+        ],
+        "weapon": [
+          [120, 68],
+          [0.31, 0.52]
+        ],
+        "cloth": [
+          [17, 43],
+          [0.5, 0.11]
+        ]
+      },
+      "attack": [
+        [0, 0, 0, 0, 0, 77, 24, -20, 0],
+        [3, -4, 2, -6, 1, 112, 47, -53, 0],
+        [6, -7, 1, -11, 7, 175, 119, -99, 4],
+        [8, -8, 1, -12, 7, 238, 181, -104, 5],
+        [9, 1, 4, -1, 0, 313, 295, -27, 10],
+        [10, 10, 10, 12, 4, 381, 363, 26, 16],
+        [11, 12, 11, 13, 5, 410, 391, 49, 16],
+        [13, 7, 5, 7, 2, 431, 391, 18, 11],
+        [15, 0, 0, 0, 0, 437, 384, -20, 0]
+      ],
+      "parts_directory": "asset/character/icon/layers/11-ancient-guardian/side",
+      "walk_sheet": "asset/character/main/11-ancient-guardian/side/walk-sheet.png",
+      "attack_sheet": "asset/character/main/11-ancient-guardian/side/attack-sheet.png",
+      "walk_loop": true,
+      "attack_loop": false,
+      "generation_prompt": "Create a production game art sprite PARTS ATLAS for ONE right-facing fantasy side-view monster. Boss monster, an ancient sentient stone guardian from a mine. A massive humanoid colossus with carved weathered deep blue-gray stone and muted bronze bands, broken angular silhouette, one striking cyan slit eye in a carved helmet-shaped stone head, a faceted cyan core embedded in a broad torso, faint cyan mineral seams, cracked rocky joints and slab feet. Weapon is a colossal blunt square-headed stone war hammer with cyan crystal and a grippable bronze-wrapped haft. Cloth-flap equivalent is a small shredded ochre ceremonial banner.\nThe provided image is a stylistic reference for hand-drawn outline thickness, painterly color shading and compact oversized-head proportions only. Design original enemy art, entirely side-on facing screen right, with restrained colors, readable forms, dark ink outlines and clean antialiasing. Output must be a square invisible regular 3-by-3 grid of nine isolated transparent components with generous blank space between them and all parts wholly inside their own equal-sized cell. Each cell should contain exactly ONE component centered independently, with no contact across cells, no full character, no tiles, no captions, no dividers, no ground or shadow.\nThe exact placement, left to right, top to bottom:\nROW 1: (1) entire side-profile head facing right, detached at neck, absolutely no torso; (2) complete sleeveless torso in side profile, short neck at top and belt at bottom, no attached arms, legs, or head; (3) single compact upper arm from rounded shoulder at top to elbow at bottom, vertically hanging relaxed, no forearm.\nROW 2: (4) single forearm from elbow at top to a closed gripping fist at bottom, straight vertical overall, gripping fist must be visually clear, no weapon; (5) a single thigh from hip at top to knee at bottom, vertical and compact; (6) a single shank from knee at top to ankle at bottom, vertical, no foot.\nROW 3: (7) one boot or stone foot in side profile, toe points right and ankle at left, no leg; (8) only the handheld weapon laid horizontally, handle on the left and blade or hammer head on the right, easy to isolate with clear edges; (9) a separate small hanging cloth tail, vertical, no body or buckle.\nParts are source pieces for a jointed 2D animation, ready to place by overlap. Draw the shoulder, neck, knee and elbow ends solid with slight rounded overlap so joints look clean when rotated. All nine components are required. Transparent background. High quality hand-drawn fantasy game art. No words."
+    }
+  }
+}
