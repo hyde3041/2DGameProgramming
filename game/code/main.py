@@ -1,4 +1,5 @@
 import json
+from math import ceil
 from time import monotonic
 
 import pico2d
@@ -12,7 +13,7 @@ from pico2d import (
     SDL_MOUSEMOTION,
     SDL_QUIT,
     SDLK_ESCAPE,
-    SDLK_q,
+    SDLK_q,ㄴ
     clear_canvas,
     close_canvas,
     delay,
@@ -43,6 +44,12 @@ CARD_FIRST_X = 218
 CARD_Y = 40
 DIRECTION_SIZE = 192
 DIRECTION_DEAD_ZONE = 20
+CHARACTER_ACTION_SIZE = 44
+CHARACTER_ACTION_GAP = 7
+CHARACTER_ACTION_HEAD_GAP = 12
+UNIT_BAR_WIDTH = 38
+HP_BAR_HEIGHT = 5
+MP_BAR_HEIGHT = 2
 ASSET_DIRECTORY = dungeon.GAME_DIRECTORY / "asset"
 TITLE_PATH = ASSET_DIRECTORY / "etc/title/title-screen.png"
 UI_DIRECTORY = ASSET_DIRECTORY / "etc/ui"
@@ -56,6 +63,82 @@ def draw_number(digits, number, right, y, width):
     for digit in reversed(str(number)):
         digits.clip_draw(int(digit) * 20, 0, 20, 32, x, y, width, width * 1.6)
         x -= width
+
+
+def rect_contains(rect, x, y):
+    left, top, width, height = rect
+    return left <= x < left + width and top <= y < top + height
+
+
+def draw_ui_rect(rect, color, *, filled=True):
+    renderer = open_canvas.__globals__["renderer"]
+    pico2d.SDL_SetRenderDrawBlendMode(renderer, pico2d.SDL_BLENDMODE_BLEND)
+    pico2d.SDL_SetRenderDrawColor(renderer, *color)
+    area = pico2d.SDL_Rect(*(int(value) for value in rect))
+    draw = pico2d.SDL_RenderFillRect if filled else pico2d.SDL_RenderDrawRect
+    draw(renderer, area)
+
+
+def load_skill_icons(characters):
+    metadata = json.loads((dungeon.METADATA_DIRECTORY / "character/skills.json").read_text(encoding="utf-8"))
+    definitions = {entry["id"]: entry["skills"] for entry in metadata["characters"]}
+    return {
+        character.profile: [load_image(str(dungeon.GAME_DIRECTORY / skill["icon_file"]))
+                            for skill in definitions[character.profile.split("-", 1)[1]]]
+        for character in characters
+    }
+
+
+def character_action_rects(character):
+    """Anchor two skills below the separate retreat action, above the character."""
+    cell = dungeon.battle_cells.get(tuple(character.pos))
+    if not character.deployed or cell is None:
+        return {}
+    size, gap = CHARACTER_ACTION_SIZE, CHARACTER_ACTION_GAP
+    width = height = size * 2 + gap
+    center_x, foot_y = cell["canvas_center"]
+    foot_y += cell["surface_rect"][3] * CHARACTER_FOOT_OFFSET
+    character_size = dungeon.battle_grid["cell_size"][0] * cell.get("perspective_scale", 1.0)
+    head_y = foot_y - character_size * 1.3
+    center_x = max(8 + width / 2, min(WIDTH - 8 - width / 2, center_x))
+    top = max(8, min(HEIGHT - 80 - height, head_y - CHARACTER_ACTION_HEAD_GAP - height))
+    left = round(center_x - width / 2)
+    top = round(top)
+    return {
+        "skill1": (left, top + size + gap, size, size),
+        "skill2": (left + size + gap, top + size + gap, size, size),
+        "withdraw": (round(center_x - size / 2), top, size, size),
+    }
+
+
+def character_action_at(character, x, y):
+    return next((action for action, rect in character_action_rects(character).items()
+                 if rect_contains(rect, x, y)), None)
+
+
+def draw_character_actions(character, skill_icons, *, mouse=(0, 0)):
+    rects = character_action_rects(character)
+    if not rects:
+        return
+    for action, rect in rects.items():
+        left, top, width, height = rect
+        hovered = rect_contains(rect, *mouse)
+        draw_ui_rect((left, top + 3, width, height), (8, 12, 18, 135))
+        fill = (84, 54, 50, 255) if action == "withdraw" else (23, 36, 47, 255)
+        border = (204, 149, 125, 255) if action == "withdraw" else (169, 185, 197, 255)
+        draw_ui_rect(rect, fill)
+        draw_ui_rect(rect, (241, 213, 158, 255) if hovered else border, filled=False)
+        if action != "withdraw":
+            icon = skill_icons[character.profile][0 if action == "skill1" else 1]
+            icon.draw(left + width / 2, HEIGHT - 1 - (top + height / 2), width - 8, height - 8)
+
+    left, top, _, _ = rects["withdraw"]
+    ink = (243, 228, 203, 255)
+    for x, y, width, height in ((12, 10, 2, 24), (14, 10, 10, 2), (14, 32, 10, 2), (20, 21, 15, 2)):
+        draw_ui_rect((left + x, top + y, width, height), ink)
+    for offset in range(2):
+        draw_line(left + 28, HEIGHT - 1 - (top + 16 + offset), left + 35, HEIGHT - 1 - (top + 22 + offset), *ink[:3])
+        draw_line(left + 28, HEIGHT - 1 - (top + 28 + offset), left + 35, HEIGHT - 1 - (top + 22 + offset), *ink[:3])
 
 
 def card_at(x, y, cards):
@@ -131,7 +214,7 @@ def draw_attack_range(character, overlay, *, pos=None, direction=None):
 
 def draw_battle_ui(panel, digits, cards, *, cost, defense_points, remaining_enemies, selected=None):
     for index, (portrait, character) in enumerate(cards):
-        available = cost >= character.cost and not character.deployed
+        available = cost >= character.cost and not character.deployed and character.redeploy_remaining() <= 0
         portrait.opacify(1.0 if available and character is not selected else 0.5)
         portrait.draw(CARD_FIRST_X + CARD_SPACING * index, CARD_Y, CARD_SIZE, CARD_SIZE)
     panel.draw(WIDTH // 2, HEIGHT // 2)
@@ -141,6 +224,15 @@ def draw_battle_ui(panel, digits, cards, *, cost, defense_points, remaining_enem
     draw_number(digits, cost, 774, 40, 17)
     for index, (_, character) in enumerate(cards):
         draw_number(digits, character.cost, 242 + CARD_SPACING * index, 58, 9)
+        remaining = character.redeploy_remaining()
+        if remaining > 0:
+            center = CARD_FIRST_X + CARD_SPACING * index
+            draw_ui_rect((center - 24, HEIGHT - 1 - 49, 48, 28), (17, 23, 29, 225))
+            number = ceil(remaining)
+            draw_number(digits, number, center + len(str(number)) * 7, CARD_Y - 5, 14)
+            draw_ui_rect((center - 24, HEIGHT - 1 - 18, 48, 3), (60, 70, 78, 255))
+            fraction = min(1.0, remaining / max(0.001, character.redeployDelay))
+            draw_ui_rect((center - 24, HEIGHT - 1 - 18, 48 * fraction, 3), (213, 167, 112, 255))
         if character is selected:
             center = CARD_FIRST_X + CARD_SPACING * index
             draw_rectangle(center - 29, CARD_Y - 29, center + 29, CARD_Y + 29, 234, 202, 130)
@@ -252,6 +344,33 @@ def draw_monster(monster, sprites):
         sheet.clip_draw(left, bottom, width, height, x, y, width * scale, height * scale)
 
 
+def draw_unit_bars(unit):
+    """Keep resource bars anchored to each unit's feet, separate from its motion."""
+    is_monster = unit.race == "monster"
+    if is_monster:
+        x, y, perspective, tile_height = monster_screen_position(unit)
+        foot_y = HEIGHT - 1 - y + tile_height * CHARACTER_FOOT_OFFSET
+    else:
+        cell = dungeon.battle_cells[tuple(unit.pos)]
+        x, foot_y = cell["canvas_center"]
+        perspective = cell.get("perspective_scale", 1.0)
+        foot_y += cell["surface_rect"][3] * CHARACTER_FOOT_OFFSET
+    width = max(28, round(UNIT_BAR_WIDTH * perspective))
+    left, top = round(x - width / 2), round(foot_y + 4)
+
+    def bar(y, height, value, maximum, color):
+        ratio = min(1.0, max(0.0, value / maximum)) if maximum > 0 else 0.0
+        draw_ui_rect((left, y, width, height), (15, 23, 30, 235))
+        filled = round(width * ratio)
+        if filled > 0:
+            draw_ui_rect((left, y, filled, height), color)
+
+    hp_color = (224, 92, 81, 255) if is_monster else (91, 200, 135, 255)
+    bar(top, HP_BAR_HEIGHT, unit.hp, unit.maxHp, hp_color)
+    if not is_monster:
+        bar(top + HP_BAR_HEIGHT + 2, MP_BAR_HEIGHT, unit.mp, unit.maxMp, (87, 171, 230, 255))
+
+
 def direction_selector_center(cell):
     """Place the control around the character, clear of the HUD and screen edges."""
     x, y = cell["canvas_center"]
@@ -309,6 +428,7 @@ def main():
     hud_digits = None
     range_overlay = None
     cards = []
+    skill_icons = {}
     sprites = {}
     monster_sprites = {}
     monsters = []
@@ -340,6 +460,7 @@ def main():
             (load_image(str(PROFILE_DIRECTORY / character.profile / "skill/profile/deployment-square.png")), character)
             for character in user.character
         ]
+        skill_icons = load_skill_icons(user.character)
         while True:
             # Account for elapsed time before input changes the selection speed.
             if user.scene == 2:
@@ -444,6 +565,15 @@ def main():
                             pending_pos = None
                             selected_direction = None
                             direction_dragging = False
+                        elif (event.button == SDL_BUTTON_LEFT and inspected_character is not None
+                              and dragged_character is None and character_action_at(inspected_character, mouse_x, mouse_y) is not None):
+                            if character_action_at(inspected_character, mouse_x, mouse_y) == "withdraw":
+                                if user.withdraw_character(inspected_character, battle_time):
+                                    for monster in monsters:
+                                        if monster.blockedBy is inspected_character:
+                                            monster.release_block(battle_time)
+                                    inspected_character = None
+                            continue
                         elif event.button == SDL_BUTTON_LEFT and pending_pos is not None:
                             center = direction_selector_center(dungeon.battle_cells[pending_pos])
                             if (mouse_x - center[0]) ** 2 + (mouse_y - center[1]) ** 2 <= (DIRECTION_SIZE / 2) ** 2:
@@ -518,13 +648,16 @@ def main():
                     for character in deployed
                 ]
                 units.extend((monster_screen_position(monster)[1], monster) for monster in monsters)
-                for _, unit in sorted(units, key=lambda entry: -entry[0]):
+                ordered_units = sorted(units, key=lambda entry: -entry[0])
+                for _, unit in ordered_units:
                     if unit.race == "monster":
                         draw_monster(unit, monster_sprites)
                     else:
                         cell = dungeon.battle_cells[tuple(unit.pos)]
                         x, y = cell["pico2d_center"]
                         draw_character(unit, sprites, x, y, cell=cell)
+                for _, unit in ordered_units:
+                    draw_unit_bars(unit)
                 draw_battle_ui(
                     hud_panel, hud_digits, cards,
                     cost=user.cost,
@@ -532,6 +665,8 @@ def main():
                     remaining_enemies=len(monsters) + len(pending_monsters),
                     selected=dragged_character or inspected_character,
                 )
+                if inspected_character is not None and inspected_character.deployed:
+                    draw_character_actions(inspected_character, skill_icons, mouse=(mouse_x, mouse_y))
                 if dragged_character is not None:
                     if pending_pos is not None:
                         cell = dungeon.battle_cells[pending_pos]
@@ -559,6 +694,7 @@ def main():
         hud_digits = None
         range_overlay = None
         cards.clear()
+        skill_icons.clear()
         sprites.clear()
         monster_sprites.clear()
         monsters.clear()

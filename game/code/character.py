@@ -36,7 +36,12 @@ class Player:
     damage: int
     hp: int
     cost: int
+    maxHp: int | None = None
+    mp: float = 0.0
+    maxMp: float = 100.0
+    mpRegen: float = 1.0  # MP per battle second while deployed and alive.
     canStop: int = 1  # Maximum monsters this character can block; 0 disables blocking.
+    redeployDelay: float = 10.0  # Battle seconds before returning after withdrawal.
     allowedTiles: list[int] = field(default_factory=lambda: [1, 2])
     profile: str = ""
     direction: str = "down"  # Per-character facing: down, up, left, or right.
@@ -47,9 +52,27 @@ class Player:
     state: str = "idle"
     _animation_time: float = field(default=0.0, init=False, repr=False, compare=False)
     _state_started_at: float | None = field(default=None, init=False, repr=False, compare=False)
+    _redeploy_ready_at: float = field(default=0.0, init=False, repr=False, compare=False)
+    _mp_updated_at: float | None = field(default=None, init=False, repr=False, compare=False)
+
+    def __post_init__(self):
+        if self.maxHp is None:
+            self.maxHp = max(0, self.hp)
+
+    def update_mp(self, now: float):
+        elapsed = 0.0 if self._mp_updated_at is None else max(0.0, now - self._mp_updated_at)
+        self._mp_updated_at = now
+        if self.deployed and self.hp > 0:
+            self.mp = min(max(0.0, self.maxMp), max(0.0, self.mp) + elapsed * max(0.0, self.mpRegen))
+
+    def redeploy_remaining(self, now: float | None = None) -> float:
+        if now is None:
+            now = self._animation_time
+        return max(0.0, self._redeploy_ready_at - now)
 
     def reset_animation(self, battle_time: float):
         self.state = "idle"
+        self._mp_updated_at = battle_time
         self._animation_time = battle_time
         self._state_started_at = battle_time
 

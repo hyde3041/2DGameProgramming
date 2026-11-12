@@ -43,6 +43,7 @@ class Monster:
     attackSpeed: float  # Attacks per second.
     damage: int
     hp: int
+    maxHp: int | None = None
     attackDelay: float = 1.0  # Walking seconds after a free attack finishes.
     moveSpeed: float = 0.6  # Tiles per battle second.
     profile: str = ""
@@ -64,6 +65,10 @@ class Monster:
     _state_started_at: float | None = field(default=None, init=False, repr=False, compare=False)
     _attack_ends_at: float | None = field(default=None, init=False, repr=False, compare=False)
     _next_attack_at: float = field(default=0.0, init=False, repr=False, compare=False)
+
+    def __post_init__(self):
+        if self.maxHp is None:
+            self.maxHp = max(0, self.hp)
 
     def assign_route(self, start, goal, route, now: float, *, teleports=()):
         """Accept one map-selected route in logical (column, -row) coordinates."""

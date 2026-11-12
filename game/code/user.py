@@ -25,18 +25,21 @@ class User:
         for character in self.character:
             character.deployed = False
             character.direction = "down"
+            character.mp = 0.0
+            character._redeploy_ready_at = now
             character.reset_animation(now)
 
-    def can_deploy(self, character: Player) -> bool:
+    def can_deploy(self, character: Player, now: float | None = None) -> bool:
         return (
             self.scene == 2
             and any(member is character for member in self.character)
             and not character.deployed
+            and character.redeploy_remaining(now) <= 0
             and self.cost >= character.cost
         )
 
     def deploy_character(self, character: Player, pos, now: float, *, direction: str = "down") -> bool:
-        if direction not in ("up", "down", "left", "right") or not self.can_deploy(character):
+        if direction not in ("up", "down", "left", "right") or not self.can_deploy(character, now):
             return False
         position = list(pos)
         if any(member.deployed and member.pos == position for member in self.character):
@@ -48,9 +51,21 @@ class User:
         character.reset_animation(now)
         return True
 
+    def withdraw_character(self, character: Player, now: float) -> bool:
+        if (self.scene != 2 or not any(member is character for member in self.character)
+                or not character.deployed):
+            return False
+        character.update_mp(now)
+        character.deployed = False
+        character.direction = "down"
+        character.reset_animation(now)
+        character._redeploy_ready_at = now + max(0.0, character.redeployDelay)
+        return True
+
     def update_battle(self, now: float):
         self.update_cost(now)
         for character in self.character:
+            character.update_mp(now)
             character.sync_animation_time(now)
 
     def update_cost(self, now: float):
@@ -73,4 +88,6 @@ class User:
         for character in self.character:
             character.deployed = False
             character.direction = "down"
+            character.mp = 0.0
+            character._redeploy_ready_at = 0.0
             character.reset_animation(0.0)
