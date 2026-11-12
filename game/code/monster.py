@@ -3,6 +3,37 @@ from math import hypot, isfinite
 import random
 from typing import ClassVar
 
+from character import Player
+
+
+BLOCK_RADIUS = 0.45  # Contact half-width in tiles, inside the blocker's own cell.
+
+
+def update_monsters(monsters, characters, now: float):
+    """Reserve each living ground defender's capacity, then move the whole wave."""
+    blockers = [character for character in characters
+                if character.deployed and character.hp > 0 and character.canStop > 0]
+    slots = {id(character): character.canStop for character in blockers}
+    # Keep existing targets before considering any new arrivals.
+    for monster in monsters:
+        blocker = monster.blockedBy
+        if blocker is None:
+            continue
+        if (monster.hp > 0 and not monster.reachedGoal
+                and slots.get(id(blocker), 0) > 0
+                and all(abs(a - b) <= BLOCK_RADIUS + 1e-9 for a, b in zip(monster.pos, blocker.pos))):
+            slots[id(blocker)] -= 1
+        else:
+            monster.blockedBy = None
+            monster.set_state("walk", now=now)
+
+    for monster in monsters:
+        was_blocked = monster.blockedBy is not None
+        available = [character for character in blockers if slots[id(character)] > 0]
+        monster.update(now, blockers=available)
+        if not was_blocked and monster.blockedBy is not None:
+            slots[id(monster.blockedBy)] -= 1
+
 
 @dataclass(kw_only=True)
 class Monster:
@@ -24,6 +55,7 @@ class Monster:
     teleports: set[int] = field(default_factory=set, init=False)
     routeIndex: int = field(default=0, init=False)
     reachedGoal: bool = field(default=False, init=False)
+    blockedBy: Player | None = field(default=None, init=False, repr=False, compare=False)
     _walk_phase: float = field(default_factory=lambda: random.random(), init=False, repr=False, compare=False)
     _movement_time: float | None = field(default=None, init=False, repr=False, compare=False)
     _animation_time: float = field(default=0.0, init=False, repr=False, compare=False)
@@ -50,14 +82,46 @@ class Monster:
         self.reachedGoal = False
         self.reset_animation(now)
 
-    def update(self, now: float):
+    def _try_block(self, destination, blockers, now: float) -> bool:
+        """Stop at the first contact along this segment, including zero movement."""
+        closest = None
+        for character in blockers:
+            enter, leave = 0.0, 1.0
+            for start, end, center in zip(self.pos, destination, character.pos):
+                step = end - start
+                if abs(step) <= 1e-12:
+                    if abs(start - center) > BLOCK_RADIUS + 1e-9:
+                        break
+                else:
+                    first = (center - BLOCK_RADIUS - start) / step
+                    last = (center + BLOCK_RADIUS - start) / step
+                    enter = max(enter, min(first, last))
+                    leave = min(leave, max(first, last))
+                if enter > leave:
+                    break
+            else:
+                if closest is None or enter < closest[0]:
+                    closest = (enter, character)
+        if closest is None:
+            return False
+        fraction, blocker = closest
+        self.pos = [start + (end - start) * fraction for start, end in zip(self.pos, destination)]
+        self.blockedBy = blocker
+        if abs(blocker.pos[0] - self.pos[0]) > 1e-9:
+            self.direction = "right" if blocker.pos[0] > self.pos[0] else "left"
+        self.set_state("attack", now=now)
+        return True
+
+    def update(self, now: float, *, blockers=()):
         """Follow the assigned route once; never choose or recalculate a path here."""
         if not isfinite(now):
             raise ValueError("Battle time must be finite")
         elapsed = 0.0 if self._movement_time is None else max(0.0, now - self._movement_time)
         self._movement_time = now
         self.sync_animation_time(now)
-        if not self.route or self.reachedGoal or self.hp <= 0 or self.state != "walk" or self.moveSpeed <= 0:
+        if not self.route or self.reachedGoal or self.hp <= 0 or self.blockedBy is not None or self.state != "walk":
+            return
+        if self._try_block(self.pos, blockers, now) or self.moveSpeed <= 0:
             return
 
         remaining = elapsed * self.moveSpeed
@@ -66,6 +130,8 @@ class Monster:
             if self.routeIndex in self.teleports:
                 self.pos = target.copy()
                 self.routeIndex += 1
+                if self._try_block(self.pos, blockers, now):
+                    return
                 continue
             dx, dy = target[0] - self.pos[0], target[1] - self.pos[1]
             distance = hypot(dx, dy)
@@ -77,6 +143,10 @@ class Monster:
                 break
             if dx:
                 self.direction = "right" if dx > 0 else "left"
+            step = min(remaining, distance)
+            destination = [self.pos[0] + dx * step / distance, self.pos[1] + dy * step / distance]
+            if self._try_block(destination, blockers, now):
+                return
             if remaining + 1e-9 >= distance:
                 self.pos = target.copy()
                 self.routeIndex += 1
@@ -90,6 +160,7 @@ class Monster:
             self.reachedGoal = True
 
     def reset_animation(self, battle_time: float):
+        self.blockedBy = None
         self.state = "walk"
         self._movement_time = battle_time
         self._animation_time = battle_time

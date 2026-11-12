@@ -26,6 +26,7 @@ from pico2d import (
 
 import map as dungeon
 from character import DEPLOYMENT_COSTS, DEPLOYMENT_TILES, Player
+from monster import update_monsters
 from user import User
 
 
@@ -356,8 +357,11 @@ def main():
                         monsters.append(monster)
                     monster_spawn_number += 1
                     next_monster_spawn += MONSTER_SPAWN_INTERVAL
-                for monster in monsters:
-                    monster.update(battle_time)
+                ground_characters = [
+                    character for character in user.character
+                    if dungeon.battle_cells.get(tuple(character.pos), {}).get("tileType") == dungeon.TileType.GROUND
+                ]
+                update_monsters(monsters, ground_characters, battle_time)
                 monsters[:] = [monster for monster in monsters if not monster.reachedGoal and monster.hp > 0]
 
             for event in get_events():
@@ -464,8 +468,8 @@ def main():
                                 direction_dragging = False
                                 if selected_direction is not None:
                                     if SDL_GetKeyboardFocus() and dungeon.can_place(pending_pos, user.character, dragged_character):
-                                        if user.deploy_character(dragged_character, pending_pos, battle_time, direction=selected_direction):
-                                            inspected_character = dragged_character
+                                        user.deploy_character(dragged_character, pending_pos, battle_time, direction=selected_direction)
+                                    inspected_character = None
                                     dragged_character = None
                                     pending_pos = None
                                     selected_direction = None
@@ -484,6 +488,11 @@ def main():
                 pending_pos = None
                 selected_direction = None
                 direction_dragging = False
+
+            if user.scene == 2:
+                for character in user.character:
+                    if character.deployed:
+                        character.update_state(monsters, now=battle_time)
 
             clear_canvas()
             if user.scene == 0:

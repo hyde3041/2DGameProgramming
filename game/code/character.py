@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+from math import floor
 from typing import ClassVar
 
 
@@ -77,7 +78,14 @@ class Player:
         if now is not None:
             self.sync_animation_time(now)
         cells = self.attack_cells()
-        attacking = any(unit.race == "monster" and tuple(unit.pos) in cells for unit in units)
+        # Moving monsters have fractional positions; each integer is a tile center.
+        attacking = self.attackSpeed > 0 and any(
+            unit.race == "monster"
+            and getattr(unit, "hp", 1) > 0
+            and not getattr(unit, "reachedGoal", False)
+            and (floor(unit.pos[0] + 0.5), floor(unit.pos[1] + 0.5)) in cells
+            for unit in units
+        )
         state = "attack" if attacking else "idle"
         if self._state_started_at is None or state != self.state:
             self._state_started_at = self._animation_time
