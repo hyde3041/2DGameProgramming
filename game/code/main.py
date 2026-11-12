@@ -33,7 +33,7 @@ from user import User
 WIDTH = 800
 HEIGHT = 600
 TIME_SCALE = 1.0  # Battle speed: 0 pauses, 2 runs at double speed.
-DRAG_TIME_SCALE = 0.5  # Shared slowdown while placing or inspecting a character.
+DRAG_TIME_SCALE = 0.2  # Five times slower while placing or inspecting a character.
 MONSTER_SPAWN_INTERVAL = 1.0  # Seconds on the shared battle clock.
 CHARACTER_SCALE = 0.5
 CHARACTER_FOOT_OFFSET = 0.18  # Downward shift as a fraction of the projected tile height.
@@ -361,7 +361,7 @@ def main():
                     character for character in user.character
                     if dungeon.battle_cells.get(tuple(character.pos), {}).get("tileType") == dungeon.TileType.GROUND
                 ]
-                update_monsters(monsters, ground_characters, battle_time)
+                update_monsters(monsters, user.character, battle_time, blockers=ground_characters)
                 monsters[:] = [monster for monster in monsters if not monster.reachedGoal and monster.hp > 0]
 
             for event in get_events():

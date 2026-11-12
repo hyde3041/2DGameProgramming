@@ -16,7 +16,7 @@ def character(**kwargs):
 
 
 def monster(*, route=None, teleports=(), **kwargs):
-    values = dict(attackSpeed=2, damage=5, hp=50, moveSpeed=1)
+    values = dict(attackSpeed=2, damage=5, hp=50, moveSpeed=1, attackRange=[])
     values.update(kwargs)
     unit = Monster(**values)
     route = [[0, 0], [5, 0]] if route is None else route

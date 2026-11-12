@@ -1,0 +1,41 @@
+{
+  "id": "shadow-thief",
+  "frames_per_direction": 16,
+  "fps": 16,
+  "cell_size": [
+    320,
+    320
+  ],
+  "sheet_size": [
+    1280,
+    1280
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "source": "Previously approved dagger thrust with the attacking arm behind the body",
+  "backup": ".build/backups/shadow-thief-before-16-frame-restore-20261112-150947",
+  "restored_sheets": [
+    {
+      "source": ".build/deliverables/shadow-thief-front-dagger-thrust-arm-behind.png",
+      "target": "game/asset/character/player/main/7-shadow-thief/front/attack-sheet.png",
+      "sha256": "8a3dcae1ad6d033bb3fe7e706f28f2a936cc6ccd89be16c01d234c456b3e977d"
+    },
+    {
+      "source": ".build/deliverables/shadow-thief-back-dagger-thrust-arm-behind.png",
+      "target": "game/asset/character/player/main/7-shadow-thief/back/attack-sheet.png",
+      "sha256": "ba075b1f3384933ee1c5683d09b2c0fcbb0eb5a1de7b972fb37108b5c30c567a"
+    },
+    {
+      "source": ".build/deliverables/shadow-thief-side-dagger-thrust-arm-behind.png",
+      "target": "game/asset/character/player/main/7-shadow-thief/side/attack-sheet.png",
+      "sha256": "d30360de3448782b96f0a90e6c6c4fbf82f2ee8221bbb325c14f20e6ae3109a1"
+    }
+  ],
+  "idle_sha256": {
+    "game\\asset\\character\\player\\main\\7-shadow-thief\\back\\idle-sheet.png": "facba210c54c45d006daf3327d73c13829edc28785b979478dd14bfdfde64210",
+    "game\\asset\\character\\player\\main\\7-shadow-thief\\front\\idle-sheet.png": "4f340da3d457b2b4c1380f6b9a6041db9703803e1b143773f9687a469d436cb6",
+    "game\\asset\\character\\player\\main\\7-shadow-thief\\side\\idle-sheet.png": "c0c7dd90a04fea5b5bea1a90610842465b50da7cf31df173bbb9fd5f9eae21d8"
+  }
+}

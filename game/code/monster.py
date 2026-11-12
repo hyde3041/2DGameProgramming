@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from math import hypot, isfinite
+from math import floor, hypot, isfinite
 import random
 from typing import ClassVar
 
@@ -9,9 +9,10 @@ from character import Player
 BLOCK_RADIUS = 0.45  # Contact half-width in tiles, inside the blocker's own cell.
 
 
-def update_monsters(monsters, characters, now: float):
-    """Reserve each living ground defender's capacity, then move the whole wave."""
-    blockers = [character for character in characters
+def update_monsters(monsters, characters, now: float, *, blockers=None):
+    """Update blocking, movement and attacks using the same battle clock."""
+    ground_characters = characters if blockers is None else blockers
+    blockers = [character for character in ground_characters
                 if character.deployed and character.hp > 0 and character.canStop > 0]
     slots = {id(character): character.canStop for character in blockers}
     # Keep existing targets before considering any new arrivals.
@@ -24,8 +25,7 @@ def update_monsters(monsters, characters, now: float):
                 and all(abs(a - b) <= BLOCK_RADIUS + 1e-9 for a, b in zip(monster.pos, blocker.pos))):
             slots[id(blocker)] -= 1
         else:
-            monster.blockedBy = None
-            monster.set_state("walk", now=now)
+            monster.release_block(now)
 
     for monster in monsters:
         was_blocked = monster.blockedBy is not None
@@ -33,6 +33,7 @@ def update_monsters(monsters, characters, now: float):
         monster.update(now, blockers=available)
         if not was_blocked and monster.blockedBy is not None:
             slots[id(monster.blockedBy)] -= 1
+        monster.try_attack(characters, now=now)
 
 
 @dataclass(kw_only=True)
@@ -42,6 +43,7 @@ class Monster:
     attackSpeed: float  # Attacks per second.
     damage: int
     hp: int
+    attackDelay: float = 1.0  # Walking seconds after a free attack finishes.
     moveSpeed: float = 0.6  # Tiles per battle second.
     profile: str = ""
     pos: list[float] = field(default_factory=lambda: [0.0, 0.0])
@@ -60,6 +62,8 @@ class Monster:
     _movement_time: float | None = field(default=None, init=False, repr=False, compare=False)
     _animation_time: float = field(default=0.0, init=False, repr=False, compare=False)
     _state_started_at: float | None = field(default=None, init=False, repr=False, compare=False)
+    _attack_ends_at: float | None = field(default=None, init=False, repr=False, compare=False)
+    _next_attack_at: float = field(default=0.0, init=False, repr=False, compare=False)
 
     def assign_route(self, start, goal, route, now: float, *, teleports=()):
         """Accept one map-selected route in logical (column, -row) coordinates."""
@@ -81,6 +85,38 @@ class Monster:
         self.routeIndex = 1
         self.reachedGoal = False
         self.reset_animation(now)
+
+    def attack_cells(self) -> set[tuple[int, int]]:
+        """Rotate canonical range offsets around the monster's current tile."""
+        x, y = (floor(value + 0.5) for value in self.pos)
+        cells = set()
+        for dx, dy in self.attackRange:
+            if self.direction == "up":
+                dx, dy = -dx, -dy
+            elif self.direction == "right":
+                dx, dy = -dy, dx
+            elif self.direction == "left":
+                dx, dy = dy, -dx
+            cells.add((x + dx, y + dy))
+        return cells
+
+    def try_attack(self, units, *, now: float) -> bool:
+        """Start one free attack; blocked monsters already attack continuously."""
+        if (self.hp <= 0 or self.reachedGoal or self.blockedBy is not None
+                or self.state != "walk" or self.attackSpeed <= 0 or now < self._next_attack_at):
+            return False
+        cells = self.attack_cells()
+        if not any(unit.race == "people" and unit.deployed and unit.hp > 0
+                   and tuple(unit.pos) in cells for unit in units):
+            return False
+        self.set_state("attack", now=now)
+        self._attack_ends_at = now + 1.0 / self.attackSpeed
+        return True
+
+    def release_block(self, now: float):
+        self.blockedBy = None
+        self.set_state("walk", now=now)
+        self._next_attack_at = now + max(0.0, self.attackDelay)
 
     def _try_block(self, destination, blockers, now: float) -> bool:
         """Stop at the first contact along this segment, including zero movement."""
@@ -107,6 +143,7 @@ class Monster:
         fraction, blocker = closest
         self.pos = [start + (end - start) * fraction for start, end in zip(self.pos, destination)]
         self.blockedBy = blocker
+        self._attack_ends_at = None
         if abs(blocker.pos[0] - self.pos[0]) > 1e-9:
             self.direction = "right" if blocker.pos[0] > self.pos[0] else "left"
         self.set_state("attack", now=now)
@@ -116,12 +153,20 @@ class Monster:
         """Follow the assigned route once; never choose or recalculate a path here."""
         if not isfinite(now):
             raise ValueError("Battle time must be finite")
+        if self._attack_ends_at is not None:
+            if now < self._animation_time:
+                self.set_state("walk", now=now)
+                self._next_attack_at = now
+            elif now >= self._attack_ends_at:
+                finished_at = self._attack_ends_at
+                self.set_state("walk", now=finished_at)
+                self._next_attack_at = finished_at + max(0.0, self.attackDelay)
         elapsed = 0.0 if self._movement_time is None else max(0.0, now - self._movement_time)
         self._movement_time = now
         self.sync_animation_time(now)
-        if not self.route or self.reachedGoal or self.hp <= 0 or self.blockedBy is not None or self.state != "walk":
+        if not self.route or self.reachedGoal or self.hp <= 0 or self.blockedBy is not None:
             return
-        if self._try_block(self.pos, blockers, now) or self.moveSpeed <= 0:
+        if self._try_block(self.pos, blockers, now) or self.state != "walk" or self.moveSpeed <= 0:
             return
 
         remaining = elapsed * self.moveSpeed
@@ -161,6 +206,8 @@ class Monster:
 
     def reset_animation(self, battle_time: float):
         self.blockedBy = None
+        self._attack_ends_at = None
+        self._next_attack_at = battle_time
         self.state = "walk"
         self._movement_time = battle_time
         self._animation_time = battle_time
@@ -175,6 +222,8 @@ class Monster:
         """Switch between the existing walk and attack motions."""
         if state not in ("walk", "attack"):
             raise ValueError("Monster state must be 'walk' or 'attack'")
+        if state != self.state or state == "walk":
+            self._attack_ends_at = None
         if now is not None:
             self.sync_animation_time(now)
         if self._state_started_at is None or state != self.state:

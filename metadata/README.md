@@ -42,21 +42,25 @@ JSON의 `asset/...` 이미지 경로는 **`game/` 폴더**를 기준으로 읽�
 - `asset/character/player/main/<번호>-<캐릭터명>/skill/profile/skill-card.png`: 스킬 프로필 카드
 - `asset/character/player/icon/source/<캐릭터명>/`: 원본 개별 프레임과 정적 통합 시트 보관
 
-각 방향 폴더에는 `idle-sheet.png`와 `attack-sheet.png`만 보관합니다. **궁수·석궁병·검사 공격은 각 방향 16프레임·16FPS·1초, 4열×4행의 1280×1280 PNG**입니다. 다른 5명의 공격은 기존 3프레임·960×320 시트를 유지합니다. 한 프레임은 모두 320×320입니다. `metadata/character/sprites/` JSON의 `directional_attack_sheets`에 방향별 공격 시트 경로와 좌표·시간을 정리했습니다. [궁수 제작 기록](character/attack/README.md), [석궁병 제작 기록](character/attack/crossbowman-connected.md), [검사 제작 기록](character/attack/swordsman.md)에 재생 데이터와 원본을 기록합니다.
+각 방향 폴더에는 `idle-sheet.png`와 `attack-sheet.png`만 보관합니다. **궁수·석궁병·검사·수호기사·도적 공격은 각 방향 16프레임, 4열×4행의 1280×1280 PNG**입니다. 성직자·약초사·빙결술사 공격은 기존 3프레임·960×320 시트를 유지합니다. 한 프레임은 모두 320×320입니다. `metadata/character/sprites/` JSON의 `directional_attack_sheets`에 방향별 공격 시트 경로와 좌표·시간을 정리했습니다. 공격속도 1에서는 1초에 한 번 재생합니다. [궁수 제작 기록](character/attack/README.md), [석궁병 제작 기록](character/attack/crossbowman-connected.md), [검사 제작 기록](character/attack/swordsman.md)에 재생 데이터와 원본을 기록합니다.
+
+도적은 승인된 `shadow-thief-*-dagger-thrust-arm-behind.png`의 앞·뒤·옆 16프레임 찌르기를 현재 게임 시트에 그대로 복원했습니다. 00과 15는 같은 복귀 자세이며 중간 14장은 서로 다른 동작입니다. 대기 시트와 발 기준점은 유지합니다. 원본 경로·해시·교체 전 백업은 [복원 기록](character/attack/shadow-thief-restored.json)에 있습니다.
 
 전체 동료 목록 그림은 `asset/character/player/character-overview.png`, 검사 소개 그림은 `asset/character/player/main/0-swordsman/skill/profile/cover.png`입니다.
 
-배치할 칸을 고르면 `asset/etc/direction/direction-idle.png`를 192×192로 표시합니다. 화살표 또는 중앙을 누르고 당기는 방향에 따라 `direction-up/down/left/right.png`로 바뀌며, 버튼을 놓을 때 방향과 코스트를 확정합니다. 중앙 20픽셀 안에서는 확정하지 않습니다. 우클릭·Esc·창 포커스 이탈은 선택을 취소합니다. 선택 중에는 절반 속도를 유지하고 기존에 설정한 전투 속도로 복귀합니다.
+배치할 칸을 고르면 `asset/etc/direction/direction-idle.png`를 192×192로 표시합니다. 화살표 또는 중앙을 누르고 당기는 방향에 따라 `direction-up/down/left/right.png`로 바뀌며, 버튼을 놓을 때 방향과 코스트를 확정합니다. 중앙 20픽셀 안에서는 확정하지 않습니다. 우클릭·Esc·창 포커스 이탈은 선택을 취소합니다. 선택 중에는 평소의 20% 속도(5배 감속)를 유지하고 기존에 설정한 전투 속도로 복귀합니다.
 
 각 `Player.direction`은 `down/up/left/right` 중 하나입니다. 정면·뒷면·측면 시트를 연결하고 왼쪽은 측면을 좌우 반전합니다. 대기와 공격은 각 메타데이터의 실제 프레임 수를 사용합니다. `attackRange`는 아래를 향하는 원본 좌표를 유지하고 `attack_cells()`에서 현재 방향으로 회전한 칸을 계산합니다.
 
 `main.py`는 몬스터 이동과 배치 입력 처리 후 배치된 캐릭터의 `update_state(monsters, now=battle_time)`를 호출합니다. 공격 판정은 `character.py`가 담당하며, `race == "monster"`이고 살아 있으며 거점에 도착하지 않은 대상의 연속 좌표를 칸 중심 기준으로 변환해 범위에 포함되는지 검사합니다. 상태가 바뀔 때만 모션 시작 시간을 갱신합니다. 공격은 실제 시트 프레임 수 × `attackSpeed`의 FPS로 반복하므로 `1 / attackSpeed`초에 한 번 재생하며, 0 이하는 공격하지 않습니다. 선택 여부와 무관하게 동작하고 공유 전투 시간의 감속·정지를 따릅니다.
 
-`monster.update_monsters(monsters, characters, now)`는 각 캐릭터의 `canStop` 한도 안에서 기존 `Monster.blockedBy` 관계를 먼저 유지한 뒤 새 접촉을 배정합니다. `main.py`는 `tileType == 1`인 지상 캐릭터만 전달하며, 함수에서 배치 여부·생존·양수 저지수를 검사합니다. 몬스터 이동 선분과 캐릭터 중심 ±0.45칸의 접촉 영역을 검사하므로 큰 시간 간격에도 통과하지 않고, 순간이동은 건너뛴 구간이 아닌 도착 위치만 검사합니다. 저지된 적은 `attack` 모션으로 정지하며 캐릭터 사망·철수·이동·저지수 감소로 해제되면 `walk`로 돌아갑니다. 정지했던 시간을 이동 거리로 누적하지 않습니다. 저지된 적이 사라지면 다음 갱신에 그 자리를 재사용합니다.
+`monster.update_monsters(monsters, characters, now, blockers=ground_characters)`는 각 캐릭터의 `canStop` 한도 안에서 기존 `Monster.blockedBy` 관계를 먼저 유지한 뒤 새 접촉을 배정합니다. `main.py`는 전체 캐릭터를 공격 대상으로 전달하고, `tileType == 1`인 지상 캐릭터만 별도의 저지 후보로 전달합니다. 함수에서 배치 여부·생존·양수 저지수를 검사합니다. 몬스터 이동 선분과 캐릭터 중심 ±0.45칸의 접촉 영역을 검사하므로 큰 시간 간격에도 통과하지 않고, 순간이동은 건너뛴 구간이 아닌 도착 위치만 검사합니다. 저지된 적은 `attack` 모션으로 정지하며 캐릭터 사망·철수·이동·저지수 감소로 해제되면 `walk`로 돌아갑니다. 정지했던 시간을 이동 거리로 누적하지 않습니다. 저지된 적이 사라지면 다음 갱신에 그 자리를 재사용합니다.
+
+`Monster.attack_cells()`는 현재 칸과 방향에 맞춰 `attackRange`를 회전하고, `try_attack()`은 범위 안의 생존·배치된 `race == "people"` 대상을 검사합니다. 비저지 공격은 `_attack_ends_at`까지 `1 / attackSpeed`초 동안 한 번 재생합니다. 종료 후 `attackDelay`(기본 1초)를 더한 `_next_attack_at`까지 이동하고, 이후 범위에 대상이 있을 때 다시 공격합니다. 대상이 중간에 없어져도 시작한 1회 모션은 마칩니다. 종료 시각과 현재 갱신 사이의 남은 시간만 이동에 사용합니다. 저지 중에는 이 타이머 없이 공격을 반복하며, 해제 시 새 이동 대기를 시작합니다. 경로 재지정·전투 초기화는 공격 타이머도 초기화합니다.
 
 `attack_cells(pos=..., direction=...)`는 배치 미리보기용 좌표·방향을 받아 실제 캐릭터 상태를 바꾸지 않고 범위를 계산합니다. `main.py`는 기존 `asset/map/stage/main/range-overlay.png`를 해당 칸의 윗면 다각형에 맞춰 그립니다. 카드를 끌어 배치할 칸을 고르는 동안에는 숨기고, 칸에 놓은 뒤 방향을 고를 때 표시합니다. 배치 확정 시 선택과 사거리 표시를 해제하며, 배치된 캐릭터의 몸·서 있는 칸을 다시 클릭하면 표시합니다. 맵 밖 칸은 제외하고 같은 칸은 한 번만 그립니다. 높은 발판에 가려지는 낮은 칸의 범위는 발판 위로 겹쳐 표시하지 않습니다. 캐릭터별 기존 `attackRange` 수치는 변경하지 않았습니다.
 
-사거리 확인에는 코스트를 차감하지 않으며, 캐릭터를 선택한 동안은 배치 미리보기와 동일하게 전투 시간이 절반 속도로 흐릅니다. `main.py`의 `TIME_SCALE × DRAG_TIME_SCALE`을 한 번만 적용하므로 선택한 캐릭터를 바꾸어도 감속이 중복되지 않습니다. 코스트 증가·몬스터 이동과 출현·애니메이션은 같은 전투 시간을 따릅니다. 빈 곳 클릭·우클릭·Esc·창 포커스 해제로 표시를 닫으면 설정된 속도로 복귀하며 새 카드를 끌거나 전투를 끝낼 때 선택을 초기화합니다. 배치 미리보기 중 반속도와 방향 확정 조작은 기존 동작을 유지합니다.
+사거리 확인에는 코스트를 차감하지 않으며, 캐릭터를 선택한 동안은 배치 미리보기와 동일하게 전투 시간이 평소의 20% 속도(5배 감속)로 흐릅니다. `main.py`의 `TIME_SCALE × DRAG_TIME_SCALE`을 한 번만 적용하므로 선택한 캐릭터를 바꾸어도 감속이 중복되지 않습니다. 코스트 증가·몬스터 이동과 출현·애니메이션은 같은 전투 시간을 따릅니다. 빈 곳 클릭·우클릭·Esc·창 포커스 해제로 표시를 닫으면 설정된 속도로 복귀하며 새 카드를 끌거나 전투를 끝낼 때 선택을 초기화합니다. 배치 미리보기 중 5배 감속과 방향 확정 조작은 기존 동작을 유지합니다.
 
 `Player.canStop`은 캐릭터가 동시에 저지할 수 있는 몬스터 수를 저장하는 정수이며 기본값은 1입니다. 캐릭터마다 `canStop=0`, `canStop=2`처럼 지정할 수 있고, 0은 저지 불가를 뜻합니다. 현재는 수치만 저장하며 실제 몬스터 저지 처리는 아직 연결하지 않았습니다.
 
