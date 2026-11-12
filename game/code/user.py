@@ -2,6 +2,7 @@ from character import Player
 
 
 MAX_COST = 99
+costCount = 1  # Seconds between cost increases. Must be positive.
 
 
 class User:
@@ -21,14 +22,21 @@ class User:
         self.scene = 2
         self.cost = 0
         self._cost_updated_at = now
+        for character in self.character:
+            character.sync_animation_time(now)
+
+    def update_battle(self, now: float):
+        self.update_cost(now)
+        for character in self.character:
+            character.sync_animation_time(now)
 
     def update_cost(self, now: float):
         if self._cost_updated_at is None:
             return
-        gained = int(now - self._cost_updated_at)
+        gained = int((now - self._cost_updated_at) / costCount)
         if gained > 0:
             self.cost = min(self.cost + gained, MAX_COST)
-            self._cost_updated_at += gained
+            self._cost_updated_at += gained * costCount
 
     def finish_battle(self, cleared: bool):
         if self.battle_room is None:
