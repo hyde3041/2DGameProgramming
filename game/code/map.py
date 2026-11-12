@@ -1,10 +1,12 @@
 import json
 import random
+from collections import deque
 from dataclasses import dataclass, field
 from enum import IntEnum
 from pathlib import Path
 
 from pico2d import load_image
+from monster import Monster
 
 
 class MapType(IntEnum):
@@ -85,6 +87,10 @@ map_type = MapType.START
 dungeon_map = None
 battle_cells = {}
 battle_grid = {}
+battle_entrances: list[tuple[int, int]] = []
+battle_goals: list[tuple[int, int]] = []
+_monster_routes: dict[tuple[int, int], tuple[tuple[int, int], ...] | None] = {}
+_monster_portals: dict[tuple[int, int], set[tuple[int, int]]] = {}
 route_rooms: list[Room] = []
 route_links = []
 route_cover = None
@@ -101,6 +107,36 @@ def load_map(index=None, map_kind=MapType.BATTLE):
     # Match character coordinates: negative y points down the grid.
     battle_cells = {(cell["column"], -cell["row"]): cell for cell in layout["cells"]}
     battle_grid = layout["grid"]
+    battle_entrances[:] = [(column, -row) for column, row in layout["entrances"]]
+    battle_goals[:] = [(column, -row) for column, row in layout["goals"]]
+    _monster_routes.clear()
+    _monster_portals.clear()
+    source_routes = [route for route in layout.get("routes", []) if route["motion_mode"] == "WALK"]
+    for route in source_routes:
+        current = (route["start"][0], -route["start"][1])
+        disappearing = False
+        for checkpoint in route["checkpoints"]:
+            kind = checkpoint["type"]
+            if kind == "DISAPPEAR":
+                disappearing = True
+            elif kind in ("MOVE", "APPEAR_AT_POS"):
+                column, row = checkpoint["position"]
+                destination = (column, -row)
+                if kind == "APPEAR_AT_POS" and disappearing:
+                    if all(point in battle_cells and battle_cells[point]["walkable"] for point in (current, destination)):
+                        _monster_portals.setdefault(current, set()).add(destination)
+                    disappearing = False
+                current = destination
+    if not battle_entrances:
+        # Some boss maps place enemies directly on recorded route starts instead of red gates.
+        battle_entrances[:] = list(dict.fromkeys(
+            (route["start"][0], -route["start"][1]) for route in source_routes
+            if (route["end"][0], -route["end"][1]) in battle_goals
+            and (route["start"][0], -route["start"][1]) in battle_cells
+            and battle_cells[(route["start"][0], -route["start"][1])]["walkable"]
+        ))
+    for entrance in battle_entrances:
+        monster_route(entrance)
     map_index = index
     map_type = map_kind
     return dungeon_map
@@ -112,7 +148,75 @@ def clear_map():
     dungeon_map = None
     battle_cells.clear()
     battle_grid.clear()
+    battle_entrances.clear()
+    battle_goals.clear()
+    _monster_routes.clear()
+    _monster_portals.clear()
     map_type = MapType.START
+
+
+def monster_route(start=None):
+    """Return a fixed route to the nearest reachable goal, in logical tile coordinates."""
+    if start is None:
+        spawns = monster_spawns()
+        if not spawns:
+            return None
+        start = random.choice(spawns)
+    start = tuple(start)
+    if start not in _monster_routes:
+        _monster_routes[start] = None
+        if start in battle_cells and battle_cells[start]["walkable"]:
+            goals = set(battle_goals)
+            pending = deque([start])
+            previous = {start: None}
+            distances = {start: 0}
+            while pending:
+                current = pending.popleft()
+                if current in goals:
+                    points = []
+                    while current is not None:
+                        points.append(current)
+                        current = previous[current]
+                    _monster_routes[start] = tuple(reversed(points))
+                    break
+                x, y = current
+                # Recorded portals cost no walking distance; all cardinal steps cost one.
+                neighbors = [(point, 0) for point in sorted(_monster_portals.get(current, ()))]
+                neighbors.extend((point, 1) for point in ((x + 1, y), (x, y - 1), (x - 1, y), (x, y + 1)))
+                for neighbor, distance in neighbors:
+                    candidate = distances[current] + distance
+                    if neighbor in battle_cells and battle_cells[neighbor]["walkable"] and candidate < distances.get(neighbor, float("inf")):
+                        previous[neighbor] = current
+                        distances[neighbor] = candidate
+                        if distance == 0:
+                            pending.appendleft(neighbor)
+                        else:
+                            pending.append(neighbor)
+    route = _monster_routes[start]
+    if route is None:
+        return None
+    return route[0], route[-1], list(route)
+
+
+def monster_spawns():
+    """Only entrances with a traversable ground route can spawn our walking monsters."""
+    return [entrance for entrance in battle_entrances if monster_route(entrance) is not None]
+
+
+def monster_teleports(route):
+    """Destination indices that use explicitly recorded portal links, never walking segments."""
+    return {index for index in range(1, len(route))
+            if tuple(route[index]) in _monster_portals.get(tuple(route[index - 1]), ())}
+
+
+def spawn_monster(profile, start=None, *, now=0.0):
+    plan = monster_route(start)
+    if plan is None:
+        return None
+    # Initial tuning values, kept independent of the source game's enemy statistics.
+    monster = Monster(profile=profile, attackSpeed=1, damage=10, hp=100, moveSpeed=1.0)
+    monster.assign_route(*plan, now=now, teleports=monster_teleports(plan[2]))
+    return monster
 
 
 def cell_at(x, y):

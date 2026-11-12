@@ -32,6 +32,7 @@ WIDTH = 800
 HEIGHT = 600
 TIME_SCALE = 1.0  # Battle speed: 0 pauses, 2 runs at double speed.
 DRAG_TIME_SCALE = 0.5
+MONSTER_SPAWN_INTERVAL = 1.0  # Seconds on the shared battle clock.
 CHARACTER_SCALE = 0.5
 CHARACTER_FOOT_OFFSET = 0.18  # Downward shift as a fraction of the projected tile height.
 CARD_SIZE = 56
@@ -129,6 +130,63 @@ def draw_character(character, sprites, x, y, opacity=1.0, *, cell=None, directio
     sheet.opacify(1.0)
 
 
+def load_monster_sprites():
+    metadata = json.loads(
+        (dungeon.METADATA_DIRECTORY / "character/monster-motion.json").read_text(encoding="utf-8")
+    )
+    sprites = {}
+    for profile, motion in metadata["monsters"].items():
+        sprites[profile] = {
+            "frame_size": metadata["frame_size"], "columns": metadata["columns"],
+            "frame_count": metadata["frame_count"], "pivot": metadata["pivot"],
+            "fps": {state: motion[f"{state}_fps"] for state in ("walk", "attack")},
+            "sheets": {
+                state: load_image(str(dungeon.GAME_DIRECTORY / motion[f"{state}_sheet"]))
+                for state in ("walk", "attack")
+            },
+        }
+    return sprites
+
+
+def monster_screen_position(monster):
+    """Project a continuous logical position, keeping movement smooth between tiles."""
+    grid = dungeon.battle_grid
+    projection = grid["projection"]
+    column, row = monster.pos[0], -monster.pos[1]
+    taper = 1 / projection["back_scale"] - 1
+    depth = (row + 0.5) / grid["rows"]
+    perspective = 1 / (1 + taper * (1 - depth))
+    x = projection["center_x"] + (column + 0.5 - grid["columns"] / 2) * grid["cell_size"][0] * perspective
+    y = projection["top"] + projection["height"] * depth * perspective
+    top_depth, bottom_depth = row / grid["rows"], (row + 1) / grid["rows"]
+    tile_height = projection["height"] * (
+        bottom_depth / (1 + taper * (1 - bottom_depth))
+        - top_depth / (1 + taper * (1 - top_depth))
+    )
+    return x, HEIGHT - y, perspective, tile_height
+
+
+def draw_monster(monster, sprites):
+    sprite = sprites[monster.profile]
+    sheet = sprite["sheets"][monster.state]
+    frame = monster.motion_frame(sprite["frame_count"], sprite["fps"][monster.state])
+    width, height = sprite["frame_size"]
+    left = frame % sprite["columns"] * width
+    bottom = sheet.h - (frame // sprite["columns"] + 1) * height
+    pivot_x, pivot_y = sprite["pivot"]
+    if monster.direction == "left":
+        pivot_x = width - pivot_x
+    x, y, perspective, tile_height = monster_screen_position(monster)
+    scale = CHARACTER_SCALE * dungeon.battle_grid["cell_size"][0] / 64 * perspective
+    x += (width / 2 - pivot_x) * scale
+    y += (pivot_y - height / 2) * scale - tile_height * CHARACTER_FOOT_OFFSET
+    sheet.opacify(1.0)
+    if monster.direction == "left":
+        sheet.clip_composite_draw(left, bottom, width, height, 0, "h", x, y, width * scale, height * scale)
+    else:
+        sheet.clip_draw(left, bottom, width, height, x, y, width * scale, height * scale)
+
+
 def direction_selector_center(cell):
     """Place the control around the character, clear of the HUD and screen edges."""
     x, y = cell["canvas_center"]
@@ -186,6 +244,12 @@ def main():
     hud_digits = None
     cards = []
     sprites = {}
+    monster_sprites = {}
+    monsters = []
+    pending_monsters = []
+    monster_spawn_points = []
+    monster_spawn_number = 0
+    next_monster_spawn = 0.0
     direction_images = {}
     dragged_character = None
     pending_pos = None
@@ -217,6 +281,16 @@ def main():
                 previous_frame_time = frame_now
                 battle_time += delta_time
                 user.update_battle(battle_time)
+                while pending_monsters and monster_spawn_points and battle_time >= next_monster_spawn:
+                    start = monster_spawn_points[monster_spawn_number % len(monster_spawn_points)]
+                    monster = dungeon.spawn_monster(pending_monsters.pop(0), start, now=next_monster_spawn)
+                    if monster is not None:
+                        monsters.append(monster)
+                    monster_spawn_number += 1
+                    next_monster_spawn += MONSTER_SPAWN_INTERVAL
+                for monster in monsters:
+                    monster.update(battle_time)
+                monsters[:] = [monster for monster in monsters if not monster.reachedGoal and monster.hp > 0]
 
             for event in get_events():
                 if event.type == SDL_QUIT:
@@ -237,6 +311,9 @@ def main():
                         selected_direction = None
                         direction_dragging = False
                         user.finish_battle(cleared=event.key == SDLK_q)
+                        monsters.clear()
+                        pending_monsters.clear()
+                        monster_spawn_points.clear()
                         dungeon.clear_map()
                         continue
                     if event.key == SDLK_ESCAPE:
@@ -262,9 +339,18 @@ def main():
                         dungeon.load_map(room.map_index, map_kind=room.map_type)
                         if not sprites:
                             sprites = load_character_sprites(user.character)
+                        if not monster_sprites:
+                            monster_sprites = load_monster_sprites()
                         battle_time = 0.0
                         previous_frame_time = monotonic()
                         user.begin_battle(room_number, battle_time)
+                        monsters.clear()
+                        pending_monsters = [
+                            profile for profile, count in room.monsters.items() for _ in range(count)
+                        ]
+                        monster_spawn_points = dungeon.monster_spawns()
+                        monster_spawn_number = 0
+                        next_monster_spawn = battle_time
                     elif room.map_type in (
                         dungeon.MapType.START,
                         dungeon.MapType.SHOP,
@@ -334,16 +420,23 @@ def main():
                         only_hovered=pending_pos is not None,
                     )
                 deployed = [character for character in user.character if character.deployed]
-                for character in sorted(deployed, key=lambda c: -dungeon.battle_cells[tuple(c.pos)]["pico2d_center"][1]):
-                    cell = dungeon.battle_cells[tuple(character.pos)]
-                    x, y = cell["pico2d_center"]
-                    draw_character(character, sprites, x, y, cell=cell)
-                room = dungeon.route_rooms[user.battle_room]
+                units = [
+                    (dungeon.battle_cells[tuple(character.pos)]["pico2d_center"][1], character)
+                    for character in deployed
+                ]
+                units.extend((monster_screen_position(monster)[1], monster) for monster in monsters)
+                for _, unit in sorted(units, key=lambda entry: -entry[0]):
+                    if unit.race == "monster":
+                        draw_monster(unit, monster_sprites)
+                    else:
+                        cell = dungeon.battle_cells[tuple(unit.pos)]
+                        x, y = cell["pico2d_center"]
+                        draw_character(unit, sprites, x, y, cell=cell)
                 draw_battle_ui(
                     hud_panel, hud_digits, cards,
                     cost=user.cost,
                     defense_points=user.hp,
-                    remaining_enemies=sum(room.monsters.values()),
+                    remaining_enemies=len(monsters) + len(pending_monsters),
                     selected=dragged_character,
                 )
                 if dragged_character is not None:
@@ -373,6 +466,9 @@ def main():
         hud_digits = None
         cards.clear()
         sprites.clear()
+        monster_sprites.clear()
+        monsters.clear()
+        pending_monsters.clear()
         direction_images.clear()
         dungeon.clear_map()
         dungeon.route_cover = None

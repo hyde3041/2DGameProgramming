@@ -25,6 +25,10 @@ JSON의 `asset/...` 이미지 경로는 **`game/` 폴더**를 기준으로 읽�
 
 플레이어 이미지와 분리 원본은 `asset/character/player/`에, 몬스터 걷기·공격 시트와 분리 원본은 `asset/character/monster/`에 둡니다. 몬스터 시트 경로와 재생 설정은 [monster-motion.json](character/monster-motion.json)에 있습니다.
 
+`game/code/monster.py`의 `Monster`는 `race="monster"`이며 능력치, `moveSpeed`, 위치·방향, 걷기·공격 상태와 공통 전투 시간을 사용합니다. `map.spawn_monster()`가 출발점·가장 가까운 도달 가능 거점·고정 경로를 전달하고, 몬스터는 `spawnPos`, `goalPos`, `route`, `routeIndex`를 보관합니다. `update(battle_time)`은 `moveSpeed`(칸/초)에 따라 경유점을 순서대로 지나며 도착하면 `reachedGoal=True`가 됩니다. 이동 중 경로를 다시 찾지 않으며, 기록된 순간이동 구간은 벽을 가로질러 걷지 않고 즉시 건너갑니다.
+
+전투에 들어가면 방의 몬스터 편성 수만큼 생성하고, 도달 가능한 입구들을 번갈아 사용합니다. `main.MONSTER_SPAWN_INTERVAL`은 기본 1초이며 이동·출현·애니메이션 모두 전투 배속을 따릅니다. 거점에 도착한 몬스터는 화면에서 제거하고 남은 적 수를 갱신합니다. 현재 연결 범위는 생성·경로 이동·도착까지이며 저지·피해·자동 승패 처리는 아직 없습니다.
+
 검사, 수호기사, 궁수, 석궁병, 성직자, 약초사, 냉기술사, 그림자 도적의 8명입니다.
 
 - `asset/character/player/main/<번호>-<캐릭터명>/skill/icon/`: 캐릭터별 스킬 아이콘 2개씩, 총 16개
@@ -94,7 +98,9 @@ JSON의 `asset/...` 이미지 경로는 **`game/` 폴더**를 기준으로 읽�
 
 `manifest.json`이 맵 선택 목록입니다. 약도의 전투방 12개는 일반 맵 43개에서, 보스방은 보스 맵 21개에서 선택합니다. 특수 맵 14개는 데이터와 이미지로 보관하며 일반 전투방에서는 추첨하지 않습니다. 몬스터 종류와 수는 현재 게임의 임시 설정이며 원작의 적 편성을 가져오지 않습니다.
 
-각 JSON의 `source`에는 원본 페이지·데이터 URL과 SHA-256을 기록했습니다. `routes`는 원본의 이동·대기·순간이동 체크포인트를 위쪽 원점 좌표로 변환한 데이터이며 설치물용 더미 경로는 제외합니다. 원작의 특수 타일 효과와 설치물은 `source_tile_key`, `source_blackboard`, `source_predefines`에 기록하고, 실제 효과·적 이동은 아직 구현하지 않았습니다.
+각 JSON의 `source`에는 원본 페이지·데이터 URL과 SHA-256을 기록했습니다. `routes`는 원본의 이동·대기·순간이동 체크포인트를 위쪽 원점 좌표로 변환한 데이터이며 설치물용 더미 경로는 제외합니다. 원작의 특수 타일 효과와 설치물은 `source_tile_key`, `source_blackboard`, `source_predefines`에 기록하며 실제 특수 효과는 아직 구현하지 않았습니다.
+
+지상 몬스터의 실제 경로는 맵을 읽을 때 `walkable` 칸의 상하좌우 연결과 원본 WALK 경로에 명시된 순간이동 연결을 사용해 계산·보관합니다. 걸어야 하는 칸 수가 가장 적은 도착 거점을 선택하고 캐릭터 배치에 따라 우회하지 않습니다. 원본의 대기 연출·경유점 순서를 그대로 재생하는 방식은 아닙니다. 명시된 입구가 없는 보스맵은 기록된 WALK 시작점을 사용합니다. 일반 43개·보스 21개 모두 지상 경로가 있으며, 비행 전용 특수 맵 `cave-77`에는 지상 몬스터를 생성하지 않습니다.
 
 다시 생성하려면 `python tools/import_rogue4_maps.py --fetch`로 공개 데이터를 받아 `.build/oblique-maps/`에 좌표를 만들고, `python tools/render_cave_maps.py .build/oblique-maps --overview`로 PNG를 만듭니다. 이미 받은 데이터를 사용할 때는 `--fetch`를 생략합니다. 실제 적용 전에 기존 이미지와 JSON을 백업합니다. 2026-11-12 교체 전 20개 맵은 `.build/backups/maps-before-rogue4-20261112-102930/`, 시점 변경 전 78개 맵은 `.build/backups/maps-before-oblique-20261112-110006/`에 보관했습니다.
 
