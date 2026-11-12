@@ -1,15 +1,22 @@
+import json
 from time import monotonic
 
 from pico2d import (
     SDL_BUTTON_LEFT,
+    SDL_BUTTON_RIGHT,
+    SDL_GetKeyboardFocus,
     SDL_KEYDOWN,
     SDL_MOUSEBUTTONDOWN,
+    SDL_MOUSEBUTTONUP,
+    SDL_MOUSEMOTION,
     SDL_QUIT,
     SDLK_ESCAPE,
     SDLK_q,
     clear_canvas,
     close_canvas,
     delay,
+    draw_line,
+    draw_rectangle,
     get_events,
     load_image,
     open_canvas,
@@ -17,13 +24,20 @@ from pico2d import (
 )
 
 import map as dungeon
-from character import DEPLOYMENT_COSTS
+from character import DEPLOYMENT_COSTS, Player
 from user import User
 
 
 WIDTH = 800
 HEIGHT = 600
 TIME_SCALE = 1.0  # Battle speed: 0 pauses, 2 runs at double speed.
+DRAG_TIME_SCALE = 0.5
+CHARACTER_SCALE = 0.5
+CHARACTER_FOOT_OFFSET = 0.18  # Downward shift as a fraction of the projected tile height.
+CARD_SIZE = 56
+CARD_SPACING = 61
+CARD_FIRST_X = 218
+CARD_Y = 40
 ASSET_DIRECTORY = dungeon.GAME_DIRECTORY / "asset"
 TITLE_PATH = ASSET_DIRECTORY / "etc/title/title-screen.png"
 UI_DIRECTORY = ASSET_DIRECTORY / "etc/ui"
@@ -37,26 +51,104 @@ def draw_number(digits, number, right, y, width):
         x -= width
 
 
-def draw_battle_ui(panel, digits, cards, *, cost, defense_points, remaining_enemies):
-    for index, (portrait, price) in enumerate(cards):
-        portrait.opacify(1.0 if cost >= price else 0.5)
-        portrait.draw(218 + 61 * index, 40, 56, 56)
+def card_at(x, y, cards):
+    y = HEIGHT - 1 - y
+    for index, (_, character) in enumerate(cards):
+        center = CARD_FIRST_X + CARD_SPACING * index
+        if center - CARD_SIZE / 2 <= x < center + CARD_SIZE / 2 and CARD_Y - CARD_SIZE / 2 <= y < CARD_Y + CARD_SIZE / 2:
+            return character
+    return None
+
+
+def draw_battle_ui(panel, digits, cards, *, cost, defense_points, remaining_enemies, selected=None):
+    for index, (portrait, character) in enumerate(cards):
+        available = cost >= character.cost and not character.deployed
+        portrait.opacify(1.0 if available and character is not selected else 0.5)
+        portrait.draw(CARD_FIRST_X + CARD_SPACING * index, CARD_Y, CARD_SIZE, CARD_SIZE)
     panel.draw(WIDTH // 2, HEIGHT // 2)
 
     draw_number(digits, remaining_enemies, 388, 570, 16)
     draw_number(digits, defense_points, 488, 570, 16)
     draw_number(digits, cost, 774, 40, 17)
-    for index, (_, price) in enumerate(cards):
-        draw_number(digits, price, 242 + 61 * index, 58, 9)
+    for index, (_, character) in enumerate(cards):
+        draw_number(digits, character.cost, 242 + CARD_SPACING * index, 58, 9)
+        if character is selected:
+            center = CARD_FIRST_X + CARD_SPACING * index
+            draw_rectangle(center - 29, CARD_Y - 29, center + 29, CARD_Y + 29, 234, 202, 130)
+
+
+def load_character_sprites(characters):
+    sprites = {}
+    for character in characters:
+        name = character.profile.split("-", 1)[1]
+        metadata = json.loads(
+            (dungeon.METADATA_DIRECTORY / f"character/idle/{name}.json").read_text(encoding="utf-8")
+        )
+        sheets = {
+            state: load_image(str(PROFILE_DIRECTORY / character.profile / "front" / f"{state}-sheet.png"))
+            for state in ("idle", "attack")
+        }
+        sprites[character.profile] = (metadata, sheets)
+    return sprites
+
+
+def draw_character(character, sprites, x, y, opacity=1.0, *, cell=None):
+    metadata, sheets = sprites[character.profile]
+    frame = character.motion_frame(metadata["frames_per_direction"], metadata["fps"])
+    rect = metadata["animations"]["front"]["frames"][frame]["pico2d_rect"]
+    width, height = metadata["cell_size"]
+    pivot_x, pivot_y = metadata["pivot"]
+    perspective = cell.get("perspective_scale", 1.0) if cell is not None else 1.0
+    scale = CHARACTER_SCALE * dungeon.battle_grid["cell_size"][0] / 64 * perspective
+    if cell is not None:
+        y -= cell["surface_rect"][3] * CHARACTER_FOOT_OFFSET
+    sheet = sheets[character.state]
+    sheet.opacify(opacity)
+    sheet.clip_draw(
+        *rect,
+        x + (width / 2 - pivot_x) * scale,
+        y + (pivot_y - height / 2) * scale,
+        width * scale, height * scale,
+    )
+    sheet.opacify(1.0)
+
+
+def draw_placement_tiles(characters, hovered):
+    for pos, cell in dungeon.battle_cells.items():
+        available = dungeon.can_place(pos, characters)
+        if not available and pos != hovered:
+            continue
+        color = (114, 163, 146) if available else (213, 96, 89)
+        if pos == hovered and available:
+            color = (234, 202, 130)
+        polygon = cell.get("pico2d_surface_polygon")
+        if polygon is None:
+            left, bottom, width, height = cell["pico2d_surface_rect"]
+            polygon = [(left, bottom + height), (left + width, bottom + height),
+                       (left + width, bottom), (left, bottom)]
+        center_x, center_y = cell["pico2d_center"]
+        for inset in ((0.92, 0.86) if pos == hovered else (0.92,)):
+            points = [(center_x + (x - center_x) * inset, center_y + (y - center_y) * inset)
+                      for x, y in polygon]
+            for index, (x, y) in enumerate(points):
+                next_x, next_y = points[(index + 1) % len(points)]
+                draw_line(x, y, next_x, next_y, *color)
 
 
 def main():
     user = User(hp=3, scene=0)
+    user.character = [
+        Player(profile=name, attackSpeed=1, damage=10, hp=100, cost=price)
+        for name, price in DEPLOYMENT_COSTS.items()
+    ]
     title_image = None
     route_image = None
     hud_panel = None
     hud_digits = None
     cards = []
+    sprites = {}
+    dragged_character = None
+    mouse_x, mouse_y = 0, 0
     visited_rooms = set()
     battle_time = 0.0
     previous_frame_time = 0.0
@@ -66,18 +158,31 @@ def main():
         hud_panel = load_image(str(UI_DIRECTORY / "battle-hud.png"))
         hud_digits = load_image(str(UI_DIRECTORY / "battle-hud-digits.png"))
         cards = [
-            (load_image(str(PROFILE_DIRECTORY / name / "skill/profile/deployment-square.png")), price)
-            for name, price in DEPLOYMENT_COSTS.items()
+            (load_image(str(PROFILE_DIRECTORY / character.profile / "skill/profile/deployment-square.png")), character)
+            for character in user.character
         ]
         while True:
+            # Account for elapsed time before input changes the drag speed.
+            if user.scene == 2:
+                frame_now = monotonic()
+                speed = TIME_SCALE * (DRAG_TIME_SCALE if dragged_character is not None else 1.0)
+                delta_time = (frame_now - previous_frame_time) * speed
+                previous_frame_time = frame_now
+                battle_time += delta_time
+                user.update_battle(battle_time)
+
             for event in get_events():
                 if event.type == SDL_QUIT:
                     return
                 if event.type == SDL_KEYDOWN:
+                    if event.key == SDLK_ESCAPE and dragged_character is not None:
+                        dragged_character = None
+                        continue
                     if (
                         user.scene == 2
                         and event.key in (SDLK_ESCAPE, SDLK_q)
                     ):
+                        dragged_character = None
                         user.finish_battle(cleared=event.key == SDLK_q)
                         dungeon.clear_map()
                         continue
@@ -98,10 +203,12 @@ def main():
 
                     room = dungeon.route_rooms[room_number]
                     if (
-                        room.map_type == dungeon.MapType.BATTLE
+                        room.map_type in (dungeon.MapType.BATTLE, dungeon.MapType.BOSS)
                         and room_number not in user.pos
                     ):
-                        dungeon.load_map(room.map_index)
+                        dungeon.load_map(room.map_index, map_kind=room.map_type)
+                        if not sprites:
+                            sprites = load_character_sprites(user.character)
                         battle_time = 0.0
                         previous_frame_time = monotonic()
                         user.begin_battle(room_number, battle_time)
@@ -111,6 +218,25 @@ def main():
                         dungeon.MapType.TREASURE,
                     ):
                         visited_rooms.add(room_number)
+                elif user.scene == 2:
+                    if event.type in (SDL_MOUSEMOTION, SDL_MOUSEBUTTONDOWN, SDL_MOUSEBUTTONUP):
+                        mouse_x, mouse_y = event.x, event.y
+                    if event.type == SDL_MOUSEBUTTONDOWN:
+                        if event.button == SDL_BUTTON_RIGHT:
+                            dragged_character = None
+                        elif event.button == SDL_BUTTON_LEFT and dragged_character is None:
+                            character = card_at(mouse_x, mouse_y, cards)
+                            if character is not None and user.can_deploy(character):
+                                dragged_character = character
+                    elif event.type == SDL_MOUSEBUTTONUP and event.button == SDL_BUTTON_LEFT:
+                        if dragged_character is not None:
+                            pos = dungeon.cell_at(mouse_x, mouse_y)
+                            if dungeon.can_place(pos, user.character):
+                                user.deploy_character(dragged_character, pos, battle_time)
+                            dragged_character = None
+
+            if dragged_character is not None and not SDL_GetKeyboardFocus():
+                dragged_character = None
 
             clear_canvas()
             if user.scene == 0:
@@ -118,19 +244,31 @@ def main():
             elif user.scene == 1:
                 dungeon.draw_route(route_image, visited_rooms, user.pos)
             elif user.scene == 2:
-                frame_now = monotonic()
-                delta_time = (frame_now - previous_frame_time) * TIME_SCALE
-                previous_frame_time = frame_now
-                battle_time += delta_time
-                user.update_battle(battle_time)
                 dungeon.dungeon_map.draw(WIDTH // 2, HEIGHT // 2)
+                hovered = dungeon.cell_at(mouse_x, mouse_y)
+                if dragged_character is not None:
+                    draw_placement_tiles(user.character, hovered)
+                deployed = [character for character in user.character if character.deployed]
+                for character in sorted(deployed, key=lambda c: -dungeon.battle_cells[tuple(c.pos)]["pico2d_center"][1]):
+                    cell = dungeon.battle_cells[tuple(character.pos)]
+                    x, y = cell["pico2d_center"]
+                    draw_character(character, sprites, x, y, cell=cell)
                 room = dungeon.route_rooms[user.battle_room]
                 draw_battle_ui(
                     hud_panel, hud_digits, cards,
                     cost=user.cost,
                     defense_points=user.hp,
                     remaining_enemies=sum(room.monsters.values()),
+                    selected=dragged_character,
                 )
+                if dragged_character is not None:
+                    if dungeon.can_place(hovered, user.character):
+                        cell = dungeon.battle_cells[hovered]
+                        x, y = cell["pico2d_center"]
+                    else:
+                        cell = None
+                        x, y = mouse_x, HEIGHT - 1 - mouse_y
+                    draw_character(dragged_character, sprites, x, y, opacity=0.65, cell=cell)
             update_canvas()
             delay(1 / 60)
     finally:
@@ -139,6 +277,7 @@ def main():
         hud_panel = None
         hud_digits = None
         cards.clear()
+        sprites.clear()
         dungeon.clear_map()
         dungeon.route_cover = None
         close_canvas()

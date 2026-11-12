@@ -24,12 +24,19 @@ class Player:
     damage: int
     hp: int
     cost: int
+    profile: str = ""
+    deployed: bool = False
     pos: list[int] = field(default_factory=lambda: [0, 0])
     # Tile offsets from the player, with negative y pointing down.
     attackRange: list[list[int]] = field(default_factory=lambda: [[0, 0], [0, -1]])
     state: str = "idle"
     _animation_time: float = field(default=0.0, init=False, repr=False, compare=False)
     _state_started_at: float | None = field(default=None, init=False, repr=False, compare=False)
+
+    def reset_animation(self, battle_time: float):
+        self.state = "idle"
+        self._animation_time = battle_time
+        self._state_started_at = battle_time
 
     def sync_animation_time(self, battle_time: float):
         if self._state_started_at is None or battle_time < self._animation_time:

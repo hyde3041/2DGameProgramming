@@ -1,485 +1,1351 @@
 {
-  "version": 6,
-  "map_count": 20,
+  "version": 8,
+  "map_count": 78,
   "canvas": {
     "width": 800,
     "height": 600
   },
-  "grid": {
-    "columns": 11,
-    "rows": 7,
-    "origin": [
-      48,
-      76
-    ],
-    "cell_size": [
-      64,
-      64
-    ],
-    "elevation_pixels": 16,
-    "coordinate_system": "row 0 at top, column 0 at left"
+  "source_url": "https://map.ark-nights.com/areas/rogue_4",
+  "source_index_url": "https://map.ark-nights.com/data/zone_partitions/rogue_4.json",
+  "imported_at": "2026-11-12T01:59:14.374945+00:00",
+  "source_entry_count": 127,
+  "categories": {
+    "battle": 43,
+    "boss": 21,
+    "special": 14
   },
-  "creation": "10 existing themes including 4 rebuilt legacy themes, plus 10 new themes. Exact shared grid and hand-painted material style.",
+  "creation": "PRTS.Map rogue_4 layouts with the project's cave art, oblique view and flush tile surfaces",
+  "projection": {
+    "back_scale": 0.86,
+    "depth_ratio": 0.82,
+    "visual_elevation": 0
+  },
   "maps": [
     {
       "id": "cave-0",
-      "name": "기본 던전",
       "number": 0,
-      "description": "중앙 석벽의 교차로와 좌우 단상을 잇는 기본 전투실",
+      "name": "ro4_n_1_1",
       "file": "asset/map/stage/main/cave/cave-0.png",
+      "category": "battle",
+      "tier": 1,
       "metadata": "metadata/map/cave-0.json",
-      "width": 800,
-      "height": 600,
-      "columns": 11,
-      "rows": 7,
+      "columns": 12,
+      "rows": 5,
       "cell_size": [
-        64,
-        64
+        60,
+        60
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "legacy theme rebuilt on the standard grid"
+      "source_stage": "ro4_n_1_1",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_1_1"
     },
     {
       "id": "cave-1",
-      "name": "숲길",
       "number": 1,
-      "description": "엇갈린 가시덤불과 나무 사이를 굽어 이동하는 길",
+      "name": "ro4_n_1_2",
       "file": "asset/map/stage/main/cave/cave-1.png",
+      "category": "battle",
+      "tier": 1,
       "metadata": "metadata/map/cave-1.json",
-      "width": 800,
-      "height": 600,
-      "columns": 11,
+      "columns": 9,
       "rows": 7,
       "cell_size": [
         64,
         64
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "legacy theme rebuilt on the standard grid"
+      "source_stage": "ro4_n_1_2",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_1_2"
     },
     {
       "id": "cave-2",
-      "name": "전초기지",
       "number": 2,
-      "description": "나무 방책을 돌아 보급 구역의 두 출구를 방어",
+      "name": "ro4_n_1_3",
       "file": "asset/map/stage/main/cave/cave-2.png",
+      "category": "battle",
+      "tier": 1,
       "metadata": "metadata/map/cave-2.json",
-      "width": 800,
-      "height": 600,
-      "columns": 11,
+      "columns": 10,
       "rows": 7,
       "cell_size": [
         64,
         64
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "legacy theme rebuilt on the standard grid"
+      "source_stage": "ro4_n_1_3",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_1_3"
     },
     {
       "id": "cave-3",
-      "name": "성문 앞",
       "number": 3,
-      "description": "해자를 건너 중앙 성벽의 두 관문을 통과하는 전장",
+      "name": "ro4_n_1_4",
       "file": "asset/map/stage/main/cave/cave-3.png",
+      "category": "battle",
+      "tier": 1,
       "metadata": "metadata/map/cave-3.json",
-      "width": 800,
-      "height": 600,
-      "columns": 11,
+      "columns": 9,
       "rows": 7,
       "cell_size": [
         64,
         64
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "legacy theme rebuilt on the standard grid"
+      "source_stage": "ro4_n_1_4",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_1_4"
     },
     {
       "id": "cave-4",
-      "name": "지하 감옥",
       "number": 4,
-      "description": "감옥 벽 사이의 엇갈린 상하 통로",
+      "name": "ro4_n_1_5",
       "file": "asset/map/stage/main/cave/cave-4.png",
+      "category": "battle",
+      "tier": 1,
       "metadata": "metadata/map/cave-4.json",
-      "width": 800,
-      "height": 600,
       "columns": 11,
       "rows": 7,
       "cell_size": [
         64,
         64
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "existing v4 layout preserved"
+      "source_stage": "ro4_n_1_5",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_1_5"
     },
     {
       "id": "cave-5",
-      "name": "침수 유적",
       "number": 5,
-      "description": "수로 사이의 교차 다리",
+      "name": "ro4_n_2_1",
       "file": "asset/map/stage/main/cave/cave-5.png",
+      "category": "battle",
+      "tier": 2,
       "metadata": "metadata/map/cave-5.json",
-      "width": 800,
-      "height": 600,
-      "columns": 11,
+      "columns": 8,
       "rows": 7,
       "cell_size": [
         64,
         64
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "existing v4 layout preserved"
+      "source_stage": "ro4_n_2_1",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_2_1"
     },
     {
       "id": "cave-6",
-      "name": "용암 제단",
       "number": 6,
-      "description": "중앙 제단과 용암 지형을 우회하는 길",
+      "name": "ro4_n_2_2",
       "file": "asset/map/stage/main/cave/cave-6.png",
+      "category": "battle",
+      "tier": 2,
       "metadata": "metadata/map/cave-6.json",
-      "width": 800,
-      "height": 600,
-      "columns": 11,
+      "columns": 9,
       "rows": 7,
       "cell_size": [
         64,
         64
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "existing v4 layout preserved"
+      "source_stage": "ro4_n_2_2",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_2_2"
     },
     {
       "id": "cave-7",
-      "name": "폐광",
       "number": 7,
-      "description": "두 갱도 사이를 어긋난 연결 통로로 건너는 구조",
+      "name": "ro4_n_2_3",
       "file": "asset/map/stage/main/cave/cave-7.png",
+      "category": "battle",
+      "tier": 2,
       "metadata": "metadata/map/cave-7.json",
-      "width": 800,
-      "height": 600,
       "columns": 11,
-      "rows": 7,
+      "rows": 8,
       "cell_size": [
-        64,
-        64
+        60,
+        60
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "existing v5 layout preserved"
+      "source_stage": "ro4_n_2_3",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_2_3"
     },
     {
       "id": "cave-8",
-      "name": "지하 정원",
       "number": 8,
-      "description": "화단과 연못 사이를 돌아가는 굽은 통로",
+      "name": "ro4_n_2_4",
       "file": "asset/map/stage/main/cave/cave-8.png",
+      "category": "battle",
+      "tier": 2,
       "metadata": "metadata/map/cave-8.json",
-      "width": 800,
-      "height": 600,
-      "columns": 11,
-      "rows": 7,
+      "columns": 10,
+      "rows": 8,
       "cell_size": [
-        64,
-        64
+        60,
+        60
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "existing v5 layout preserved"
+      "source_stage": "ro4_n_2_4",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_2_4"
     },
     {
       "id": "cave-9",
-      "name": "마법 도서관",
       "number": 9,
-      "description": "책장과 수납장으로 나뉜 통로를 꺾어 이동하는 구조",
+      "name": "ro4_n_2_5",
       "file": "asset/map/stage/main/cave/cave-9.png",
+      "category": "battle",
+      "tier": 2,
       "metadata": "metadata/map/cave-9.json",
-      "width": 800,
-      "height": 600,
       "columns": 11,
-      "rows": 7,
+      "rows": 6,
       "cell_size": [
         64,
         64
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "existing v5 layout preserved"
+      "source_stage": "ro4_n_2_5",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_2_5"
     },
     {
       "id": "cave-10",
-      "name": "얼음 동굴",
       "number": 10,
-      "description": "두 얼음 균열의 어긋난 틈을 지나가는 굽은 통로",
+      "name": "ro4_n_2_6",
       "file": "asset/map/stage/main/cave/cave-10.png",
+      "category": "battle",
+      "tier": 2,
       "metadata": "metadata/map/cave-10.json",
-      "width": 800,
-      "height": 600,
-      "columns": 11,
+      "columns": 9,
       "rows": 7,
       "cell_size": [
         64,
         64
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "new theme"
+      "source_stage": "ro4_n_2_6",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_2_6"
     },
     {
       "id": "cave-11",
-      "name": "고대 묘지",
       "number": 11,
-      "description": "두 묘비 열 사이를 교차해 이동하는 묘역",
+      "name": "ro4_n_2_7",
       "file": "asset/map/stage/main/cave/cave-11.png",
+      "category": "battle",
+      "tier": 2,
       "metadata": "metadata/map/cave-11.json",
-      "width": 800,
-      "height": 600,
       "columns": 11,
       "rows": 7,
       "cell_size": [
         64,
         64
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "new theme"
+      "source_stage": "ro4_n_2_7",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_2_7"
     },
     {
       "id": "cave-12",
-      "name": "고대 신전",
       "number": 12,
-      "description": "중앙 제단과 봉인 지형 주위를 순환하는 회랑",
+      "name": "ro4_n_3_1",
       "file": "asset/map/stage/main/cave/cave-12.png",
+      "category": "battle",
+      "tier": 3,
       "metadata": "metadata/map/cave-12.json",
-      "width": 800,
-      "height": 600,
       "columns": 11,
-      "rows": 7,
+      "rows": 9,
       "cell_size": [
-        64,
-        64
+        54,
+        54
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "new theme"
+      "source_stage": "ro4_n_3_1",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_3_1"
     },
     {
       "id": "cave-13",
-      "name": "독늪",
       "number": 13,
-      "description": "독 웅덩이 두 줄을 상하로 크게 우회하는 S자 길",
+      "name": "ro4_n_3_2",
       "file": "asset/map/stage/main/cave/cave-13.png",
+      "category": "battle",
+      "tier": 3,
       "metadata": "metadata/map/cave-13.json",
-      "width": 800,
-      "height": 600,
       "columns": 11,
-      "rows": 7,
+      "rows": 8,
       "cell_size": [
-        64,
-        64
+        60,
+        60
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "new theme"
+      "source_stage": "ro4_n_3_2",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_3_2"
     },
     {
       "id": "cave-14",
-      "name": "대장간",
       "number": 14,
-      "description": "화로 사이의 두 연결로와 달아오른 철망을 넘나드는 작업장",
+      "name": "ro4_n_3_3",
       "file": "asset/map/stage/main/cave/cave-14.png",
+      "category": "battle",
+      "tier": 3,
       "metadata": "metadata/map/cave-14.json",
-      "width": 800,
-      "height": 600,
-      "columns": 11,
+      "columns": 12,
       "rows": 7,
       "cell_size": [
-        64,
-        64
+        60,
+        60
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "new theme"
+      "source_stage": "ro4_n_3_3",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_3_3"
     },
     {
       "id": "cave-15",
-      "name": "지하 수로",
       "number": 15,
-      "description": "좌우 배수로의 다리를 서로 다른 높이에서 건너는 길",
+      "name": "ro4_n_3_4",
       "file": "asset/map/stage/main/cave/cave-15.png",
+      "category": "battle",
+      "tier": 3,
       "metadata": "metadata/map/cave-15.json",
-      "width": 800,
-      "height": 600,
       "columns": 11,
       "rows": 7,
       "cell_size": [
         64,
         64
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "new theme"
+      "source_stage": "ro4_n_3_4",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_3_4"
     },
     {
       "id": "cave-16",
-      "name": "왕실 보물고",
       "number": 16,
-      "description": "중앙 보물 구역과 압력 함정 양쪽을 우회하는 금고실",
+      "name": "ro4_n_3_5",
       "file": "asset/map/stage/main/cave/cave-16.png",
+      "category": "battle",
+      "tier": 3,
       "metadata": "metadata/map/cave-16.json",
-      "width": 800,
-      "height": 600,
       "columns": 11,
       "rows": 7,
       "cell_size": [
         64,
         64
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "new theme"
+      "source_stage": "ro4_n_3_5",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_3_5"
     },
     {
       "id": "cave-17",
-      "name": "연금술 실험실",
       "number": 17,
-      "description": "엇갈린 실험대와 마력 유출을 돌아가는 작업 구역",
+      "name": "ro4_n_3_6",
       "file": "asset/map/stage/main/cave/cave-17.png",
+      "category": "battle",
+      "tier": 3,
       "metadata": "metadata/map/cave-17.json",
-      "width": 800,
-      "height": 600,
-      "columns": 11,
-      "rows": 7,
+      "columns": 12,
+      "rows": 8,
       "cell_size": [
-        64,
-        64
+        60,
+        60
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "new theme"
+      "source_stage": "ro4_n_3_6",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_3_6"
     },
     {
       "id": "cave-18",
-      "name": "버려진 예배당",
       "number": 18,
-      "description": "긴의자 열 사이 중앙 통로와 양쪽 회랑을 잇는 구조",
+      "name": "ro4_n_3_7",
       "file": "asset/map/stage/main/cave/cave-18.png",
+      "category": "battle",
+      "tier": 3,
       "metadata": "metadata/map/cave-18.json",
-      "width": 800,
-      "height": 600,
-      "columns": 11,
-      "rows": 7,
+      "columns": 10,
+      "rows": 8,
       "cell_size": [
-        64,
-        64
+        60,
+        60
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "new theme"
+      "source_stage": "ro4_n_3_7",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_3_7"
     },
     {
       "id": "cave-19",
-      "name": "마왕의 왕좌",
       "number": 19,
-      "description": "중앙 왕좌와 심연 문양을 여러 방향에서 에워싸는 최종 전장",
+      "name": "ro4_n_3_8",
       "file": "asset/map/stage/main/cave/cave-19.png",
+      "category": "battle",
+      "tier": 3,
       "metadata": "metadata/map/cave-19.json",
-      "width": 800,
-      "height": 600,
       "columns": 11,
       "rows": 7,
       "cell_size": [
         64,
         64
       ],
-      "elevation_pixels": 16,
-      "terrain_heights": 2,
-      "goal_points": 2,
-      "enemy_entrances": 3,
-      "game_grid_calibrated": true,
-      "shared_art": "asset/map/stage/icon/common",
-      "origin": "new theme"
+      "source_stage": "ro4_n_3_8",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_3_8"
+    },
+    {
+      "id": "cave-20",
+      "number": 20,
+      "name": "ro4_n_4_1",
+      "file": "asset/map/stage/main/cave/cave-20.png",
+      "category": "battle",
+      "tier": 4,
+      "metadata": "metadata/map/cave-20.json",
+      "columns": 10,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_4_1",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_4_1"
+    },
+    {
+      "id": "cave-21",
+      "number": 21,
+      "name": "ro4_n_4_2",
+      "file": "asset/map/stage/main/cave/cave-21.png",
+      "category": "battle",
+      "tier": 4,
+      "metadata": "metadata/map/cave-21.json",
+      "columns": 11,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_4_2",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_4_2"
+    },
+    {
+      "id": "cave-22",
+      "number": 22,
+      "name": "ro4_n_4_3",
+      "file": "asset/map/stage/main/cave/cave-22.png",
+      "category": "battle",
+      "tier": 4,
+      "metadata": "metadata/map/cave-22.json",
+      "columns": 11,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_4_3",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_4_3"
+    },
+    {
+      "id": "cave-23",
+      "number": 23,
+      "name": "ro4_n_4_4",
+      "file": "asset/map/stage/main/cave/cave-23.png",
+      "category": "battle",
+      "tier": 4,
+      "metadata": "metadata/map/cave-23.json",
+      "columns": 10,
+      "rows": 7,
+      "cell_size": [
+        64,
+        64
+      ],
+      "source_stage": "ro4_n_4_4",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_4_4"
+    },
+    {
+      "id": "cave-24",
+      "number": 24,
+      "name": "ro4_n_4_5",
+      "file": "asset/map/stage/main/cave/cave-24.png",
+      "category": "battle",
+      "tier": 4,
+      "metadata": "metadata/map/cave-24.json",
+      "columns": 11,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_n_4_5",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_4_5"
+    },
+    {
+      "id": "cave-25",
+      "number": 25,
+      "name": "ro4_n_4_6",
+      "file": "asset/map/stage/main/cave/cave-25.png",
+      "category": "battle",
+      "tier": 4,
+      "metadata": "metadata/map/cave-25.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_4_6",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_4_6"
+    },
+    {
+      "id": "cave-26",
+      "number": 26,
+      "name": "ro4_n_4_7",
+      "file": "asset/map/stage/main/cave/cave-26.png",
+      "category": "battle",
+      "tier": 4,
+      "metadata": "metadata/map/cave-26.json",
+      "columns": 11,
+      "rows": 7,
+      "cell_size": [
+        64,
+        64
+      ],
+      "source_stage": "ro4_n_4_7",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_4_7"
+    },
+    {
+      "id": "cave-27",
+      "number": 27,
+      "name": "ro4_n_4_8",
+      "file": "asset/map/stage/main/cave/cave-27.png",
+      "category": "battle",
+      "tier": 4,
+      "metadata": "metadata/map/cave-27.json",
+      "columns": 10,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_4_8",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_4_8"
+    },
+    {
+      "id": "cave-28",
+      "number": 28,
+      "name": "ro4_n_4_9",
+      "file": "asset/map/stage/main/cave/cave-28.png",
+      "category": "battle",
+      "tier": 4,
+      "metadata": "metadata/map/cave-28.json",
+      "columns": 12,
+      "rows": 7,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_4_9",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_4_9"
+    },
+    {
+      "id": "cave-29",
+      "number": 29,
+      "name": "ro4_n_4_10",
+      "file": "asset/map/stage/main/cave/cave-29.png",
+      "category": "battle",
+      "tier": 4,
+      "metadata": "metadata/map/cave-29.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_4_10",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_4_10"
+    },
+    {
+      "id": "cave-30",
+      "number": 30,
+      "name": "ro4_n_5_1",
+      "file": "asset/map/stage/main/cave/cave-30.png",
+      "category": "battle",
+      "tier": 5,
+      "metadata": "metadata/map/cave-30.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_5_1",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_5_1"
+    },
+    {
+      "id": "cave-31",
+      "number": 31,
+      "name": "ro4_n_5_2",
+      "file": "asset/map/stage/main/cave/cave-31.png",
+      "category": "battle",
+      "tier": 5,
+      "metadata": "metadata/map/cave-31.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_5_2",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_5_2"
+    },
+    {
+      "id": "cave-32",
+      "number": 32,
+      "name": "ro4_n_5_3",
+      "file": "asset/map/stage/main/cave/cave-32.png",
+      "category": "battle",
+      "tier": 5,
+      "metadata": "metadata/map/cave-32.json",
+      "columns": 12,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_n_5_3",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_5_3"
+    },
+    {
+      "id": "cave-33",
+      "number": 33,
+      "name": "ro4_n_5_4",
+      "file": "asset/map/stage/main/cave/cave-33.png",
+      "category": "battle",
+      "tier": 5,
+      "metadata": "metadata/map/cave-33.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_5_4",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_5_4"
+    },
+    {
+      "id": "cave-34",
+      "number": 34,
+      "name": "ro4_n_5_5",
+      "file": "asset/map/stage/main/cave/cave-34.png",
+      "category": "battle",
+      "tier": 5,
+      "metadata": "metadata/map/cave-34.json",
+      "columns": 13,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_n_5_5",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_5_5"
+    },
+    {
+      "id": "cave-35",
+      "number": 35,
+      "name": "ro4_n_5_6",
+      "file": "asset/map/stage/main/cave/cave-35.png",
+      "category": "battle",
+      "tier": 5,
+      "metadata": "metadata/map/cave-35.json",
+      "columns": 12,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_n_5_6",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_5_6"
+    },
+    {
+      "id": "cave-36",
+      "number": 36,
+      "name": "ro4_n_5_7",
+      "file": "asset/map/stage/main/cave/cave-36.png",
+      "category": "battle",
+      "tier": 5,
+      "metadata": "metadata/map/cave-36.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_5_7",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_5_7"
+    },
+    {
+      "id": "cave-37",
+      "number": 37,
+      "name": "ro4_n_5_8",
+      "file": "asset/map/stage/main/cave/cave-37.png",
+      "category": "battle",
+      "tier": 5,
+      "metadata": "metadata/map/cave-37.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_5_8",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_5_8"
+    },
+    {
+      "id": "cave-38",
+      "number": 38,
+      "name": "ro4_n_5_9",
+      "file": "asset/map/stage/main/cave/cave-38.png",
+      "category": "battle",
+      "tier": 5,
+      "metadata": "metadata/map/cave-38.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_5_9",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_5_9"
+    },
+    {
+      "id": "cave-39",
+      "number": 39,
+      "name": "ro4_n_6_1",
+      "file": "asset/map/stage/main/cave/cave-39.png",
+      "category": "battle",
+      "tier": 6,
+      "metadata": "metadata/map/cave-39.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_6_1",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_6_1"
+    },
+    {
+      "id": "cave-40",
+      "number": 40,
+      "name": "ro4_n_6_2",
+      "file": "asset/map/stage/main/cave/cave-40.png",
+      "category": "battle",
+      "tier": 6,
+      "metadata": "metadata/map/cave-40.json",
+      "columns": 11,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_6_2",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_6_2"
+    },
+    {
+      "id": "cave-41",
+      "number": 41,
+      "name": "ro4_n_7_1",
+      "file": "asset/map/stage/main/cave/cave-41.png",
+      "category": "battle",
+      "tier": 7,
+      "metadata": "metadata/map/cave-41.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_n_7_1",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_7_1"
+    },
+    {
+      "id": "cave-42",
+      "number": 42,
+      "name": "ro4_n_7_2",
+      "file": "asset/map/stage/main/cave/cave-42.png",
+      "category": "battle",
+      "tier": 7,
+      "metadata": "metadata/map/cave-42.json",
+      "columns": 12,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_n_7_2",
+      "source_url": "https://map.ark-nights.com/map/ro4_n_7_2"
+    },
+    {
+      "id": "cave-43",
+      "number": 43,
+      "name": "ro4_b_1",
+      "file": "asset/map/stage/main/cave/cave-43.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-43.json",
+      "columns": 13,
+      "rows": 8,
+      "cell_size": [
+        55,
+        55
+      ],
+      "source_stage": "ro4_b_1",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_1"
+    },
+    {
+      "id": "cave-44",
+      "number": 44,
+      "name": "ro4_b_1_b",
+      "file": "asset/map/stage/main/cave/cave-44.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-44.json",
+      "columns": 13,
+      "rows": 8,
+      "cell_size": [
+        55,
+        55
+      ],
+      "source_stage": "ro4_b_1_b",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_1_b"
+    },
+    {
+      "id": "cave-45",
+      "number": 45,
+      "name": "ro4_b_1_c",
+      "file": "asset/map/stage/main/cave/cave-45.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-45.json",
+      "columns": 11,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_b_1_c",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_1_c"
+    },
+    {
+      "id": "cave-46",
+      "number": 46,
+      "name": "ro4_b_2",
+      "file": "asset/map/stage/main/cave/cave-46.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-46.json",
+      "columns": 12,
+      "rows": 7,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_b_2",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_2"
+    },
+    {
+      "id": "cave-47",
+      "number": 47,
+      "name": "ro4_b_2_b",
+      "file": "asset/map/stage/main/cave/cave-47.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-47.json",
+      "columns": 12,
+      "rows": 7,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_b_2_b",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_2_b"
+    },
+    {
+      "id": "cave-48",
+      "number": 48,
+      "name": "ro4_b_2_c",
+      "file": "asset/map/stage/main/cave/cave-48.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-48.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_b_2_c",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_2_c"
+    },
+    {
+      "id": "cave-49",
+      "number": 49,
+      "name": "ro4_b_3",
+      "file": "asset/map/stage/main/cave/cave-49.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-49.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_b_3",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_3"
+    },
+    {
+      "id": "cave-50",
+      "number": 50,
+      "name": "ro4_b_3_b",
+      "file": "asset/map/stage/main/cave/cave-50.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-50.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_b_3_b",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_3_b"
+    },
+    {
+      "id": "cave-51",
+      "number": 51,
+      "name": "ro4_b_3_c",
+      "file": "asset/map/stage/main/cave/cave-51.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-51.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_b_3_c",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_3_c"
+    },
+    {
+      "id": "cave-52",
+      "number": 52,
+      "name": "ro4_b_4",
+      "file": "asset/map/stage/main/cave/cave-52.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-52.json",
+      "columns": 13,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_b_4",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_4"
+    },
+    {
+      "id": "cave-53",
+      "number": 53,
+      "name": "ro4_b_4_b",
+      "file": "asset/map/stage/main/cave/cave-53.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-53.json",
+      "columns": 13,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_b_4_b",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_4_b"
+    },
+    {
+      "id": "cave-54",
+      "number": 54,
+      "name": "ro4_b_4_c",
+      "file": "asset/map/stage/main/cave/cave-54.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-54.json",
+      "columns": 13,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_b_4_c",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_4_c"
+    },
+    {
+      "id": "cave-55",
+      "number": 55,
+      "name": "ro4_b_4_d",
+      "file": "asset/map/stage/main/cave/cave-55.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-55.json",
+      "columns": 13,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_b_4_d",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_4_d"
+    },
+    {
+      "id": "cave-56",
+      "number": 56,
+      "name": "ro4_b_5",
+      "file": "asset/map/stage/main/cave/cave-56.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-56.json",
+      "columns": 13,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_b_5",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_5"
+    },
+    {
+      "id": "cave-57",
+      "number": 57,
+      "name": "ro4_b_5_b",
+      "file": "asset/map/stage/main/cave/cave-57.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-57.json",
+      "columns": 13,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_b_5_b",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_5_b"
+    },
+    {
+      "id": "cave-58",
+      "number": 58,
+      "name": "ro4_b_5_c",
+      "file": "asset/map/stage/main/cave/cave-58.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-58.json",
+      "columns": 13,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_b_5_c",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_5_c"
+    },
+    {
+      "id": "cave-59",
+      "number": 59,
+      "name": "ro4_b_5_d",
+      "file": "asset/map/stage/main/cave/cave-59.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-59.json",
+      "columns": 13,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_b_5_d",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_5_d"
+    },
+    {
+      "id": "cave-60",
+      "number": 60,
+      "name": "ro4_b_6",
+      "file": "asset/map/stage/main/cave/cave-60.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-60.json",
+      "columns": 13,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_b_6",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_6"
+    },
+    {
+      "id": "cave-61",
+      "number": 61,
+      "name": "ro4_b_7",
+      "file": "asset/map/stage/main/cave/cave-61.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-61.json",
+      "columns": 25,
+      "rows": 8,
+      "cell_size": [
+        28,
+        28
+      ],
+      "source_stage": "ro4_b_7",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_7"
+    },
+    {
+      "id": "cave-62",
+      "number": 62,
+      "name": "ro4_b_8",
+      "file": "asset/map/stage/main/cave/cave-62.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-62.json",
+      "columns": 36,
+      "rows": 9,
+      "cell_size": [
+        20,
+        20
+      ],
+      "source_stage": "ro4_b_8",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_8"
+    },
+    {
+      "id": "cave-63",
+      "number": 63,
+      "name": "ro4_b_9",
+      "file": "asset/map/stage/main/cave/cave-63.png",
+      "category": "boss",
+      "tier": 7,
+      "metadata": "metadata/map/cave-63.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_b_9",
+      "source_url": "https://map.ark-nights.com/map/ro4_b_9"
+    },
+    {
+      "id": "cave-64",
+      "number": 64,
+      "name": "ro4_t_1",
+      "file": "asset/map/stage/main/cave/cave-64.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-64.json",
+      "columns": 11,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_t_1",
+      "source_url": "https://map.ark-nights.com/map/ro4_t_1"
+    },
+    {
+      "id": "cave-65",
+      "number": 65,
+      "name": "ro4_t_2",
+      "file": "asset/map/stage/main/cave/cave-65.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-65.json",
+      "columns": 11,
+      "rows": 5,
+      "cell_size": [
+        64,
+        64
+      ],
+      "source_stage": "ro4_t_2",
+      "source_url": "https://map.ark-nights.com/map/ro4_t_2"
+    },
+    {
+      "id": "cave-66",
+      "number": 66,
+      "name": "ro4_t_3",
+      "file": "asset/map/stage/main/cave/cave-66.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-66.json",
+      "columns": 12,
+      "rows": 7,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_t_3",
+      "source_url": "https://map.ark-nights.com/map/ro4_t_3"
+    },
+    {
+      "id": "cave-67",
+      "number": 67,
+      "name": "ro4_t_4",
+      "file": "asset/map/stage/main/cave/cave-67.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-67.json",
+      "columns": 12,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_t_4",
+      "source_url": "https://map.ark-nights.com/map/ro4_t_4"
+    },
+    {
+      "id": "cave-68",
+      "number": 68,
+      "name": "ro4_t_5",
+      "file": "asset/map/stage/main/cave/cave-68.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-68.json",
+      "columns": 9,
+      "rows": 7,
+      "cell_size": [
+        64,
+        64
+      ],
+      "source_stage": "ro4_t_5",
+      "source_url": "https://map.ark-nights.com/map/ro4_t_5"
+    },
+    {
+      "id": "cave-69",
+      "number": 69,
+      "name": "ro4_t_6",
+      "file": "asset/map/stage/main/cave/cave-69.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-69.json",
+      "columns": 13,
+      "rows": 8,
+      "cell_size": [
+        55,
+        55
+      ],
+      "source_stage": "ro4_t_6",
+      "source_url": "https://map.ark-nights.com/map/ro4_t_6"
+    },
+    {
+      "id": "cave-70",
+      "number": 70,
+      "name": "ro4_t_7",
+      "file": "asset/map/stage/main/cave/cave-70.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-70.json",
+      "columns": 12,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_t_7",
+      "source_url": "https://map.ark-nights.com/map/ro4_t_7"
+    },
+    {
+      "id": "cave-71",
+      "number": 71,
+      "name": "ro4_t_8",
+      "file": "asset/map/stage/main/cave/cave-71.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-71.json",
+      "columns": 11,
+      "rows": 7,
+      "cell_size": [
+        64,
+        64
+      ],
+      "source_stage": "ro4_t_8",
+      "source_url": "https://map.ark-nights.com/map/ro4_t_8"
+    },
+    {
+      "id": "cave-72",
+      "number": 72,
+      "name": "ro4_ev_1",
+      "file": "asset/map/stage/main/cave/cave-72.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-72.json",
+      "columns": 11,
+      "rows": 8,
+      "cell_size": [
+        60,
+        60
+      ],
+      "source_stage": "ro4_ev_1",
+      "source_url": "https://map.ark-nights.com/map/ro4_ev_1"
+    },
+    {
+      "id": "cave-73",
+      "number": 73,
+      "name": "ro4_ev_2",
+      "file": "asset/map/stage/main/cave/cave-73.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-73.json",
+      "columns": 11,
+      "rows": 9,
+      "cell_size": [
+        54,
+        54
+      ],
+      "source_stage": "ro4_ev_2",
+      "source_url": "https://map.ark-nights.com/map/ro4_ev_2"
+    },
+    {
+      "id": "cave-74",
+      "number": 74,
+      "name": "ro4_duel_1",
+      "file": "asset/map/stage/main/cave/cave-74.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-74.json",
+      "columns": 18,
+      "rows": 6,
+      "cell_size": [
+        40,
+        40
+      ],
+      "source_stage": "ro4_duel_1",
+      "source_url": "https://map.ark-nights.com/map/ro4_duel_1"
+    },
+    {
+      "id": "cave-75",
+      "number": 75,
+      "name": "ro4_duel_2",
+      "file": "asset/map/stage/main/cave/cave-75.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-75.json",
+      "columns": 18,
+      "rows": 6,
+      "cell_size": [
+        40,
+        40
+      ],
+      "source_stage": "ro4_duel_2",
+      "source_url": "https://map.ark-nights.com/map/ro4_duel_2"
+    },
+    {
+      "id": "cave-76",
+      "number": 76,
+      "name": "ro4_duel_3",
+      "file": "asset/map/stage/main/cave/cave-76.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-76.json",
+      "columns": 18,
+      "rows": 6,
+      "cell_size": [
+        40,
+        40
+      ],
+      "source_stage": "ro4_duel_3",
+      "source_url": "https://map.ark-nights.com/map/ro4_duel_3"
+    },
+    {
+      "id": "cave-77",
+      "number": 77,
+      "name": "ro4_duel_b",
+      "file": "asset/map/stage/main/cave/cave-77.png",
+      "category": "special",
+      "tier": 3,
+      "metadata": "metadata/map/cave-77.json",
+      "columns": 18,
+      "rows": 6,
+      "cell_size": [
+        40,
+        40
+      ],
+      "source_stage": "ro4_duel_b",
+      "source_url": "https://map.ark-nights.com/map/ro4_duel_b"
     }
   ]
 }

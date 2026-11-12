@@ -35,6 +35,18 @@ ROUTE_COVER_PATH = MAP_ASSET_DIRECTORY / "field/icon/empty.png"
 ROUTE_LAYOUTS = json.loads(
     (METADATA_DIRECTORY / "map/cave-routes.json").read_text(encoding="utf-8")
 )
+MAP_MANIFEST = {
+    entry["number"]: entry
+    for entry in json.loads(
+        (METADATA_DIRECTORY / "map/manifest.json").read_text(encoding="utf-8")
+    )["maps"]
+}
+BATTLE_MAP_NUMBERS = [
+    number for number, entry in MAP_MANIFEST.items() if entry["category"] == "battle"
+]
+BOSS_MAP_NUMBERS = [
+    number for number, entry in MAP_MANIFEST.items() if entry["category"] == "boss"
+]
 RELIC_NUMBERS = [
     relic["number"]
     for relic in json.loads(
@@ -51,45 +63,40 @@ GOBLIN = "goblin-scout"
 SKELETON = "armored-skeleton"
 GUARDIAN = "ancient-guardian"
 
-# First playtest counts, keyed by the cave image number.
+# Provisional counts for our monsters, independent of the source game's waves.
 CAVE_MONSTERS = {
-    0: {GOBLIN: 6},
-    1: {GOBLIN: 8},
-    2: {GOBLIN: 5, SKELETON: 2},
-    3: {GOBLIN: 6, SKELETON: 2},
-    4: {GOBLIN: 4, SKELETON: 3},
-    5: {SKELETON: 5},
-    6: {GOBLIN: 8, SKELETON: 2},
-    7: {GOBLIN: 7},
-    8: {GOBLIN: 5, SKELETON: 4},
-    9: {GOBLIN: 7, SKELETON: 3},
-    10: {GOBLIN: 9},
-    11: {GOBLIN: 6, SKELETON: 3},
-    12: {GOBLIN: 4, SKELETON: 4},
-    13: {GOBLIN: 9, SKELETON: 2},
-    14: {SKELETON: 6},
-    15: {GOBLIN: 8, SKELETON: 3},
-    16: {GOBLIN: 5, SKELETON: 5},
-    17: {GOBLIN: 7, SKELETON: 4},
-    18: {GOBLIN: 10, SKELETON: 2},
-    19: {GOBLIN: 6, SKELETON: 5},
+    number: (
+        {GUARDIAN: 1}
+        if entry["category"] == "boss"
+        else {GOBLIN: 5 + entry["tier"], SKELETON: max(0, entry["tier"] - 1)}
+    )
+    for number, entry in MAP_MANIFEST.items()
 }
 
-map_list = random.sample(list(CAVE_MONSTERS), BATTLE_ROOM_COUNT)
+map_list = random.sample(BATTLE_MAP_NUMBERS, BATTLE_ROOM_COUNT)
 map_index = map_list[0]
 map_type = MapType.START
 dungeon_map = None
+battle_cells = {}
+battle_grid = {}
 route_rooms: list[Room] = []
 route_links = []
 route_cover = None
 
-def load_map(index=None):
-    global dungeon_map, map_index, map_type
+def load_map(index=None, map_kind=MapType.BATTLE):
+    global dungeon_map, map_index, map_type, battle_cells, battle_grid
 
     index = map_index if index is None else index
-    dungeon_map = load_image(str(MAP_DIRECTORY / f"cave-{index}.png"))
+    entry = MAP_MANIFEST[index]
+    dungeon_map = load_image(str(GAME_DIRECTORY / entry["file"]))
+    layout = json.loads(
+        (GAME_DIRECTORY.parent / entry["metadata"]).read_text(encoding="utf-8")
+    )
+    # Match character coordinates: negative y points down the grid.
+    battle_cells = {(cell["column"], -cell["row"]): cell for cell in layout["cells"]}
+    battle_grid = layout["grid"]
     map_index = index
-    map_type = MapType.BATTLE
+    map_type = map_kind
     return dungeon_map
 
 
@@ -97,7 +104,41 @@ def clear_map():
     global dungeon_map, map_type
 
     dungeon_map = None
+    battle_cells.clear()
+    battle_grid.clear()
     map_type = MapType.START
+
+
+def cell_at(x, y):
+    """Find the visible tile under a mouse position (top-left origin)."""
+    # The last drawn (front/right) cell wins when two surfaces share an edge.
+    for pos, cell in reversed(list(battle_cells.items())):
+        left, top, width, height = cell["surface_rect"]
+        polygon = cell.get("surface_polygon")
+        if polygon is None:
+            if left <= x < left + width and top <= y < top + height:
+                return pos
+            continue
+        if not (left <= x <= left + width and top <= y <= top + height):
+            continue
+        # Projected tile tops are convex quads; their bounding-box corners can
+        # lie outside the visible surface, so test every edge as well.
+        sides = []
+        for index, (x1, y1) in enumerate(polygon):
+            x2, y2 = polygon[(index + 1) % len(polygon)]
+            sides.append((x2 - x1) * (y - y1) - (y2 - y1) * (x - x1))
+        if all(side >= -1e-7 for side in sides) or all(side <= 1e-7 for side in sides):
+            return pos
+    return None
+
+
+def can_place(pos, characters):
+    cell = battle_cells.get(pos)
+    return (
+        cell is not None
+        and cell["deployable"]
+        and not any(character.deployed and tuple(character.pos) == pos for character in characters)
+    )
 
 
 def load_route():
@@ -121,7 +162,8 @@ def load_route():
         elif room.map_type == MapType.TREASURE:
             room.treasure_items = relics[3:]
         elif room.map_type == MapType.BOSS:
-            room.monsters = {GUARDIAN: 1}
+            room.map_index = random.choice(BOSS_MAP_NUMBERS)
+            room.monsters = CAVE_MONSTERS[room.map_index].copy()
 
     image = load_image(str(ROUTE_DIRECTORY / f"cave-route-{route_index}.png"))
     cover = load_image(str(ROUTE_COVER_PATH))

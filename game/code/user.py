@@ -23,7 +23,28 @@ class User:
         self.cost = 0
         self._cost_updated_at = now
         for character in self.character:
-            character.sync_animation_time(now)
+            character.deployed = False
+            character.reset_animation(now)
+
+    def can_deploy(self, character: Player) -> bool:
+        return (
+            self.scene == 2
+            and any(member is character for member in self.character)
+            and not character.deployed
+            and self.cost >= character.cost
+        )
+
+    def deploy_character(self, character: Player, pos, now: float) -> bool:
+        if not self.can_deploy(character):
+            return False
+        position = list(pos)
+        if any(member.deployed and member.pos == position for member in self.character):
+            return False
+        self.cost -= character.cost
+        character.pos = position
+        character.deployed = True
+        character.reset_animation(now)
+        return True
 
     def update_battle(self, now: float):
         self.update_cost(now)
@@ -47,3 +68,6 @@ class User:
         self.battle_room = None
         self._cost_updated_at = None
         self.scene = 1
+        for character in self.character:
+            character.deployed = False
+            character.reset_animation(0.0)
