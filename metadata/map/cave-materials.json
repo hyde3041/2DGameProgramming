@@ -1,0 +1,58 @@
+{
+  "assets": "asset/map/stage/icon/mine",
+  "source_atlas": "asset/map/stage/icon/mine/source-atlas.png",
+  "generation": {
+    "tool": "built-in image_gen",
+    "source": "exec-49ffd1ce-da97-4252-8793-7b8b396486e1.png",
+    "prompt": "Use case: stylized-concept.\nAsset type: one square 2-by-2 game terrain MATERIAL ATLAS for a sophisticated underground mine tower-defense map, four perfectly equal square quadrants touching at the exact center with NO gutters, captions, labels or outside margin. Output 1024x1024 or larger square.\nPrimary request: cohesive worn stone/concrete and oxidized steel surfaces matching a dim industrial mine with charcoal rock walls, brown steel supports, amber lamps and dusty neutral gray floor. Mature detailed painted game textures with the practical industrial atmosphere of Arknights battlefields. Avoid the soft blue rounded cushion/tile look.\nEach quadrant is an independent FLAT, orthographic texture, edges square and flush, fills entire quadrant. No perspective, no 3D block, no sidewall visible except the dedicated lower-right wall texture. Even diffuse light from upper left, no cast shadows outside texture. Restrained realistic microtexture, readable when reduced to 64px.\nTOP LEFT: single large flat walkable graphite-gray concrete floor slab. Neutral medium gray (roughly RGB 102,102,97), mottled aggregate, fine dust, tiny hairline cracks and small worn chips, thin straight shallow joints only at its four edges, subtle slightly rusty embedded steel corner tabs occupying at most 5 percent of area. Center mostly open and quiet. No luminous border. Sharp corners.\nTOP RIGHT: top surface of an elevated reinforced stone platform. Warm desaturated gray stone (roughly RGB 145,141,128), restrained narrow aged brown-gray iron edging around the perimeter, a few small bolts in the corners, stone grain and irregular dust, fine chips. No white outlines, no rounded edges, no inset decorative ring, no hazard stripes. Center open and plain.\nBOTTOM LEFT: continuous dark rough mine bedrock and compacted gravel floor (roughly RGB 52,53,54), naturally uneven worn angular rock fragments, sparse small gravel, soot, dust. Borderless texture, NO square slab, NO manmade frame, NO seams, NO centered object. Should tile discreetly as an unwalkable rock-bed surface, even material distribution without obvious repeating landmarks.\nBOTTOM RIGHT: straight front-facing vertical retaining wall material in aged dark charcoal concrete and iron (roughly RGB 66,62,56). Restrained horizontal mineral layers, vertical riveted steel reinforcement strips very near left and right edges, faint water stains, slightly lighter dusty top edge. No perspective, no visible top surface, no bottom ledge, full-bleed rectangular wall texture.\nAll four share neutral dusty charcoal-gray-brown colors, subtle warm mineral tones and consistent material realism. No blue color cast, no glowing outlines, no snow, no moss, no sci-fi neon, no text, no numbers, no symbols, no UI, no characters, no weapons. Perfect four equal quadrant alignment for extracting each texture separately."
+  },
+  "extraction": {
+    "atlas_size": [
+      1254,
+      1254
+    ],
+    "tile_size": [
+      627,
+      627
+    ],
+    "method": "Lossless quadrant crops; source pixels and original atlas retained.",
+    "files": {
+      "ground.png": [
+        0,
+        0,
+        627,
+        627
+      ],
+      "high-top.png": [
+        627,
+        0,
+        627,
+        627
+      ],
+      "bedrock.png": [
+        0,
+        627,
+        627,
+        627
+      ],
+      "face.png": [
+        627,
+        627,
+        627,
+        627
+      ]
+    }
+  },
+  "rendering": {
+    "background": "asset/map/stage/background/cave-mine.png",
+    "renderer": "tools/render_cave_maps.py",
+    "changes": [
+      "Dusty neutral stone and oxidized steel palette matching mine backdrop",
+      "No separate rectangular board base, outline or thick rim",
+      "Non-walkable bedrock samples a continuous texture and fades at the map boundary",
+      "Existing ground grid, elevated surface geometry, vertical faces and portals retained"
+    ],
+    "logic": "Tile coordinates, deployment restrictions, monster routes and all cave-N.json geometry remain unchanged."
+  },
+  "backup": ".build/backups/maps-before-material-blend-20261112-135300"
+}

@@ -1,0 +1,99 @@
+{
+  "reference": "metadata/map/reference/clean-enclosed-approved.png",
+  "purpose": "Apply the approved clean enclosed mine art to all 78 map layouts without changing their gameplay geometry.",
+  "assets": {
+    "background": "asset/map/stage/background/cave-clean.png",
+    "materials": "asset/map/stage/icon/clean",
+    "material_atlas": "asset/map/stage/icon/clean/material-atlas.png",
+    "props_atlas": "asset/map/stage/icon/clean/props-atlas.png"
+  },
+  "generation": {
+    "tool": "built-in image_gen",
+    "background": {
+      "source": "exec-8e8d5111-f51f-4b64-924f-fb9759bdb453.png",
+      "prompt": "Edit target: the approved clean mine battle scene. Create the REUSABLE BACKGROUND LAYER ONLY for this game, same 4:3 landscape and same camera/outer architecture/palette/style. KEEP the upper outer cave wall, tall dark steel support columns, high rear horizontal pipe, amber hanging lamps, the small far upper-left and far upper-right maintenance catwalks, outer left/right large faceted rock walls, and the low foreground pipe at the very bottom. KEEP smooth matte slate-blue-gray colors, broad clean planar shading, restrained fine edges; no noisy texture.\nREMOVE ALL center battle content and replace with continuous EMPTY smooth dark slate floor: remove all light square gameplay tiles, both raised platforms, all three glowing portals, ALL enclosing low walls and their lamps, ALL inner grates/walkways/railings around the battle area, all machinery boxes, all rocks sitting inside the room. The entire central rectangle x6%-94%, y21%-84% must be low-detail EMPTY dark floor, continuous with adjacent ground. Remove the central rear utility box as well. The separate tile/low-wall/prop layers will be drawn over this background programmatically in different configurations.\nThis is background extraction/reconstruction, not a new scene. No new foreground objects, no tiled grid, no dirt, rust, scratches, detailed cracks, grain, text, UI, figures or annotations. No holes or checkerboard transparency. Opaque 4:3 image, full scene, ideally 1600x1200."
+    },
+    "materials": {
+      "source": "exec-56a04d18-0d13-45e7-bcc0-2707ce6b61e8.png",
+      "prompt": "Transform this approved clean game scene into a SINGLE square 2x2 terrain material atlas. Input image is the STYLE AND MATERIAL reference; do not reproduce the scene. Output exactly four equal square quadrants touching at the center, no gaps, margins, captions or labels. Each quadrant is a flat orthographic surface for projecting onto game tiles later, not a perspective object. Output 1024x1024 or larger square.\nMatch the approved scene's extremely clean matte anime-strategy-game art: broad nearly solid color areas, only very subtle smooth shading, crisp thin precise edges. NO grain, dirt, rust, mottling, stone texture, scratches, little cracks or detail noise.\nTop-left quadrant: one flat gray walkable square floor panel, muted neutral-cool gray around #85888e, smooth clean matte surface, extremely thin straight dark perimeter seam, tiny soft highlight along upper-left border. Sharp square corners, no rounded bevel, no corner studs.\nTop-right quadrant: one flat warm light-gray raised platform TOP around #a8a39b, clean smooth matte with narrow charcoal metal border 2 percent of square width, tiny tidy square connector plates at four corners. No inset ring, no screws, no obvious stone texture.\nBottom-left quadrant: continuous dark muted blue-slate mine floor around #414b60, abstract very broad low-contrast angular planes, NO tile borders, NO rocks/gravel, NO grid, no focal point. Seamless calm floor material matching the empty ground of the source.\nBottom-right quadrant: vertical front-wall material for raised platforms, charcoal blue-gray around #414954, flat broad shading with subtle narrow metal edge at left/right and slightly lighter straight top edge. NO 3D top surface, no perspective, no base plinth, no stones or masonry blocks. This is only a flat front face.\nAll four perfectly equally sized and axis-aligned. Make this feel like the exact same clean approved scene. No UI, symbols, letters, numbers, portals, figures, neon, or logos."
+    },
+    "props": {
+      "source": "exec-99450944-e970-4595-822b-e32a6677a19a.png",
+      "prompt": "Create a clean game PROP SPRITE ATLAS by deriving the rocks and small machinery from the approved image. Output a perfectly SQUARE canvas split into 2x2 equal quadrants, four independent props, genuine transparent background with alpha. Each prop centered fully within its quadrant, at least 8 percent transparent margin on all sides. No objects touching quadrant boundaries. No drawn grid, no labels or separators.\nCamera of each prop: same HIGH overhead oblique camera as the reference, looking down approximately 65 degrees, horizontal front/back edges and only slight perspective; NOT diagonal-isometric diamond orientation. Top plane broadly visible, short front vertical face. Props low and squat to keep tactical tiles visible.\nTop left: one broad angular slate-blue rock outcrop made of 4-6 large clean polygonal planes, like the clean blue-gray cave rocks in the reference. Flat chunky low silhouette, no pebbles or detail texture.\nTop right: one low square dark gray industrial service cabinet/plinth, broad smooth top, narrow framing strips, thin crisp edges, a short amber luminous ventilation slit on front, modest soft contact shadow restricted near base. No cables or long pipes sticking out.\nBottom left: a connected cluster of two broad low clean faceted blue-gray stones, plain large planes, subdued highlights, no tiny rubble.\nBottom right: one clean squat rectangular service unit with twin amber front slits and simple metal frame, no protruding parts. Similar scale and style as top-right but distinct silhouette.\nMatch approved smooth matte anime-strategy-game art exactly: broad clean color planes, neat subtle outlines, subtle cel shading, tasteful warm gray metal / blue-gray rock / restrained amber accents. Remove all gritty textures. NO dirt, rust, scratches, mottling, detail noise, realism, thick cartoon outlines, UI, people, letters, numerals, logos or checkerboard. ONLY the four isolated transparent props."
+    }
+  },
+  "extraction": {
+    "material_atlas_size": [
+      1254,
+      1254
+    ],
+    "props_atlas_size": [
+      1254,
+      1254
+    ],
+    "materials": {
+      "ground.png": [
+        8,
+        8,
+        611,
+        611
+      ],
+      "high-top.png": [
+        627,
+        0,
+        627,
+        627
+      ],
+      "bedrock.png": [
+        0,
+        627,
+        627,
+        627
+      ],
+      "face.png": [
+        627,
+        627,
+        627,
+        627
+      ]
+    },
+    "props": {
+      "rock.png": [
+        67,
+        140,
+        516,
+        348
+      ],
+      "utility.png": [
+        758,
+        131,
+        366,
+        354
+      ],
+      "rock-2.png": [
+        64,
+        789,
+        505,
+        307
+      ],
+      "utility-2.png": [
+        712,
+        801,
+        460,
+        290
+      ]
+    },
+    "method": "Native-resolution rectangular crops. Props keep source alpha; bounding box from alpha >=24 with a two-pixel margin removes invisible fringe. Complete original atlases retained."
+  },
+  "rendering": {
+    "renderer": "tools/render_cave_maps.py",
+    "scenery": "tools/cave_scenery.py",
+    "placement": "Layout-dependent low retaining walls and grated ledges follow safe forbidden cells adjoining the playable area. Sparse rock and utility sprites fit within safe footprints, preserving their aspect ratios.",
+    "protection": "Decoration footprints avoid all walkable/deployable/special tile surfaces, base surfaces, elevated front faces and upright portals, including aerial starts. Deterministic layout planning; no runtime changes."
+  },
+  "regeneration": [
+    "python tools/import_rogue4_maps.py --output .build/clean-maps",
+    "python tools/render_cave_maps.py .build/clean-maps --overview"
+  ],
+  "backup": ".build/backups/maps-before-clean-enclosed-20261112-140414"
+}

@@ -1,0 +1,22 @@
+{
+  "asset": "asset/map/stage/background/cave-mine.png",
+  "purpose": "Shared mine environment backdrop for all 78 cave battle maps; composited beneath terrain and upright portals. Current matching terrain materials are documented in metadata/map/cave-materials.json.",
+  "generation": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: stylized-concept.\nAsset type: production-ready environment backdrop for a 2D tower-defense game's existing 800x600 battlefield; output a landscape 4:3 illustration, ideally 1600x1200.\nPrimary request: draw a sophisticated underground mine / industrial dungeon surrounding environment with the stage-set depth, environmental storytelling, hard-surface restraint and overhead camera of Arknights battle maps, while retaining a slightly illustrated stone-and-metal fantasy game aesthetic.\nCamera: fixed overhead oblique view looking down approximately 65 degrees, horizontal back edge, vertical depth lines converge very slightly, no rotated isometric diamond, no horizon or eye-level vanishing point.\nComposition is critical: this is ONLY the BACKGROUND UNDERLAY. An existing rectangular tactical tile board will be composited over the center (approximately x 6–94%, y 20–83%). Keep this entire central area an EMPTY, flat, low-detail dark slate concrete/rock floor, without a drawn board, tiles, checkerboard, grid, raised ledges, cutout hole, UI or objects. Environment should continue naturally under the board and outward to image edges.\nPlace sculpted angular mine rock walls and industrial environmental detail mainly across the BACK strip at y 0–20%, the thin LEFT and RIGHT margins, and lower corners. Layered cut rock, aged iron support beams, low pipes, overhead cable conduits, occasional grated maintenance walkways and small crates tucked at the periphery. A thick horizontal pipe and supports along the rear, asymmetric clusters of small utilitarian equipment in the extreme corners. Foreground shallow service trench and low metal edge can run along y 86–95%, but keep lower center subdued for character card UI overlay. Leave upper center subdued for a small combat HUD.\nLighting: muted slate blue-gray and charcoal, oxidized brown steel, small restrained warm amber maintenance lamps at the BACK left and right, faint reflected light on rock edges; crisp readable material details, strong ambient occlusion, moody but visible, no heavy fog, no deep-black blank voids. Environment less bright and lower contrast than playable tiles and characters.\nConstraints: ONLY scenery, no people, creatures, characters, weapons, text, letters, numerals, logos, labels, watermarks, arrows, glowing doorways, UI, tactical tiles or floor grid. No board drawn into the image. Do not fill center with large objects. Full bleed opaque art.",
+    "source": "exec-f07f02c8-966f-48d3-ad37-6620173740eb.png"
+  },
+  "usage": {
+    "renderer": "tools/render_cave_maps.py",
+    "canvas": [
+      800,
+      600
+    ],
+    "order": "background, terrain with blended bedrock perimeter, raised platforms, portals; runtime characters and HUD drawn afterward"
+  },
+  "invariants": [
+    "Logical tile coordinates, deployment types and routes unchanged",
+    "Existing raised platform geometry preserved",
+    "No text or interface in background artwork"
+  ]
+}

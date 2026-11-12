@@ -1,0 +1,793 @@
+{
+  "maps": [
+    {
+      "map": "cave-0",
+      "scenery": {
+        "walls": 29,
+        "rocks": 1,
+        "utilities": 1
+      },
+      "layout_sha256": "a7873cd8e5b7da74679d1a3ddadc429e15e5db17b3a6c83a5a860ffa85c90c07",
+      "render_sha256": "8e171d5f696dae56941a3045d2ee3bb1ddbd026a0150b2ae882e3d14d94605ae"
+    },
+    {
+      "map": "cave-1",
+      "scenery": {
+        "walls": 33,
+        "rocks": 0,
+        "utilities": 0
+      },
+      "layout_sha256": "ae5485e3326e28b0d018bbed5c1d399cb5cb837c90a8a1002d1b76694538c2eb",
+      "render_sha256": "9af4bf7887dc49fb9b41d8b7d7c1049fa9d01002d918060eddc7e80b02ef8819"
+    },
+    {
+      "map": "cave-2",
+      "scenery": {
+        "walls": 23,
+        "rocks": 4,
+        "utilities": 1
+      },
+      "layout_sha256": "58e40760e9931e7aa728847baf2088bba618ff273e7ed24e0ae7ac3f0b83af0d",
+      "render_sha256": "ef144c4e5dea339924d0b7898e9e02d594f0da16beefbb84833be6d09b59cb51"
+    },
+    {
+      "map": "cave-3",
+      "scenery": {
+        "walls": 31,
+        "rocks": 8,
+        "utilities": 2
+      },
+      "layout_sha256": "166eb62fff46e44de34a108278dad35e7b8ebc2f0fbae4bd7c368f3408c703e2",
+      "render_sha256": "9a528f3fba33593aecc1ce740d383659df922d3dbe7f8aeca8d51a3e2a89213f"
+    },
+    {
+      "map": "cave-4",
+      "scenery": {
+        "walls": 29,
+        "rocks": 10,
+        "utilities": 2
+      },
+      "layout_sha256": "08c1c169e9e6b642123662d6a62696399526d8f3c4fa8e7eb79b98fee48aa393",
+      "render_sha256": "30a8443078d17292e1348aaffd33e1453eea43fee3856c3696593c0de1772b5c"
+    },
+    {
+      "map": "cave-5",
+      "scenery": {
+        "walls": 31,
+        "rocks": 1,
+        "utilities": 0
+      },
+      "layout_sha256": "1544e97e6d81634c4f7c9d8ff6b1af7e29b28ffcb2091ae5daa9d99bef5cec4e",
+      "render_sha256": "16aafd312e2a4b5c0a6c2d9cb0b4fad518a694cb70e578b55dad26ccfac5429f"
+    },
+    {
+      "map": "cave-6",
+      "scenery": {
+        "walls": 25,
+        "rocks": 5,
+        "utilities": 2
+      },
+      "layout_sha256": "f507ae306e6d6c8871c64a6f37e8319d66ad57865e03cf68dd40269c0990a91a",
+      "render_sha256": "488f2f5797107755eb1b7bf75a0be077dabb2961867cd6c4fcbfef161a941d43"
+    },
+    {
+      "map": "cave-7",
+      "scenery": {
+        "walls": 40,
+        "rocks": 5,
+        "utilities": 2
+      },
+      "layout_sha256": "12dbaac56437302c5c678ae9c921092c7463ae4f69efed5da8a724f1ddd57b8d",
+      "render_sha256": "fcc1ddfae4cac762f4448132c454f3dedfc87782f3407dc2a2e1915050c5cc99"
+    },
+    {
+      "map": "cave-8",
+      "scenery": {
+        "walls": 27,
+        "rocks": 2,
+        "utilities": 0
+      },
+      "layout_sha256": "564482d7d2eeb7f8b1428fca5e6079390122bef539928a5d18f165e3181cd57a",
+      "render_sha256": "7fc9421bb13f745403e104121fae6540d7eb9bf12c52600d698da034aa210dd4"
+    },
+    {
+      "map": "cave-9",
+      "scenery": {
+        "walls": 25,
+        "rocks": 3,
+        "utilities": 1
+      },
+      "layout_sha256": "7af68499ac6147c98efcca2a356519dc0409427f54d254ff2c73285d8a7e49ca",
+      "render_sha256": "52a605dc287f90d57994a99f636dfdf79afce38cea236803aa216d7f2fe06d28"
+    },
+    {
+      "map": "cave-10",
+      "scenery": {
+        "walls": 24,
+        "rocks": 2,
+        "utilities": 1
+      },
+      "layout_sha256": "1ebd55a0a698afcf5a1581c98cd96bc3e737391a260215cd2a6b17527c078845",
+      "render_sha256": "487bb920ca2fc743cd62fb63dc092a1cce61dd68d0a73f7be89f00d5b498833b"
+    },
+    {
+      "map": "cave-11",
+      "scenery": {
+        "walls": 31,
+        "rocks": 4,
+        "utilities": 2
+      },
+      "layout_sha256": "172503d11ec55cedd8e347a41348c43e3ed7df80f78c76eba51b03b983442cc3",
+      "render_sha256": "53c5512c78023c522643f1ce82fec14ae38c2a06f9adbf66abecd74e40853cd6"
+    },
+    {
+      "map": "cave-12",
+      "scenery": {
+        "walls": 33,
+        "rocks": 3,
+        "utilities": 0
+      },
+      "layout_sha256": "99d3331cbef4757817418ca09e178624d481e33628448d6dc1aea85f68cd78f5",
+      "render_sha256": "921c9a42c06a2cee65395949ff0cf98b832c0d847452cb2c544c105a315e1e24"
+    },
+    {
+      "map": "cave-13",
+      "scenery": {
+        "walls": 40,
+        "rocks": 1,
+        "utilities": 0
+      },
+      "layout_sha256": "215d7f60ed4c6861029fed3cfbb5dfe7255a995e7ca0fb834bc681f12c7ec258",
+      "render_sha256": "baeb7d328a1c6e006f30f600f3f19398d747daa1f97b39026139fd55bde346bc"
+    },
+    {
+      "map": "cave-14",
+      "scenery": {
+        "walls": 23,
+        "rocks": 2,
+        "utilities": 0
+      },
+      "layout_sha256": "9721039af4ee1e20729e1f090b738e6176ec19f5450e578d812c2723805799b8",
+      "render_sha256": "b56c3f2600768b818839e5b33967f3f4dcb66789ff05a8e13c5ccfa48ad6ff04"
+    },
+    {
+      "map": "cave-15",
+      "scenery": {
+        "walls": 20,
+        "rocks": 0,
+        "utilities": 0
+      },
+      "layout_sha256": "6c343f94c26804185e55db63c45c90f12b21f98483a0316d7f1b115675448e26",
+      "render_sha256": "88b83010f0250b6f787cad7317c96076180dd6d937c4a7fa4893a8848d80d1dc"
+    },
+    {
+      "map": "cave-16",
+      "scenery": {
+        "walls": 47,
+        "rocks": 0,
+        "utilities": 3
+      },
+      "layout_sha256": "a7296c587533bd44de93b7a5890341cb53a4315e671ef8c3f908b5c46647b4da",
+      "render_sha256": "95db1ac51794665285526b2554b695874687db86572b916ddaabfd1111007569"
+    },
+    {
+      "map": "cave-17",
+      "scenery": {
+        "walls": 60,
+        "rocks": 1,
+        "utilities": 0
+      },
+      "layout_sha256": "90dc633f8a828247ab3c7ccb894925ef7cf9103124d808ee935cf3f416acadb8",
+      "render_sha256": "477674aa583785105d0845d7146eddd5c2d3a56985304051b39579e248ed6e96"
+    },
+    {
+      "map": "cave-18",
+      "scenery": {
+        "walls": 38,
+        "rocks": 3,
+        "utilities": 1
+      },
+      "layout_sha256": "58a46a22eba022d5b738b826267fbe40835d6d29d1d58eca4f8cb3a3272c6720",
+      "render_sha256": "b55426a5f2046ae89d37f96786c69e5d62d54120d33840b3c41abdfddf4645da"
+    },
+    {
+      "map": "cave-19",
+      "scenery": {
+        "walls": 31,
+        "rocks": 4,
+        "utilities": 2
+      },
+      "layout_sha256": "96690aad2082a8016599a04ee9f3deca0a8dfa8b9c440f8ea9d2109201aac73e",
+      "render_sha256": "c7431bafd3bd69c600ea49e82c4664ec19513b76626b0f65b4b0b861f9e631b7"
+    },
+    {
+      "map": "cave-20",
+      "scenery": {
+        "walls": 26,
+        "rocks": 2,
+        "utilities": 2
+      },
+      "layout_sha256": "705a6dfcf79f47fdda58dd9ca3c7dc5c763dd9f401d201220450c809dc57e78b",
+      "render_sha256": "12048438e0c5db137c3ee3fca5c4053c015af123bd074c1ec7fc0e59e71e51a5"
+    },
+    {
+      "map": "cave-21",
+      "scenery": {
+        "walls": 25,
+        "rocks": 0,
+        "utilities": 1
+      },
+      "layout_sha256": "217bca5b9779154d245616126d21be6867efa0f8a247da12e7048b7e5f24c5fe",
+      "render_sha256": "d5a9b13675350bb437120d02db317bf59f50228be0ecfd2cf3789554e270a79b"
+    },
+    {
+      "map": "cave-22",
+      "scenery": {
+        "walls": 35,
+        "rocks": 0,
+        "utilities": 0
+      },
+      "layout_sha256": "2d0c21b6561c7dd49510db37d9c18f449c8c87099a80434d394d6d060c341c94",
+      "render_sha256": "4b039d47737ff1f4f5a1284dd29da7fd1e25234fb55c3afab3ba31092edde7b4"
+    },
+    {
+      "map": "cave-23",
+      "scenery": {
+        "walls": 35,
+        "rocks": 3,
+        "utilities": 1
+      },
+      "layout_sha256": "0426fa7c58e053ec7623eb5b63038c874a5b741824097bd0c39ef5a89ac78bae",
+      "render_sha256": "85ba9b967d7e90d84414bfeebd3019f5f0779ee217bdea33bab8b6bee5393541"
+    },
+    {
+      "map": "cave-24",
+      "scenery": {
+        "walls": 50,
+        "rocks": 4,
+        "utilities": 1
+      },
+      "layout_sha256": "9a00cf0b325611bb98654f30409cccfecbb6fc5ee66020c26b4eace4a06dda03",
+      "render_sha256": "9b607d6f70b087509811f6400a81b2786eb72bc0bfd57f5a9e9581fbefdc5efc"
+    },
+    {
+      "map": "cave-25",
+      "scenery": {
+        "walls": 40,
+        "rocks": 3,
+        "utilities": 1
+      },
+      "layout_sha256": "c53483d97fb90558fc7221c02996bbc9cfaad00894190d9f46403e5726cc42e1",
+      "render_sha256": "899c392169b3ae3eb9bb8396f78671f720f6c79658a1533e7a8a8e7276a3d4fc"
+    },
+    {
+      "map": "cave-26",
+      "scenery": {
+        "walls": 31,
+        "rocks": 5,
+        "utilities": 1
+      },
+      "layout_sha256": "50b9bc3e4c3b1ada28a4a302db3a8e193cd4c37ab09cb585741054aec66c6932",
+      "render_sha256": "8c4e96f26c88d9d238090517a804a57eba5385579d237e1615e0ac37d7186ea9"
+    },
+    {
+      "map": "cave-27",
+      "scenery": {
+        "walls": 55,
+        "rocks": 2,
+        "utilities": 0
+      },
+      "layout_sha256": "263c81ad8c4a73d2321e73f6713b397b562393297da56ea343b43b5ce30a8d61",
+      "render_sha256": "2c0d0b861b726ec677b4f728e26f7f2de6687796879fb391f1df30bd6f4ac996"
+    },
+    {
+      "map": "cave-28",
+      "scenery": {
+        "walls": 50,
+        "rocks": 1,
+        "utilities": 1
+      },
+      "layout_sha256": "5509d46de9fb1daaf2c786469b7c22fa9b539e738a60e8897d310c75a1631f26",
+      "render_sha256": "646943b83f5e9faf87684de0aaae8bf2cb7734db323e04210b63ece2a92e48e3"
+    },
+    {
+      "map": "cave-29",
+      "scenery": {
+        "walls": 49,
+        "rocks": 3,
+        "utilities": 0
+      },
+      "layout_sha256": "c928dc38203318d35052a7ee8928419444562d31cf259c0760a35a3d88c5a33f",
+      "render_sha256": "6660b749624946800d96ae1b7f7c1973e3adb1333abdea707fa64c16928a32f1"
+    },
+    {
+      "map": "cave-30",
+      "scenery": {
+        "walls": 26,
+        "rocks": 9,
+        "utilities": 3
+      },
+      "layout_sha256": "7b9eb691aa0a8df92c1c0e7393255f1e19872ba5297515ca865df400cd998b4e",
+      "render_sha256": "1581e406c1afafef97fbdee51f64c5e40c6207b850719037810f5ec52daad30b"
+    },
+    {
+      "map": "cave-31",
+      "scenery": {
+        "walls": 42,
+        "rocks": 2,
+        "utilities": 0
+      },
+      "layout_sha256": "5455b7d61c166b4d24990bdc7cb73d8c3537d2fb71d92eb155440ac92bb22f23",
+      "render_sha256": "6356c0cbf2381bf1548ccde09388baf6f0e2ffee11b45df1a5cc4fbcd7f93219"
+    },
+    {
+      "map": "cave-32",
+      "scenery": {
+        "walls": 58,
+        "rocks": 8,
+        "utilities": 3
+      },
+      "layout_sha256": "9e53ced759edb72f29c4127ce5318f9dfd33c79cae9c7d83ef22819ec3fe78b7",
+      "render_sha256": "71e5ef1df831ff454c7e565abe255623bfa354f648c9c8104531d9f188a0f048"
+    },
+    {
+      "map": "cave-33",
+      "scenery": {
+        "walls": 43,
+        "rocks": 0,
+        "utilities": 1
+      },
+      "layout_sha256": "e7653c2e35e23ab6b00c033ff7bb72abf60e524976834cef0990f1fac8b44000",
+      "render_sha256": "ba2564253188998c6e63731eef707b5bb6fb934dcdc77007232b98ba8a15c872"
+    },
+    {
+      "map": "cave-34",
+      "scenery": {
+        "walls": 51,
+        "rocks": 3,
+        "utilities": 2
+      },
+      "layout_sha256": "043ae7f15572339331fb1b1aa8c8d48de6b56af07cbd450f542c3e972b413663",
+      "render_sha256": "9acee37f8ce010d76a1fbc1ec05736b4a1c2f269d33788b3e7597f36e541d3e7"
+    },
+    {
+      "map": "cave-35",
+      "scenery": {
+        "walls": 37,
+        "rocks": 12,
+        "utilities": 6
+      },
+      "layout_sha256": "67b51482545af4bc933e0c81ebbb9517b48d74883c36b7bb6c5f4059d8619ded",
+      "render_sha256": "4d45432ffe49daa3fb59705bc17d391039100ae352ff5b8ef8d5171bf0514202"
+    },
+    {
+      "map": "cave-36",
+      "scenery": {
+        "walls": 49,
+        "rocks": 1,
+        "utilities": 0
+      },
+      "layout_sha256": "a2a640dae0cc9b44a2d37dbffaee7cad2ee6982830ac8ac70d8aa2f76d65ba54",
+      "render_sha256": "e83ee10c82a004924c981649181a5ce43bd166e9a8017f2cbb23420b488e3e51"
+    },
+    {
+      "map": "cave-37",
+      "scenery": {
+        "walls": 42,
+        "rocks": 6,
+        "utilities": 1
+      },
+      "layout_sha256": "718c31c3ba61cd10276ea3793be64c3fd439a60958a7427e33e040a213dfddf0",
+      "render_sha256": "75c1b8b9f37259a25f811654aa184cb7ccdf539271e738af54514f9151d0a9cd"
+    },
+    {
+      "map": "cave-38",
+      "scenery": {
+        "walls": 38,
+        "rocks": 6,
+        "utilities": 1
+      },
+      "layout_sha256": "f06b64f6dee69913083fca627b10d1de0e3fefeb99f909ad1daa47f409598617",
+      "render_sha256": "bcb7a6acf08436cf4d376e0004f786481cada42ad16c0adfd9c13328938ae5ed"
+    },
+    {
+      "map": "cave-39",
+      "scenery": {
+        "walls": 32,
+        "rocks": 1,
+        "utilities": 0
+      },
+      "layout_sha256": "22e985d93dc3aa93485cee5305e29362e52d050cca37ed1fd6f9f5bba3711625",
+      "render_sha256": "f794484321881f7ce71d1c1e0fdc01cac8ebabef94ace47b96189a1b7c972cf5"
+    },
+    {
+      "map": "cave-40",
+      "scenery": {
+        "walls": 55,
+        "rocks": 1,
+        "utilities": 0
+      },
+      "layout_sha256": "733339d2e1279c2d2e788031d7619b8be5983e6fc4d6db38ae9ff3852fab6374",
+      "render_sha256": "634caad6af933746050c1aa6cb89d6276a0ea9fb4843f69dd8980fcb5df333b6"
+    },
+    {
+      "map": "cave-41",
+      "scenery": {
+        "walls": 29,
+        "rocks": 1,
+        "utilities": 0
+      },
+      "layout_sha256": "0d2a5e6546c0755446e0865e2a8b95858f438f2cddb9acfa78a0806767ca97aa",
+      "render_sha256": "566b80e7fdb5a85e9677348b058c283aabf750097428820b37d2cecac933cc78"
+    },
+    {
+      "map": "cave-42",
+      "scenery": {
+        "walls": 59,
+        "rocks": 3,
+        "utilities": 2
+      },
+      "layout_sha256": "14dbc1b396305f9518361c100ae59367cdd8fca327aa17ad5bfdb5205a616428",
+      "render_sha256": "02608a4d7c4d787577a84cab82b887d4b1abaf4b19f22093970fd35d06baa15c"
+    },
+    {
+      "map": "cave-43",
+      "scenery": {
+        "walls": 56,
+        "rocks": 6,
+        "utilities": 2
+      },
+      "layout_sha256": "cbf45005573d22c033f035120267f7935116a5a1fc68ef1114e7be3ebe39b6b7",
+      "render_sha256": "76a132f618035e98fb414d4909de8e77d51768d053651aa1df77c02e70d4bd41"
+    },
+    {
+      "map": "cave-44",
+      "scenery": {
+        "walls": 56,
+        "rocks": 8,
+        "utilities": 3
+      },
+      "layout_sha256": "0cf86a2d98885f2a4dba9140fcea3b189b3928c1f0fc887999185489db0dcbdd",
+      "render_sha256": "bacb00852589b90ba69834cea57c1dccc8c5b4fe0f7243972e39ab3ecb64ddf4"
+    },
+    {
+      "map": "cave-45",
+      "scenery": {
+        "walls": 41,
+        "rocks": 1,
+        "utilities": 0
+      },
+      "layout_sha256": "d5f14636da4805c3a1fb0bccfee9084b5bd680660b19062df1120099ed44cda4",
+      "render_sha256": "f3a37beab41891a9f84ec799a78992919711bb5e51785827cb5f3b9f4f826670"
+    },
+    {
+      "map": "cave-46",
+      "scenery": {
+        "walls": 41,
+        "rocks": 3,
+        "utilities": 1
+      },
+      "layout_sha256": "196774283c37fe88ad2d88f36f45f28de6d12e8dd201b41aeec41668a0192062",
+      "render_sha256": "62eac58e5ec83736994459e254037003dbda0f6940a621edad26c18e88fc1d44"
+    },
+    {
+      "map": "cave-47",
+      "scenery": {
+        "walls": 41,
+        "rocks": 3,
+        "utilities": 0
+      },
+      "layout_sha256": "fecebbbb87134e29de3e23594ac1e6eb06079d7ade8a7663977f4f4716d0ed82",
+      "render_sha256": "edb08fad6d563f88ba7bde7f3f94f566016de3e9776c5483573aed4f98f67696"
+    },
+    {
+      "map": "cave-48",
+      "scenery": {
+        "walls": 53,
+        "rocks": 0,
+        "utilities": 0
+      },
+      "layout_sha256": "b23c86600ca431b063653c03b06ea05aa11f96e9d0180d2dc2cf947791beeba8",
+      "render_sha256": "b9dbabf861bc6a0815e002f79dc2995f7c0b37d324e07c7864f1815e8d84f9e8"
+    },
+    {
+      "map": "cave-49",
+      "scenery": {
+        "walls": 35,
+        "rocks": 1,
+        "utilities": 1
+      },
+      "layout_sha256": "93689bcbc5ce41cfb6f419f9ce8a54b91f50cc0d800ca2e27cbfe5f534fc077a",
+      "render_sha256": "72644019a793f59df87608cef2d15496240c3c546abce82ce1e7b529acfef380"
+    },
+    {
+      "map": "cave-50",
+      "scenery": {
+        "walls": 35,
+        "rocks": 1,
+        "utilities": 0
+      },
+      "layout_sha256": "7c2939071ffeb6a5687961afe5048c04e616c435b330a2ac10fb410f83fffe50",
+      "render_sha256": "987ecdac71b58a306f7ac2b83bb86ca9b02e3e4463ccf7f2cdcfb2dcfb8b1132"
+    },
+    {
+      "map": "cave-51",
+      "scenery": {
+        "walls": 49,
+        "rocks": 5,
+        "utilities": 0
+      },
+      "layout_sha256": "32d7692eded87d76075ee99de226888ae91b9dde65c77a48628f4d26542af1ff",
+      "render_sha256": "3fad7f4e5534f54096abf07b58dd64971ca145840bc7f71c8909bf8a686a37f7"
+    },
+    {
+      "map": "cave-52",
+      "scenery": {
+        "walls": 43,
+        "rocks": 1,
+        "utilities": 0
+      },
+      "layout_sha256": "cb8cb99a77eb00dea2ab2fdcc81c2de38f9aa2dd7b4a1de930989ea88be95e3f",
+      "render_sha256": "e48734329f21cf296c59989a93996a86ff3cf6d545e6ec78eaad9f664de9a3fe"
+    },
+    {
+      "map": "cave-53",
+      "scenery": {
+        "walls": 48,
+        "rocks": 2,
+        "utilities": 3
+      },
+      "layout_sha256": "db4f88c0d5f67df550518980e772f4e49538e2b78f2bc9d0f97ec33c0e9ed25a",
+      "render_sha256": "144932dabc969b8c8444023960287cfac5d8f13d131c46fd9781a45deeb9e741"
+    },
+    {
+      "map": "cave-54",
+      "scenery": {
+        "walls": 43,
+        "rocks": 3,
+        "utilities": 1
+      },
+      "layout_sha256": "188bc064e367dc226453bbd24c2b234d89fbc53756c2b308744fb7f2a561ba35",
+      "render_sha256": "86f567bda962305343c35e52b4b3b90b4d7d3c5478f3271f8afe88a5362cd92a"
+    },
+    {
+      "map": "cave-55",
+      "scenery": {
+        "walls": 48,
+        "rocks": 4,
+        "utilities": 0
+      },
+      "layout_sha256": "dbbeb03db5eae8f9c37449c1e4e15c2e62348a0d69d0dd8e3bbc1d032b7fbef0",
+      "render_sha256": "532c54d0bcd61af4e566f34b409aeddf43c963f8cdf01e29ddf560052d27884a"
+    },
+    {
+      "map": "cave-56",
+      "scenery": {
+        "walls": 36,
+        "rocks": 2,
+        "utilities": 3
+      },
+      "layout_sha256": "cc2208e2386200f9b7cd4fb0606a7cd5bf2e6dc702c2b3f63c2c2389ffa4c73c",
+      "render_sha256": "ee2dbe29ccd871d4097c49924c09a29c4cf114d4dbceb265bd4cd010db40f6d8"
+    },
+    {
+      "map": "cave-57",
+      "scenery": {
+        "walls": 47,
+        "rocks": 2,
+        "utilities": 2
+      },
+      "layout_sha256": "bb2d79dae789efc28f41911f31a50f0439da8adf227ce44bc1c3978f4e56a540",
+      "render_sha256": "f5eab2f5228d692037e1b8d25911e8e2fc757c06832f03887d664a23353435c1"
+    },
+    {
+      "map": "cave-58",
+      "scenery": {
+        "walls": 36,
+        "rocks": 6,
+        "utilities": 2
+      },
+      "layout_sha256": "30b8a1e6c5030f438c14a856a80433c29e98b74a70b8c89c3254a0babd9b83db",
+      "render_sha256": "b116c23ff94289deba6287d413ebede48402beb61aa898cd5eb4ed742ffe3a38"
+    },
+    {
+      "map": "cave-59",
+      "scenery": {
+        "walls": 47,
+        "rocks": 3,
+        "utilities": 0
+      },
+      "layout_sha256": "625cac82cbe7642358cd44b05462991442572e86535cc39f7bb7091cf6742f27",
+      "render_sha256": "4b8ff28d0d1f870c93898f83dfcdf51472313b6aa4fb7d11f51daed3b9b117a1"
+    },
+    {
+      "map": "cave-60",
+      "scenery": {
+        "walls": 36,
+        "rocks": 4,
+        "utilities": 1
+      },
+      "layout_sha256": "29cc8375363ad8aca64ee7055854cbe5233fff600c0e61245a28a84d5d425728",
+      "render_sha256": "c61dec7b127a37f475ce683bb91a6c6a79609c600448e6712fb072fe453c7726"
+    },
+    {
+      "map": "cave-61",
+      "scenery": {
+        "walls": 80,
+        "rocks": 18,
+        "utilities": 2
+      },
+      "layout_sha256": "aa41e838616264e88e0ce3a4de0924d856b7ff8cf1638ca2fd72519082a2aec3",
+      "render_sha256": "4b5379a9c19f1e4430bd2bd51c901af483c446b6f5c16cc43115f34b640bb9e3"
+    },
+    {
+      "map": "cave-62",
+      "scenery": {
+        "walls": 105,
+        "rocks": 16,
+        "utilities": 7
+      },
+      "layout_sha256": "d74ed1b44a8c6d415d259c9f1d28bde96783cb64a71a4b92f26dd8fc08609504",
+      "render_sha256": "66e39d4d921a4749ae8f70649a01547b2b7ea97b585c850c63764bdb48b3c205"
+    },
+    {
+      "map": "cave-63",
+      "scenery": {
+        "walls": 32,
+        "rocks": 11,
+        "utilities": 6
+      },
+      "layout_sha256": "8668901c80eca810eb82878fe3a5bfa04ca1727ad997ec8b371fa04ead4cedb3",
+      "render_sha256": "0d5dc85c543f83b0593733f3d62d97bf07f3ab0f1e5e0d50a7054a6bd5c3485c"
+    },
+    {
+      "map": "cave-64",
+      "scenery": {
+        "walls": 34,
+        "rocks": 8,
+        "utilities": 2
+      },
+      "layout_sha256": "92d4fe8a5290d751cc8e78f4472d5fd2a5fc9921875520c09aba5e15e1d5c3f5",
+      "render_sha256": "9f60c23f90444ecb9480609e325968f17ca011f10b6da575da742639bc7bf010"
+    },
+    {
+      "map": "cave-65",
+      "scenery": {
+        "walls": 29,
+        "rocks": 0,
+        "utilities": 1
+      },
+      "layout_sha256": "2f01b5c539fd4b785ce6179655e65c4954257f3534053277fed0bdd830aec608",
+      "render_sha256": "d0e48fb1a68a6c1f852a3b1488cefd2ea32a81fe54bfe9792ac0ad5723e11d59"
+    },
+    {
+      "map": "cave-66",
+      "scenery": {
+        "walls": 50,
+        "rocks": 3,
+        "utilities": 1
+      },
+      "layout_sha256": "9719d81a526c0bc7d345797912c2253592a50a37aac9585adbf3550259ec6fad",
+      "render_sha256": "463c798476788bf7039ac864e8ce72cc846f12ddf954c186f84c9aa644aeb90a"
+    },
+    {
+      "map": "cave-67",
+      "scenery": {
+        "walls": 48,
+        "rocks": 3,
+        "utilities": 1
+      },
+      "layout_sha256": "49b3317bd7641269d64b644500f07844288be2028119b09d716ed3b3769df261",
+      "render_sha256": "5d34ffa4b383dde5b8db55d561dcd07fc979a41203cbcc259be22c130f55a68a"
+    },
+    {
+      "map": "cave-68",
+      "scenery": {
+        "walls": 26,
+        "rocks": 2,
+        "utilities": 1
+      },
+      "layout_sha256": "bb01a2ddbe41e406ff478ecaa28151ebcc5f53241abca7de6adc635df9873002",
+      "render_sha256": "32e3cd4dc4059580837d704ba73fd1db71abc71dd4790810e6da9c2615d1c800"
+    },
+    {
+      "map": "cave-69",
+      "scenery": {
+        "walls": 61,
+        "rocks": 5,
+        "utilities": 2
+      },
+      "layout_sha256": "38d56dec97132b9f848afa47b4dcb9a4867179694e69d4238c875ae30df991ea",
+      "render_sha256": "3fe40bb76c9aa5a37fa74963938ca8b3034f0b440f03295c57e02ba70a84eac5"
+    },
+    {
+      "map": "cave-70",
+      "scenery": {
+        "walls": 31,
+        "rocks": 1,
+        "utilities": 1
+      },
+      "layout_sha256": "25f5c2f54cc122da9e2e23805822d29307b6542ad65a9c2d1ed04561659aa10b",
+      "render_sha256": "aa0f17ff4cba91029adcff6f2b560c03fe93b8612431cecc69871b457b63fd93"
+    },
+    {
+      "map": "cave-71",
+      "scenery": {
+        "walls": 23,
+        "rocks": 3,
+        "utilities": 0
+      },
+      "layout_sha256": "f04ade6616c641a6f6ce1ad3f106a53c4f38bef14d11f96f1c3cff362d2bf53a",
+      "render_sha256": "812a3737c504531bb8881d86e5bc54533a8f040fc270f4351428581b7fd1f248"
+    },
+    {
+      "map": "cave-72",
+      "scenery": {
+        "walls": 47,
+        "rocks": 4,
+        "utilities": 1
+      },
+      "layout_sha256": "c6af5d353f4caafe9fbee2ac421f7ed240e46107ff6f1051c5a659c17f4298a5",
+      "render_sha256": "09348770b3a48706627d80d8bbc8dd60eb8acf45dcccac195181dbfcb8cc8f1a"
+    },
+    {
+      "map": "cave-73",
+      "scenery": {
+        "walls": 51,
+        "rocks": 1,
+        "utilities": 1
+      },
+      "layout_sha256": "744eef32e3d8b03f629e9cda5d506c6f27bd18f6fe02ea27df4e3b8460b81613",
+      "render_sha256": "637c8b4762916311b2613729fc0ec6702a2f0d9735ef033dd395a253b0bf6231"
+    },
+    {
+      "map": "cave-74",
+      "scenery": {
+        "walls": 35,
+        "rocks": 13,
+        "utilities": 7
+      },
+      "layout_sha256": "ebce49686245b907b48937646e5dc749751f6cec3c86cb848dfaa6e1d0718d6a",
+      "render_sha256": "a7c4479c5d8eb54a02eaa5d163048a5dae94cf323bf957ffb4c234e3455a5278"
+    },
+    {
+      "map": "cave-75",
+      "scenery": {
+        "walls": 43,
+        "rocks": 12,
+        "utilities": 4
+      },
+      "layout_sha256": "4058545784a2bb12784b71ac387f19cb5da0ac5006e0b331d3944bafd5bae543",
+      "render_sha256": "53a40541396691449a970d43df5e5bd276cca9e2d26f71ef2ba6dcd7630edc9a"
+    },
+    {
+      "map": "cave-76",
+      "scenery": {
+        "walls": 44,
+        "rocks": 11,
+        "utilities": 6
+      },
+      "layout_sha256": "c3a9297cc064884899ab5542f1fa8e5208a4079a69c11c52010b6575d4104c16",
+      "render_sha256": "a6b7f7cea01cf9984049ac8cb907c7f13b73f9e2c4537cc00b94d5f36b535f73"
+    },
+    {
+      "map": "cave-77",
+      "scenery": {
+        "walls": 43,
+        "rocks": 9,
+        "utilities": 2
+      },
+      "layout_sha256": "9437e3c249fec37ea3f4fcdcb86d1d16694e8a5f773551d4b58bda3434de6114",
+      "render_sha256": "dbe805e4f7721411b536e87268456e64fab48c73bc4bf8148d29bc3531de14ce"
+    }
+  ],
+  "checks": [
+    "All 78 geometry JSON files unchanged",
+    "All 78 rendered PNGs 800x600",
+    "Every map has layout-specific surroundings",
+    "56 unit tests passed including independent surface/portal overlap checks",
+    "79 pre-change map images verified against backup",
+    "Native game deployment verification: 10 scenarios, 313 rendered frames; passed"
+  ],
+  "applied_to": "game/asset/map/stage/main/cave/cave-0.png through cave-77.png and main/overview.png"
+}

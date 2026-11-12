@@ -16,6 +16,7 @@ INDEX_URL = "https://map.ark-nights.com/data/zone_partitions/rogue_4.json"
 DATA_URL = "https://map.ark-nights.com/data/levels/"
 BACK_SCALE = 0.86
 DEPTH_RATIO = 0.82
+ELEVATION_RATIO = 0.25
 
 
 def project_point(column, row, grid):
@@ -26,6 +27,67 @@ def project_point(column, row, grid):
     x = projection["center_x"] + (column - grid["columns"] / 2) * grid["cell_size"][0] * perspective
     y = projection["top"] + projection["height"] * depth * perspective
     return [round(x, 4), round(y, 4)], perspective
+
+
+def polygon_bounds(points):
+    left = math.floor(min(x for x, _ in points))
+    top = math.floor(min(y for _, y in points))
+    return [left, top, math.ceil(max(x for x, _ in points)) - left,
+            math.ceil(max(y for _, y in points)) - top]
+
+
+def apply_elevation(layout):
+    """Raise deployable highland by one uniform world height, preserving logical data."""
+    grid = layout["grid"]
+    grid["elevation_pixels"] = grid["cell_size"][0] * ELEVATION_RATIO
+    canvas_height = layout["canvas"]["height"]
+    cells = {(cell["column"], cell["row"]): cell for cell in layout["cells"]}
+    for (column, row), cell in cells.items():
+        corners = ((column, row), (column + 1, row),
+                   (column + 1, row + 1), (column, row + 1))
+        projected = [project_point(x, y, grid) for x, y in corners]
+        base = [point for point, _ in projected]
+        center, perspective = project_point(column + 0.5, row + 0.5, grid)
+        elevation = grid["elevation_pixels"] if cell["tileType"] == 2 else 0
+        surface = [[point[0], round(point[1] - elevation * scale, 4)]
+                   for point, scale in projected]
+        surface_center = [center[0], round(center[1] - elevation * perspective, 4)]
+        bounds = polygon_bounds(surface)
+        left, top, width, height = bounds
+        cell.update({
+            "base_polygon": base,
+            "base_canvas_center": center,
+            "pico2d_base_center": [center[0], round(canvas_height - center[1], 4)],
+            "base_rect": polygon_bounds(base),
+            "surface_polygon": surface,
+            "pico2d_surface_polygon": [[x, round(canvas_height - y, 4)] for x, y in surface],
+            "surface_rect": bounds,
+            "pico2d_surface_rect": [left, canvas_height - top - height, width, height],
+            "draw_rect": polygon_bounds([*base, *surface]),
+            "canvas_center": surface_center,
+            "pico2d_center": [surface_center[0], round(canvas_height - surface_center[1], 4)],
+            "visual_elevation": round(elevation * perspective, 4),
+            "vertical_faces": [],
+        })
+    for (column, row), cell in cells.items():
+        if cell["tileType"] != 2:
+            continue
+        for side, neighbor, edge in (
+            ("left", (column - 1, row), (0, 3)),
+            ("right", (column + 1, row), (1, 2)),
+            ("front", (column, row + 1), (3, 2)),
+        ):
+            if cells.get(neighbor, {}).get("tileType") == 2:
+                continue
+            first, second = sorted(edge, key=lambda index: tuple(cell["base_polygon"][index]))
+            face = [cell["surface_polygon"][first], cell["surface_polygon"][second],
+                    cell["base_polygon"][second], cell["base_polygon"][first]]
+            area = sum(a[0] * b[1] - b[0] * a[1] for a, b in zip(face, (*face[1:], face[0])))
+            if abs(area) > 1e-7:
+                cell["vertical_faces"].append({"side": side, "polygon": face})
+    layout["visual_terrain_heights"] = 2
+    layout["art_version"] = 9
+    return layout
 
 
 def read_json(path):
@@ -159,6 +221,7 @@ def convert_map(number, stage_id, entry, aliases, cache):
             "special_mechanics": "recorded as tile keys/predefines; effects and source enemies are not simulated",
         },
     }
+    apply_elevation(result)
     manifest_entry = {
         k: result[k] for k in ("id", "number", "name", "file", "category", "tier")
     }
@@ -177,7 +240,7 @@ def convert_map(number, stage_id, entry, aliases, cache):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--cache", type=Path, default=ROOT / ".build/rogue4-source")
-    parser.add_argument("--output", type=Path, default=ROOT / ".build/oblique-maps")
+    parser.add_argument("--output", type=Path, default=ROOT / ".build/raised-maps")
     parser.add_argument("--fetch", action="store_true", help="refresh public source files")
     args = parser.parse_args()
     args.cache.mkdir(parents=True, exist_ok=True)
@@ -203,16 +266,17 @@ def main():
         entries.append(manifest)
         layouts.append(layout)
     write_json(args.output / "manifest.json", {
-        "version": 8, "map_count": len(entries), "canvas": {"width": 800, "height": 600},
+        "version": 9, "map_count": len(entries), "canvas": {"width": 800, "height": 600},
         "source_url": AREA_URL, "source_index_url": INDEX_URL,
         "imported_at": datetime.now(timezone.utc).isoformat(),
         "source_entry_count": len(levels), "categories": dict(Counter(e["category"] for e in entries)),
-        "creation": "PRTS.Map rogue_4 layouts with the project's cave art, oblique view and flush tile surfaces",
-        "projection": {"back_scale": BACK_SCALE, "depth_ratio": DEPTH_RATIO, "visual_elevation": 0},
+        "creation": "PRTS.Map rogue_4 layouts with the project's cave art, oblique view and single-height raised platforms",
+        "projection": {"back_scale": BACK_SCALE, "depth_ratio": DEPTH_RATIO,
+                       "elevation_ratio": ELEVATION_RATIO, "visual_terrain_heights": 2},
         "maps": entries,
     })
     write_json(args.output / "layouts.json", {
-        "version": 8, "source_url": AREA_URL,
+        "version": 9, "source_url": AREA_URL,
         "legend": {".": "deployable ground", "H": "deployable highland", "#": "blocked highland",
                    "_": "non-deployable lowland", "~": "hole", "R": "entrance", "B": "goal", "T": "teleport"},
         "maps": layouts,

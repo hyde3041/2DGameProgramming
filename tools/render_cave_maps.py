@@ -1,4 +1,4 @@
-"""Render imported battle layouts with the project's existing cave tiles.
+"""Render imported battle layouts with the mine's matching terrain materials.
 
 Run with the project's Pico2D Python environment. All generated files stay in
 the input directory; applying them to the game is a separate step.
@@ -13,10 +13,12 @@ import struct
 import zlib
 
 import pico2d
+from cave_scenery import draw_scenery, scenery_plan
 
 
 ROOT = Path(__file__).resolve().parents[1]
 TILES = ROOT / "game/asset/map/stage/icon"
+BACKGROUND = ROOT / "game/asset/map/stage/background/cave-clean.png"
 WIDTH, HEIGHT = 800, 600
 
 
@@ -55,13 +57,14 @@ class CaveRenderer:
     def __init__(self, renderer):
         self.renderer = renderer
         self.images = {
-            name: pico2d.load_image(str(TILES / "common" / f"{name}.png"))
-            for name in ("ground-a", "ground-b", "high-top", "wall-top")
+            name: pico2d.load_image(str(TILES / "clean" / f"{name}.png"))
+            for name in ("ground", "high-top", "bedrock", "face", "rock", "utility", "rock-2", "utility-2")
         }
         self.images.update({
             name: pico2d.load_image(str(TILES / "objects" / f"{name}.png"))
             for name in ("entrance", "goal")
         })
+        self.images["background"] = pico2d.load_image(str(BACKGROUND))
         for picture in self.images.values():
             pico2d.SDL_SetTextureScaleMode(picture.texture, pico2d.SDL_ScaleModeLinear)
 
@@ -83,12 +86,16 @@ class CaveRenderer:
         )
         pico2d.SDL_SetTextureColorMod(texture, 255, 255, 255)
 
-    def quad(self, points, color=(255, 255, 255, 255), texture=None):
+    def quad(self, points, color=(255, 255, 255, 255), texture=None, *, uvs=None, alphas=None):
+        if uvs is None:
+            uvs = ((0, 0), (1, 0), (1, 1), (0, 1))
+        if alphas is None:
+            alphas = (color[3],) * 4
         vertices = (pico2d.SDL_Vertex * 4)(*(
             pico2d.SDL_Vertex(
-                pico2d.SDL_FPoint(*point), pico2d.SDL_Color(*color), pico2d.SDL_FPoint(*uv)
+                pico2d.SDL_FPoint(*point), pico2d.SDL_Color(*color[:3], alpha), pico2d.SDL_FPoint(*uv)
             )
-            for point, uv in zip(points, ((0, 0), (1, 0), (1, 1), (0, 1)))
+            for point, uv, alpha in zip(points, uvs, alphas)
         ))
         index_type = pico2d.SDL_RenderGeometry.argtypes[4]._type_
         indices = (index_type * 6)(0, 1, 2, 0, 2, 3)
@@ -117,10 +124,21 @@ class CaveRenderer:
         for first, second in zip(points, points[1:]):
             self.line(first, second, color)
 
+    def draw_bedrock(self, cell):
+        # One continuous rock surface, fading into the surrounding mine at the
+        # map's outer edge instead of outlining a freestanding rectangular board.
+        polygon = cell["surface_polygon"]
+        column, row = cell["column"], cell["row"]
+        columns, rows = self.grid_size
+        corners = ((column, row), (column + 1, row),
+                   (column + 1, row + 1), (column, row + 1))
+        alphas = [int(135 * min(1, x, y, columns - x, rows - y)) for x, y in corners]
+        self.quad(polygon, (255, 255, 255, 255), self.images["bedrock"].texture,
+                  uvs=[(x / WIDTH, y / HEIGHT) for x, y in polygon], alphas=alphas)
+
     def draw_cell(self, cell):
         key = cell.get("source_tile_key", "")
         polygon = cell["surface_polygon"]
-        ground = "ground-a" if (cell["column"] + cell["row"]) % 2 == 0 else "ground-b"
 
         if key == "tile_hole" or cell["type"] == "~":
             self.quad(polygon, (9, 15, 19, 255))
@@ -134,21 +152,23 @@ class CaveRenderer:
             or (key == "tile_fence_bound" and not cell["walkable"] and cell["tileType"] == 0)
         )
         if wall:
-            self.quad(polygon, (91, 106, 117, 255), self.images["wall-top"].texture)
+            self.draw_bedrock(cell)
             return
 
-        # Logical highland affects deployment, but every painted top shares one plane.
-        if cell.get("height_level", 0) > 0 or cell["type"] == "H":
-            self.quad(polygon, (204, 212, 216, 255), self.images["high-top"].texture)
+        # Raised tops keep the material distinction as well as their actual height.
+        if cell["tileType"] == 2:
+            self.quad(polygon, (255, 255, 255, 255), self.images["high-top"].texture)
+        elif cell.get("height_level", 0) > 0:
+            # Blocked aerial gates must not share the deployable highland's bright rim.
+            self.quad(polygon, (139, 140, 136, 255), self.images["ground"].texture)
         else:
-            self.quad(polygon, (198, 209, 216, 255), self.images[ground].texture)
+            self.quad(polygon, (255, 255, 255, 255), self.images["ground"].texture)
+            self.surface_line(cell, (0, 0), (1, 0), (33, 40, 50, 155))
+            self.surface_line(cell, (0, 0), (0, 1), (33, 40, 50, 155))
 
         portal = key in ("tile_start", "tile_end") or cell["type"] in ("R", "B")
         teleport = "telin" in key or "telout" in key or "teleport" in key
         if cell["tileType"] == 0 and not portal and not teleport:
-            corners = ((0.12, 0.12), (0.88, 0.12), (0.88, 0.88), (0.12, 0.88))
-            for first, second in zip(corners, (*corners[1:], corners[0])):
-                self.surface_line(cell, first, second, (56, 67, 74, 130))
             color = (180, 165, 130, 130)
             for offset in (0, 0.16):
                 self.surface_line(cell, (0.12 + offset, 0.88), (0.2 + offset, 0.8), color)
@@ -174,6 +194,19 @@ class CaveRenderer:
                 color = (214, 147, 93, 160)
             self.surface_line(cell, (0.2, 0.8), (0.8, 0.8), color)
 
+    def draw_vertical_faces(self, cell):
+        # Faces exist only at the outside of a connected raised platform.
+        faces = sorted(cell.get("vertical_faces", []), key=lambda face: face["side"] == "front")
+        for face in faces:
+            polygon = face["polygon"]
+            color = (255, 255, 255, 255) if face["side"] == "front" else (205, 210, 220, 255)
+            self.quad(polygon, color, self.images["face"].texture)
+            # A narrow lower contact edge anchors the single vertical wall to the floor.
+            self.line(polygon[2], polygon[3], (29, 32, 34, 225))
+            if face["side"] == "front":
+                self.line((polygon[2][0], polygon[2][1] + 1),
+                          (polygon[3][0], polygon[3][1] + 1), (12, 17, 21, 80))
+
     def draw_portal(self, cell, nominal_size):
         key = cell.get("source_tile_key", "")
         if key not in ("tile_start", "tile_end") and cell["type"] not in ("R", "B"):
@@ -188,18 +221,29 @@ class CaveRenderer:
         if layout["canvas"] != {"width": WIDTH, "height": HEIGHT}:
             raise ValueError("Battle maps must use an 800x600 canvas")
         cells = sorted(layout["cells"], key=lambda c: (c["row"], c["column"]))
+        self.grid_size = (layout["grid"]["columns"], layout["grid"]["rows"])
         self.rectangle([0, 0, WIDTH, HEIGHT], (18, 24, 30, 255))
-        board = layout["grid"]["projection"]["board_polygon"]
-        top_left, top_right, bottom_right, bottom_left = board
-        self.quad([(x + 3, y + 9) for x, y in board], (9, 14, 19, 255))
-        self.quad(board, (39, 47, 55, 255))
-        # Only the outside rim has thickness. There are no vertical tile faces.
-        self.quad([bottom_left, bottom_right, (bottom_right[0], bottom_right[1] + 7),
-                   (bottom_left[0], bottom_left[1] + 7)], (40, 49, 57, 255))
+        self.image("background", [0, 0, WIDTH, HEIGHT])
+        plan = scenery_plan(layout)
+        scenery_hosts = {tuple(item["cell"]) for kind in ("walls", "props") for item in plan[kind]}
         for cell in cells:
+            if (cell["column"], cell["row"]) in scenery_hosts:
+                self.draw_bedrock(cell)
+        draw_scenery(self, layout, plan)
+        raised = []
+        for cell in cells:
+            if cell.get("visual_elevation", 0) > 0:
+                raised.append(cell)
+                self.quad(cell["base_polygon"], (255, 255, 255, 255), self.images["ground"].texture)
+            else:
+                if (cell["column"], cell["row"]) not in scenery_hosts:
+                    self.draw_cell(cell)
+        # Draw foreground platforms after the low plane so the raised top and front
+        # face consistently cover the underlying floor. Their geometry is also used
+        # by the game's hit testing and character anchors.
+        for cell in raised:
+            self.draw_vertical_faces(cell)
             self.draw_cell(cell)
-        for first, second in zip(board, (*board[1:], board[0])):
-            self.line(first, second, (69, 79, 88, 255))
         for cell in cells:
             self.draw_portal(cell, layout["grid"]["cell_size"][0])
 
@@ -226,7 +270,7 @@ def render_overview(paths, output):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("directory", nargs="?", type=Path, default=ROOT / ".build/oblique-maps")
+    parser.add_argument("directory", nargs="?", type=Path, default=ROOT / ".build/raised-maps")
     parser.add_argument("--overview", action="store_true", help="Also render an overview.png contact sheet")
     args = parser.parse_args()
     directory = args.directory.resolve()

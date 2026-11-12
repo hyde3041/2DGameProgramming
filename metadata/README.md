@@ -92,9 +92,9 @@ JSON의 `asset/...` 이미지 경로는 **`game/` 폴더**를 기준으로 읽�
 
 각 `cave-N.json`의 `cells`에는 설치 타입을 `tileType`으로 저장합니다. `0`은 설치 불가, `1`은 1층, `2`는 2층이며 코드에서는 `map.TileType.BLOCKED/GROUND/ELEVATED`로도 참조할 수 있습니다. 이전 `deployable`·`placement` 필드는 이 값으로 통합했습니다. `0`은 캐릭터의 허용 목록에 넣어도 설치할 수 없으며, 다른 캐릭터가 점유한 칸도 설치할 수 없습니다. `walkable`은 몬스터의 통행 여부로 별도 유지합니다.
 
-전투 맵 78개는 승인한 [비스듬한 시점 시안](map/reference/oblique-flat-approved.png)을 기준으로 표시합니다. 뒤쪽 폭은 앞쪽의 0.86배, 깊이는 기본 칸 크기의 0.82배이며 `grid.projection`에 저장합니다. 지상·고지대·막힌 칸의 윗면은 같은 평면에 놓고 내부 단차는 없앴습니다. 고지대는 밝은 타일로 구분하고 논리적인 `height_level`과 배치 속성은 유지합니다. 포털은 바닥에 눕히지 않고 세워 그립니다.
+전투 맵 78개는 비스듬한 시점과 [단차 참고 그림](map/reference/raised-edge-reference.png)을 기준으로 표시합니다. 뒤쪽 폭은 앞쪽의 0.86배, 깊이는 기본 칸 크기의 0.82배이며 `grid.projection`에 저장합니다. 2층(`tileType=2`)은 기본 칸 크기의 0.25배 높이로 올립니다. 모든 2층은 같은 높이이며 연결된 2층 사이에는 벽을 그리지 않고, 외곽 앞면·옆면에만 어두운 수직 면과 접촉 그림자를 표시합니다. 현재 1층은 매끈한 회색 바닥, 2층은 밝고 따뜻한 회색 석판과 얇은 철제 테두리로 구분하며, 주변은 짙은 청회색 암반과 낮은 벽으로 둘러쌉니다. 논리적인 `height_level`과 배치 속성은 유지합니다. 포털은 바닥에 눕히지 않고 세워 그립니다.
 
-`cells.surface_polygon`은 화면의 기울어진 네 꼭짓점이고 `pico2d_surface_polygon`은 같은 좌표를 왼쪽 아래 원점으로 변환한 값입니다. 클릭 판정과 배치 테두리는 이 다각형을 사용합니다. 캐릭터의 발은 `pico2d_center`에서 화면상 칸 높이의 18%만큼 아래에 놓고, 드래그 배치 미리보기에도 같은 위치를 사용합니다. `perspective_scale`에 따라 원근 크기만 조절하여 신체 비율을 유지합니다. `surface_rect`는 다각형을 포함하는 사각형이며 클릭 판정의 빠른 제외에 사용합니다.
+`cells.base_polygon`은 높이 적용 전 바닥 좌표, `surface_polygon`은 실제 윗면의 네 꼭짓점이고 `pico2d_surface_polygon`은 윗면 좌표를 왼쪽 아래 원점으로 변환한 값입니다. `vertical_faces`는 드러난 수직 면, `visual_elevation`은 원근을 적용한 화면상 높이입니다. 클릭 판정과 배치 테두리는 올라간 윗면을 사용하며 수직 면을 누르면 배치하지 않습니다. 캐릭터의 발은 윗면의 `pico2d_center`에서 화면상 칸 높이의 18%만큼 아래에 놓고, 드래그 배치 미리보기와 방향 선택도 같은 윗면을 기준으로 합니다. `perspective_scale`에 따라 원근 크기만 조절하여 신체 비율을 유지합니다. `surface_rect`는 윗면 다각형을 포함하는 사각형이며 클릭 판정의 빠른 제외에 사용합니다.
 
 `manifest.json`이 맵 선택 목록입니다. 약도의 전투방 12개는 일반 맵 43개에서, 보스방은 보스 맵 21개에서 선택합니다. 특수 맵 14개는 데이터와 이미지로 보관하며 일반 전투방에서는 추첨하지 않습니다. 몬스터 종류와 수는 현재 게임의 임시 설정이며 원작의 적 편성을 가져오지 않습니다.
 
@@ -102,7 +102,19 @@ JSON의 `asset/...` 이미지 경로는 **`game/` 폴더**를 기준으로 읽�
 
 지상 몬스터의 실제 경로는 맵을 읽을 때 `walkable` 칸의 상하좌우 연결과 원본 WALK 경로에 명시된 순간이동 연결을 사용해 계산·보관합니다. 걸어야 하는 칸 수가 가장 적은 도착 거점을 선택하고 캐릭터 배치에 따라 우회하지 않습니다. 원본의 대기 연출·경유점 순서를 그대로 재생하는 방식은 아닙니다. 명시된 입구가 없는 보스맵은 기록된 WALK 시작점을 사용합니다. 일반 43개·보스 21개 모두 지상 경로가 있으며, 비행 전용 특수 맵 `cave-77`에는 지상 몬스터를 생성하지 않습니다.
 
-다시 생성하려면 `python tools/import_rogue4_maps.py --fetch`로 공개 데이터를 받아 `.build/oblique-maps/`에 좌표를 만들고, `python tools/render_cave_maps.py .build/oblique-maps --overview`로 PNG를 만듭니다. 이미 받은 데이터를 사용할 때는 `--fetch`를 생략합니다. 실제 적용 전에 기존 이미지와 JSON을 백업합니다. 2026-11-12 교체 전 20개 맵은 `.build/backups/maps-before-rogue4-20261112-102930/`, 시점 변경 전 78개 맵은 `.build/backups/maps-before-oblique-20261112-110006/`에 보관했습니다.
+다시 생성하려면 `python tools/import_rogue4_maps.py --fetch --output .build/clean-maps`로 공개 데이터를 받아 좌표를 만들고, `python tools/render_cave_maps.py .build/clean-maps --overview`로 PNG를 만듭니다. 이미 받은 데이터를 사용할 때는 `--fetch`를 생략합니다. 실제 적용 전에 기존 이미지와 JSON을 백업합니다. 2026-11-12 교체 전 20개 맵은 `.build/backups/maps-before-rogue4-20261112-102930/`, 시점 변경 전 78개 맵은 `.build/backups/maps-before-oblique-20261112-110006/`에 보관했습니다.
+
+층별 명암과 재질 구분을 강화하기 전 맵 78개와 전체 목록 이미지는 `.build/backups/maps-before-floor-contrast-20261112-132155/`에 보관했습니다. 이 변경에서는 이미지와 렌더링 색상만 수정했으며 타일 타입·좌표·경로 JSON은 보존했습니다.
+
+단차 적용 전 맵 이미지·좌표 JSON·목록 159개 파일은 `.build/backups/maps-before-raised-20261112-132923/`에 보관했습니다. 현재 버전은 2층 윗면과 수직 면의 화면 좌표를 갱신했으며, 타일 타입·몬스터 통행 여부·경로·출입구는 그대로 유지합니다.
+
+이전 배경 `asset/map/stage/background/cave-mine.png`와 [배경 제작 기록](map/cave-background.json)은 제작 이력으로 보관합니다. 배경 최초 적용 전 맵 78개와 목록 이미지는 `.build/backups/maps-before-background-20261112-134707/`에 있습니다. 배경만 추가한 단계에서는 78개 보드 내부 픽셀이 동일했으며 배치 좌표·경로 JSON은 수정하지 않았습니다.
+
+이전 거친 재질은 `asset/map/stage/icon/mine/`와 [재질 제작 기록](map/cave-materials.json)에 보관합니다. 해당 단계 교체 전 79개 맵 이미지는 `.build/backups/maps-before-material-blend-20261112-135300/`에 있습니다.
+
+현재는 [승인한 깔끔한 시안](map/reference/clean-enclosed-approved.png)을 78개 전투 맵에 적용합니다. `asset/map/stage/background/cave-clean.png`와 `asset/map/stage/icon/clean/`의 매끈한 재질 4종·투명 소품 4종을 사용합니다. `tools/cave_scenery.py`는 각 맵의 이동·배치가 불가능한 일반 막힌 칸만 골라 낮은 벽·간격을 둔 조명·격자 통로·암반·설비를 배치합니다. 장식은 이동·배치·특수 타일의 윗면, 단차의 수직 면과 포털 그림을 침범하지 않으며, 소품은 원래 비율로 그립니다. 장식용 벽은 배치 가능한 추가 층이 아닙니다. 최종 배경·지형·장식·포털을 800×600 PNG로 합성하여 게임에서 그대로 불러옵니다.
+
+원본 아틀라스·전체 생성 프롬프트·추출 좌표·재생성 방법은 [현재 제작 기록](map/clean-enclosed-style.json)에, 맵별 장식 수와 이미지·좌표 파일 해시는 [78개 맵 검증 기록](map/clean-enclosed-validation.json)에 있습니다. 이전 맵 이미지 79개와 렌더러는 `.build/backups/maps-before-clean-enclosed-20261112-140414/`에 보관했습니다. 타일 좌표·단차·배치 타입·경로 JSON은 변경하지 않았습니다. 56개 테스트와 실제 게임의 방향 선택·배치 10개 시나리오를 통과했습니다.
 
 - `asset/map/stage/icon/`: 공통·테마별 지형 타일
 - `asset/map/stage/icon/objects/`: 적 출현 지점, 도착 지점, 횃불과 창문

@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "map_count": 78,
   "canvas": {
     "width": 800,
@@ -14,11 +14,12 @@
     "boss": 21,
     "special": 14
   },
-  "creation": "PRTS.Map rogue_4 layouts with the project's cave art, oblique view and flush tile surfaces",
+  "creation": "PRTS.Map rogue_4 layouts with the project's cave art, oblique view and single-height raised platforms",
   "projection": {
     "back_scale": 0.86,
     "depth_ratio": 0.82,
-    "visual_elevation": 0
+    "elevation_ratio": 0.25,
+    "visual_terrain_heights": 2
   },
   "maps": [
     {

@@ -219,26 +219,38 @@ def spawn_monster(profile, start=None, *, now=0.0):
     return monster
 
 
+def _point_in_polygon(x, y, polygon):
+    if not (min(point[0] for point in polygon) <= x <= max(point[0] for point in polygon)
+            and min(point[1] for point in polygon) <= y <= max(point[1] for point in polygon)):
+        return False
+    sides = []
+    area = 0.0
+    for index, (x1, y1) in enumerate(polygon):
+        x2, y2 = polygon[(index + 1) % len(polygon)]
+        area += x1 * y2 - x2 * y1
+        sides.append((x2 - x1) * (y - y1) - (y2 - y1) * (x - x1))
+    # A face viewed exactly edge-on has no visible area and must not block input.
+    return abs(area) > 1e-7 and (all(side >= -1e-7 for side in sides) or all(side <= 1e-7 for side in sides))
+
+
 def cell_at(x, y):
-    """Find the visible tile under a mouse position (top-left origin)."""
-    # The last drawn (front/right) cell wins when two surfaces share an edge.
-    for pos, cell in reversed(list(battle_cells.items())):
-        left, top, width, height = cell["surface_rect"]
-        polygon = cell.get("surface_polygon")
-        if polygon is None:
-            if left <= x < left + width and top <= y < top + height:
+    """Pick visible tops, rejecting clicks on raised vertical faces (top-left origin)."""
+    # The painter draws flat cells first, then raised cells, back to front.
+    # Reverse that order so raised tops/faces hide the lower cells behind them.
+    cells = sorted(battle_cells.items(), key=lambda entry: (-entry[0][1], entry[0][0]), reverse=True)
+    for raised in (True, False):
+        for pos, cell in cells:
+            if (cell.get("visual_elevation", 0) > 0) != raised:
+                continue
+            left, top, width, height = cell["surface_rect"]
+            polygon = cell.get("surface_polygon")
+            if polygon is None:
+                if left <= x < left + width and top <= y < top + height:
+                    return pos
+            elif left <= x <= left + width and top <= y <= top + height and _point_in_polygon(x, y, polygon):
                 return pos
-            continue
-        if not (left <= x <= left + width and top <= y <= top + height):
-            continue
-        # Projected tile tops are convex quads; their bounding-box corners can
-        # lie outside the visible surface, so test every edge as well.
-        sides = []
-        for index, (x1, y1) in enumerate(polygon):
-            x2, y2 = polygon[(index + 1) % len(polygon)]
-            sides.append((x2 - x1) * (y - y1) - (y2 - y1) * (x - x1))
-        if all(side >= -1e-7 for side in sides) or all(side <= 1e-7 for side in sides):
-            return pos
+            if raised and any(_point_in_polygon(x, y, face["polygon"]) for face in cell.get("vertical_faces", [])):
+                return None
     return None
 
 

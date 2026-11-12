@@ -62,7 +62,8 @@ python game/code/main.py
 - 8명 모두 몸통·팔·머리·머리카락·옷자락의 움직임에 시차를 적용. 팔은 어깨에 붙어 움직이고, 무기는 손을 따라가며 발은 고정. 재생 중 늘이기 없이 이동·회전만 사용
 - 배치 프로필 카드 8종, 스킬 프로필 카드 8종과 스킬 아이콘 16종, 상하좌우 배치 방향 선택 UI
 - [유물 아이콘과 효과 25종](metadata/README.md#아이템): 256×256 투명 PNG, 통합 시트와 [효과표](docs/유물효과.md)
-- [광산 맵 78개](metadata/README.md#맵): PRTS.Map rogue_4의 일반 43개·보스 21개·특수 14개 구조를 기존 타일로 재구성. 내부 단차 없는 비스듬한 시점, 칸 모양에 맞춘 배치 판정과 캐릭터 원근 크기 적용. 맵별 격자·배치 속성과 출입구 유지, 800×600 화면
+- [광산 맵 78개](metadata/README.md#맵): PRTS.Map rogue_4의 일반 43개·보스 21개·특수 14개 구조를 기존 타일로 재구성. 비스듬한 시점에서 2층을 일정한 높이로 올리고 외곽 앞면·옆면으로 단차를 표시. 올라간 윗면에 맞춘 배치 판정과 캐릭터 원근 크기 적용. 맵별 격자·배치 속성과 출입구 유지, 800×600 화면
+- 전투 맵 78개 모두 승인한 깔끔한 그림체로 적용했습니다. 각 맵의 길과 높은 발판 주변을 낮은 벽·격자 통로·암반·설비가 감싸며, 이동·배치 칸과 단차·포털은 가리지 않습니다. [승인 시안](metadata/map/reference/clean-enclosed-approved.png) · [배경 원본](game/asset/map/stage/background/cave-clean.png) · [제작·검증 기록](metadata/map/clean-enclosed-style.json)
 - [한 칸 크기의 반투명 공격 범위 타일](game/asset/map/stage/main/range-overlay.png): 64×64
 - [탐험 지도용 타일 5종](game/asset/map/field/icon/): 전투 방·기본 방·좌우 연결선·상하 연결선·빈 배경, 모두 64×64
 - [이미지와 데이터 규격](metadata/README.md)

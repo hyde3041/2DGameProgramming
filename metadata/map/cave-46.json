@@ -16,7 +16,7 @@
       60,
       60
     ],
-    "elevation_pixels": 0,
+    "elevation_pixels": 15.0,
     "coordinate_system": "row 0 at top, column 0 at left",
     "projection": {
       "type": "oblique_perspective",
@@ -52,7 +52,7 @@
   },
   "game_grid_calibrated": true,
   "terrain_heights": 2,
-  "visual_terrain_heights": 1,
+  "visual_terrain_heights": 2,
   "goal_points": 2,
   "enemy_entrances": 3,
   "entrances": [
@@ -89,7 +89,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.86868687,
       "base_rect": [
         84,
@@ -163,7 +163,34 @@
       "source_tile_index": 72,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          90.4,
+          137.8
+        ],
+        [
+          142.0,
+          137.8
+        ],
+        [
+          136.7347,
+          180.9755
+        ],
+        [
+          84.0816,
+          180.9755
+        ]
+      ],
+      "base_canvas_center": [
+        113.3333,
+        159.1697
+      ],
+      "pico2d_base_center": [
+        113.3333,
+        440.8303
+      ],
+      "vertical_faces": []
     },
     {
       "id": "1,0",
@@ -174,7 +201,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.86868687,
       "base_rect": [
         136,
@@ -248,7 +275,34 @@
       "source_tile_index": 73,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          142.0,
+          137.8
+        ],
+        [
+          193.6,
+          137.8
+        ],
+        [
+          189.3878,
+          180.9755
+        ],
+        [
+          136.7347,
+          180.9755
+        ]
+      ],
+      "base_canvas_center": [
+        165.4545,
+        159.1697
+      ],
+      "pico2d_base_center": [
+        165.4545,
+        440.8303
+      ],
+      "vertical_faces": []
     },
     {
       "id": "2,0",
@@ -259,7 +313,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.86868687,
       "base_rect": [
         189,
@@ -333,7 +387,34 @@
       "source_tile_index": 74,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          193.6,
+          137.8
+        ],
+        [
+          245.2,
+          137.8
+        ],
+        [
+          242.0408,
+          180.9755
+        ],
+        [
+          189.3878,
+          180.9755
+        ]
+      ],
+      "base_canvas_center": [
+        217.5758,
+        159.1697
+      ],
+      "pico2d_base_center": [
+        217.5758,
+        440.8303
+      ],
+      "vertical_faces": []
     },
     {
       "id": "3,0",
@@ -344,7 +425,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.86868687,
       "base_rect": [
         242,
@@ -418,7 +499,34 @@
       "source_tile_index": 75,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          245.2,
+          137.8
+        ],
+        [
+          296.8,
+          137.8
+        ],
+        [
+          294.6939,
+          180.9755
+        ],
+        [
+          242.0408,
+          180.9755
+        ]
+      ],
+      "base_canvas_center": [
+        269.697,
+        159.1697
+      ],
+      "pico2d_base_center": [
+        269.697,
+        440.8303
+      ],
+      "vertical_faces": []
     },
     {
       "id": "4,0",
@@ -429,7 +537,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.86868687,
       "base_rect": [
         294,
@@ -503,7 +611,34 @@
       "source_tile_index": 76,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          296.8,
+          137.8
+        ],
+        [
+          348.4,
+          137.8
+        ],
+        [
+          347.3469,
+          180.9755
+        ],
+        [
+          294.6939,
+          180.9755
+        ]
+      ],
+      "base_canvas_center": [
+        321.8182,
+        159.1697
+      ],
+      "pico2d_base_center": [
+        321.8182,
+        440.8303
+      ],
+      "vertical_faces": []
     },
     {
       "id": "5,0",
@@ -514,7 +649,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.86868687,
       "base_rect": [
         347,
@@ -588,7 +723,34 @@
       "source_tile_index": 77,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          348.4,
+          137.8
+        ],
+        [
+          400.0,
+          137.8
+        ],
+        [
+          400.0,
+          180.9755
+        ],
+        [
+          347.3469,
+          180.9755
+        ]
+      ],
+      "base_canvas_center": [
+        373.9394,
+        159.1697
+      ],
+      "pico2d_base_center": [
+        373.9394,
+        440.8303
+      ],
+      "vertical_faces": []
     },
     {
       "id": "6,0",
@@ -599,7 +761,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.86868687,
       "base_rect": [
         400,
@@ -673,7 +835,34 @@
       "source_tile_index": 78,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          400.0,
+          137.8
+        ],
+        [
+          451.6,
+          137.8
+        ],
+        [
+          452.6531,
+          180.9755
+        ],
+        [
+          400.0,
+          180.9755
+        ]
+      ],
+      "base_canvas_center": [
+        426.0606,
+        159.1697
+      ],
+      "pico2d_base_center": [
+        426.0606,
+        440.8303
+      ],
+      "vertical_faces": []
     },
     {
       "id": "7,0",
@@ -684,7 +873,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.86868687,
       "base_rect": [
         451,
@@ -758,7 +947,34 @@
       "source_tile_index": 79,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          451.6,
+          137.8
+        ],
+        [
+          503.2,
+          137.8
+        ],
+        [
+          505.3061,
+          180.9755
+        ],
+        [
+          452.6531,
+          180.9755
+        ]
+      ],
+      "base_canvas_center": [
+        478.1818,
+        159.1697
+      ],
+      "pico2d_base_center": [
+        478.1818,
+        440.8303
+      ],
+      "vertical_faces": []
     },
     {
       "id": "8,0",
@@ -769,7 +985,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.86868687,
       "base_rect": [
         503,
@@ -843,7 +1059,34 @@
       "source_tile_index": 80,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          503.2,
+          137.8
+        ],
+        [
+          554.8,
+          137.8
+        ],
+        [
+          557.9592,
+          180.9755
+        ],
+        [
+          505.3061,
+          180.9755
+        ]
+      ],
+      "base_canvas_center": [
+        530.303,
+        159.1697
+      ],
+      "pico2d_base_center": [
+        530.303,
+        440.8303
+      ],
+      "vertical_faces": []
     },
     {
       "id": "9,0",
@@ -854,7 +1097,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.86868687,
       "base_rect": [
         554,
@@ -928,7 +1171,34 @@
       "source_tile_index": 81,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          554.8,
+          137.8
+        ],
+        [
+          606.4,
+          137.8
+        ],
+        [
+          610.6122,
+          180.9755
+        ],
+        [
+          557.9592,
+          180.9755
+        ]
+      ],
+      "base_canvas_center": [
+        582.4242,
+        159.1697
+      ],
+      "pico2d_base_center": [
+        582.4242,
+        440.8303
+      ],
+      "vertical_faces": []
     },
     {
       "id": "10,0",
@@ -939,7 +1209,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.86868687,
       "base_rect": [
         606,
@@ -1013,7 +1283,34 @@
       "source_tile_index": 82,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          606.4,
+          137.8
+        ],
+        [
+          658.0,
+          137.8
+        ],
+        [
+          663.2653,
+          180.9755
+        ],
+        [
+          610.6122,
+          180.9755
+        ]
+      ],
+      "base_canvas_center": [
+        634.5455,
+        159.1697
+      ],
+      "pico2d_base_center": [
+        634.5455,
+        440.8303
+      ],
+      "vertical_faces": []
     },
     {
       "id": "11,0",
@@ -1024,7 +1321,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.86868687,
       "base_rect": [
         658,
@@ -1098,7 +1395,34 @@
       "source_tile_index": 83,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          658.0,
+          137.8
+        ],
+        [
+          709.6,
+          137.8
+        ],
+        [
+          715.9184,
+          180.9755
+        ],
+        [
+          663.2653,
+          180.9755
+        ]
+      ],
+      "base_canvas_center": [
+        686.6667,
+        159.1697
+      ],
+      "pico2d_base_center": [
+        686.6667,
+        440.8303
+      ],
+      "vertical_faces": []
     },
     {
       "id": "0,1",
@@ -1109,7 +1433,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.88659794,
       "base_rect": [
         77,
@@ -1183,7 +1507,34 @@
       "source_tile_index": 60,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          84.0816,
+          180.9755
+        ],
+        [
+          136.7347,
+          180.9755
+        ],
+        [
+          131.25,
+          225.95
+        ],
+        [
+          77.5,
+          225.95
+        ]
+      ],
+      "base_canvas_center": [
+        107.4227,
+        203.2309
+      ],
+      "pico2d_base_center": [
+        107.4227,
+        396.7691
+      ],
+      "vertical_faces": []
     },
     {
       "id": "1,1",
@@ -1194,7 +1545,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.88659794,
       "base_rect": [
         131,
@@ -1268,7 +1619,34 @@
       "source_tile_index": 61,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          136.7347,
+          180.9755
+        ],
+        [
+          189.3878,
+          180.9755
+        ],
+        [
+          185.0,
+          225.95
+        ],
+        [
+          131.25,
+          225.95
+        ]
+      ],
+      "base_canvas_center": [
+        160.6186,
+        203.2309
+      ],
+      "pico2d_base_center": [
+        160.6186,
+        396.7691
+      ],
+      "vertical_faces": []
     },
     {
       "id": "2,1",
@@ -1279,7 +1657,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.88659794,
       "base_rect": [
         185,
@@ -1353,7 +1731,34 @@
       "source_tile_index": 62,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          189.3878,
+          180.9755
+        ],
+        [
+          242.0408,
+          180.9755
+        ],
+        [
+          238.75,
+          225.95
+        ],
+        [
+          185.0,
+          225.95
+        ]
+      ],
+      "base_canvas_center": [
+        213.8144,
+        203.2309
+      ],
+      "pico2d_base_center": [
+        213.8144,
+        396.7691
+      ],
+      "vertical_faces": []
     },
     {
       "id": "3,1",
@@ -1364,7 +1769,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.88659794,
       "base_rect": [
         238,
@@ -1438,7 +1843,34 @@
       "source_tile_index": 63,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          242.0408,
+          180.9755
+        ],
+        [
+          294.6939,
+          180.9755
+        ],
+        [
+          292.5,
+          225.95
+        ],
+        [
+          238.75,
+          225.95
+        ]
+      ],
+      "base_canvas_center": [
+        267.0103,
+        203.2309
+      ],
+      "pico2d_base_center": [
+        267.0103,
+        396.7691
+      ],
+      "vertical_faces": []
     },
     {
       "id": "4,1",
@@ -1449,7 +1881,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 2,
-      "visual_elevation": 0,
+      "visual_elevation": 13.299,
       "perspective_scale": 0.88659794,
       "base_rect": [
         292,
@@ -1459,63 +1891,63 @@
       ],
       "surface_rect": [
         292,
-        180,
+        167,
         56,
         46
       ],
       "draw_rect": [
         292,
-        180,
+        167,
         56,
-        46
+        59
       ],
       "surface_polygon": [
         [
           294.6939,
-          180.9755
+          167.8122
         ],
         [
           347.3469,
-          180.9755
+          167.8122
         ],
         [
           346.25,
-          225.95
+          212.5125
         ],
         [
           292.5,
-          225.95
+          212.5125
         ]
       ],
       "pico2d_surface_polygon": [
         [
           294.6939,
-          419.0245
+          432.1878
         ],
         [
           347.3469,
-          419.0245
+          432.1878
         ],
         [
           346.25,
-          374.05
+          387.4875
         ],
         [
           292.5,
-          374.05
+          387.4875
         ]
       ],
       "canvas_center": [
         320.2062,
-        203.2309
+        189.9319
       ],
       "pico2d_center": [
         320.2062,
-        396.7691
+        410.0681
       ],
       "pico2d_surface_rect": [
         292,
-        374,
+        387,
         56,
         46
       ],
@@ -1523,7 +1955,98 @@
       "source_tile_index": 64,
       "buildable_type": "RANGED",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          294.6939,
+          180.9755
+        ],
+        [
+          347.3469,
+          180.9755
+        ],
+        [
+          346.25,
+          225.95
+        ],
+        [
+          292.5,
+          225.95
+        ]
+      ],
+      "base_canvas_center": [
+        320.2062,
+        203.2309
+      ],
+      "pico2d_base_center": [
+        320.2062,
+        396.7691
+      ],
+      "vertical_faces": [
+        {
+          "side": "left",
+          "polygon": [
+            [
+              292.5,
+              212.5125
+            ],
+            [
+              294.6939,
+              167.8122
+            ],
+            [
+              294.6939,
+              180.9755
+            ],
+            [
+              292.5,
+              225.95
+            ]
+          ]
+        },
+        {
+          "side": "right",
+          "polygon": [
+            [
+              346.25,
+              212.5125
+            ],
+            [
+              347.3469,
+              167.8122
+            ],
+            [
+              347.3469,
+              180.9755
+            ],
+            [
+              346.25,
+              225.95
+            ]
+          ]
+        },
+        {
+          "side": "front",
+          "polygon": [
+            [
+              292.5,
+              212.5125
+            ],
+            [
+              346.25,
+              212.5125
+            ],
+            [
+              346.25,
+              225.95
+            ],
+            [
+              292.5,
+              225.95
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "5,1",
@@ -1534,7 +2057,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.88659794,
       "base_rect": [
         346,
@@ -1608,7 +2131,34 @@
       "source_tile_index": 65,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          347.3469,
+          180.9755
+        ],
+        [
+          400.0,
+          180.9755
+        ],
+        [
+          400.0,
+          225.95
+        ],
+        [
+          346.25,
+          225.95
+        ]
+      ],
+      "base_canvas_center": [
+        373.4021,
+        203.2309
+      ],
+      "pico2d_base_center": [
+        373.4021,
+        396.7691
+      ],
+      "vertical_faces": []
     },
     {
       "id": "6,1",
@@ -1619,7 +2169,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.88659794,
       "base_rect": [
         400,
@@ -1693,7 +2243,34 @@
       "source_tile_index": 66,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          400.0,
+          180.9755
+        ],
+        [
+          452.6531,
+          180.9755
+        ],
+        [
+          453.75,
+          225.95
+        ],
+        [
+          400.0,
+          225.95
+        ]
+      ],
+      "base_canvas_center": [
+        426.5979,
+        203.2309
+      ],
+      "pico2d_base_center": [
+        426.5979,
+        396.7691
+      ],
+      "vertical_faces": []
     },
     {
       "id": "7,1",
@@ -1704,7 +2281,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.88659794,
       "base_rect": [
         452,
@@ -1778,7 +2355,34 @@
       "source_tile_index": 67,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          452.6531,
+          180.9755
+        ],
+        [
+          505.3061,
+          180.9755
+        ],
+        [
+          507.5,
+          225.95
+        ],
+        [
+          453.75,
+          225.95
+        ]
+      ],
+      "base_canvas_center": [
+        479.7938,
+        203.2309
+      ],
+      "pico2d_base_center": [
+        479.7938,
+        396.7691
+      ],
+      "vertical_faces": []
     },
     {
       "id": "8,1",
@@ -1789,7 +2393,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.88659794,
       "base_rect": [
         505,
@@ -1863,7 +2467,34 @@
       "source_tile_index": 68,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          505.3061,
+          180.9755
+        ],
+        [
+          557.9592,
+          180.9755
+        ],
+        [
+          561.25,
+          225.95
+        ],
+        [
+          507.5,
+          225.95
+        ]
+      ],
+      "base_canvas_center": [
+        532.9897,
+        203.2309
+      ],
+      "pico2d_base_center": [
+        532.9897,
+        396.7691
+      ],
+      "vertical_faces": []
     },
     {
       "id": "9,1",
@@ -1874,7 +2505,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.88659794,
       "base_rect": [
         557,
@@ -1948,7 +2579,34 @@
       "source_tile_index": 69,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          557.9592,
+          180.9755
+        ],
+        [
+          610.6122,
+          180.9755
+        ],
+        [
+          615.0,
+          225.95
+        ],
+        [
+          561.25,
+          225.95
+        ]
+      ],
+      "base_canvas_center": [
+        586.1856,
+        203.2309
+      ],
+      "pico2d_base_center": [
+        586.1856,
+        396.7691
+      ],
+      "vertical_faces": []
     },
     {
       "id": "10,1",
@@ -1959,7 +2617,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.88659794,
       "base_rect": [
         610,
@@ -2033,7 +2691,34 @@
       "source_tile_index": 70,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          610.6122,
+          180.9755
+        ],
+        [
+          663.2653,
+          180.9755
+        ],
+        [
+          668.75,
+          225.95
+        ],
+        [
+          615.0,
+          225.95
+        ]
+      ],
+      "base_canvas_center": [
+        639.3814,
+        203.2309
+      ],
+      "pico2d_base_center": [
+        639.3814,
+        396.7691
+      ],
+      "vertical_faces": []
     },
     {
       "id": "11,1",
@@ -2044,7 +2729,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.88659794,
       "base_rect": [
         663,
@@ -2118,7 +2803,34 @@
       "source_tile_index": 71,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          663.2653,
+          180.9755
+        ],
+        [
+          715.9184,
+          180.9755
+        ],
+        [
+          722.5,
+          225.95
+        ],
+        [
+          668.75,
+          225.95
+        ]
+      ],
+      "base_canvas_center": [
+        692.5773,
+        203.2309
+      ],
+      "pico2d_base_center": [
+        692.5773,
+        396.7691
+      ],
+      "vertical_faces": []
     },
     {
       "id": "0,2",
@@ -2129,7 +2841,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.90526316,
       "base_rect": [
         70,
@@ -2203,7 +2915,34 @@
       "source_tile_index": 48,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          77.5,
+          225.95
+        ],
+        [
+          131.25,
+          225.95
+        ],
+        [
+          125.5319,
+          272.8383
+        ],
+        [
+          70.6383,
+          272.8383
+        ]
+      ],
+      "base_canvas_center": [
+        101.2632,
+        249.1474
+      ],
+      "pico2d_base_center": [
+        101.2632,
+        350.8526
+      ],
+      "vertical_faces": []
     },
     {
       "id": "1,2",
@@ -2214,7 +2953,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.90526316,
       "base_rect": [
         125,
@@ -2288,7 +3027,34 @@
       "source_tile_index": 49,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          131.25,
+          225.95
+        ],
+        [
+          185.0,
+          225.95
+        ],
+        [
+          180.4255,
+          272.8383
+        ],
+        [
+          125.5319,
+          272.8383
+        ]
+      ],
+      "base_canvas_center": [
+        155.5789,
+        249.1474
+      ],
+      "pico2d_base_center": [
+        155.5789,
+        350.8526
+      ],
+      "vertical_faces": []
     },
     {
       "id": "2,2",
@@ -2299,7 +3065,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.90526316,
       "base_rect": [
         180,
@@ -2373,7 +3139,34 @@
       "source_tile_index": 50,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          185.0,
+          225.95
+        ],
+        [
+          238.75,
+          225.95
+        ],
+        [
+          235.3191,
+          272.8383
+        ],
+        [
+          180.4255,
+          272.8383
+        ]
+      ],
+      "base_canvas_center": [
+        209.8947,
+        249.1474
+      ],
+      "pico2d_base_center": [
+        209.8947,
+        350.8526
+      ],
+      "vertical_faces": []
     },
     {
       "id": "3,2",
@@ -2384,7 +3177,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.90526316,
       "base_rect": [
         235,
@@ -2458,7 +3251,34 @@
       "source_tile_index": 51,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          238.75,
+          225.95
+        ],
+        [
+          292.5,
+          225.95
+        ],
+        [
+          290.2128,
+          272.8383
+        ],
+        [
+          235.3191,
+          272.8383
+        ]
+      ],
+      "base_canvas_center": [
+        264.2105,
+        249.1474
+      ],
+      "pico2d_base_center": [
+        264.2105,
+        350.8526
+      ],
+      "vertical_faces": []
     },
     {
       "id": "4,2",
@@ -2469,7 +3289,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.90526316,
       "base_rect": [
         290,
@@ -2543,7 +3363,34 @@
       "source_tile_index": 52,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          292.5,
+          225.95
+        ],
+        [
+          346.25,
+          225.95
+        ],
+        [
+          345.1064,
+          272.8383
+        ],
+        [
+          290.2128,
+          272.8383
+        ]
+      ],
+      "base_canvas_center": [
+        318.5263,
+        249.1474
+      ],
+      "pico2d_base_center": [
+        318.5263,
+        350.8526
+      ],
+      "vertical_faces": []
     },
     {
       "id": "5,2",
@@ -2554,7 +3401,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.90526316,
       "base_rect": [
         345,
@@ -2628,7 +3475,34 @@
       "source_tile_index": 53,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          346.25,
+          225.95
+        ],
+        [
+          400.0,
+          225.95
+        ],
+        [
+          400.0,
+          272.8383
+        ],
+        [
+          345.1064,
+          272.8383
+        ]
+      ],
+      "base_canvas_center": [
+        372.8421,
+        249.1474
+      ],
+      "pico2d_base_center": [
+        372.8421,
+        350.8526
+      ],
+      "vertical_faces": []
     },
     {
       "id": "6,2",
@@ -2639,7 +3513,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.90526316,
       "base_rect": [
         400,
@@ -2713,7 +3587,34 @@
       "source_tile_index": 54,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          400.0,
+          225.95
+        ],
+        [
+          453.75,
+          225.95
+        ],
+        [
+          454.8936,
+          272.8383
+        ],
+        [
+          400.0,
+          272.8383
+        ]
+      ],
+      "base_canvas_center": [
+        427.1579,
+        249.1474
+      ],
+      "pico2d_base_center": [
+        427.1579,
+        350.8526
+      ],
+      "vertical_faces": []
     },
     {
       "id": "7,2",
@@ -2724,7 +3625,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 2,
-      "visual_elevation": 0,
+      "visual_elevation": 13.5789,
       "perspective_scale": 0.90526316,
       "base_rect": [
         453,
@@ -2734,63 +3635,63 @@
       ],
       "surface_rect": [
         453,
-        225,
+        212,
         57,
         48
       ],
       "draw_rect": [
         453,
-        225,
+        212,
         57,
-        48
+        61
       ],
       "surface_polygon": [
         [
           453.75,
-          225.95
+          212.5125
         ],
         [
           507.5,
-          225.95
+          212.5125
         ],
         [
           509.7872,
-          272.8383
+          259.1149
         ],
         [
           454.8936,
-          272.8383
+          259.1149
         ]
       ],
       "pico2d_surface_polygon": [
         [
           453.75,
-          374.05
+          387.4875
         ],
         [
           507.5,
-          374.05
+          387.4875
         ],
         [
           509.7872,
-          327.1617
+          340.8851
         ],
         [
           454.8936,
-          327.1617
+          340.8851
         ]
       ],
       "canvas_center": [
         481.4737,
-        249.1474
+        235.5685
       ],
       "pico2d_center": [
         481.4737,
-        350.8526
+        364.4315
       ],
       "pico2d_surface_rect": [
         453,
-        327,
+        340,
         57,
         48
       ],
@@ -2798,7 +3699,77 @@
       "source_tile_index": 55,
       "buildable_type": "RANGED",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          453.75,
+          225.95
+        ],
+        [
+          507.5,
+          225.95
+        ],
+        [
+          509.7872,
+          272.8383
+        ],
+        [
+          454.8936,
+          272.8383
+        ]
+      ],
+      "base_canvas_center": [
+        481.4737,
+        249.1474
+      ],
+      "pico2d_base_center": [
+        481.4737,
+        350.8526
+      ],
+      "vertical_faces": [
+        {
+          "side": "left",
+          "polygon": [
+            [
+              453.75,
+              212.5125
+            ],
+            [
+              454.8936,
+              259.1149
+            ],
+            [
+              454.8936,
+              272.8383
+            ],
+            [
+              453.75,
+              225.95
+            ]
+          ]
+        },
+        {
+          "side": "right",
+          "polygon": [
+            [
+              507.5,
+              212.5125
+            ],
+            [
+              509.7872,
+              259.1149
+            ],
+            [
+              509.7872,
+              272.8383
+            ],
+            [
+              507.5,
+              225.95
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "8,2",
@@ -2809,7 +3780,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.90526316,
       "base_rect": [
         507,
@@ -2883,7 +3854,34 @@
       "source_tile_index": 56,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          507.5,
+          225.95
+        ],
+        [
+          561.25,
+          225.95
+        ],
+        [
+          564.6809,
+          272.8383
+        ],
+        [
+          509.7872,
+          272.8383
+        ]
+      ],
+      "base_canvas_center": [
+        535.7895,
+        249.1474
+      ],
+      "pico2d_base_center": [
+        535.7895,
+        350.8526
+      ],
+      "vertical_faces": []
     },
     {
       "id": "9,2",
@@ -2894,7 +3892,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 2,
-      "visual_elevation": 0,
+      "visual_elevation": 13.5789,
       "perspective_scale": 0.90526316,
       "base_rect": [
         561,
@@ -2904,63 +3902,63 @@
       ],
       "surface_rect": [
         561,
-        225,
+        212,
         59,
         48
       ],
       "draw_rect": [
         561,
-        225,
+        212,
         59,
-        48
+        61
       ],
       "surface_polygon": [
         [
           561.25,
-          225.95
+          212.5125
         ],
         [
           615.0,
-          225.95
+          212.5125
         ],
         [
           619.5745,
-          272.8383
+          259.1149
         ],
         [
           564.6809,
-          272.8383
+          259.1149
         ]
       ],
       "pico2d_surface_polygon": [
         [
           561.25,
-          374.05
+          387.4875
         ],
         [
           615.0,
-          374.05
+          387.4875
         ],
         [
           619.5745,
-          327.1617
+          340.8851
         ],
         [
           564.6809,
-          327.1617
+          340.8851
         ]
       ],
       "canvas_center": [
         590.1053,
-        249.1474
+        235.5685
       ],
       "pico2d_center": [
         590.1053,
-        350.8526
+        364.4315
       ],
       "pico2d_surface_rect": [
         561,
-        327,
+        340,
         59,
         48
       ],
@@ -2968,7 +3966,98 @@
       "source_tile_index": 57,
       "buildable_type": "RANGED",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          561.25,
+          225.95
+        ],
+        [
+          615.0,
+          225.95
+        ],
+        [
+          619.5745,
+          272.8383
+        ],
+        [
+          564.6809,
+          272.8383
+        ]
+      ],
+      "base_canvas_center": [
+        590.1053,
+        249.1474
+      ],
+      "pico2d_base_center": [
+        590.1053,
+        350.8526
+      ],
+      "vertical_faces": [
+        {
+          "side": "left",
+          "polygon": [
+            [
+              561.25,
+              212.5125
+            ],
+            [
+              564.6809,
+              259.1149
+            ],
+            [
+              564.6809,
+              272.8383
+            ],
+            [
+              561.25,
+              225.95
+            ]
+          ]
+        },
+        {
+          "side": "right",
+          "polygon": [
+            [
+              615.0,
+              212.5125
+            ],
+            [
+              619.5745,
+              259.1149
+            ],
+            [
+              619.5745,
+              272.8383
+            ],
+            [
+              615.0,
+              225.95
+            ]
+          ]
+        },
+        {
+          "side": "front",
+          "polygon": [
+            [
+              564.6809,
+              259.1149
+            ],
+            [
+              619.5745,
+              259.1149
+            ],
+            [
+              619.5745,
+              272.8383
+            ],
+            [
+              564.6809,
+              272.8383
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "10,2",
@@ -2979,7 +4068,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.90526316,
       "base_rect": [
         615,
@@ -3053,7 +4142,34 @@
       "source_tile_index": 58,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          615.0,
+          225.95
+        ],
+        [
+          668.75,
+          225.95
+        ],
+        [
+          674.4681,
+          272.8383
+        ],
+        [
+          619.5745,
+          272.8383
+        ]
+      ],
+      "base_canvas_center": [
+        644.4211,
+        249.1474
+      ],
+      "pico2d_base_center": [
+        644.4211,
+        350.8526
+      ],
+      "vertical_faces": []
     },
     {
       "id": "11,2",
@@ -3064,7 +4180,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.90526316,
       "base_rect": [
         668,
@@ -3138,7 +4254,34 @@
       "source_tile_index": 59,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          668.75,
+          225.95
+        ],
+        [
+          722.5,
+          225.95
+        ],
+        [
+          729.3617,
+          272.8383
+        ],
+        [
+          674.4681,
+          272.8383
+        ]
+      ],
+      "base_canvas_center": [
+        698.7368,
+        249.1474
+      ],
+      "pico2d_base_center": [
+        698.7368,
+        350.8526
+      ],
+      "vertical_faces": []
     },
     {
       "id": "0,3",
@@ -3149,7 +4292,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.92473118,
       "base_rect": [
         63,
@@ -3223,7 +4366,34 @@
       "source_tile_index": 36,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          70.6383,
+          272.8383
+        ],
+        [
+          125.5319,
+          272.8383
+        ],
+        [
+          119.5652,
+          321.7652
+        ],
+        [
+          63.4783,
+          321.7652
+        ]
+      ],
+      "base_canvas_center": [
+        94.8387,
+        297.0387
+      ],
+      "pico2d_base_center": [
+        94.8387,
+        302.9613
+      ],
+      "vertical_faces": []
     },
     {
       "id": "1,3",
@@ -3234,7 +4404,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.92473118,
       "base_rect": [
         119,
@@ -3308,7 +4478,34 @@
       "source_tile_index": 37,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          125.5319,
+          272.8383
+        ],
+        [
+          180.4255,
+          272.8383
+        ],
+        [
+          175.6522,
+          321.7652
+        ],
+        [
+          119.5652,
+          321.7652
+        ]
+      ],
+      "base_canvas_center": [
+        150.3226,
+        297.0387
+      ],
+      "pico2d_base_center": [
+        150.3226,
+        302.9613
+      ],
+      "vertical_faces": []
     },
     {
       "id": "2,3",
@@ -3319,7 +4516,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.92473118,
       "base_rect": [
         175,
@@ -3393,7 +4590,34 @@
       "source_tile_index": 38,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          180.4255,
+          272.8383
+        ],
+        [
+          235.3191,
+          272.8383
+        ],
+        [
+          231.7391,
+          321.7652
+        ],
+        [
+          175.6522,
+          321.7652
+        ]
+      ],
+      "base_canvas_center": [
+        205.8065,
+        297.0387
+      ],
+      "pico2d_base_center": [
+        205.8065,
+        302.9613
+      ],
+      "vertical_faces": []
     },
     {
       "id": "3,3",
@@ -3404,7 +4628,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.92473118,
       "base_rect": [
         231,
@@ -3478,7 +4702,34 @@
       "source_tile_index": 39,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          235.3191,
+          272.8383
+        ],
+        [
+          290.2128,
+          272.8383
+        ],
+        [
+          287.8261,
+          321.7652
+        ],
+        [
+          231.7391,
+          321.7652
+        ]
+      ],
+      "base_canvas_center": [
+        261.2903,
+        297.0387
+      ],
+      "pico2d_base_center": [
+        261.2903,
+        302.9613
+      ],
+      "vertical_faces": []
     },
     {
       "id": "4,3",
@@ -3489,7 +4740,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.92473118,
       "base_rect": [
         287,
@@ -3563,7 +4814,34 @@
       "source_tile_index": 40,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          290.2128,
+          272.8383
+        ],
+        [
+          345.1064,
+          272.8383
+        ],
+        [
+          343.913,
+          321.7652
+        ],
+        [
+          287.8261,
+          321.7652
+        ]
+      ],
+      "base_canvas_center": [
+        316.7742,
+        297.0387
+      ],
+      "pico2d_base_center": [
+        316.7742,
+        302.9613
+      ],
+      "vertical_faces": []
     },
     {
       "id": "5,3",
@@ -3574,7 +4852,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 2,
-      "visual_elevation": 0,
+      "visual_elevation": 13.871,
       "perspective_scale": 0.92473118,
       "base_rect": [
         343,
@@ -3584,71 +4862,141 @@
       ],
       "surface_rect": [
         343,
-        272,
+        259,
         57,
-        50
+        49
       ],
       "draw_rect": [
         343,
-        272,
+        259,
         57,
-        50
+        63
       ],
       "surface_polygon": [
         [
           345.1064,
-          272.8383
+          259.1149
         ],
         [
           400.0,
-          272.8383
+          259.1149
         ],
         [
           400.0,
-          321.7652
+          307.7435
         ],
         [
           343.913,
-          321.7652
+          307.7435
         ]
       ],
       "pico2d_surface_polygon": [
         [
           345.1064,
-          327.1617
+          340.8851
         ],
         [
           400.0,
-          327.1617
+          340.8851
         ],
         [
           400.0,
-          278.2348
+          292.2565
         ],
         [
           343.913,
-          278.2348
+          292.2565
         ]
       ],
       "canvas_center": [
         372.2581,
-        297.0387
+        283.1677
       ],
       "pico2d_center": [
         372.2581,
-        302.9613
+        316.8323
       ],
       "pico2d_surface_rect": [
         343,
-        278,
+        292,
         57,
-        50
+        49
       ],
       "source_tile_key": "tile_wall",
       "source_tile_index": 41,
       "buildable_type": "RANGED",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          345.1064,
+          272.8383
+        ],
+        [
+          400.0,
+          272.8383
+        ],
+        [
+          400.0,
+          321.7652
+        ],
+        [
+          343.913,
+          321.7652
+        ]
+      ],
+      "base_canvas_center": [
+        372.2581,
+        297.0387
+      ],
+      "pico2d_base_center": [
+        372.2581,
+        302.9613
+      ],
+      "vertical_faces": [
+        {
+          "side": "left",
+          "polygon": [
+            [
+              343.913,
+              307.7435
+            ],
+            [
+              345.1064,
+              259.1149
+            ],
+            [
+              345.1064,
+              272.8383
+            ],
+            [
+              343.913,
+              321.7652
+            ]
+          ]
+        },
+        {
+          "side": "front",
+          "polygon": [
+            [
+              343.913,
+              307.7435
+            ],
+            [
+              400.0,
+              307.7435
+            ],
+            [
+              400.0,
+              321.7652
+            ],
+            [
+              343.913,
+              321.7652
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "6,3",
@@ -3659,7 +5007,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 2,
-      "visual_elevation": 0,
+      "visual_elevation": 13.871,
       "perspective_scale": 0.92473118,
       "base_rect": [
         400,
@@ -3669,71 +5017,120 @@
       ],
       "surface_rect": [
         400,
-        272,
+        259,
         57,
-        50
+        49
       ],
       "draw_rect": [
         400,
-        272,
+        259,
         57,
-        50
+        63
       ],
       "surface_polygon": [
         [
           400.0,
-          272.8383
+          259.1149
         ],
         [
           454.8936,
-          272.8383
+          259.1149
         ],
         [
           456.087,
-          321.7652
+          307.7435
         ],
         [
           400.0,
-          321.7652
+          307.7435
         ]
       ],
       "pico2d_surface_polygon": [
         [
           400.0,
-          327.1617
+          340.8851
         ],
         [
           454.8936,
-          327.1617
+          340.8851
         ],
         [
           456.087,
-          278.2348
+          292.2565
         ],
         [
           400.0,
-          278.2348
+          292.2565
         ]
       ],
       "canvas_center": [
         427.7419,
-        297.0387
+        283.1677
       ],
       "pico2d_center": [
         427.7419,
-        302.9613
+        316.8323
       ],
       "pico2d_surface_rect": [
         400,
-        278,
+        292,
         57,
-        50
+        49
       ],
       "source_tile_key": "tile_wall",
       "source_tile_index": 42,
       "buildable_type": "RANGED",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          400.0,
+          272.8383
+        ],
+        [
+          454.8936,
+          272.8383
+        ],
+        [
+          456.087,
+          321.7652
+        ],
+        [
+          400.0,
+          321.7652
+        ]
+      ],
+      "base_canvas_center": [
+        427.7419,
+        297.0387
+      ],
+      "pico2d_base_center": [
+        427.7419,
+        302.9613
+      ],
+      "vertical_faces": [
+        {
+          "side": "front",
+          "polygon": [
+            [
+              400.0,
+              307.7435
+            ],
+            [
+              456.087,
+              307.7435
+            ],
+            [
+              456.087,
+              321.7652
+            ],
+            [
+              400.0,
+              321.7652
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "7,3",
@@ -3744,7 +5141,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 2,
-      "visual_elevation": 0,
+      "visual_elevation": 13.871,
       "perspective_scale": 0.92473118,
       "base_rect": [
         454,
@@ -3754,71 +5151,141 @@
       ],
       "surface_rect": [
         454,
-        272,
+        259,
         59,
-        50
+        49
       ],
       "draw_rect": [
         454,
-        272,
+        259,
         59,
-        50
+        63
       ],
       "surface_polygon": [
         [
           454.8936,
-          272.8383
+          259.1149
         ],
         [
           509.7872,
-          272.8383
+          259.1149
         ],
         [
           512.1739,
-          321.7652
+          307.7435
         ],
         [
           456.087,
-          321.7652
+          307.7435
         ]
       ],
       "pico2d_surface_polygon": [
         [
           454.8936,
-          327.1617
+          340.8851
         ],
         [
           509.7872,
-          327.1617
+          340.8851
         ],
         [
           512.1739,
-          278.2348
+          292.2565
         ],
         [
           456.087,
-          278.2348
+          292.2565
         ]
       ],
       "canvas_center": [
         483.2258,
-        297.0387
+        283.1677
       ],
       "pico2d_center": [
         483.2258,
-        302.9613
+        316.8323
       ],
       "pico2d_surface_rect": [
         454,
-        278,
+        292,
         59,
-        50
+        49
       ],
       "source_tile_key": "tile_wall",
       "source_tile_index": 43,
       "buildable_type": "RANGED",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          454.8936,
+          272.8383
+        ],
+        [
+          509.7872,
+          272.8383
+        ],
+        [
+          512.1739,
+          321.7652
+        ],
+        [
+          456.087,
+          321.7652
+        ]
+      ],
+      "base_canvas_center": [
+        483.2258,
+        297.0387
+      ],
+      "pico2d_base_center": [
+        483.2258,
+        302.9613
+      ],
+      "vertical_faces": [
+        {
+          "side": "right",
+          "polygon": [
+            [
+              509.7872,
+              259.1149
+            ],
+            [
+              512.1739,
+              307.7435
+            ],
+            [
+              512.1739,
+              321.7652
+            ],
+            [
+              509.7872,
+              272.8383
+            ]
+          ]
+        },
+        {
+          "side": "front",
+          "polygon": [
+            [
+              456.087,
+              307.7435
+            ],
+            [
+              512.1739,
+              307.7435
+            ],
+            [
+              512.1739,
+              321.7652
+            ],
+            [
+              456.087,
+              321.7652
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "8,3",
@@ -3829,7 +5296,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.92473118,
       "base_rect": [
         509,
@@ -3903,7 +5370,34 @@
       "source_tile_index": 44,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          509.7872,
+          272.8383
+        ],
+        [
+          564.6809,
+          272.8383
+        ],
+        [
+          568.2609,
+          321.7652
+        ],
+        [
+          512.1739,
+          321.7652
+        ]
+      ],
+      "base_canvas_center": [
+        538.7097,
+        297.0387
+      ],
+      "pico2d_base_center": [
+        538.7097,
+        302.9613
+      ],
+      "vertical_faces": []
     },
     {
       "id": "9,3",
@@ -3914,7 +5408,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.92473118,
       "base_rect": [
         564,
@@ -3988,7 +5482,34 @@
       "source_tile_index": 45,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          564.6809,
+          272.8383
+        ],
+        [
+          619.5745,
+          272.8383
+        ],
+        [
+          624.3478,
+          321.7652
+        ],
+        [
+          568.2609,
+          321.7652
+        ]
+      ],
+      "base_canvas_center": [
+        594.1935,
+        297.0387
+      ],
+      "pico2d_base_center": [
+        594.1935,
+        302.9613
+      ],
+      "vertical_faces": []
     },
     {
       "id": "10,3",
@@ -3999,7 +5520,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.92473118,
       "base_rect": [
         619,
@@ -4073,7 +5594,34 @@
       "source_tile_index": 46,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          619.5745,
+          272.8383
+        ],
+        [
+          674.4681,
+          272.8383
+        ],
+        [
+          680.4348,
+          321.7652
+        ],
+        [
+          624.3478,
+          321.7652
+        ]
+      ],
+      "base_canvas_center": [
+        649.6774,
+        297.0387
+      ],
+      "pico2d_base_center": [
+        649.6774,
+        302.9613
+      ],
+      "vertical_faces": []
     },
     {
       "id": "11,3",
@@ -4084,7 +5632,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.92473118,
       "base_rect": [
         674,
@@ -4158,7 +5706,34 @@
       "source_tile_index": 47,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          674.4681,
+          272.8383
+        ],
+        [
+          729.3617,
+          272.8383
+        ],
+        [
+          736.5217,
+          321.7652
+        ],
+        [
+          680.4348,
+          321.7652
+        ]
+      ],
+      "base_canvas_center": [
+        705.1613,
+        297.0387
+      ],
+      "pico2d_base_center": [
+        705.1613,
+        302.9613
+      ],
+      "vertical_faces": []
     },
     {
       "id": "0,4",
@@ -4169,7 +5744,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.94505495,
       "base_rect": [
         56,
@@ -4243,7 +5818,34 @@
       "source_tile_index": 24,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          63.4783,
+          321.7652
+        ],
+        [
+          119.5652,
+          321.7652
+        ],
+        [
+          113.3333,
+          372.8667
+        ],
+        [
+          56.0,
+          372.8667
+        ]
+      ],
+      "base_canvas_center": [
+        88.1319,
+        347.0352
+      ],
+      "pico2d_base_center": [
+        88.1319,
+        252.9648
+      ],
+      "vertical_faces": []
     },
     {
       "id": "1,4",
@@ -4254,7 +5856,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.94505495,
       "base_rect": [
         113,
@@ -4328,7 +5930,34 @@
       "source_tile_index": 25,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          119.5652,
+          321.7652
+        ],
+        [
+          175.6522,
+          321.7652
+        ],
+        [
+          170.6667,
+          372.8667
+        ],
+        [
+          113.3333,
+          372.8667
+        ]
+      ],
+      "base_canvas_center": [
+        144.8352,
+        347.0352
+      ],
+      "pico2d_base_center": [
+        144.8352,
+        252.9648
+      ],
+      "vertical_faces": []
     },
     {
       "id": "2,4",
@@ -4339,7 +5968,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.94505495,
       "base_rect": [
         170,
@@ -4413,7 +6042,34 @@
       "source_tile_index": 26,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          175.6522,
+          321.7652
+        ],
+        [
+          231.7391,
+          321.7652
+        ],
+        [
+          228.0,
+          372.8667
+        ],
+        [
+          170.6667,
+          372.8667
+        ]
+      ],
+      "base_canvas_center": [
+        201.5385,
+        347.0352
+      ],
+      "pico2d_base_center": [
+        201.5385,
+        252.9648
+      ],
+      "vertical_faces": []
     },
     {
       "id": "3,4",
@@ -4424,7 +6080,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.94505495,
       "base_rect": [
         228,
@@ -4498,7 +6154,34 @@
       "source_tile_index": 27,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          231.7391,
+          321.7652
+        ],
+        [
+          287.8261,
+          321.7652
+        ],
+        [
+          285.3333,
+          372.8667
+        ],
+        [
+          228.0,
+          372.8667
+        ]
+      ],
+      "base_canvas_center": [
+        258.2418,
+        347.0352
+      ],
+      "pico2d_base_center": [
+        258.2418,
+        252.9648
+      ],
+      "vertical_faces": []
     },
     {
       "id": "4,4",
@@ -4509,7 +6192,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.94505495,
       "base_rect": [
         285,
@@ -4583,7 +6266,34 @@
       "source_tile_index": 28,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          287.8261,
+          321.7652
+        ],
+        [
+          343.913,
+          321.7652
+        ],
+        [
+          342.6667,
+          372.8667
+        ],
+        [
+          285.3333,
+          372.8667
+        ]
+      ],
+      "base_canvas_center": [
+        314.9451,
+        347.0352
+      ],
+      "pico2d_base_center": [
+        314.9451,
+        252.9648
+      ],
+      "vertical_faces": []
     },
     {
       "id": "5,4",
@@ -4594,7 +6304,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.94505495,
       "base_rect": [
         342,
@@ -4668,7 +6378,34 @@
       "source_tile_index": 29,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          343.913,
+          321.7652
+        ],
+        [
+          400.0,
+          321.7652
+        ],
+        [
+          400.0,
+          372.8667
+        ],
+        [
+          342.6667,
+          372.8667
+        ]
+      ],
+      "base_canvas_center": [
+        371.6484,
+        347.0352
+      ],
+      "pico2d_base_center": [
+        371.6484,
+        252.9648
+      ],
+      "vertical_faces": []
     },
     {
       "id": "6,4",
@@ -4679,7 +6416,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.94505495,
       "base_rect": [
         400,
@@ -4753,7 +6490,34 @@
       "source_tile_index": 30,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          400.0,
+          321.7652
+        ],
+        [
+          456.087,
+          321.7652
+        ],
+        [
+          457.3333,
+          372.8667
+        ],
+        [
+          400.0,
+          372.8667
+        ]
+      ],
+      "base_canvas_center": [
+        428.3516,
+        347.0352
+      ],
+      "pico2d_base_center": [
+        428.3516,
+        252.9648
+      ],
+      "vertical_faces": []
     },
     {
       "id": "7,4",
@@ -4764,7 +6528,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.94505495,
       "base_rect": [
         456,
@@ -4838,7 +6602,34 @@
       "source_tile_index": 31,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          456.087,
+          321.7652
+        ],
+        [
+          512.1739,
+          321.7652
+        ],
+        [
+          514.6667,
+          372.8667
+        ],
+        [
+          457.3333,
+          372.8667
+        ]
+      ],
+      "base_canvas_center": [
+        485.0549,
+        347.0352
+      ],
+      "pico2d_base_center": [
+        485.0549,
+        252.9648
+      ],
+      "vertical_faces": []
     },
     {
       "id": "8,4",
@@ -4849,7 +6640,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.94505495,
       "base_rect": [
         512,
@@ -4923,7 +6714,34 @@
       "source_tile_index": 32,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          512.1739,
+          321.7652
+        ],
+        [
+          568.2609,
+          321.7652
+        ],
+        [
+          572.0,
+          372.8667
+        ],
+        [
+          514.6667,
+          372.8667
+        ]
+      ],
+      "base_canvas_center": [
+        541.7582,
+        347.0352
+      ],
+      "pico2d_base_center": [
+        541.7582,
+        252.9648
+      ],
+      "vertical_faces": []
     },
     {
       "id": "9,4",
@@ -4934,7 +6752,7 @@
       "height_level": 0,
       "walkable": false,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.94505495,
       "base_rect": [
         568,
@@ -5008,7 +6826,34 @@
       "source_tile_index": 33,
       "buildable_type": "MELEE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          568.2609,
+          321.7652
+        ],
+        [
+          624.3478,
+          321.7652
+        ],
+        [
+          629.3333,
+          372.8667
+        ],
+        [
+          572.0,
+          372.8667
+        ]
+      ],
+      "base_canvas_center": [
+        598.4615,
+        347.0352
+      ],
+      "pico2d_base_center": [
+        598.4615,
+        252.9648
+      ],
+      "vertical_faces": []
     },
     {
       "id": "10,4",
@@ -5019,7 +6864,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.94505495,
       "base_rect": [
         624,
@@ -5093,7 +6938,34 @@
       "source_tile_index": 34,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          624.3478,
+          321.7652
+        ],
+        [
+          680.4348,
+          321.7652
+        ],
+        [
+          686.6667,
+          372.8667
+        ],
+        [
+          629.3333,
+          372.8667
+        ]
+      ],
+      "base_canvas_center": [
+        655.1648,
+        347.0352
+      ],
+      "pico2d_base_center": [
+        655.1648,
+        252.9648
+      ],
+      "vertical_faces": []
     },
     {
       "id": "11,4",
@@ -5104,7 +6976,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.94505495,
       "base_rect": [
         680,
@@ -5178,7 +7050,34 @@
       "source_tile_index": 35,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          680.4348,
+          321.7652
+        ],
+        [
+          736.5217,
+          321.7652
+        ],
+        [
+          744.0,
+          372.8667
+        ],
+        [
+          686.6667,
+          372.8667
+        ]
+      ],
+      "base_canvas_center": [
+        711.8681,
+        347.0352
+      ],
+      "pico2d_base_center": [
+        711.8681,
+        252.9648
+      ],
+      "vertical_faces": []
     },
     {
       "id": "0,5",
@@ -5189,7 +7088,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.96629213,
       "base_rect": [
         48,
@@ -5263,7 +7162,34 @@
       "source_tile_index": 12,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          56.0,
+          372.8667
+        ],
+        [
+          113.3333,
+          372.8667
+        ],
+        [
+          106.8182,
+          426.2909
+        ],
+        [
+          48.1818,
+          426.2909
+        ]
+      ],
+      "base_canvas_center": [
+        81.1236,
+        399.2787
+      ],
+      "pico2d_base_center": [
+        81.1236,
+        200.7213
+      ],
+      "vertical_faces": []
     },
     {
       "id": "1,5",
@@ -5274,7 +7200,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.96629213,
       "base_rect": [
         106,
@@ -5348,7 +7274,34 @@
       "source_tile_index": 13,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          113.3333,
+          372.8667
+        ],
+        [
+          170.6667,
+          372.8667
+        ],
+        [
+          165.4545,
+          426.2909
+        ],
+        [
+          106.8182,
+          426.2909
+        ]
+      ],
+      "base_canvas_center": [
+        139.1011,
+        399.2787
+      ],
+      "pico2d_base_center": [
+        139.1011,
+        200.7213
+      ],
+      "vertical_faces": []
     },
     {
       "id": "2,5",
@@ -5359,7 +7312,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 2,
-      "visual_elevation": 0,
+      "visual_elevation": 14.4944,
       "perspective_scale": 0.96629213,
       "base_rect": [
         165,
@@ -5369,71 +7322,141 @@
       ],
       "surface_rect": [
         165,
-        372,
+        358,
         63,
-        55
+        54
       ],
       "draw_rect": [
         165,
-        372,
+        358,
         63,
-        55
+        69
       ],
       "surface_polygon": [
         [
           170.6667,
-          372.8667
+          358.5334
         ],
         [
           228.0,
-          372.8667
+          358.5334
         ],
         [
           224.0909,
-          426.2909
+          411.6318
         ],
         [
           165.4545,
-          426.2909
+          411.6318
         ]
       ],
       "pico2d_surface_polygon": [
         [
           170.6667,
-          227.1333
+          241.4666
         ],
         [
           228.0,
-          227.1333
+          241.4666
         ],
         [
           224.0909,
-          173.7091
+          188.3682
         ],
         [
           165.4545,
-          173.7091
+          188.3682
         ]
       ],
       "canvas_center": [
         197.0787,
-        399.2787
+        384.7843
       ],
       "pico2d_center": [
         197.0787,
-        200.7213
+        215.2157
       ],
       "pico2d_surface_rect": [
         165,
-        173,
+        188,
         63,
-        55
+        54
       ],
       "source_tile_key": "tile_wall",
       "source_tile_index": 14,
       "buildable_type": "RANGED",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          170.6667,
+          372.8667
+        ],
+        [
+          228.0,
+          372.8667
+        ],
+        [
+          224.0909,
+          426.2909
+        ],
+        [
+          165.4545,
+          426.2909
+        ]
+      ],
+      "base_canvas_center": [
+        197.0787,
+        399.2787
+      ],
+      "pico2d_base_center": [
+        197.0787,
+        200.7213
+      ],
+      "vertical_faces": [
+        {
+          "side": "left",
+          "polygon": [
+            [
+              165.4545,
+              411.6318
+            ],
+            [
+              170.6667,
+              358.5334
+            ],
+            [
+              170.6667,
+              372.8667
+            ],
+            [
+              165.4545,
+              426.2909
+            ]
+          ]
+        },
+        {
+          "side": "front",
+          "polygon": [
+            [
+              165.4545,
+              411.6318
+            ],
+            [
+              224.0909,
+              411.6318
+            ],
+            [
+              224.0909,
+              426.2909
+            ],
+            [
+              165.4545,
+              426.2909
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "3,5",
@@ -5444,7 +7467,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 2,
-      "visual_elevation": 0,
+      "visual_elevation": 14.4944,
       "perspective_scale": 0.96629213,
       "base_rect": [
         224,
@@ -5454,71 +7477,141 @@
       ],
       "surface_rect": [
         224,
-        372,
+        358,
         62,
-        55
+        54
       ],
       "draw_rect": [
         224,
-        372,
+        358,
         62,
-        55
+        69
       ],
       "surface_polygon": [
         [
           228.0,
-          372.8667
+          358.5334
         ],
         [
           285.3333,
-          372.8667
+          358.5334
         ],
         [
           282.7273,
-          426.2909
+          411.6318
         ],
         [
           224.0909,
-          426.2909
+          411.6318
         ]
       ],
       "pico2d_surface_polygon": [
         [
           228.0,
-          227.1333
+          241.4666
         ],
         [
           285.3333,
-          227.1333
+          241.4666
         ],
         [
           282.7273,
-          173.7091
+          188.3682
         ],
         [
           224.0909,
-          173.7091
+          188.3682
         ]
       ],
       "canvas_center": [
         255.0562,
-        399.2787
+        384.7843
       ],
       "pico2d_center": [
         255.0562,
-        200.7213
+        215.2157
       ],
       "pico2d_surface_rect": [
         224,
-        173,
+        188,
         62,
-        55
+        54
       ],
       "source_tile_key": "tile_wall",
       "source_tile_index": 15,
       "buildable_type": "RANGED",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          228.0,
+          372.8667
+        ],
+        [
+          285.3333,
+          372.8667
+        ],
+        [
+          282.7273,
+          426.2909
+        ],
+        [
+          224.0909,
+          426.2909
+        ]
+      ],
+      "base_canvas_center": [
+        255.0562,
+        399.2787
+      ],
+      "pico2d_base_center": [
+        255.0562,
+        200.7213
+      ],
+      "vertical_faces": [
+        {
+          "side": "right",
+          "polygon": [
+            [
+              282.7273,
+              411.6318
+            ],
+            [
+              285.3333,
+              358.5334
+            ],
+            [
+              285.3333,
+              372.8667
+            ],
+            [
+              282.7273,
+              426.2909
+            ]
+          ]
+        },
+        {
+          "side": "front",
+          "polygon": [
+            [
+              224.0909,
+              411.6318
+            ],
+            [
+              282.7273,
+              411.6318
+            ],
+            [
+              282.7273,
+              426.2909
+            ],
+            [
+              224.0909,
+              426.2909
+            ]
+          ]
+        }
+      ]
     },
     {
       "id": "4,5",
@@ -5529,7 +7622,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.96629213,
       "base_rect": [
         282,
@@ -5603,7 +7696,34 @@
       "source_tile_index": 16,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          285.3333,
+          372.8667
+        ],
+        [
+          342.6667,
+          372.8667
+        ],
+        [
+          341.3636,
+          426.2909
+        ],
+        [
+          282.7273,
+          426.2909
+        ]
+      ],
+      "base_canvas_center": [
+        313.0337,
+        399.2787
+      ],
+      "pico2d_base_center": [
+        313.0337,
+        200.7213
+      ],
+      "vertical_faces": []
     },
     {
       "id": "5,5",
@@ -5614,7 +7734,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.96629213,
       "base_rect": [
         341,
@@ -5688,7 +7808,34 @@
       "source_tile_index": 17,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          342.6667,
+          372.8667
+        ],
+        [
+          400.0,
+          372.8667
+        ],
+        [
+          400.0,
+          426.2909
+        ],
+        [
+          341.3636,
+          426.2909
+        ]
+      ],
+      "base_canvas_center": [
+        371.0112,
+        399.2787
+      ],
+      "pico2d_base_center": [
+        371.0112,
+        200.7213
+      ],
+      "vertical_faces": []
     },
     {
       "id": "6,5",
@@ -5699,7 +7846,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.96629213,
       "base_rect": [
         400,
@@ -5773,7 +7920,34 @@
       "source_tile_index": 18,
       "buildable_type": "NONE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          400.0,
+          372.8667
+        ],
+        [
+          457.3333,
+          372.8667
+        ],
+        [
+          458.6364,
+          426.2909
+        ],
+        [
+          400.0,
+          426.2909
+        ]
+      ],
+      "base_canvas_center": [
+        428.9888,
+        399.2787
+      ],
+      "pico2d_base_center": [
+        428.9888,
+        200.7213
+      ],
+      "vertical_faces": []
     },
     {
       "id": "7,5",
@@ -5784,7 +7958,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.96629213,
       "base_rect": [
         457,
@@ -5858,7 +8032,34 @@
       "source_tile_index": 19,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          457.3333,
+          372.8667
+        ],
+        [
+          514.6667,
+          372.8667
+        ],
+        [
+          517.2727,
+          426.2909
+        ],
+        [
+          458.6364,
+          426.2909
+        ]
+      ],
+      "base_canvas_center": [
+        486.9663,
+        399.2787
+      ],
+      "pico2d_base_center": [
+        486.9663,
+        200.7213
+      ],
+      "vertical_faces": []
     },
     {
       "id": "8,5",
@@ -5869,7 +8070,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.96629213,
       "base_rect": [
         514,
@@ -5943,7 +8144,34 @@
       "source_tile_index": 20,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          514.6667,
+          372.8667
+        ],
+        [
+          572.0,
+          372.8667
+        ],
+        [
+          575.9091,
+          426.2909
+        ],
+        [
+          517.2727,
+          426.2909
+        ]
+      ],
+      "base_canvas_center": [
+        544.9438,
+        399.2787
+      ],
+      "pico2d_base_center": [
+        544.9438,
+        200.7213
+      ],
+      "vertical_faces": []
     },
     {
       "id": "9,5",
@@ -5954,7 +8182,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.96629213,
       "base_rect": [
         572,
@@ -6028,7 +8256,34 @@
       "source_tile_index": 21,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          572.0,
+          372.8667
+        ],
+        [
+          629.3333,
+          372.8667
+        ],
+        [
+          634.5455,
+          426.2909
+        ],
+        [
+          575.9091,
+          426.2909
+        ]
+      ],
+      "base_canvas_center": [
+        602.9213,
+        399.2787
+      ],
+      "pico2d_base_center": [
+        602.9213,
+        200.7213
+      ],
+      "vertical_faces": []
     },
     {
       "id": "10,5",
@@ -6039,7 +8294,7 @@
       "height_level": 0,
       "walkable": true,
       "tileType": 1,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.96629213,
       "base_rect": [
         629,
@@ -6113,7 +8368,34 @@
       "source_tile_index": 22,
       "buildable_type": "MELEE",
       "passable_mask": "ALL",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          629.3333,
+          372.8667
+        ],
+        [
+          686.6667,
+          372.8667
+        ],
+        [
+          693.1818,
+          426.2909
+        ],
+        [
+          634.5455,
+          426.2909
+        ]
+      ],
+      "base_canvas_center": [
+        660.8989,
+        399.2787
+      ],
+      "pico2d_base_center": [
+        660.8989,
+        200.7213
+      ],
+      "vertical_faces": []
     },
     {
       "id": "11,5",
@@ -6124,7 +8406,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.96629213,
       "base_rect": [
         686,
@@ -6198,7 +8480,34 @@
       "source_tile_index": 23,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          686.6667,
+          372.8667
+        ],
+        [
+          744.0,
+          372.8667
+        ],
+        [
+          751.8182,
+          426.2909
+        ],
+        [
+          693.1818,
+          426.2909
+        ]
+      ],
+      "base_canvas_center": [
+        718.8764,
+        399.2787
+      ],
+      "pico2d_base_center": [
+        718.8764,
+        200.7213
+      ],
+      "vertical_faces": []
     },
     {
       "id": "0,6",
@@ -6209,7 +8518,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.98850575,
       "base_rect": [
         40,
@@ -6283,7 +8592,34 @@
       "source_tile_index": 0,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          48.1818,
+          426.2909
+        ],
+        [
+          106.8182,
+          426.2909
+        ],
+        [
+          100.0,
+          482.2
+        ],
+        [
+          40.0,
+          482.2
+        ]
+      ],
+      "base_canvas_center": [
+        73.7931,
+        453.9241
+      ],
+      "pico2d_base_center": [
+        73.7931,
+        146.0759
+      ],
+      "vertical_faces": []
     },
     {
       "id": "1,6",
@@ -6294,7 +8630,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.98850575,
       "base_rect": [
         100,
@@ -6368,7 +8704,34 @@
       "source_tile_index": 1,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          106.8182,
+          426.2909
+        ],
+        [
+          165.4545,
+          426.2909
+        ],
+        [
+          160.0,
+          482.2
+        ],
+        [
+          100.0,
+          482.2
+        ]
+      ],
+      "base_canvas_center": [
+        133.1034,
+        453.9241
+      ],
+      "pico2d_base_center": [
+        133.1034,
+        146.0759
+      ],
+      "vertical_faces": []
     },
     {
       "id": "2,6",
@@ -6379,7 +8742,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.98850575,
       "base_rect": [
         160,
@@ -6453,7 +8816,34 @@
       "source_tile_index": 2,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          165.4545,
+          426.2909
+        ],
+        [
+          224.0909,
+          426.2909
+        ],
+        [
+          220.0,
+          482.2
+        ],
+        [
+          160.0,
+          482.2
+        ]
+      ],
+      "base_canvas_center": [
+        192.4138,
+        453.9241
+      ],
+      "pico2d_base_center": [
+        192.4138,
+        146.0759
+      ],
+      "vertical_faces": []
     },
     {
       "id": "3,6",
@@ -6464,7 +8854,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.98850575,
       "base_rect": [
         220,
@@ -6538,7 +8928,34 @@
       "source_tile_index": 3,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          224.0909,
+          426.2909
+        ],
+        [
+          282.7273,
+          426.2909
+        ],
+        [
+          280.0,
+          482.2
+        ],
+        [
+          220.0,
+          482.2
+        ]
+      ],
+      "base_canvas_center": [
+        251.7241,
+        453.9241
+      ],
+      "pico2d_base_center": [
+        251.7241,
+        146.0759
+      ],
+      "vertical_faces": []
     },
     {
       "id": "4,6",
@@ -6549,7 +8966,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.98850575,
       "base_rect": [
         280,
@@ -6623,7 +9040,34 @@
       "source_tile_index": 4,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          282.7273,
+          426.2909
+        ],
+        [
+          341.3636,
+          426.2909
+        ],
+        [
+          340.0,
+          482.2
+        ],
+        [
+          280.0,
+          482.2
+        ]
+      ],
+      "base_canvas_center": [
+        311.0345,
+        453.9241
+      ],
+      "pico2d_base_center": [
+        311.0345,
+        146.0759
+      ],
+      "vertical_faces": []
     },
     {
       "id": "5,6",
@@ -6634,7 +9078,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.98850575,
       "base_rect": [
         340,
@@ -6708,7 +9152,34 @@
       "source_tile_index": 5,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          341.3636,
+          426.2909
+        ],
+        [
+          400.0,
+          426.2909
+        ],
+        [
+          400.0,
+          482.2
+        ],
+        [
+          340.0,
+          482.2
+        ]
+      ],
+      "base_canvas_center": [
+        370.3448,
+        453.9241
+      ],
+      "pico2d_base_center": [
+        370.3448,
+        146.0759
+      ],
+      "vertical_faces": []
     },
     {
       "id": "6,6",
@@ -6719,7 +9190,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.98850575,
       "base_rect": [
         400,
@@ -6793,7 +9264,34 @@
       "source_tile_index": 6,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          400.0,
+          426.2909
+        ],
+        [
+          458.6364,
+          426.2909
+        ],
+        [
+          460.0,
+          482.2
+        ],
+        [
+          400.0,
+          482.2
+        ]
+      ],
+      "base_canvas_center": [
+        429.6552,
+        453.9241
+      ],
+      "pico2d_base_center": [
+        429.6552,
+        146.0759
+      ],
+      "vertical_faces": []
     },
     {
       "id": "7,6",
@@ -6804,7 +9302,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.98850575,
       "base_rect": [
         458,
@@ -6878,7 +9376,34 @@
       "source_tile_index": 7,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          458.6364,
+          426.2909
+        ],
+        [
+          517.2727,
+          426.2909
+        ],
+        [
+          520.0,
+          482.2
+        ],
+        [
+          460.0,
+          482.2
+        ]
+      ],
+      "base_canvas_center": [
+        488.9655,
+        453.9241
+      ],
+      "pico2d_base_center": [
+        488.9655,
+        146.0759
+      ],
+      "vertical_faces": []
     },
     {
       "id": "8,6",
@@ -6889,7 +9414,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.98850575,
       "base_rect": [
         517,
@@ -6963,7 +9488,34 @@
       "source_tile_index": 8,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          517.2727,
+          426.2909
+        ],
+        [
+          575.9091,
+          426.2909
+        ],
+        [
+          580.0,
+          482.2
+        ],
+        [
+          520.0,
+          482.2
+        ]
+      ],
+      "base_canvas_center": [
+        548.2759,
+        453.9241
+      ],
+      "pico2d_base_center": [
+        548.2759,
+        146.0759
+      ],
+      "vertical_faces": []
     },
     {
       "id": "9,6",
@@ -6974,7 +9526,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.98850575,
       "base_rect": [
         575,
@@ -7048,7 +9600,34 @@
       "source_tile_index": 9,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          575.9091,
+          426.2909
+        ],
+        [
+          634.5455,
+          426.2909
+        ],
+        [
+          640.0,
+          482.2
+        ],
+        [
+          580.0,
+          482.2
+        ]
+      ],
+      "base_canvas_center": [
+        607.5862,
+        453.9241
+      ],
+      "pico2d_base_center": [
+        607.5862,
+        146.0759
+      ],
+      "vertical_faces": []
     },
     {
       "id": "10,6",
@@ -7059,7 +9638,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.98850575,
       "base_rect": [
         634,
@@ -7133,7 +9712,34 @@
       "source_tile_index": 10,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          634.5455,
+          426.2909
+        ],
+        [
+          693.1818,
+          426.2909
+        ],
+        [
+          700.0,
+          482.2
+        ],
+        [
+          640.0,
+          482.2
+        ]
+      ],
+      "base_canvas_center": [
+        666.8966,
+        453.9241
+      ],
+      "pico2d_base_center": [
+        666.8966,
+        146.0759
+      ],
+      "vertical_faces": []
     },
     {
       "id": "11,6",
@@ -7144,7 +9750,7 @@
       "height_level": 1,
       "walkable": false,
       "tileType": 0,
-      "visual_elevation": 0,
+      "visual_elevation": 0.0,
       "perspective_scale": 0.98850575,
       "base_rect": [
         693,
@@ -7218,7 +9824,34 @@
       "source_tile_index": 11,
       "buildable_type": "NONE",
       "passable_mask": "FLY_ONLY",
-      "source_blackboard": null
+      "source_blackboard": null,
+      "base_polygon": [
+        [
+          693.1818,
+          426.2909
+        ],
+        [
+          751.8182,
+          426.2909
+        ],
+        [
+          760.0,
+          482.2
+        ],
+        [
+          700.0,
+          482.2
+        ]
+      ],
+      "base_canvas_center": [
+        726.2069,
+        453.9241
+      ],
+      "pico2d_base_center": [
+        726.2069,
+        146.0759
+      ],
+      "vertical_faces": []
     }
   ],
   "routes": [
@@ -7616,7 +10249,7 @@
   ],
   "coordinates": "top-left row/column for tiles and routes; pico2d fields use bottom-left pixels",
   "shared_tiles": "asset/map/stage/icon/common",
-  "art_version": 8,
+  "art_version": 9,
   "source": {
     "area": "https://map.ark-nights.com/areas/rogue_4",
     "stage_id": "ro4_b_2",
