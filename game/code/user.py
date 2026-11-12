@@ -20,7 +20,7 @@ class User:
     def begin_battle(self, room: int, now: float):
         self.battle_room = room
         self.scene = 2
-        self.cost = 0
+        self.cost = 30
         self._cost_updated_at = now
         for character in self.character:
             character.deployed = False

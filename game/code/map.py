@@ -15,6 +15,12 @@ class MapType(IntEnum):
     BOSS = 4
 
 
+class TileType(IntEnum):
+    BLOCKED = 0
+    GROUND = 1
+    ELEVATED = 2
+
+
 @dataclass
 class Room:
     map_type: MapType
@@ -132,12 +138,13 @@ def cell_at(x, y):
     return None
 
 
-def can_place(pos, characters):
+def can_place(pos, characters, character):
     cell = battle_cells.get(pos)
     return (
         cell is not None
-        and cell["deployable"]
-        and not any(character.deployed and tuple(character.pos) == pos for character in characters)
+        and cell["tileType"] in (TileType.GROUND, TileType.ELEVATED)
+        and cell["tileType"] in character.allowedTiles
+        and not any(member.deployed and tuple(member.pos) == pos for member in characters)
     )
 
 

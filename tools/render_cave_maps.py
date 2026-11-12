@@ -131,7 +131,7 @@ class CaveRenderer:
         wall = (
             key == "tile_forbidden"
             or cell["type"] == "#"
-            or (key == "tile_fence_bound" and not cell["walkable"] and not cell["deployable"])
+            or (key == "tile_fence_bound" and not cell["walkable"] and cell["tileType"] == 0)
         )
         if wall:
             self.quad(polygon, (91, 106, 117, 255), self.images["wall-top"].texture)
@@ -145,7 +145,7 @@ class CaveRenderer:
 
         portal = key in ("tile_start", "tile_end") or cell["type"] in ("R", "B")
         teleport = "telin" in key or "telout" in key or "teleport" in key
-        if not cell["deployable"] and not portal and not teleport:
+        if cell["tileType"] == 0 and not portal and not teleport:
             corners = ((0.12, 0.12), (0.88, 0.12), (0.88, 0.88), (0.12, 0.88))
             for first, second in zip(corners, (*corners[1:], corners[0])):
                 self.surface_line(cell, first, second, (56, 67, 74, 130))

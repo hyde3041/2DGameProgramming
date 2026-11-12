@@ -92,8 +92,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.86674132,
       "base_rect": [
@@ -178,8 +177,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.86674132,
       "base_rect": [
@@ -264,8 +262,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.86674132,
       "base_rect": [
@@ -350,8 +347,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.86674132,
       "base_rect": [
@@ -436,8 +432,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.86674132,
       "base_rect": [
@@ -522,8 +517,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.86674132,
       "base_rect": [
@@ -608,8 +602,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.86674132,
       "base_rect": [
@@ -694,8 +687,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.86674132,
       "base_rect": [
@@ -780,8 +772,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.86674132,
       "base_rect": [
@@ -866,8 +857,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.86674132,
       "base_rect": [
@@ -952,8 +942,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.86674132,
       "base_rect": [
@@ -1038,8 +1027,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.86674132,
       "base_rect": [
@@ -1124,8 +1112,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.88054608,
       "base_rect": [
@@ -1210,8 +1197,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.88054608,
       "base_rect": [
@@ -1296,8 +1282,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.88054608,
       "base_rect": [
@@ -1382,8 +1367,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.88054608,
       "base_rect": [
@@ -1468,8 +1452,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.88054608,
       "base_rect": [
@@ -1554,8 +1537,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.88054608,
       "base_rect": [
@@ -1640,8 +1622,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.88054608,
       "base_rect": [
@@ -1726,8 +1707,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.88054608,
       "base_rect": [
@@ -1812,8 +1792,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.88054608,
       "base_rect": [
@@ -1898,8 +1877,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.88054608,
       "base_rect": [
@@ -1984,8 +1962,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.88054608,
       "base_rect": [
@@ -2070,8 +2047,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.88054608,
       "base_rect": [
@@ -2156,8 +2132,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.89479769,
       "base_rect": [
@@ -2242,8 +2217,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.89479769,
       "base_rect": [
@@ -2328,8 +2302,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.89479769,
       "base_rect": [
@@ -2414,8 +2387,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.89479769,
       "base_rect": [
@@ -2500,8 +2472,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.89479769,
       "base_rect": [
@@ -2586,8 +2557,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.89479769,
       "base_rect": [
@@ -2672,8 +2642,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.89479769,
       "base_rect": [
@@ -2758,8 +2727,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.89479769,
       "base_rect": [
@@ -2844,8 +2812,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.89479769,
       "base_rect": [
@@ -2930,8 +2897,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.89479769,
       "base_rect": [
@@ -3016,8 +2982,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.89479769,
       "base_rect": [
@@ -3102,8 +3067,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.89479769,
       "base_rect": [
@@ -3188,8 +3152,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.90951821,
       "base_rect": [
@@ -3274,8 +3237,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.90951821,
       "base_rect": [
@@ -3360,8 +3322,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.90951821,
       "base_rect": [
@@ -3446,8 +3407,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.90951821,
       "base_rect": [
@@ -3532,8 +3492,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.90951821,
       "base_rect": [
@@ -3618,8 +3577,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.90951821,
       "base_rect": [
@@ -3704,8 +3662,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.90951821,
       "base_rect": [
@@ -3790,8 +3747,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.90951821,
       "base_rect": [
@@ -3876,8 +3832,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.90951821,
       "base_rect": [
@@ -3962,8 +3917,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.90951821,
       "base_rect": [
@@ -4048,8 +4002,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.90951821,
       "base_rect": [
@@ -4134,8 +4087,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.90951821,
       "base_rect": [
@@ -4220,8 +4172,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.92473118,
       "base_rect": [
@@ -4306,8 +4257,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.92473118,
       "base_rect": [
@@ -4392,8 +4342,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.92473118,
       "base_rect": [
@@ -4478,8 +4427,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.92473118,
       "base_rect": [
@@ -4564,8 +4512,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.92473118,
       "base_rect": [
@@ -4650,8 +4597,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.92473118,
       "base_rect": [
@@ -4736,8 +4682,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.92473118,
       "base_rect": [
@@ -4822,8 +4767,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.92473118,
       "base_rect": [
@@ -4908,8 +4852,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.92473118,
       "base_rect": [
@@ -4994,8 +4937,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": false,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.92473118,
       "base_rect": [
@@ -5080,8 +5022,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.92473118,
       "base_rect": [
@@ -5166,8 +5107,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.92473118,
       "base_rect": [
@@ -5252,8 +5192,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.94046173,
       "base_rect": [
@@ -5338,8 +5277,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.94046173,
       "base_rect": [
@@ -5424,8 +5362,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.94046173,
       "base_rect": [
@@ -5510,8 +5447,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.94046173,
       "base_rect": [
@@ -5596,8 +5532,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.94046173,
       "base_rect": [
@@ -5682,8 +5617,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.94046173,
       "base_rect": [
@@ -5768,8 +5702,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.94046173,
       "base_rect": [
@@ -5854,8 +5787,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.94046173,
       "base_rect": [
@@ -5940,8 +5872,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.94046173,
       "base_rect": [
@@ -6026,8 +5957,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.94046173,
       "base_rect": [
@@ -6112,8 +6042,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.94046173,
       "base_rect": [
@@ -6198,8 +6127,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.94046173,
       "base_rect": [
@@ -6284,8 +6212,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.95673671,
       "base_rect": [
@@ -6370,8 +6297,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.95673671,
       "base_rect": [
@@ -6456,8 +6382,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.95673671,
       "base_rect": [
@@ -6542,8 +6467,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.95673671,
       "base_rect": [
@@ -6628,8 +6552,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.95673671,
       "base_rect": [
@@ -6714,8 +6637,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.95673671,
       "base_rect": [
@@ -6800,8 +6722,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.95673671,
       "base_rect": [
@@ -6886,8 +6807,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.95673671,
       "base_rect": [
@@ -6972,8 +6892,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.95673671,
       "base_rect": [
@@ -7058,8 +6977,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.95673671,
       "base_rect": [
@@ -7144,8 +7062,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.95673671,
       "base_rect": [
@@ -7230,8 +7147,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.95673671,
       "base_rect": [
@@ -7316,8 +7232,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.97358491,
       "base_rect": [
@@ -7402,8 +7317,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.97358491,
       "base_rect": [
@@ -7488,8 +7402,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.97358491,
       "base_rect": [
@@ -7574,8 +7487,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.97358491,
       "base_rect": [
@@ -7660,8 +7572,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.97358491,
       "base_rect": [
@@ -7746,8 +7657,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.97358491,
       "base_rect": [
@@ -7832,8 +7742,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.97358491,
       "base_rect": [
@@ -7918,8 +7827,7 @@
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "deployable": true,
-      "placement": "ground",
+      "tileType": 1,
       "visual_elevation": 0,
       "perspective_scale": 0.97358491,
       "base_rect": [
@@ -8004,8 +7912,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": true,
-      "placement": "elevated",
+      "tileType": 2,
       "visual_elevation": 0,
       "perspective_scale": 0.97358491,
       "base_rect": [
@@ -8090,8 +7997,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.97358491,
       "base_rect": [
@@ -8176,8 +8082,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.97358491,
       "base_rect": [
@@ -8262,8 +8167,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.97358491,
       "base_rect": [
@@ -8348,8 +8252,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.99103713,
       "base_rect": [
@@ -8434,8 +8337,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.99103713,
       "base_rect": [
@@ -8520,8 +8422,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.99103713,
       "base_rect": [
@@ -8606,8 +8507,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.99103713,
       "base_rect": [
@@ -8692,8 +8592,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.99103713,
       "base_rect": [
@@ -8778,8 +8677,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.99103713,
       "base_rect": [
@@ -8864,8 +8762,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.99103713,
       "base_rect": [
@@ -8950,8 +8847,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.99103713,
       "base_rect": [
@@ -9036,8 +8932,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.99103713,
       "base_rect": [
@@ -9122,8 +9017,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.99103713,
       "base_rect": [
@@ -9208,8 +9102,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.99103713,
       "base_rect": [
@@ -9294,8 +9187,7 @@
       "floor": 2,
       "height_level": 1,
       "walkable": false,
-      "deployable": false,
-      "placement": null,
+      "tileType": 0,
       "visual_elevation": 0,
       "perspective_scale": 0.99103713,
       "base_rect": [

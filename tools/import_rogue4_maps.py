@@ -99,8 +99,8 @@ def convert_map(number, stage_id, entry, aliases, cache):
             cells.append({
                 "id": f"{column},{row}", "column": column, "row": row,
                 "type": kind, "floor": 2 if high else 1, "height_level": int(high),
-                "walkable": walkable, "deployable": buildable,
-                "placement": ("elevated" if high else "ground") if buildable else None,
+                "walkable": walkable,
+                "tileType": (2 if high else 1) if buildable else 0,
                 "visual_elevation": 0, "perspective_scale": round(perspective, 8),
                 "base_rect": bounds, "surface_rect": bounds, "draw_rect": bounds,
                 "surface_polygon": polygon,

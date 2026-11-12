@@ -14,6 +14,18 @@ DEPLOYMENT_COSTS = {
     "7-shadow-thief": 7,
 }
 
+# Allowed tile types: 1 = ground, 2 = elevated.
+DEPLOYMENT_TILES = {
+    "0-swordsman": [1, 2],
+    "1-guardian": [1, 2],
+    "2-archer": [2],
+    "3-crossbowman": [2],
+    "4-cleric": [2],
+    "5-herbalist": [2],
+    "6-frost-mage": [2],
+    "7-shadow-thief": [1, 2],
+}
+
 
 @dataclass(kw_only=True)
 class Player:
@@ -23,8 +35,10 @@ class Player:
     damage: int
     hp: int
     cost: int
+    canStop: int = 1  # Maximum monsters this character can block; 0 disables blocking.
+    allowedTiles: list[int] = field(default_factory=lambda: [1, 2])
     profile: str = ""
-    direction: str = "down"
+    direction: str = "down"  # Per-character facing: down, up, left, or right.
     deployed: bool = False
     pos: list[int] = field(default_factory=lambda: [0, 0])
     # Canonical offsets while facing down, with negative y pointing down.

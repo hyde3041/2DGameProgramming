@@ -24,7 +24,7 @@ from pico2d import (
 )
 
 import map as dungeon
-from character import DEPLOYMENT_COSTS, Player
+from character import DEPLOYMENT_COSTS, DEPLOYMENT_TILES, Player
 from user import User
 
 
@@ -147,11 +147,11 @@ def direction_at(x, y, center):
     return "down" if dy > 0 else "up"
 
 
-def draw_placement_tiles(characters, hovered, *, only_hovered=False):
+def draw_placement_tiles(characters, hovered, character, *, only_hovered=False):
     for pos, cell in dungeon.battle_cells.items():
         if only_hovered and pos != hovered:
             continue
-        available = dungeon.can_place(pos, characters)
+        available = dungeon.can_place(pos, characters, character)
         if not available and pos != hovered:
             continue
         color = (114, 163, 146) if available else (213, 96, 89)
@@ -174,7 +174,10 @@ def draw_placement_tiles(characters, hovered, *, only_hovered=False):
 def main():
     user = User(hp=3, scene=0)
     user.character = [
-        Player(profile=name, attackSpeed=1, damage=10, hp=100, cost=price)
+        Player(
+            profile=name, attackSpeed=1, damage=10, hp=100, cost=price,
+            allowedTiles=DEPLOYMENT_TILES[name].copy(),
+        )
         for name, price in DEPLOYMENT_COSTS.items()
     ]
     title_image = None
@@ -296,14 +299,14 @@ def main():
                                 selected_direction = direction_at(mouse_x, mouse_y, center)
                                 direction_dragging = False
                                 if selected_direction is not None:
-                                    if SDL_GetKeyboardFocus() and dungeon.can_place(pending_pos, user.character):
+                                    if SDL_GetKeyboardFocus() and dungeon.can_place(pending_pos, user.character, dragged_character):
                                         user.deploy_character(dragged_character, pending_pos, battle_time, direction=selected_direction)
                                     dragged_character = None
                                     pending_pos = None
                                     selected_direction = None
                         elif dragged_character is not None:
                             pos = dungeon.cell_at(mouse_x, mouse_y)
-                            if dungeon.can_place(pos, user.character):
+                            if dungeon.can_place(pos, user.character, dragged_character):
                                 pending_pos = pos
                                 selected_direction = None
                                 direction_dragging = False
@@ -327,6 +330,7 @@ def main():
                 if dragged_character is not None:
                     draw_placement_tiles(
                         user.character, pending_pos if pending_pos is not None else hovered,
+                        dragged_character,
                         only_hovered=pending_pos is not None,
                     )
                 deployed = [character for character in user.character if character.deployed]
@@ -350,7 +354,7 @@ def main():
                         direction_images[selected_direction or "idle"].draw(
                             center_x, HEIGHT - 1 - center_y, DIRECTION_SIZE, DIRECTION_SIZE,
                         )
-                    elif dungeon.can_place(hovered, user.character):
+                    elif dungeon.can_place(hovered, user.character, dragged_character):
                         cell = dungeon.battle_cells[hovered]
                         x, y = cell["pico2d_center"]
                     else:
