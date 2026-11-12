@@ -18,16 +18,16 @@ DEPLOYMENT_COSTS = {
 @dataclass(kw_only=True)
 class Player:
     race: ClassVar[str] = "people"
-    direction: ClassVar[str] = "down"
 
     attackSpeed: float  # Attacks per second.
     damage: int
     hp: int
     cost: int
     profile: str = ""
+    direction: str = "down"
     deployed: bool = False
     pos: list[int] = field(default_factory=lambda: [0, 0])
-    # Tile offsets from the player, with negative y pointing down.
+    # Canonical offsets while facing down, with negative y pointing down.
     attackRange: list[list[int]] = field(default_factory=lambda: [[0, 0], [0, -1]])
     state: str = "idle"
     _animation_time: float = field(default=0.0, init=False, repr=False, compare=False)
@@ -43,12 +43,25 @@ class Player:
             self._state_started_at = battle_time
         self._animation_time = battle_time
 
+    def attack_cells(self) -> set[tuple[int, int]]:
+        """Return world cells for the current facing without changing attackRange."""
+        x, y = self.pos
+        cells = set()
+        for dx, dy in self.attackRange:
+            if self.direction == "up":
+                dx, dy = -dx, -dy
+            elif self.direction == "right":
+                dx, dy = -dy, dx
+            elif self.direction == "left":
+                dx, dy = dy, -dx
+            cells.add((x + dx, y + dy))
+        return cells
+
     def update_state(self, units, *, now: float | None = None) -> str:
         """Select a motion. In combat, now is the shared battle time in seconds."""
         if now is not None:
             self.sync_animation_time(now)
-        x, y = self.pos
-        cells = {(x + dx, y + dy) for dx, dy in self.attackRange}
+        cells = self.attack_cells()
         attacking = any(unit.race == "monster" and tuple(unit.pos) in cells for unit in units)
         state = "attack" if attacking else "idle"
         if self._state_started_at is None or state != self.state:

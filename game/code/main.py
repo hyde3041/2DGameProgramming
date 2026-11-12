@@ -38,9 +38,12 @@ CARD_SIZE = 56
 CARD_SPACING = 61
 CARD_FIRST_X = 218
 CARD_Y = 40
+DIRECTION_SIZE = 192
+DIRECTION_DEAD_ZONE = 20
 ASSET_DIRECTORY = dungeon.GAME_DIRECTORY / "asset"
 TITLE_PATH = ASSET_DIRECTORY / "etc/title/title-screen.png"
 UI_DIRECTORY = ASSET_DIRECTORY / "etc/ui"
+DIRECTION_DIRECTORY = ASSET_DIRECTORY / "etc/direction"
 PROFILE_DIRECTORY = ASSET_DIRECTORY / "character/player/main"
 
 
@@ -81,40 +84,73 @@ def load_character_sprites(characters):
     sprites = {}
     for character in characters:
         name = character.profile.split("-", 1)[1]
-        metadata = json.loads(
+        idle = json.loads(
             (dungeon.METADATA_DIRECTORY / f"character/idle/{name}.json").read_text(encoding="utf-8")
         )
-        sheets = {
-            state: load_image(str(PROFILE_DIRECTORY / character.profile / "front" / f"{state}-sheet.png"))
-            for state in ("idle", "attack")
+        attack = json.loads(
+            (dungeon.METADATA_DIRECTORY / f"character/sprites/{name}.json").read_text(encoding="utf-8")
+        )
+        sprite = {"pivot": idle["pivot"], "fps": idle["fps"]}
+        motions = {
+            "idle": idle["animations"],
+            "attack": attack["directional_attack_sheets"],
         }
-        sprites[character.profile] = (metadata, sheets)
+        for state, directions in motions.items():
+            sprite[state] = {
+                direction: (motion, load_image(str(dungeon.GAME_DIRECTORY / motion["file"])))
+                for direction, motion in directions.items()
+            }
+        sprites[character.profile] = sprite
     return sprites
 
 
-def draw_character(character, sprites, x, y, opacity=1.0, *, cell=None):
-    metadata, sheets = sprites[character.profile]
-    frame = character.motion_frame(metadata["frames_per_direction"], metadata["fps"])
-    rect = metadata["animations"]["front"]["frames"][frame]["pico2d_rect"]
-    width, height = metadata["cell_size"]
-    pivot_x, pivot_y = metadata["pivot"]
+def draw_character(character, sprites, x, y, opacity=1.0, *, cell=None, direction=None):
+    sprite = sprites[character.profile]
+    direction = character.direction if direction is None else direction
+    animation = {"down": "front", "up": "back", "right": "right", "left": "right"}[direction]
+    motion, sheet = sprite[character.state][animation]
+    frame = character.motion_frame(len(motion["frames"]), sprite["fps"])
+    rect = motion["frames"][frame]["pico2d_rect"]
+    width, height = rect[2:]
+    pivot_x, pivot_y = sprite["pivot"]
+    if direction == "left":
+        pivot_x = width - pivot_x
     perspective = cell.get("perspective_scale", 1.0) if cell is not None else 1.0
     scale = CHARACTER_SCALE * dungeon.battle_grid["cell_size"][0] / 64 * perspective
     if cell is not None:
         y -= cell["surface_rect"][3] * CHARACTER_FOOT_OFFSET
-    sheet = sheets[character.state]
     sheet.opacify(opacity)
-    sheet.clip_draw(
-        *rect,
-        x + (width / 2 - pivot_x) * scale,
-        y + (pivot_y - height / 2) * scale,
-        width * scale, height * scale,
-    )
+    center_x = x + (width / 2 - pivot_x) * scale
+    center_y = y + (pivot_y - height / 2) * scale
+    if direction == "left":
+        sheet.clip_composite_draw(*rect, 0, "h", center_x, center_y, width * scale, height * scale)
+    else:
+        sheet.clip_draw(*rect, center_x, center_y, width * scale, height * scale)
     sheet.opacify(1.0)
 
 
-def draw_placement_tiles(characters, hovered):
+def direction_selector_center(cell):
+    """Place the control around the character, clear of the HUD and screen edges."""
+    x, y = cell["canvas_center"]
+    tile_size = dungeon.battle_grid["cell_size"][0] * cell.get("perspective_scale", 1.0)
+    y += cell["surface_rect"][3] * CHARACTER_FOOT_OFFSET - tile_size * 0.55
+    radius = DIRECTION_SIZE / 2
+    return max(radius + 4, min(WIDTH - radius - 4, x)), max(radius + 60, min(HEIGHT - 78 - radius, y))
+
+
+def direction_at(x, y, center):
+    dx, dy = x - center[0], y - center[1]
+    if dx * dx + dy * dy < DIRECTION_DEAD_ZONE ** 2:
+        return None
+    if abs(dx) >= abs(dy):
+        return "right" if dx > 0 else "left"
+    return "down" if dy > 0 else "up"
+
+
+def draw_placement_tiles(characters, hovered, *, only_hovered=False):
     for pos, cell in dungeon.battle_cells.items():
+        if only_hovered and pos != hovered:
+            continue
         available = dungeon.can_place(pos, characters)
         if not available and pos != hovered:
             continue
@@ -147,7 +183,11 @@ def main():
     hud_digits = None
     cards = []
     sprites = {}
+    direction_images = {}
     dragged_character = None
+    pending_pos = None
+    selected_direction = None
+    direction_dragging = False
     mouse_x, mouse_y = 0, 0
     visited_rooms = set()
     battle_time = 0.0
@@ -157,6 +197,10 @@ def main():
         title_image = load_image(str(TITLE_PATH))
         hud_panel = load_image(str(UI_DIRECTORY / "battle-hud.png"))
         hud_digits = load_image(str(UI_DIRECTORY / "battle-hud-digits.png"))
+        direction_images = {
+            direction: load_image(str(DIRECTION_DIRECTORY / f"direction-{direction}.png"))
+            for direction in ("idle", "up", "down", "left", "right")
+        }
         cards = [
             (load_image(str(PROFILE_DIRECTORY / character.profile / "skill/profile/deployment-square.png")), character)
             for character in user.character
@@ -177,12 +221,18 @@ def main():
                 if event.type == SDL_KEYDOWN:
                     if event.key == SDLK_ESCAPE and dragged_character is not None:
                         dragged_character = None
+                        pending_pos = None
+                        selected_direction = None
+                        direction_dragging = False
                         continue
                     if (
                         user.scene == 2
                         and event.key in (SDLK_ESCAPE, SDLK_q)
                     ):
                         dragged_character = None
+                        pending_pos = None
+                        selected_direction = None
+                        direction_dragging = False
                         user.finish_battle(cleared=event.key == SDLK_q)
                         dungeon.clear_map()
                         continue
@@ -224,19 +274,47 @@ def main():
                     if event.type == SDL_MOUSEBUTTONDOWN:
                         if event.button == SDL_BUTTON_RIGHT:
                             dragged_character = None
+                            pending_pos = None
+                            selected_direction = None
+                            direction_dragging = False
+                        elif event.button == SDL_BUTTON_LEFT and pending_pos is not None:
+                            center = direction_selector_center(dungeon.battle_cells[pending_pos])
+                            if (mouse_x - center[0]) ** 2 + (mouse_y - center[1]) ** 2 <= (DIRECTION_SIZE / 2) ** 2:
+                                direction_dragging = True
+                                selected_direction = direction_at(mouse_x, mouse_y, center)
                         elif event.button == SDL_BUTTON_LEFT and dragged_character is None:
                             character = card_at(mouse_x, mouse_y, cards)
                             if character is not None and user.can_deploy(character):
                                 dragged_character = character
+                    elif event.type == SDL_MOUSEMOTION and direction_dragging:
+                        center = direction_selector_center(dungeon.battle_cells[pending_pos])
+                        selected_direction = direction_at(mouse_x, mouse_y, center)
                     elif event.type == SDL_MOUSEBUTTONUP and event.button == SDL_BUTTON_LEFT:
-                        if dragged_character is not None:
+                        if pending_pos is not None:
+                            if direction_dragging:
+                                center = direction_selector_center(dungeon.battle_cells[pending_pos])
+                                selected_direction = direction_at(mouse_x, mouse_y, center)
+                                direction_dragging = False
+                                if selected_direction is not None:
+                                    if SDL_GetKeyboardFocus() and dungeon.can_place(pending_pos, user.character):
+                                        user.deploy_character(dragged_character, pending_pos, battle_time, direction=selected_direction)
+                                    dragged_character = None
+                                    pending_pos = None
+                                    selected_direction = None
+                        elif dragged_character is not None:
                             pos = dungeon.cell_at(mouse_x, mouse_y)
                             if dungeon.can_place(pos, user.character):
-                                user.deploy_character(dragged_character, pos, battle_time)
-                            dragged_character = None
+                                pending_pos = pos
+                                selected_direction = None
+                                direction_dragging = False
+                            else:
+                                dragged_character = None
 
             if dragged_character is not None and not SDL_GetKeyboardFocus():
                 dragged_character = None
+                pending_pos = None
+                selected_direction = None
+                direction_dragging = False
 
             clear_canvas()
             if user.scene == 0:
@@ -247,7 +325,10 @@ def main():
                 dungeon.dungeon_map.draw(WIDTH // 2, HEIGHT // 2)
                 hovered = dungeon.cell_at(mouse_x, mouse_y)
                 if dragged_character is not None:
-                    draw_placement_tiles(user.character, hovered)
+                    draw_placement_tiles(
+                        user.character, pending_pos if pending_pos is not None else hovered,
+                        only_hovered=pending_pos is not None,
+                    )
                 deployed = [character for character in user.character if character.deployed]
                 for character in sorted(deployed, key=lambda c: -dungeon.battle_cells[tuple(c.pos)]["pico2d_center"][1]):
                     cell = dungeon.battle_cells[tuple(character.pos)]
@@ -262,13 +343,23 @@ def main():
                     selected=dragged_character,
                 )
                 if dragged_character is not None:
-                    if dungeon.can_place(hovered, user.character):
+                    if pending_pos is not None:
+                        cell = dungeon.battle_cells[pending_pos]
+                        x, y = cell["pico2d_center"]
+                        center_x, center_y = direction_selector_center(cell)
+                        direction_images[selected_direction or "idle"].draw(
+                            center_x, HEIGHT - 1 - center_y, DIRECTION_SIZE, DIRECTION_SIZE,
+                        )
+                    elif dungeon.can_place(hovered, user.character):
                         cell = dungeon.battle_cells[hovered]
                         x, y = cell["pico2d_center"]
                     else:
                         cell = None
                         x, y = mouse_x, HEIGHT - 1 - mouse_y
-                    draw_character(dragged_character, sprites, x, y, opacity=0.65, cell=cell)
+                    draw_character(
+                        dragged_character, sprites, x, y, opacity=0.85 if pending_pos is not None else 0.65,
+                        cell=cell, direction=selected_direction,
+                    )
             update_canvas()
             delay(1 / 60)
     finally:
@@ -278,6 +369,7 @@ def main():
         hud_digits = None
         cards.clear()
         sprites.clear()
+        direction_images.clear()
         dungeon.clear_map()
         dungeon.route_cover = None
         close_canvas()

@@ -24,6 +24,7 @@ class User:
         self._cost_updated_at = now
         for character in self.character:
             character.deployed = False
+            character.direction = "down"
             character.reset_animation(now)
 
     def can_deploy(self, character: Player) -> bool:
@@ -34,14 +35,15 @@ class User:
             and self.cost >= character.cost
         )
 
-    def deploy_character(self, character: Player, pos, now: float) -> bool:
-        if not self.can_deploy(character):
+    def deploy_character(self, character: Player, pos, now: float, *, direction: str = "down") -> bool:
+        if direction not in ("up", "down", "left", "right") or not self.can_deploy(character):
             return False
         position = list(pos)
         if any(member.deployed and member.pos == position for member in self.character):
             return False
         self.cost -= character.cost
         character.pos = position
+        character.direction = direction
         character.deployed = True
         character.reset_animation(now)
         return True
@@ -70,4 +72,5 @@ class User:
         self.scene = 1
         for character in self.character:
             character.deployed = False
+            character.direction = "down"
             character.reset_animation(0.0)
