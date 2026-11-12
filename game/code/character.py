@@ -57,16 +57,17 @@ class Player:
             self._state_started_at = battle_time
         self._animation_time = battle_time
 
-    def attack_cells(self) -> set[tuple[int, int]]:
-        """Return world cells for the current facing without changing attackRange."""
-        x, y = self.pos
+    def attack_cells(self, *, pos=None, direction=None) -> set[tuple[int, int]]:
+        """Return attack cells, optionally previewing another position or facing."""
+        x, y = self.pos if pos is None else pos
+        direction = self.direction if direction is None else direction
         cells = set()
         for dx, dy in self.attackRange:
-            if self.direction == "up":
+            if direction == "up":
                 dx, dy = -dx, -dy
-            elif self.direction == "right":
+            elif direction == "right":
                 dx, dy = -dy, dx
-            elif self.direction == "left":
+            elif direction == "left":
                 dx, dy = dy, -dx
             cells.add((x + dx, y + dy))
         return cells

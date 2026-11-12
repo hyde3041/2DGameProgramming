@@ -214,7 +214,7 @@ def spawn_monster(profile, start=None, *, now=0.0):
     if plan is None:
         return None
     # Initial tuning values, kept independent of the source game's enemy statistics.
-    monster = Monster(profile=profile, attackSpeed=1, damage=10, hp=100, moveSpeed=1.0)
+    monster = Monster(profile=profile, attackSpeed=1, damage=10, hp=100)
     monster.assign_route(*plan, now=now, teleports=monster_teleports(plan[2]))
     return monster
 

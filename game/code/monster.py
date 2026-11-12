@@ -1,5 +1,6 @@
 from dataclasses import dataclass, field
 from math import hypot, isfinite
+import random
 from typing import ClassVar
 
 
@@ -10,7 +11,7 @@ class Monster:
     attackSpeed: float  # Attacks per second.
     damage: int
     hp: int
-    moveSpeed: float = 1.0  # Tiles per second.
+    moveSpeed: float = 0.6  # Tiles per battle second.
     profile: str = ""
     pos: list[float] = field(default_factory=lambda: [0.0, 0.0])
     direction: str = "right"
@@ -23,6 +24,7 @@ class Monster:
     teleports: set[int] = field(default_factory=set, init=False)
     routeIndex: int = field(default=0, init=False)
     reachedGoal: bool = field(default=False, init=False)
+    _walk_phase: float = field(default_factory=lambda: random.random(), init=False, repr=False, compare=False)
     _movement_time: float | None = field(default=None, init=False, repr=False, compare=False)
     _animation_time: float = field(default=0.0, init=False, repr=False, compare=False)
     _state_started_at: float | None = field(default=None, init=False, repr=False, compare=False)
@@ -112,10 +114,12 @@ class Monster:
 
     def motion_frame(self, frame_count: int, fps: float, now: float | None = None) -> int:
         """Select a frame from the same battle clock used by player characters."""
+        # Each spawn gets one fixed walking offset, never a new random frame per draw.
+        offset = int(self._walk_phase * frame_count) if self.state == "walk" else 0
         if self._state_started_at is None:
-            return 0
+            return offset
         if now is None:
             now = self._animation_time
         if self.state == "attack":
             fps = frame_count * self.attackSpeed
-        return int((now - self._state_started_at) * fps) % frame_count
+        return (int((now - self._state_started_at) * fps) + offset) % frame_count

@@ -1,6 +1,7 @@
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "game/code"))
 
@@ -9,6 +10,11 @@ from monster import Monster
 
 
 class MonsterTests(unittest.TestCase):
+    def setUp(self):
+        phase = patch("monster.random.random", return_value=0.0)
+        phase.start()
+        self.addCleanup(phase.stop)
+
     def test_player_recognizes_monster_in_its_facing_range(self):
         character = Player(attackSpeed=1, damage=10, hp=100, cost=5, direction="right", pos=[3, -2])
         monster = Monster(attackSpeed=1, damage=5, hp=50, pos=[4.0, -2.0])

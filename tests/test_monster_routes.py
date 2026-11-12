@@ -78,9 +78,13 @@ class MonsterRouteTests(unittest.TestCase):
         self.assertEqual(first.pos, [0, 0])
         self.assertEqual(first.goalPos, [10, 0])
         self.assertEqual(first.teleports, {2})
+        self.assertEqual(first.moveSpeed, 0.6)
+        self.assertEqual(second.moveSpeed, 0.6)
         first.route.clear()
         self.assertEqual(len(second.route), 4)
         self.assertEqual(len(dungeon.monster_route((0, 0))[2]), 4)
+        second.update(6)
+        self.assertAlmostEqual(second.pos[0], 0.6)
         self.assertIsNone(dungeon.spawn_monster("goblin-scout", (99, 99), now=5))
 
     def test_load_converts_row_coordinates_and_clear_discards_old_routes(self):

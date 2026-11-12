@@ -1,6 +1,7 @@
 import json
 from time import monotonic
 
+import pico2d
 from pico2d import (
     SDL_BUTTON_LEFT,
     SDL_BUTTON_RIGHT,
@@ -31,7 +32,7 @@ from user import User
 WIDTH = 800
 HEIGHT = 600
 TIME_SCALE = 1.0  # Battle speed: 0 pauses, 2 runs at double speed.
-DRAG_TIME_SCALE = 0.5
+DRAG_TIME_SCALE = 0.5  # Shared slowdown while placing or inspecting a character.
 MONSTER_SPAWN_INTERVAL = 1.0  # Seconds on the shared battle clock.
 CHARACTER_SCALE = 0.5
 CHARACTER_FOOT_OFFSET = 0.18  # Downward shift as a fraction of the projected tile height.
@@ -46,6 +47,7 @@ TITLE_PATH = ASSET_DIRECTORY / "etc/title/title-screen.png"
 UI_DIRECTORY = ASSET_DIRECTORY / "etc/ui"
 DIRECTION_DIRECTORY = ASSET_DIRECTORY / "etc/direction"
 PROFILE_DIRECTORY = ASSET_DIRECTORY / "character/player/main"
+RANGE_OVERLAY_PATH = ASSET_DIRECTORY / "map/stage/main/range-overlay.png"
 
 
 def draw_number(digits, number, right, y, width):
@@ -62,6 +64,68 @@ def card_at(x, y, cards):
         if center - CARD_SIZE / 2 <= x < center + CARD_SIZE / 2 and CARD_Y - CARD_SIZE / 2 <= y < CARD_Y + CARD_SIZE / 2:
             return character
     return None
+
+
+def deployed_character_at(x, y, characters):
+    """Pick the frontmost visible body, then its standing tile (mouse coordinates)."""
+    deployed = [character for character in characters
+                if character.deployed and tuple(character.pos) in dungeon.battle_cells]
+    deployed.sort(key=lambda character: dungeon.battle_cells[tuple(character.pos)]["canvas_center"][1],
+                  reverse=True)
+    for character in deployed:
+        cell = dungeon.battle_cells[tuple(character.pos)]
+        center_x, foot_y = cell["canvas_center"]
+        foot_y += cell["surface_rect"][3] * CHARACTER_FOOT_OFFSET
+        size = dungeon.battle_grid["cell_size"][0] * cell.get("perspective_scale", 1.0)
+        if (center_x - size * .55 <= x <= center_x + size * .55
+                and foot_y - size * 1.5 <= y <= foot_y + size * .08):
+            return character
+    pos = dungeon.cell_at(x, y)
+    return next((character for character in deployed if tuple(character.pos) == pos), None)
+
+
+def draw_attack_range(character, overlay, *, pos=None, direction=None):
+    """Project the actual attack cells onto each tile's visible top surface."""
+    renderer = open_canvas.__globals__["renderer"]
+    index_type = pico2d.SDL_RenderGeometry.argtypes[4]._type_
+    indices = (index_type * 6)(0, 1, 2, 0, 2, 3)
+
+    def surface(cell):
+        polygon = cell.get("surface_polygon")
+        if polygon is None:
+            left, top, width, height = cell["surface_rect"]
+            polygon = [(left, top), (left + width, top),
+                       (left + width, top + height), (left, top + height)]
+        return polygon
+
+    def paint(polygon, texture, *, restore=False):
+        uvs = [(x / WIDTH, y / HEIGHT) for x, y in polygon] if restore else ((0, 0), (1, 0), (1, 1), (0, 1))
+        vertices = (pico2d.SDL_Vertex * 4)(*(
+            pico2d.SDL_Vertex(pico2d.SDL_FPoint(*point), pico2d.SDL_Color(255, 255, 255, 255),
+                              pico2d.SDL_FPoint(*uv))
+            for point, uv in zip(polygon, uvs)
+        ))
+        if pico2d.SDL_RenderGeometry(renderer, texture, vertices, 4, indices, 6) != 0:
+            raise RuntimeError("Cannot draw the character's attack range")
+
+    positions = character.attack_cells(pos=pos, direction=direction)
+    displayed = sorted(positions & dungeon.battle_cells.keys(), key=lambda p: (-p[1], p[0]))
+    for position in displayed:
+        cell = dungeon.battle_cells[position]
+        if cell.get("visual_elevation", 0) <= 0:
+            paint(surface(cell), overlay.texture)
+    # The map is baked into one PNG: restore raised surfaces over the low-plane
+    # overlay in the same order as the map renderer, then mark their own range.
+    for position, cell in sorted(dungeon.battle_cells.items(), key=lambda entry: (-entry[0][1], entry[0][0])):
+        if cell.get("visual_elevation", 0) <= 0:
+            continue
+        for face in sorted(cell.get("vertical_faces", []), key=lambda face: face["side"] == "front"):
+            paint(face["polygon"], dungeon.dungeon_map.texture, restore=True)
+        polygon = surface(cell)
+        paint(polygon, dungeon.dungeon_map.texture, restore=True)
+        if position in positions:
+            paint(polygon, overlay.texture)
+    return displayed
 
 
 def draw_battle_ui(panel, digits, cards, *, cost, defense_points, remaining_enemies, selected=None):
@@ -242,6 +306,7 @@ def main():
     route_image = None
     hud_panel = None
     hud_digits = None
+    range_overlay = None
     cards = []
     sprites = {}
     monster_sprites = {}
@@ -252,6 +317,7 @@ def main():
     next_monster_spawn = 0.0
     direction_images = {}
     dragged_character = None
+    inspected_character = None
     pending_pos = None
     selected_direction = None
     direction_dragging = False
@@ -264,6 +330,7 @@ def main():
         title_image = load_image(str(TITLE_PATH))
         hud_panel = load_image(str(UI_DIRECTORY / "battle-hud.png"))
         hud_digits = load_image(str(UI_DIRECTORY / "battle-hud-digits.png"))
+        range_overlay = load_image(str(RANGE_OVERLAY_PATH))
         direction_images = {
             direction: load_image(str(DIRECTION_DIRECTORY / f"direction-{direction}.png"))
             for direction in ("idle", "up", "down", "left", "right")
@@ -273,10 +340,11 @@ def main():
             for character in user.character
         ]
         while True:
-            # Account for elapsed time before input changes the drag speed.
+            # Account for elapsed time before input changes the selection speed.
             if user.scene == 2:
                 frame_now = monotonic()
-                speed = TIME_SCALE * (DRAG_TIME_SCALE if dragged_character is not None else 1.0)
+                selecting = dragged_character is not None or inspected_character is not None
+                speed = TIME_SCALE * (DRAG_TIME_SCALE if selecting else 1.0)
                 delta_time = (frame_now - previous_frame_time) * speed
                 previous_frame_time = frame_now
                 battle_time += delta_time
@@ -302,11 +370,15 @@ def main():
                         selected_direction = None
                         direction_dragging = False
                         continue
+                    if event.key == SDLK_ESCAPE and inspected_character is not None:
+                        inspected_character = None
+                        continue
                     if (
                         user.scene == 2
                         and event.key in (SDLK_ESCAPE, SDLK_q)
                     ):
                         dragged_character = None
+                        inspected_character = None
                         pending_pos = None
                         selected_direction = None
                         direction_dragging = False
@@ -344,6 +416,7 @@ def main():
                         battle_time = 0.0
                         previous_frame_time = monotonic()
                         user.begin_battle(room_number, battle_time)
+                        inspected_character = None
                         monsters.clear()
                         pending_monsters = [
                             profile for profile, count in room.monsters.items() for _ in range(count)
@@ -363,6 +436,7 @@ def main():
                     if event.type == SDL_MOUSEBUTTONDOWN:
                         if event.button == SDL_BUTTON_RIGHT:
                             dragged_character = None
+                            inspected_character = None
                             pending_pos = None
                             selected_direction = None
                             direction_dragging = False
@@ -373,8 +447,12 @@ def main():
                                 selected_direction = direction_at(mouse_x, mouse_y, center)
                         elif event.button == SDL_BUTTON_LEFT and dragged_character is None:
                             character = card_at(mouse_x, mouse_y, cards)
-                            if character is not None and user.can_deploy(character):
-                                dragged_character = character
+                            if character is not None:
+                                inspected_character = None
+                                if user.can_deploy(character):
+                                    dragged_character = character
+                            else:
+                                inspected_character = deployed_character_at(mouse_x, mouse_y, user.character)
                     elif event.type == SDL_MOUSEMOTION and direction_dragging:
                         center = direction_selector_center(dungeon.battle_cells[pending_pos])
                         selected_direction = direction_at(mouse_x, mouse_y, center)
@@ -386,7 +464,8 @@ def main():
                                 direction_dragging = False
                                 if selected_direction is not None:
                                     if SDL_GetKeyboardFocus() and dungeon.can_place(pending_pos, user.character, dragged_character):
-                                        user.deploy_character(dragged_character, pending_pos, battle_time, direction=selected_direction)
+                                        if user.deploy_character(dragged_character, pending_pos, battle_time, direction=selected_direction):
+                                            inspected_character = dragged_character
                                     dragged_character = None
                                     pending_pos = None
                                     selected_direction = None
@@ -399,8 +478,9 @@ def main():
                             else:
                                 dragged_character = None
 
-            if dragged_character is not None and not SDL_GetKeyboardFocus():
+            if not SDL_GetKeyboardFocus():
                 dragged_character = None
+                inspected_character = None
                 pending_pos = None
                 selected_direction = None
                 direction_dragging = False
@@ -414,11 +494,15 @@ def main():
                 dungeon.dungeon_map.draw(WIDTH // 2, HEIGHT // 2)
                 hovered = dungeon.cell_at(mouse_x, mouse_y)
                 if dragged_character is not None:
+                    if pending_pos is not None and dungeon.can_place(pending_pos, user.character, dragged_character):
+                        draw_attack_range(dragged_character, range_overlay, pos=pending_pos, direction=selected_direction)
                     draw_placement_tiles(
                         user.character, pending_pos if pending_pos is not None else hovered,
                         dragged_character,
                         only_hovered=pending_pos is not None,
                     )
+                elif inspected_character is not None and inspected_character.deployed:
+                    draw_attack_range(inspected_character, range_overlay)
                 deployed = [character for character in user.character if character.deployed]
                 units = [
                     (dungeon.battle_cells[tuple(character.pos)]["pico2d_center"][1], character)
@@ -437,7 +521,7 @@ def main():
                     cost=user.cost,
                     defense_points=user.hp,
                     remaining_enemies=len(monsters) + len(pending_monsters),
-                    selected=dragged_character,
+                    selected=dragged_character or inspected_character,
                 )
                 if dragged_character is not None:
                     if pending_pos is not None:
@@ -464,6 +548,7 @@ def main():
         route_image = None
         hud_panel = None
         hud_digits = None
+        range_overlay = None
         cards.clear()
         sprites.clear()
         monster_sprites.clear()

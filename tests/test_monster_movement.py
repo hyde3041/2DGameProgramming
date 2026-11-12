@@ -8,6 +8,7 @@ from monster import Monster
 
 
 def monster(route=None, **kwargs):
+    kwargs.setdefault("moveSpeed", 1.0)  # Explicit speed for route-algorithm tests.
     unit = Monster(attackSpeed=1, damage=5, hp=50, **kwargs)
     if route is not None:
         unit.assign_route(route[0], route[-1], route, 0.0)
@@ -15,6 +16,17 @@ def monster(route=None, **kwargs):
 
 
 class MonsterMovementTests(unittest.TestCase):
+    def test_default_speed_is_slower_and_remains_per_monster(self):
+        normal = Monster(attackSpeed=1, damage=5, hp=50)
+        faster = Monster(attackSpeed=1, damage=5, hp=50, moveSpeed=1.2)
+        for unit in (normal, faster):
+            unit.assign_route([0, 0], [3, 0], [[0, 0], [3, 0]], 0)
+            unit.update(1)
+        self.assertAlmostEqual(normal.pos[0], 0.6)
+        self.assertAlmostEqual(faster.pos[0], 1.2)
+        faster.moveSpeed = 2
+        self.assertEqual(normal.moveSpeed, 0.6)
+
     def test_large_delta_follows_corners_and_clamps_at_goal(self):
         unit = monster([[0, 0], [2, 0], [2, -2], [4, -2]])
         unit.update(3)
