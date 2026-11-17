@@ -1,0 +1,3021 @@
+{
+  "id": "whitehair-katana",
+  "version": 13,
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "fps": 16,
+  "frames_per_direction": 16,
+  "target_body_height": 160,
+  "reference_source_cell_height": 627,
+  "method": "Complete cells; isotropic cell-resolution normalization, optional explicitly reviewed whole-batch framing correction, then one anatomical scale shared by all16 frames per view. Foot translation only.",
+  "source_alpha_cleaning": false,
+  "limb_masks": false,
+  "per_frame_anatomical_scale": false,
+  "endpoint_replacement": false,
+  "production_applied": true,
+  "views": {
+    "front": {
+      "source_batches": [
+        {
+          "batch": "00-03",
+          "first_frame": 0,
+          "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/00-03-source.png",
+          "source_history": ".build/whitehair-katana-denoise-v13/source-history/front-00-03-6f097244e01c.png",
+          "source_sha256": "6f097244e01c1479ae6ec264e653fa3d734df84b80239697e6e0e7d3c2b489fa",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "partition": {
+            "rects": [
+              [
+                0,
+                0,
+                627,
+                627
+              ],
+              [
+                627,
+                0,
+                627,
+                627
+              ],
+              [
+                0,
+                627,
+                627,
+                627
+              ],
+              [
+                627,
+                627,
+                627,
+                627
+              ]
+            ],
+            "offset_x": 0,
+            "meaningful_pixels": 197573,
+            "omitted_meaningful_pixels": 0,
+            "duplicated_meaningful_pixels": 0,
+            "edge_alpha_max": 1,
+            "valid": true
+          },
+          "framing_scale": 1,
+          "framing_reason": null
+        },
+        {
+          "batch": "04-07",
+          "first_frame": 4,
+          "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/04-07-source.png",
+          "source_history": ".build/whitehair-katana-denoise-v13/source-history/front-04-07-2a9d7bf64f48.png",
+          "source_sha256": "2a9d7bf64f48eb19c95f3964a4a4b73d24e66c2ef6627a0325f6ad898bd685a4",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "partition": {
+            "rects": [
+              [
+                0,
+                0,
+                627,
+                627
+              ],
+              [
+                627,
+                0,
+                627,
+                627
+              ],
+              [
+                0,
+                627,
+                627,
+                627
+              ],
+              [
+                627,
+                627,
+                627,
+                627
+              ]
+            ],
+            "offset_x": 0,
+            "meaningful_pixels": 243768,
+            "omitted_meaningful_pixels": 0,
+            "duplicated_meaningful_pixels": 0,
+            "edge_alpha_max": 1,
+            "valid": true
+          },
+          "framing_scale": 0.9436201780415431,
+          "framing_reason": "Whole-batch camera framing differs from approved00-03 body318: meanbody337. Head/boot dimensions normalized to160 stay comparable (head~78-81 and boots~55-56); entire4-cell batch corrected isotropically, never individual frames/limbs. Raw and normalized geometry screening saved in diagnosis/batch-anatomy-screening.json. Final visual review still required."
+        },
+        {
+          "batch": "08-11",
+          "first_frame": 8,
+          "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/08-11-source.png",
+          "source_history": ".build/whitehair-katana-denoise-v13/source-history/front-08-11-d6092bba47d4.png",
+          "source_sha256": "d6092bba47d4fd8a0c6319b915f733a75acadbbd1d85b53f6bb9360192c2d157",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "partition": {
+            "rects": [
+              [
+                0,
+                0,
+                627,
+                627
+              ],
+              [
+                627,
+                0,
+                627,
+                627
+              ],
+              [
+                0,
+                627,
+                627,
+                627
+              ],
+              [
+                627,
+                627,
+                627,
+                627
+              ]
+            ],
+            "offset_x": 0,
+            "meaningful_pixels": 228998,
+            "omitted_meaningful_pixels": 0,
+            "duplicated_meaningful_pixels": 0,
+            "edge_alpha_max": 1,
+            "valid": true
+          },
+          "framing_scale": 0.9754601226993865,
+          "framing_reason": "Whole-batch camera framing differs from approved00-03 body318: meanbody326. Head/boot dimensions normalized to160 stay comparable (head~78-81 and boots~55-56); entire4-cell batch corrected isotropically, never individual frames/limbs. Raw and normalized geometry screening saved in diagnosis/batch-anatomy-screening.json. Final visual review still required."
+        },
+        {
+          "batch": "12-15",
+          "first_frame": 12,
+          "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/12-15-source.png",
+          "source_history": ".build/whitehair-katana-denoise-v13/source-history/front-12-15-52f4253356e1.png",
+          "source_sha256": "52f4253356e180bf16eb9ddd08c096f44cc74af2ed520ecb58218751d33555d9",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "partition": {
+            "rects": [
+              [
+                0,
+                0,
+                627,
+                627
+              ],
+              [
+                627,
+                0,
+                627,
+                627
+              ],
+              [
+                0,
+                627,
+                627,
+                627
+              ],
+              [
+                627,
+                627,
+                627,
+                627
+              ]
+            ],
+            "offset_x": 0,
+            "meaningful_pixels": 245948,
+            "omitted_meaningful_pixels": 0,
+            "duplicated_meaningful_pixels": 0,
+            "edge_alpha_max": 1,
+            "valid": true
+          },
+          "framing_scale": 0.9105225483178239,
+          "framing_reason": "Whole-batch camera framing differs from approved00-03 body318: meanbody349.25. Head/boot dimensions normalized to160 stay comparable (head~78-81 and boots~55-56); entire4-cell batch corrected isotropically, never individual frames/limbs. Raw and normalized geometry screening saved in diagnosis/batch-anatomy-screening.json. Final visual review still required."
+        }
+      ],
+      "source_reference_body_height": 318,
+      "common_anatomical_scale": 0.5031446540880503,
+      "sheet": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+      "sheet_sha256": "13c910ab2d1d8377386860963d49a275b614916d967573def6d7b91345f4ad17",
+      "candidate": ".build/whitehair-katana-denoise-v13/candidates/front/attack-sheet.png",
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "source_batch": "00-03",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 251,
+          "source_body_height": 318,
+          "source_foot_pivot": [
+            313,
+            569
+          ],
+          "source_boot_span": [
+            259,
+            367
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.5031446540880503,
+          "translation": [
+            2.5157232704402475,
+            1.7106918238993671
+          ],
+          "output_body_height": 160,
+          "output_bounds": [
+            104,
+            128,
+            217,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "4ee07d57ad816cd31d86be949be6f0390bba800e3a91df608a45f7b6edcaafc8"
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "source_batch": "00-03",
+          "source_rect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 251,
+          "source_body_height": 318,
+          "source_foot_pivot": [
+            313,
+            569
+          ],
+          "source_boot_span": [
+            259,
+            367
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.5031446540880503,
+          "translation": [
+            2.5157232704402475,
+            1.7106918238993671
+          ],
+          "output_body_height": 160,
+          "output_bounds": [
+            104,
+            128,
+            217,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "cbc651f7800d18cd3436cc8fd0f9c1ccae0acaa901787d94360cfcd60ed841b9"
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "source_batch": "00-03",
+          "source_rect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 251,
+          "source_body_height": 318,
+          "source_foot_pivot": [
+            313,
+            569
+          ],
+          "source_boot_span": [
+            259,
+            367
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.5031446540880503,
+          "translation": [
+            2.5157232704402475,
+            1.7106918238993671
+          ],
+          "output_body_height": 160,
+          "output_bounds": [
+            104,
+            128,
+            217,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "ec8179e7fcee6d0d9f066b5960bcbacef93c92076f831c7bffe74fe396f0dd90"
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "source_batch": "00-03",
+          "source_rect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 251,
+          "source_body_height": 318,
+          "source_foot_pivot": [
+            313,
+            569
+          ],
+          "source_boot_span": [
+            259,
+            367
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.5031446540880503,
+          "translation": [
+            2.5157232704402475,
+            1.7106918238993671
+          ],
+          "output_body_height": 160,
+          "output_bounds": [
+            94,
+            128,
+            217,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "7516ea6332ae57f19028a1bb4f95b07690f8427c93e1f5d26de36a46ee8469b4"
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "source_batch": "04-07",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 250,
+          "source_body_height": 337,
+          "source_foot_pivot": [
+            315,
+            587
+          ],
+          "source_boot_span": [
+            256,
+            374
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9436201780415431,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.47477744807121663,
+          "translation": [
+            10.44510385756675,
+            9.305637982195833
+          ],
+          "output_body_height": 160,
+          "output_bounds": [
+            84,
+            128,
+            219,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "b1c213441ebb33f70aa0788cfba4b12c7e5f6b33a1f1eabbe873a27cef1d9805"
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "source_batch": "04-07",
+          "source_rect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 250,
+          "source_body_height": 337,
+          "source_foot_pivot": [
+            314.5,
+            587
+          ],
+          "source_boot_span": [
+            256,
+            373
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9436201780415431,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.47477744807121663,
+          "translation": [
+            10.68249258160236,
+            9.305637982195833
+          ],
+          "output_body_height": 160,
+          "output_bounds": [
+            62,
+            128,
+            218,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "c9b5b3f19f1cc7abc15b7152d4117ceb5aede2dab390a8ea16ed8ede99e6e8a3"
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "source_batch": "04-07",
+          "source_rect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 224,
+          "source_body_height": 337,
+          "source_foot_pivot": [
+            314.5,
+            561
+          ],
+          "source_boot_span": [
+            256,
+            373
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9436201780415431,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.47477744807121663,
+          "translation": [
+            10.68249258160236,
+            21.649851632047444
+          ],
+          "output_body_height": 160,
+          "output_bounds": [
+            52,
+            128,
+            219,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "d3212eb925c4adbfb9b31ee62776dd09f3b38365cf5323cf62e8c2bfcb0a720f"
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "source_batch": "04-07",
+          "source_rect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 224,
+          "source_body_height": 337,
+          "source_foot_pivot": [
+            314.5,
+            561
+          ],
+          "source_boot_span": [
+            256,
+            373
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9436201780415431,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.47477744807121663,
+          "translation": [
+            10.68249258160236,
+            21.649851632047444
+          ],
+          "output_body_height": 160,
+          "output_bounds": [
+            37,
+            128,
+            219,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "1d397c15e9cb57890e3e8074027aa21f7395551d6c9ea00eda44ca8d38e2030b"
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "source_batch": "08-11",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 326,
+          "source_foot_pivot": [
+            314,
+            575
+          ],
+          "source_boot_span": [
+            258,
+            370
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9754601226993865,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.49079754601226994,
+          "translation": [
+            5.889570552147234,
+            5.791411042944787
+          ],
+          "output_body_height": 160,
+          "output_bounds": [
+            58,
+            127,
+            228,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "f9387dd721efeceea87de33cd5965f3e14043c0c65eda7239c890513d99522af"
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "source_batch": "08-11",
+          "source_rect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 326,
+          "source_foot_pivot": [
+            314,
+            575
+          ],
+          "source_boot_span": [
+            258,
+            370
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9754601226993865,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.49079754601226994,
+          "translation": [
+            5.889570552147234,
+            5.791411042944787
+          ],
+          "output_body_height": 160,
+          "output_bounds": [
+            56,
+            128,
+            228,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "598ea2d703352ab59bcd99b8b9cdb8b5f4f9e6f3f81016a0fb335e1a29f1784e"
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "source_batch": "08-11",
+          "source_rect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 223,
+          "source_body_height": 326,
+          "source_foot_pivot": [
+            314,
+            549
+          ],
+          "source_boot_span": [
+            258,
+            370
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9754601226993865,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.49079754601226994,
+          "translation": [
+            5.889570552147234,
+            18.55214723926383
+          ],
+          "output_body_height": 160,
+          "output_bounds": [
+            52,
+            128,
+            228,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "320e6ae55e6ad596d3fa61d213085a88363454a91f9711a39b84957b24c8b1d9"
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "source_batch": "08-11",
+          "source_rect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 223,
+          "source_body_height": 326,
+          "source_foot_pivot": [
+            314,
+            549
+          ],
+          "source_boot_span": [
+            258,
+            370
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9754601226993865,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.49079754601226994,
+          "translation": [
+            5.889570552147234,
+            18.55214723926383
+          ],
+          "output_body_height": 160,
+          "output_bounds": [
+            44,
+            128,
+            228,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "5d41bdc82fb05c890a5215928b0c5a613a9456f7da20ea44856b7e885d9b573b"
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "source_batch": "12-15",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 349,
+          "source_foot_pivot": [
+            312.5,
+            598
+          ],
+          "source_boot_span": [
+            253,
+            372
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9105225483178239,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.45812455261274154,
+          "translation": [
+            16.83607730851827,
+            14.041517537580546
+          ],
+          "output_body_height": 159.8854688618468,
+          "output_bounds": [
+            85,
+            128,
+            218,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "e9d15ad29fd063e4add91f34a8a5df81bb1923ca95e0028d6e33b114eb43a8e3"
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "source_batch": "12-15",
+          "source_rect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 349,
+          "source_foot_pivot": [
+            311.5,
+            598
+          ],
+          "source_boot_span": [
+            252,
+            371
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9105225483178239,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.45812455261274154,
+          "translation": [
+            17.294201861131,
+            14.041517537580546
+          ],
+          "output_body_height": 159.8854688618468,
+          "output_bounds": [
+            102,
+            128,
+            218,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "bbcf9cacdadfe0713306cd87752f77de2fd7321ad70a4baf8891b3409ee719ae"
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "source_batch": "12-15",
+          "source_rect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 222,
+          "source_body_height": 350,
+          "source_foot_pivot": [
+            313,
+            572
+          ],
+          "source_boot_span": [
+            254,
+            372
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9105225483178239,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.45812455261274154,
+          "translation": [
+            16.607015032211905,
+            25.95275590551182
+          ],
+          "output_body_height": 160.34359341445955,
+          "output_bounds": [
+            103,
+            127,
+            219,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "d789d4685028220fedc9d8912c62b98fb03dd8fd916d19d1770c74941cc86d36"
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "source_batch": "12-15",
+          "source_rect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 223,
+          "source_body_height": 349,
+          "source_foot_pivot": [
+            313.5,
+            572
+          ],
+          "source_boot_span": [
+            254,
+            373
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9105225483178239,
+          "common_anatomical_scale": 0.5031446540880503,
+          "effective_uniform_scale": 0.45812455261274154,
+          "translation": [
+            16.37795275590554,
+            25.95275590551182
+          ],
+          "output_body_height": 159.8854688618468,
+          "output_bounds": [
+            102,
+            128,
+            218,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "593642c0d6620c763e999e4ee985bf776b9b0b9b4d8e014d6869457ea9fdaf05"
+        }
+      ]
+    },
+    "side": {
+      "source_batches": [
+        {
+          "batch": "00-03",
+          "first_frame": 0,
+          "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/00-03-source.png",
+          "source_history": ".build/whitehair-katana-denoise-v13/source-history/side-00-03-1a88451c4fa4.png",
+          "source_sha256": "1a88451c4fa4bf3cc8d22e8a7a5f636e6c81dfa046b114ea7cc8dee939bff112",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "partition": {
+            "rects": [
+              [
+                0,
+                0,
+                627,
+                627
+              ],
+              [
+                627,
+                0,
+                627,
+                627
+              ],
+              [
+                0,
+                627,
+                627,
+                627
+              ],
+              [
+                627,
+                627,
+                627,
+                627
+              ]
+            ],
+            "offset_x": 0,
+            "meaningful_pixels": 197889,
+            "omitted_meaningful_pixels": 0,
+            "duplicated_meaningful_pixels": 0,
+            "edge_alpha_max": 1,
+            "valid": true
+          },
+          "framing_scale": 1,
+          "framing_reason": null
+        },
+        {
+          "batch": "04-07",
+          "first_frame": 4,
+          "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/04-07-source.png",
+          "source_history": ".build/whitehair-katana-denoise-v13/source-history/side-04-07-d95dbf98000c.png",
+          "source_sha256": "d95dbf98000c719d216c4bb7acfb695d280a8a7cd01f3e0e34de0c61a2fedc85",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "partition": {
+            "rects": [
+              [
+                0,
+                0,
+                627,
+                627
+              ],
+              [
+                627,
+                0,
+                627,
+                627
+              ],
+              [
+                0,
+                627,
+                627,
+                627
+              ],
+              [
+                627,
+                627,
+                627,
+                627
+              ]
+            ],
+            "offset_x": 0,
+            "meaningful_pixels": 216286,
+            "omitted_meaningful_pixels": 0,
+            "duplicated_meaningful_pixels": 0,
+            "edge_alpha_max": 1,
+            "valid": true
+          },
+          "framing_scale": 1,
+          "framing_reason": null
+        },
+        {
+          "batch": "08-11",
+          "first_frame": 8,
+          "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/08-11-source.png",
+          "source_history": ".build/whitehair-katana-denoise-v13/source-history/side-08-11-2e1dbee4eeed.png",
+          "source_sha256": "2e1dbee4eeed76df0560fff4405f7d59b8b58c659998d43e3c2824df3def6517",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "partition": {
+            "rects": [
+              [
+                0,
+                0,
+                627,
+                627
+              ],
+              [
+                627,
+                0,
+                627,
+                627
+              ],
+              [
+                0,
+                627,
+                627,
+                627
+              ],
+              [
+                627,
+                627,
+                627,
+                627
+              ]
+            ],
+            "offset_x": 0,
+            "meaningful_pixels": 221800,
+            "omitted_meaningful_pixels": 0,
+            "duplicated_meaningful_pixels": 0,
+            "edge_alpha_max": 1,
+            "valid": true
+          },
+          "framing_scale": 1,
+          "framing_reason": null
+        },
+        {
+          "batch": "12-15",
+          "first_frame": 12,
+          "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/12-15-source.png",
+          "source_history": ".build/whitehair-katana-denoise-v13/source-history/side-12-15-fd59e0e0f21c.png",
+          "source_sha256": "fd59e0e0f21c7b22e96a2f96aa5104eaac959e3df4a5b4891ba88dd7d9bd8b19",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "partition": {
+            "rects": [
+              [
+                0,
+                0,
+                627,
+                627
+              ],
+              [
+                627,
+                0,
+                627,
+                627
+              ],
+              [
+                0,
+                627,
+                627,
+                627
+              ],
+              [
+                627,
+                627,
+                627,
+                627
+              ]
+            ],
+            "offset_x": 0,
+            "meaningful_pixels": 217826,
+            "omitted_meaningful_pixels": 0,
+            "duplicated_meaningful_pixels": 0,
+            "edge_alpha_max": 1,
+            "valid": true
+          },
+          "framing_scale": 0.9594491201224178,
+          "framing_reason": "Whole-batch source camera enlargement: meanbody326.75 vsfirst313.5, skull/boots raw widths rise together. At matchedbody160 skull84-85 vsfirst83 and boots55-58 vsfirst56, so only entirefour-cell framing is corrected; individualframes andlimbs remain unchanged. See diagnosis/batch-anatomy-screening.json."
+        }
+      ],
+      "source_reference_body_height": 312.37499999999994,
+      "common_anatomical_scale": 0.5122048819527812,
+      "sheet": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+      "sheet_sha256": "06e4fcfa203b2e25383039e241b29fba4026fc322a649817408a5fe6719077fe",
+      "candidate": ".build/whitehair-katana-denoise-v13/candidates/side/attack-sheet.png",
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "source_batch": "00-03",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 248,
+          "source_body_height": 314,
+          "source_foot_pivot": [
+            310,
+            562
+          ],
+          "source_boot_span": [
+            257,
+            363
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.5122048819527812,
+          "translation": [
+            1.2164865946378143,
+            0.14085634253694934
+          ],
+          "output_body_height": 160.83233293317332,
+          "output_bounds": [
+            117,
+            127,
+            232,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "6e3792fee938366d87a48c2dde70fc5830ef093fdfdde5c24ca09d35f1ecfae7"
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "source_batch": "00-03",
+          "source_rect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 313,
+          "source_foot_pivot": [
+            309.5,
+            562
+          ],
+          "source_boot_span": [
+            256,
+            363
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.5122048819527812,
+          "translation": [
+            1.4725890356141917,
+            0.14085634253694934
+          ],
+          "output_body_height": 160.32012805122054,
+          "output_bounds": [
+            117,
+            127,
+            232,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "461e43ccbb7077ee2246f71b6a578eca67fdd473fade1f707f62f1f427792b5d"
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "source_batch": "00-03",
+          "source_rect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 313,
+          "source_foot_pivot": [
+            309.5,
+            562
+          ],
+          "source_boot_span": [
+            256,
+            363
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.5122048819527812,
+          "translation": [
+            1.4725890356141917,
+            0.14085634253694934
+          ],
+          "output_body_height": 160.32012805122054,
+          "output_bounds": [
+            117,
+            127,
+            232,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "5e31012340d7782a8a1acb709fe99a90dbfd3f1cc8cb0ab9425b25ca3aa9da4f"
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "source_batch": "00-03",
+          "source_rect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 248,
+          "source_body_height": 314,
+          "source_foot_pivot": [
+            310,
+            562
+          ],
+          "source_boot_span": [
+            257,
+            363
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.5122048819527812,
+          "translation": [
+            1.2164865946378143,
+            0.14085634253694934
+          ],
+          "output_body_height": 160.83233293317332,
+          "output_bounds": [
+            89,
+            127,
+            232,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "3d7c6774c3eadbf92d593028a99d94460d13758bac981f2323af12755abd5b65"
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "source_batch": "04-07",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 250,
+          "source_body_height": 311,
+          "source_foot_pivot": [
+            313,
+            561
+          ],
+          "source_boot_span": [
+            260,
+            366
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.5122048819527812,
+          "translation": [
+            -0.3201280512205358,
+            0.6530612244897043
+          ],
+          "output_body_height": 159.29571828731497,
+          "output_bounds": [
+            76,
+            128,
+            230,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "390136a8eb51c60efe8e5c521ccb2f62361db2cc755bafa12b2a2a10e52009d7"
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "source_batch": "04-07",
+          "source_rect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 250,
+          "source_body_height": 311,
+          "source_foot_pivot": [
+            313,
+            561
+          ],
+          "source_boot_span": [
+            260,
+            366
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.5122048819527812,
+          "translation": [
+            -0.3201280512205358,
+            0.6530612244897043
+          ],
+          "output_body_height": 159.29571828731497,
+          "output_bounds": [
+            69,
+            128,
+            230,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "a49f5f09f99e9f8cd264585d0d4010fb68c2468a8af7a4e78dd856d6afc33af4"
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "source_batch": "04-07",
+          "source_rect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 250,
+          "source_body_height": 311,
+          "source_foot_pivot": [
+            313.5,
+            561
+          ],
+          "source_boot_span": [
+            260,
+            367
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.5122048819527812,
+          "translation": [
+            -0.5762304921969132,
+            0.6530612244897043
+          ],
+          "output_body_height": 159.29571828731497,
+          "output_bounds": [
+            40,
+            128,
+            230,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "e46a19128df38fcb8beb29e9dc08ce0a26605d5420b788f89aeb1591c83a50a3"
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "source_batch": "04-07",
+          "source_rect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 250,
+          "source_body_height": 311,
+          "source_foot_pivot": [
+            312.5,
+            561
+          ],
+          "source_boot_span": [
+            259,
+            366
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.5122048819527812,
+          "translation": [
+            -0.0640256102441299,
+            0.6530612244897043
+          ],
+          "output_body_height": 159.29571828731497,
+          "output_bounds": [
+            34,
+            128,
+            230,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "a9eb92c9f3903050121dd031579cc4fb14e02fd3bc5c90fed39a6aca6934337c"
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "source_batch": "08-11",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 241,
+          "source_body_height": 311,
+          "source_foot_pivot": [
+            307.5,
+            552
+          ],
+          "source_boot_span": [
+            251,
+            364
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.5122048819527812,
+          "translation": [
+            2.4969987995197584,
+            5.262905162064726
+          ],
+          "output_body_height": 159.29571828731497,
+          "output_bounds": [
+            47,
+            128,
+            231,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "a4fbd6fb842d28bf8cdc8a4cdac3c992495c32f5ca92738cf9604935cec76f78"
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "source_batch": "08-11",
+          "source_rect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 241,
+          "source_body_height": 311,
+          "source_foot_pivot": [
+            307,
+            552
+          ],
+          "source_boot_span": [
+            251,
+            363
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.5122048819527812,
+          "translation": [
+            2.7531012404961643,
+            5.262905162064726
+          ],
+          "output_body_height": 159.29571828731497,
+          "output_bounds": [
+            54,
+            128,
+            231,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "7f63380dd21d056986f81a38f48ee93736e50e39087921659db03d73baed1e17"
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "source_batch": "08-11",
+          "source_rect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 214,
+          "source_body_height": 312,
+          "source_foot_pivot": [
+            307.5,
+            526
+          ],
+          "source_boot_span": [
+            251,
+            364
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.5122048819527812,
+          "translation": [
+            2.4969987995197584,
+            18.580232092837093
+          ],
+          "output_body_height": 159.80792316926775,
+          "output_bounds": [
+            50,
+            128,
+            231,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "1941ec2674cb1ca3d82d8b37d7c5a7b78a2ae5400abacdb1902dbd720d8db2c3"
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "source_batch": "08-11",
+          "source_rect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 214,
+          "source_body_height": 312,
+          "source_foot_pivot": [
+            307.5,
+            526
+          ],
+          "source_boot_span": [
+            251,
+            364
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.5122048819527812,
+          "translation": [
+            2.4969987995197584,
+            18.580232092837093
+          ],
+          "output_body_height": 159.80792316926775,
+          "output_bounds": [
+            49,
+            128,
+            231,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "13a2c37a04605ac6371fa65f3af4e4802d5372a8716c284475e7eaa69b623370"
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "source_batch": "12-15",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 244,
+          "source_body_height": 330,
+          "source_foot_pivot": [
+            312.5,
+            574
+          ],
+          "source_boot_span": [
+            257,
+            368
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9594491201224178,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.4914345233120028,
+          "translation": [
+            6.42671146499913,
+            5.916583618910352
+          ],
+          "output_body_height": 162.17339269296093,
+          "output_bounds": [
+            69,
+            126,
+            230,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "81ddc85c092c10d54a31500be9bed86e5f257197e8a4285ba6e93e4d244410d1"
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "source_batch": "12-15",
+          "source_rect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 246,
+          "source_body_height": 327,
+          "source_foot_pivot": [
+            311,
+            573
+          ],
+          "source_boot_span": [
+            254,
+            368
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9594491201224178,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.4914345233120028,
+          "translation": [
+            7.1638632499671075,
+            6.4080181422223745
+          ],
+          "output_body_height": 160.69908912302492,
+          "output_bounds": [
+            116,
+            127,
+            230,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "8d132038ae5fcfc5eb72723232fd1fe82623b7a8d61f0de79baec116f261f4da"
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "source_batch": "12-15",
+          "source_rect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 246,
+          "source_body_height": 325,
+          "source_foot_pivot": [
+            312,
+            571
+          ],
+          "source_boot_span": [
+            255,
+            369
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9594491201224178,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.4914345233120028,
+          "translation": [
+            6.672428726655113,
+            7.390887188846364
+          ],
+          "output_body_height": 159.71622007640093,
+          "output_bounds": [
+            115,
+            128,
+            231,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "328ecabf0d307815cd8a77e325ccff0837cb384c9f068237e257e3ffa9299dec"
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "source_batch": "12-15",
+          "source_rect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 246,
+          "source_body_height": 325,
+          "source_foot_pivot": [
+            311.5,
+            571
+          ],
+          "source_boot_span": [
+            255,
+            368
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 0.9594491201224178,
+          "common_anatomical_scale": 0.5122048819527812,
+          "effective_uniform_scale": 0.4914345233120028,
+          "translation": [
+            6.9181459883111245,
+            7.390887188846364
+          ],
+          "output_body_height": 159.71622007640093,
+          "output_bounds": [
+            116,
+            128,
+            231,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "4f30cd47541582ea92266b5553ad5e1cb058cc2b2d942639175dd22db12bdd6a"
+        }
+      ]
+    },
+    "back": {
+      "source_batches": [
+        {
+          "batch": "00-03",
+          "first_frame": 0,
+          "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/00-03-source.png",
+          "source_history": ".build/whitehair-katana-denoise-v13/source-history/back-00-03-8fff315f1805.png",
+          "source_sha256": "8fff315f1805f0cfbf9ef3b0e8463b9da6ddd147c22e737845516bbfe62b39a4",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "partition": {
+            "rects": [
+              [
+                0,
+                0,
+                627,
+                627
+              ],
+              [
+                627,
+                0,
+                627,
+                627
+              ],
+              [
+                0,
+                627,
+                627,
+                627
+              ],
+              [
+                627,
+                627,
+                627,
+                627
+              ]
+            ],
+            "offset_x": 0,
+            "meaningful_pixels": 191893,
+            "omitted_meaningful_pixels": 0,
+            "duplicated_meaningful_pixels": 0,
+            "edge_alpha_max": 1,
+            "valid": true
+          },
+          "framing_scale": 1,
+          "framing_reason": null
+        },
+        {
+          "batch": "04-07",
+          "first_frame": 4,
+          "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/04-07-source.png",
+          "source_history": ".build/whitehair-katana-denoise-v13/source-history/back-04-07-f9ce5b58c36e.png",
+          "source_sha256": "f9ce5b58c36e44f6d4a006f25b2e01d7279c68876ef95127154d15e87011240e",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "partition": {
+            "rects": [
+              [
+                0,
+                0,
+                627,
+                627
+              ],
+              [
+                627,
+                0,
+                627,
+                627
+              ],
+              [
+                0,
+                627,
+                627,
+                627
+              ],
+              [
+                627,
+                627,
+                627,
+                627
+              ]
+            ],
+            "offset_x": 0,
+            "meaningful_pixels": 210880,
+            "omitted_meaningful_pixels": 0,
+            "duplicated_meaningful_pixels": 0,
+            "edge_alpha_max": 1,
+            "valid": true
+          },
+          "framing_scale": 1,
+          "framing_reason": null
+        },
+        {
+          "batch": "08-11",
+          "first_frame": 8,
+          "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/08-11-source.png",
+          "source_history": ".build/whitehair-katana-denoise-v13/source-history/back-08-11-82273eb5ffe7.png",
+          "source_sha256": "82273eb5ffe72182863341327acf0e2e0fc3c58667fbc8b84b175a9e9d3d1357",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "partition": {
+            "rects": [
+              [
+                0,
+                0,
+                627,
+                627
+              ],
+              [
+                627,
+                0,
+                627,
+                627
+              ],
+              [
+                0,
+                627,
+                627,
+                627
+              ],
+              [
+                627,
+                627,
+                627,
+                627
+              ]
+            ],
+            "offset_x": 0,
+            "meaningful_pixels": 205125,
+            "omitted_meaningful_pixels": 0,
+            "duplicated_meaningful_pixels": 0,
+            "edge_alpha_max": 1,
+            "valid": true
+          },
+          "framing_scale": 1,
+          "framing_reason": null
+        },
+        {
+          "batch": "12-15",
+          "first_frame": 12,
+          "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/12-15-source.png",
+          "source_history": ".build/whitehair-katana-denoise-v13/source-history/back-12-15-ddae6b14d8e1.png",
+          "source_sha256": "ddae6b14d8e1deec9b07c099ec4dcefda722ba13e35a6e074ccd9f4ffe508c1f",
+          "source_size": [
+            1254,
+            1254
+          ],
+          "partition": {
+            "rects": [
+              [
+                0,
+                0,
+                627,
+                627
+              ],
+              [
+                627,
+                0,
+                627,
+                627
+              ],
+              [
+                0,
+                627,
+                627,
+                627
+              ],
+              [
+                627,
+                627,
+                627,
+                627
+              ]
+            ],
+            "offset_x": 0,
+            "meaningful_pixels": 190400,
+            "omitted_meaningful_pixels": 0,
+            "duplicated_meaningful_pixels": 0,
+            "edge_alpha_max": 0,
+            "valid": true
+          },
+          "framing_scale": 1,
+          "framing_reason": null
+        }
+      ],
+      "source_reference_body_height": 316.25,
+      "common_anatomical_scale": 0.5059288537549407,
+      "sheet": "game/asset/character/player/main/9-whitehair/katana/back/attack-sheet.png",
+      "sheet_sha256": "c2adf986fb12a9eb855525cd95760b056550fb379d0a4f6c09b8626b1158f39a",
+      "candidate": ".build/whitehair-katana-denoise-v13/candidates/back/attack-sheet.png",
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "source_batch": "00-03",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 319,
+          "source_foot_pivot": [
+            314.5,
+            568
+          ],
+          "source_boot_span": [
+            272,
+            357
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            0.8853754940711553,
+            0.6324110671936864
+          ],
+          "output_body_height": 161.39130434782606,
+          "output_bounds": [
+            102,
+            126,
+            214,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "f98b47fc1e9a05722f23084f006c31edbe2a64535cc75d7755999af4b1396dba"
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "source_batch": "00-03",
+          "source_rect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 319,
+          "source_foot_pivot": [
+            313.5,
+            568
+          ],
+          "source_boot_span": [
+            271,
+            356
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            1.3913043478260931,
+            0.6324110671936864
+          ],
+          "output_body_height": 161.39130434782606,
+          "output_bounds": [
+            103,
+            126,
+            214,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "2c47fcb2285d45a23df08c4aaeb53de9df7d2dbf92357fe7b8eafe6f9689203e"
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "source_batch": "00-03",
+          "source_rect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 250,
+          "source_body_height": 318,
+          "source_foot_pivot": [
+            314.5,
+            568
+          ],
+          "source_boot_span": [
+            272,
+            357
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            0.8853754940711553,
+            0.6324110671936864
+          ],
+          "output_body_height": 160.88537549407113,
+          "output_bounds": [
+            99,
+            126,
+            211,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "27b237aaa4df6d8d318124cfcbe42d8629061fe73d9653d2464fd845dc91bace"
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "source_batch": "00-03",
+          "source_rect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 319,
+          "source_foot_pivot": [
+            314.5,
+            568
+          ],
+          "source_boot_span": [
+            272,
+            357
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            0.8853754940711553,
+            0.6324110671936864
+          ],
+          "output_body_height": 161.39130434782606,
+          "output_bounds": [
+            96,
+            126,
+            238,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "7a13d7f099f37f7827e0dc40b5640cea6575c951cff806bea94fc3dc87cb38f5"
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "source_batch": "04-07",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 246,
+          "source_body_height": 320,
+          "source_foot_pivot": [
+            320.5,
+            566
+          ],
+          "source_boot_span": [
+            279,
+            362
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            -2.1501976284585,
+            1.644268774703562
+          ],
+          "output_body_height": 161.897233201581,
+          "output_bounds": [
+            94,
+            125,
+            251,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "4822eafa967a54b0f5897d785ddfff3a717b80bf301c8dcc7e26a4e6ea3a6c1b"
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "source_batch": "04-07",
+          "source_rect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 246,
+          "source_body_height": 320,
+          "source_foot_pivot": [
+            320.5,
+            566
+          ],
+          "source_boot_span": [
+            279,
+            362
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            -2.1501976284585,
+            1.644268774703562
+          ],
+          "output_body_height": 161.897233201581,
+          "output_bounds": [
+            93,
+            125,
+            275,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "44b4b4f8059839f2f4287cc1000a88a844e9e5628d5872e86a2f38db1fa381be"
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "source_batch": "04-07",
+          "source_rect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 220,
+          "source_body_height": 320,
+          "source_foot_pivot": [
+            320,
+            540
+          ],
+          "source_boot_span": [
+            279,
+            361
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            -1.8972332015810025,
+            14.798418972332058
+          ],
+          "output_body_height": 161.897233201581,
+          "output_bounds": [
+            94,
+            126,
+            267,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "a2194321888a924860096bf25c387f99c5db7c37de23dc70b4cb76463c3db405"
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "source_batch": "04-07",
+          "source_rect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 220,
+          "source_body_height": 320,
+          "source_foot_pivot": [
+            320.5,
+            540
+          ],
+          "source_boot_span": [
+            280,
+            361
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            -2.1501976284585,
+            14.798418972332058
+          ],
+          "output_body_height": 161.897233201581,
+          "output_bounds": [
+            94,
+            126,
+            270,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "92269f2d9a15fed6eab5cced0860ea3212e6dea39657706127b65dd464523bb4"
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "source_batch": "08-11",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 309,
+          "source_foot_pivot": [
+            319,
+            558
+          ],
+          "source_boot_span": [
+            277,
+            361
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            -1.3913043478260647,
+            5.691699604743121
+          ],
+          "output_body_height": 156.33201581027666,
+          "output_bounds": [
+            92,
+            131,
+            268,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "6ce26d3a34c3aa7fb6ed6ac375877035665745a23599871ae984c9b71fd33c7c"
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "source_batch": "08-11",
+          "source_rect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 309,
+          "source_foot_pivot": [
+            319.5,
+            558
+          ],
+          "source_boot_span": [
+            278,
+            361
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            -1.6442687747035336,
+            5.691699604743121
+          ],
+          "output_body_height": 156.33201581027666,
+          "output_bounds": [
+            92,
+            131,
+            265,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "6c8a494f4a5c5531693f9fc918c46d4933111ebc5f594764092f925775f0a97f"
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "source_batch": "08-11",
+          "source_rect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 309,
+          "source_foot_pivot": [
+            319,
+            558
+          ],
+          "source_boot_span": [
+            277,
+            361
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            -1.3913043478260647,
+            5.691699604743121
+          ],
+          "output_body_height": 156.33201581027666,
+          "output_bounds": [
+            92,
+            131,
+            264,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "77048663b07c7cb4a5c7bcf1eea8637e0d715e834c6dc8484e5971ff5e75a1b2"
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "source_batch": "08-11",
+          "source_rect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 249,
+          "source_body_height": 309,
+          "source_foot_pivot": [
+            319.5,
+            558
+          ],
+          "source_boot_span": [
+            278,
+            361
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            -1.6442687747035336,
+            5.691699604743121
+          ],
+          "output_body_height": 156.33201581027666,
+          "output_bounds": [
+            92,
+            131,
+            267,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "c3f71d0efd9ecc89f018fd7dd3315b6ee744f8891393716c3fe215262573f657"
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "source_batch": "12-15",
+          "source_rect": [
+            0,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 247,
+          "source_body_height": 316,
+          "source_foot_pivot": [
+            315,
+            563
+          ],
+          "source_boot_span": [
+            273,
+            357
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            0.6324110671936864,
+            3.1620553359683754
+          ],
+          "output_body_height": 159.87351778656125,
+          "output_bounds": [
+            102,
+            128,
+            251,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "555dbca9c279f95ac3d2f05e7b5feb605be2eda65fbe3ae4eaa686d22c789fb7"
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "source_batch": "12-15",
+          "source_rect": [
+            627,
+            0,
+            627,
+            627
+          ],
+          "source_crown_y": 244,
+          "source_body_height": 319,
+          "source_foot_pivot": [
+            314.5,
+            563
+          ],
+          "source_boot_span": [
+            273,
+            356
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            0.8853754940711553,
+            3.1620553359683754
+          ],
+          "output_body_height": 161.39130434782606,
+          "output_bounds": [
+            102,
+            126,
+            211,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "d40d0a66e118f3817e033cd64d0a44b8690642067a391ea7499dd6612df24a86"
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "source_batch": "12-15",
+          "source_rect": [
+            0,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 221,
+          "source_body_height": 316,
+          "source_foot_pivot": [
+            314.5,
+            537
+          ],
+          "source_boot_span": [
+            273,
+            356
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            0.8853754940711553,
+            16.31620553359687
+          ],
+          "output_body_height": 159.87351778656125,
+          "output_bounds": [
+            102,
+            128,
+            215,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "b616feaf844eb6175bc9b1502a00d89477b13a61bd7f86ce2cebddf450f973ed"
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "source_batch": "12-15",
+          "source_rect": [
+            627,
+            627,
+            627,
+            627
+          ],
+          "source_crown_y": 219,
+          "source_body_height": 318,
+          "source_foot_pivot": [
+            314.5,
+            537
+          ],
+          "source_boot_span": [
+            273,
+            356
+          ],
+          "manual_annotation": false,
+          "source_resolution_scale": 1,
+          "batch_framing_scale": 1,
+          "common_anatomical_scale": 0.5059288537549407,
+          "effective_uniform_scale": 0.5059288537549407,
+          "translation": [
+            0.8853754940711553,
+            16.31620553359687
+          ],
+          "output_body_height": 160.88537549407113,
+          "output_bounds": [
+            101,
+            127,
+            214,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "rgba_sha256": "d45a6d8b5d6c2899e2fea936fcdefe2902bcec634ee54be322ef5581479b9c72"
+        }
+      ]
+    }
+  }
+}

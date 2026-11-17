@@ -1,0 +1,60 @@
+{
+  "source_sheets": {
+    "front": "ec0c63f0afd5cec2a12403988bd657f76656f0a271a266467b9c3d72edef40f7",
+    "side": "2feb0c07d00765f1d0a77b078e97fed2bc4dedb2fcf2a03929c38358c43bae80"
+  },
+  "native": {
+    "passed": true,
+    "checks": [
+      "real Pico2D loaded both sheets and displayed all16 unique frames",
+      "native feet remained byte-identical for every frame",
+      "one-second wrap returns to exactly the same framebuffer",
+      "side stays screen-left as approved; no inadvertent mirror",
+      "both hand grip contacts stay covered for every frame",
+      "production Player clock drove two full real-time one-second loops"
+    ],
+    "deterministic_frames": 17,
+    "real_time_frames": 130,
+    "real_time_seconds": 2.1081094999972265,
+    "unique_frames": [
+      16,
+      16
+    ],
+    "grip_samples": [
+      {
+        "direction": "front",
+        "grip": "right_hilt",
+        "minimum_occupied_pixels": 9
+      },
+      {
+        "direction": "front",
+        "grip": "left_scabbard",
+        "minimum_occupied_pixels": 9
+      },
+      {
+        "direction": "side",
+        "grip": "right_hilt",
+        "minimum_occupied_pixels": 9
+      },
+      {
+        "direction": "side",
+        "grip": "left_scabbard",
+        "minimum_occupied_pixels": 9
+      }
+    ],
+    "screenshots": [
+      "native-frame-00.png",
+      "native-frame-04.png",
+      "native-frame-08.png",
+      "native-frame-12.png"
+    ]
+  },
+  "preview": {
+    "file": "asset/character/player/icon/preview/whitehair-katana-idle.png",
+    "format": "APNG",
+    "frames": 16,
+    "frame_ms": 62.5,
+    "cycle_ms": 1000
+  },
+  "visual_review": "Native enlarged and original-size snapshots 00,08,12 inspected on light/dark backgrounds: no detached hands, sword/scabbard contacts, neck gaps, or visible popping."
+}

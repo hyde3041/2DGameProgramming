@@ -1,0 +1,624 @@
+{
+  "id": "whitehair-katana",
+  "passed": true,
+  "attack_metadata_version": 9,
+  "attack_style": "complete generated cel slash with body follow-through and short sword afterglow",
+  "source_sheets": {
+    "idle-front": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+      "sha256": "ec0c63f0afd5cec2a12403988bd657f76656f0a271a266467b9c3d72edef40f7"
+    },
+    "idle-side": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+      "sha256": "2feb0c07d00765f1d0a77b078e97fed2bc4dedb2fcf2a03929c38358c43bae80"
+    },
+    "attack-front": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+      "sha256": "b252d4e596f5adb316a9767ae480c7351cbaa19886f629b0d27d9f20c8c8eebe"
+    },
+    "attack-side": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+      "sha256": "d661d0a624ee3ed8cc0079e5fb8d3d7d3567db2f005a50dea2b692a32aa50c43"
+    }
+  },
+  "frames_per_sheet": 16,
+  "fps": 16,
+  "row_major_frame_order_matches_exports": true,
+  "neutral_connections": {
+    "front": {
+      "idle0_equals_attack0": false,
+      "idle0_equals_attack15": false,
+      "whole_authored_cels_preserved": true
+    },
+    "side": {
+      "idle0_equals_attack0": false,
+      "idle0_equals_attack15": false,
+      "whole_authored_cels_preserved": true
+    }
+  },
+  "all_meaningful_pixels_inside_320_cells": true,
+  "meaningful_bounds": {
+    "idle-front": [
+      [
+        109,
+        128,
+        209,
+        288
+      ],
+      [
+        108,
+        128,
+        209,
+        288
+      ],
+      [
+        108,
+        127,
+        209,
+        288
+      ],
+      [
+        108,
+        127,
+        209,
+        288
+      ],
+      [
+        107,
+        127,
+        209,
+        288
+      ],
+      [
+        107,
+        127,
+        209,
+        288
+      ],
+      [
+        107,
+        127,
+        209,
+        288
+      ],
+      [
+        107,
+        127,
+        209,
+        288
+      ],
+      [
+        107,
+        127,
+        209,
+        288
+      ],
+      [
+        108,
+        127,
+        210,
+        288
+      ],
+      [
+        108,
+        127,
+        210,
+        288
+      ],
+      [
+        108,
+        127,
+        210,
+        288
+      ],
+      [
+        109,
+        127,
+        210,
+        288
+      ],
+      [
+        109,
+        127,
+        210,
+        288
+      ],
+      [
+        109,
+        127,
+        210,
+        288
+      ],
+      [
+        109,
+        128,
+        210,
+        288
+      ]
+    ],
+    "idle-side": [
+      [
+        129,
+        128,
+        220,
+        288
+      ],
+      [
+        129,
+        128,
+        220,
+        288
+      ],
+      [
+        129,
+        127,
+        220,
+        288
+      ],
+      [
+        129,
+        127,
+        220,
+        288
+      ],
+      [
+        129,
+        127,
+        220,
+        288
+      ],
+      [
+        129,
+        127,
+        220,
+        288
+      ],
+      [
+        129,
+        127,
+        220,
+        288
+      ],
+      [
+        129,
+        127,
+        220,
+        288
+      ],
+      [
+        129,
+        127,
+        220,
+        288
+      ],
+      [
+        129,
+        127,
+        220,
+        288
+      ],
+      [
+        129,
+        127,
+        221,
+        288
+      ],
+      [
+        129,
+        127,
+        221,
+        288
+      ],
+      [
+        129,
+        127,
+        221,
+        288
+      ],
+      [
+        129,
+        127,
+        221,
+        288
+      ],
+      [
+        129,
+        127,
+        221,
+        288
+      ],
+      [
+        129,
+        128,
+        220,
+        288
+      ]
+    ],
+    "attack-front": [
+      [
+        107,
+        128,
+        210,
+        288
+      ],
+      [
+        108,
+        127,
+        210,
+        288
+      ],
+      [
+        108,
+        128,
+        211,
+        288
+      ],
+      [
+        108,
+        127,
+        210,
+        288
+      ],
+      [
+        106,
+        128,
+        211,
+        288
+      ],
+      [
+        74,
+        128,
+        211,
+        288
+      ],
+      [
+        43,
+        128,
+        212,
+        288
+      ],
+      [
+        41,
+        128,
+        214,
+        288
+      ],
+      [
+        68,
+        127,
+        214,
+        288
+      ],
+      [
+        67,
+        127,
+        213,
+        288
+      ],
+      [
+        56,
+        127,
+        213,
+        288
+      ],
+      [
+        51,
+        127,
+        214,
+        288
+      ],
+      [
+        98,
+        128,
+        211,
+        288
+      ],
+      [
+        108,
+        128,
+        211,
+        288
+      ],
+      [
+        108,
+        128,
+        210,
+        288
+      ],
+      [
+        108,
+        128,
+        211,
+        288
+      ]
+    ],
+    "attack-side": [
+      [
+        119,
+        128,
+        221,
+        288
+      ],
+      [
+        119,
+        128,
+        218,
+        288
+      ],
+      [
+        118,
+        128,
+        218,
+        288
+      ],
+      [
+        118,
+        128,
+        221,
+        288
+      ],
+      [
+        117,
+        128,
+        218,
+        288
+      ],
+      [
+        79,
+        128,
+        223,
+        288
+      ],
+      [
+        43,
+        128,
+        222,
+        288
+      ],
+      [
+        37,
+        128,
+        222,
+        288
+      ],
+      [
+        60,
+        128,
+        221,
+        288
+      ],
+      [
+        71,
+        128,
+        219,
+        288
+      ],
+      [
+        57,
+        129,
+        219,
+        288
+      ],
+      [
+        50,
+        129,
+        217,
+        288
+      ],
+      [
+        101,
+        127,
+        220,
+        288
+      ],
+      [
+        116,
+        127,
+        219,
+        288
+      ],
+      [
+        115,
+        127,
+        220,
+        288
+      ],
+      [
+        116,
+        128,
+        218,
+        288
+      ]
+    ]
+  },
+  "source_sheets_unchanged": true,
+  "preview": {
+    "panel_order": [
+      "idle-front",
+      "idle-side",
+      "attack-front",
+      "attack-side"
+    ],
+    "common_source_crop": [
+      14,
+      86,
+      252,
+      318
+    ],
+    "integer_display_scale": 2,
+    "size": [
+      964,
+      940
+    ],
+    "apng": "game/asset/character/player/icon/preview/whitehair-katana-motions.png",
+    "apng_frame_ms": 62.5,
+    "apng_cycle_ms": 1000,
+    "gif": "game/asset/character/player/icon/preview/whitehair-katana-motions.gif",
+    "gif_frame_ms": [
+      60,
+      60,
+      60,
+      70,
+      60,
+      60,
+      60,
+      70,
+      60,
+      60,
+      60,
+      70,
+      60,
+      60,
+      60,
+      70
+    ],
+    "gif_cycle_ms": 1000,
+    "rising_aliases": {
+      "png": "game/asset/character/player/icon/preview/whitehair-katana-body-fx-v9-motions.png",
+      "gif": "game/asset/character/player/icon/preview/whitehair-katana-body-fx-v9-motions.gif"
+    }
+  },
+  "rising_comparison": {
+    "file": ".build/whitehair-katana-motion-validation/rising-frames-04-09.png",
+    "row_order": [
+      "front",
+      "side"
+    ],
+    "columns": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "source_crop": [
+      14,
+      86,
+      252,
+      318
+    ],
+    "integer_scale": 2,
+    "annotation": "Frame numbers in a QA header; artwork is only cropped and integer-enlarged."
+  },
+  "native_validation": {
+    "passed": true,
+    "checks": [
+      "Pico2D loads all four final1280x1280 sheets; hashes match the packed previews",
+      "native row-major clipping selects every frame0..15 in the correct order",
+      "whole authored attack cels retained, including frame0 and15; no idle-frame override",
+      "native full four-panel view returns exactly after one second",
+      "production Player.motion_frame yields2s/1s/0.5s attacks at attackSpeed0.5/1/2; verified exact samples and real-time native playback"
+    ],
+    "native_unique_frames": {
+      "idle-front": 16,
+      "idle-side": 16,
+      "attack-front": 16,
+      "attack-side": 16
+    },
+    "attack_speed_checks": [
+      {
+        "attackSpeed": 0.5,
+        "expected_cycle_seconds": 2,
+        "exact_frame_selection": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "real_time_seconds": 2.060771400021622,
+        "native_presented_frames": 166,
+        "all16_frames_seen": true,
+        "wrapped_to_start": true
+      },
+      {
+        "attackSpeed": 1,
+        "expected_cycle_seconds": 1,
+        "exact_frame_selection": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "real_time_seconds": 1.0565436000179034,
+        "native_presented_frames": 86,
+        "all16_frames_seen": true,
+        "wrapped_to_start": true
+      },
+      {
+        "attackSpeed": 2,
+        "expected_cycle_seconds": 0.5,
+        "exact_frame_selection": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "real_time_seconds": 0.5607535000017378,
+        "native_presented_frames": 46,
+        "all16_frames_seen": true,
+        "wrapped_to_start": true
+      }
+    ],
+    "captures": [
+      "native-frame-00.png",
+      "native-frame-06.png",
+      "native-frame-09.png",
+      "native-frame-10.png",
+      "native-frame-11.png",
+      "native-frame-12.png"
+    ],
+    "execution": "standalone actual Pico2D playback using production Player; no game roster or game code change"
+  },
+  "limitations": [
+    "All16 attack cels are complete generated drawings, registered by one common per-view scale and foot translation; no limb mask, cutout rotation or old glove overlay.",
+    "Generated attack neutral frames match the ready pose visually but are not pixel-identical to the separately preserved idle artwork.",
+    "The preview reads final production sprite cells directly. The new character remains unregistered in the playable party."
+  ],
+  "body_fx_v9_validation": "metadata/character/whitehair-katana-body-fx-v9-validation.json",
+  "attack_only_preview": {
+    "gif": "game/asset/character/player/icon/preview/whitehair-katana-body-fx-v9.gif",
+    "apng": "game/asset/character/player/icon/preview/whitehair-katana-body-fx-v9.png",
+    "source": "complete final production cells",
+    "decoded_visual_review_passed": true
+  }
+}

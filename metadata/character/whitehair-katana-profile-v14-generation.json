@@ -1,0 +1,94 @@
+{
+  "id": "whitehair-katana-profile-v14",
+  "profile": "9-whitehair",
+  "status": "complete_applied_validated",
+  "mode": "built-in image_gen generation with reference illustrations",
+  "request": "Match the existing party members' illustrated profile style, rather than an enlarged SD sprite.",
+  "prompt": "Create ONE new square character-profile illustration that belongs to the SAME illustrated portrait set as images1,2,3. These THREE existing party illustrations are the ABSOLUTE authority for art style, normal anime facial anatomy, eye size, refined nose/jaw, mature head/neck/shoulder proportions, rendering and finish. Match their delicate tapered linework, nuanced soft cel-painting, individual hair strands, subtle reflected light, and polished fantasy JRPG character illustration quality.\nSubject: a young-adult white-haired, crimson-red-eyed katana swordswoman. Image4 is ONLY a costume/color/identity reference from her tiny game sprite. Translate that identity into the SAME normal-proportioned anime portrait style as images1-3. Do NOT copy image4's chibi/super-deformed anatomy, oversized head, huge round eyes, circular babyface, tiny nose, heavy outline or simplified flat cartoon rendering. This is an illustrated character bust like the other party cards, NOT an enlarged sprite.\nRecognizable design: very long flowing ivory-white hair with fine softly lavender-gray shaded strands, center-parted sweeping fringe, vivid but naturally sized crimson almond-shaped eyes, composed confident expression, subtle small mouth. Elegant natural anime jaw/cheek and visible neck like images1-3. Black high-collared military-fantasy uniform with restrained dark-red piping, ivory shoulder cape with burgundy underside and small silver star-shaped shoulder fastenings. Preserve these colors/equipment identity. No copied flower ornament, teal cleric uniform, mage crystal, leaf pin, staff, or orange/lavender hair from the style references.\nIllustration pose: graceful slight three-quarter bust and slight head tilt, eyes looking toward viewer, naturally proportioned shoulders filling the lower portion. Sophisticated soft shading and layered hair movement like the existing cleric/herbalist portraits. Hair silhouette airy and flowing, quiet neutral pale cool-gray background matching the set. Clean detailed artwork without grain or muddied edges.\nOutput ONE high-resolution1:1 square head-and-upper-chest portrait, full crown comfortably inside the top edge, outer long hair may naturally flow off side/bottom edges, balanced character-card framing. No hands or weapon covering the face. No text, card border, UI, cost number, logo, extra characters or panels. Opaque pale-gray background. Aim to be indistinguishable in illustration language from images1,2,3, with the whitehair/red-eye swordswoman's own design.",
+  "source": "game/asset/character/player/icon/source/whitehair/katana/profile-v14/deployment-square-source.png",
+  "references": [
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/profile-v14/reference/cleric-portrait-reference.png",
+      "role": "primary normal anime illustration style, facial proportions, painting and composition",
+      "sha256": "0c9409246a2b56892d2032cb4a6a0fdf32c502d7755981fd37f0383c132e6d2d",
+      "derived_from": "game/asset/character/player/main/4-cleric/skill/profile/skill-card.png",
+      "source_sha256": "84f3820cfc4bad02d19fb377679ea44bdc6c41949c42f3ae2d41765e11b99d9f",
+      "crop": [
+        0,
+        0,
+        360,
+        248
+      ],
+      "processing": "Exact unchanged illustration crop; no creative edits."
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/profile-v14/reference/frost-mage-portrait-reference.png",
+      "role": "primary normal anime illustration style and facial rendering",
+      "sha256": "8d9d7cd1dbc8ec181e4a10e492cb59139aa5a0f8f9094b862d51d10f33b78998",
+      "derived_from": "game/asset/character/player/main/6-frost-mage/skill/profile/skill-card.png",
+      "source_sha256": "9e9a673e27fe968d7ac09e62a9870bf050f5ab60bb74bd17fc4363a95cc526ec",
+      "crop": [
+        0,
+        0,
+        360,
+        248
+      ],
+      "processing": "Exact unchanged illustration crop; no creative edits."
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/profile-v14/reference/herbalist-portrait-reference.png",
+      "role": "primary normal anime illustration style and facial rendering",
+      "sha256": "be82462e923f03ca7a9ac412508c02f123ed73a7c629cbf2bc5b4ecab0ac382f",
+      "derived_from": "game/asset/character/player/main/5-herbalist/skill/profile/skill-card.png",
+      "source_sha256": "1b0e241ceacc63ea8fddb793116e34699372acc070c5ec2d9343f95f2ea86f0d",
+      "crop": [
+        0,
+        0,
+        360,
+        248
+      ],
+      "processing": "Exact unchanged illustration crop; no creative edits."
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/profile-v13/clean-character-reference.png",
+      "role": "hair/eye colors and costume identity only; SD proportions intentionally not used",
+      "sha256": "b2ac1cdcac83eba632576845a3a5c5660e0e88ac6cf442bd6a670ffc1e156eef"
+    }
+  ],
+  "transparent_background": false,
+  "output": "game/asset/character/player/main/9-whitehair/skill/profile/deployment-square.png",
+  "source_sha256": "5dee017d457c0de30d7aaba4619d00526c92aa4caa1408995f2c092104860570",
+  "output_sha256": "490261e5d256a46135cd4e3db3e46161975c54a37f4ec535424592f6ea4d4950",
+  "output_size": [
+    128,
+    128
+  ],
+  "versioned_output": "game/asset/character/player/main/9-whitehair/skill/profile/deployment-profile-v14.png",
+  "preview": "game/asset/character/player/icon/preview/whitehair-katana-profile-v14.png",
+  "preview_size": [
+    512,
+    512
+  ],
+  "party_comparison": "game/asset/character/player/icon/preview/whitehair-katana-profile-v14-party-comparison.png",
+  "comparison_order": [
+    "4-cleric",
+    "6-frost-mage",
+    "5-herbalist",
+    "9-whitehair"
+  ],
+  "packaging": "Whole-image uniform Lanczos resize only; full opaque square preserved; no crop or repaint.",
+  "profile_art_version": 14,
+  "unchanged_motion_versions": {
+    "idle": 12,
+    "attack": 13
+  },
+  "application_report": ".build/whitehair-katana-profile-v14/application-report.json",
+  "validation_report": ".build/whitehair-katana-profile-v14/native-profile-validation.json",
+  "validation_summary": {
+    "native_hud": true,
+    "ninth_character": "9-whitehair",
+    "cost5_opacity": 255,
+    "cost4_opacity": 127,
+    "protected_files_unchanged": 134
+  }
+}

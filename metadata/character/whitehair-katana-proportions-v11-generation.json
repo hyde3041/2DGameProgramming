@@ -1,0 +1,298 @@
+{
+  "id": "whitehair-katana-proportions-v11",
+  "version": 11,
+  "status": "complete_applied",
+  "request": "Correct the mismatched body proportions between idle and attack; use the existing idle as the canonical model.",
+  "mode": "built-in image_gen edit",
+  "canonical_idle": {
+    "front": {
+      "sheet": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+      "sha256": "98c3eb28a670aada65306ddb29a44a163a792adc29adf75eaa8d1b3602270d2c",
+      "frames": {
+        "0": {
+          "file": ".build/whitehair-katana-proportions-v11/canonical/front-idle-00.png",
+          "rgba_sha256": "091fc9a3cba5133455299421a0d1f21b03c5a897e227c9468c45a8069d41ff67"
+        },
+        "15": {
+          "file": ".build/whitehair-katana-proportions-v11/canonical/front-idle-15.png",
+          "rgba_sha256": "3af382018b03885e31b76264159da590c74de98877d4b3ca34bbff7aaa1cec6c"
+        }
+      }
+    },
+    "side": {
+      "sheet": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+      "sha256": "aa7d584f815d0d759db0d31efce5b419ba66bb7c4ce0bc194ded86bbf845f85f",
+      "frames": {
+        "0": {
+          "file": ".build/whitehair-katana-proportions-v11/canonical/side-idle-00.png",
+          "rgba_sha256": "d4d2520a53f51167d5016c1c63fb29860158701db4a32f3390503d65779f9a97"
+        },
+        "15": {
+          "file": ".build/whitehair-katana-proportions-v11/canonical/side-idle-15.png",
+          "rgba_sha256": "bed785953d378784d6ba3147c77b4e4d83d8eefab553e8374182aae7804c147a"
+        }
+      }
+    }
+  },
+  "generation": {
+    "front": {
+      "mode": "built-in image_gen edit",
+      "iteration": 1,
+      "canonical_design": "Current production FRONT idle-sheet, unchanged",
+      "target": "All sixteen FRONT attack cels keep current idle head, face, body, limbs and hair-volume proportions; retain approved motion.",
+      "prompt": "STRICT IDENTITY/PROPORTION CORRECTION, not a redesign. Produce a FRONT attack spritesheet by animating EXACTLY the character in attachment1, the canonical production IDLE spritesheet. Attachment2 is a magnified detail of that SAME idle model. Attachment3 is the existing ATTACK spritesheet being corrected; use attachment3 ONLY for the sword/arm motion timeline, NEVER for its head, face or body proportions. The existing attack character is too wide and squat; that mismatch is what you must fix.\n\nHighest priority: same model as attachment1/2 in ALL16 cels. Do not create a rounder/wider head, widen eyes or chest, shorten legs, enlarge boots, thicken arms, broaden the coat, or increase hair volume. Trace the IDLE facial anatomy and silhouette in your illustration: same narrow head width AND height, identical eye spacing/eye sizes, face width and faceheight, shoulder width, compact torso length, upper-arm/forearm thickness and length, leg length, boot size, hair length and lateral hair volume. Do not average idle and attack models. Ignore attachment3's chunky face/body. FRAME0,1,14,15 must have virtually IDENTICAL anatomy, silhouette, hairvolume and ready stance to IDLE frame0, within1-2% proportions, not7-10%. The idle already defines the desired SD style. Do not make it more chibi or more mature. Clean crisp dark outlines and same white/lavender hair, red eyes, charcoal red-piped tunic, ivory cape/coattails, red lining, silver clasps, brown belt/gloves/boots, red tassel as IDLE.\n\nOutput layout: square transparent PNG, 4 columns x4 rows, exactly16 complete full-body FRONT cels row-major, matching attachment1's exact canvas framing. 1280x1280 canvas, each cell320x320 (or identical proportions if native size differs). Character's crown y128/320 =40%cellheight; sole baseline y288/320 =90%; crown-to-foot height160/320 =50%cellheight. Bodycenter x160/320 =50%cellwidth. Do NOT magnify the artwork to fill the cells. This smaller identical idle scale leaves enough room for long katana/FX. Same scale/headsize/bodyheight across all16cels. Feet stay planted at same anchor. Allow tiny wholebody tilt/crouch, not scale changes. All hair, blade and FX must remain inside eachcell. No labels, numbers, border, gridlines, scenery, grayhaze, contactshadow, scatteredpixels or straypaint. Alpha0 transparent emptyspace.\n\nKeep approved attack motion from attachment3 with the corrected IDLE anatomy. Anatomical RIGHT hand = SCREENLEFT sword hand throughout, anatomicalLEFT hand = SCREENRIGHT scabbard hand throughout. Right holds ONE slim long STRAIGHTsilver katana, left holds black scabbard atwaist. Never switch roles. Both arms are complete connected anatomy, no cutout seams. Natural elbows, neutral firm wrist and unchanging grip, no independent wrist spin/flip. Sword moves with forearm and shoulder. Shorter/longer limb lengths cannot change through animation: use exact IDLE lengths. Proper elbow flexion then near-extension, never reverse elbow or hyperextension.\n\n16phase rowmajor timeline:\nF0 ready pose copied from IDLE0: sword mostly sheathed, bothhands atwaist.\nF1 same silhouette slight weightload.\nF2 slight torso windup, hand beginsdraw.\nF3-4 draw clear and lower blade diagonally down SCREENLEFT, right elbow smoothly opening.\nF5 lowleft sweep begins, wine-red trailing ribbon BELOW blade.\nF6 arm almost extended, blade pointing left horizontal, torso follows subtly. Big black-red crescent BELOWblade.\nF7 shoulder raises near-straight arm20degrees up-left, no wrist rotation, trailbelow.\nF8 shoulder raises near-straight arm35degrees up-left, strongcrimson crescentbelow.\nF9 slight followthrough40degrees up-left; elbow remains natural nearstraight; trailfadesbelow.\nF10 hold near-straight arm/shoulder high, noFX.\nF11 shoulder lowers arm toward left horizontal, nearstraight natural elbow, noFX.\nF12 arm lowers then starts folding naturally towardscabbard, noFX.\nF13 returning towardscabbardmouth atwaist, noFX.\nF14-15 same ready pose AND BODYSHAPE as IDLE0, noFX.\nHair/cape/coattails have subtle delayed sway from this small bodymotion but do not become thicker/bigger; head retains its exact idle width/height in everypose. No enlarged head during attack. Black-red/oxblood crescent with saturatedcrimson edge onlyF5-9 belowblade, not aroundhead or aboveblade. Keep enough motion to match attachment3; fix anatomy/proportion drift strictly to attachment1/2.",
+      "referenced_image_paths": [
+        "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+        "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-proportions-v11/front-idle-reference.png",
+        "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png"
+      ],
+      "transparent_background": true,
+      "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-8c40fb01-2a02-4c21-959d-288999552f60.png",
+      "raw_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/proportions-v11/front-attack-source.png",
+      "status": "selected and applied after strict anatomical and native playback validation",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode_channels": "RGBA",
+      "sha256": "9c44a3b771e3d7198394dc46b8888da1a17fa2269906308b3d796eaec86b92c1",
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    "side": [
+      {
+        "mode": "built-in image_gen edit",
+        "prompt": "Precise anatomy consistency edit, not a redesign. IMAGE1 is the SIDE ATTACK sheet to fix. IMAGE2 contains the EXACT CURRENT SIDE IDLE model in its neutral first/last poses, enlarged only to show detail. IMAGE3 is the actual IDLE sheet for exact native cell proportions and scale. The user rejects IMAGE1 because its head, chest and arms grow wider when switching from idle. Correct ALL16attackposes to the SAME SKULL, FACE, BODY AND LIMB PROPORTIONS AS IMAGE2/3. The IDLE model is absolute anatomical ground truth. Do not use a new design or average the two.\nReturn the SAME4x4transparent sprite grid,16completefull-body attackcels,row-major0..15, same smallsprite occupancy andclearcellguttersasactual input1280sheet. Referencecell320: bodycrownabouty130, solesat288, standingheight158-160, upper55px skullsilhouettewidth94. Match those proportions ifcanvaschangesresolution. Keep allfigures footpivot centeredx160/solesy288relativecell. Do NOT enlarge characters tofillthecells. Preserve front-of-head,chin,nose,eye andneck distances exactlylikeIdle; sideview issame left-facing3/4angleasIdle, notmorefrontal. The attackhead iscurrently7-9%too broad/round; redrawitswidth/facejaw toIdlewithoutshrinkingthewholebody orlengtheningthelimbs. Chest/shoulders shouldNOTbroaden, legs/waistmatchIdle ratherthanbecomingstockier. Match near/farshoulders, necklength, upperarms/forearms, handsize, belt height, thigh/bootlength and bootspacing. Same hairvolume andclearivory/black/red costume shapes. Naturalposeperspectiveonly; no random anatomy drift.\nNeutralattackframes0,1,14,15 must reproduce the actualIdle ready model, including headshape/face, hairoutline, torso, legs, handpositions and partiallydrawn straightkatana/scabbard. Intermediateframes keepthisSAMEcharacter moving, notdifferentfatthinsprites. Keepapproved16Fmotion: 0..2ready;3..5drawblade downleft/out;6horizontalleft;7..9raiseextendedarm atshoulder slightlyup-left;10..11returnfromshoulder;12lowerblade;13resheath;14..15ready. Sword armnearlyextended6..11 withsoftnaturalelbow, NEVER inward/reverseelbowbend, no independentwristturn. AnatomicalRIGHThandALWAYSholdssword, LEFTstaysonscabbard; nohandednessswap, no extra/detachedhands. Straightlongsilverkatana withsame approvedlengthasinput, notcurvedornewdagger. Small coordinatedtorsolean withhair/coatlag, feetplanted; no head/chest shapechange tosimulate movement. Completeconnectedopaque sleeves/elbows, no bodypartcutouts/gaps/seams.\nPreserve current darkblack-red/crimsoncrescentFX5..10 that trailsBELOWtheupwardsweepingblade; strong6..8, fades9..10, none0..4/11..15. Blade/effect mustfitinsideeachcell withcleartransparentpadding, no clippedtip/tail orneighborcellfragments. KeepcleanSDdarkoutline/celcolors exactlyIdle, avoidmoreglossorsoftshading. Truezeroalpha outsideactualsilhouettes, no strayhair/boots/redspecks/backgroundhaze, no floor/shadow/text/labels. The goal is an idle→attack→idle transition withno visible inflation ofheadorbody.",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+          ".build/whitehair-katana-proportions-v11/side-idle-reference.png",
+          "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png"
+        ],
+        "generated_file": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-86844a1d-3100-4b4f-aac7-487abfd9cb4c.png",
+        "output": "game/asset/character/player/icon/source/whitehair/katana/proportions-v11/side-attack-source.png",
+        "selected": false,
+        "preserved_output": "game/asset/character/player/icon/source/whitehair/katana/proportions-v11/side-attack-first-draft.png",
+        "reason": "Side boots/chest remained too wide against canonical Idle."
+      },
+      {
+        "mode": "built-in image_gen edit",
+        "iteration": 2,
+        "prompt": "Animate EXACTLY the SIDE IDLE model in IMAGE1/IMAGE2 into a16-frame attack. This is strict model consistency, not a redesign. IMAGE1 is the actual production idle spritesheet and the ONLY anatomical source of truth. IMAGE2 is its enlarged neutral model, same drawing. IMAGE3 gives only the required sword-motion trajectory and black-red FX; its body proportions are WRONG and must NOT be copied. IMAGE4 shows the mismatch for diagnosis: first and last figures are correct IDLE, other figures are the rejected attack with wide boots/chest and bigger head.\nCritical correction compared with rejectedIMAGE3: use IDLE's slender/small boots and calves, narrower chest and shoulders, SAME waist/hip/leg length, SAME head/faceandcamera angle. Do not broaden orinflate ANYbodypart forattack. At native320cell/160bodyheight: canonical bootbottom span is55pixels fromx133to188, NOT60pixels; bothindividualbootsslimasIdle, sameforwardtoelengthanddistancebetweenfeet, solesat288. Canonical skullupperbandwidth82pixels, NOT85or91. Foreheadfrontoutlinearoundx122, notx118. Keep canonicaleye/chin heights, same21px exposedcheekwidth(sideface), samehairvolume; no broaderface, no fullerchest. ExactIdle model duplicated inattack0/1/14/15 and maintainedthroughoutaction; do not add bodybuilding/bulk/largeboots. The user says idleandattack looklike differentpeople: this MUSTlooklikeone model moving.\nMatch IDLE color, sharpness, mutedwhite/lavenderhair, ivory/black-redcoat, thinbelts, silverbuckles, redtassel. Detailed brown boots retain silverstar andslimanklesexactlylikeIdle, notbroadchunkyloafers. Keep sheathangle andhipplacementinneutral. Limbconnectionsnaturalshoulder/elbow/wrist; nostretchingorjointcutouts.\nOutput transparentPNG4column x4row exact16cels,rowmajor, 1280x1280-style proportions: eachcell320, crownabout130,solebaseline288,standingbodyheight158-160,bodycenter160. Keep actualsmallgameartoccupancy~50%cellheight. DoNOTmagnify orfillcells, don'tmakethemthickertoimprovereadability. Allspritesfixedsameheightandmodel. AlphaZERO background/no grayhaze/no floor/shadow/noletters/grid/nofragmentsofhairboots fromneighborframe.\nMotionretainIMAGE3: LEFT-FACING3/4side fixedview, RIGHT hand holds straightlongsilverkatana throughout, LEFTholdsblackscabbardatleftwaist throughout, neverhandednessswap. f0..2readywaist;3..4drawsworddown/out;5 low-leftslashstarts;6 swordhorizontalleft;7..9near-straightelbow staysatnaturalextension whileSHOULDERraisesswordarm slightlyup-left;10..11shoulderreturnnearhorizontal;12lowerblade;13returnsheath;14..15exactIdlepose. Wrist/grip/bladeanglefixed(noindependentwristspin), noinverseelbow/hyperextension. Smalltorsoleanandhair/coatlag,feetplantedsamecontacts. Bodydoesnotinflateorshrink. Preserve straightkatana length, no dagger orcurves. Darkoxblood/crimsoncrescentBELOWrisingblade5..10, strongest6..8,fades9..10,none0..4/11..15. FXinsideowncellandawayfromface/joints. Copy ONLYmotionfromIMAGE3, notitswrong anatomy. Reillustrate all16ascomplete connected figures of the EXACT IDLEmodel.",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+          ".build/whitehair-katana-proportions-v11/side-idle-reference.png",
+          "game/asset/character/player/icon/source/whitehair/katana/proportions-v11/side-attack-first-draft.png",
+          ".build/whitehair-katana-proportions-v11/side-v11-neutral-and6-vs-idle.png"
+        ],
+        "generated_file": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-bc25ca50-6efa-4eb2-a5c9-8686286be1cc.png",
+        "output": "game/asset/character/player/icon/source/whitehair/katana/proportions-v11/side-attack-source.png",
+        "selected": false,
+        "preserved_output": "game/asset/character/player/icon/source/whitehair/katana/proportions-v11/side-attack-second-draft.png",
+        "reason": "Boots improved but neutral skull width remained88-89px vs canonical82px."
+      },
+      {
+        "mode": "built-in image_gen edit",
+        "iteration": 3,
+        "prompt": "EDIT IMAGE1 with a SMALL PRECISE PROPORTION FIX ONLY. Image2 is the correct IDLE head/face and boot reference. Do not regenerate the action or restyle the character.\nIn every one of the16cels in image1, the cranium/fringe/face is about8% TOO WIDE. Redraw the HEAD ONLY with its horizontal cranial width reduced by8%, keeping exactly the same crown height, chin height, eye height, neck attachment and pose. Match Image2's slimmer head silhouette, facial features and eye size exactly. Keep the neck center fixed; take approximately4%ofcurrentheadwidth off eachside. Foreheadfront edge moves inward towardneck (screenright) about4nativepixels; backofskull moves inward (screenleft) about2-3nativepixels. Do not move the wholehead or rotate it. Do not shortenheadheight, shrinkthewholefigure, changebodyheight orlengthenlimbs. Canonical at160pxbodyheight: the upper35px skullband is82pxwide, NOT88/89px. This is an explicit NARROWERhead correction, not enlargedchibification. Long hanginghairlocks behindthebody may retain their sway, but topcranium/frontbangvolume andfacialwidth mustbe the same asIdleImage2 in allframes, includingattack6..11.\nSecond tiny correction: narroweachboot/toeoutline slightly(~3%), matchingImage2's slenderboots andtotal55pxbootspan ratherthan58px, keepingsoleheightandfootcontacts anchored. Retainsilverstar, bootstraps andankles; don'tmovelegs orchangebelt/hipheight.\nPreserve ALLBODYpixels belowneck exceptthatminortoeoutlinecorrection as closelyaspossible: chest,shoulders,armjointconnections,sleeves,gloves,hands,waist,legs,ivorycoattails,redlining,katana,blackscabbardandredtassel. Same16specificposes, right-swordhand/left-sheathhand, fixedwrist, connectednear-straightelbow6..11, existing upwardshoulderswing andblack-redtrail. Sword/FXanglesandtiming unchanged. NO new stance, no broadeningtorso, nojointcutouts/nohandflip. Keep exact4x4layout andsmall50%cellbodyoccupancy, footbaseline/scaleunchanged. Genuine transparentbackgroundalpha0, no labels/grid/floorshadow/haze/straypixels. Allblade/FXinsidecells. The ONLY meaningful visualdifference shouldbe the precisely slimmerheadmatchingIdle andslightlyslimmerboots, everythingelse stays the same.",
+        "transparent_background": true,
+        "referenced_image_paths": [
+          "game/asset/character/player/icon/source/whitehair/katana/proportions-v11/side-attack-second-draft.png",
+          ".build/whitehair-katana-proportions-v11/side-idle-reference.png"
+        ],
+        "generated_file": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-d5a55dc0-d852-45ea-85da-7af77a1c081d.png",
+        "output": "game/asset/character/player/icon/source/whitehair/katana/proportions-v11/side-attack-source.png",
+        "selected": true
+      }
+    ]
+  },
+  "backup": ".build/backups/whitehair-katana-before-proportions-v11-20261117T015510Z",
+  "scope": "Two attack sprite sheets only; current Idle, portrait, game code, other characters and previous revisions preserved.",
+  "required_visual_checks": [
+    "Equal canonical skull/face proportions rather than just equal total body height.",
+    "Matching shoulders, torso length, belt/hip height, leg length and boot span.",
+    "Same right sword hand, left sheath hand, extended-elbow shoulder-led low-to-high slash and dark crimson trail.",
+    "Idle-to-attack-to-idle playback with no visible change in body build."
+  ],
+  "authoring_tool": "tools/package_whitehair_katana_proportions.mjs",
+  "registration": "metadata/character/whitehair-katana-proportions-v11-registration.json",
+  "runtime_registered": true,
+  "runtime_profile": "9-whitehair",
+  "validation": "metadata/character/whitehair-katana-proportions-v11-validation.json",
+  "anatomical_review": {
+    "reviewer": "/root/katana_anatomy_review",
+    "reviewed_at_utc": "2026-11-17T02:12:59.953420+00:00",
+    "scope": "Independent read-only proportions review of generated whole-cell candidates before production application. No endpoint substitutions or creative image edits were made by this reviewer.",
+    "passed": true,
+    "criterion": "Match the current immutable idle body model, including skull/face, shoulder/waist/hip levels and foot size. Equal total height alone is insufficient.",
+    "method": "Native320px cells; all compared at uniform2x. Upper-skull alpha silhouette measured in y130..164, excluding long lower hair. Neutral boot span measured at y276..287. Manual anatomical landmarks inspected in enlarged pixel grids, approximate +/-2px. Facial skin color/connected-component measurements are diagnostic only because bangs/eyes can split skin components.",
+    "views": {
+      "front": {
+        "source": "game/asset/character/player/icon/source/whitehair/katana/proportions-v11/front-attack-source.png",
+        "source_sha256": "9c44a3b771e3d7198394dc46b8888da1a17fa2269906308b3d796eaec86b92c1",
+        "candidate": ".build/whitehair-katana-proportions-v11/candidates/front/attack-sheet.png",
+        "candidate_sha256": "1b2cc8a15179ad0144515d820e1bbbc020e6badea3c4ebdd9aa14ccbfe74b703",
+        "idle_reference_sheet": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+        "idle_sha256": "98c3eb28a670aada65306ddb29a44a163a792adc29adf75eaa8d1b3602270d2c",
+        "neutral_frames_reviewed": [
+          0,
+          1,
+          2,
+          14,
+          15
+        ],
+        "active_frames_for_proportion_review": [
+          6
+        ],
+        "manual_idle_targets": {
+          "crown_y": 130,
+          "chin_y_approx": 195,
+          "eye_line_y_approx": 177,
+          "outer_upperarm_span_x_approx": [
+            129,
+            194
+          ],
+          "belt_center_y_approx": 226,
+          "hip_to_leg_y_approx": 251,
+          "trouser_hip_span_x_approx": [
+            143,
+            176
+          ]
+        },
+        "passed": true,
+        "upper_skull_target_px": 75,
+        "upper_skull_neutral_px": [
+          75,
+          75,
+          76,
+          76,
+          75
+        ],
+        "upper_skull_frame6_px": 77,
+        "boot_span_target_px": 53,
+        "boot_span_neutral_px": [
+          53,
+          54,
+          53,
+          53,
+          53
+        ],
+        "findings": [
+          "The prior enlarged head/broad torso/shortened-leg appearance is corrected. Neutral skull width is within1px of idle; active frame6 is2px wider.",
+          "Neutral boot span agrees within1px. Face/chin and waist/leg placement visually return near idle rather than the lower v10attack positions.",
+          "Generated neutral frames were examined directly before any idle endpoint selection."
+        ],
+        "evidence": [
+          "front-v11-neutral-and6-vs-idle.png",
+          "v11-candidate-neutral-measurements.json"
+        ],
+        "production_sheet_sha256": "1b2cc8a15179ad0144515d820e1bbbc020e6badea3c4ebdd9aa14ccbfe74b703"
+      },
+      "side": {
+        "source": "game/asset/character/player/icon/source/whitehair/katana/proportions-v11/side-attack-source.png",
+        "source_sha256": "1dc3959d3861b365dc5e795815533fd1e2e22f51d116600b29d336ea319a2643",
+        "candidate": ".build/whitehair-katana-proportions-v11/candidates/side/attack-sheet.png",
+        "candidate_sha256": "a91865f15ad684c2fc2dad875d98d04e833e0c9f7537db4d7cf4730f0f4423d0",
+        "idle_reference_sheet": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+        "idle_sha256": "aa7d584f815d0d759db0d31efce5b419ba66bb7c4ce0bc194ded86bbf845f85f",
+        "neutral_frames_reviewed": [
+          0,
+          1,
+          2,
+          14,
+          15
+        ],
+        "active_frames_for_proportion_review": [
+          6
+        ],
+        "manual_idle_targets": {
+          "crown_y": 130,
+          "chin_y_approx": 196,
+          "eye_line_y_approx": 179,
+          "outer_upperarm_span_x_approx": [
+            122,
+            194
+          ],
+          "belt_center_y_approx": 226,
+          "hip_to_leg_y_approx": 249,
+          "trouser_hip_span_x_approx": [
+            139,
+            174
+          ]
+        },
+        "passed": true,
+        "selected_candidate": "third side generation",
+        "upper_skull_target_px": 82,
+        "upper_skull_neutral_px": [
+          82,
+          80,
+          80,
+          80,
+          81
+        ],
+        "upper_skull_frame6_px": 79,
+        "boot_span_target_px": 55,
+        "boot_span_neutral_px": [
+          56,
+          54,
+          54,
+          55,
+          55
+        ],
+        "findings": [
+          "Third side generation corrects the second candidate skull inflation. Neutral skull widths are within2px of idle and neutral boot spans within1px.",
+          "Manual4x grid: chin/neck differs about1px, shoulder height1-2px, belt1px, hip/leg-start1-2px. Torso length no longer visibly shortens.",
+          "Frame6 fixed upper-band width79px is3px narrower; the active head and torso do not visibly inflate.",
+          "Frame6 raw alpha boot band63px was crimson FX contamination. Excluding crimson pixels gives bbox[132,276,188,288], width56px; it is not an oversized foot."
+        ],
+        "evidence": [
+          "side-v11-third-neutral-and6-vs-idle.png",
+          "side-v11-third-measurement-grid.png",
+          "v11-side-third-neutral-measurements.json"
+        ],
+        "production_sheet_sha256": "a91865f15ad684c2fc2dad875d98d04e833e0c9f7537db4d7cf4730f0f4423d0"
+      }
+    },
+    "final_actual_delivery_reviewed": true,
+    "art_changes_by_reviewer": false,
+    "known_remaining_difference": "New generated art has small face/hair detail and edge-softness differences. Passing here means consistent proportions, not identical artwork pixels.",
+    "final_delivery": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-proportions-v11-state-switch.png",
+      "sha256": "65d592a9231a13f0c2f8ddc6053a47f2a5d47fdf6728b7251807e722b8bf4de9",
+      "decoded_frame_count": 19,
+      "passed": true,
+      "scope": "Proportions and continuity of the actual same-position idle-to-attack-to-idle output.",
+      "findings": [
+        "Final delivered APNG bytes match the decoded production preview; actual sheets match the approved front/side candidate hashes.",
+        "Compared actual idle0, attack0, attack15 and returning idle0 at the same pivot. The large head/body inflation from v10 is absent; neck/shoulder/waist/hip relationships stay near idle.",
+        "Decoded final motions GIF and inspected all16 attack frames in each direction. Connected arms and correct hand roles remain; no new joint gaps or cell clipping were seen.",
+        "Small repainted face/hair details and softer attack edges remain. The side peak swing reads slightly lower than v9/v10; it is not an independent wrist flip or reversed elbow."
+      ]
+    },
+    "final_motion_gif": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-proportions-v11-motions.gif",
+      "sha256": "5ae8f5af5a6fdc857009f15c18dd4ad5b861e907eaeb5331cef0f45b6527a88a",
+      "decoded_frame_count": 16,
+      "attack_poses_visually_checked": 32
+    },
+    "final_evidence": [
+      "actual-final-state-switch-neutral.png",
+      "front-actual-final-gif-all16.png",
+      "side-actual-final-gif-all16.png"
+    ],
+    "main_metadata_version": 11
+  },
+  "state_switch_preview": "game/asset/character/player/icon/preview/whitehair-katana-proportions-v11-state-switch.png",
+  "production_sha256": {
+    "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png": "1b2cc8a15179ad0144515d820e1bbbc020e6badea3c4ebdd9aa14ccbfe74b703",
+    "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png": "a91865f15ad684c2fc2dad875d98d04e833e0c9f7537db4d7cf4730f0f4423d0"
+  },
+  "preserved_idle_sha256": {
+    "front": "98c3eb28a670aada65306ddb29a44a163a792adc29adf75eaa8d1b3602270d2c",
+    "side": "aa7d584f815d0d759db0d31efce5b419ba66bb7c4ce0bc194ded86bbf845f85f"
+  },
+  "remaining_art_variation": "Small face/hair detail and attack-edge softness variation remains. Side follow-through peak is slightly lower than v10; the low-to-high slash and continuous arm anatomy are retained. Proportion consistency and actual state-switch playback passed."
+}

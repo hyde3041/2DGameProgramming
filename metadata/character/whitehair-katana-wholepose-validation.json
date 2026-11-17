@@ -1,0 +1,640 @@
+{
+  "passed": true,
+  "source_registration": "metadata/character/attack/whitehair-katana-wholepose-registration.json",
+  "whole_cell_validation": {
+    "front": {
+      "unique_frames": 16,
+      "frame_count": 16,
+      "whole_cells_used": 16,
+      "common_uniform_scale": 0.7032967032967034,
+      "body_reference_height": 227.5,
+      "min_observed_body_height": 227,
+      "max_observed_body_height": 229,
+      "boot_pivot": [
+        160,
+        288
+      ],
+      "old_masks_or_body_overlays": false,
+      "source_alpha_cleaning": false,
+      "idle_endpoint_override": false,
+      "idle_endpoint_equality_guaranteed": false,
+      "meaningful_source_pixels_clipped": 0
+    },
+    "side": {
+      "unique_frames": 16,
+      "frame_count": 16,
+      "whole_cells_used": 16,
+      "common_uniform_scale": 0.7079646017699115,
+      "body_reference_height": 226,
+      "min_observed_body_height": 225,
+      "max_observed_body_height": 226,
+      "boot_pivot": [
+        160,
+        288
+      ],
+      "old_masks_or_body_overlays": false,
+      "source_alpha_cleaning": false,
+      "idle_endpoint_override": false,
+      "idle_endpoint_equality_guaranteed": false,
+      "meaningful_source_pixels_clipped": 0
+    }
+  },
+  "actual_gif_review": {
+    "source_gif": "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-wholepose-attack\\candidate-wholepose.gif",
+    "source_gif_sha256": "114d2de8bf9851032d415fb63de4ff5a482e0601f957746b28645b3bc41b0ed2",
+    "decoded_size": [
+      812,
+      400
+    ],
+    "decoded_frame_count": 16,
+    "frames_checked": {
+      "front": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "side": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "inspection_method": "Decoded actual candidate GIF via Pillow ImageSequence, inspected two all-16-frame arm atlases, and compared opaque generated-source arm-interior points through the recorded uniform transform against exported RGBA frames. No authoring-reference frames used as playback evidence.",
+    "actual_visual_findings": [
+      {
+        "direction": "front",
+        "frames": [
+          6,
+          11
+        ],
+        "finding": "Former bright notch through inner sleeve is absent in decoded GIF; upper arm, elbow and forearm remain painted continuously."
+      },
+      {
+        "direction": "side",
+        "frames": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "finding": "Former transparent wedge below elbow is absent in decoded GIF; sleeve remains visibly opaque through the bend."
+      },
+      {
+        "direction": "side",
+        "frames": [
+          4,
+          12
+        ],
+        "finding": "Lowered bent-arm poses remain connected at glove/cuff and elbow; no old semi-transparent cutout rim is visible."
+      },
+      {
+        "direction": "both",
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "finding": "No visibly detached elbow segment or internal background slit observed. Right hand retains sword, left hand retains scabbard. Low-to-high main swing remains readable."
+      }
+    ],
+    "source_to_output_opacity_checks": [
+      {
+        "direction": "front",
+        "frame": 0,
+        "generated_opaque_dark_arm_region_samples": 1060,
+        "minimum_output_alpha_for_samples": 241,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 1,
+        "generated_opaque_dark_arm_region_samples": 1052,
+        "minimum_output_alpha_for_samples": 241,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 2,
+        "generated_opaque_dark_arm_region_samples": 1061,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 3,
+        "generated_opaque_dark_arm_region_samples": 1029,
+        "minimum_output_alpha_for_samples": 241,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 4,
+        "generated_opaque_dark_arm_region_samples": 1020,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 5,
+        "generated_opaque_dark_arm_region_samples": 1071,
+        "minimum_output_alpha_for_samples": 238,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 6,
+        "generated_opaque_dark_arm_region_samples": 1078,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 7,
+        "generated_opaque_dark_arm_region_samples": 1079,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 8,
+        "generated_opaque_dark_arm_region_samples": 1099,
+        "minimum_output_alpha_for_samples": 239,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 9,
+        "generated_opaque_dark_arm_region_samples": 1085,
+        "minimum_output_alpha_for_samples": 241,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 10,
+        "generated_opaque_dark_arm_region_samples": 1097,
+        "minimum_output_alpha_for_samples": 239,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 11,
+        "generated_opaque_dark_arm_region_samples": 1074,
+        "minimum_output_alpha_for_samples": 239,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 12,
+        "generated_opaque_dark_arm_region_samples": 1103,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 13,
+        "generated_opaque_dark_arm_region_samples": 1055,
+        "minimum_output_alpha_for_samples": 238,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 14,
+        "generated_opaque_dark_arm_region_samples": 1052,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "front",
+        "frame": 15,
+        "generated_opaque_dark_arm_region_samples": 1018,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 0,
+        "generated_opaque_dark_arm_region_samples": 640,
+        "minimum_output_alpha_for_samples": 237,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 1,
+        "generated_opaque_dark_arm_region_samples": 634,
+        "minimum_output_alpha_for_samples": 239,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 2,
+        "generated_opaque_dark_arm_region_samples": 712,
+        "minimum_output_alpha_for_samples": 239,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 3,
+        "generated_opaque_dark_arm_region_samples": 693,
+        "minimum_output_alpha_for_samples": 237,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 4,
+        "generated_opaque_dark_arm_region_samples": 657,
+        "minimum_output_alpha_for_samples": 239,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 5,
+        "generated_opaque_dark_arm_region_samples": 718,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 6,
+        "generated_opaque_dark_arm_region_samples": 680,
+        "minimum_output_alpha_for_samples": 242,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 7,
+        "generated_opaque_dark_arm_region_samples": 650,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 8,
+        "generated_opaque_dark_arm_region_samples": 688,
+        "minimum_output_alpha_for_samples": 241,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 9,
+        "generated_opaque_dark_arm_region_samples": 661,
+        "minimum_output_alpha_for_samples": 244,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 10,
+        "generated_opaque_dark_arm_region_samples": 644,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 11,
+        "generated_opaque_dark_arm_region_samples": 712,
+        "minimum_output_alpha_for_samples": 241,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 12,
+        "generated_opaque_dark_arm_region_samples": 650,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 13,
+        "generated_opaque_dark_arm_region_samples": 684,
+        "minimum_output_alpha_for_samples": 241,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 14,
+        "generated_opaque_dark_arm_region_samples": 666,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      },
+      {
+        "direction": "side",
+        "frame": 15,
+        "generated_opaque_dark_arm_region_samples": 644,
+        "minimum_output_alpha_for_samples": 240,
+        "unexpected_transparency_samples": []
+      }
+    ],
+    "remaining_limitations": [
+      "Review is specific to the delivered GIF hash below and assesses visible arm continuity, swing and source-to-output preservation."
+    ],
+    "qa_atlases": [
+      ".build/whitehair-katana-gap-audit/front-wholepose-actual-gif-all16.png",
+      ".build/whitehair-katana-gap-audit/side-wholepose-actual-gif-all16.png"
+    ],
+    "final_delivery": {
+      "gif": "game/asset/character/player/icon/preview/whitehair-katana-wholepose-v6.gif",
+      "sha256": "97bff20107a63f57b7a0761849a6cd2d637c7e0328b7f267719a25ae3cdf3be7",
+      "decoded_frame_count": 16,
+      "decoded_size": [
+        1188,
+        591
+      ],
+      "passed": true,
+      "frames_visually_checked": {
+        "front": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "side": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "actual_delivery_findings": [
+        "Decoded FINAL GIF independently into all-16-frame arm atlases for each view; inspected the resulting images, not authoring references.",
+        "Front frames06 and11 retain continuous inner sleeves; no previous bright hair wedge appears through the arm.",
+        "Side frames07–10 retain an opaque connected elbow/upper sleeve; no previous transparent wedge appears.",
+        "Side lowered poses04 and12 remain connected at cuff and elbow.",
+        "The full low-to-high swing and hand roles remain the same as the reviewed wholepose candidate; no new visible elbow separation observed."
+      ],
+      "final_main_sheet_frames_equal_reviewed_candidate": {
+        "front": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "side": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "qa_atlases": [
+        ".build/whitehair-katana-gap-audit/front-wholepose-FINAL-gif-all16.png",
+        ".build/whitehair-katana-gap-audit/side-wholepose-FINAL-gif-all16.png"
+      ]
+    }
+  },
+  "preview_package": {
+    "gif": "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\game\\asset\\character\\player\\icon\\preview\\whitehair-katana-wholepose-v6.gif",
+    "apng": "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\game\\asset\\character\\player\\icon\\preview\\whitehair-katana-wholepose-v6.png",
+    "crop": [
+      33,
+      100,
+      229,
+      297
+    ],
+    "integer_scale": 3,
+    "frame_count": 16,
+    "fps": 16,
+    "playback_source": "final production sheets only",
+    "source_sheet_sha256": {
+      "front": "049508953bcbd57af208a38d61bf4923777fff73ec9ec7421247678f50c87c54",
+      "side": "d6ef636f823e3725d9f3f32fef48889dd7cca1e21abd9b8a2e08753110f07675"
+    },
+    "preview_frames_verified": true,
+    "source_frame_sha256": {
+      "front": [
+        "4dce9943c39a57a45cd62d79c6d8d9197377b033caf160a6ae463b87f395db41",
+        "f472214f5ffe97e0cbadbf5157b7cfd917acdd449a5922a164155e9a1bc8059b",
+        "701d05caad52106bb3df868a9d610333569a5e8d61f411601f145bfa4a15dece",
+        "e2e4db347f2180218f26e76fd2448b64547e55c1b6199e8067fee751a900eea5",
+        "8bb401fedeb85a701eccd5052cee677f5ac45b5d1ceb81c5aedf9542ef077057",
+        "773c5e5a615a3c4c19a41bf79900567d1a2f3aa7f8e21eacf6775c143a908320",
+        "c02e25fe5d19f63e4cccb7181d1dbda42464dd1b87e728353bdbdbb0e12b3599",
+        "3ce7c0bfac9640141698f0bb70dfb6a44d9578d2fac02494866ca63deb203efb",
+        "b04dd98b75c19d275fc8b3b68a7aaa3f35f9a564056769599e97dbb4876f4ae9",
+        "23edcd4e513221c69d0d9a17ebfb09163e5c5152eefca9eb39a52a5500676a79",
+        "b2786f5f276c29cf920ac5ccf62097feac004a9359e1d661b57de6ff14602396",
+        "ee3fefe3d0b866a48419fdc9fa7cb6683a7751cfa961f5c49e870531ec0597b9",
+        "3ba9a4363082ea8af399b62d2f583a6954d24b67605ed80b46ff18d70f127967",
+        "d1a5ad1680c53d5ba2d4f5e5676169bb6ff2a533f156094543b3abf50c2a43c0",
+        "f403546e84a0825661e336c2e4295a99695db4fbb3b97bdeb25958f007c846ec",
+        "4d7c17963a3ef639d55f7957b2f6ea0e3033b2d79d1bb9f8702cb78a3d571df0"
+      ],
+      "side": [
+        "856d5760965f6e06093849e5b92763f581247e7f3ae4d40305259c49da81f9b3",
+        "bbd1255ab688ad6c701fa870b214f81ad889321f5dcf28a1f739413d4d486086",
+        "6f8cfabd2c0cafc994895c8f3a6489eac252f461590d4c18bde6a0c774139239",
+        "d8b6def51db95de3ede3e604077b0680af5f8093418b57ef83c07a5be2024784",
+        "b147c3f36fe61058cecc1e960ca77263109092c457df35dca13747abca7c0e8c",
+        "50475f1539d05b7e5a94245949312341609f406738fb3a7aea42be0c949180be",
+        "1ddc78335bbeb22b9ce9f8dbf6643d56f28deccfea691316a330ffe09b07ce27",
+        "7219320fc2039fdb1df3b305e5c3d62f6313efbb7b0fb7a38f743b470df7d0f3",
+        "47581634398afe9899b6b050f82b00d611377eface7958c818124969507a3920",
+        "f02b0e40a7c717a77576b9a96b79efbcd22e9e7a072de2fafc04f141654db3bf",
+        "27c1c0830555c4520687da6ca3c33bc9786364b43b879e5c92e8d9fc3f371f17",
+        "dd6d74110d55a4bc5b1d2619bcfe466c21f36b437361bae273b4ff97d0c7334d",
+        "cced44f1b23783c57fd86c54f95a9dcd0df5b8488d72d9e6f8aee0440b59d66b",
+        "620ba50fe55154896f7dfe0af256cc139762c42f93f51be74858183922b9f0e2",
+        "3bbd5555806e146d81c9620d3620b02335495e8b6df708d7abd3b98791b753b9",
+        "0594a7f8a5dd0586691482ff6ad26995bac65f5767491c8d738b05e7e1ef10ed"
+      ]
+    }
+  },
+  "native_validation": {
+    "passed": true,
+    "checks": [
+      "Pico2D loads all four final1280x1280 sheets; hashes match the packed previews",
+      "native row-major clipping selects every frame0..15 in the correct order",
+      "whole authored attack cels retained, including frame0 and15; no idle-frame override",
+      "native full four-panel view returns exactly after one second",
+      "production Player.motion_frame yields2s/1s/0.5s attacks at attackSpeed0.5/1/2; verified exact samples and real-time native playback"
+    ],
+    "native_unique_frames": {
+      "idle-front": 16,
+      "idle-side": 16,
+      "attack-front": 16,
+      "attack-side": 16
+    },
+    "attack_speed_checks": [
+      {
+        "attackSpeed": 0.5,
+        "expected_cycle_seconds": 2,
+        "exact_frame_selection": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "real_time_seconds": 2.0517879000108223,
+        "native_presented_frames": 161,
+        "all16_frames_seen": true,
+        "wrapped_to_start": true
+      },
+      {
+        "attackSpeed": 1,
+        "expected_cycle_seconds": 1,
+        "exact_frame_selection": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "real_time_seconds": 1.0533760999969672,
+        "native_presented_frames": 83,
+        "all16_frames_seen": true,
+        "wrapped_to_start": true
+      },
+      {
+        "attackSpeed": 2,
+        "expected_cycle_seconds": 0.5,
+        "exact_frame_selection": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "real_time_seconds": 0.5567594000021927,
+        "native_presented_frames": 41,
+        "all16_frames_seen": true,
+        "wrapped_to_start": true
+      }
+    ],
+    "captures": [
+      "native-frame-00.png",
+      "native-frame-06.png",
+      "native-frame-09.png",
+      "native-frame-10.png",
+      "native-frame-11.png",
+      "native-frame-12.png"
+    ],
+    "execution": "standalone actual Pico2D playback using production Player; no game roster or game code change"
+  },
+  "protected_files": {
+    "game/code/main.py": "79d58447df6e3e28151faa735c518cc8803d196b014d6fddaca632e4de693b94",
+    "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png": "ec0c63f0afd5cec2a12403988bd657f76656f0a271a266467b9c3d72edef40f7",
+    "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png": "2feb0c07d00765f1d0a77b078e97fed2bc4dedb2fcf2a03929c38358c43bae80"
+  }
+}

@@ -5960,11 +5960,11 @@
       "id": "16,2",
       "column": 16,
       "row": 2,
-      "type": "_",
+      "type": ".",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "tileType": 0,
+      "tileType": 1,
       "visual_elevation": 0.0,
       "perspective_scale": 0.91327434,
       "base_rect": [

@@ -1,0 +1,13 @@
+{
+  "id": "whitehair",
+  "status": "katana_straight_long_preview",
+  "runtime_applied": false,
+  "user_request": "칼을 조금만 더 길게, 칼도 직선으로",
+  "input": "game/asset/character/player/icon/source/whitehair/katana-before-straight-long.png",
+  "output": "game/asset/character/player/icon/preview/whitehair-katana-straight-long.png",
+  "generated_image": "exec-7a18b71a-3f44-4839-bdc0-91c71fdc07b1.png",
+  "mode": "built-in image_gen edit",
+  "prompt": "Use case: precise-object-edit. Edit ONLY the SWORD in BOTH views of the supplied exact character illustration. The user requests that the sword be a little longer AND STRAIGHT. Preserve these two exact figures: left is front view, right is three-quarter view facing screen LEFT. Do not replace them with previous designs. Make the sword blade and its black scabbard approximately 15 percent longer than in the input, a modest clearly visible increase. Extend the distal scabbard tip farther along the existing down-right direction. Keep the hilt length and thickness, silver guard, hand grips and wrist locations unchanged. The sword is still partially drawn by the SAME amount between the guard and scabbard mouth; extend its overall blade/scabbard length, not the gap between the hands. Make the long axis of the exposed silver blade and the matching black scabbard perfectly STRAIGHT and mutually aligned. Both long edges should be straight with a natural slight taper, no katana curve, banana curve, sag, kink or hooked tip. The exposed blade enters the scabbard mouth on the SAME straight centerline. Preserve the correct hand assignment, two hands only: anatomical right hand on the hilt, left hand on the scabbard near its mouth. Preserve the red knot and tassels attached at the scabbard mouth. Match the same lengthened straight sword design in both views, respecting their viewing angle. Keep sword thickness and fittings the same; do not make a giant weapon. Completely preserve the character pose, elbows, anatomy, face, white hair, red eyes, hair-lock silhouettes, clothing, all buttons/buckles/embroidery, dark pants, boots, ground contact, framing, background, and original clean color fills and crisp line work. Do not introduce mottled textures or random patchy shading. No extra swords, effects, arrows, labels or text.",
+  "visual_check": "Both scabbards visibly extended with straight edges. Front and screen-left three-quarter poses and grips visually retained.",
+  "note": "Preview only. Input attached by user is the authority for this edit. Existing idle sheets and game code are unchanged."
+}

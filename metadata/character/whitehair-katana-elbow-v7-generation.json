@@ -1,0 +1,130 @@
+{
+  "id": "whitehair-katana",
+  "version": 7,
+  "status": "complete",
+  "request": "Correct only the unnatural elbow bend while preserving the accepted upward draw slash.",
+  "mode": "built-in image_gen image edit",
+  "transparent_background": true,
+  "base_revision": "metadata/character/whitehair-katana-wholepose-generation.json",
+  "scope": "Sword-arm elbow anatomy; complete generated cels retained, no cutout articulation or old silhouette mask.",
+  "art": {
+    "front": {
+      "edit_target": "game/asset/character/player/icon/source/whitehair/katana/front/attack-wholepose-source-sheet.png",
+      "file": "game/asset/character/player/icon/source/whitehair/katana/front/attack-elbow-v7-source-sheet.png",
+      "generated_file": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-cb506473-017a-41f3-9e5d-0c40d194104f.png",
+      "prompt": "Edit the attached image as a production sprite-sheet correction, not a new animation. The attachment is the EDIT TARGET. Preserve the 4 by 4 layout of 16 complete full-body cels in exact row-major order, same character scale, stance, feet and cell centers, existing pose timing, hand centers and sword blade positions/angles in EVERY cel. Character: long white hair, red eyes, dark uniform with red piping, ivory cape and coat, brown gloves/boots, straight silver sword and black sheath with red tassel. Anatomical RIGHT hand holds the sword throughout, LEFT hand stays on the sheath. Preserve identity, expression, hair, costume, other arm, straight sword, sheath and colors. Task ONLY: correct unnatural elbow anatomy of the sword arm. Draw a connected human shoulder-to-upper-arm-to-elbow-to-forearm-to-wrist, balanced lengths, restrained sleeve volume, forearm tapering gradually into glove. Replace the swollen elbow ball and hard ninety-degree pipe corner with a smaller, naturally placed elbow and a soft outer contour. Do not use a round plug, ball joint, pink dot or skin-colored button at the elbow. Continuous charcoal sleeve material across elbow, a subtle cloth fold only, no seam that looks like a cut, no transparent crack inside the arm. Keep wrist aligned with forearm and sword grip, never twist/spin the wrist or flip hands. The original low-to-high upward draw slash trajectory must remain unchanged; no new swing. Keep all 16 full cels, no detached parts or patches. Transparent background, no colored fringe, no effects, no annotations, no text. Return the complete sprite sheet. View is FRONT facing viewer. Frame numbers here are zero-based 0..15, row-major. Pay special attention to f4/f5 (row2 col1/2) and f12/f13 (row4 col1/2): reduce abrupt elbow bulges/corners and thickness jumps, distributing the bend through the actual upper-arm and forearm geometry without moving the hand. f6 (row2 col3) and f11 (row3 col4) keep a slight natural bend instead of a rigid or backward-locked elbow. f7..10 already acceptable; leave those poses unchanged. Keep both feet exactly fixed; never rescale or rotate a limb as a rigid pasted piece.",
+      "sha256": "f2eea5e4afe6cf770534a00a0dc8f236c7cc01dfb170c974982ef4cf412d7d69"
+    },
+    "side": {
+      "edit_target": "game/asset/character/player/icon/source/whitehair/katana/side/attack-wholepose-source-sheet.png",
+      "file": "game/asset/character/player/icon/source/whitehair/katana/side/attack-elbow-v7-source-sheet.png",
+      "generated_file": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-37f5808b-9b98-4caa-a022-36111c4aa31e.png",
+      "prompt": "Edit the attached image as a production sprite-sheet correction, not a new animation. The attachment is the EDIT TARGET. Preserve the 4 by 4 layout of 16 complete full-body cels in exact row-major order, same character scale, stance, feet and cell centers, existing pose timing, hand centers and sword blade positions/angles in EVERY cel. Character: long white hair, red eyes, dark uniform with red piping, ivory cape and coat, brown gloves/boots, straight silver sword and black sheath with red tassel. Anatomical RIGHT hand holds the sword throughout, LEFT hand stays on the sheath. Preserve identity, expression, hair, costume, other arm, straight sword, sheath and colors. Task ONLY: correct unnatural elbow anatomy of the sword arm. Draw a connected human shoulder-to-upper-arm-to-elbow-to-forearm-to-wrist, balanced lengths, restrained sleeve volume, forearm tapering gradually into glove. Replace the swollen elbow ball and hard ninety-degree pipe corner with a smaller, naturally placed elbow and a soft outer contour. Do not use a round plug, ball joint, pink dot or skin-colored button at the elbow. Continuous charcoal sleeve material across elbow, a subtle cloth fold only, no seam that looks like a cut, no transparent crack inside the arm. Keep wrist aligned with forearm and sword grip, never twist/spin the wrist or flip hands. The original low-to-high upward draw slash trajectory must remain unchanged; no new swing. Keep all 16 full cels, no detached parts or patches. Transparent background, no colored fringe, no effects, no annotations, no text. Return the complete sprite sheet. View is THREE-QUARTER SIDE FACING SCREEN LEFT. Frame numbers zero-based 0..15, row-major. Strongest correction f0..5 (all row1 and row2 col1/2), f12..15 (all row4). Current sword-arm elbow is swollen and forms a sharp C-shaped pipe corner with a pink button. In folded poses place the elbow slightly lower and closer to the torso, between the same shoulder and wrist, producing a believable relaxed bend with balanced upper arm/forearm lengths. Especially f4 (row2 col1) and f12 (row4 col1): soften the sudden horizontal-upper-arm / vertical-forearm corner. Elbow shouldn't be a separate bead or disconnected hinge. f6 (row2 col3) and f11 (row3 col4): slight flexion, not a straight locked or backward bending arm. Keep f7..10 raised-sword positions unchanged. Sword hand grip centers and blade angles must remain where they are, LEFT sheath hand remains fixed. Keep all boots and body locations unchanged.",
+      "sha256": "167ce4f526bf7fde7206f30fa178a22f89474c9239ff2c7746064a80af19b998"
+    }
+  },
+  "anatomy_targets": {
+    "front": "Reduce elbow bulges/thickness jumps in 4/5/12/13; retain slight flexion in 6/11.",
+    "side": "Reduce swollen hard C-shaped elbow and round pink hinge in 0..5/12..15; soften 4/12 and retain flexion in 6/11."
+  },
+  "invariants": [
+    "Right sword hand, left sheath hand.",
+    "Accepted low-to-high sword trajectory, no independent wrist spin.",
+    "16 complete cells per view, one shared uniform scale per view, boot pivot [160,288].",
+    "Original idle and game code unchanged."
+  ],
+  "validation": "metadata/character/whitehair-katana-elbow-v7-validation.json",
+  "authoring_tool": "tools/package_whitehair_katana_wholepose_attack.mjs",
+  "registration": "metadata/character/attack/whitehair-katana-elbow-v7-registration.json",
+  "preview": "game/asset/character/player/icon/preview/whitehair-katana-elbow-v7.gif",
+  "lossless_preview": "game/asset/character/player/icon/preview/whitehair-katana-elbow-v7.png",
+  "sheet_outputs": {
+    "front": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+      "versioned_file": "game/asset/character/player/main/9-whitehair/katana/front/attack-elbow-v7.png",
+      "sha256": "c71f5a3966406d6f0937698872c73e51fff0b64cae83df380d7555b94ee597b5"
+    },
+    "side": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+      "versioned_file": "game/asset/character/player/main/9-whitehair/katana/side/attack-elbow-v7.png",
+      "sha256": "f8da9b80a831bb316ae462260b384d33419251adc000e950a8641517684ec24e"
+    }
+  },
+  "limitations": [
+    "All16 attack cels are complete generated drawings, registered by one common per-view scale and foot translation; no limb mask, cutout rotation or old glove overlay.",
+    "Generated attack neutral frames match the ready pose visually but are not pixel-identical to the separately preserved idle artwork.",
+    "The preview reads final production sprite cells directly. The new character remains unregistered in the playable party."
+  ],
+  "visual_review": {
+    "file": "game/asset/character/player/icon/preview/whitehair-katana-elbow-v7.gif",
+    "sha256": "ee829133a99bf94bdec000d553cfc85ed963004f576da0e5bea76252c9ec6fd4",
+    "decoded_frame_count": 16,
+    "passed": true,
+    "findings": [
+      {
+        "direction": "side",
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          12,
+          13,
+          14,
+          15
+        ],
+        "result": "Elbow bulge is smaller than v6. Upper arm slopes toward the elbow and transitions into the forearm with a softer continuous curve; the pronounced ball-and-right-angle tube impression is reduced."
+      },
+      {
+        "direction": "front",
+        "frames": [
+          4,
+          5,
+          12,
+          13
+        ],
+        "result": "Elbow contour and forearm taper are modestly softer than v6, without an abrupt increase in elbow thickness."
+      },
+      {
+        "direction": "both",
+        "frames": [
+          6,
+          11
+        ],
+        "result": "Arms remain nearly extended; no reverse elbow bend or visible hyperextension was observed. The accepted pose and sword path remain readable."
+      },
+      {
+        "direction": "both",
+        "frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "result": "Right hand retains the sword and left hand retains the scabbard. Low-to-high main swing is preserved. No detached elbow segment or renewed internal transparent slit observed in the actual final GIF."
+      },
+      {
+        "direction": "side",
+        "frames": [
+          4,
+          12
+        ],
+        "result": "A small light sleeve/cuff highlight remains. It does not separate the arm or form the earlier prominent circular hinge; further editing was not judged essential for this improvement request."
+      }
+    ]
+  }
+}

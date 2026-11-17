@@ -1,0 +1,86 @@
+{
+  "source": "asset/character/player/icon/source/whitehair/front/idle.png",
+  "region_spec": "metadata/character/idle/whitehair-front-regions.json",
+  "pixel_coordinates": "canonical_320_top_left",
+  "pivots": {
+    "body": [
+      162.72608125819136,
+      217.33158584534732
+    ],
+    "head": [
+      162.51638269986893,
+      187.13499344692005
+    ],
+    "hair": [
+      162.51638269986893,
+      174.9724770642202
+    ],
+    "cloth": [
+      162.51638269986893,
+      220.8964613368283
+    ],
+    "arm_left": [
+      178.87287024901704,
+      213.97640891218873
+    ],
+    "arm_right": [
+      141.7562254259502,
+      214.8152031454784
+    ]
+  },
+  "order": [
+    "legs",
+    "hair",
+    "cloth",
+    "body",
+    "arm_left",
+    "arm_right",
+    "head"
+  ],
+  "parts": [
+    {
+      "name": "legs",
+      "visible": "game/asset/character/player/icon/layers/whitehair/front/idle/visible/legs.png",
+      "hidden": "game/asset/character/player/icon/layers/whitehair/front/idle/hidden/legs.png"
+    },
+    {
+      "name": "hair",
+      "visible": "game/asset/character/player/icon/layers/whitehair/front/idle/visible/hair.png",
+      "hidden": "game/asset/character/player/icon/layers/whitehair/front/idle/hidden/hair.png"
+    },
+    {
+      "name": "cloth",
+      "visible": "game/asset/character/player/icon/layers/whitehair/front/idle/visible/cloth.png",
+      "hidden": "game/asset/character/player/icon/layers/whitehair/front/idle/hidden/cloth.png"
+    },
+    {
+      "name": "body",
+      "visible": "game/asset/character/player/icon/layers/whitehair/front/idle/visible/body.png",
+      "hidden": "game/asset/character/player/icon/layers/whitehair/front/idle/hidden/body.png"
+    },
+    {
+      "name": "arm_left",
+      "visible": "game/asset/character/player/icon/layers/whitehair/front/idle/visible/arm_left.png",
+      "hidden": "game/asset/character/player/icon/layers/whitehair/front/idle/hidden/arm_left.png"
+    },
+    {
+      "name": "arm_right",
+      "visible": "game/asset/character/player/icon/layers/whitehair/front/idle/visible/arm_right.png",
+      "hidden": "game/asset/character/player/icon/layers/whitehair/front/idle/hidden/arm_right.png"
+    },
+    {
+      "name": "head",
+      "visible": "game/asset/character/player/icon/layers/whitehair/front/idle/visible/head.png",
+      "hidden": "game/asset/character/player/icon/layers/whitehair/front/idle/hidden/head.png"
+    }
+  ],
+  "animation": "unit-scale translation and rotation only",
+  "motion": {
+    "body_rise_px": 1.05,
+    "body_rotation_deg": 0.24,
+    "head_rotation_deg": 0.26,
+    "hair_rotation_deg": 0.95,
+    "cloth_rotation_deg": 0.65,
+    "arm_rotation_deg": 0.45
+  }
+}

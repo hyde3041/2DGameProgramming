@@ -1,0 +1,513 @@
+{
+  "passed": false,
+  "import": {
+    "backup": ".build/backups/whitehair-katana-before-connected-2026-11-16T23-59-53-756Z",
+    "input_registration": ".build/whitehair-katana-connected-attack/registration.json",
+    "views": {
+      "front": {
+        "source": ".build/whitehair-katana-connected-attack/front-arm-redrawn.png",
+        "source_sha256": "5eb906772eaff451280c6fb48e1153a8ddff547da72ea095eeea8ea171a7fc2e",
+        "common_source_to_reference_scale": 1.045,
+        "candidate": ".build/whitehair-katana-connected-attack/front-attack-sheet.png",
+        "checks": [
+          {
+            "index": 0,
+            "changed_pixels": 0,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": true,
+            "rgba_sha256": "c8944bae13e264395aeb1abcc148e260b2821300e6668d73e801d79423253c41"
+          },
+          {
+            "index": 1,
+            "changed_pixels": 403,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "a5e910a0e63c093d6d5f018532c299e14a0ecb653b4cdcdaa5c4503cdb192301"
+          },
+          {
+            "index": 2,
+            "changed_pixels": 366,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "e9a4c62bdca59df78644b66b9b46dcc6ac2afe34ab6af5fad71afc80054f3b68"
+          },
+          {
+            "index": 3,
+            "changed_pixels": 374,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "7cb82cd2970229490cbdd10fb6db58d7b5327ae8f36944863dd3f65e45145ec6"
+          },
+          {
+            "index": 4,
+            "changed_pixels": 395,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "ec02a793f4f0ee4abf9739022694c703926979896b28d31ff894a2f15517bc1f"
+          },
+          {
+            "index": 5,
+            "changed_pixels": 426,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "25fc182ccf67185c1263f8caffd7e0117b3638d65dd0a959d4826339ede9da46"
+          },
+          {
+            "index": 6,
+            "changed_pixels": 472,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "78ba1354b63b03441365689cdfbcdd4b9a983f3edb6084ebd149dee32ea42f67"
+          },
+          {
+            "index": 7,
+            "changed_pixels": 462,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "be3d26d5e33831925b6b932c24bd1175754ead42565f8931e1f4147b233dc132"
+          },
+          {
+            "index": 8,
+            "changed_pixels": 455,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "d54cbdcf4b1bd8dc84c09c0926d7f0229495e75841c640e32bb94c5b0a025982"
+          },
+          {
+            "index": 9,
+            "changed_pixels": 443,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "8f6bb6d9df51b371e2a74fa5172fdb9fc8cd7569857a214027c71188c1af594e"
+          },
+          {
+            "index": 10,
+            "changed_pixels": 460,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "ca3e48d78127ffce7737b187dced50977c535027c9ba43cd9997c40e7d1aab53"
+          },
+          {
+            "index": 11,
+            "changed_pixels": 434,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "874a3e8f3cfba51877bbad09385263ef16afc3e4e9844d1c5d8b6df4376a0152"
+          },
+          {
+            "index": 12,
+            "changed_pixels": 448,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "91d53b04f1b69580ea2927331e873939ebf2124b5809c973fc734847bda2df55"
+          },
+          {
+            "index": 13,
+            "changed_pixels": 410,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "435ad331c4c3b83e7d1cbd15f379c85d580d592e606ab5e0b4388eab7bbe5608"
+          },
+          {
+            "index": 14,
+            "changed_pixels": 407,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "bf43a08fe16a5f92492ccae250c0a781237dc2e9d79576fcc4d3a878dda95fea"
+          },
+          {
+            "index": 15,
+            "changed_pixels": 0,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": true,
+            "rgba_sha256": "c8944bae13e264395aeb1abcc148e260b2821300e6668d73e801d79423253c41"
+          }
+        ]
+      },
+      "side": {
+        "source": ".build/whitehair-katana-connected-attack/side-arm-redrawn.png",
+        "source_sha256": "192fd6ed9a20afab77584ffc986b4abe410dcff02d15cd32b248ec0fe27edf28",
+        "common_source_to_reference_scale": 1.045,
+        "candidate": ".build/whitehair-katana-connected-attack/side-attack-sheet.png",
+        "checks": [
+          {
+            "index": 0,
+            "changed_pixels": 0,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": true,
+            "rgba_sha256": "29aefbd8a32c8e0315f30d0b32be8d495e0cf1a9d9af337dcd5580181db9feec"
+          },
+          {
+            "index": 1,
+            "changed_pixels": 362,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "ec026f69988999de4a016f6bb3f08faa7827b99466dd63618c8e811d8407e801"
+          },
+          {
+            "index": 2,
+            "changed_pixels": 357,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "9988b4797cf22051a7ee3407464091af94dac289b7d48921b2bca50e47f348c3"
+          },
+          {
+            "index": 3,
+            "changed_pixels": 348,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "c8b29f3886e212de0e639804baed15e4045bae6d933c1ff6294a8359d0bb6dd2"
+          },
+          {
+            "index": 4,
+            "changed_pixels": 320,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "fafb5cadafddd5a17bd700e5d907aff096dd66d0e05a13113feee6745ccf1c04"
+          },
+          {
+            "index": 5,
+            "changed_pixels": 360,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "9b741f801ad4b4545796216b36888e523783df45808d523a94b9ef0656489ca3"
+          },
+          {
+            "index": 6,
+            "changed_pixels": 363,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "3ac9452af8b19b5782149829e8a8728eae7dd901f7dc6c35c4faebce6be41ea2"
+          },
+          {
+            "index": 7,
+            "changed_pixels": 316,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "d335a559b03a6e6f804a1efbaab4a9a13e9258077230b7fb28dfd104ae8198af"
+          },
+          {
+            "index": 8,
+            "changed_pixels": 318,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "2dd70a4a8a859196a15e80c91f56363d8924c82b16164bb8b08766aa12f96471"
+          },
+          {
+            "index": 9,
+            "changed_pixels": 317,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "97297c3bd39057f4bddb774f75b9a12e5e8b2767248a173f17b32424eba57b5b"
+          },
+          {
+            "index": 10,
+            "changed_pixels": 319,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "37e82b4afbe498f9590c208d00427cec5a447a12a7622f15ac65a106c235ca45"
+          },
+          {
+            "index": 11,
+            "changed_pixels": 352,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "c35e1079e34f14178df016961695d658473d1ee15223cf44e5376efc5388ba09"
+          },
+          {
+            "index": 12,
+            "changed_pixels": 340,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "418be7fc5a94c00f32d96600a0cebc2ae6f67ba0965fa6208313f4e992e8990e"
+          },
+          {
+            "index": 13,
+            "changed_pixels": 346,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "5253aad07677154648b252135e587abb77692e7acc32d7cb8999bdded1c2a35c"
+          },
+          {
+            "index": 14,
+            "changed_pixels": 351,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": null,
+            "rgba_sha256": "96e4364ad37f8a38b14fd9d32950936b7ec9e80df0d457668df76e4b74e4caf0"
+          },
+          {
+            "index": 15,
+            "changed_pixels": 0,
+            "outside_mask_changed_pixels": 0,
+            "protected_hand_sword_changed_pixels": 0,
+            "neutral_exact": true,
+            "rgba_sha256": "29aefbd8a32c8e0315f30d0b32be8d495e0cf1a9d9af337dcd5580181db9feec"
+          }
+        ]
+      }
+    },
+    "protected_files_unchanged": true
+  },
+  "playback": {
+    "gif": "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\game\\asset\\character\\player\\icon\\preview\\whitehair-katana-connected.gif",
+    "apng": "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\game\\asset\\character\\player\\icon\\preview\\whitehair-katana-connected.png",
+    "crop": [
+      30,
+      99,
+      228,
+      296
+    ],
+    "integer_scale": 3,
+    "frame_count": 16,
+    "fps": 16,
+    "playback_source": "final production sheets only",
+    "source_sheet_sha256": {
+      "front": "4059f898eae5c82688fa79be3c546e11f59ab51013adf1fc06f6afedc7127302",
+      "side": "0acb95c5fc363890d68d0bc8f72cae68c3a15bfe17f2a22bf7f4952d13d395ab"
+    },
+    "preview_frames_verified": true,
+    "source_frame_sha256": {
+      "front": [
+        "c8944bae13e264395aeb1abcc148e260b2821300e6668d73e801d79423253c41",
+        "a5e910a0e63c093d6d5f018532c299e14a0ecb653b4cdcdaa5c4503cdb192301",
+        "e9a4c62bdca59df78644b66b9b46dcc6ac2afe34ab6af5fad71afc80054f3b68",
+        "7cb82cd2970229490cbdd10fb6db58d7b5327ae8f36944863dd3f65e45145ec6",
+        "ec02a793f4f0ee4abf9739022694c703926979896b28d31ff894a2f15517bc1f",
+        "25fc182ccf67185c1263f8caffd7e0117b3638d65dd0a959d4826339ede9da46",
+        "78ba1354b63b03441365689cdfbcdd4b9a983f3edb6084ebd149dee32ea42f67",
+        "be3d26d5e33831925b6b932c24bd1175754ead42565f8931e1f4147b233dc132",
+        "d54cbdcf4b1bd8dc84c09c0926d7f0229495e75841c640e32bb94c5b0a025982",
+        "8f6bb6d9df51b371e2a74fa5172fdb9fc8cd7569857a214027c71188c1af594e",
+        "ca3e48d78127ffce7737b187dced50977c535027c9ba43cd9997c40e7d1aab53",
+        "874a3e8f3cfba51877bbad09385263ef16afc3e4e9844d1c5d8b6df4376a0152",
+        "91d53b04f1b69580ea2927331e873939ebf2124b5809c973fc734847bda2df55",
+        "435ad331c4c3b83e7d1cbd15f379c85d580d592e606ab5e0b4388eab7bbe5608",
+        "bf43a08fe16a5f92492ccae250c0a781237dc2e9d79576fcc4d3a878dda95fea",
+        "c8944bae13e264395aeb1abcc148e260b2821300e6668d73e801d79423253c41"
+      ],
+      "side": [
+        "29aefbd8a32c8e0315f30d0b32be8d495e0cf1a9d9af337dcd5580181db9feec",
+        "ec026f69988999de4a016f6bb3f08faa7827b99466dd63618c8e811d8407e801",
+        "9988b4797cf22051a7ee3407464091af94dac289b7d48921b2bca50e47f348c3",
+        "c8b29f3886e212de0e639804baed15e4045bae6d933c1ff6294a8359d0bb6dd2",
+        "fafb5cadafddd5a17bd700e5d907aff096dd66d0e05a13113feee6745ccf1c04",
+        "9b741f801ad4b4545796216b36888e523783df45808d523a94b9ef0656489ca3",
+        "3ac9452af8b19b5782149829e8a8728eae7dd901f7dc6c35c4faebce6be41ea2",
+        "d335a559b03a6e6f804a1efbaab4a9a13e9258077230b7fb28dfd104ae8198af",
+        "2dd70a4a8a859196a15e80c91f56363d8924c82b16164bb8b08766aa12f96471",
+        "97297c3bd39057f4bddb774f75b9a12e5e8b2767248a173f17b32424eba57b5b",
+        "37e82b4afbe498f9590c208d00427cec5a447a12a7622f15ac65a106c235ca45",
+        "c35e1079e34f14178df016961695d658473d1ee15223cf44e5376efc5388ba09",
+        "418be7fc5a94c00f32d96600a0cebc2ae6f67ba0965fa6208313f4e992e8990e",
+        "5253aad07677154648b252135e587abb77692e7acc32d7cb8999bdded1c2a35c",
+        "96e4364ad37f8a38b14fd9d32950936b7ec9e80df0d457668df76e4b74e4caf0",
+        "29aefbd8a32c8e0315f30d0b32be8d495e0cf1a9d9af337dcd5580181db9feec"
+      ]
+    }
+  },
+  "native_validation": {
+    "passed": true,
+    "checks": [
+      "Pico2D loads all four final1280x1280 sheets; hashes match the packed previews",
+      "native row-major clipping selects every frame0..15 in the correct order",
+      "native idle0, attack0 and attack15 are pixel-identical for each direction",
+      "native full four-panel view returns exactly after one second",
+      "production Player.motion_frame yields2s/1s/0.5s attacks at attackSpeed0.5/1/2; verified exact samples and real-time native playback"
+    ],
+    "native_unique_frames": {
+      "idle-front": 16,
+      "idle-side": 16,
+      "attack-front": 15,
+      "attack-side": 15
+    },
+    "attack_speed_checks": [
+      {
+        "attackSpeed": 0.5,
+        "expected_cycle_seconds": 2,
+        "exact_frame_selection": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "real_time_seconds": 2.0522549000161234,
+        "native_presented_frames": 159,
+        "all16_frames_seen": true,
+        "wrapped_to_start": true
+      },
+      {
+        "attackSpeed": 1,
+        "expected_cycle_seconds": 1,
+        "exact_frame_selection": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "real_time_seconds": 1.0544856000051368,
+        "native_presented_frames": 82,
+        "all16_frames_seen": true,
+        "wrapped_to_start": true
+      },
+      {
+        "attackSpeed": 2,
+        "expected_cycle_seconds": 0.5,
+        "exact_frame_selection": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "real_time_seconds": 0.5539418999978807,
+        "native_presented_frames": 41,
+        "all16_frames_seen": true,
+        "wrapped_to_start": true
+      }
+    ],
+    "captures": [
+      "native-frame-00.png",
+      "native-frame-06.png",
+      "native-frame-09.png",
+      "native-frame-10.png",
+      "native-frame-11.png",
+      "native-frame-12.png"
+    ],
+    "execution": "standalone actual Pico2D playback using production Player; no game roster or game code change"
+  },
+  "protected_files": [
+    {
+      "path": "game/code/main.py",
+      "sha256": "79d58447df6e3e28151faa735c518cc8803d196b014d6fddaca632e4de693b94"
+    },
+    {
+      "path": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+      "sha256": "ec0c63f0afd5cec2a12403988bd657f76656f0a271a266467b9c3d72edef40f7"
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/front/idle.png",
+      "sha256": "6b08be3cb2a4db0652e0a81c298394f748968043d7825da1f80a2f3d5105ab9f"
+    },
+    {
+      "path": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+      "sha256": "2feb0c07d00765f1d0a77b078e97fed2bc4dedb2fcf2a03929c38358c43bae80"
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/side/idle.png",
+      "sha256": "883edb5a3bdd4504787ff38675a036ba713c250feb501b3c61444e7225a62bdd"
+    }
+  ],
+  "visual_review": {
+    "passed": true,
+    "checks": [
+      "Continuous shoulder-to-cuff contours replace round elbow plugs and straight sleeve cut seams.",
+      "Front04..11 and side04..11 enlarged before/after contact sheets inspected.",
+      "Residual bright seam pixels removed within the arm contour allowance.",
+      "Hand and sword trajectory preserved; final GIF/APNG read production sheets and verify every displayed frame."
+    ]
+  },
+  "post_delivery_review": {
+    "passed": false,
+    "issue": "The previous importer compared an already clipped sheet to its GIF. It restricted generated connected sleeve artwork to an old arm silhouette and protected semi-transparent glove edges, removing opaque elbow connections present in the generated atlas.",
+    "examples": [
+      {
+        "view": "side",
+        "frames": [
+          8,
+          9
+        ],
+        "native_region": [
+          139,
+          188,
+          144,
+          194
+        ],
+        "issue": "Generated sleeve became transparent outside old arm mask."
+      },
+      {
+        "view": "front",
+        "frames": [
+          6,
+          11
+        ],
+        "native_region": [
+          130,
+          198,
+          135,
+          205
+        ],
+        "issue": "Old hair pixels replaced the new connected sleeve."
+      }
+    ],
+    "corrected_by": "metadata/character/whitehair-katana-wholepose-validation.json"
+  }
+}

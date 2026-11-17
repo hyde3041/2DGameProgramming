@@ -1,0 +1,446 @@
+{
+  "input": ".build\\restore-work\\input\\whitehair-katana-anatomy.png",
+  "output": ".build\\restore-work\\balanced\\whitehair-katana-anatomy_restored.png",
+  "input_mode": "RGB",
+  "output_mode": "RGB",
+  "input_size": [
+    1706,
+    922
+  ],
+  "output_size": [
+    1706,
+    922
+  ],
+  "alpha_identical": true,
+  "input_sha256": "9bbd9b7b716107768ce3e4764e01aa4d6c434332940fb2949c4aafaa95ae1011",
+  "output_sha256": "b42aa19bd690e4f012e0cf94411ed96102345d443c65e6ece719bf1a63df92cb",
+  "changed_rgb_pixels": 640530,
+  "mean_abs_rgb_change": 0.2118406898708908,
+  "report": {
+    "input": ".build\\restore-work\\input\\whitehair-katana-anatomy.png",
+    "output": ".build\\restore-work\\balanced\\whitehair-katana-anatomy_restored.png",
+    "size": {
+      "width": 1706,
+      "height": 922
+    },
+    "mode": "RGB",
+    "bit_depth": 8,
+    "stages": {
+      "dots": {
+        "stage": "dots",
+        "mode": "conservative",
+        "candidate_count": 0,
+        "masked_pixels": 0,
+        "mask_fraction": 0.0,
+        "candidates_per_megapixel": 0.0,
+        "median_contrast_dn": null,
+        "maximum_contrast_dn": null,
+        "parameters": {
+          "residual_min_dn": 12.0,
+          "contrast_min_dn": 12.0,
+          "ring_mad_max_dn": 2.0,
+          "texture_max_dn": 2.0,
+          "core_area_min_px": 1,
+          "core_area_max_px": 5,
+          "core_bbox_max_px": 3,
+          "edge_distance_min_px": 5.0,
+          "channel_increment_min_dn": 6.0,
+          "primary_residual_min_dn": 4.0,
+          "primary_sigma_multiplier": 6.0,
+          "primary_component_area_px": [
+            1,
+            80
+          ],
+          "primary_component_bbox_max_px": 15,
+          "excluded_border_px": 10,
+          "median_kernel_px": {
+            "local": 3,
+            "background": 11,
+            "noise": 31
+          },
+          "ring_radius_px": [
+            6,
+            9
+          ],
+          "half_height_fraction": 0.5,
+          "half_height_min_dn": 4.0,
+          "mode": "conservative"
+        },
+        "detection_measured": true,
+        "strength": 1.0,
+        "changed_pixels": 0,
+        "correction_rms_dn": 0.0
+      },
+      "sparkle": {
+        "enabled": false,
+        "strength": 0.0
+      },
+      "periodic": {
+        "stage": "periodic",
+        "status": "detected",
+        "path": "native",
+        "native_size_model_matched": true,
+        "components": [
+          {
+            "frequency": [
+              0.24853458382180538,
+              0.24728850325379614
+            ],
+            "refined_frequency": [
+              0.248526930809021,
+              0.2472602128982544
+            ],
+            "eighth_grid_vector": [
+              2,
+              2
+            ],
+            "resize_origin_phase": -0.01312215895797461,
+            "channels": {
+              "luma": {
+                "amplitude": 0.07152104399999726,
+                "spectral_excess_db": 26.739757537841797,
+                "fit_standard_error": 0.003507963403025361,
+                "accepted": true,
+                "cosine_coefficient": -0.003285681873657515,
+                "sine_coefficient": 0.07144553190700355
+              },
+              "r_minus_g": {
+                "amplitude": 0.12022574162396585,
+                "spectral_excess_db": 29.71146011352539,
+                "fit_standard_error": 0.003510329889335486,
+                "accepted": true,
+                "cosine_coefficient": -0.05775694908416414,
+                "sine_coefficient": 0.10544365216323771
+              },
+              "b_minus_g": {
+                "amplitude": 0.1262179183119337,
+                "spectral_excess_db": 31.79771614074707,
+                "fit_standard_error": 0.003775143438304962,
+                "accepted": true,
+                "cosine_coefficient": 0.08232757412460862,
+                "sine_coefficient": -0.0956720097089794
+              }
+            }
+          },
+          {
+            "frequency": [
+              0.0,
+              0.4945770065075922
+            ],
+            "refined_frequency": [
+              2.384185791015625e-07,
+              -0.4945629835128784
+            ],
+            "eighth_grid_vector": [
+              0,
+              4
+            ],
+            "resize_origin_phase": -0.017036836516213676,
+            "channels": {
+              "luma": {
+                "amplitude": 0.1071988911186481,
+                "spectral_excess_db": 31.28269386291504,
+                "fit_standard_error": 0.0034070345868455745,
+                "accepted": true,
+                "cosine_coefficient": 0.10718889871679024,
+                "sine_coefficient": -0.0014636423570851262
+              },
+              "r_minus_g": {
+                "amplitude": 0.04708574496318524,
+                "spectral_excess_db": 26.97687530517578,
+                "fit_standard_error": 0.0034093551458550604,
+                "accepted": true,
+                "cosine_coefficient": -0.047085684431173606,
+                "sine_coefficient": 7.550090104969462e-05
+              },
+              "b_minus_g": {
+                "amplitude": 0.053761048534981655,
+                "spectral_excess_db": 28.457965850830078,
+                "fit_standard_error": 0.0036665375010694686,
+                "accepted": true,
+                "cosine_coefficient": -0.05374717313314998,
+                "sine_coefficient": -0.0012213598060580519
+              }
+            }
+          },
+          {
+            "frequency": [
+              0.24853458382180538,
+              -0.2472885032537961
+            ],
+            "refined_frequency": [
+              0.2485208511352539,
+              -0.24729251861572266
+            ],
+            "eighth_grid_vector": [
+              2,
+              -2
+            ],
+            "resize_origin_phase": 0.003914677558239066,
+            "channels": {
+              "luma": {
+                "amplitude": 0.10836769207550373,
+                "spectral_excess_db": 30.534151077270508,
+                "fit_standard_error": 0.003506089102548188,
+                "accepted": true,
+                "cosine_coefficient": -0.07551835692825025,
+                "sine_coefficient": 0.0777208752693161
+              },
+              "r_minus_g": {
+                "amplitude": 0.06155368592759589,
+                "spectral_excess_db": 27.939050674438477,
+                "fit_standard_error": 0.0035086055566630023,
+                "accepted": true,
+                "cosine_coefficient": -0.027330217219786016,
+                "sine_coefficient": -0.055153562695372894
+              },
+              "b_minus_g": {
+                "amplitude": 0.11019952260477654,
+                "spectral_excess_db": 31.059749603271484,
+                "fit_standard_error": 0.0037731801731102485,
+                "accepted": true,
+                "cosine_coefficient": 0.1101779871754204,
+                "sine_coefficient": 0.002178514239924085
+              }
+            }
+          },
+          {
+            "frequency": [
+              0.49706916764361075,
+              0.0
+            ],
+            "refined_frequency": [
+              0.49705493450164795,
+              -2.467632293701172e-05
+            ],
+            "eighth_grid_vector": [
+              4,
+              0
+            ],
+            "resize_origin_phase": -0.009207481399735543,
+            "channels": {
+              "luma": {
+                "amplitude": 0.1172326415204918,
+                "spectral_excess_db": 30.956125259399414,
+                "fit_standard_error": 0.003405286591530735,
+                "accepted": true,
+                "cosine_coefficient": 0.11721960368588207,
+                "sine_coefficient": -0.0017483562557107366
+              },
+              "r_minus_g": {
+                "amplitude": 0.03586022513667432,
+                "spectral_excess_db": 25.681224822998047,
+                "fit_standard_error": 0.0034077241234712966,
+                "accepted": true,
+                "cosine_coefficient": -0.0353135670092607,
+                "sine_coefficient": -0.006237606266463382
+              },
+              "b_minus_g": {
+                "amplitude": 0.037991000672635625,
+                "spectral_excess_db": 27.377126693725586,
+                "fit_standard_error": 0.0036647079276854793,
+                "accepted": true,
+                "cosine_coefficient": -0.03746328068293443,
+                "sine_coefficient": -0.006310208600345333
+              }
+            }
+          },
+          {
+            "frequency": [
+              0.12426729191090269,
+              -0.12364425162689807
+            ],
+            "refined_frequency": [
+              0.12426286935806274,
+              -0.1236952543258667
+            ],
+            "eighth_grid_vector": [
+              1,
+              -1
+            ],
+            "resize_origin_phase": 0.001957338779119533,
+            "channels": {
+              "luma": {
+                "amplitude": 0.010349755649837693,
+                "spectral_excess_db": 6.471576690673828,
+                "fit_standard_error": 0.005836397708698282,
+                "accepted": false,
+                "cosine_coefficient": -0.005446601345811006,
+                "sine_coefficient": 0.008800680416374461
+              },
+              "r_minus_g": {
+                "amplitude": 0.08692298115770104,
+                "spectral_excess_db": 25.380374908447266,
+                "fit_standard_error": 0.0058406170753533175,
+                "accepted": true,
+                "cosine_coefficient": 0.08009166600625295,
+                "sine_coefficient": -0.03377765074253797
+              },
+              "b_minus_g": {
+                "amplitude": 0.038160757748647786,
+                "spectral_excess_db": 22.320083618164062,
+                "fit_standard_error": 0.006281046463296528,
+                "accepted": true,
+                "cosine_coefficient": -0.03716639999570617,
+                "sine_coefficient": 0.00865460243512978
+              }
+            }
+          },
+          {
+            "frequency": [
+              0.12426729191090269,
+              0.12364425162689807
+            ],
+            "refined_frequency": [
+              0.12427246570587158,
+              0.12369537353515625
+            ],
+            "eighth_grid_vector": [
+              1,
+              1
+            ],
+            "resize_origin_phase": -0.006561079478987305,
+            "channels": {
+              "luma": {
+                "amplitude": 0.0031686393262560053,
+                "spectral_excess_db": -6.692486763000488,
+                "fit_standard_error": 0.005836458783222219,
+                "accepted": false,
+                "cosine_coefficient": -0.0022281030050906128,
+                "sine_coefficient": -0.0022529607583360815
+              },
+              "r_minus_g": {
+                "amplitude": 0.03864514517783445,
+                "spectral_excess_db": 17.784406661987305,
+                "fit_standard_error": 0.005840623762871078,
+                "accepted": true,
+                "cosine_coefficient": 0.028314881383334177,
+                "sine_coefficient": -0.026300470301186943
+              },
+              "b_minus_g": {
+                "amplitude": 0.04137575571652097,
+                "spectral_excess_db": 22.770267486572266,
+                "fit_standard_error": 0.006281073501930814,
+                "accepted": true,
+                "cosine_coefficient": -0.021712454335450337,
+                "sine_coefficient": 0.03522105177084014
+              }
+            }
+          }
+        ],
+        "settings": {
+          "min_excess_db": 12.0,
+          "discovery_excess_db": 18.0,
+          "min_amplitude": 0.02,
+          "edge_distance": 3.0,
+          "discovery_min_amplitude": 0.05,
+          "spatial_gain": true,
+          "max_components": 16
+        },
+        "background_fraction": 0.7531603400528439,
+        "clipped_fraction": 0.0020242451676232664,
+        "candidate_count": 16,
+        "strength": 1.0,
+        "removed_rms": 0.15411673486232758,
+        "mean_abs_change": [
+          0.1407128870487213,
+          0.1289624571800232,
+          0.10577182471752167
+        ]
+      },
+      "grime": {
+        "masked_fraction": 0.7363808479959718,
+        "mean_abs_change": [
+          0.21617087721824646,
+          0.20868225395679474,
+          0.21820150315761566
+        ],
+        "method": "local_oriented_band",
+        "tile_size": 96,
+        "text_gap_fraction": 0.10492443411412572,
+        "flat_interior_fraction": 0.00668751096678051,
+        "interline_background": {
+          "eligible_fraction": 0.0,
+          "glyph_ring": {
+            "rows": 0,
+            "eligible_fraction": 0.0
+          }
+        },
+        "luma_strength": 0.8,
+        "chroma_strength": 0.9
+      },
+      "mottle": {
+        "method": "local_edge_linear_band",
+        "strength": 0.7,
+        "eligible_fraction": 0.7207622452846023,
+        "mean_abs_change": [
+          0.11751837283372879,
+          0.12521816790103912,
+          0.12489225715398788
+        ],
+        "small_box_radii": [
+          1,
+          1
+        ],
+        "background_box_radii": [
+          13
+        ]
+      },
+      "lattice": {
+        "enabled": false,
+        "strength": 0.0
+      },
+      "surface": {
+        "enabled": false,
+        "strength": 0.0
+      },
+      "contour": {
+        "enabled": false,
+        "strength": 0.0
+      },
+      "defocus": {
+        "enabled": false,
+        "strength": 0.0
+      },
+      "cel_fill": {
+        "enabled": false,
+        "strength": 0.0
+      },
+      "dither": {
+        "applied": false,
+        "mean_weight": 0.0,
+        "mean_flatness": 0.0,
+        "weighted_fraction": 0.0,
+        "seed": 0
+      }
+    },
+    "timings": {
+      "load_seconds": 0.03969239999423735,
+      "stages_seconds": {
+        "dots": 0.08576109999557957,
+        "sparkle": 0.0,
+        "periodic": 1.3410355999949388,
+        "grime": 0.8154549999744631,
+        "mottle": 0.40278060000855476,
+        "lattice": 0.0,
+        "surface": 0.0,
+        "contour": 0.0,
+        "defocus": 0.0,
+        "cel_fill": 0.0,
+        "dither": 5.80001506023109e-06
+      },
+      "total_seconds": 5.3932749000086915
+    }
+  },
+  "command": ".build/restore-venv/Scripts/python.exe .build/tools/gpt-image-restore/restore_gpt_image.py .build/restore-work/input/whitehair-katana-anatomy.png -o .build/restore-work/balanced --preset balanced --device cpu --report --save-diff",
+  "preset": "balanced",
+  "device": "cpu",
+  "tool_commit": "bc9a90916a2213b14024b57e79be4773aa60c3ca",
+  "enabled_strengths": {
+    "dots": 1.0,
+    "periodic": 1.0,
+    "grime": 1.0,
+    "mottle": 0.7
+  },
+  "alpha_note": "Source and output are RGB with no alpha channel; RGBA comparisons use opaque alpha255 for both."
+}

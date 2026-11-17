@@ -1,0 +1,80 @@
+{
+  "id": "whitehair-katana",
+  "source": "game/asset/character/player/icon/source/whitehair/katana/approved-pair.png",
+  "source_size": [
+    1706,
+    922
+  ],
+  "source_sha256": "fe4ca700ba99a30fa4c255b2b18be6de1acdc6400b04d342ae8480a1b65c87de",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "shared_uniform_scale": 0.1932367149758454,
+  "views": {
+    "front": {
+      "source_bounds": [
+        243,
+        37,
+        517,
+        827
+      ],
+      "source_crop": [
+        240,
+        34,
+        523,
+        833
+      ],
+      "original_foot_pivot": [
+        506,
+        864
+      ],
+      "uniform_scale": 0.1932367149758454,
+      "canonical_offset": [
+        62.22222222222223,
+        121.04347826086956
+      ],
+      "canonical_foot_pivot": [
+        160,
+        288
+      ],
+      "canonical_source": "asset/character/player/icon/source/whitehair/katana/front/idle.png",
+      "source_crop_file": "asset/character/player/icon/source/whitehair/katana/front/idle-source.png",
+      "facing": "front"
+    },
+    "side": {
+      "source_bounds": [
+        984,
+        37,
+        470,
+        828
+      ],
+      "source_crop": [
+        981,
+        34,
+        476,
+        834
+      ],
+      "original_foot_pivot": [
+        1143.5,
+        865
+      ],
+      "uniform_scale": 0.1932367149758454,
+      "canonical_offset": [
+        -60.96618357487924,
+        120.85024154589371
+      ],
+      "canonical_foot_pivot": [
+        160,
+        288
+      ],
+      "canonical_source": "asset/character/player/icon/source/whitehair/katana/side/idle.png",
+      "source_crop_file": "asset/character/player/icon/source/whitehair/katana/side/idle-source.png",
+      "facing": "screen-left-three-quarter"
+    }
+  }
+}

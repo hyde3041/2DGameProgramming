@@ -1,0 +1,284 @@
+{
+  "passed": true,
+  "source_registration": "metadata/character/attack/whitehair-katana-shoulder-v8-registration.json",
+  "whole_cell_validation": {
+    "front": {
+      "unique_frames": 16,
+      "frame_count": 16,
+      "whole_cells_used": 16,
+      "common_uniform_scale": 0.6794055201698513,
+      "body_reference_height": 235.5,
+      "min_observed_body_height": 235,
+      "max_observed_body_height": 237,
+      "boot_pivot": [
+        160,
+        288
+      ],
+      "old_masks_or_body_overlays": false,
+      "source_alpha_cleaning": false,
+      "idle_endpoint_override": false,
+      "idle_endpoint_equality_guaranteed": false,
+      "meaningful_source_pixels_clipped": 0
+    },
+    "side": {
+      "unique_frames": 16,
+      "frame_count": 16,
+      "whole_cells_used": 16,
+      "common_uniform_scale": 0.6736842105263158,
+      "body_reference_height": 237.5,
+      "min_observed_body_height": 234,
+      "max_observed_body_height": 240,
+      "boot_pivot": [
+        160,
+        288
+      ],
+      "old_masks_or_body_overlays": false,
+      "source_alpha_cleaning": false,
+      "idle_endpoint_override": false,
+      "idle_endpoint_equality_guaranteed": false,
+      "meaningful_source_pixels_clipped": 0
+    }
+  },
+  "actual_gif_review": {
+    "main_metadata_version": 8,
+    "actual_sheets": {
+      "front": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+        "sha256": "24d6af6edf38b0fd482087619fc04dddc47cc03b8bc715e2f9d1ed6034bf2708"
+      },
+      "side": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+        "sha256": "83c7923e2f1ee25d1628a8eca895c31c66f8c9373ba68079f9d473afd67b1618"
+      }
+    },
+    "frames_visually_checked": {
+      "front": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "side": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "inspection_method": "Pillow ImageSequence decoded the actual final delivery GIF. Independent visual inspection of every decoded pose in 4x4 enlarged contacts; production version and SHA-256 captured from disk.",
+    "final_gif_contacts": [
+      ".build/whitehair-katana-shoulder-v8/front-final-gif-all16.png",
+      ".build/whitehair-katana-shoulder-v8/side-final-gif-all16.png"
+    ],
+    "final_delivery": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-shoulder-v8.gif",
+      "sha256": "e44b654004711bf6b9cbd0ae8896bb94b3e97013d76cb62f53821c1af39cca21",
+      "decoded_frame_count": 16,
+      "passed": true,
+      "findings": [
+        "Inspected all 16 decoded final GIF frames in both directions (32 poses), using enlarged arm contacts generated from this final file, not authoring references.",
+        "Front and side frames 6-11 keep the sword arm nearly extended. Frames 7-9 raise the whole arm at the shoulder; frames 10-11 return it toward the frame-6 horizontal pose. The hand no longer folds back toward the forehead at the peak.",
+        "The wrist, grip and sword remain visually aligned through frames 6-11; no independent wrist spin, sword flip, or hand-role swap is visible. Anatomical right hand holds the sword and left hand remains at the scabbard.",
+        "Frame 12 starts the elbow-fold recovery, followed by sheathing through frames 13-15. All 16 poses retain continuous shoulder/elbow/forearm/hand connections; earlier front-6/11 and side-7-10 gaps have not recurred.",
+        "The shoulder follow-through reads as a modest additional rise and return. Exact joint angles are not certified from raster artwork."
+      ]
+    }
+  },
+  "preview_package": {
+    "gif": "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\game\\asset\\character\\player\\icon\\preview\\whitehair-katana-shoulder-v8.gif",
+    "apng": "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\game\\asset\\character\\player\\icon\\preview\\whitehair-katana-shoulder-v8.png",
+    "crop": [
+      41,
+      118,
+      229,
+      297
+    ],
+    "integer_scale": 3,
+    "frame_count": 16,
+    "fps": 16,
+    "playback_source": "final production sheets only",
+    "source_sheet_sha256": {
+      "front": "24d6af6edf38b0fd482087619fc04dddc47cc03b8bc715e2f9d1ed6034bf2708",
+      "side": "83c7923e2f1ee25d1628a8eca895c31c66f8c9373ba68079f9d473afd67b1618"
+    },
+    "preview_frames_verified": true,
+    "source_frame_sha256": {
+      "front": [
+        "27101922b0560b67ec5d2868d491da6e92b6764d8172eac8bdb7659ddcd6ebd0",
+        "c7bca4cfd88dd13a3291812f70d90d00f642c6014ad68bd1b62e174c537d257a",
+        "bc635bd923f473eabdc363e239b2b1c1a461920a6aaaf2a59ea430d4756817c0",
+        "30bdb94dfc2097c39b894c98f3b2bf8f8385e6096babd4638eac4e873a79777d",
+        "aa056f6ec8459c36e96171b9f8288cea986ac67153605ddd5f3b41919363d312",
+        "16c84fda902042207ab7082f46be9a40da06443a3fd297ef6130990b0df372eb",
+        "9f5e8f800c92509b794f152133f70ba365ae5437958a6878fed48413b0bd1a70",
+        "3e317ecc272494d35caa39b69fde87d4346b6d3c83f3ab31078ae9e7c67ea5a7",
+        "11fbfc5d799492193d3ee9de369394c6f10f3706a59dce44f087bf726d6ce25f",
+        "85885e387f0a3d10635ce17d5013160450446e8460cde176937fd7b1407e94ed",
+        "997df5547dcbbb042d0a746c2a9a93ea3d551da2f466a386faae59e7aaf72c05",
+        "f5f1e0b158b1d622bfde6722a490b231cce6cff19909157c7fea7dc9d8795329",
+        "27aa2b57c743397d9d0847d6a27cc5807a44d2c88317ff23bede35f4bc64ea66",
+        "1206f5e50e3bff9f2db26af6760286ea8ea4193a6bce92bced8e4b23b1075b63",
+        "cbeeda091ccdd035082f88f3ca6eb0c95f59631b984c714e73f6ee5021e9f454",
+        "e82dd2752594d6305904b8b4922473e7517446d67298bd8c997f2e1f6ad9708e"
+      ],
+      "side": [
+        "f17fbf54056aedb4e82da61105aac1694d0a4c7c65a4a874dfff3b9ec8b42872",
+        "f8083671642d70e8c7bddf1aadc11f98d9c442f1bc49de39f3b26a706da1cfdc",
+        "5c73de660213d148085096bae615f728217906ec1da70e67ae256e89dadaead6",
+        "907689447a01f2d4599d697866ad53cc95780819c77ea05067c9ea20c77e5853",
+        "f6e0db567390b3ad6173c68d39211701a99f6a5c692fd9daf7cb01d159b2e9d0",
+        "e0c980414e82574eb40894b41f57f52b39a06db51b4e3ada8c00bf2a60320c00",
+        "6b0650d5b8350e4f8c6eb397266f65a7171c9ee47dabf6e5f6d6d83c8e2fbdcc",
+        "7ab39718776b9b69d9c1f7e7c80cdfd8d01822c97366bc4595e7b15e7c7e386a",
+        "bb5dce73d0e4f943848b20e34fe85b66d690be130da8787cba2cb1b6efbefd07",
+        "c020cb6f4c0b3e391da0089b12297744e7f7bfa32029b5d7254dd55b6afc8b62",
+        "b242bb81ebab6aac52af53ec363acdc0b6081b8f218891c008aefc61ced0953d",
+        "1c33d4cf793ffc608874aba61637ace61a1fad591af353b95e0c8d78d71301a4",
+        "676d5a7782f7ce0b9f559b2bfa7bafd53569312a7f9060d29bb226eeba0cf245",
+        "cf6a226f40a5b63c454cf94082df2949ca1d76923c00c617c3107404038eee6d",
+        "870c2e786fb6a97ce1d62cd6c1ef868dc6c77f31f085a0fe79583758936be206",
+        "f524c2a191c64f317bcf2870722d277ebb6a39f2f900cd0f085e89196bc61f16"
+      ]
+    }
+  },
+  "native_validation": {
+    "passed": true,
+    "checks": [
+      "Pico2D loads all four final1280x1280 sheets; hashes match the packed previews",
+      "native row-major clipping selects every frame0..15 in the correct order",
+      "whole authored attack cels retained, including frame0 and15; no idle-frame override",
+      "native full four-panel view returns exactly after one second",
+      "production Player.motion_frame yields2s/1s/0.5s attacks at attackSpeed0.5/1/2; verified exact samples and real-time native playback"
+    ],
+    "native_unique_frames": {
+      "idle-front": 16,
+      "idle-side": 16,
+      "attack-front": 16,
+      "attack-side": 16
+    },
+    "attack_speed_checks": [
+      {
+        "attackSpeed": 0.5,
+        "expected_cycle_seconds": 2,
+        "exact_frame_selection": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "real_time_seconds": 2.0519971999747213,
+        "native_presented_frames": 165,
+        "all16_frames_seen": true,
+        "wrapped_to_start": true
+      },
+      {
+        "attackSpeed": 1,
+        "expected_cycle_seconds": 1,
+        "exact_frame_selection": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "real_time_seconds": 1.0602512000186834,
+        "native_presented_frames": 86,
+        "all16_frames_seen": true,
+        "wrapped_to_start": true
+      },
+      {
+        "attackSpeed": 2,
+        "expected_cycle_seconds": 0.5,
+        "exact_frame_selection": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "real_time_seconds": 0.5603705999965314,
+        "native_presented_frames": 46,
+        "all16_frames_seen": true,
+        "wrapped_to_start": true
+      }
+    ],
+    "captures": [
+      "native-frame-00.png",
+      "native-frame-06.png",
+      "native-frame-09.png",
+      "native-frame-10.png",
+      "native-frame-11.png",
+      "native-frame-12.png"
+    ],
+    "execution": "standalone actual Pico2D playback using production Player; no game roster or game code change"
+  },
+  "protected_files": {
+    "game/code/main.py": "79d58447df6e3e28151faa735c518cc8803d196b014d6fddaca632e4de693b94",
+    "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png": "ec0c63f0afd5cec2a12403988bd657f76656f0a271a266467b9c3d72edef40f7",
+    "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png": "2feb0c07d00765f1d0a77b078e97fed2bc4dedb2fcf2a03929c38358c43bae80",
+    "game/asset/character/player/main/9-whitehair/katana/front/attack-wholepose-v6.png": "049508953bcbd57af208a38d61bf4923777fff73ec9ec7421247678f50c87c54",
+    "game/asset/character/player/main/9-whitehair/katana/side/attack-wholepose-v6.png": "d6ef636f823e3725d9f3f32fef48889dd7cca1e21abd9b8a2e08753110f07675",
+    "game/asset/character/player/icon/preview/whitehair-katana-wholepose-v6.gif": "97bff20107a63f57b7a0761849a6cd2d637c7e0328b7f267719a25ae3cdf3be7"
+  }
+}

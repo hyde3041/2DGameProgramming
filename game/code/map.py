@@ -23,6 +23,9 @@ class TileType(IntEnum):
     ELEVATED = 2
 
 
+DEPLOYABLE_TILES = (TileType.GROUND, TileType.ELEVATED)
+
+
 @dataclass
 class Room:
     map_type: MapType
@@ -165,8 +168,11 @@ def monster_route(start=None):
     start = tuple(start)
     if start not in _monster_routes:
         _monster_routes[start] = None
-        if start in battle_cells and battle_cells[start]["walkable"]:
-            goals = set(battle_goals)
+        goals = set(battle_goals)
+        start_cell = battle_cells.get(start)
+        if start_cell and start_cell["walkable"] and (
+            start_cell["tileType"] in DEPLOYABLE_TILES or start in battle_entrances or start in goals
+        ):
             pending = deque([start])
             previous = {start: None}
             distances = {start: 0}
@@ -180,12 +186,20 @@ def monster_route(start=None):
                     _monster_routes[start] = tuple(reversed(points))
                     break
                 x, y = current
-                # Recorded portals cost no walking distance; all cardinal steps cost one.
-                neighbors = [(point, 0) for point in sorted(_monster_portals.get(current, ()))]
-                neighbors.extend((point, 1) for point in ((x + 1, y), (x, y - 1), (x - 1, y), (x, y + 1)))
+                portals = _monster_portals.get(current, ())
+                neighbors = [(point, 0) for point in sorted(portals)]
+                # A non-deployable portal entrance is for teleporting, not a road shortcut.
+                if not portals or battle_cells[current]["tileType"] in DEPLOYABLE_TILES:
+                    neighbors.extend((point, 1) for point in ((x + 1, y), (x, y - 1), (x - 1, y), (x, y + 1)))
                 for neighbor, distance in neighbors:
+                    cell = battle_cells.get(neighbor)
+                    if cell is None or not cell["walkable"]:
+                        continue
+                    if (distance != 0 and cell["tileType"] not in DEPLOYABLE_TILES
+                            and neighbor not in goals and neighbor not in _monster_portals):
+                        continue
                     candidate = distances[current] + distance
-                    if neighbor in battle_cells and battle_cells[neighbor]["walkable"] and candidate < distances.get(neighbor, float("inf")):
+                    if candidate < distances.get(neighbor, float("inf")):
                         previous[neighbor] = current
                         distances[neighbor] = candidate
                         if distance == 0:
@@ -258,7 +272,7 @@ def can_place(pos, characters, character):
     cell = battle_cells.get(pos)
     return (
         cell is not None
-        and cell["tileType"] in (TileType.GROUND, TileType.ELEVATED)
+        and cell["tileType"] in DEPLOYABLE_TILES
         and cell["tileType"] in character.allowedTiles
         and not any(member.deployed and tuple(member.pos) == pos for member in characters)
     )

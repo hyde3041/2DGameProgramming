@@ -1,0 +1,43 @@
+{
+  "id": "whitehair",
+  "version": 1,
+  "status": "neutral_art_and_layer_sources",
+  "runtime_applied": false,
+  "generation_mode": "built-in image_gen",
+  "approved_design": "game/asset/character/player/icon/source/whitehair/approved-design.png",
+  "turnaround": "game/asset/character/player/icon/source/whitehair/turnaround.png",
+  "neutral_views": [
+    "front",
+    "side",
+    "back"
+  ],
+  "description": "Approved long loose white hair, red eyes, ivory/charcoal coat and burgundy lining. Class and weapon remain unspecified.",
+  "prompts": {
+    "turnaround": "Use case: identity-preserve. Asset type: game character turnaround art, neutral standing poses. Image 1 is the APPROVED DESIGN to preserve very closely. Image 2 is only the game's chibi sprite rendering/proportion reference, not a source of costume or weapons. Draw ONE consistent white-haired red-eyed long-haired human character in THREE separate full-body views, in a single evenly spaced horizontal row: LEFT front facing the viewer, MIDDLE right-facing side view, RIGHT back facing away from the viewer. Same scale, same top height, same grounded feet baseline, same neutral pose with arms resting naturally at sides, slight high game camera angle compatible with image 2. Preserve image 1's long loose snowy white hair reaching the hips, layered softly curving hair tips, ruby red irises, pale skin, androgynous youthful adult face and compact SD proportions. Preserve the exact costume: ivory and charcoal asymmetrical long coat with deep burgundy lining, ivory shoulder mantle and silver four-point brooches, charcoal high collar, white shirt panels, dark leather waist belts, black gloves, dark trousers and brown-charcoal boots. Back view shows a continuous natural long white hair silhouette in front of the back coat; no face in back view. Side view faces RIGHT clearly, shows a readable profile and natural arm length. Hair and cloth have crisp bounded shapes suitable for separate animation layers. This is the same person rotated, not three character variants. Match polished hand-painted anime SD game art, restrained material details, readable dark outline, soft cel-like shading. Full bodies, ample transparent gap between figures and generous outer padding. Genuinely transparent background, no background, no cast shadow, no floor, no labels, no text, no weapons or new equipment, no effects, no UI. Do not add a ponytail, braid, horns, animal ears or accessories.",
+    "separated_parts": "Use case: identity-preserve. Transparent production 2D cutout animation LAYER ATLAS. Input image is the exact new character identity and three-direction reference: LEFT front, MIDDLE right-facing side, RIGHT back. Preserve face, red eyes, long loose white hair, ivory/charcoal long coat with burgundy lining, silver four-point brooches, belts, gloves, trousers and boots. Draw disconnected parts independently with completed occluded joins; do NOT slice a complete figure. STRICT 4 columns x 6 rows of equal square cells in a portrait 2:3 canvas. Exactly24 disconnected parts, no full characters. Each part at same consistent drawing scale; smaller pieces stay small. True transparent alpha, no text, no labels, no checkerboard, no shadows, no grid. At least20px transparent margin inside every cell, nothing crosses boundaries. Rows1-2 FRONT: r1c1 head with face and forehead/scalp/front hair only, ends around jaw/face-framing locks, absolutely no collar/neck/shoulder/torso; r1c2 entire LONG white back hair mass from crown to hips, no face or body; r1c3 complete NECK stub, charcoal collar, full shoulders, chest, shirt, waist and belt, no arms/legs/long coat tails, no shoulder mantle; r1c4 whole detached anatomical LEFT arm with charcoal sleeve, cream cuff, black glove, shoulder to fingers relaxed downward; r2c1 whole detached anatomical RIGHT arm shoulder to fingers relaxed downward; r2c2 complete ivory/burgundy long lower coat tails as one clothing piece, no limbs; r2c3 both dark trouser legs with boots as one standing pair including upper thighs; r2c4 ivory short shoulder mantle with burgundy underside and silver star brooches, no neck/head/body. Rows3-4 BACK: identical eight parts/order from back; head/scalp NO eyes or face, long back hair fully separate; body complete beneath covering hair. Rows5-6 RIGHT-FACING SIDE: identical eight parts/order facing right; near and far arms are separate, both relaxed down. Behind the head the hair must end smoothly, disconnected from the body; finish every hidden neck/shoulder attachment with rounded overlaps. Preserve natural short SD arms, actual existing head/body proportions, coat and glove design. Clean detailed hand-painted anime SD game art exactly like reference. No weapons, no added gear, no extra limbs, no complete assembled figure."
+  },
+  "source_images": {
+    "approved_design": "exec-362f7c46-7ffb-4daa-8b00-8e7fa1757041.png",
+    "turnaround": "exec-dcebe8a7-97aa-4d24-884d-65a8599362a0.png",
+    "separated_parts": "exec-60f03dbe-4720-449d-b859-9744d721a888.png"
+  },
+  "transparency": "Original generation files have real alpha; gray seen by viewer is not an opaque background. Background-extraction trial was not selected.",
+  "scope": "Static neutral art and independently drawn part sources only; no attack, idle animation or runtime character registration added.",
+  "derived_idle": {
+    "tool": "tools/build_whitehair_idle.mjs",
+    "metadata": "metadata/character/idle/whitehair.json",
+    "validation": "metadata/character/idle/whitehair-validation.json",
+    "source_art_unchanged": true,
+    "method": "Approved visible-pixel cutouts with rigid hierarchical animation",
+    "runtime_registered": false,
+    "motion_revision": "slightly_stronger_sway",
+    "motion": {
+      "body_rise_px": 1.05,
+      "body_rotation_deg": 0.24,
+      "head_rotation_deg": 0.26,
+      "hair_rotation_deg": 0.95,
+      "cloth_rotation_deg": 0.65,
+      "arm_rotation_deg": 0.45
+    }
+  }
+}

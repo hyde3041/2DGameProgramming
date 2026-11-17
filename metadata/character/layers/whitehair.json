@@ -1,0 +1,520 @@
+{
+  "id": "whitehair",
+  "version": 2,
+  "status": "idle_cutouts_and_sheets_ready",
+  "source_design": "asset/character/player/icon/source/whitehair/approved-design.png",
+  "turnaround": "asset/character/player/icon/source/whitehair/turnaround.png",
+  "atlas": "asset/character/player/icon/layers/whitehair/layer-atlas.png",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "neutral_target_max_visible_height": 160,
+  "runtime_registered": false,
+  "motion_ready": true,
+  "layer_assembly_validated": true,
+  "generation_record": "metadata/character/whitehair-generation.json",
+  "notes": [
+    "Approved neutral and generated atlas originals remain unchanged.",
+    "The original independently drawn atlas parts remain draft sources; they are not substituted for visible approved artwork.",
+    "Idle uses approved visible-pixel anatomical cutouts under each direction/idle/visible, with separate hidden seam overlaps.",
+    "Visible cutouts reconstruct the neutral exactly; side neighboring-figure fragments are excluded only in the idle copy.",
+    "Only rigid translations and rotations are used; no scale, shear, mesh deformation or pose blending.",
+    "No class, weapon, attack, skill, deployment cost or runtime party slot has been assigned."
+  ],
+  "source_hashes": {
+    "approved_design": "d5064ecffd6b120f9a9e5c3ee186b1bd35da03df5eb02935b0b6a9d7d98cf60d",
+    "turnaround": "e10cde392cb5f9d2e8e194d05c4b83d724bd17aac863947944a223d19e311996",
+    "layer_atlas": "fa5fcf1b1c5557fc965c44d7e50f609c13ef602a4a1ffdfb7b4188a5d554a35c"
+  },
+  "views": {
+    "front": {
+      "neutral": "asset/character/player/icon/source/whitehair/front/idle.png",
+      "high_resolution_neutral": "asset/character/player/icon/source/whitehair/front/idle-source.png",
+      "source_crop": [
+        150,
+        31,
+        476,
+        769
+      ],
+      "original_foot_pivot": [
+        405,
+        797
+      ],
+      "canonical_foot_pivot": [
+        160,
+        288
+      ],
+      "uniform_scale": 0.20969855832241152,
+      "parts": {
+        "head": {
+          "file": "asset/character/player/icon/layers/whitehair/front/source/head.png",
+          "atlas_rect": [
+            0,
+            0,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            22,
+            42,
+            224,
+            204
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "hair-tail": {
+          "file": "asset/character/player/icon/layers/whitehair/front/source/hair-tail.png",
+          "atlas_rect": [
+            256,
+            0,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            35,
+            21,
+            206,
+            235
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": true
+        },
+        "body": {
+          "file": "asset/character/player/icon/layers/whitehair/front/source/body.png",
+          "atlas_rect": [
+            512,
+            0,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            61,
+            53,
+            135,
+            189
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "arm-left": {
+          "file": "asset/character/player/icon/layers/whitehair/front/source/arm-left.png",
+          "atlas_rect": [
+            768,
+            0,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            68,
+            31,
+            102,
+            225
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": true
+        },
+        "arm-right": {
+          "file": "asset/character/player/icon/layers/whitehair/front/source/arm-right.png",
+          "atlas_rect": [
+            0,
+            256,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            87,
+            35,
+            95,
+            217
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "cloth-hem": {
+          "file": "asset/character/player/icon/layers/whitehair/front/source/cloth-hem.png",
+          "atlas_rect": [
+            256,
+            256,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            12,
+            0,
+            227,
+            230
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": true
+        },
+        "legs": {
+          "file": "asset/character/player/icon/layers/whitehair/front/source/legs.png",
+          "atlas_rect": [
+            512,
+            256,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            46,
+            31,
+            164,
+            206
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "mantle": {
+          "file": "asset/character/player/icon/layers/whitehair/front/source/mantle.png",
+          "atlas_rect": [
+            768,
+            256,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            1,
+            0,
+            228,
+            202
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": true
+        }
+      },
+      "idle_rig": "asset/character/player/icon/layers/whitehair/front/idle/rig.json"
+    },
+    "side": {
+      "neutral": "asset/character/player/icon/source/whitehair/side/idle.png",
+      "high_resolution_neutral": "asset/character/player/icon/source/whitehair/side/idle-source.png",
+      "source_crop": [
+        620,
+        35,
+        630,
+        765
+      ],
+      "original_foot_pivot": [
+        941,
+        797
+      ],
+      "canonical_foot_pivot": [
+        160,
+        288
+      ],
+      "uniform_scale": 0.20969855832241152,
+      "parts": {
+        "head": {
+          "file": "asset/character/player/icon/layers/whitehair/side/source/head.png",
+          "atlas_rect": [
+            0,
+            1024,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            21,
+            16,
+            204,
+            212
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "hair-tail": {
+          "file": "asset/character/player/icon/layers/whitehair/side/source/hair-tail.png",
+          "atlas_rect": [
+            256,
+            1024,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            39,
+            8,
+            165,
+            236
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "body": {
+          "file": "asset/character/player/icon/layers/whitehair/side/source/body.png",
+          "atlas_rect": [
+            512,
+            1024,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            70,
+            29,
+            114,
+            181
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "arm-left": {
+          "file": "asset/character/player/icon/layers/whitehair/side/source/arm-left.png",
+          "atlas_rect": [
+            768,
+            1024,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            73,
+            27,
+            84,
+            201
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "arm-right": {
+          "file": "asset/character/player/icon/layers/whitehair/side/source/arm-right.png",
+          "atlas_rect": [
+            0,
+            1280,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            96,
+            20,
+            79,
+            206
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "cloth-hem": {
+          "file": "asset/character/player/icon/layers/whitehair/side/source/cloth-hem.png",
+          "atlas_rect": [
+            256,
+            1280,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            32,
+            19,
+            175,
+            205
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "legs": {
+          "file": "asset/character/player/icon/layers/whitehair/side/source/legs.png",
+          "atlas_rect": [
+            512,
+            1280,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            74,
+            21,
+            104,
+            211
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "mantle": {
+          "file": "asset/character/player/icon/layers/whitehair/side/source/mantle.png",
+          "atlas_rect": [
+            768,
+            1280,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            38,
+            37,
+            137,
+            151
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        }
+      },
+      "idle_rig": "asset/character/player/icon/layers/whitehair/side/idle/rig.json"
+    },
+    "back": {
+      "neutral": "asset/character/player/icon/source/whitehair/back/idle.png",
+      "high_resolution_neutral": "asset/character/player/icon/source/whitehair/back/idle-source.png",
+      "source_crop": [
+        1244,
+        33,
+        454,
+        767
+      ],
+      "original_foot_pivot": [
+        1448.5,
+        797
+      ],
+      "canonical_foot_pivot": [
+        160,
+        288
+      ],
+      "uniform_scale": 0.20969855832241152,
+      "parts": {
+        "head": {
+          "file": "asset/character/player/icon/layers/whitehair/back/source/head.png",
+          "atlas_rect": [
+            0,
+            512,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            23,
+            29,
+            222,
+            211
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "hair-tail": {
+          "file": "asset/character/player/icon/layers/whitehair/back/source/hair-tail.png",
+          "atlas_rect": [
+            256,
+            512,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            29,
+            13,
+            215,
+            243
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": true
+        },
+        "body": {
+          "file": "asset/character/player/icon/layers/whitehair/back/source/body.png",
+          "atlas_rect": [
+            512,
+            512,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            61,
+            43,
+            138,
+            197
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "arm-left": {
+          "file": "asset/character/player/icon/layers/whitehair/back/source/arm-left.png",
+          "atlas_rect": [
+            768,
+            512,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            80,
+            31,
+            100,
+            224
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": true
+        },
+        "arm-right": {
+          "file": "asset/character/player/icon/layers/whitehair/back/source/arm-right.png",
+          "atlas_rect": [
+            0,
+            768,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            77,
+            26,
+            96,
+            218
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "cloth-hem": {
+          "file": "asset/character/player/icon/layers/whitehair/back/source/cloth-hem.png",
+          "atlas_rect": [
+            256,
+            768,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            22,
+            0,
+            224,
+            228
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": true
+        },
+        "legs": {
+          "file": "asset/character/player/icon/layers/whitehair/back/source/legs.png",
+          "atlas_rect": [
+            512,
+            768,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            61,
+            28,
+            135,
+            210
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": false
+        },
+        "mantle": {
+          "file": "asset/character/player/icon/layers/whitehair/back/source/mantle.png",
+          "atlas_rect": [
+            768,
+            768,
+            256,
+            256
+          ],
+          "alpha_bounds": [
+            1,
+            69,
+            230,
+            126
+          ],
+          "status": "independently_drawn_draft_not_registered",
+          "border_review_required": true
+        }
+      },
+      "idle_rig": "asset/character/player/icon/layers/whitehair/back/idle/rig.json"
+    }
+  },
+  "idle": {
+    "metadata": "metadata/character/idle/whitehair.json",
+    "frames": 16,
+    "fps": 16,
+    "cycle_ms": 1000,
+    "preview": "asset/character/player/icon/preview/whitehair-idle.gif",
+    "validation": "metadata/character/idle/whitehair-validation.json",
+    "authoring_tool": "tools/build_whitehair_idle.mjs",
+    "runtime_registered": false
+  }
+}

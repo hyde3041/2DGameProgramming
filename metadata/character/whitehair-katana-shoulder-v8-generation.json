@@ -1,0 +1,100 @@
+{
+  "id": "whitehair-katana",
+  "version": 8,
+  "status": "complete",
+  "request": "After the elbow extends, keep that extension and use the shoulder to move the arm slightly farther before returning.",
+  "mode": "built-in image_gen image edit",
+  "transparent_background": true,
+  "base_revision": "metadata/character/whitehair-katana-elbow-v7-generation.json",
+  "scope": "Near-straight sword arm maintains its elbow and wrist configuration through a restrained shoulder-led follow-through in frames 6..11, then resumes the ready-pose recovery.",
+  "art": {
+    "front": {
+      "edit_target": "game/asset/character/player/icon/source/whitehair/katana/front/attack-elbow-v7-source-sheet.png",
+      "supporting_reference": ".build/whitehair-katana-shoulder-v8/front-straight-arm-reference.png",
+      "file": "game/asset/character/player/icon/source/whitehair/katana/front/attack-shoulder-v8-source-sheet.png",
+      "generated_file": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-904352f5-e136-43b0-bd4f-63dd730a3d07.png",
+      "prompt": "Use attachment 1 as the EDIT TARGET, a 4x4 full-body sprite sheet with 16 cels numbered 0..15 in row-major order. Attachment 2 is the supporting motion reference: the extended sword-arm pose from frame 6 of this same sheet, not an additional character. Correct only the attack's shoulder follow-through. Preserve all 16 complete cels, same layout, image/cell geometry, size, feet baseline, character design, white long hair, red eyes, charcoal uniform, ivory coat, red accents, brown gloves/boots, and straight silver sword/black sheath. RIGHT hand always holds sword; LEFT hand stays still holding sheath. Keep frames 0..6 and 12..15 as they are. The sword arm has just extended in frame 6. From f6 through f11 the elbow MUST STAY at that same almost-straight, relaxed extension; upper arm and forearm remain in one long line. Do NOT fold the elbow again to lift the sword. Do NOT move the hand inward toward the face. Do NOT rotate the wrist or alter the forearm-to-grip-to-blade angle. Instead, the complete extended upper-arm + forearm + glove + sword moves together as one connected anatomical chain hinged only at the shoulder. The shoulder remains anchored to the torso and the arm maintains its length. The hand follows a small circular arc centered at the shoulder. New poses: f6 row2 col3 is the unchanged reference, approximately horizontal pointing screen-left. f7 row2 col4 is this same straight-arm chain lifted about12 degrees at the shoulder. f8 row3 col1 lifts the same extended arm about24 degrees. f9 row3 col2 lifts it about28 degrees at the gentle peak. f10 row3 col3 returns to about16 degrees. f11 row3 col4 returns to the nearly horizontal extended reference. ONLY AFTER this shoulder follow-through, f12..15 return to the original folded ready pose. Keep f7..11 clearly extended with the elbow midway along an almost straight shoulder-hand line, never an L-shaped or hook-like elbow, no foreshortened upperarm pretending the elbow is bent. Redraw each affected pose naturally as a COMPLETE connected full body cel with continuous sleeves across shoulder and elbow: no cutout rotation artifacts, seams, gaps, ball joints, elbow cap, duplicated arms or detached hands. Retain stable wrist grip, no flip, no reversed elbow, no rubber limb, no sword curve. This is a restrained upwards follow-through then return, NOT a larger overhead swing. Preserve source frame order and timing, all other cels and artwork. Transparent background with clean alpha, no background art, no labels, no motion trails, no extra lines. Output the entire 4x4 sheet of complete cels. Direction is FRONT facing viewer. The anatomical RIGHT sword arm is on screen-left. Keep the front view and same body orientation. Keep original elbow proportions and continuous charcoal sleeve. Motion should read as a long extended arm rising slightly from shoulder and lowering as a unit. Preserve even the tiny relaxed natural flexion already present in the frame6 reference; do not forcibly hyperextend the elbow to180 degrees. Its nearly straight angle stays constant throughout6..11.",
+      "sha256": "8ee7b4bcb7b2d711b875794700c2858b7ff1a9dcb30d893074002d856ce70fff"
+    },
+    "side": {
+      "edit_target": "game/asset/character/player/icon/source/whitehair/katana/side/attack-elbow-v7-source-sheet.png",
+      "supporting_reference": ".build/whitehair-katana-shoulder-v8/side-straight-arm-reference.png",
+      "file": "game/asset/character/player/icon/source/whitehair/katana/side/attack-shoulder-v8-source-sheet.png",
+      "generated_file": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-c81b5d0b-672a-4f5e-b117-abfa0eebc4d4.png",
+      "prompt": "Use attachment 1 as the EDIT TARGET, a 4x4 full-body sprite sheet with 16 cels numbered 0..15 in row-major order. Attachment 2 is the supporting motion reference: the extended sword-arm pose from frame 6 of this same sheet, not an additional character. Correct only the attack's shoulder follow-through. Preserve all 16 complete cels, same layout, image/cell geometry, size, feet baseline, character design, white long hair, red eyes, charcoal uniform, ivory coat, red accents, brown gloves/boots, and straight silver sword/black sheath. RIGHT hand always holds sword; LEFT hand stays still holding sheath. Keep frames 0..6 and 12..15 as they are. The sword arm has just extended in frame 6. From f6 through f11 the elbow MUST STAY at that same almost-straight, relaxed extension; upper arm and forearm remain in one long line. Do NOT fold the elbow again to lift the sword. Do NOT move the hand inward toward the face. Do NOT rotate the wrist or alter the forearm-to-grip-to-blade angle. Instead, the complete extended upper-arm + forearm + glove + sword moves together as one connected anatomical chain hinged only at the shoulder. The shoulder remains anchored to the torso and the arm maintains its length. The hand follows a small circular arc centered at the shoulder. New poses: f6 row2 col3 is the unchanged reference, approximately horizontal pointing screen-left. f7 row2 col4 is this same straight-arm chain lifted about12 degrees at the shoulder. f8 row3 col1 lifts the same extended arm about24 degrees. f9 row3 col2 lifts it about28 degrees at the gentle peak. f10 row3 col3 returns to about16 degrees. f11 row3 col4 returns to the nearly horizontal extended reference. ONLY AFTER this shoulder follow-through, f12..15 return to the original folded ready pose. Keep f7..11 clearly extended with the elbow midway along an almost straight shoulder-hand line, never an L-shaped or hook-like elbow, no foreshortened upperarm pretending the elbow is bent. Redraw each affected pose naturally as a COMPLETE connected full body cel with continuous sleeves across shoulder and elbow: no cutout rotation artifacts, seams, gaps, ball joints, elbow cap, duplicated arms or detached hands. Retain stable wrist grip, no flip, no reversed elbow, no rubber limb, no sword curve. This is a restrained upwards follow-through then return, NOT a larger overhead swing. Preserve source frame order and timing, all other cels and artwork. Transparent background with clean alpha, no background art, no labels, no motion trails, no extra lines. Output the entire 4x4 sheet of complete cels. Direction is THREE-QUARTER SIDE facing SCREEN LEFT. Stay in this exact view. The straight arm reaches left away from the chest and remains fully extended as it rises slightly. The sword hand must never approach the forehead, since that would require bending the elbow; shift the entire straight arm from the shoulder only. Keep shoulder anatomical attachment and torso unchanged. Preserve even the tiny relaxed natural flexion already present in the frame6 reference; do not forcibly hyperextend the elbow to180 degrees. Its nearly straight angle stays constant throughout6..11.",
+      "initial_generated_file": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-1de24557-6d3c-4b28-802a-7014e9d14cb4.png",
+      "background_cleanup": {
+        "mode": "built-in image_gen image edit",
+        "reason": "Initial side generation left broad translucent gray background between sprites (empty-cell-boundary alpha up to25); regenerate transparency without changing motion.",
+        "input": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-1de24557-6d3c-4b28-802a-7014e9d14cb4.png",
+        "output": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-c81b5d0b-672a-4f5e-b117-abfa0eebc4d4.png",
+        "transparent_background": true,
+        "prompt": "Edit this image ONLY to remove the unintended translucent gray haze/background between the sprites. The attached 4x4 character sprite sheet is the exact edit target. Keep all 16 sprites in the same positions and poses, their exact size, costume, face, long white hair, sword and sheath. In particular, preserve the extended elbow/straight arm shoulder-led follow-through of frames6..11: never bend the elbow or alter hand, sword or shoulder positions. Preserve the complete character, every hair strand, connected arms and blade. Outside every character silhouette, background must be truly empty, alpha ZERO. Remove the broad faint gray clouds/gray patches around and between sprites. Preserve natural antialiasing only directly on actual character/sword edges, not a soft glow or surrounding halo. No ground shadows, no solid background, no checkerboard drawn into pixels, no gray mist, no text. Do not change any artwork or motion. Return the same complete 4x4 sheet, 16 full body cels on genuinely transparent background.",
+        "initial_source_archive": ".build/whitehair-katana-shoulder-v8/source-history/side-initial-background.png"
+      },
+      "sha256": "56af34240792642628cbbeb36f5a135098eca804dd13dfba6d03fa8dbfd9eb7e"
+    }
+  },
+  "motion_targets": {
+    "frames": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "approximate_shoulder_angles_degrees": [
+      0,
+      12,
+      24,
+      28,
+      16,
+      0
+    ],
+    "elbow": "Retain frame6 relaxed near-extension during follow-through.",
+    "wrist": "No independent wrist rotation; retain forearm/grip/blade relationship.",
+    "recovery": "Return from shoulder follow-through before folding the arm during frames12..15."
+  },
+  "invariants": [
+    "Right sword hand, left sheath hand.",
+    "Complete authored cells only, no limb-cutout animation or old masks.",
+    "16 frames per view at16FPS; uniform per-view scale, foot pivot[160,288].",
+    "Original idle, game code and v6/v7 versioned history unchanged."
+  ],
+  "validation": "metadata/character/whitehair-katana-shoulder-v8-validation.json",
+  "authoring_tool": "tools/package_whitehair_katana_wholepose_attack.mjs",
+  "registration": "metadata/character/attack/whitehair-katana-shoulder-v8-registration.json",
+  "preview": "game/asset/character/player/icon/preview/whitehair-katana-shoulder-v8.gif",
+  "lossless_preview": "game/asset/character/player/icon/preview/whitehair-katana-shoulder-v8.png",
+  "sheet_outputs": {
+    "front": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+      "versioned_file": "game/asset/character/player/main/9-whitehair/katana/front/attack-shoulder-v8.png",
+      "sha256": "24d6af6edf38b0fd482087619fc04dddc47cc03b8bc715e2f9d1ed6034bf2708"
+    },
+    "side": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+      "versioned_file": "game/asset/character/player/main/9-whitehair/katana/side/attack-shoulder-v8.png",
+      "sha256": "83c7923e2f1ee25d1628a8eca895c31c66f8c9373ba68079f9d473afd67b1618"
+    }
+  },
+  "limitations": [
+    "All16 attack cels are complete generated drawings, registered by one common per-view scale and foot translation; no limb mask, cutout rotation or old glove overlay.",
+    "Generated attack neutral frames match the ready pose visually but are not pixel-identical to the separately preserved idle artwork.",
+    "The preview reads final production sprite cells directly. The new character remains unregistered in the playable party."
+  ],
+  "visual_review": {
+    "file": "game/asset/character/player/icon/preview/whitehair-katana-shoulder-v8.gif",
+    "sha256": "e44b654004711bf6b9cbd0ae8896bb94b3e97013d76cb62f53821c1af39cca21",
+    "decoded_frame_count": 16,
+    "passed": true,
+    "findings": [
+      "Inspected all 16 decoded final GIF frames in both directions (32 poses), using enlarged arm contacts generated from this final file, not authoring references.",
+      "Front and side frames 6-11 keep the sword arm nearly extended. Frames 7-9 raise the whole arm at the shoulder; frames 10-11 return it toward the frame-6 horizontal pose. The hand no longer folds back toward the forehead at the peak.",
+      "The wrist, grip and sword remain visually aligned through frames 6-11; no independent wrist spin, sword flip, or hand-role swap is visible. Anatomical right hand holds the sword and left hand remains at the scabbard.",
+      "Frame 12 starts the elbow-fold recovery, followed by sheathing through frames 13-15. All 16 poses retain continuous shoulder/elbow/forearm/hand connections; earlier front-6/11 and side-7-10 gaps have not recurred.",
+      "The shoulder follow-through reads as a modest additional rise and return. Exact joint angles are not certified from raster artwork."
+    ]
+  }
+}

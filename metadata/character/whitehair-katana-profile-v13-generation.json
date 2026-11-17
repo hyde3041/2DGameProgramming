@@ -1,0 +1,62 @@
+{
+  "id": "whitehair-katana-profile-v13",
+  "profile": "9-whitehair",
+  "status": "complete_applied_validated",
+  "mode": "built-in image_gen edit",
+  "prompt": "Use case: identity-preserve game character portrait edit.\nCreate ONE finished square profile illustration of the EXACT white-haired red-eyed katana character in Image1. Image1 is the authoritative newly cleaned in-game model: match this face, full round chibi cheeks, red eyes, hair, clothing design, thin clean linework and smooth flat shading. Image2 is the EXISTING profile card to replace: use ONLY its head-and-upper-chest framing and pale cool grey background. Image3 is another party member's profile, for shared square-card composition/production finish only; do not copy that character's features, hair, costume or blue palette.\nSingle front-facing bust portrait, same calm determined expression and identity as Image1, centered and immediately readable at small game card size. Large expressive crimson red eyes, natural small neutral mouth, softly rounded face without a pointy narrow chin, long flowing ivory-white hair with restrained pale lavender shadows and the exact center-parted fringe from Image1. Keep hair volume and strands clean and deliberate. Match the black high-collared uniform with thin dark red piping, ivory shoulder cape and small silver shoulder fastenings from Image1. Head, neck and shoulders connect naturally. No pose or face redesign, no added ornaments, no elaborate new jewelry.\nLine and color quality: crisp smooth moderately thin dark contours consistent with Image1, clean ivory highlights and lavender shadow blocks, no fuzzy duplicate outlines, muddy speckles, noise, crosshatching, texture grain, over-dark thick contour, blur or oversharpening halos. Clean polished anime game art, consistent with the actual updated sprite rather than a realistic portrait. Preserve chibi facial proportions. Avoid making the face thinner or older.\nComposition: ONE character only, exactly1:1 square canvas. Full crown comfortably inside top edge with about4% margin, long hair flowing along both sides, eyes near the middle of the canvas, upper chest/cape filling the lower edge. Hair may naturally leave the left/right/bottom edges as in Image2; don't cut the top of the head. Plain solid pale cool-grey background matching Image2, opaque. No scenery, gradients, aura, weapon raised behind head, extra limbs, frame, border, letters, labels, numbers, cost icons, logos or watermark. High-resolution master illustration suitable for a128x128 deployment profile, not a sprite sheet or collage.",
+  "source": "game/asset/character/player/icon/source/whitehair/katana/profile-v13/deployment-square-source.png",
+  "references": [
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/profile-v13/clean-character-reference.png",
+      "role": "authoritative v13 cleaned character identity and linework, unchanged crop",
+      "sha256": "b2ac1cdcac83eba632576845a3a5c5660e0e88ac6cf442bd6a670ffc1e156eef",
+      "derived_from": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/00-03-source.png",
+      "crop": [
+        180,
+        230,
+        450,
+        580
+      ],
+      "processing": "Unchanged crop reference; no repaint or pixel edit."
+    },
+    {
+      "path": ".build/whitehair-katana-profile-v13/backup/game/asset/character/player/main/9-whitehair/skill/profile/deployment-square.png",
+      "role": "Old profile composition/background only; exact original profile preserved before replacement.",
+      "sha256": "fb73b65c3cdc0d70475dc9b84c9eea71d210fa08c0cdb426d69fb19e03a49087"
+    },
+    {
+      "path": "game/asset/character/player/main/0-swordsman/skill/profile/deployment-square.png",
+      "role": "existing party card format and finish only",
+      "sha256": "b51365e6ed8415304b41e2f72897c2bef6e1368e1aba06fd204d06190d8eebc1"
+    }
+  ],
+  "transparent_background": false,
+  "output": "game/asset/character/player/main/9-whitehair/skill/profile/deployment-square.png",
+  "source_sha256": "a7c24e25e9afa8d62f0683e61ed1d8911feb5af8bef360dd21cb136064b0850f",
+  "output_sha256": "c8e3f1bb66b407c47488b1a0cb60b679d17f22c9ec00007b2ea9a6bf8e07eda9",
+  "output_size": [
+    128,
+    128
+  ],
+  "versioned_output": "game/asset/character/player/main/9-whitehair/skill/profile/deployment-profile-v13.png",
+  "preview": "game/asset/character/player/icon/preview/whitehair-katana-profile-v13.png",
+  "preview_size": [
+    512,
+    512
+  ],
+  "packaging": "Whole-image uniform Lanczos resize only; opaque square preserved; no crop or redraw.",
+  "profile_art_version": 13,
+  "unchanged_motion_versions": {
+    "idle": 12,
+    "attack": 13
+  },
+  "application_report": ".build/whitehair-katana-profile-v13/application-report.json",
+  "validation_report": ".build/whitehair-katana-profile-v13/native-profile-validation.json",
+  "validation_summary": {
+    "native_hud": true,
+    "ninth_character": "9-whitehair",
+    "cost5_opacity": 255,
+    "cost4_opacity": 127,
+    "protected_files_unchanged": 134
+  }
+}

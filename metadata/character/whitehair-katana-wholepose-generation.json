@@ -1,0 +1,81 @@
+{
+  "id": "whitehair-katana-wholepose-v6",
+  "status": "complete",
+  "generation_mode": "built-in image_gen",
+  "request": "Preserve the approved upward slash but eliminate elbow gaps in the actual delivered playback. Whole complete cels are used so imported art cannot be clipped by old arm masks.",
+  "cause_of_previous_failure": "The previous importer compared an already clipped sheet to its GIF. It restricted generated connected sleeve artwork to an old arm silhouette and protected semi-transparent glove edges, removing opaque elbow connections present in the generated atlas.",
+  "examples": [
+    {
+      "view": "side",
+      "frames": [
+        8,
+        9
+      ],
+      "native_region": [
+        139,
+        188,
+        144,
+        194
+      ],
+      "issue": "Generated sleeve became transparent outside old arm mask."
+    },
+    {
+      "view": "front",
+      "frames": [
+        6,
+        11
+      ],
+      "native_region": [
+        130,
+        198,
+        135,
+        205
+      ],
+      "issue": "Old hair pixels replaced the new connected sleeve."
+    }
+  ],
+  "mode": "Whole authored frames; no limb masks, cutout animation, old glove overlay or neutral-pose replacement.",
+  "art": {
+    "front": {
+      "generated_file": "exec-fbd57cd3-889c-464f-bc3e-f1a4d8cf8d66.png",
+      "prompt": "Use case: precise-object-edit. EDIT the attached complete 16-frame sprite sheet. Deliver a complete finished full-body sprite sheet, not a layer sheet or a cropped atlas. Keep precisely FOUR COLUMNS and FOUR ROWS, exactly sixteen equal square cells, original cell centers, character scale, planted boot baseline, camera and ordered poses. TRUE transparent background.\nThe existing swing motion and sword trajectory in every cell are correct. Repair the drawing so the anatomical RIGHT sword arm is a single coherent naturally drawn arm from shoulder through sleeve, elbow, forearm, wrist and gloved gripping fingers in every pose. Repaint the complete arm and its shoulder junction as needed. There must be NO cutout-art seams, no detached circular elbow cap, no open gap, no floating forearm, no dislocated upper arm, no hair/background showing THROUGH the joint, and no abrupt sleeve truncation. Upper arm and forearm have natural short chibi proportions. Depict correct curved outer elbow silhouette, inner elbow crease and sleeve folds. The entire arm and glove must share continuous opaque anatomy. This must look like individually drawn animation cels, not rotated severed image pieces.\nPRESERVE THE MOTION EXACTLY: each cell's right-hand grip center and sword orientation match the supplied cell. The wrist and grip stay straight/fixed; DO NOT rotate the sword independently of the hand. Sequence remains a whole-arm low-to-high rising slash: rows1/2 progress from hip draw to low blade, forward-horizontal extension, then upper-left rising blade; row3 reaches raised finish and starts lowering; row4 recovers to the initial ready pose. Do not swap hands or change left hand supporting black sheath. Keep one straight slim silver blade and one black sheath. No extra arms or swords.\nKeep face, long white hair, red eyes, ivory cape and embroidered coat, charcoal uniform with red piping, burgundy lining, brown boots, gloves, belt, silver stars, colors and body size consistent across all frames. Same feet positions; no body translation or size changes. Every whole sword and both boots fit inside each cell. Maintain original generous gutters, NO enlargement of the figures to fill cells. Frame0 and frame15 visually identical ready pose. No lettering, frame labels, lines, effects, speed smears or shadows.\nOutput the entire completed sprite sheet with the arm fixes painted into each full pose. Do not output partial arm patches, masks or alternative contact layouts.\nCamera: FRONT view in every cell.",
+      "file": "game/asset/character/player/icon/source/whitehair/katana/front/attack-wholepose-source-sheet.png",
+      "sha256": "e52a1d1df3fc2484a562cff51733559516ddc8e936f412ed3762471c22f323f9"
+    },
+    "side": {
+      "generated_file": "exec-10dce4c7-d3d2-4880-b254-192ba2fab390.png",
+      "prompt": "Use case: precise-object-edit. EDIT the attached complete 16-frame sprite sheet. Deliver a complete finished full-body sprite sheet, not a layer sheet or a cropped atlas. Keep precisely FOUR COLUMNS and FOUR ROWS, exactly sixteen equal square cells, original cell centers, character scale, planted boot baseline, camera and ordered poses. TRUE transparent background.\nThe existing swing motion and sword trajectory in every cell are correct. Repair the drawing so the anatomical RIGHT sword arm is a single coherent naturally drawn arm from shoulder through sleeve, elbow, forearm, wrist and gloved gripping fingers in every pose. Repaint the complete arm and its shoulder junction as needed. There must be NO cutout-art seams, no detached circular elbow cap, no open gap, no floating forearm, no dislocated upper arm, no hair/background showing THROUGH the joint, and no abrupt sleeve truncation. Upper arm and forearm have natural short chibi proportions. Depict correct curved outer elbow silhouette, inner elbow crease and sleeve folds. The entire arm and glove must share continuous opaque anatomy. This must look like individually drawn animation cels, not rotated severed image pieces.\nPRESERVE THE MOTION EXACTLY: each cell's right-hand grip center and sword orientation match the supplied cell. The wrist and grip stay straight/fixed; DO NOT rotate the sword independently of the hand. Sequence remains a whole-arm low-to-high rising slash: rows1/2 progress from hip draw to low blade, forward-horizontal extension, then upper-left rising blade; row3 reaches raised finish and starts lowering; row4 recovers to the initial ready pose. Do not swap hands or change left hand supporting black sheath. Keep one straight slim silver blade and one black sheath. No extra arms or swords.\nKeep face, long white hair, red eyes, ivory cape and embroidered coat, charcoal uniform with red piping, burgundy lining, brown boots, gloves, belt, silver stars, colors and body size consistent across all frames. Same feet positions; no body translation or size changes. Every whole sword and both boots fit inside each cell. Maintain original generous gutters, NO enlargement of the figures to fill cells. Frame0 and frame15 visually identical ready pose. No lettering, frame labels, lines, effects, speed smears or shadows.\nOutput the entire completed sprite sheet with the arm fixes painted into each full pose. Do not output partial arm patches, masks or alternative contact layouts.\nCamera: three-quarter SIDE view facing SCREEN LEFT in every cell, never mirror.",
+      "file": "game/asset/character/player/icon/source/whitehair/katana/side/attack-wholepose-source-sheet.png",
+      "sha256": "58d12683c26959c99b3b62e4ba62350c25e3e0a6f3176bb55dfb8d913838e7ca"
+    }
+  },
+  "reference_atlases": {
+    "front": ".build/whitehair-katana-wholepose-attack/front-fullbody-reference.png",
+    "side": ".build/whitehair-katana-wholepose-attack/side-fullbody-reference.png"
+  },
+  "fps": 16,
+  "frames": 16,
+  "runtime_registered": false,
+  "authoring_tool": "tools/package_whitehair_katana_wholepose_attack.mjs",
+  "registration": "metadata/character/attack/whitehair-katana-wholepose-registration.json",
+  "preview": "game/asset/character/player/icon/preview/whitehair-katana-wholepose-v6.gif",
+  "lossless_preview": "game/asset/character/player/icon/preview/whitehair-katana-wholepose-v6.png",
+  "validation": "metadata/character/whitehair-katana-wholepose-validation.json",
+  "sheet_outputs": {
+    "front": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+      "versioned_file": "game/asset/character/player/main/9-whitehair/katana/front/attack-wholepose-v6.png",
+      "sha256": "049508953bcbd57af208a38d61bf4923777fff73ec9ec7421247678f50c87c54"
+    },
+    "side": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+      "versioned_file": "game/asset/character/player/main/9-whitehair/katana/side/attack-wholepose-v6.png",
+      "sha256": "d6ef636f823e3725d9f3f32fef48889dd7cca1e21abd9b8a2e08753110f07675"
+    }
+  },
+  "limitations": [
+    "All16 attack cels are complete generated drawings, registered by one common per-view scale and foot translation; no limb mask, cutout rotation or old glove overlay.",
+    "Generated attack neutral frames match the ready pose visually but are not pixel-identical to the separately preserved idle artwork.",
+    "The preview reads final production sprite cells directly. The new character remains unregistered in the playable party."
+  ]
+}

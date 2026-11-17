@@ -1,0 +1,61 @@
+{
+  "id": "whitehair-katana-joint-attack",
+  "status": "complete",
+  "generation_mode": "built-in image_gen",
+  "request": "Red annotation indicates low-to-high swing direction, not static blade angles. Do not rotate wrist independently.",
+  "reference": "game/asset/character/player/icon/source/whitehair/katana/approved-pair.png",
+  "art": {
+    "hidden_surface": {
+      "file": "game/asset/character/player/icon/source/whitehair/katana/joint-body-fill-pair.png",
+      "generated_file": "exec-4f2f71c4-5aab-4a3c-8fd1-0aa4efd12496.png",
+      "prompt": "Use case: precise-object-edit. Edit target: supplied transparent two-view character pair. Create hidden-surface restoration for an articulated game animation. Keep exact original canvas, front character on left and screen-left-facing three-quarter character on right, exact hair/face/body/clothing/boots placement and scale.\nIn BOTH views REMOVE ONLY the anatomical RIGHT sword-drawing arm: the arm on screen left, including its dark sleeve, exposed forearm and gloved hand holding the hilt. Remove the sword hilt/guard and exposed silver blade too. Reconstruct the small dark vest/belt and ivory cloak surfaces that were behind this removed arm and blade, with continuous original seams and flat clean original palette. Keep the anatomical LEFT arm and its glove holding the black scabbard at the hip exactly as it was, and keep that black scabbard with red tassel. Do not create replacement arms or hands. Both figures should temporarily have a missing right arm for separate rigged animation. No lettering or markers. True transparent background. Preserve all other visible pixels as closely as possible.",
+      "sha256": "421e11a8eb1c8c8595c0e569d82237bdd39900f332562b83a2c8142c2088cb58"
+    },
+    "straight_sword": {
+      "file": "game/asset/character/player/icon/source/whitehair/katana/joint-sword.png",
+      "generated_file": "exec-e1d6e449-2d10-4e47-ae44-f47cb2485b06.png",
+      "prompt": "Use case: precise-object-edit. Input reference: supplied white-haired swordswoman pair, to match her sword design only. Output one isolated completely drawn straight sword, no person, no hand, no scabbard. Horizontal orientation, dark brown wrapped handle on left, small silver elliptical guard, long straight thin silver blade points right. Same polished painted chibi game art as reference, dark crisp contour, clean silver bevel, subtle gray blade center, pointed tip. Straight centerline from pommel through blade tip; not curved. Hilt width about 1/6 blade length, guard modest and narrow. Sword fills width of a wide transparent canvas with safe margins. One single intact sword only, no duplicate, no effects, no text. Actual transparent background.",
+      "sha256": "cbea70771e27fdcbb7a78c81bf19ca45f219f182e48f9c5a398c94a09b123de3"
+    }
+  },
+  "rejected_trials": [
+    {
+      "file": "exec-d7c63912-111e-4d8c-8d35-4ae4e15b90a9.png",
+      "reason": "Mistakenly interpreted red guides as static blade orientations; user corrected."
+    },
+    {
+      "file": "exec-f4d7f1c1-548d-4f61-9ad5-f4a63ea0c846.png",
+      "reason": "Whole-frame generation still changes blade side relative to grip."
+    },
+    {
+      "file": "exec-7b6728c5-7902-4e37-a733-b9ed6358531a.png",
+      "reason": "Whole-frame generation includes doubled blade and wrist inconsistency."
+    }
+  ],
+  "constraints": [
+    "Shoulder and elbow rotation only; no independent wrist angle.",
+    "Original visible body and limb pixels preserved; generated fill limited to vacated region.",
+    "Fixed limb length and scale; fixed foot pivot.",
+    "Front and screen-left three-quarter side, 16 frames at 16 FPS.",
+    "Do not edit existing idle or user game code."
+  ],
+  "authoring_tool": "tools/build_whitehair_katana_joint_attack.mjs",
+  "rig": "metadata/character/attack/whitehair-katana-joint-rig.json",
+  "preview": "game/asset/character/player/icon/preview/whitehair-katana-wrist-fixed.gif",
+  "lossless_preview": "game/asset/character/player/icon/preview/whitehair-katana-wrist-fixed.png",
+  "validation": "metadata/character/whitehair-katana-motion-validation.json",
+  "runtime_registered": false,
+  "sheet_outputs": {
+    "front": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+      "sha256": "de09397d02e8a4cd9fe07253aaf3a58af5b7c12427f505a50896417cb29d56d9"
+    },
+    "side": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+      "sha256": "ae0ca98701ddba137e940e06f10b7b7eb48002f231bc68331972833e6c1fc850"
+    }
+  },
+  "fps": 16,
+  "frames": 16,
+  "assembly": "Two rigid arm bones. The forearm, glove and sword use one shared transform. No wrist degree of freedom or animated limb scaling."
+}

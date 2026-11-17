@@ -18,6 +18,9 @@ BACK_SCALE = 0.86
 DEPTH_RATIO = 0.82
 ELEVATION_RATIO = 0.25
 
+# Keep the existing cave-34 ground connection to its defense point.
+EXTRA_DEPLOYMENT_TILES = {"ro4_n_5_5": {(7, 1)}}  # (column, row), from the top left
+
 
 def project_point(column, row, grid):
     """Project a point on the shared flat board, with rows receding from the viewer."""
@@ -136,8 +139,13 @@ def convert_map(number, stage_id, entry, aliases, cache):
             tile = data["tiles"][index]
             key = tile["tileKey"]
             high = tile["heightType"] == "HIGHLAND"
-            buildable = tile["buildableType"] != "NONE" and (column, row) not in disallowed
             walkable = tile["passableMask"] == "ALL"
+            ground_override = not high and walkable and (
+                key == "tile_floor" or (column, row) in EXTRA_DEPLOYMENT_TILES.get(stage_id, ())
+            )
+            buildable = (column, row) not in disallowed and (
+                tile["buildableType"] != "NONE" or ground_override
+            )
             kind = "H" if high and buildable else "#" if high else "." if buildable else "_"
             if key in ("tile_start", "tile_flystart"):
                 kind = "R"

@@ -1,0 +1,65 @@
+{
+  "id": "whitehair",
+  "status": "katana_color_cleanup_preview",
+  "runtime_applied": false,
+  "final_image": "game/asset/character/player/icon/preview/whitehair-katana-color-clean.png",
+  "original_preserved": "game/asset/character/player/icon/source/whitehair/katana-anatomy-before-restore.png",
+  "previous_preview_preserved": "game/asset/character/player/icon/preview/whitehair-katana-anatomy-restored.png",
+  "color_cleanup": {
+    "mode": "built-in image_gen edit",
+    "input": "game/asset/character/player/icon/source/whitehair/katana-anatomy-before-restore.png",
+    "generated_image": "exec-8fc55ffa-e236-4aae-95ae-d68e68fdfdb4.png",
+    "project_source": "game/asset/character/player/icon/source/whitehair/katana-color-clean-before-restore.png",
+    "sha256": "a02e58e1802c82f1a245118f07fd0a04b609ad64b76c581ac8a4e51a06a1b98c",
+    "prompt": "Use case: precise-object-edit / color-restoration. Edit the supplied two-view chibi katana character illustration ONLY to repair the conspicuous mottled, lumpy, camouflage-like patches in its coloration. This is a careful COLOR CLEANUP of the exact existing drawing, not a new character design or pose. Keep the exact composition, canvas, front character at left, right-facing side character at right, face and red eyes, silhouette, proportions, every hair lock, arms, elbows, wrist angles, hands, fingers, fully sheathed sword and their positions. Retain the current corrected grip: right hand grips the diamond-wrapped katana hilt above the guard, left hand supports the smooth scabbard just below the guard. Do not swap hands or move the sword. Preserve all small silver buttons, star-shaped brooches, belt buckles, red stitching, diamond grip pattern, coat floral embroidery, and seams. The edit is in the color fills INSIDE these existing contours. Replace the dirty marbled blotches and random translucent patchwork visible across the charcoal torso, sleeves, trousers, brown leather boots, ivory shoulder cape, coat tails, burgundy lining and shadowed white hair with CLEAN, COHERENT color planes. Charcoal jacket and pants must read as uniform dark fabric with just a few natural, smooth controlled shadows following the existing folds; brown leather boots should have smooth restrained highlights and shadows with no mottled patches. Ivory cloth should have smooth ivory fill with pale rose/lavender fold shadows; long white hair should have bright clean white locks with continuous controlled lavender shadow bands, not muddy marbling. Keep the existing material colors and overall light-dark balance. Preserve the existing ink contours and intentional fold lines; do not blur the whole image, oversoften the eyes, erase small details, add grain, speckles, watercolor texture, camouflage, faceted random highlights, extra seams, or new folds. The cleanup must be obvious in the dark clothing compared with input: remove ALL the random polygonal/blotchy color islands unrelated to real folds. Polished clean anime game concept finish, clean flat colors plus restrained smooth cel shading. Keep original pale lavender background and foot shadows. No text, annotations, arrows or inset panels. No body/anatomy changes."
+  },
+  "restoration": {
+    "repository": "https://github.com/hehee9/gpt-image-restore",
+    "commit": "bc9a90916a2213b14024b57e79be4773aa60c3ca",
+    "execution": "local isolated Python CLI, CPU, no image upload by restoration utility",
+    "preset": "balanced",
+    "overrides": {
+      "dots": 0,
+      "sparkle": 0,
+      "grime": 1,
+      "mottle": 0.7,
+      "surface": 0.5,
+      "cel_fill": 1,
+      "dither": 0
+    },
+    "cli_arguments": "game/asset/character/player/icon/source/whitehair/katana-color-clean-before-restore.png -o .build/restore-work/color-clean-final --preset balanced --device cpu --dots 0 --sparkle 0 --grime 1 --mottle 0.7 --surface 0.5 --cel-fill 1 --dither 0 --report --save-diff",
+    "report": ".build/restore-work/color-clean-final/katana-color-clean-before-restore_report.json",
+    "output_sha256": "aa175d7db8ae314e43b361a6b5746e2e960252a1d94645e6878deceb3d6a7123",
+    "dimension": [
+      1706,
+      922
+    ],
+    "mode": "RGB",
+    "alpha": "Input and output opaque; no alpha present.",
+    "cel_fill_ink_core_changed_pixels": 0,
+    "cel_fill_detail_changed_pixels": 0,
+    "note": "Ink/detail counts are the cel_fill stage's protection metrics, not a pixel-perfect preservation claim for the generative color cleanup."
+  },
+  "evaluation": {
+    "discarded_trials": [
+      {
+        "preset": "strong",
+        "input": "original",
+        "result": "Broad painted blotches remained; small button highlights lost."
+      },
+      {
+        "preset": "strong with dots/sparkle/contour/defocus/dither off, grime=1,mottle=1.2,surface=1,cel_fill=1",
+        "input": "original",
+        "result": "Minor surface improvement but broad clothing blotches remained."
+      }
+    ],
+    "method_reason": "The restoration stages excluded the large high-contrast color patches as image structure. Generative color cleanup removed broad patches; requested GitHub tool then cleaned residual noise.",
+    "visual_checks": [
+      "Broad chest/trouser/boot mottling visibly removed.",
+      "Hair and coat shadows read as coherent color planes.",
+      "Front buttons, red piping, belt buckle, star brooches and floral coat motif remain visible.",
+      "Front/side composition and right-hand-hilt / left-hand-scabbard pose visually retained."
+    ],
+    "scope": "Preview only. Existing neutral idle animation and game runtime assets/code were not replaced."
+  }
+}

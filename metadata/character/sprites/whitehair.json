@@ -1,0 +1,787 @@
+{
+  "id": "whitehair",
+  "name": "백발 검사",
+  "idle_animation_id": "whitehair-katana",
+  "source_attack_metadata": "metadata/character/attack/whitehair-katana.json",
+  "source_attack_version": 13,
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "fps": 16,
+  "frames_per_direction": 16,
+  "side_facing": "left",
+  "direction_aliases": {
+    "right": "side"
+  },
+  "direction_notes": {
+    "front": "Authored front view, used when facing down.",
+    "side": "Authored left-facing view; mirror only for right-facing rendering.",
+    "back": "Authored rear-facing katana idle and attack; used when facing up."
+  },
+  "directional_attack_sheets": {
+    "front": {
+      "file": "asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+      "width": 1280,
+      "height": 1280,
+      "columns": 4,
+      "rows": 4,
+      "loop": true,
+      "frame_duration_ms": 62.5,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ]
+        }
+      ]
+    },
+    "side": {
+      "file": "asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+      "width": 1280,
+      "height": 1280,
+      "columns": 4,
+      "rows": 4,
+      "loop": true,
+      "frame_duration_ms": 62.5,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ]
+        }
+      ]
+    },
+    "back": {
+      "file": "asset/character/player/main/9-whitehair/katana/back/attack-sheet.png",
+      "width": 1280,
+      "height": 1280,
+      "columns": 4,
+      "rows": 4,
+      "loop": true,
+      "frame_duration_ms": 62.5,
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ]
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ]
+        }
+      ]
+    }
+  },
+  "style_registration": "metadata/character/whitehair-katana-style-v10-registration.json",
+  "attack_registration": "metadata/character/whitehair-katana-denoise-v13-registration.json",
+  "back_registration": "metadata/character/whitehair-katana-denoise-v13-registration.json",
+  "denoise_registration": "metadata/character/whitehair-katana-denoise-v13-registration.json",
+  "previous_rgb_restoration": "metadata/character/whitehair-katana-complete-v12-restoration.json",
+  "denoise_generation": "metadata/character/whitehair-katana-denoise-v13-generation.json"
+}

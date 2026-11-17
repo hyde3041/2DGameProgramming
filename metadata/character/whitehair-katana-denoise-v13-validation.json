@@ -1,0 +1,708 @@
+{
+  "id": "whitehair-katana-denoise-v13",
+  "passed": true,
+  "application": {
+    "applied": true,
+    "attack_sheets": 3,
+    "frames": 48,
+    "protected_files_unchanged": 111,
+    "backup": ".build/backups/whitehair-katana-before-denoise-v13-20261117T025042Z",
+    "sha256": {
+      "front": "13c910ab2d1d8377386860963d49a275b614916d967573def6d7b91345f4ad17",
+      "side": "06e4fcfa203b2e25383039e241b29fba4026fc322a649817408a5fe6719077fe",
+      "back": "c2adf986fb12a9eb855525cd95760b056550fb379d0a4f6c09b8626b1158f39a"
+    }
+  },
+  "art_review": {
+    "reviewer": "/root/katana_anatomy_review",
+    "recorded_utc": "2026-11-17T03:15:39.443968+00:00",
+    "passed": true,
+    "basis": "Candidate/source review and independent sheet verification completed before root production apply. This is not a post-apply native-renderer review.",
+    "production_modified_by_reviewer": false,
+    "source_and_candidate_hashes": {
+      "front": {
+        "candidate_sha256": "13c910ab2d1d8377386860963d49a275b614916d967573def6d7b91345f4ad17",
+        "sources": {
+          "00-03": "6f097244e01c1479ae6ec264e653fa3d734df84b80239697e6e0e7d3c2b489fa",
+          "04-07": "2a9d7bf64f48eb19c95f3964a4a4b73d24e66c2ef6627a0325f6ad898bd685a4",
+          "08-11": "d6092bba47d4fd8a0c6319b915f733a75acadbbd1d85b53f6bb9360192c2d157",
+          "12-15": "52f4253356e180bf16eb9ddd08c096f44cc74af2ed520ecb58218751d33555d9"
+        }
+      },
+      "side": {
+        "candidate_sha256": "06e4fcfa203b2e25383039e241b29fba4026fc322a649817408a5fe6719077fe",
+        "sources": {
+          "00-03": "1a88451c4fa4bf3cc8d22e8a7a5f636e6c81dfa046b114ea7cc8dee939bff112",
+          "04-07": "d95dbf98000c719d216c4bb7acfb695d280a8a7cd01f3e0e34de0c61a2fedc85",
+          "08-11": "2e1dbee4eeed76df0560fff4405f7d59b8b58c659998d43e3c2824df3def6517",
+          "12-15": "fd59e0e0f21c7b22e96a2f96aa5104eaac959e3df4a5b4891ba88dd7d9bd8b19"
+        }
+      },
+      "back": {
+        "candidate_sha256": "c2adf986fb12a9eb855525cd95760b056550fb379d0a4f6c09b8626b1158f39a",
+        "sources": {
+          "00-03": "8fff315f1805f0cfbf9ef3b0e8463b9da6ddd147c22e737845516bbfe62b39a4",
+          "04-07": "f9ce5b58c36e44f6d4a006f25b2e01d7279c68876ef95127154d15e87011240e",
+          "08-11": "82273eb5ffe72182863341327acf0e2e0fc3c58667fbc8b84b175a9e9d3d1357",
+          "12-15": "ddae6b14d8e1deec9b07c099ec4dcefda722ba13e35a6e074ccd9f4ffe508c1f"
+        }
+      }
+    },
+    "visual_frames_checked": {
+      "front": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "side": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "back": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "quality_findings": [
+      "Normal RGBA composites on gray/light backgrounds show substantial reduction of muddy paint, soft grey fringe and smeared clothing detail across all three attack views. This is visible compared with the actual v12 cells, unlike the tested restoration-only candidates.",
+      "Eyes, fringe, cheek/jaw boundary, clasps, belt and straight sword are more legible. Front/Side faces do not become narrower during the cleanup.",
+      "The existing low-to-high draw, extended elbow/shoulder follow-through, returning arm and anatomical right-sword/left-scabbard roles remain readable without detached joints or new wrist flips.",
+      "Dark red slash effects remain attached to the sword trajectory and fully inside their whole registered cells."
+    ],
+    "geometry_findings": {
+      "front": "Frame0-2 skull78 versus Idle75, boots54 versus53. Frame14-15 skull80 retains a wider upper hair silhouette; eyes/cheeks/torso/boots do not expand in lockstep. End boots54-55. Accepted as small hair/detail differences rather than hidden whole-model inflation. Frame13 exposes a slightly longer blade, in the same returning direction as the prior art.",
+      "side": "First/end neutral skull83-84 versus Idle82, boots56-57 versus55 after whole last-batch framing correction. Face readability improves and no renewed narrow-face drift is seen.",
+      "back": "Initial oversized48px boots were rejected and source corrected. Final neutral boots46 atstart and44 atend versus Idle44. Upper-hair neutral width78-80 is somewhat wider than Idle74 but close to preceding attack76-79. Frame7-to8 crown lowers~5.6nativepx as head/upper body lean left/forward into the upswing; boot source width87->89 does not shrink, so this is not uniform whole-character shrink. It is retained rather than erased by per-frame scaling."
+    },
+    "packing_findings": {
+      "all_48_sheet_cells_match_registered_RGBA_frames": true,
+      "16_unique_frames_per_view": true,
+      "source_alpha_ge8_omitted": 0,
+      "source_alpha_ge8_duplicated": 0,
+      "meaningful_output_clipping": 0,
+      "whole_cells_only": true,
+      "limb_masks": false,
+      "per_frame_anatomical_scale": false,
+      "endpoint_replacement": false,
+      "source_resolution_normalized_isotropically": true,
+      "one_common_anatomical_scale_per_view": true,
+      "explicit_reviewed_whole_batch_framing_corrections": {
+        "front": [
+          {
+            "batch": "04-07",
+            "scale": 0.9436201780415431,
+            "reason": "Whole-batch camera framing differs from approved00-03 body318: meanbody337. Head/boot dimensions normalized to160 stay comparable (head~78-81 and boots~55-56); entire4-cell batch corrected isotropically, never individual frames/limbs. Raw and normalized geometry screening saved in diagnosis/batch-anatomy-screening.json. Final visual review still required."
+          },
+          {
+            "batch": "08-11",
+            "scale": 0.9754601226993865,
+            "reason": "Whole-batch camera framing differs from approved00-03 body318: meanbody326. Head/boot dimensions normalized to160 stay comparable (head~78-81 and boots~55-56); entire4-cell batch corrected isotropically, never individual frames/limbs. Raw and normalized geometry screening saved in diagnosis/batch-anatomy-screening.json. Final visual review still required."
+          },
+          {
+            "batch": "12-15",
+            "scale": 0.9105225483178239,
+            "reason": "Whole-batch camera framing differs from approved00-03 body318: meanbody349.25. Head/boot dimensions normalized to160 stay comparable (head~78-81 and boots~55-56); entire4-cell batch corrected isotropically, never individual frames/limbs. Raw and normalized geometry screening saved in diagnosis/batch-anatomy-screening.json. Final visual review still required."
+          }
+        ],
+        "side": [
+          {
+            "batch": "12-15",
+            "scale": 0.9594491201224178,
+            "reason": "Whole-batch source camera enlargement: meanbody326.75 vsfirst313.5, skull/boots raw widths rise together. At matchedbody160 skull84-85 vsfirst83 and boots55-58 vsfirst56, so only entirefour-cell framing is corrected; individualframes andlimbs remain unchanged. See diagnosis/batch-anatomy-screening.json."
+          }
+        ],
+        "back": []
+      },
+      "117_live_files_unchanged_at_preapply_check": true
+    },
+    "limitations": [
+      "The cleanup is newly drawn art, not pixel-identical denoising. Minor hair, mouth, sword-detail and shading differences are disclosed.",
+      "This review approves the candidate sheets. Root performs production application, final metadata validation and native playback checks separately."
+    ],
+    "evidence": [
+      "registration.json",
+      "annotations.json",
+      "package-report.json",
+      "independent-package-verification.json",
+      "candidate-geometry-screening.json",
+      "front-candidate-all16.png",
+      "side-candidate-all16.png",
+      "back-candidate-all16.png",
+      "front-candidate-transition.png",
+      "side-candidate-transition.png",
+      "back-candidate-transition.png",
+      "diagnosis/sample-front-face-gray-comparison.png",
+      "diagnosis/sample-side-body-gray-comparison.png",
+      "diagnosis/sample-back-body-gray-comparison.png"
+    ]
+  },
+  "native": {
+    "passed": true,
+    "version": 13,
+    "source": "Actual main.load_character_sprites, main.draw_character, Player state/time selection and Pico2D SDL framebuffer",
+    "code_files_unchanged": {
+      "game/code/character.py": "f94eb4a775235c52cd589f4888857a4ad63967c3b31cf675d9c960975ad69ea4",
+      "game/code/main.py": "41422068d3b96b4db676b3f51a9eca218dacebd5164cb656f4db777e30379451",
+      "game/code/map.py": "a1e0ee974f5307af0e3c3e748238cbaf6d1f9b16703a12b2181cec1d845adc34",
+      "game/code/monster.py": "24708eb293ccf95074f22c48722dc9641f7b2b7294ff25edce747b6a86e99ded",
+      "game/code/user.py": "7ca3cced78b4ebb0fca6cc9f1330e0eafcf0d493ee83cf3d66d35767e1bfb7d7"
+    },
+    "roster_count": 9,
+    "portrait_count": 9,
+    "skill_icon_count": 18,
+    "sheets": {
+      "front-idle": {
+        "file": "asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+        "sha256": "fdb083c84a0a6ab2cfe3551a2f61f48de66a0d8a98e5d9a7b93085dcf245532b"
+      },
+      "side-idle": {
+        "file": "asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+        "sha256": "6a02bcaea0f60b77a45e7df5b3ac889680199aa9686842fe91232b708bdf93de"
+      },
+      "back-idle": {
+        "file": "asset/character/player/main/9-whitehair/katana/back/idle-sheet.png",
+        "sha256": "eb435f28cbe0dceacd71473cc5430d38b644e057c80bfdc443563137f3e6ab18"
+      },
+      "front-attack": {
+        "file": "asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+        "sha256": "13c910ab2d1d8377386860963d49a275b614916d967573def6d7b91345f4ad17"
+      },
+      "side-attack": {
+        "file": "asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+        "sha256": "06e4fcfa203b2e25383039e241b29fba4026fc322a649817408a5fe6719077fe"
+      },
+      "back-attack": {
+        "file": "asset/character/player/main/9-whitehair/katana/back/attack-sheet.png",
+        "sha256": "c2adf986fb12a9eb855525cd95760b056550fb379d0a4f6c09b8626b1158f39a"
+      }
+    },
+    "native_motion_checks": {
+      "front-idle": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "unique_frames": 16,
+        "framebuffer_hashes": [
+          "2ee0316e9009a549044551de0da9b840d310d771f1dbaff14f159627424a17c7",
+          "8f3a61ff4d000863023c94771414e45e044467ef5caa33666666d207eef4a80d",
+          "25095d8857004e69cc6e6eb9a7f34474a5afeb43cdb024e24cc908d8afae1ca1",
+          "4d6ad70d58794f6975ca16293300a5e3cfaad9289789ac9b02512af6aec800b2",
+          "a89c6ef3c2c25df51888a3ff6360b7663fbe857991796071d26ecf82fdaa0068",
+          "f4a488151caff065b785172f89e00ced144f4ddace19c8b84480ada183465a4f",
+          "6d392f66e950c37db7aa24b7b3658a622e19a5998671e84c44713d2e5b807f18",
+          "611ad6c02dd3c9bee588cb739b920725a944b97848df066b61eeca6eb5fb6ecc",
+          "0753a1ea2bcb282f800dad41b686701aee134252464dba1a934972233bf1523f",
+          "2913f62554b0dded4aa5b8543271e80151ed7ad487d564fd081ec487406a9dcb",
+          "c31f52a391aba2f83fc6ac24dbd74068aaab5f1b57ae84dea4001b0e609b6c38",
+          "62288e6c5c0039071566252701f37f2fb81e5ce1f0fc0afd3b1005ae7795e0a8",
+          "cf3aeb0e4fc6e7081a65c6191d373cc6579f34f5990db4d4aed9e83407c0fabc",
+          "cc4991c0586e198759320f530c4bc03c711590cf4050fdb814b1461b7cd84cc3",
+          "4ca207cf7f9738c34795f4344efbff134de718ad78548574f7d0c065dd001a8d",
+          "a00394e934aa3c7fec85000bb9d68f13472da07170f15211ac1545172835d15c"
+        ],
+        "exact_expected_sheet_clip": true
+      },
+      "side-idle": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "unique_frames": 16,
+        "framebuffer_hashes": [
+          "a31374783bbc04ce6638785ad3a40c44f0a7fc928bf6536a0ff1ae3a0fd7068a",
+          "a6c5b0b1c2530d08b30082c5f56997568d416a27ed58d1a4780fbb7e68e6bf28",
+          "5aeacb06056f2691f5088308ee36d29b6f7e012a05cc61c79f5019f4c66f91fc",
+          "cfa70e1f29406f5838539688fa132d8609d71ed91b517e940548ac11a8b5f855",
+          "94673dce94c2f9de933116117fc7621ff34d660c2547768a66a0c1f62a551c3d",
+          "e8847601cbaca4431b4272cbb93010e212bf8e0a85798540aedfa0b027fe1d39",
+          "69209cb5009b197b772daa27a0b00216f4650aff449ce1652980bc3abd19d7d7",
+          "df6a4c0a79c03557dfca5e60ed5b4db1037319780d578c51f84981eb286e123d",
+          "1d63f73edf7d82261765daf31bb06c43a7f81059432965f7941392a4cf9e250f",
+          "b412172c6292d6d76f227a67d154a8358cdbcbc2372489b2aa35257fe8292aff",
+          "e6793ce9b1ce1bcbf9b0a46ac383c310ba4f03819c3f4683b56878d2487fae4e",
+          "e8fa5f1d3bcd9acf45e590cdd643a206edd06b8321cb8e6876b44be59985b64a",
+          "9d27bcf8ce738414468de142655a9e14b752f71305c5e17229bbdbea075e39e7",
+          "052879ba849956863014ccd015d0abb1439f0e74bec66aa0c49d833093b81331",
+          "51fff5650c0311605ab005dca3b708a53b508db7868b4902ded47b7217ad647b",
+          "22dce07fa33f41effe10cfd1e65095ef450ad19359251641060831410583e452"
+        ],
+        "exact_expected_sheet_clip": true
+      },
+      "back-idle": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "unique_frames": 16,
+        "framebuffer_hashes": [
+          "d1aa6a2adf114b63fa031eeab313dddd7c51878551ef0051d1e8cde34341d02d",
+          "718215cf55dd2a554ca0e23dd1073c9fd2f9444182d9ae1fbfa06436d1095859",
+          "220a7ee72006b03b8acad2f9e2b401a94c349dac28b576eda47dc25d9fcc5f85",
+          "6db9cf365aa7d98234c6e936f8cc705973f5bf3bb91bf2b3f44eb216728deae8",
+          "c572c9b5deb434a8e83c44bc0969743147deb81ae4a648678c37a87be1608c20",
+          "744f6841db28044c0398ff632106d5d1962660d94e1b33725d9208c6165014ec",
+          "9a7effe7aa7830521173024505492d789f8234007031f9f00dbe447311cf420a",
+          "f48ddc92fcd55d8b5d43d65eb39e3eefc79f7b6c3ecb3cf900cfef5deb56e6f5",
+          "6e1feafd6a2627b3be7621e7e19ee95a87194289a82f92d78f06f3c97b47a77e",
+          "7dab51357cc98c3176307a9d4e8e9cbcadb5b7450149d8808a1374c17ee486ad",
+          "d9374d281ceea7383fbebadd769bff6b338bfa19fe6e6622b842ce6ff50b82f7",
+          "b19d92f12cb8ef1e0e148c899b833479cc90acb040f34d72c9336dcaaa636c6a",
+          "63a4299885664d356a8d4b68690f563f9ccf375215c5212e0193a36dd876487e",
+          "c4eae2a2281e2108f517675032549edbcefcdc30f2828d198bd2798b5267c7dd",
+          "425c2ac1193a53d93b51834779132eec9588d471c3498f5e7ecbee601978dfec",
+          "8d6f3bdc2985428f167043cf6995dbf8e83de83688351ddf7f175ddaa5e86b83"
+        ],
+        "exact_expected_sheet_clip": true
+      },
+      "front-attack": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "unique_frames": 16,
+        "framebuffer_hashes": [
+          "b648c3ec503e75ab7a5f87be62361761d068db5c702800133cc92ea9d100918d",
+          "47ce8cf88036bd6de6dc15c90926059a307815e68f35c3076c55fa550895fc5a",
+          "45db9aaea6669a2664b40a1a9cb127769e20048a96409f8ba19863e8ff90f26e",
+          "cc05f0b42fb5d13ac0952f69ca90e5272a3123b65580a2cf2598c5ecfc53fd81",
+          "37b597d02fc3453547742118efbb8e6662bdd2360632e4f7851f8b2d15500a15",
+          "c76e5c08272e534387f012fbbda22bc74b12b0365c0d1c590a5969ca0d235c24",
+          "ec066e96648366cc04f2ae816b85d48f59047c27a4d91c18e8c3dfdfe1185f02",
+          "55fa876614cb9620cf3dad88e7a97efb7fd371ea74ef4e2b18254aef0ac3170d",
+          "97517b0c1135839b933d2e36e032095c87b2dc4209abb47550be3e5ae8408195",
+          "5f9f12b1c00b9f301759fbacbb0aefde6a14961564a1613f8961c26466f25dcc",
+          "73c41722840276d9a38d98de203428a992901881e7a560ba5cac2e25672762ee",
+          "087e3d45c4060a3515588a65ab134062b72b7c8de93d23933b60f1cf2f08435d",
+          "1b48a23f423bb9a073319007fa20ebf6fd36e1c67310e7970ca90d1886e5df87",
+          "0950ef0349d3c7f195728938ae5caf0bec9a2183b987f70df7caf053f9afad7f",
+          "ed9547ad6130708423d38053e7e0982ce442fc028fe7f2f23ef7bd1ecac4d5fd",
+          "aa6ac14324dc1b5241f8c559b09483fe2d6e9de9cb26733a6973d75f419c9649"
+        ],
+        "exact_expected_sheet_clip": true
+      },
+      "side-attack": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "unique_frames": 16,
+        "framebuffer_hashes": [
+          "192614b85813dd55b3024dfb4378a22d394d581058e983c4d165a1c5af6851dc",
+          "e3dabd421773448ff50bbaf11741de3860182305c4fadb8c2faa6e6b2a05d584",
+          "fe57eaad61df242a1d3a4852a1cfe4695cf702410bd968176b5eb658e865ce00",
+          "fedb4347d4a8b9cc6b1b65aaedd9c2e510bfc341b701cf7661d89b6004f8492c",
+          "5c6e8b0c30344d98927bb2b8acb97d7bde15bc84b66272d46c4e625d46813c5c",
+          "43a2f1823dd18a56e4b9a0be62c3ecff43cbeff644f4147b92f4273c51175290",
+          "1cc8c988b3e4d135b0741707e400b0bf87ea4c93775f29c926184219f72729ac",
+          "88334d4c1c6ebd88a0cd41266789ba7127bc94b2daab4fa7119c69100cde7d12",
+          "f606f5e8c6868e7f831b840b1b8b017b0166de01bdfda5d2d980f96460770a82",
+          "5b676e15606ffa5af4fa2adc209a873ce0a3801e440ceb36b978d762ec7c79dd",
+          "3b0278a0ed15cadce0585e92351c3c7b528257480df253c5745b44dcf6d328c6",
+          "9e1678cceb9007ae4032bbcd04273a93c8abfa53090160f7746d52758feed858",
+          "949f0dc8684c7fc468003253dc187b92a9e1c02edf773089f008fb627e3c6986",
+          "27b18f619d35c3a9a08bb63c0e209a3d2f090dfef97a8bad2eadf7688dc468ff",
+          "b8bca5d45e7d53dabf699cacc5f419d655cfbbbedbfd328d81e9cf471c061477",
+          "39fe60f9c0ff16dfcc9223653d84bef321a29c86adab5a3dc242119727600459"
+        ],
+        "exact_expected_sheet_clip": true
+      },
+      "back-attack": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "unique_frames": 16,
+        "framebuffer_hashes": [
+          "efc14ae2acc795ee3cc023aa05cb7f08d3d9b0dfde682bcd54503fca70b0aaaf",
+          "b6e10b7121f17a345a04017221410a5269367ee835daa1c08e4bee21550cb9ba",
+          "35063235cbecab71f339d0fa4c8ce441516a125287736ef5c01d7cf4f35ebdc7",
+          "3035916be0d6004f11216fbde30753d0e3f13c564cddf6b6f7b3cef1280a738e",
+          "4902745b98ab68b007b3aa27f62a87fc3922dee3304ab0e7fd128f2f85d3e1a3",
+          "9cec819cf382a4bea5aee4b36ddb1306339ae7990170415d4c7587a3ee0780c2",
+          "acfd8bed88fa3a5c05f3a00b54ba76e920b97bb51abbd8dc3232b89d48f37114",
+          "81e0e78a745d215b7c96332e75ec69733576342c00c4a181d20a77e0d019cf92",
+          "27788a353423b2caf21ad2a361719ba820aadffffc642cb063ec715fd185937e",
+          "3ea2d1062103dbdc93c71b01239537699cd1b2f34164323b7ad29fa7111a725a",
+          "46664d06585118d124b29f16fa5520d1f5e910309d6d6cdf2365456980aca942",
+          "99d2384f5da83213f2a3b5bcfe303c105682f2f997e11f7101f2df088b97633d",
+          "ad458de8649342790521fc5782e524f6522772d08624f4d6e6d871a686378332",
+          "9d829dbf7ec6f259cbe7665dc1aecbe795ac5336d29aab0548892706a396143d",
+          "df59b897235e2ea5cb6ee9483d97ed24b9ce69e403bdba966b8c9eaac6a9f184",
+          "33fbdd48e276aaf5623281df30115ead81527c606f102f76730272e61daa5dd1"
+        ],
+        "exact_expected_sheet_clip": true
+      }
+    },
+    "direction_hashes": {
+      "idle": {
+        "down": "611ad6c02dd3c9bee588cb739b920725a944b97848df066b61eeca6eb5fb6ecc",
+        "left": "df6a4c0a79c03557dfca5e60ed5b4db1037319780d578c51f84981eb286e123d",
+        "up": "f48ddc92fcd55d8b5d43d65eb39e3eefc79f7b6c3ecb3cf900cfef5deb56e6f5",
+        "right": "9b418a07bf811b7c9b81b0a540e74576b2085070cdb758b81d36101846f6ba6e"
+      },
+      "attack": {
+        "down": "55fa876614cb9620cf3dad88e7a97efb7fd371ea74ef4e2b18254aef0ac3170d",
+        "left": "88334d4c1c6ebd88a0cd41266789ba7127bc94b2daab4fa7119c69100cde7d12",
+        "up": "81e0e78a745d215b7c96332e75ec69733576342c00c4a181d20a77e0d019cf92",
+        "right": "3e87af6551fa5e2d65df4f15f59e5fb5ae0e9f80f5814c3e7253f125f8f900a5"
+      }
+    },
+    "genuine_back_differs_from_front_both_states": true,
+    "right_mirrors_left_authored_side_both_states": true,
+    "state_transitions": {
+      "front": [
+        "idle",
+        "attack",
+        "idle"
+      ],
+      "side": [
+        "idle",
+        "attack",
+        "idle"
+      ],
+      "back": [
+        "idle",
+        "attack",
+        "idle"
+      ]
+    },
+    "wall_clock": {
+      "elapsed_seconds": 1.0417416999989655,
+      "presented_frames": 158,
+      "all_six_seen_indices_0_to15": true,
+      "all_six_wrapped_to_zero": true
+    },
+    "render_scale": 1,
+    "main_flow": "Prior input/mechanics smoke not repeated because game code is unchanged.",
+    "protected_old_roster_and_code_unchanged": 111
+  },
+  "lossless_preview": {
+    "mode": "production",
+    "source_sheets": {
+      "front-idle": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+        "sha256": "fdb083c84a0a6ab2cfe3551a2f61f48de66a0d8a98e5d9a7b93085dcf245532b"
+      },
+      "front-attack": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+        "sha256": "13c910ab2d1d8377386860963d49a275b614916d967573def6d7b91345f4ad17"
+      },
+      "side-idle": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+        "sha256": "6a02bcaea0f60b77a45e7df5b3ac889680199aa9686842fe91232b708bdf93de"
+      },
+      "side-attack": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+        "sha256": "06e4fcfa203b2e25383039e241b29fba4026fc322a649817408a5fe6719077fe"
+      },
+      "back-idle": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/back/idle-sheet.png",
+        "sha256": "eb435f28cbe0dceacd71473cc5430d38b644e057c80bfdc443563137f3e6ab18"
+      },
+      "back-attack": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/back/attack-sheet.png",
+        "sha256": "c2adf986fb12a9eb855525cd95760b056550fb379d0a4f6c09b8626b1158f39a"
+      }
+    },
+    "apng": "denoise-v13-state-switch.png",
+    "decoded_rgba_exact": true,
+    "source_crop": [
+      26,
+      114,
+      283,
+      297
+    ],
+    "display_scale": 2,
+    "sequence": [
+      {
+        "state": "idle",
+        "index": 0,
+        "duration_ms": 400
+      },
+      {
+        "state": "attack",
+        "index": 0,
+        "duration_ms": 400
+      },
+      {
+        "state": "attack",
+        "index": 0,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 1,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 2,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 3,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 4,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 5,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 6,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 7,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 8,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 9,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 10,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 11,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 12,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 13,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 14,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 15,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "idle",
+        "index": 0,
+        "duration_ms": 400
+      }
+    ],
+    "duration_ms": 2200.0,
+    "art_edits": false,
+    "crossfade": false,
+    "endpoint_replacement": false
+  },
+  "previews": {
+    "denoise-v13-state-switch.png": "game/asset/character/player/icon/preview/whitehair-katana-denoise-v13-state-switch.png",
+    "denoise-v13-three-directions.png": "game/asset/character/player/icon/preview/whitehair-katana-denoise-v13-three-directions.png",
+    "denoise-v13-before-after.png": "game/asset/character/player/icon/preview/whitehair-katana-denoise-v13-before-after.png"
+  },
+  "upstream_trials_applied": false,
+  "upstream_trials": "metadata/character/whitehair-katana-denoise-v13-generation.json",
+  "limitations": [
+    "The final cleanup is newly rendered linework and color fill in complete poses, not a pixel-identical denoising filter. Small hair/line/detail differences are documented by the visual review."
+  ],
+  "independent_final_preview_review": {
+    "method": "Independent Pillow decode of all19 APNGframes, actual current-production RGBA comparison for all57 panels, visual decoded-neutral/attack keyframes at native-derived nearest2x.",
+    "apng": "denoise-v13-state-switch.png",
+    "apng_frames": 19,
+    "duration_ms": 2200.0,
+    "frame_durations_ms": [
+      400.0,
+      400.0,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      400.0
+    ],
+    "all57_panels_exact_to_production": true,
+    "source_sha256": {
+      "front-idle": "fdb083c84a0a6ab2cfe3551a2f61f48de66a0d8a98e5d9a7b93085dcf245532b",
+      "front-attack": "13c910ab2d1d8377386860963d49a275b614916d967573def6d7b91345f4ad17",
+      "side-idle": "6a02bcaea0f60b77a45e7df5b3ac889680199aa9686842fe91232b708bdf93de",
+      "side-attack": "06e4fcfa203b2e25383039e241b29fba4026fc322a649817408a5fe6719077fe",
+      "back-idle": "eb435f28cbe0dceacd71473cc5430d38b644e057c80bfdc443563137f3e6ab18",
+      "back-attack": "c2adf986fb12a9eb855525cd95760b056550fb379d0a4f6c09b8626b1158f39a"
+    },
+    "result": "pass: production/APNG exact and requested cleanup visibly improved",
+    "production_edits": false,
+    "game_code_edits": false,
+    "visual_review": {
+      "cleanup": "Compared with prior v12 diagnosis, opaque attack hair/face/ivorycloth now have smooth color planes and distinct single outlines instead of blurred muddy shading. Cleanup is present in actual production pixels, not GIF filtering.",
+      "face": "Front and side decoded neutral/return poses preserve readable eyes and cheek contours; no new abrupt face narrowing or squeezed eyes visible in the reviewed transitions.",
+      "connections": "Sword and scabbard remain in their correct hands. Right forearm/elbow remain attached during extension, shoulder-driven rise and recovery; rear arm emerges outside hair silhouette.",
+      "motion": "Low-to-high blade motion and crimson trail remain readable. State entry/return and frame7-to8 keyframes retain connected whole poses.",
+      "back": "Rear remains fully rear-facing with no exposed face. Small hair-volume/body-height variation at the7-to8 group boundary remains visible; it does not create a detached limb or blank/interrupted frame."
+    },
+    "limits": [
+      "Review is based on actual decoded APNG frames and keyframe contacts, not a separately observed live game window.",
+      "Idle and attack hairline/garment details are not pixel-identical; this review checks visible cleanup and preservation of motion/face structure."
+    ],
+    "visual_artifacts": [
+      "final-decoded-transition-review.png",
+      "final-decoded-action-review.png"
+    ]
+  }
+}

@@ -22,7 +22,7 @@ class MonsterRouteTests(unittest.TestCase):
             self.addCleanup(patcher.stop)
 
     def terrain(self, walkable, goals, entrances=()):
-        dungeon.battle_cells.update({pos: {"walkable": True, "tileType": 0} for pos in walkable})
+        dungeon.battle_cells.update({pos: {"walkable": True, "tileType": dungeon.TileType.GROUND} for pos in walkable})
         dungeon.battle_goals[:] = goals
         dungeon.battle_entrances[:] = entrances
 
@@ -31,13 +31,13 @@ class MonsterRouteTests(unittest.TestCase):
             [(0, 0), (0, -1), (0, -2), (0, -3), (1, -3), (2, -3), (2, -2), (2, -1), (2, 0)],
             [(2, 0), (0, -3)],
         )
-        dungeon.battle_cells[(1, 0)] = {"walkable": False, "tileType": 1}
+        dungeon.battle_cells[(1, 0)] = {"walkable": True, "tileType": dungeon.TileType.BLOCKED}
         start, goal, route = dungeon.monster_route((0, 0))
         self.assertEqual(start, (0, 0))
         self.assertEqual(goal, (0, -3))
         self.assertEqual(route, [(0, 0), (0, -1), (0, -2), (0, -3)])
 
-    def test_unreachable_spawn_does_not_cross_wall_or_use_deployment_type(self):
+    def test_unreachable_spawn_does_not_cross_a_nonwalkable_deployable_tile(self):
         self.terrain([(0, 0), (2, 0)], [(2, 0)], [(0, 0)])
         dungeon.battle_cells[(1, 0)] = {"walkable": False, "tileType": 1}
         self.assertIsNone(dungeon.monster_route((0, 0)))
@@ -45,6 +45,13 @@ class MonsterRouteTests(unittest.TestCase):
         self.assertIsNone(dungeon.monster_route((99, 0)))
         self.assertEqual(dungeon.monster_spawns(), [])
         self.assertIsNone(dungeon.monster_route())
+
+    def test_blocked_ground_except_the_selected_entrance_and_goal_is_excluded(self):
+        self.terrain([(0, 0), (1, 0), (2, 0), (3, 0)], [(3, 0)], [(0, 0), (2, 0)])
+        for point in ((0, 0), (2, 0), (3, 0)):
+            dungeon.battle_cells[point]["tileType"] = dungeon.TileType.BLOCKED
+        self.assertIsNone(dungeon.monster_route((0, 0)))
+        self.assertEqual(dungeon.monster_route((2, 0))[2], [(2, 0), (3, 0)])
 
     def test_each_monster_receives_a_copy_of_the_cached_fixed_route(self):
         self.terrain([(0, 0), (1, 0), (2, 0)], [(2, 0)], [(0, 0)])
@@ -63,12 +70,20 @@ class MonsterRouteTests(unittest.TestCase):
     def test_recorded_portal_is_a_jump_and_counts_no_walking_distance(self):
         self.terrain([(0, 0), (1, 0), (0, -1), (0, -2), (0, -3), (9, 0), (10, 0)],
                      [(0, -3), (10, 0)], [(0, 0)])
+        for point in ((1, 0), (9, 0)):
+            dungeon.battle_cells[point]["tileType"] = dungeon.TileType.BLOCKED
         dungeon._monster_portals[(1, 0)] = {(9, 0)}
         start, goal, route = dungeon.monster_route((0, 0))
         self.assertEqual(goal, (10, 0))
         self.assertEqual(route, [(0, 0), (1, 0), (9, 0), (10, 0)])
         self.assertEqual(dungeon.monster_teleports(route), {2})
         self.assertEqual(dungeon.monster_teleports(list(reversed(route))), set())
+
+    def test_blocked_portal_cannot_be_used_as_an_ordinary_shortcut(self):
+        self.terrain([(0, 0), (1, 0), (2, 0), (9, 0)], [(2, 0)], [(0, 0)])
+        dungeon.battle_cells[(1, 0)]["tileType"] = dungeon.TileType.BLOCKED
+        dungeon._monster_portals[(1, 0)] = {(9, 0)}
+        self.assertIsNone(dungeon.monster_route((0, 0)))
 
     def test_factory_passes_independent_fixed_plan_to_each_monster(self):
         self.terrain([(0, 0), (1, 0), (9, 0), (10, 0)], [(10, 0)], [(0, 0)])
@@ -90,7 +105,7 @@ class MonsterRouteTests(unittest.TestCase):
     def test_load_converts_row_coordinates_and_clear_discards_old_routes(self):
         layout = {
             "grid": {"columns": 3, "rows": 2},
-            "cells": [{"column": x, "row": 1, "walkable": True, "tileType": 0} for x in range(3)],
+            "cells": [{"column": x, "row": 1, "walkable": True, "tileType": int(x == 1)} for x in range(3)],
             "entrances": [[0, 1]], "goals": [[2, 1]],
         }
         with tempfile.TemporaryDirectory() as folder:

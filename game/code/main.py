@@ -13,7 +13,7 @@ from pico2d import (
     SDL_MOUSEMOTION,
     SDL_QUIT,
     SDLK_ESCAPE,
-    SDLK_q,ㄴ
+    SDLK_q,
     clear_canvas,
     close_canvas,
     delay,
@@ -41,6 +41,7 @@ CHARACTER_FOOT_OFFSET = 0.18  # Downward shift as a fraction of the projected ti
 CARD_SIZE = 56
 CARD_SPACING = 61
 CARD_FIRST_X = 218
+CARD_ROW_RIGHT = 673  # Keep the portrait strip clear of the cost display.
 CARD_Y = 40
 DIRECTION_SIZE = 192
 DIRECTION_DEAD_ZONE = 20
@@ -141,11 +142,19 @@ def draw_character_actions(character, skill_icons, *, mouse=(0, 0)):
         draw_line(left + 28, HEIGHT - 1 - (top + 28 + offset), left + 35, HEIGHT - 1 - (top + 22 + offset), *ink[:3])
 
 
+def card_layout(count):
+    gap = CARD_SPACING - CARD_SIZE
+    left = CARD_FIRST_X - CARD_SIZE / 2
+    size = min(CARD_SIZE, (CARD_ROW_RIGHT - left - gap * max(0, count - 1)) / max(1, count))
+    return size, size + gap, left + size / 2
+
+
 def card_at(x, y, cards):
     y = HEIGHT - 1 - y
+    size, spacing, first_x = card_layout(len(cards))
     for index, (_, character) in enumerate(cards):
-        center = CARD_FIRST_X + CARD_SPACING * index
-        if center - CARD_SIZE / 2 <= x < center + CARD_SIZE / 2 and CARD_Y - CARD_SIZE / 2 <= y < CARD_Y + CARD_SIZE / 2:
+        center = first_x + spacing * index
+        if center - size / 2 <= x < center + size / 2 and CARD_Y - size / 2 <= y < CARD_Y + size / 2:
             return character
     return None
 
@@ -213,47 +222,61 @@ def draw_attack_range(character, overlay, *, pos=None, direction=None):
 
 
 def draw_battle_ui(panel, digits, cards, *, cost, defense_points, remaining_enemies, selected=None):
+    size, spacing, first_x = card_layout(len(cards))
     for index, (portrait, character) in enumerate(cards):
         available = cost >= character.cost and not character.deployed and character.redeploy_remaining() <= 0
         portrait.opacify(1.0 if available and character is not selected else 0.5)
-        portrait.draw(CARD_FIRST_X + CARD_SPACING * index, CARD_Y, CARD_SIZE, CARD_SIZE)
-    panel.draw(WIDTH // 2, HEIGHT // 2)
+        portrait.draw(first_x + spacing * index, CARD_Y, size, size)
+    if len(cards) <= 8:
+        panel.draw(WIDTH // 2, HEIGHT // 2)
+    else:
+        # The original HUD contains eight baked card frames. Reuse its first
+        # frame for each compact card, keeping the counters and cost panel fixed.
+        panel.clip_draw(0, 80, WIDTH, HEIGHT - 80, WIDTH / 2, (HEIGHT + 80) / 2)
+        panel.clip_draw(680, 0, 120, 80, 740, 40)
+        for index in range(len(cards)):
+            panel.clip_draw(188, 8, 61, 62, first_x + spacing * index, CARD_Y, size + 5, size + 6)
 
     draw_number(digits, remaining_enemies, 388, 570, 16)
     draw_number(digits, defense_points, 488, 570, 16)
     draw_number(digits, cost, 774, 40, 17)
     for index, (_, character) in enumerate(cards):
-        draw_number(digits, character.cost, 242 + CARD_SPACING * index, 58, 9)
+        center = first_x + spacing * index
+        draw_number(digits, character.cost, center + size / 2 - 4, CARD_Y + size / 2 - 10, 9 * size / CARD_SIZE)
         remaining = character.redeploy_remaining()
         if remaining > 0:
-            center = CARD_FIRST_X + CARD_SPACING * index
-            draw_ui_rect((center - 24, HEIGHT - 1 - 49, 48, 28), (17, 23, 29, 225))
+            bar_width = size - 8
+            draw_ui_rect((center - bar_width / 2, HEIGHT - 1 - 49, bar_width, 28), (17, 23, 29, 225))
             number = ceil(remaining)
             draw_number(digits, number, center + len(str(number)) * 7, CARD_Y - 5, 14)
-            draw_ui_rect((center - 24, HEIGHT - 1 - 18, 48, 3), (60, 70, 78, 255))
+            draw_ui_rect((center - bar_width / 2, HEIGHT - 1 - 18, bar_width, 3), (60, 70, 78, 255))
             fraction = min(1.0, remaining / max(0.001, character.redeployDelay))
-            draw_ui_rect((center - 24, HEIGHT - 1 - 18, 48 * fraction, 3), (213, 167, 112, 255))
+            draw_ui_rect((center - bar_width / 2, HEIGHT - 1 - 18, bar_width * fraction, 3), (213, 167, 112, 255))
         if character is selected:
-            center = CARD_FIRST_X + CARD_SPACING * index
-            draw_rectangle(center - 29, CARD_Y - 29, center + 29, CARD_Y + 29, 234, 202, 130)
+            half = size / 2 + 1
+            draw_rectangle(center - half, CARD_Y - half, center + half, CARD_Y + half, 234, 202, 130)
 
 
 def load_character_sprites(characters):
     sprites = {}
     for character in characters:
         name = character.profile.split("-", 1)[1]
-        idle = json.loads(
-            (dungeon.METADATA_DIRECTORY / f"character/idle/{name}.json").read_text(encoding="utf-8")
-        )
         attack = json.loads(
             (dungeon.METADATA_DIRECTORY / f"character/sprites/{name}.json").read_text(encoding="utf-8")
         )
-        sprite = {"pivot": idle["pivot"], "fps": idle["fps"]}
+        idle_name = attack.get("idle_animation_id", name)
+        idle = json.loads(
+            (dungeon.METADATA_DIRECTORY / f"character/idle/{idle_name}.json").read_text(encoding="utf-8")
+        )
+        sprite = {"pivot": idle["pivot"], "fps": idle["fps"], "side_facing": attack.get("side_facing", "right")}
         motions = {
             "idle": idle["animations"],
             "attack": attack["directional_attack_sheets"],
         }
         for state, directions in motions.items():
+            directions = dict(directions)
+            for alias, source in attack.get("direction_aliases", {}).items():
+                directions.setdefault(alias, directions[source])
             sprite[state] = {
                 direction: (motion, load_image(str(dungeon.GAME_DIRECTORY / motion["file"])))
                 for direction, motion in directions.items()
@@ -271,7 +294,8 @@ def draw_character(character, sprites, x, y, opacity=1.0, *, cell=None, directio
     rect = motion["frames"][frame]["pico2d_rect"]
     width, height = rect[2:]
     pivot_x, pivot_y = sprite["pivot"]
-    if direction == "left":
+    flip = direction in ("left", "right") and direction != sprite["side_facing"]
+    if flip:
         pivot_x = width - pivot_x
     perspective = cell.get("perspective_scale", 1.0) if cell is not None else 1.0
     scale = CHARACTER_SCALE * dungeon.battle_grid["cell_size"][0] / 64 * perspective
@@ -280,7 +304,7 @@ def draw_character(character, sprites, x, y, opacity=1.0, *, cell=None, directio
     sheet.opacify(opacity)
     center_x = x + (width / 2 - pivot_x) * scale
     center_y = y + (pivot_y - height / 2) * scale
-    if direction == "left":
+    if flip:
         sheet.clip_composite_draw(*rect, 0, "h", center_x, center_y, width * scale, height * scale)
     else:
         sheet.clip_draw(*rect, center_x, center_y, width * scale, height * scale)

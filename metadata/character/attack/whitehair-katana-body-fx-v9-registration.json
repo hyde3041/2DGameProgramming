@@ -1,0 +1,1247 @@
+{
+  "id": "whitehair-katana",
+  "version": 9,
+  "method": "Whole generated cells; one fixed uniform scale per view and per-frame boot translation only.",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "source_alpha_cleaning": false,
+  "old_arm_masks": false,
+  "neutral_override": false,
+  "views": {
+    "front": {
+      "source": "game/asset/character/player/icon/source/whitehair/katana/front/attack-body-fx-v9-source-sheet.png",
+      "source_sha256": "60d14ad04bc12e5ef8310f31a4199aa9eb80c85ae388e5dc258d2c106134ab78",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_reference_body_height": 238.875,
+      "uniform_scale": 0.6698063840920984,
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            -24,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 51,
+          "source_body_height": 239,
+          "source_foot_pivot": [
+            191.5,
+            290
+          ],
+          "source_boot_span": [
+            154,
+            229
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            31.732077446363178,
+            93.75614861329149
+          ],
+          "output_bounds": [
+            107,
+            127,
+            210,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "35dda09d23117060ffc2e52deaee6676d5d470d412d96097375dfaa823a48ed5"
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            290,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 51,
+          "source_body_height": 239,
+          "source_foot_pivot": [
+            190.5,
+            290
+          ],
+          "source_boot_span": [
+            153,
+            228
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            32.40188383045526,
+            93.75614861329149
+          ],
+          "output_bounds": [
+            108,
+            127,
+            211,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "4f92e75dc950c40703828bbbfa57a42481aa76fbee3e0e87080a5d7459b3f6ba"
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            603,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 51,
+          "source_body_height": 239,
+          "source_foot_pivot": [
+            190.5,
+            290
+          ],
+          "source_boot_span": [
+            153,
+            228
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            32.40188383045526,
+            93.75614861329149
+          ],
+          "output_bounds": [
+            108,
+            127,
+            211,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "0b9885a5c246c9762907c7a40f7cbbe8b8bb811b35f77bcb518065675a67e615"
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            917,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 50,
+          "source_body_height": 240,
+          "source_foot_pivot": [
+            190.5,
+            290
+          ],
+          "source_boot_span": [
+            153,
+            228
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            32.40188383045526,
+            93.75614861329149
+          ],
+          "output_bounds": [
+            108,
+            127,
+            210,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "57a7c982ea9fe668adaf2db5bb2910b9c69f2608d17e930ea877abf7ecf228f5"
+        },
+        {
+          "index": 4,
+          "source_rect": [
+            -24,
+            314,
+            314,
+            313
+          ],
+          "source_crown_y": 51,
+          "source_body_height": 238,
+          "source_foot_pivot": [
+            191.5,
+            289
+          ],
+          "source_boot_span": [
+            154,
+            229
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            31.732077446363178,
+            94.42595499738357
+          ],
+          "output_bounds": [
+            106,
+            128,
+            211,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "d5b338801b96122a154db79ffe940ffc630de80f3b0965fbec5ef836f7ae128e"
+        },
+        {
+          "index": 5,
+          "source_rect": [
+            290,
+            314,
+            314,
+            313
+          ],
+          "source_crown_y": 50,
+          "source_body_height": 239,
+          "source_foot_pivot": [
+            190.5,
+            289
+          ],
+          "source_boot_span": [
+            153,
+            228
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            32.40188383045526,
+            94.42595499738357
+          ],
+          "output_bounds": [
+            74,
+            128,
+            212,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "d7af39c9a38eb2a04178c3133645eef5430af95e2cdcfc301eab9a812a28dc29"
+        },
+        {
+          "index": 6,
+          "source_rect": [
+            603,
+            314,
+            314,
+            313
+          ],
+          "source_crown_y": 51,
+          "source_body_height": 238,
+          "source_foot_pivot": [
+            191.5,
+            289
+          ],
+          "source_boot_span": [
+            154,
+            229
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            31.732077446363178,
+            94.42595499738357
+          ],
+          "output_bounds": [
+            43,
+            128,
+            212,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "f99f45880447263987a6ad2f94744072d08892722bcc16bf33d2b2dbc07a6b92"
+        },
+        {
+          "index": 7,
+          "source_rect": [
+            917,
+            314,
+            314,
+            313
+          ],
+          "source_crown_y": 50,
+          "source_body_height": 239,
+          "source_foot_pivot": [
+            191,
+            289
+          ],
+          "source_boot_span": [
+            154,
+            228
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            32.06698063840922,
+            94.42595499738357
+          ],
+          "output_bounds": [
+            41,
+            128,
+            214,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "0f324655ac57aac9ef35371962dd9484fe2b29e76fd5f6318f14bc7b2352cb99"
+        },
+        {
+          "index": 8,
+          "source_rect": [
+            -24,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 50,
+          "source_body_height": 240,
+          "source_foot_pivot": [
+            191.5,
+            290
+          ],
+          "source_boot_span": [
+            154,
+            229
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            31.732077446363178,
+            93.75614861329149
+          ],
+          "output_bounds": [
+            67,
+            127,
+            214,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "36d9c47448e231a5709e5fc63a6e711a17886dc99283918d99f07c7b6a8fe24f"
+        },
+        {
+          "index": 9,
+          "source_rect": [
+            290,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 50,
+          "source_body_height": 240,
+          "source_foot_pivot": [
+            190.5,
+            290
+          ],
+          "source_boot_span": [
+            153,
+            228
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            32.40188383045526,
+            93.75614861329149
+          ],
+          "output_bounds": [
+            67,
+            127,
+            214,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "f17844b50058c4f34819e79fa13e74d7c548411ff72415b6cf46eb197ffefd6c"
+        },
+        {
+          "index": 10,
+          "source_rect": [
+            603,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 51,
+          "source_body_height": 239,
+          "source_foot_pivot": [
+            190.5,
+            290
+          ],
+          "source_boot_span": [
+            153,
+            228
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            32.40188383045526,
+            93.75614861329149
+          ],
+          "output_bounds": [
+            56,
+            127,
+            213,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "20c515850c8b0aa081182d220668e4a4c9ba49788bedf420012bbf5b9c0157fb"
+        },
+        {
+          "index": 11,
+          "source_rect": [
+            917,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 50,
+          "source_body_height": 240,
+          "source_foot_pivot": [
+            191,
+            290
+          ],
+          "source_boot_span": [
+            154,
+            228
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            32.06698063840922,
+            93.75614861329149
+          ],
+          "output_bounds": [
+            51,
+            127,
+            214,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "bd1f59c9f1843e61367d88e4dc640baea0a53e7f1905aa01befe1359d4a59a18"
+        },
+        {
+          "index": 12,
+          "source_rect": [
+            -24,
+            941,
+            314,
+            313
+          ],
+          "source_crown_y": 51,
+          "source_body_height": 238,
+          "source_foot_pivot": [
+            191,
+            289
+          ],
+          "source_boot_span": [
+            153,
+            229
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            32.06698063840922,
+            94.42595499738357
+          ],
+          "output_bounds": [
+            98,
+            128,
+            211,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "e7ff8a579f7a0e4698813f2ab20cfc13c746467f4326af714fcab9caa7d2e093"
+        },
+        {
+          "index": 13,
+          "source_rect": [
+            290,
+            941,
+            314,
+            313
+          ],
+          "source_crown_y": 51,
+          "source_body_height": 238,
+          "source_foot_pivot": [
+            190.5,
+            289
+          ],
+          "source_boot_span": [
+            153,
+            228
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            32.40188383045526,
+            94.42595499738357
+          ],
+          "output_bounds": [
+            108,
+            128,
+            211,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "429628a8989c5bd0c493dac78529739ba3441c315e154c9858804c606f3671c9"
+        },
+        {
+          "index": 14,
+          "source_rect": [
+            603,
+            941,
+            314,
+            313
+          ],
+          "source_crown_y": 51,
+          "source_body_height": 238,
+          "source_foot_pivot": [
+            191.5,
+            289
+          ],
+          "source_boot_span": [
+            154,
+            229
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            31.732077446363178,
+            94.42595499738357
+          ],
+          "output_bounds": [
+            108,
+            128,
+            210,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "f51739db682c7b40121e71db4c020176e0128de6e7785f6a59c2cbc781416c65"
+        },
+        {
+          "index": 15,
+          "source_rect": [
+            917,
+            941,
+            314,
+            313
+          ],
+          "source_crown_y": 51,
+          "source_body_height": 238,
+          "source_foot_pivot": [
+            190.5,
+            289
+          ],
+          "source_boot_span": [
+            153,
+            228
+          ],
+          "uniform_scale": 0.6698063840920984,
+          "translation": [
+            32.40188383045526,
+            94.42595499738357
+          ],
+          "output_bounds": [
+            108,
+            128,
+            211,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "5a429c8e21a417e01eac9e5dca1b0d6b420491e31e29b89a2bc600f554d36370"
+        }
+      ],
+      "source_cell_partition": {
+        "offset_x": -24,
+        "common_width": 314,
+        "method": "Common whole-cell crop, with transparent padding outside the source image; no art or alpha cleanup."
+      }
+    },
+    "side": {
+      "source": "game/asset/character/player/icon/source/whitehair/katana/side/attack-body-fx-v9-source-sheet.png",
+      "source_sha256": "4a77c71c35c18a90334898e8a5588a6b914b0a5e928d3b8d2dd6e39e424d04db",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_reference_body_height": 240.1875,
+      "uniform_scale": 0.6661462399167317,
+      "frames": [
+        {
+          "index": 0,
+          "source_rect": [
+            -16,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 50,
+          "source_body_height": 240,
+          "source_foot_pivot": [
+            210.5,
+            290
+          ],
+          "source_boot_span": [
+            179,
+            242
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            19.77621649752797,
+            94.8175904241478
+          ],
+          "output_bounds": [
+            119,
+            128,
+            221,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "376e8d77de53cd48e71572b7fe969e2df0d68489d948db74644699d8c8688cd7"
+        },
+        {
+          "index": 1,
+          "source_rect": [
+            298,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 50,
+          "source_body_height": 240,
+          "source_foot_pivot": [
+            196,
+            290
+          ],
+          "source_boot_span": [
+            165,
+            227
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            29.43533697632057,
+            94.8175904241478
+          ],
+          "output_bounds": [
+            119,
+            128,
+            218,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "b54915aac164a2865be1d68ab2157497d84c9658c11b5b7f55a3f7fcf4e3026e"
+        },
+        {
+          "index": 2,
+          "source_rect": [
+            611,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 51,
+          "source_body_height": 239,
+          "source_foot_pivot": [
+            188,
+            290
+          ],
+          "source_boot_span": [
+            157,
+            219
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            34.764506895654435,
+            94.8175904241478
+          ],
+          "output_bounds": [
+            118,
+            128,
+            218,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "18dd5a66dfda225fe91e75d8124ad9a72cde6b8b7e002499ee4ead39d5fb01f2"
+        },
+        {
+          "index": 3,
+          "source_rect": [
+            925,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 50,
+          "source_body_height": 240,
+          "source_foot_pivot": [
+            193.5,
+            290
+          ],
+          "source_boot_span": [
+            162,
+            225
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            31.10070257611241,
+            94.8175904241478
+          ],
+          "output_bounds": [
+            118,
+            128,
+            221,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "3739af89670715406be9b62971794041d473888f02ed2199f28d424c2a1870d7"
+        },
+        {
+          "index": 4,
+          "source_rect": [
+            -16,
+            314,
+            314,
+            313
+          ],
+          "source_crown_y": 49,
+          "source_body_height": 240,
+          "source_foot_pivot": [
+            213,
+            289
+          ],
+          "source_boot_span": [
+            184,
+            242
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            18.110850897736157,
+            95.48373666406454
+          ],
+          "output_bounds": [
+            117,
+            128,
+            218,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "1d2e3628de843f6f539e718fe9bea63c0146d091dce428023972b2bb18bce306"
+        },
+        {
+          "index": 5,
+          "source_rect": [
+            298,
+            314,
+            314,
+            313
+          ],
+          "source_crown_y": 48,
+          "source_body_height": 241,
+          "source_foot_pivot": [
+            198.5,
+            289
+          ],
+          "source_boot_span": [
+            169,
+            228
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            27.76997137652876,
+            95.48373666406454
+          ],
+          "output_bounds": [
+            79,
+            127,
+            223,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "4a3aa51b776864b5149404ff234806f270021760bb5177804bfc83efa77aec4d"
+        },
+        {
+          "index": 6,
+          "source_rect": [
+            611,
+            314,
+            314,
+            313
+          ],
+          "source_crown_y": 49,
+          "source_body_height": 240,
+          "source_foot_pivot": [
+            195.5,
+            289
+          ],
+          "source_boot_span": [
+            166,
+            225
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            29.768410096278956,
+            95.48373666406454
+          ],
+          "output_bounds": [
+            42,
+            128,
+            222,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "c5bc32f89227c0beb400199332fe7e88e161a66a5071e40b6e5d5930e46f240e"
+        },
+        {
+          "index": 7,
+          "source_rect": [
+            925,
+            314,
+            314,
+            313
+          ],
+          "source_crown_y": 49,
+          "source_body_height": 240,
+          "source_foot_pivot": [
+            201,
+            289
+          ],
+          "source_boot_span": [
+            171,
+            231
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            26.104605776736918,
+            95.48373666406454
+          ],
+          "output_bounds": [
+            37,
+            128,
+            223,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "957a1d5edfec8d784268fd7f27a5008158685e5f4b6f8b10479a9630434ff4be"
+        },
+        {
+          "index": 8,
+          "source_rect": [
+            -16,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 44,
+          "source_body_height": 240,
+          "source_foot_pivot": [
+            216.5,
+            284
+          ],
+          "source_boot_span": [
+            188,
+            245
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            15.779339058027574,
+            98.81446786364819
+          ],
+          "output_bounds": [
+            59,
+            127,
+            221,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "bbe3bb52db6ada63be524a2e66368cdf5d09d6b249f9df7d0b4b4b03fd5d5ef8"
+        },
+        {
+          "index": 9,
+          "source_rect": [
+            298,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 43,
+          "source_body_height": 241,
+          "source_foot_pivot": [
+            206.5,
+            284
+          ],
+          "source_boot_span": [
+            177,
+            236
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            22.440801457194908,
+            98.81446786364819
+          ],
+          "output_bounds": [
+            71,
+            127,
+            219,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "997ef04e3dede55e0254b94349c2bdfb64b28b9cf9d7a29dc24279b9cb4c23f9"
+        },
+        {
+          "index": 10,
+          "source_rect": [
+            611,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 45,
+          "source_body_height": 239,
+          "source_foot_pivot": [
+            197.5,
+            284
+          ],
+          "source_boot_span": [
+            167,
+            228
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            28.436117616445472,
+            98.81446786364819
+          ],
+          "output_bounds": [
+            57,
+            128,
+            219,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "43e254f56c6324688e5d3d5b07f5e9deb4d3dee16a2b0d5b3b7f545a246c67a6"
+        },
+        {
+          "index": 11,
+          "source_rect": [
+            925,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 46,
+          "source_body_height": 238,
+          "source_foot_pivot": [
+            204,
+            284
+          ],
+          "source_boot_span": [
+            174,
+            234
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            24.10616705698672,
+            98.81446786364819
+          ],
+          "output_bounds": [
+            49,
+            129,
+            217,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "f4a0925d665313df81d5f2d7b165cdc2b4df9262555d3469bf4340df019fa878"
+        },
+        {
+          "index": 12,
+          "source_rect": [
+            -16,
+            941,
+            314,
+            313
+          ],
+          "source_crown_y": 39,
+          "source_body_height": 241,
+          "source_foot_pivot": [
+            213.5,
+            280
+          ],
+          "source_boot_span": [
+            183,
+            244
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            17.77777777777777,
+            101.47905282331513
+          ],
+          "output_bounds": [
+            101,
+            127,
+            220,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "9e689bf2a37ed38e20da9ec0958dc5adcbb1f4a972ba56aea7eddb18a353bf55"
+        },
+        {
+          "index": 13,
+          "source_rect": [
+            298,
+            941,
+            314,
+            313
+          ],
+          "source_crown_y": 38,
+          "source_body_height": 242,
+          "source_foot_pivot": [
+            202.5,
+            280
+          ],
+          "source_boot_span": [
+            172,
+            233
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            25.10538641686182,
+            101.47905282331513
+          ],
+          "output_bounds": [
+            116,
+            127,
+            219,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "d7ececc24693e2dda78e9d50664b39f2defc2ded57480e04adcf330a6b64c09d"
+        },
+        {
+          "index": 14,
+          "source_rect": [
+            611,
+            941,
+            314,
+            313
+          ],
+          "source_crown_y": 39,
+          "source_body_height": 241,
+          "source_foot_pivot": [
+            193,
+            280
+          ],
+          "source_boot_span": [
+            162,
+            224
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            31.433775696070768,
+            101.47905282331513
+          ],
+          "output_bounds": [
+            115,
+            127,
+            220,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "c9c9755cb549f56165c13eb26da5f441297b01341a904bacd7ab713b8ac68256"
+        },
+        {
+          "index": 15,
+          "source_rect": [
+            925,
+            941,
+            314,
+            313
+          ],
+          "source_crown_y": 40,
+          "source_body_height": 241,
+          "source_foot_pivot": [
+            198,
+            281
+          ],
+          "source_boot_span": [
+            167,
+            229
+          ],
+          "uniform_scale": 0.6661462399167317,
+          "translation": [
+            28.103044496487115,
+            100.81290658339839
+          ],
+          "output_bounds": [
+            116,
+            127,
+            218,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "neutral_override": false,
+          "rgba_sha256": "9b7e000b62d27788578e677498ec8b6b00cca1610e2e4f5d567c40910165ff4d"
+        }
+      ],
+      "source_cell_partition": {
+        "offset_x": -16,
+        "common_width": 314,
+        "method": "Common whole-cell crop, with transparent padding outside the source image; no art or alpha cleanup."
+      }
+    }
+  },
+  "scale_reference": "Mean anatomical body height across all sixteen poses, fixed once per direction.",
+  "protected_files_unchanged": [
+    {
+      "path": "game/code/main.py",
+      "sha256": "79d58447df6e3e28151faa735c518cc8803d196b014d6fddaca632e4de693b94"
+    },
+    {
+      "path": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+      "sha256": "ec0c63f0afd5cec2a12403988bd657f76656f0a271a266467b9c3d72edef40f7"
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/front/idle.png",
+      "sha256": "6b08be3cb2a4db0652e0a81c298394f748968043d7825da1f80a2f3d5105ab9f"
+    },
+    {
+      "path": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+      "sha256": "2feb0c07d00765f1d0a77b078e97fed2bc4dedb2fcf2a03929c38358c43bae80"
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/side/idle.png",
+      "sha256": "883edb5a3bdd4504787ff38675a036ba713c250feb501b3c61444e7225a62bdd"
+    },
+    {
+      "path": "game/asset/character/player/main/9-whitehair/katana/front/attack-wholepose-v6.png",
+      "sha256": "049508953bcbd57af208a38d61bf4923777fff73ec9ec7421247678f50c87c54"
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/front/attack-wholepose-source-sheet.png",
+      "sha256": "e52a1d1df3fc2484a562cff51733559516ddc8e936f412ed3762471c22f323f9"
+    },
+    {
+      "path": "game/asset/character/player/main/9-whitehair/katana/side/attack-wholepose-v6.png",
+      "sha256": "d6ef636f823e3725d9f3f32fef48889dd7cca1e21abd9b8a2e08753110f07675"
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/side/attack-wholepose-source-sheet.png",
+      "sha256": "58d12683c26959c99b3b62e4ba62350c25e3e0a6f3176bb55dfb8d913838e7ca"
+    },
+    {
+      "path": "metadata/character/attack/whitehair-katana-wholepose-registration.json",
+      "sha256": "627521a93e6e92f298f005bba0ff14b7f2b63fe1acc6de1495512474d07d2ba3"
+    },
+    {
+      "path": "game/asset/character/player/icon/preview/whitehair-katana-wholepose-v6.png",
+      "sha256": "c09fa7bd796dbe87257b519d88123625de8d7a21aff6eac82c0313e9ee0f64f1"
+    },
+    {
+      "path": "game/asset/character/player/icon/preview/whitehair-katana-wholepose-v6.gif",
+      "sha256": "97bff20107a63f57b7a0761849a6cd2d637c7e0328b7f267719a25ae3cdf3be7"
+    },
+    {
+      "path": "game/asset/character/player/main/9-whitehair/katana/front/attack-elbow-v7.png",
+      "sha256": "c71f5a3966406d6f0937698872c73e51fff0b64cae83df380d7555b94ee597b5"
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/front/attack-elbow-v7-source-sheet.png",
+      "sha256": "f2eea5e4afe6cf770534a00a0dc8f236c7cc01dfb170c974982ef4cf412d7d69"
+    },
+    {
+      "path": "game/asset/character/player/main/9-whitehair/katana/side/attack-elbow-v7.png",
+      "sha256": "f8da9b80a831bb316ae462260b384d33419251adc000e950a8641517684ec24e"
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/side/attack-elbow-v7-source-sheet.png",
+      "sha256": "167ce4f526bf7fde7206f30fa178a22f89474c9239ff2c7746064a80af19b998"
+    },
+    {
+      "path": "metadata/character/attack/whitehair-katana-elbow-v7-registration.json",
+      "sha256": "43eeb7c868d9cf0e48a5e90039da0aa2a57914f99b361c8c91a6afd8b5416e26"
+    },
+    {
+      "path": "metadata/character/whitehair-katana-elbow-v7-generation.json",
+      "sha256": "b3cba6c36733cfd4e333955246c9bcf65f12a64b853dcaef57c8506fc137a152"
+    },
+    {
+      "path": "metadata/character/whitehair-katana-elbow-v7-validation.json",
+      "sha256": "d5d3211ff299a95624410f5246b4f4ebb9dfd6a3db1fa8842ee5621007b69b60"
+    },
+    {
+      "path": "game/asset/character/player/icon/preview/whitehair-katana-elbow-v7.png",
+      "sha256": "b890f4ee5681093f6ec14bfcefaca52bbaadb219f13e1f02920e790b66ab5534"
+    },
+    {
+      "path": "game/asset/character/player/icon/preview/whitehair-katana-elbow-v7-motions.png",
+      "sha256": "4f48d2aa77cacb227533b1615ca3031ce72f603560ead55b2329be49c1fa9c5c"
+    },
+    {
+      "path": "game/asset/character/player/icon/preview/whitehair-katana-elbow-v7.gif",
+      "sha256": "ee829133a99bf94bdec000d553cfc85ed963004f576da0e5bea76252c9ec6fd4"
+    },
+    {
+      "path": "game/asset/character/player/icon/preview/whitehair-katana-elbow-v7-motions.gif",
+      "sha256": "4b7b76a3e8e6bca307078fe90676fc384d18ee1ff1e4c0c1dfa994d56822ea56"
+    },
+    {
+      "path": "game/asset/character/player/main/9-whitehair/katana/front/attack-shoulder-v8.png",
+      "sha256": "24d6af6edf38b0fd482087619fc04dddc47cc03b8bc715e2f9d1ed6034bf2708"
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/front/attack-shoulder-v8-source-sheet.png",
+      "sha256": "8ee7b4bcb7b2d711b875794700c2858b7ff1a9dcb30d893074002d856ce70fff"
+    },
+    {
+      "path": "game/asset/character/player/main/9-whitehair/katana/side/attack-shoulder-v8.png",
+      "sha256": "83c7923e2f1ee25d1628a8eca895c31c66f8c9373ba68079f9d473afd67b1618"
+    },
+    {
+      "path": "game/asset/character/player/icon/source/whitehair/katana/side/attack-shoulder-v8-source-sheet.png",
+      "sha256": "56af34240792642628cbbeb36f5a135098eca804dd13dfba6d03fa8dbfd9eb7e"
+    },
+    {
+      "path": "metadata/character/attack/whitehair-katana-shoulder-v8-registration.json",
+      "sha256": "8490b0c7f92b89760ae17434e96f804df182f4833901165282f2c165174c5d2b"
+    },
+    {
+      "path": "metadata/character/whitehair-katana-shoulder-v8-generation.json",
+      "sha256": "92b56067d319c1877515d9391d97be1111ee3a3b8bef160592a67479995b3c24"
+    },
+    {
+      "path": "metadata/character/whitehair-katana-shoulder-v8-validation.json",
+      "sha256": "6193b4e2c1761ea940ef2ce8cbf3aa51f41e1ad8a21a429ea2deda7c95a6595c"
+    },
+    {
+      "path": "game/asset/character/player/icon/preview/whitehair-katana-shoulder-v8.png",
+      "sha256": "9c8f1cb01e286bd0631ff5e79d442fcd964b08565a1cddfd4571cdd317fd7f1b"
+    },
+    {
+      "path": "game/asset/character/player/icon/preview/whitehair-katana-shoulder-v8-motions.png",
+      "sha256": "63956cbdbab45b323650f5c621b09d44aecdf4de7f8c7667ee1c931bd02e0ca0"
+    },
+    {
+      "path": "game/asset/character/player/icon/preview/whitehair-katana-shoulder-v8.gif",
+      "sha256": "e44b654004711bf6b9cbd0ae8896bb94b3e97013d76cb62f53821c1af39cca21"
+    },
+    {
+      "path": "game/asset/character/player/icon/preview/whitehair-katana-shoulder-v8-motions.gif",
+      "sha256": "8f352fec465dabdd7c0623a81cf06b62f261357fa02ea6e669e08da28ee35fdf"
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+{
+  "id": "whitehair-katana-denoise-v13",
+  "version": 13,
+  "status": "complete_applied",
+  "request": "Prioritize removing noise that becomes apparent when entering attack; preserve character identity, proportions and motion.",
+  "applied_mode": "built-in image_gen cleanup of complete four-pose batches",
+  "upstream_restoration_trials": {
+    "version": 13,
+    "applied": false,
+    "candidate_selected": false,
+    "selection_reason": "No tested upstream restoration configuration visibly resolves the attack-entry mottled/soft shading and broad dark facial/hair strokes while preserving the requested artwork. Do not promote sub-DN restoration changes as the requested improvement.",
+    "tool": {
+      "repository": "https://github.com/hehee9/gpt-image-restore",
+      "commit": "bc9a90916a2213b14024b57e79be4773aa60c3ca",
+      "version": "0.1.0",
+      "python": ".build/restore-venv/Scripts/python.exe"
+    },
+    "variants": {
+      "strong": {
+        "command": [
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\restore-venv\\Scripts\\python.exe",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\tools\\gpt-image-restore\\restore_gpt_image.py",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\input\\front-attack.png",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\input\\side-attack.png",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\input\\back-attack.png",
+          "-o",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\strong",
+          "--preset",
+          "strong",
+          "--format",
+          "png",
+          "--report",
+          "--save-diff"
+        ],
+        "alpha_and_dimensions_preserved_all_three_sheets": true,
+        "frames_checked": 48,
+        "files": {
+          "front": {
+            "candidate": ".build/whitehair-katana-denoise-v13/strong/front-attack_restored.png",
+            "input_sha256": "67feebeddc45128b57e0bf8c47d28c39f0138307541e6e3d35ea37b5575d9f5a",
+            "output_sha256": "265aa138ea74f43f0c1d6d59076a714541e565a09d668831e06be3a3f85a6d4c",
+            "opaque_mean_abs_rgb_change_dn": 0.33867399823031225,
+            "neutral_hair_mean_abs_change_dn": 0.005099302200751476,
+            "neutral_hair_high_frequency_rms_dn": 5.89191882675621,
+            "cel_fill_context": false
+          },
+          "side": {
+            "candidate": ".build/whitehair-katana-denoise-v13/strong/side-attack_restored.png",
+            "input_sha256": "fea7219be9fb243ea9fa3e2f1ddc1266074b968afdd422f7c562373d91b33811",
+            "output_sha256": "4afe38c3261fc58d1c2e58e03275578aa4959f7caf068d9ae27ed7355dda7af8",
+            "opaque_mean_abs_rgb_change_dn": 0.31910233329803384,
+            "neutral_hair_mean_abs_change_dn": 0.0193596425912137,
+            "neutral_hair_high_frequency_rms_dn": 4.133836909571628,
+            "cel_fill_context": false
+          },
+          "back": {
+            "candidate": ".build/whitehair-katana-denoise-v13/strong/back-attack_restored.png",
+            "input_sha256": "fe6d93dc30e8aa681732780b92e8db2262e4216d3aa234ea83f263edac1745fb",
+            "output_sha256": "aa0a8435fc4528378834c489639552dc79dd88db5b12e2a706a1b27371e9a004",
+            "opaque_mean_abs_rgb_change_dn": 0.13084766555260566,
+            "neutral_hair_mean_abs_change_dn": 0.06424838610513373,
+            "neutral_hair_high_frequency_rms_dn": 3.9442263900237537,
+            "cel_fill_context": false
+          }
+        },
+        "visual_acceptance": false
+      },
+      "surface_cel": {
+        "command": [
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\restore-venv\\Scripts\\python.exe",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\tools\\gpt-image-restore\\restore_gpt_image.py",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\input\\front-attack.png",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\input\\side-attack.png",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\input\\back-attack.png",
+          "-o",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\surface_cel",
+          "--preset",
+          "strong",
+          "--contour",
+          "0",
+          "--defocus",
+          "0",
+          "--dither",
+          "0",
+          "--surface",
+          "1.5",
+          "--format",
+          "png",
+          "--report",
+          "--save-diff"
+        ],
+        "alpha_and_dimensions_preserved_all_three_sheets": true,
+        "frames_checked": 48,
+        "files": {
+          "front": {
+            "candidate": ".build/whitehair-katana-denoise-v13/surface_cel/front-attack_restored.png",
+            "input_sha256": "67feebeddc45128b57e0bf8c47d28c39f0138307541e6e3d35ea37b5575d9f5a",
+            "output_sha256": "1d8d76dda0c29d8cb6f83a4b80e677f10755804739a8a1e7a5b63665831b3708",
+            "opaque_mean_abs_rgb_change_dn": 0.3479630001412776,
+            "neutral_hair_mean_abs_change_dn": 0.040257648953301126,
+            "neutral_hair_high_frequency_rms_dn": 5.892670374614043,
+            "cel_fill_context": false
+          },
+          "side": {
+            "candidate": ".build/whitehair-katana-denoise-v13/surface_cel/side-attack_restored.png",
+            "input_sha256": "fea7219be9fb243ea9fa3e2f1ddc1266074b968afdd422f7c562373d91b33811",
+            "output_sha256": "6fb7e3800b97d41b1fc4f69140a824b744095102a88110f2de879e2cc138d442",
+            "opaque_mean_abs_rgb_change_dn": 0.3338434113452646,
+            "neutral_hair_mean_abs_change_dn": 0.057086125589476296,
+            "neutral_hair_high_frequency_rms_dn": 4.133206428847928,
+            "cel_fill_context": false
+          },
+          "back": {
+            "candidate": ".build/whitehair-katana-denoise-v13/surface_cel/back-attack_restored.png",
+            "input_sha256": "fe6d93dc30e8aa681732780b92e8db2262e4216d3aa234ea83f263edac1745fb",
+            "output_sha256": "7c84c66a73b27f614d77a235f83457d906446d019a25a4f7748566f9bbb30767",
+            "opaque_mean_abs_rgb_change_dn": 0.17395425144523088,
+            "neutral_hair_mean_abs_change_dn": 0.1263449123885644,
+            "neutral_hair_high_frequency_rms_dn": 3.9442783489278606,
+            "cel_fill_context": false
+          }
+        },
+        "visual_acceptance": false
+      },
+      "surface_only": {
+        "command": [
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\restore-venv\\Scripts\\python.exe",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\tools\\gpt-image-restore\\restore_gpt_image.py",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\input\\front-attack.png",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\input\\side-attack.png",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\input\\back-attack.png",
+          "-o",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\surface_only",
+          "--preset",
+          "strong",
+          "--contour",
+          "0",
+          "--defocus",
+          "0",
+          "--dither",
+          "0",
+          "--cel-fill",
+          "0",
+          "--surface",
+          "2",
+          "--grime",
+          "2",
+          "--mottle",
+          "1.5",
+          "--format",
+          "png",
+          "--report",
+          "--save-diff"
+        ],
+        "alpha_and_dimensions_preserved_all_three_sheets": true,
+        "frames_checked": 48,
+        "files": {
+          "front": {
+            "candidate": ".build/whitehair-katana-denoise-v13/surface_only/front-attack_restored.png",
+            "input_sha256": "67feebeddc45128b57e0bf8c47d28c39f0138307541e6e3d35ea37b5575d9f5a",
+            "output_sha256": "f35082c9dabbe8981b59c81398403a48d45c5e7aa9321f61443f04d78aa7ed19",
+            "opaque_mean_abs_rgb_change_dn": 0.3547480425617346,
+            "neutral_hair_mean_abs_change_dn": 0.06414385399892646,
+            "neutral_hair_high_frequency_rms_dn": 5.894059347153002,
+            "cel_fill_context": null
+          },
+          "side": {
+            "candidate": ".build/whitehair-katana-denoise-v13/surface_only/side-attack_restored.png",
+            "input_sha256": "fea7219be9fb243ea9fa3e2f1ddc1266074b968afdd422f7c562373d91b33811",
+            "output_sha256": "0e4e38dbef7489986e5e9487d415c3639ab7a813c2251b447c3eef5e30d4808c",
+            "opaque_mean_abs_rgb_change_dn": 0.34742313530304636,
+            "neutral_hair_mean_abs_change_dn": 0.10126582278481013,
+            "neutral_hair_high_frequency_rms_dn": 4.137767739550893,
+            "cel_fill_context": null
+          },
+          "back": {
+            "candidate": ".build/whitehair-katana-denoise-v13/surface_only/back-attack_restored.png",
+            "input_sha256": "fe6d93dc30e8aa681732780b92e8db2262e4216d3aa234ea83f263edac1745fb",
+            "output_sha256": "1b73c113fcdbf49b82335f5c0c755bcba3378766c1c5a383fd3db113a97667f3",
+            "opaque_mean_abs_rgb_change_dn": 0.20948041894605765,
+            "neutral_hair_mean_abs_change_dn": 0.21262424428732452,
+            "neutral_hair_high_frequency_rms_dn": 3.9554725236742008,
+            "cel_fill_context": null
+          }
+        },
+        "visual_acceptance": false
+      },
+      "surface_high": {
+        "command": [
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\restore-venv\\Scripts\\python.exe",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\tools\\gpt-image-restore\\restore_gpt_image.py",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\input\\front-attack.png",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\input\\side-attack.png",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\input\\back-attack.png",
+          "-o",
+          "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-denoise-v13\\surface_high",
+          "--preset",
+          "strong",
+          "--contour",
+          "0",
+          "--defocus",
+          "0",
+          "--dither",
+          "0",
+          "--cel-fill",
+          "0",
+          "--surface",
+          "6",
+          "--grime",
+          "3",
+          "--mottle",
+          "2",
+          "--sparkle",
+          "2",
+          "--format",
+          "png",
+          "--report",
+          "--save-diff"
+        ],
+        "alpha_and_dimensions_preserved_all_three_sheets": true,
+        "frames_checked": 48,
+        "files": {
+          "front": {
+            "candidate": ".build/whitehair-katana-denoise-v13/surface_high/front-attack_restored.png",
+            "input_sha256": "67feebeddc45128b57e0bf8c47d28c39f0138307541e6e3d35ea37b5575d9f5a",
+            "output_sha256": "a46d33f8e88f6ca52ef48d9b5909ab9d3ec4faed441ea43bc18175278b639465",
+            "opaque_mean_abs_rgb_change_dn": 0.41348234401838097,
+            "neutral_hair_mean_abs_change_dn": 0.2010198604401503,
+            "neutral_hair_high_frequency_rms_dn": 5.897086628426526,
+            "cel_fill_context": null
+          },
+          "side": {
+            "candidate": ".build/whitehair-katana-denoise-v13/surface_high/side-attack_restored.png",
+            "input_sha256": "fea7219be9fb243ea9fa3e2f1ddc1266074b968afdd422f7c562373d91b33811",
+            "output_sha256": "94acef5d678cd4e2ed63fe9815fd907c4d7e4cefc307ac1b89f78b5bf4850ae0",
+            "opaque_mean_abs_rgb_change_dn": 0.4368032757951216,
+            "neutral_hair_mean_abs_change_dn": 0.2933730454206999,
+            "neutral_hair_high_frequency_rms_dn": 4.144031344064704,
+            "cel_fill_context": null
+          },
+          "back": {
+            "candidate": ".build/whitehair-katana-denoise-v13/surface_high/back-attack_restored.png",
+            "input_sha256": "fe6d93dc30e8aa681732780b92e8db2262e4216d3aa234ea83f263edac1745fb",
+            "output_sha256": "7ae85d9a2380e41c77fc46f4915f9cc24bfa57cd842bfd19c747efd35b4d70fd",
+            "opaque_mean_abs_rgb_change_dn": 0.3914252405946832,
+            "neutral_hair_mean_abs_change_dn": 0.5251562660108617,
+            "neutral_hair_high_frequency_rms_dn": 3.9802901017369376,
+            "cel_fill_context": null
+          }
+        },
+        "visual_acceptance": false
+      }
+    },
+    "cell_context_experiments": {
+      "samples": [
+        "front00",
+        "front06",
+        "side00",
+        "back00"
+      ],
+      "whole_cell320_and_alpha8_bbox_plus8": true,
+      "alpha_and_geometry_preserved": true,
+      "cel_fill_all_eight_contexts_false": true,
+      "report": "cell-context-report.json",
+      "commands": [
+        "cell-surface-cel-command.json",
+        "tight-surface-cel-command.json"
+      ]
+    },
+    "diagnosis": [
+      "Current lossless PNG itself has softer broader hair/face contours and more painterly surface treatment than current Idle; this is not solely GIF encoding or transparent fringe.",
+      "Standard strong and tailored no-dither presets change some edge RGB and tiny interior details, but head/skin/coat visual cleanliness barely improves. Rejection is based on normal-alpha visual comparisons and fixed ROI metrics, not a single maximum pixel.",
+      "Even surface6/grime3/mottle2/sparkle2 produced only0.20/0.29/0.53DN mean changes in the neutral front/side/back opaque hair ROI; its residual noise diagnostic did not decrease.",
+      "Cel-fill declines these sprites (illustration_context=false) in whole-sheet, full-cell, and alpha-bbox-crop contexts. Its internal guard was not bypassed.",
+      "No rescaling, silhouette edits, face narrowing, palette remap, generative redraw, sharpening or custom blur was applied."
+    ],
+    "roi_metrics": "candidate-metrics.json",
+    "normal_rgba_previews": [
+      "front-variant-head-comparison.png",
+      "side-variant-head-comparison.png",
+      "back-variant-head-comparison.png",
+      "front-variant-motion-comparison.png",
+      "side-variant-motion-comparison.png",
+      "back-variant-motion-comparison.png",
+      "front-00-cell-context-comparison.png",
+      "side-00-cell-context-comparison.png"
+    ],
+    "protected_files_unchanged": 111,
+    "current_attack_files_unchanged": 3,
+    "recommended_next_decision": "Root should review these comparisons and decide whether matching the existing Idle linework requires actual artwork editing; no restoration candidate is recommended as a completed noise fix."
+  },
+  "front": [
+    {
+      "mode": "built-in image_gen edit",
+      "prompt": "Precise cleanup edit, NOT a character redesign. Image1 is the exact four consecutive FRONT attack cels to clean (2x2, row-major frames0,1,2,3). Image2 is the clean IDLE reference for the SAME character's line quality and flat color cleanliness only. Restore these four attack drawings to crisp clean hand-drawn anime game sprites: remove mottled muddy color noise, blurry grey halos, smeared double contours and scratchy fringe. Use smooth consistent thin dark outlines like image2 and smooth ivory hair / lavender shadows, clean ivory coat, clean black/red clothing and brown leather. Keep fine eyes, mouth, buttons, buckles readable, with no sharpening halos or added grain. Match image2's clean flat color rendering, not its pose.\nSTRICT preservation: retain image1's exact four poses and sequence, identity and chibi proportions, head/face width, cheek fullness, eye positions, hair shape, shoulders/torso/leg lengths and planted boot positions. Do not narrow or elongate the face, do not grow the head or shrink the boots. Exact same right hand holds straight katana (screen-left), left hand holds scabbard (screen-right). Same right elbow and wrist orientation per cel; no detached arm, no wrist flips. Same cloak, hair lengths, sword lengths, scabbard and tassel placements. No new details, lighting or changed expressions. Frame3 has blade beginning to draw down-left exactly as image1. No FX in these four frames.\nOutput a high-resolution square transparent PNG, exactly2x2 equal cells with those four COMPLETE whole-body poses. Preserve relative placement from image1: each body center at half-cell width, soles around90%cellheight, hair crown around40%cellheight, thus body about50%ofcellheight, with ample clear padding. Each cel at same scale and baseline; no cropping/crossing cell edges. Aim for clean high-resolution illustration instead of enlarging the existing blur. Native transparent alpha outside the art. Absolutely no text, labels, gridlines, background, shadow, colored speckles or halos.",
+      "references": [
+        ".build/whitehair-katana-denoise-v13/edit-input/front-attack-00-03.png",
+        ".build/whitehair-katana-denoise-v13/edit-input/front-idle-reference.png"
+      ],
+      "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/00-03-source.png",
+      "purpose": "Clean blurry linework/mottled attack paint in four complete cels, after requested upstream restoration failed visible-effect checks."
+    },
+    {
+      "mode": "built-in image_gen edit",
+      "prompt": "Precise sprite cleanup edit, not redesign. Image1 is the EXACT four FRONT attack poses to clean (row-major frames04,05,06,07). Image2 is the clean approved front frames0-3: match that clean rendering quality, exact same face/body proportions and palette. Image3 clean Idle is a supporting reference for thin smooth lines and colors. Keep Image1's poses, body silhouettes, all joints, blade angles and crimson blade arcs EXACTLY per corresponding cell. Frame4 is a downward drawn blade, frames5-7 swing from low-left toward horizontal-left, as shown; preserve each original crescent and its existing timing. Do not substitute neutral poses from image2 or3.\nRemove muddy blotches, blurry double outlines, grey halos and mottled grain from the four whole connected figures. Crisp smooth thin outlines, flat clean ivory hair with lavender shadow, ivory/burgundy coat, black/red uniform and brown gloves/boots. Same clean eyes, small mouth, buckles, buttons and fingers as image2. No new texture, sharpen halos or glitter. Physical RIGHT hand is on screenLEFT wielding straight silver katana; LEFT hand at screenRIGHT holds black sheath/redtassel. Fixed wrists, anatomical nearstraight elbows, same shoulder-driven upward draw slash; never swap hands or alter motion. Blade crimson FX stay clean and sharply readable in the exact existing cells, separate from hair silhouette, no extra red speckle.\nSTRICT anatomy: SAME large rounded chibi skull, face width, cheeks, eye position, compact torso, short legs, boot size and stance as image1 and approvedimage2. No narrower face, enlarged head, stretched limbs or inflated boots. Preserve subtle body/hair/coat sway of each originalcel. Preserve all clothing/weapon design and proportions; no extra elements.\nOutput high-resolution square transparentPNG exactly2columns x2rows, these four complete fullbody poses in row-major order. Exact equal-cell layout: each body centered at half-cell width, soles at90%cellheight, crown at40%cellheight, bodyheight50%cellheight. SAME framing and drawing scale as image2; ample transparent margins including swords/FX, no crossing/cropping cell edges. No text, labels, borders, backdrop or ground shadow. Clean actually transparent exterior with no noise/fringe.",
+      "references": [
+        ".build/whitehair-katana-denoise-v13/edit-input/front-attack-04-07.png",
+        "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/00-03-source.png",
+        ".build/whitehair-katana-denoise-v13/edit-input/front-idle-reference.png"
+      ],
+      "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/04-07-source.png"
+    },
+    {
+      "mode": "built-in image_gen edit",
+      "prompt": "Precise clean rendering edit of EXACT four FRONT sword-attack poses in IMAGE1 (frames08,09,10,11 row-major). Image2 shows already cleaned frames0-3 of the same character: match this exact clean thin-line art, face proportions, clothing palette, and body size. Image3 is the same character's idle reference for clean flat shading only. Image1 remains absolute pose/weapon/hand guide for each of the four cels. Do not neutralize or replace the attack action with the reference poses.\nRemove muddy color noise, blurred grey duplicate outlines, smears and dirty halos. Crisp thin consistent dark linework and smooth flat cel colors like image2: ivory white/lavender long hair, ivory cape/coat burgundy lining, black/red uniform, darkbrown leather. Keep same human face, cheek fullness and eye placement, small neutral mouth, no narrowing face or growing head. Same chibi head/body/shortleg proportions, boots size and stance. Anatomical right sword arm screenLEFT, left sheath hand screenRIGHT. Retain EXACT shoulder/arm/blade poses and all blade angles from image1: upperleft rising slash and followthrough then shoulder returns, elbow nearstraight, fixedwrists, neverfliphand or bend elbow backward. Same straight slim sword and long black sheath/redtassel. Preserve image1's existing crimson crescents in only the cells where they exist and their EXACT trailing direction/shape; do not add new FX to cells without it. Real crimson arcs must not be removed as noise. No strayredspeckles on hair/background.\nMaintain complete connected body in each frame, hair and coat sway as original, no limb cutouts. No changed armor design, extraornaments, lighting effects or new details.\nOutput highresolution square transparent PNG, EXACT2x2 equalcells, fourcels rowmajor. Match image2's framing: body center halfcellwidth, crown40%cellheight, soles90%cellheight, bodyheight50%cellheight. Same modelscale withinall4cels, allfeetbaseline, no oversized boots. Large transparent gutters for weapons/FX, no touching/clipping cell edges. Only these four cleaned fullbody drawings; no text, labels, grid, scenery, floor or shadow; completely transparent outerbackground.",
+      "references": [
+        ".build/whitehair-katana-denoise-v13/edit-input/front-attack-08-11.png",
+        "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/00-03-source.png",
+        ".build/whitehair-katana-denoise-v13/edit-input/front-idle-reference.png"
+      ],
+      "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/08-11-source.png"
+    },
+    {
+      "mode": "built-in image_gen edit",
+      "prompt": "Precise cleanup edit of image1: EXACT four FRONT attack return poses frames12,13,14,15, row-major2x2. Image2 is approved clean frontframes0-3 of the exactsame character; image3 clean Idle supports line quality/palette. Clean image1's muddy paint and blurred double edges into image2's crisp thin dark outlines and smooth flat colors, without changing any pose, proportions or design.\nFrame12 sword held down-left with rightarm returning; frame13 arm folds to waist; frames14-15 settled ready position and sheathed/partlydrawnblade acrosswaist. Preserve those exact referenceposes, natural connected elbows, fixed wrists, anatomical right hand screenLEFT holds straightkatana, left hand screenRIGHT holds sheath, same equipment position. Do not replace allfourwithsamepose. No FX in these fourcells. No red grains/halos.\nSAME chibi large rounded head and fullcheeks, red eye placement, small neutralmouth, ivory/lavender longhair, ivory/burgundy coat, black/red uniform, brown gloves/boots. Skull/face/neck/torso/leg proportions and boots/stance must match approvedimage2 exactly, no narrowingface, enlarginghead or thickboots. Body gestures/haircoat sway correspond to image1. Crisp readable eyes, fingers, buckles and buttons; smooth clean colors with no mottles, blur, grain, greyhaze or oversharpen halos. No changed ornaments or newcostume.\nOutput highres square transparent PNG exactly2columns x2rows,4wholebody connectedcels. Sameframing and scale asimage2: centeredbody at50%cellwidth, haircrown40%cellheight, soles90%cellheight, bodyheight50%cell. Allfourfeet fixedbaseline, generous marginsallaround, nocoloroutsidefigures, nocropping/cellcrossing. No text/gridlabels/borders/background/floor/groundshadow.",
+      "references": [
+        ".build/whitehair-katana-denoise-v13/edit-input/front-attack-12-15.png",
+        "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/00-03-source.png",
+        ".build/whitehair-katana-denoise-v13/edit-input/front-idle-reference.png"
+      ],
+      "source": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/12-15-source.png"
+    }
+  ],
+  "side": {
+    "version": 13,
+    "mode": "built-in image_gen image edit",
+    "applied": false,
+    "status": "candidate sources generated; production not applied",
+    "batches": {
+      "00-03": {
+        "prompt": "Use case: identity-preserve. Precise cleanup edit of game sprite art, NOT a redesign.\nImage1 is the edit target: exact four consecutive SIDE attack cels, row-major frames0,1,2,3 in a 2x2 grid. Image2 is the canonical SIDE IDLE character: match its clean line quality, flat colors, full face/cheek width and chibi proportions. Image3 is ONLY a clean-rendering quality sample for this character's FRONT view; do NOT copy its front camera, symmetrical face, or front poses.\nRedraw the four Image1 poses with crisp smooth thin dark outlines like Image2, smooth ivory-white hair and pale lavender shadows, clean ivory cape/coat, clean brown-black leather and dark red accents. Remove mottled muddy color noise, broad blurry grey halos, smeared double contours and scratchy fringe. Keep the red eye, small mouth, buckles and clothing trim readable. No sharpening halos, grain, texture speckle, or extra lighting. Match Image2's clean flat rendering while preserving Image1's exact action.\nSTRICT invariants: keep all four poses and their sequence, the SAME screen-left-facing three-quarter SIDE camera, face/eye/cheek width and eye position, full rounded cheek and jaw, head size, hair silhouette, shoulders/chest/waist width, limb length, boots/stance and identity. Do not narrow or elongate the face, do not turn toward camera, do not enlarge the head or shrink boots. Physical RIGHT hand holds the straight katana at screen-left; physical LEFT hand holds the scabbard at screen-right. Exact same elbow, forearm, glove, wrist and blade orientations for each cel, with one continuous naturally connected arm. Never flip hands or rotate sword within the grip. Same long hair, cloak, sword/scabbard/tassel placements. Frame3 blade begins drawing down-left exactly like Image1. No slash FX in these first four frames.\nOutput a high-resolution square transparent PNG, EXACTLY2x2 equal cells containing these four COMPLETE whole-body poses. Preserve image1 relative registration: body center at half-cell width, soles around90%cellheight, hair crown around40%cellheight, body about50%ofcellheight, generous transparent padding. Each cel same drawing scale and baseline, no cropping or crossing cell edges. Make clean high-resolution drawing rather than enlarged blur. Native transparent alpha outside art. No text, numbers, labels, gridlines, ground/shadow, background, colored speckles or halos.",
+        "referenced_image_paths": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-attack-00-03.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-idle-reference.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/00-03-source.png"
+        ],
+        "transparent_background": true,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e334-282c-7c73-a9f4-eae9e621b9ce/exec-5f15b79b-1236-4f3c-b189-22d6bbf5bf15.png",
+        "source_path": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/00-03-source.png",
+        "source_sha256": "1a88451c4fa4bf3cc8d22e8a7a5f636e6c81dfa046b114ea7cc8dee939bff112",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "references": [
+          {
+            "path": "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-attack-00-03.png",
+            "sha256": "2f88bad5c33f17ea4b83b7b19310640d961d17712fe9ec0fa9c2f28d59532d23"
+          },
+          {
+            "path": "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-idle-reference.png",
+            "sha256": "10ed8558a404a1bca1dbeb7589967d3120fe8d48d9cb8f0da30f82bd9a6e4658"
+          },
+          {
+            "path": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/front/00-03-source.png",
+            "sha256": "6f097244e01c1479ae6ec264e653fa3d734df84b80239697e6e0e7d3c2b489fa"
+          }
+        ],
+        "created_utc": "2026-11-17T03:06:12.470253+00:00",
+        "changes": "ImageGen redrew complete cells to clean noisy paint and blurry outlines. No post-generation limb edits or filters."
+      },
+      "04-07": {
+        "prompt": "Use case: identity-preserve. Precise cleanup edit of game sprite art, NOT a redesign.\nImage1 is the edit target: four consecutive SIDE attack poses, exactly2x2 cells row-major. Row-major frames4,5,6,7. Frame4 has blade pointing down-left, frame5 has the first small dark-crimson trailing crescent BELOW the down-left blade, frame6 has nearly straight arm and blade extended toward screen-left, frame7 shoulder rises with still-straight elbow. Preserve all four blade directions and the exact dark-crimson slash FX below/behind the moving blade from Image1. Do not turn the effect into a flame or a circular aura, do not cover the face or elbow.\nImage2 is the canonical SIDE IDLE character, preserving its chibi proportions, face width, clean line quality and flat color rendering. Image3 is the ALREADY APPROVED cleaned SIDE frames0–3: use its exact line/paint quality, character scale, head/face/boot proportions, hair color and camera to keep this batch consistent, but take the four action poses ONLY from Image1. Never replace attacking poses with Image3's idle poses.\nRedraw all four COMPLETE Image1 cels cleanly: crisp thin smooth dark outlines, smooth ivory-white hair/pale lavender shadows, ivory cape/coat, clean brown-black leather, dark red accents; red eyes and small mouth/buckles remain readable. Remove noisy mottling, blurry grey halos, smeared thick or double contours and scratchy fringe. Do not merely sharpen/upscale the existing blur. No added grain, texture speckles, shading noise or glow around the body.\nSTRICT preservation: same four pose sequence and timing, SAME screen-left-facing three-quarter SIDE view, identity, full face and cheek width, eye/ear position, head silhouette, shoulders/chest/waist width, body/limb lengths and boots/stance. Do not narrow or elongate face or grow head or shrink boots. Physical RIGHT hand holds straight katana on screen-left; physical LEFT hand holds scabbard screen-right. Keep natural continuous shoulder/elbow/forearm, no cutout joint seams. Fixed grip: sword orientation within hand never changes, no wrist flips, no change of sword hand. Preserve exact per-cel movement of torso, long hair, cape, scabbard and tassel; no new details or changed expression.\nOutput high-resolution square PNG with genuine transparent alpha, EXACTLY2x2 equal cells containing these four complete whole-body poses. Same drawing scale and baseline in all four: body center half-cellwidth, soles around90%cellheight, hair crown around40%cellheight, body about50%cellheight, generous transparent padding around full weapon/effects. Nothing crosses cell boundary. No text, labels, numbers, gridlines, background or ground shadows; no colored fringe speckles or halos.",
+        "referenced_image_paths": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-attack-04-07.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-idle-reference.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/00-03-source.png"
+        ],
+        "transparent_background": true,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e334-282c-7c73-a9f4-eae9e621b9ce/exec-2f1262d8-1e6f-4a63-84dd-3d862d6b5c59.png",
+        "source_path": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/04-07-source.png",
+        "source_sha256": "d95dbf98000c719d216c4bb7acfb695d280a8a7cd01f3e0e34de0c61a2fedc85",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "references": [
+          {
+            "path": "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-attack-04-07.png",
+            "sha256": "9c11c7f369b5814e604a7f62e3f2b5a7c458cb862cf7c64de5736d9c70d335b1"
+          },
+          {
+            "path": "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-idle-reference.png",
+            "sha256": "10ed8558a404a1bca1dbeb7589967d3120fe8d48d9cb8f0da30f82bd9a6e4658"
+          },
+          {
+            "path": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/00-03-source.png",
+            "sha256": "1a88451c4fa4bf3cc8d22e8a7a5f636e6c81dfa046b114ea7cc8dee939bff112"
+          }
+        ],
+        "created_utc": "2026-11-17T03:07:47.428187+00:00",
+        "changes": "ImageGen redrew complete cells to clean noisy paint and blurry outlines. No post-generation limb edits or filters."
+      },
+      "08-11": {
+        "prompt": "Use case: identity-preserve. Precise cleanup edit of game sprite art, NOT a redesign.\nImage1 is the edit target: four consecutive SIDE attack poses, exactly2x2 cells row-major. Row-major frames8,9,10,11. The right arm remains extended straight: the shoulder lifts the straight arm and blade up-left then returns toward horizontal. Preserve the SAME slight body follow-through and every elbow, wrist and blade direction. Preserve Image1's dark-crimson crescent trail: strong below the blade in frame8, reducing in frame9 and10, absent/faded in frame11. Do not turn the effect into flame/aura, do not cover the face/elbow. No wrist spin or bending the elbow while the extended arm sweeps.\nImage2 is the canonical SIDE IDLE character, preserving its chibi proportions, face width, clean line quality and flat color rendering. Image3 is the ALREADY APPROVED cleaned SIDE frames0–3: use its exact line/paint quality, character scale, head/face/boot proportions, hair color and camera to keep this batch consistent, but take the four action poses ONLY from Image1. Never replace attacking poses with Image3's idle poses.\nRedraw all four COMPLETE Image1 cels cleanly: crisp thin smooth dark outlines, smooth ivory-white hair/pale lavender shadows, ivory cape/coat, clean brown-black leather, dark red accents; red eyes and small mouth/buckles remain readable. Remove noisy mottling, blurry grey halos, smeared thick or double contours and scratchy fringe. Do not merely sharpen/upscale the existing blur. No added grain, texture speckles, shading noise or glow around the body.\nSTRICT preservation: same four pose sequence and timing, SAME screen-left-facing three-quarter SIDE view, identity, full face and cheek width, eye/ear position, head silhouette, shoulders/chest/waist width, body/limb lengths and boots/stance. Do not narrow or elongate face or grow head or shrink boots. Physical RIGHT hand holds straight katana on screen-left; physical LEFT hand holds scabbard screen-right. Keep natural continuous shoulder/elbow/forearm, no cutout joint seams. Fixed grip: sword orientation within hand never changes, no wrist flips, no change of sword hand. Preserve exact per-cel movement of torso, long hair, cape, scabbard and tassel; no new details or changed expression.\nOutput high-resolution square PNG with genuine transparent alpha, EXACTLY2x2 equal cells containing these four complete whole-body poses. Same drawing scale and baseline in all four: body center half-cellwidth, soles around90%cellheight, hair crown around40%cellheight, body about50%cellheight, generous transparent padding around full weapon/effects. Nothing crosses cell boundary. No text, labels, numbers, gridlines, background or ground shadows; no colored fringe speckles or halos.",
+        "referenced_image_paths": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-attack-08-11.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-idle-reference.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/00-03-source.png"
+        ],
+        "transparent_background": true,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e334-282c-7c73-a9f4-eae9e621b9ce/exec-dd7d2f71-1ad1-4c08-b58b-55ebdc36d08a.png",
+        "source_path": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/08-11-source.png",
+        "source_sha256": "2e1dbee4eeed76df0560fff4405f7d59b8b58c659998d43e3c2824df3def6517",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "references": [
+          {
+            "path": "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-attack-08-11.png",
+            "sha256": "3c727459f191b1dc363db789705dc0cf6154fbfd45e0295b457b6a7533bc27d1"
+          },
+          {
+            "path": "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-idle-reference.png",
+            "sha256": "10ed8558a404a1bca1dbeb7589967d3120fe8d48d9cb8f0da30f82bd9a6e4658"
+          },
+          {
+            "path": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/00-03-source.png",
+            "sha256": "1a88451c4fa4bf3cc8d22e8a7a5f636e6c81dfa046b114ea7cc8dee939bff112"
+          }
+        ],
+        "created_utc": "2026-11-17T03:08:40.870565+00:00",
+        "changes": "ImageGen redrew complete cells to clean noisy paint and blurry outlines. No post-generation limb edits or filters."
+      },
+      "12-15": {
+        "prompt": "Use case: identity-preserve. Precise cleanup edit of game sprite art, NOT a redesign.\nImage1 is the edit target: four consecutive SIDE attack poses, exactly2x2 cells row-major. Row-major frames12,13,14,15. Frame12 has the right blade descending down-left toward recovery. Frames13,14,15 progressively return to the original sheathed/ready stance, with same right hand on hilt and left hand on sheath. Preserve exact current recovery shapes, no extra sword, no double blade, no wrist/hand switch, no sword teleport. No slash FX in these final four frames.\nImage2 is the canonical SIDE IDLE character, preserving its chibi proportions, face width, clean line quality and flat color rendering. Image3 is the ALREADY APPROVED cleaned SIDE frames0–3: use its exact line/paint quality, character scale, head/face/boot proportions, hair color and camera to keep this batch consistent, but take the four action poses ONLY from Image1. Never replace attacking poses with Image3's idle poses.\nRedraw all four COMPLETE Image1 cels cleanly: crisp thin smooth dark outlines, smooth ivory-white hair/pale lavender shadows, ivory cape/coat, clean brown-black leather, dark red accents; red eyes and small mouth/buckles remain readable. Remove noisy mottling, blurry grey halos, smeared thick or double contours and scratchy fringe. Do not merely sharpen/upscale the existing blur. No added grain, texture speckles, shading noise or glow around the body.\nSTRICT preservation: same four pose sequence and timing, SAME screen-left-facing three-quarter SIDE view, identity, full face and cheek width, eye/ear position, head silhouette, shoulders/chest/waist width, body/limb lengths and boots/stance. Do not narrow or elongate face or grow head or shrink boots. Physical RIGHT hand holds straight katana on screen-left; physical LEFT hand holds scabbard screen-right. Keep natural continuous shoulder/elbow/forearm, no cutout joint seams. Fixed grip: sword orientation within hand never changes, no wrist flips, no change of sword hand. Preserve exact per-cel movement of torso, long hair, cape, scabbard and tassel; no new details or changed expression.\nOutput high-resolution square PNG with genuine transparent alpha, EXACTLY2x2 equal cells containing these four complete whole-body poses. Same drawing scale and baseline in all four: body center half-cellwidth, soles around90%cellheight, hair crown around40%cellheight, body about50%cellheight, generous transparent padding around full weapon/effects. Nothing crosses cell boundary. No text, labels, numbers, gridlines, background or ground shadows; no colored fringe speckles or halos.",
+        "referenced_image_paths": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-attack-12-15.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-idle-reference.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/00-03-source.png"
+        ],
+        "transparent_background": true,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e334-282c-7c73-a9f4-eae9e621b9ce/exec-b16f180c-2c55-443a-9d87-0686eb78a625.png",
+        "source_path": "game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/12-15-source.png",
+        "source_sha256": "fd59e0e0f21c7b22e96a2f96aa5104eaac959e3df4a5b4891ba88dd7d9bd8b19",
+        "dimensions": [
+          1254,
+          1254
+        ],
+        "references": [
+          {
+            "path": "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-attack-12-15.png",
+            "sha256": "148fb5b2de80f26d582094bbff2d60e143d661f62ebcb8c450a2ace8afb786b2"
+          },
+          {
+            "path": "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/side-idle-reference.png",
+            "sha256": "10ed8558a404a1bca1dbeb7589967d3120fe8d48d9cb8f0da30f82bd9a6e4658"
+          },
+          {
+            "path": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/side/00-03-source.png",
+            "sha256": "1a88451c4fa4bf3cc8d22e8a7a5f636e6c81dfa046b114ea7cc8dee939bff112"
+          }
+        ],
+        "created_utc": "2026-11-17T03:09:26.717464+00:00",
+        "changes": "ImageGen redrew complete cells to clean noisy paint and blurry outlines. No post-generation limb edits or filters."
+      }
+    }
+  },
+  "back": {
+    "mode": "built-in image_gen edit",
+    "purpose": "Clean actual attack artwork in four complete-cel batches while preserving existing rear anatomy, handedness and approved sword motion.",
+    "jobs": [
+      {
+        "id": "00-03",
+        "prompt": "Precise cleanup edit, NOT a character redesign. Image1 is the exact four consecutive BACK attack cels to clean (2x2, row-major). Image2 is the canonical BACK IDLE reference for the SAME character's thin line quality, smooth color cleanliness and identity only, NOT a different pose. Restore the four attack drawings to crisp clean hand-drawn anime game sprites: remove mottled muddy color noise, blurry grey halos, smeared double contours and scratchy fringe. Use smooth consistent THIN dark outlines, smooth ivorywhite hair with clean broad lavender shadowplanes, clean ivory coat, black/burgundy lining, brown leather boots. Preserve fine hairline/clasp/coat/boot detail readably without grain, sharpeninghalos or crosshatching. Match clean flat celcolor rendering, do not just enlarge existing blur.\n\nSTRICT preservation: retain image1's exact four poses and sequence, identity and chibi proportions, upper-skull width/height, hair roots and same rear hair curls/volume, shoulder/torso/leg lengths, bootwidth/height/footspacing and planted soles. No wider head or bigger hair, no shrinkingboots, no narrowedfeet. Match complete body proportions through allfour. FULL BACK view facingaway in ALLframes; never reveal face/eyes or turnsideways. AnatomicalRIGHT hand=SCREENRIGHT holds ONE STRAIGHTsilverkatana. AnatomicalLEFT=SCREENLEFT holds blackscabbard down-left atlefthip withredtassel. Same natural elbow and neutralwrist orientation percel; no detached arm/no wristflip/no swappedhands. Arms are coherentlyconnected and naturallyoccluded by torso/longhair until extending beyondRIGHTsilhouette, no sworddrawn throughhair. Same coat, hairlengths, swordlengths, scabbard/tasselplacements. No newprops, expressions, lighting or detail. Keep small wholebody/hair/coatfollowthrough exactly asimage1.\n\nThe four frames are0,1,2,3. Frames0-2 are rear ready stance with sword mostly occluded by the torso/hair and scabbard down-left. Frame3 draws the right-hand blade down toward screenRIGHT beyond the hair silhouette exactly as image1. NO energy FX in any of these fourframes.\n\nOutput high-resolution square transparentPNG, exactly2x2 equalcells with the four COMPLETE fullbodyposes. Preserve relativeplacement fromimage1: eachbodycenter at50%cellwidth, soles at90%cellheight, haircrown at40%cellheight, bodyheight50%cellheight, ampleclearmargins around entire sword/FX. Everycel identicalbody scale andbaseline. No clipping/cellcrossing. Reillustrate clean high-resolution line/color instead of enlargingblur. Nativealpha0 outsideart. Absolutely no text/labels/gridlines/background/shadow/coloredspeckles/haze. Keep outlinesfine and interiorssmooth.",
+        "refs": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/back-attack-00-03.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/back-idle-reference.png"
+        ],
+        "transparent_background": true,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-f8c8afe3-e6ce-4f3c-a704-18d28cdb7569.png",
+        "raw_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/00-03-source.png",
+        "status": "Anatomy passed after bootrevision: skull76/76/77/76, bootspan45/46/45/45 vsidle44.",
+        "revisions": [
+          {
+            "mode": "built-in image_gen edit",
+            "purpose": "Narrow boots/stance only toward44px normalizedspan; preserve existing cleaned upperbody.",
+            "prompt": "Make one tiny boot-proportion correction to this clean BACK attack4cel sheet. KEEP all four complete drawings and exact poses, head/hair shape and width, coat, torso, arms, sword, colors, thin crisp lines, camera, scale, grid and placement UNCHANGED. Only the brown boots are a little wide: narrow each boot about5%, and shift the feet slightly inward so their combined outerspan decreases8% total (48→44 at bodyheight160). Preserve bootHEIGHT, solebaseline, leglength, detail and natural legconnections. Do NOT shrink the whole character, do NOT change head/hair/coat widths. Do NOT reduce bootspan more than10%. Same2x2 transparent square, same four rear poses, no added elements. This is solely a subtle boots/stance width edit with everything else preserved.",
+            "refs": [
+              "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/00-03-source.png"
+            ],
+            "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-329d01f1-d211-414b-b949-555362f67c25.png",
+            "prior_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/00-03-first-source.png",
+            "raw_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/00-03-source.png"
+          }
+        ],
+        "current_generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-329d01f1-d211-414b-b949-555362f67c25.png",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "8fff315f1805f0cfbf9ef3b0e8463b9da6ddd147c22e737845516bbfe62b39a4",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      {
+        "id": "04-07",
+        "prompt": "Precise cleanup edit, NOT a character redesign. Image1 is the exact four consecutive BACK attack cels to clean (2x2, row-major). Image2 is the APPROVED CLEAN BACK model from frames0-3. Copy its exact cleaned thin line quality, smooth flat colors and head/body/coat/boots anatomy, but keep Image1's four different action poses. Do not copy its neutral pose. This approved model has already passed anatomy measurement. Restore the four attack drawings to crisp clean hand-drawn anime game sprites: remove mottled muddy color noise, blurry grey halos, smeared double contours and scratchy fringe. Use smooth consistent THIN dark outlines, smooth ivorywhite hair with clean broad lavender shadowplanes, clean ivory coat, black/burgundy lining, brown leather boots. Preserve fine hairline/clasp/coat/boot detail readably without grain, sharpeninghalos or crosshatching. Match clean flat celcolor rendering, do not just enlarge existing blur.\n\nSTRICT preservation: retain image1's exact four poses and sequence, identity and chibi proportions, upper-skull width/height, hair roots and same rear hair curls/volume, shoulder/torso/leg lengths, bootwidth/height/footspacing and planted soles. No wider head or bigger hair. Foot geometry is a measured invariant: after uniform crown-to-sole bodyheight160px the combined OUTERSPAN of both boots must be44px (27.5% of bodyheight), not48px or30%bodyheight. Keep boots same HEIGHT/leglength but match the canonical slim bootshafts and narrow stance from image2. Do not fatten boots or broaden coatpanels. Exact existing natural footpositions and width ratios. Match complete body proportions through allfour. FULL BACK view facingaway in ALLframes; never reveal face/eyes or turnsideways. AnatomicalRIGHT hand=SCREENRIGHT holds ONE STRAIGHTsilverkatana. AnatomicalLEFT=SCREENLEFT holds blackscabbard down-left atlefthip withredtassel. Same natural elbow and neutralwrist orientation percel; no detached arm/no wristflip/no swappedhands. Arms are coherentlyconnected and naturallyoccluded by torso/longhair until extending beyondRIGHTsilhouette, no sworddrawn throughhair. Same coat, hairlengths, swordlengths, scabbard/tasselplacements. No newprops, expressions, lighting or detail. Keep small wholebody/hair/coatfollowthrough exactly asimage1.\n\nThe four frames are4,5,6,7. Frames4-5 blade points down-right, arm smoothly unfolding, NO FX. Frame6 blade approaches horizontal right with small wine-red crescent BELOWblade. Frame7 shoulder lifts nearlystraightarm a little up-right, crescent belowblade grows exactly like image1. Do not change the existing angle percel or elbow orientation.\n\nOutput high-resolution square transparentPNG, exactly2x2 equalcells with the four COMPLETE fullbodyposes. Preserve relativeplacement fromimage1: eachbodycenter at50%cellwidth, soles at90%cellheight, haircrown at40%cellheight, bodyheight50%cellheight, ampleclearmargins around entire sword/FX. Everycel identicalbody scale andbaseline. No clipping/cellcrossing. Reillustrate clean high-resolution line/color instead of enlargingblur. Nativealpha0 outsideart. Absolutely no text/labels/gridlines/background/shadow/coloredspeckles/haze. Keep outlinesfine and interiorssmooth.",
+        "refs": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/back-attack-04-07.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/00-03-source.png"
+        ],
+        "transparent_background": true,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-69fba8b5-7c56-4b41-93c4-9e7a331f7bd3.png",
+        "raw_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/04-07-source.png",
+        "status": "generated; pending group-uniform normalization and anatomy review",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "f9ce5b58c36e44f6d4a006f25b2e01d7279c68876ef95127154d15e87011240e",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      {
+        "id": "08-11",
+        "prompt": "Precise cleanup edit, NOT a character redesign. Image1 is the exact four consecutive BACK attack cels to clean (2x2, row-major). Image2 is the APPROVED CLEAN BACK model from frames0-3. Copy its exact cleaned thin line quality, smooth flat colors and head/body/coat/boots anatomy, but keep Image1's four different action poses. Do not copy its neutral pose. This approved model has already passed anatomy measurement. Restore the four attack drawings to crisp clean hand-drawn anime game sprites: remove mottled muddy color noise, blurry grey halos, smeared double contours and scratchy fringe. Use smooth consistent THIN dark outlines, smooth ivorywhite hair with clean broad lavender shadowplanes, clean ivory coat, black/burgundy lining, brown leather boots. Preserve fine hairline/clasp/coat/boot detail readably without grain, sharpeninghalos or crosshatching. Match clean flat celcolor rendering, do not just enlarge existing blur.\n\nSTRICT preservation: retain image1's exact four poses and sequence, identity and chibi proportions, upper-skull width/height, hair roots and same rear hair curls/volume, shoulder/torso/leg lengths, bootwidth/height/footspacing and planted soles. No wider head or bigger hair. Foot geometry is a measured invariant: after uniform crown-to-sole bodyheight160px the combined OUTERSPAN of both boots must be44px (27.5% of bodyheight), not48px or30%bodyheight. Keep boots same HEIGHT/leglength but match the canonical slim bootshafts and narrow stance from image2. Do not fatten boots or broaden coatpanels. Exact existing natural footpositions and width ratios. Match complete body proportions through allfour. FULL BACK view facingaway in ALLframes; never reveal face/eyes or turnsideways. AnatomicalRIGHT hand=SCREENRIGHT holds ONE STRAIGHTsilverkatana. AnatomicalLEFT=SCREENLEFT holds blackscabbard down-left atlefthip withredtassel. Same natural elbow and neutralwrist orientation percel; no detached arm/no wristflip/no swappedhands. Arms are coherentlyconnected and naturallyoccluded by torso/longhair until extending beyondRIGHTsilhouette, no sworddrawn throughhair. Same coat, hairlengths, swordlengths, scabbard/tasselplacements. No newprops, expressions, lighting or detail. Keep small wholebody/hair/coatfollowthrough exactly asimage1.\n\nThe four frames are8,9,10,11. Keep rightarm nearlyextended naturally. Frame8 bladeup-right ~35degrees with large wine-red crescent BELOWblade. Frame9 shoulder carries blade to peak ~45degrees. Frame10 lowersslightly with fadingcrescent. Frame11 nearhorizontalright with smallfadingcrescent. Allfour have same darkcrimson/blackred crescents belowblade asimage1, same size/shape, no newparticles. No independentwristspin.\n\nOutput high-resolution square transparentPNG, exactly2x2 equalcells with the four COMPLETE fullbodyposes. Preserve relativeplacement fromimage1: eachbodycenter at50%cellwidth, soles at90%cellheight, haircrown at40%cellheight, bodyheight50%cellheight, ampleclearmargins around entire sword/FX. Everycel identicalbody scale andbaseline. No clipping/cellcrossing. Reillustrate clean high-resolution line/color instead of enlargingblur. Nativealpha0 outsideart. Absolutely no text/labels/gridlines/background/shadow/coloredspeckles/haze. Keep outlinesfine and interiorssmooth.",
+        "refs": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/back-attack-08-11.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/00-03-source.png"
+        ],
+        "transparent_background": true,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-1365b17d-0dd2-40d6-9ee1-fbb9efdce5d2.png",
+        "raw_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/08-11-source.png",
+        "status": "generated; pending group-uniform normalization and anatomy review",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "82273eb5ffe72182863341327acf0e2e0fc3c58667fbc8b84b175a9e9d3d1357",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      {
+        "id": "12-15",
+        "prompt": "Precise cleanup edit, NOT a character redesign. Image1 is the exact four consecutive BACK attack cels to clean (2x2, row-major). Image2 is the APPROVED CLEAN BACK model from frames0-3. Copy its exact cleaned thin line quality, smooth flat colors and head/body/coat/boots anatomy, but keep Image1's four different action poses. Do not copy its neutral pose. This approved model has already passed anatomy measurement. Restore the four attack drawings to crisp clean hand-drawn anime game sprites: remove mottled muddy color noise, blurry grey halos, smeared double contours and scratchy fringe. Use smooth consistent THIN dark outlines, smooth ivorywhite hair with clean broad lavender shadowplanes, clean ivory coat, black/burgundy lining, brown leather boots. Preserve fine hairline/clasp/coat/boot detail readably without grain, sharpeninghalos or crosshatching. Match clean flat celcolor rendering, do not just enlarge existing blur.\n\nSTRICT preservation: retain image1's exact four poses and sequence, identity and chibi proportions, upper-skull width/height, hair roots and same rear hair curls/volume, shoulder/torso/leg lengths, bootwidth/height/footspacing and planted soles. No wider head or bigger hair. Foot geometry is a measured invariant: after uniform crown-to-sole bodyheight160px the combined OUTERSPAN of both boots must be44px (27.5% of bodyheight), not48px or30%bodyheight. Keep boots same HEIGHT/leglength but match the canonical slim bootshafts and narrow stance from image2. Do not fatten boots or broaden coatpanels. Exact existing natural footpositions and width ratios. Match complete body proportions through allfour. FULL BACK view facingaway in ALLframes; never reveal face/eyes or turnsideways. AnatomicalRIGHT hand=SCREENRIGHT holds ONE STRAIGHTsilverkatana. AnatomicalLEFT=SCREENLEFT holds blackscabbard down-left atlefthip withredtassel. Same natural elbow and neutralwrist orientation percel; no detached arm/no wristflip/no swappedhands. Arms are coherentlyconnected and naturallyoccluded by torso/longhair until extending beyondRIGHTsilhouette, no sworddrawn throughhair. Same coat, hairlengths, swordlengths, scabbard/tasselplacements. No newprops, expressions, lighting or detail. Keep small wholebody/hair/coatfollowthrough exactly asimage1.\n\nThe four frames are12,13,14,15. Frame12 lowersblade down-right and starts foldingelbow towardreturn. Frame13 arm/sheathing naturally occluded by torso/hair. Frames14-15 neutralready rear silhouette with scabbarddown-left, exactlysamehead/boots/bodysize as firstidle. NO energyFX in any of these fourframes.\n\nOutput high-resolution square transparentPNG, exactly2x2 equalcells with the four COMPLETE fullbodyposes. Preserve relativeplacement fromimage1: eachbodycenter at50%cellwidth, soles at90%cellheight, haircrown at40%cellheight, bodyheight50%cellheight, ampleclearmargins around entire sword/FX. Everycel identicalbody scale andbaseline. No clipping/cellcrossing. Reillustrate clean high-resolution line/color instead of enlargingblur. Nativealpha0 outsideart. Absolutely no text/labels/gridlines/background/shadow/coloredspeckles/haze. Keep outlinesfine and interiorssmooth.",
+        "refs": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/.build/whitehair-katana-denoise-v13/edit-input/back-attack-12-15.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/00-03-source.png"
+        ],
+        "transparent_background": true,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-43f2bfa3-9466-4ec0-9086-3b439d8bb1fd.png",
+        "raw_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/denoise-v13/back/12-15-source.png",
+        "status": "generated; pending group-uniform normalization and anatomy review",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "ddae6b14d8e1deec9b07c099ec4dcefda722ba13e35a6e074ccd9f4ffe508c1f",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      }
+    ]
+  },
+  "registration": "metadata/character/whitehair-katana-denoise-v13-registration.json",
+  "backup": ".build/backups/whitehair-katana-before-denoise-v13-20261117T025042Z",
+  "drawing_note": "Cleanup regenerates linework and color fill, so pixels and fine details are not identical; source poses and anatomy were checked separately.",
+  "validation": "metadata/character/whitehair-katana-denoise-v13-validation.json"
+}

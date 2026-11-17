@@ -1,0 +1,196 @@
+{
+  "id": "whitehair",
+  "passed": true,
+  "revision": "slightly_stronger_sway",
+  "bake": [
+    {
+      "direction": "front",
+      "frame_count": 16,
+      "unique_frames": 16,
+      "fps": 16,
+      "cycle_ms": 1000,
+      "neutral_visible_pixels_changed": 0,
+      "excluded_neighbor_pixels": 0,
+      "feet_fixed": true,
+      "loop_endpoints_identical": true,
+      "max_unit_error": 4.440892098500626e-16,
+      "max_determinant_error": 4.440892098500626e-16,
+      "seam_mae": 0.33688594324450555,
+      "max_step_mae": 0.523264342064983,
+      "steps": [
+        0.41970457069548867,
+        0.48752224073226336,
+        0.523264342064983,
+        0.5182253944546905,
+        0.44852781288299504,
+        0.3429198261335952,
+        0.25832244753371464,
+        0.29636285998775763,
+        0.3525990445006278,
+        0.48302551508887925,
+        0.5107625325521147,
+        0.5099985160079961,
+        0.4400327052696359,
+        0.3450580480239139,
+        0.27455868949143547,
+        0.33688594324450555
+      ],
+      "source_sha256": "45268ec1b5b87144a1755ffae458b939cd2393a8af03d99acf889d6c477958ea"
+    },
+    {
+      "direction": "side",
+      "frame_count": 16,
+      "unique_frames": 16,
+      "fps": 16,
+      "cycle_ms": 1000,
+      "neutral_visible_pixels_changed": 0,
+      "excluded_neighbor_pixels": 97,
+      "feet_fixed": true,
+      "loop_endpoints_identical": true,
+      "max_unit_error": 4.440892098500626e-16,
+      "max_determinant_error": 4.440892098500626e-16,
+      "seam_mae": 0.2261950444240254,
+      "max_step_mae": 0.40372859221815793,
+      "steps": [
+        0.31657494638481204,
+        0.3761785960478115,
+        0.40372859221815793,
+        0.4022781288296756,
+        0.3562086588541827,
+        0.2617740981158201,
+        0.17757837392770182,
+        0.2066178672640991,
+        0.26664011757047146,
+        0.3728717064951137,
+        0.4028379959405804,
+        0.4003145009957308,
+        0.3395816482843266,
+        0.26031291168812415,
+        0.18674664905025318,
+        0.2261950444240254
+      ],
+      "source_sha256": "a6e7cc664b40c0689b7c6d914c2f61ce4c0c426712f6ea60f2ac3c19bc585872"
+    },
+    {
+      "direction": "back",
+      "frame_count": 16,
+      "unique_frames": 16,
+      "fps": 16,
+      "cycle_ms": 1000,
+      "neutral_visible_pixels_changed": 0,
+      "excluded_neighbor_pixels": 0,
+      "feet_fixed": true,
+      "loop_endpoints_identical": true,
+      "max_unit_error": 4.440892098500626e-16,
+      "max_determinant_error": 4.440892098500626e-16,
+      "seam_mae": 0.3137028282016054,
+      "max_step_mae": 0.40910077742036294,
+      "steps": [
+        0.3872668696384933,
+        0.40910077742036294,
+        0.3998679725796786,
+        0.3782353611366647,
+        0.32064247280944824,
+        0.2549906939338386,
+        0.2195261948529576,
+        0.28000444240197536,
+        0.3130228821997656,
+        0.4035819450827398,
+        0.40523794615504527,
+        0.3681546511182787,
+        0.31750173291974293,
+        0.2550308861826125,
+        0.22952047909009032,
+        0.3137028282016054
+      ],
+      "source_sha256": "80d3a2b02a9027aeb0398ca7d09ac78e8ef237d9b4bcecf36d63934015973244"
+    }
+  ],
+  "native": {
+    "passed": true,
+    "checks": [
+      "actual PNGs loaded by Pico2D: three1280x1280 sheets, 16 clips each",
+      "native renderer shows all16 distinct frames in front/right/back and returns exactly to frame0 after1second",
+      "native framebuffer sole rows282..319 remain byte-identical across all48 animation cells",
+      "native neck/shoulder/waist joint neighborhoods remain covered throughout the loop",
+      "real-time native playback completes two1second loops at16fps using Player.motion_frame",
+      "left facing SDL horizontal mirror matches every framebuffer pixel"
+    ],
+    "deterministic_frames": 17,
+    "real_time_frames": 135,
+    "real_time_seconds": 2.1045108000107575,
+    "distinct_frames_per_view": [
+      16,
+      16,
+      16
+    ],
+    "joint_samples": [
+      {
+        "direction": "front",
+        "joint": "body",
+        "occupied_pixels_min": 9,
+        "occupied_pixels_max": 9
+      },
+      {
+        "direction": "front",
+        "joint": "head",
+        "occupied_pixels_min": 9,
+        "occupied_pixels_max": 9
+      },
+      {
+        "direction": "front",
+        "joint": "arm_left",
+        "occupied_pixels_min": 9,
+        "occupied_pixels_max": 9
+      },
+      {
+        "direction": "side",
+        "joint": "body",
+        "occupied_pixels_min": 9,
+        "occupied_pixels_max": 9
+      },
+      {
+        "direction": "side",
+        "joint": "head",
+        "occupied_pixels_min": 9,
+        "occupied_pixels_max": 9
+      },
+      {
+        "direction": "side",
+        "joint": "arm_left",
+        "occupied_pixels_min": 9,
+        "occupied_pixels_max": 9
+      },
+      {
+        "direction": "back",
+        "joint": "body",
+        "occupied_pixels_min": 9,
+        "occupied_pixels_max": 9
+      },
+      {
+        "direction": "back",
+        "joint": "head",
+        "occupied_pixels_min": 9,
+        "occupied_pixels_max": 9
+      },
+      {
+        "direction": "back",
+        "joint": "arm_left",
+        "occupied_pixels_min": 9,
+        "occupied_pixels_max": 9
+      }
+    ],
+    "screenshots": [
+      "native-frame-00.png",
+      "native-frame-04.png",
+      "native-frame-08.png",
+      "native-frame-12.png"
+    ],
+    "runtime_registration": "standalone native asset playback; game party is unchanged"
+  },
+  "sheet_sha256": {
+    "game/asset/character/player/main/9-whitehair/front/idle-sheet.png": "9d1753399b9d47911615ae00ad01168a7c168250ce7b5007def9dcdbc8627e32",
+    "game/asset/character/player/main/9-whitehair/side/idle-sheet.png": "53b961fee76acaaf92ae7911c993187cc35611dc94688fdd2a6f8cbb64da218e",
+    "game/asset/character/player/main/9-whitehair/back/idle-sheet.png": "efbb86dac1073ab2e3ce13ea99d3248434af55f4d670d7f925da76165e0bbe78"
+  }
+}

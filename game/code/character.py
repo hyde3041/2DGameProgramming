@@ -13,6 +13,7 @@ DEPLOYMENT_COSTS = {
     "5-herbalist": 5,
     "6-frost-mage": 8,
     "7-shadow-thief": 7,
+    "9-whitehair": 5,
 }
 
 # Allowed tile types: 1 = ground, 2 = elevated.
@@ -25,6 +26,7 @@ DEPLOYMENT_TILES = {
     "5-herbalist": [2],
     "6-frost-mage": [2],
     "7-shadow-thief": [1, 2],
+    "9-whitehair": [1, 2],
 }
 
 

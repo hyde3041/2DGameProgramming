@@ -1,0 +1,54 @@
+{
+  "id": "whitehair-katana-connected-arm-redraw",
+  "status": "superseded_due_to_import_clipping",
+  "generation_mode": "built-in image_gen",
+  "request": "Keep the supplied GIF swing trajectory, but draw each pose as a natural connected arm; eliminate visibly sliced elbow cutouts. Final playback must derive from the same final sprite sheets.",
+  "motion_reference": "game/asset/character/player/icon/preview/whitehair-katana-wrist-fixed.gif",
+  "user_attachment": "C:/Users/zx304/AppData/Local/Temp/codex-clipboard-c6bff2fa-6d0b-4dd9-8229-9371bc506956.gif",
+  "references": {
+    "front": ".build/whitehair-katana-connected-attack/front-arm-edit-reference.png",
+    "side": ".build/whitehair-katana-connected-attack/side-arm-edit-reference.png"
+  },
+  "art": {
+    "front": {
+      "generated_file": "exec-b5073fdc-6554-4a8b-b957-756a21a1d31b.png",
+      "file": "game/asset/character/player/icon/source/whitehair/katana/front/attack-connected-arm-atlas.png",
+      "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET: a 4x4 atlas of sixteen close-up animation frames. Image 2 is an editing REGION GUIDE: white areas show the continuous right arm to redraw; it is NOT an illustration to copy. Output the edited image 1 ONLY in the exact same 4x4 grid, exact same 1200x1200 canvas, same cell positions and camera. Transparent background.\nTask: Replace the visibly sliced paper-puppet arm with a naturally DRAWN CONNECTED ARM in every moving frame. Keep the exact original pose/gesture of EACH cell. In particular each shoulder anchor, each glove and sword-grip position and orientation, and every blade trajectory are already correct. The wrist stays straight and fixed to its forearm; do not spin a sword around a static hand. This is a low-to-high whole-arm slash, followed by recovery.\nDraw the upper arm, elbow and exposed forearm as ONE anatomically continuous volume with a smooth outer silhouette and a natural inner elbow bend. The charcoal jacket sleeve must attach beneath the ivory shoulder cape and end naturally above the bare forearm. The brown leather gauntlet must attach to the forearm. Remove straight cut seams through elbows, detached round pale elbow plugs, floating sleeve wedges, rectangular cut corners, pinched hourglass joints, gaps and pasted-on limb appearance. Redraw appropriate sleeve folds and flesh shading for EACH bent or extended pose. Keep short chibi limb proportions and consistent thickness; don't grow a longer arm.\nCritical invariants: EXACT per-cell hilt and fist location, exact sword angle and blade length, same hand assignment. Keep all hair, face, eyes, head, other arm, coat, belt, sheath and background unchanged. First and last cells remain unchanged neutral poses. Do not shift, scale, recenter, mirror or reorder cells. Do not add a sword, hand, extra outline, joints, effects, text, arrows or grid lines. Preserve charcoal fabric, light skin and brown glove colors; smooth coherent anime game linework. Output full edited atlas, not isolated arms, not the mask.\nView: front-facing throughout.",
+      "sha256": "5eb906772eaff451280c6fb48e1153a8ddff547da72ea095eeea8ea171a7fc2e"
+    },
+    "side": {
+      "generated_file": "exec-13ed87d6-fdc4-43e1-aa60-59c0d29847f7.png",
+      "file": "game/asset/character/player/icon/source/whitehair/katana/side/attack-connected-arm-atlas.png",
+      "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET: a 4x4 atlas of sixteen close-up animation frames. Image 2 is an editing REGION GUIDE: white areas show the continuous right arm to redraw; it is NOT an illustration to copy. Output the edited image 1 ONLY in the exact same 4x4 grid, exact same 1200x1200 canvas, same cell positions and camera. Transparent background.\nTask: Replace the visibly sliced paper-puppet arm with a naturally DRAWN CONNECTED ARM in every moving frame. Keep the exact original pose/gesture of EACH cell. In particular each shoulder anchor, each glove and sword-grip position and orientation, and every blade trajectory are already correct. The wrist stays straight and fixed to its forearm; do not spin a sword around a static hand. This is a low-to-high whole-arm slash, followed by recovery.\nDraw the upper arm, elbow and exposed forearm as ONE anatomically continuous volume with a smooth outer silhouette and a natural inner elbow bend. The charcoal jacket sleeve must attach beneath the ivory shoulder cape and end naturally above the bare forearm. The brown leather gauntlet must attach to the forearm. Remove straight cut seams through elbows, detached round pale elbow plugs, floating sleeve wedges, rectangular cut corners, pinched hourglass joints, gaps and pasted-on limb appearance. Redraw appropriate sleeve folds and flesh shading for EACH bent or extended pose. Keep short chibi limb proportions and consistent thickness; don't grow a longer arm.\nCritical invariants: EXACT per-cell hilt and fist location, exact sword angle and blade length, same hand assignment. Keep all hair, face, eyes, head, other arm, coat, belt, sheath and background unchanged. First and last cells remain unchanged neutral poses. Do not shift, scale, recenter, mirror or reorder cells. Do not add a sword, hand, extra outline, joints, effects, text, arrows or grid lines. Preserve charcoal fabric, light skin and brown glove colors; smooth coherent anime game linework. Output full edited atlas, not isolated arms, not the mask.\nView: three-quarter facing SCREEN LEFT throughout; never mirror.",
+      "sha256": "192fd6ed9a20afab77584ffc986b4abe410dcff02d15cd32b248ec0fe27edf28"
+    }
+  },
+  "authoring_tool": "tools/prepare_whitehair_katana_connected_attack.mjs",
+  "registration": "metadata/character/attack/whitehair-katana-connected-registration.json",
+  "constraints": [
+    "Continuous sleeve, elbow and forearm redrawn independently for each complete pose.",
+    "The uploaded motion's hand, grip and blade pixels stay unchanged.",
+    "No animation of separate upper-arm / forearm cutout patches in final artwork.",
+    "Frame0 and15 remain exact neutral; original idle and game code preserved.",
+    "Final preview clips the final production sprite sheets; no independent limb transforms."
+  ],
+  "preview": "game/asset/character/player/icon/preview/whitehair-katana-connected.gif",
+  "lossless_preview": "game/asset/character/player/icon/preview/whitehair-katana-connected.png",
+  "validation": "metadata/character/whitehair-katana-connected-validation.json",
+  "frames": 16,
+  "fps": 16,
+  "runtime_registered": false,
+  "sheet_outputs": {
+    "front": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+      "sha256": "4059f898eae5c82688fa79be3c546e11f59ab51013adf1fc06f6afedc7127302"
+    },
+    "side": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+      "sha256": "0acb95c5fc363890d68d0bc8f72cae68c3a15bfe17f2a22bf7f4952d13d395ab"
+    }
+  },
+  "art_application": "Each full sleeve/elbow/forearm pose is drawn with built-in image_gen and composited inside the complete arm contour with a two-pixel allowance. Original glove/grip/blade pixels are protected. No elbow cutout rotation is used in the delivered per-frame arm artwork.",
+  "superseded_by": "metadata/character/whitehair-katana-wholepose-generation.json",
+  "post_delivery_issue": "The previous importer compared an already clipped sheet to its GIF. It restricted generated connected sleeve artwork to an old arm silhouette and protected semi-transparent glove edges, removing opaque elbow connections present in the generated atlas."
+}

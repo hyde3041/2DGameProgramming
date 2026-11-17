@@ -1,0 +1,933 @@
+{
+  "id": "whitehair-katana",
+  "version": 11,
+  "passed": true,
+  "applied": true,
+  "runtime_profile": "9-whitehair",
+  "registration": "metadata/character/whitehair-katana-proportions-v11-registration.json",
+  "sheets": {
+    "front-attack": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+      "sha256": "1b2cc8a15179ad0144515d820e1bbbc020e6badea3c4ebdd9aa14ccbfe74b703",
+      "source": "game/asset/character/player/icon/source/whitehair/katana/front/attack-proportions-v11-source-sheet.png",
+      "source_sha256": "9c44a3b771e3d7198394dc46b8888da1a17fa2269906308b3d796eaec86b92c1",
+      "uniform_scale": 0.8973010865755345,
+      "mean_source_body_height": 178.3125,
+      "source_cell_partition": {
+        "offset_x": 0,
+        "common_cell_width": 314,
+        "common_cell_height": 314,
+        "edge_alpha_max": 2,
+        "meaningful_pixels": 262378,
+        "omitted_meaningful_pixels": 0,
+        "duplicated_meaningful_pixels": 0,
+        "omitted_alpha_max": 0,
+        "valid": true
+      },
+      "frames": 16,
+      "fps": 16,
+      "cycle_ms": 1000,
+      "meaningful_pixels_clipped": 0
+    },
+    "front-idle": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+      "sha256": "98c3eb28a670aada65306ddb29a44a163a792adc29adf75eaa8d1b3602270d2c",
+      "version": 10,
+      "unchanged": true,
+      "frames": 16,
+      "fps": 16
+    },
+    "side-attack": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+      "sha256": "a91865f15ad684c2fc2dad875d98d04e833e0c9f7537db4d7cf4730f0f4423d0",
+      "source": "game/asset/character/player/icon/source/whitehair/katana/side/attack-proportions-v11-source-sheet.png",
+      "source_sha256": "1dc3959d3861b365dc5e795815533fd1e2e22f51d116600b29d336ea319a2643",
+      "uniform_scale": 0.9774723176785033,
+      "mean_source_body_height": 163.6875,
+      "source_cell_partition": {
+        "offset_x": 0,
+        "common_cell_width": 314,
+        "common_cell_height": 314,
+        "edge_alpha_max": 1,
+        "meaningful_pixels": 236525,
+        "omitted_meaningful_pixels": 0,
+        "duplicated_meaningful_pixels": 0,
+        "omitted_alpha_max": 0,
+        "valid": true
+      },
+      "frames": 16,
+      "fps": 16,
+      "cycle_ms": 1000,
+      "meaningful_pixels_clipped": 0
+    },
+    "side-idle": {
+      "file": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+      "sha256": "aa7d584f815d0d759db0d31efce5b419ba66bb7c4ce0bc194ded86bbf845f85f",
+      "version": 10,
+      "unchanged": true,
+      "frames": 16,
+      "fps": 16
+    }
+  },
+  "profile": {
+    "file": "game/asset/character/player/main/9-whitehair/skill/profile/deployment-square.png",
+    "sha256": "e5cc1408ff6b49269a372206b02897782969c032cfc9a0f3ce647016475f61d5",
+    "unchanged": true
+  },
+  "previews": {
+    "whitehair-katana-proportions-v11-motions.png": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-proportions-v11-motions.png",
+      "sha256": "a200cdb7b516d5c716930c0d26513527c86270f8ae5a913da3bf9a05975ff0d9"
+    },
+    "whitehair-katana-proportions-v11-motions.gif": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-proportions-v11-motions.gif",
+      "sha256": "5ae8f5af5a6fdc857009f15c18dd4ad5b861e907eaeb5331cef0f45b6527a88a"
+    },
+    "whitehair-katana-proportions-v11-state-switch.png": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-proportions-v11-state-switch.png",
+      "sha256": "65d592a9231a13f0c2f8ddc6053a47f2a5d47fdf6728b7251807e722b8bf4de9"
+    },
+    "whitehair-katana-proportions-v11-battle.png": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-proportions-v11-battle.png",
+      "sha256": "315c400c7902aada3e0ad40832587c0083bc0c6b860fbf6335ca1e61ab0fc86b"
+    },
+    "whitehair-katana-proportions-v11-battle.gif": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-proportions-v11-battle.gif",
+      "sha256": "76a3f123758c80990c6598948d9b78a1f0eb36669c2260a04ef467ffc29378ec"
+    },
+    "whitehair-katana-proportions-v11-battle-still.png": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-proportions-v11-battle-still.png",
+      "sha256": "62a120f517a90a71abbeba13b576618bc21962a36f641adbeeb8bb9796f955ee"
+    },
+    "whitehair-katana-proportions-v11-comparison.png": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-proportions-v11-comparison.png",
+      "sha256": "1917e93f252012640a233b0f76c0b354af7a42849e3c3d44d00317617d29abdc"
+    }
+  },
+  "native_checks": [
+    "Actual loaders create9 portraits,18 skill icons and all old/new directional idle/attack sheets without missing files.",
+    "All9 compact card hitboxes and5px gaps match drawing; last portrait endsx673, clear of cost panelx680.",
+    "Cost4 blocks deployment; cost30 becomes25;1battle-second gives1cost/1MP; withdrawal prevents redeploy for10battle-seconds then deducts5again.",
+    "Actual draw_character equals unmirrored left-authored side forleft and mirrored side forright. Up uses explicit temporary front fallback.",
+    "Both restyled front/side Idle sheets render16ordered and visually distinct native frames at16FPS.",
+    "Real Monster enters rotated attack range→attack; all16native frames are distinct and ordered at16FPS; leaving range→idle.",
+    "Actual800x600battle renderer displays old+new units, crimson FX,9cards/cost, HP/MPbars,2skill icons, retreat and projected range.",
+    "Ninth portrait native pixels dim at cost4 and brighten at cost5."
+  ],
+  "native_wall_clock": {
+    "passed": true,
+    "real_time_seconds": 1.0412085000134539,
+    "presented_native_frames": 152,
+    "frame_indices_seen": {
+      "idle-front": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "idle-side": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "attack-front": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "attack-side": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "all_four_wrapped_to_zero_after_one_second": true,
+    "source": "actual production main.load_character_sprites and main.draw_character"
+  },
+  "protected_files_unchanged": 181,
+  "other_backed_up_metadata_unchanged": 48,
+  "code_hashes_unchanged": {
+    "game/code/main.py": "41422068d3b96b4db676b3f51a9eca218dacebd5164cb656f4db777e30379451",
+    "game/code/character.py": "f94eb4a775235c52cd589f4888857a4ad63967c3b31cf675d9c960975ad69ea4",
+    "game/code/user.py": "7ca3cced78b4ebb0fca6cc9f1330e0eafcf0d493ee83cf3d66d35767e1bfb7d7"
+  },
+  "native_direction_hashes": {
+    "left": "956b31b2055e14a6389fbbc98618c03e4424e535f119177fd77a386dfedc80d8",
+    "right": "bf44a41f9b76af60f579331224cbecbdd0ae9e5ca11796369dddc071413b70c7",
+    "down": "827822fd0ae88fc374019aa317f6f83e9d0e6220557af3d5f522d85c980d4961",
+    "up": "827822fd0ae88fc374019aa317f6f83e9d0e6220557af3d5f522d85c980d4961"
+  },
+  "all_four_native_unique_frames": {
+    "front-idle": 16,
+    "side-idle": 16,
+    "front-attack": 16,
+    "side-attack": 16
+  },
+  "idle_attack_transition_measurements": {
+    "front": {
+      "idle00": {
+        "crown_y": 130,
+        "bands": {
+          "upper_skull": {
+            "width": 75,
+            "bounds_native": [
+              124,
+              130,
+              199,
+              165
+            ]
+          },
+          "upper55": {
+            "width": 88,
+            "bounds_native": [
+              116,
+              130,
+              204,
+              185
+            ]
+          },
+          "boot_band": {
+            "width": 53,
+            "bounds_native": [
+              134,
+              276,
+              187,
+              288
+            ]
+          }
+        }
+      },
+      "attack00": {
+        "crown_y": 129,
+        "bands": {
+          "upper_skull": {
+            "width": 75,
+            "bounds_native": [
+              124,
+              130,
+              199,
+              165
+            ]
+          },
+          "upper55": {
+            "width": 86,
+            "bounds_native": [
+              118,
+              129,
+              204,
+              184
+            ]
+          },
+          "boot_band": {
+            "width": 53,
+            "bounds_native": [
+              134,
+              276,
+              187,
+              287
+            ]
+          }
+        }
+      },
+      "attack01": {
+        "crown_y": 129,
+        "bands": {
+          "upper_skull": {
+            "width": 75,
+            "bounds_native": [
+              124,
+              130,
+              199,
+              165
+            ]
+          },
+          "upper55": {
+            "width": 86,
+            "bounds_native": [
+              118,
+              129,
+              204,
+              184
+            ]
+          },
+          "boot_band": {
+            "width": 54,
+            "bounds_native": [
+              133,
+              276,
+              187,
+              287
+            ]
+          }
+        }
+      },
+      "attack14": {
+        "crown_y": 128,
+        "bands": {
+          "upper_skull": {
+            "width": 76,
+            "bounds_native": [
+              123,
+              130,
+              199,
+              165
+            ]
+          },
+          "upper55": {
+            "width": 86,
+            "bounds_native": [
+              118,
+              128,
+              204,
+              183
+            ]
+          },
+          "boot_band": {
+            "width": 53,
+            "bounds_native": [
+              134,
+              276,
+              187,
+              287
+            ]
+          }
+        }
+      },
+      "attack15": {
+        "crown_y": 129,
+        "bands": {
+          "upper_skull": {
+            "width": 75,
+            "bounds_native": [
+              124,
+              130,
+              199,
+              165
+            ]
+          },
+          "upper55": {
+            "width": 86,
+            "bounds_native": [
+              118,
+              129,
+              204,
+              184
+            ]
+          },
+          "boot_band": {
+            "width": 53,
+            "bounds_native": [
+              133,
+              276,
+              186,
+              288
+            ]
+          }
+        }
+      },
+      "idle15": {
+        "crown_y": 130,
+        "bands": {
+          "upper_skull": {
+            "width": 75,
+            "bounds_native": [
+              124,
+              130,
+              199,
+              165
+            ]
+          },
+          "upper55": {
+            "width": 88,
+            "bounds_native": [
+              116,
+              130,
+              204,
+              185
+            ]
+          },
+          "boot_band": {
+            "width": 52,
+            "bounds_native": [
+              134,
+              276,
+              186,
+              288
+            ]
+          }
+        }
+      }
+    },
+    "side": {
+      "idle00": {
+        "crown_y": 130,
+        "bands": {
+          "upper_skull": {
+            "width": 82,
+            "bounds_native": [
+              122,
+              130,
+              204,
+              165
+            ]
+          },
+          "upper55": {
+            "width": 94,
+            "bounds_native": [
+              121,
+              130,
+              215,
+              185
+            ]
+          },
+          "boot_band": {
+            "width": 55,
+            "bounds_native": [
+              133,
+              276,
+              188,
+              288
+            ]
+          }
+        }
+      },
+      "attack00": {
+        "crown_y": 128,
+        "bands": {
+          "upper_skull": {
+            "width": 82,
+            "bounds_native": [
+              122,
+              130,
+              204,
+              165
+            ]
+          },
+          "upper55": {
+            "width": 94,
+            "bounds_native": [
+              121,
+              128,
+              215,
+              183
+            ]
+          },
+          "boot_band": {
+            "width": 56,
+            "bounds_native": [
+              132,
+              276,
+              188,
+              287
+            ]
+          }
+        }
+      },
+      "attack01": {
+        "crown_y": 128,
+        "bands": {
+          "upper_skull": {
+            "width": 80,
+            "bounds_native": [
+              121,
+              130,
+              201,
+              165
+            ]
+          },
+          "upper55": {
+            "width": 93,
+            "bounds_native": [
+              120,
+              128,
+              213,
+              183
+            ]
+          },
+          "boot_band": {
+            "width": 54,
+            "bounds_native": [
+              133,
+              276,
+              187,
+              287
+            ]
+          }
+        }
+      },
+      "attack14": {
+        "crown_y": 129,
+        "bands": {
+          "upper_skull": {
+            "width": 80,
+            "bounds_native": [
+              122,
+              130,
+              202,
+              165
+            ]
+          },
+          "upper55": {
+            "width": 92,
+            "bounds_native": [
+              121,
+              129,
+              213,
+              184
+            ]
+          },
+          "boot_band": {
+            "width": 55,
+            "bounds_native": [
+              133,
+              276,
+              188,
+              288
+            ]
+          }
+        }
+      },
+      "attack15": {
+        "crown_y": 129,
+        "bands": {
+          "upper_skull": {
+            "width": 81,
+            "bounds_native": [
+              121,
+              130,
+              202,
+              165
+            ]
+          },
+          "upper55": {
+            "width": 93,
+            "bounds_native": [
+              121,
+              129,
+              214,
+              184
+            ]
+          },
+          "boot_band": {
+            "width": 55,
+            "bounds_native": [
+              133,
+              276,
+              188,
+              288
+            ]
+          }
+        }
+      },
+      "idle15": {
+        "crown_y": 131,
+        "bands": {
+          "upper_skull": {
+            "width": 82,
+            "bounds_native": [
+              122,
+              131,
+              204,
+              165
+            ]
+          },
+          "upper55": {
+            "width": 95,
+            "bounds_native": [
+              120,
+              131,
+              215,
+              186
+            ]
+          },
+          "boot_band": {
+            "width": 55,
+            "bounds_native": [
+              132,
+              276,
+              187,
+              288
+            ]
+          }
+        }
+      }
+    }
+  },
+  "source_art_manipulation": "Complete generated cells, one fixed isotropic scale per direction across all16 attacks, boot-pivot translation only. No masks, body-part transforms, alpha cleanup or per-frame scale changes.",
+  "whole_idle_endpoint_selection": false,
+  "battle_apng_rgba_exact": true,
+  "limitations": [
+    "Up-facing katana artwork is not authored; existing explicit front fallback is verified.",
+    "Skill buttons follow the existing icon-only behavior; no new skill mechanics were requested or introduced.",
+    "Attack uses separately generated complete cels. Geometric acceptance is recorded by the independent source/candidate visual review, not inferred from these runtime checks."
+  ],
+  "main_flow_rerun": "Not repeated: unchanged game code previously passed title/route/placement/withdrawal/Q smoke. Current assets, four animations, directions and battle drawing were rerun.",
+  "expected_changed_active_integration_record": "metadata/character/whitehair-runtime-integration.json",
+  "state_switch": {
+    "mode": "production",
+    "source_sheets": {
+      "front-idle": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+        "sha256": "98c3eb28a670aada65306ddb29a44a163a792adc29adf75eaa8d1b3602270d2c"
+      },
+      "front-attack": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+        "sha256": "1b2cc8a15179ad0144515d820e1bbbc020e6badea3c4ebdd9aa14ccbfe74b703"
+      },
+      "side-idle": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+        "sha256": "aa7d584f815d0d759db0d31efce5b419ba66bb7c4ce0bc194ded86bbf845f85f"
+      },
+      "side-attack": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+        "sha256": "a91865f15ad684c2fc2dad875d98d04e833e0c9f7537db4d7cf4730f0f4423d0"
+      }
+    },
+    "apng": "proportions-v11-state-switch.png",
+    "decoded_rgba_exact": true,
+    "source_crop": [
+      36,
+      114,
+      241,
+      297
+    ],
+    "display_scale": 2,
+    "sequence": [
+      {
+        "state": "idle",
+        "index": 0,
+        "duration_ms": 400
+      },
+      {
+        "state": "attack",
+        "index": 0,
+        "duration_ms": 400
+      },
+      {
+        "state": "attack",
+        "index": 0,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 1,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 2,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 3,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 4,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 5,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 6,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 7,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 8,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 9,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 10,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 11,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 12,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 13,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 14,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 15,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "idle",
+        "index": 0,
+        "duration_ms": 400
+      }
+    ],
+    "duration_ms": 2200.0,
+    "art_edits": false,
+    "crossfade": false,
+    "endpoint_replacement": false
+  },
+  "independent_geometry_review": {
+    "source": "Parent and separate anatomy reviewer accepted current front and side-third complete-cell candidates before apply.",
+    "front_measurements": ".build/whitehair-katana-proportions-v11/v11-candidate-neutral-measurements.json",
+    "side_final_measurements": ".build/whitehair-katana-proportions-v11/v11-side-third-neutral-measurements.json",
+    "front_upper_skull_width_native_px": [
+      75,
+      76
+    ],
+    "front_idle_target_width_native_px": 75,
+    "side_upper_skull_width_native_px": [
+      80,
+      82
+    ],
+    "side_idle_target_width_native_px": 82,
+    "side_neutral_boot_span_native_px": [
+      54,
+      56
+    ],
+    "side_idle_boot_span_native_px": 55,
+    "side_neck_belt_hip_landmarks": "Manual pixel-grid review within approximately1–2native pixels of canonical Idle.",
+    "measurement_caveat": "Fixed-alpha ROI widths are diagnostic silhouette measurements, not full anatomical dimensions. Pose6 lower-band FX contaminates naive boot bounds; reviewer measured actual boots separately. No source art was edited by these diagnostics."
+  },
+  "final_independent_visual_review": {
+    "reviewer": "/root/katana_anatomy_review",
+    "reviewed_at_utc": "2026-11-17T02:12:59.953420+00:00",
+    "scope": "Independent read-only proportions review of generated whole-cell candidates before production application. No endpoint substitutions or creative image edits were made by this reviewer.",
+    "passed": true,
+    "criterion": "Match the current immutable idle body model, including skull/face, shoulder/waist/hip levels and foot size. Equal total height alone is insufficient.",
+    "method": "Native320px cells; all compared at uniform2x. Upper-skull alpha silhouette measured in y130..164, excluding long lower hair. Neutral boot span measured at y276..287. Manual anatomical landmarks inspected in enlarged pixel grids, approximate +/-2px. Facial skin color/connected-component measurements are diagnostic only because bangs/eyes can split skin components.",
+    "views": {
+      "front": {
+        "source": "game/asset/character/player/icon/source/whitehair/katana/proportions-v11/front-attack-source.png",
+        "source_sha256": "9c44a3b771e3d7198394dc46b8888da1a17fa2269906308b3d796eaec86b92c1",
+        "candidate": ".build/whitehair-katana-proportions-v11/candidates/front/attack-sheet.png",
+        "candidate_sha256": "1b2cc8a15179ad0144515d820e1bbbc020e6badea3c4ebdd9aa14ccbfe74b703",
+        "idle_reference_sheet": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+        "idle_sha256": "98c3eb28a670aada65306ddb29a44a163a792adc29adf75eaa8d1b3602270d2c",
+        "neutral_frames_reviewed": [
+          0,
+          1,
+          2,
+          14,
+          15
+        ],
+        "active_frames_for_proportion_review": [
+          6
+        ],
+        "manual_idle_targets": {
+          "crown_y": 130,
+          "chin_y_approx": 195,
+          "eye_line_y_approx": 177,
+          "outer_upperarm_span_x_approx": [
+            129,
+            194
+          ],
+          "belt_center_y_approx": 226,
+          "hip_to_leg_y_approx": 251,
+          "trouser_hip_span_x_approx": [
+            143,
+            176
+          ]
+        },
+        "passed": true,
+        "upper_skull_target_px": 75,
+        "upper_skull_neutral_px": [
+          75,
+          75,
+          76,
+          76,
+          75
+        ],
+        "upper_skull_frame6_px": 77,
+        "boot_span_target_px": 53,
+        "boot_span_neutral_px": [
+          53,
+          54,
+          53,
+          53,
+          53
+        ],
+        "findings": [
+          "The prior enlarged head/broad torso/shortened-leg appearance is corrected. Neutral skull width is within1px of idle; active frame6 is2px wider.",
+          "Neutral boot span agrees within1px. Face/chin and waist/leg placement visually return near idle rather than the lower v10attack positions.",
+          "Generated neutral frames were examined directly before any idle endpoint selection."
+        ],
+        "evidence": [
+          "front-v11-neutral-and6-vs-idle.png",
+          "v11-candidate-neutral-measurements.json"
+        ],
+        "production_sheet_sha256": "1b2cc8a15179ad0144515d820e1bbbc020e6badea3c4ebdd9aa14ccbfe74b703"
+      },
+      "side": {
+        "source": "game/asset/character/player/icon/source/whitehair/katana/proportions-v11/side-attack-source.png",
+        "source_sha256": "1dc3959d3861b365dc5e795815533fd1e2e22f51d116600b29d336ea319a2643",
+        "candidate": ".build/whitehair-katana-proportions-v11/candidates/side/attack-sheet.png",
+        "candidate_sha256": "a91865f15ad684c2fc2dad875d98d04e833e0c9f7537db4d7cf4730f0f4423d0",
+        "idle_reference_sheet": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+        "idle_sha256": "aa7d584f815d0d759db0d31efce5b419ba66bb7c4ce0bc194ded86bbf845f85f",
+        "neutral_frames_reviewed": [
+          0,
+          1,
+          2,
+          14,
+          15
+        ],
+        "active_frames_for_proportion_review": [
+          6
+        ],
+        "manual_idle_targets": {
+          "crown_y": 130,
+          "chin_y_approx": 196,
+          "eye_line_y_approx": 179,
+          "outer_upperarm_span_x_approx": [
+            122,
+            194
+          ],
+          "belt_center_y_approx": 226,
+          "hip_to_leg_y_approx": 249,
+          "trouser_hip_span_x_approx": [
+            139,
+            174
+          ]
+        },
+        "passed": true,
+        "selected_candidate": "third side generation",
+        "upper_skull_target_px": 82,
+        "upper_skull_neutral_px": [
+          82,
+          80,
+          80,
+          80,
+          81
+        ],
+        "upper_skull_frame6_px": 79,
+        "boot_span_target_px": 55,
+        "boot_span_neutral_px": [
+          56,
+          54,
+          54,
+          55,
+          55
+        ],
+        "findings": [
+          "Third side generation corrects the second candidate skull inflation. Neutral skull widths are within2px of idle and neutral boot spans within1px.",
+          "Manual4x grid: chin/neck differs about1px, shoulder height1-2px, belt1px, hip/leg-start1-2px. Torso length no longer visibly shortens.",
+          "Frame6 fixed upper-band width79px is3px narrower; the active head and torso do not visibly inflate.",
+          "Frame6 raw alpha boot band63px was crimson FX contamination. Excluding crimson pixels gives bbox[132,276,188,288], width56px; it is not an oversized foot."
+        ],
+        "evidence": [
+          "side-v11-third-neutral-and6-vs-idle.png",
+          "side-v11-third-measurement-grid.png",
+          "v11-side-third-neutral-measurements.json"
+        ],
+        "production_sheet_sha256": "a91865f15ad684c2fc2dad875d98d04e833e0c9f7537db4d7cf4730f0f4423d0"
+      }
+    },
+    "final_actual_delivery_reviewed": true,
+    "art_changes_by_reviewer": false,
+    "known_remaining_difference": "New generated art has small face/hair detail and edge-softness differences. Passing here means consistent proportions, not identical artwork pixels.",
+    "final_delivery": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-proportions-v11-state-switch.png",
+      "sha256": "65d592a9231a13f0c2f8ddc6053a47f2a5d47fdf6728b7251807e722b8bf4de9",
+      "decoded_frame_count": 19,
+      "passed": true,
+      "scope": "Proportions and continuity of the actual same-position idle-to-attack-to-idle output.",
+      "findings": [
+        "Final delivered APNG bytes match the decoded production preview; actual sheets match the approved front/side candidate hashes.",
+        "Compared actual idle0, attack0, attack15 and returning idle0 at the same pivot. The large head/body inflation from v10 is absent; neck/shoulder/waist/hip relationships stay near idle.",
+        "Decoded final motions GIF and inspected all16 attack frames in each direction. Connected arms and correct hand roles remain; no new joint gaps or cell clipping were seen.",
+        "Small repainted face/hair details and softer attack edges remain. The side peak swing reads slightly lower than v9/v10; it is not an independent wrist flip or reversed elbow."
+      ]
+    },
+    "final_motion_gif": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-proportions-v11-motions.gif",
+      "sha256": "5ae8f5af5a6fdc857009f15c18dd4ad5b861e907eaeb5331cef0f45b6527a88a",
+      "decoded_frame_count": 16,
+      "attack_poses_visually_checked": 32
+    },
+    "final_evidence": [
+      "actual-final-state-switch-neutral.png",
+      "front-actual-final-gif-all16.png",
+      "side-actual-final-gif-all16.png"
+    ],
+    "main_metadata_version": 11
+  }
+}

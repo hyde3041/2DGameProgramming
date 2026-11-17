@@ -4,7 +4,7 @@
   "source_plan": "docs/기획서.md",
   "activation": "manual",
   "skills_per_character": 2,
-  "skill_count": 16,
+  "skill_count": 18,
   "note": "스킬 2개 중 S1으로 시작하고 강화로 S2를 해금한다. 효과와 수치, 해금 조건은 기획 초안이며 전투 테스트 후 조정한다.",
   "characters": [
     {
@@ -412,6 +412,28 @@
             128,
             128
           ]
+        }
+      ]
+    },
+    {
+      "id": "whitehair",
+      "name": "백발 검사",
+      "class": "근접",
+      "status": "icons_only",
+      "skills": [
+        {
+          "id": "crimson-draw",
+          "name": "적월 발도",
+          "type": "공격",
+          "effect": [],
+          "icon_file": "asset/character/player/main/9-whitehair/skill/icon/crimson-draw.png"
+        },
+        {
+          "id": "blade-focus",
+          "name": "검의 집중",
+          "type": "강화",
+          "effect": [],
+          "icon_file": "asset/character/player/main/9-whitehair/skill/icon/blade-focus.png"
         }
       ]
     }

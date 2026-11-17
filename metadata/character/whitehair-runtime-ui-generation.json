@@ -1,0 +1,104 @@
+{
+  "mode": "built-in image_gen edit",
+  "purpose": "Whitehair character runtime deployment portrait and skill UI assets",
+  "format_processing": "Whole image resized with Pillow Lanczos; no cropping or creative raster edits.",
+  "jobs": [
+    {
+      "id": "deployment-square",
+      "prompt": "EDIT attachment1, the square game deployment portrait, replacing only the character with the approved white-haired red-eyed katana character in attachment2 (identity and costume reference). Make ONE clean square head-and-shoulders anime portrait in exactly the same game portrait presentation as attachment1: pale cool-gray filled background, no border, no text, no symbols, no numbers. Long flowing white hair with the same fringe and soft lavender shadows, red eyes, calm determined expression, black high collar with red piping, ivory shoulder cape and silver star fastening. Preserve the approved character's identity and the slightly mature SD design, but frame a portrait like the existing cards: face large and readable, head and shoulder/chest only, no full body, no weapon or hands covering face. One face, centered face slightly turned three-quarter. Match the clean crisp linework, detailed fantasy anime shading and readability of the existing portrait at128x128. No different costume, no brown hair, no blue eyes, no ornament added. Full square artwork with opaque uniform pale-gray background; no transparency.",
+      "refs": [
+        "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/main/0-swordsman/skill/profile/deployment-square.png",
+        "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/approved-pair.png"
+      ],
+      "transparent": false,
+      "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-38af1480-dc7b-4469-84e1-dec66ba90d4f.png",
+      "raw_source": "game/asset/character/player/icon/source/whitehair/katana/ui/deployment-square-source.png",
+      "output": "game/asset/character/player/main/9-whitehair/skill/profile/deployment-square.png",
+      "size": 128,
+      "generated_size": [
+        1254,
+        1254
+      ],
+      "output_size": [
+        128,
+        128
+      ],
+      "output_mode": "RGBA",
+      "output_sha256": "9d5463717bcd0db1c0d4148b4e3474a6d8cbef828d7b6762781ea3b36ec6172b",
+      "alpha_extrema": [
+        255,
+        255
+      ],
+      "alpha_bbox": [
+        0,
+        0,
+        128,
+        128
+      ]
+    },
+    {
+      "id": "crimson-draw",
+      "prompt": "EDIT the attached sword-slash game skill icon. Keep its square composition and detailed painted fantasy game-icon style, but change the weapon to a slim STRAIGHT silver katana with dark brown-black wrapped hilt, small round guard and subtle red cord, and replace the blue sweeping energy with an obvious DEEP BLACK-RED crescent from lower-left sweeping upward. Dark wine/oxblood core, saturated crimson face, bright scarlet thin rim; one compact tapered crescent around the drawn blade, with all parts entirely inside the square and clear edge padding. Visually readable when reduced to36x36 pixels. Only ONE sword and ONE clear slash arc, no blood droplets, no text, letters, UI frame, border, numbers or background scene. Match the existing icon's crisp silhouette, shading and visual weight. Genuinely transparent background alpha zero outside the weapon and energy, no haze or gray cloud. Do not retain any blue or cyan. This is a skill UI picture only.",
+      "refs": [
+        "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/main/0-swordsman/skill/icon/azure-slash.png"
+      ],
+      "transparent": true,
+      "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-c972df4a-a3b7-43ee-bdce-e48d46bab8e8.png",
+      "raw_source": "game/asset/character/player/icon/source/whitehair/katana/ui/crimson-draw-source.png",
+      "output": "game/asset/character/player/main/9-whitehair/skill/icon/crimson-draw.png",
+      "size": 256,
+      "generated_size": [
+        1254,
+        1254
+      ],
+      "output_size": [
+        256,
+        256
+      ],
+      "output_mode": "RGBA",
+      "output_sha256": "0fa49c35021a1632126712d39c561a774bd274781c1ec19bb138a0ef6abdc83c",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        22,
+        5,
+        240,
+        254
+      ]
+    },
+    {
+      "id": "blade-focus",
+      "prompt": "EDIT the attached sword-dance game skill icon into a matching companion focus/ready-stance icon for the same straight-katana character. Keep square canvas and clean detailed painted fantasy skill-icon style. Show ONE straight katana FULLY SHEATHED in a sleek black scabbard, dark wrapped hilt and small round silver guard, with a small red tassel. Place it nearly vertical on a slight diagonal, centered, with a restrained symmetrical dark crimson focus halo / thin scarlet circular arc behind it indicating composed readiness. The blade is NOT exposed and this icon should clearly differ from an active sweeping slash. Dark wine/black-red palette with silver small fittings, no blue, no cyan. Strong readable silhouette at36x36, all content inside square with edge padding. No hands or character, no text, no numbers, no UI border, no background scene. Genuinely transparent background alpha zero outside the object and thin focus arcs, no background haze. Match the attached existing icon's visual weight, linework and shading.",
+      "refs": [
+        "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/main/0-swordsman/skill/icon/sword-dance.png"
+      ],
+      "transparent": true,
+      "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-41822e3b-7bf4-4f6b-99d4-c521e6efd920.png",
+      "raw_source": "game/asset/character/player/icon/source/whitehair/katana/ui/blade-focus-source.png",
+      "output": "game/asset/character/player/main/9-whitehair/skill/icon/blade-focus.png",
+      "size": 256,
+      "generated_size": [
+        1254,
+        1254
+      ],
+      "output_size": [
+        256,
+        256
+      ],
+      "output_mode": "RGBA",
+      "output_sha256": "d47f0ca0c64d1d2b77f3e7df7f9eb36c0599c22ab55b80e4ef309e7d36d614b3",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "alpha_bbox": [
+        8,
+        10,
+        249,
+        249
+      ]
+    }
+  ]
+}

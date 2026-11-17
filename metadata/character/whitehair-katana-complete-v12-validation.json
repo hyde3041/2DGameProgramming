@@ -1,0 +1,635 @@
+{
+  "id": "whitehair-katana-complete-v12",
+  "passed": true,
+  "application": {
+    "applied": true,
+    "replaced_art_files": 9,
+    "protected_files_unchanged": 100,
+    "backup": ".build/backups/whitehair-katana-before-complete-v12-20261117T023011Z",
+    "sheets": {
+      "front-idle": "fdb083c84a0a6ab2cfe3551a2f61f48de66a0d8a98e5d9a7b93085dcf245532b",
+      "front-attack": "67feebeddc45128b57e0bf8c47d28c39f0138307541e6e3d35ea37b5575d9f5a",
+      "side-idle": "6a02bcaea0f60b77a45e7df5b3ac889680199aa9686842fe91232b708bdf93de",
+      "side-attack": "fea7219be9fb243ea9fa3e2f1ddc1266074b968afdd422f7c562373d91b33811",
+      "back-idle": "eb435f28cbe0dceacd71473cc5430d38b644e057c80bfdc443563137f3e6ab18",
+      "back-attack": "fe6d93dc30e8aa681732780b92e8db2262e4216d3aa234ea83f263edac1745fb",
+      "deployment-square": "fb73b65c3cdc0d70475dc9b84c9eea71d210fa08c0cdb426d69fb19e03a49087",
+      "blade-focus": "985f470547ffc6018f75b01f07b1b8d94ef6365555f000d3371fa0f050fd7a41",
+      "crimson-draw": "683ea268abd4be2a4a4e822d629a06a4cb6489e2bc594c1a322b1931a7ceb858"
+    }
+  },
+  "restoration_report": "metadata/character/whitehair-katana-complete-v12-restoration.json",
+  "anatomy_review": {
+    "reviewer": "/root/katana_anatomy_review",
+    "scope": "Registered rear idle and third rear attack candidates before color restoration; no production apply by reviewer.",
+    "passed": true,
+    "production_applied": false,
+    "idle": {
+      "source_sha256": "b12cc69670bf3800108683fb3d2f6b0525f45cc6b5db825e7e553a5dd1601e45",
+      "candidate_sha256": "e4fd036dc967c4d372473c6294758343e840b6f6bd99d476e23e18c1addf5b91",
+      "uniform_scale": 0.5978514712751051,
+      "neutral_upper_skull_width": 74,
+      "idle_upper_skull_motion_range": [
+        74,
+        81
+      ],
+      "neutral_boot_span": 44
+    },
+    "attack": {
+      "source_sha256": "590eefef3c6f21f3864a3558ac94d2cfb2b155d4e8ffe975543b953a374805ba",
+      "candidate_sha256": "2caa280879dc7011eb7f3bb8e63d81754059465b2a1688865a85eed4868f09d5",
+      "uniform_scale": 0.851063829787234,
+      "frames_visually_reviewed": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "neutral0": {
+        "upper_skull_width": 76,
+        "boot_span": 45
+      },
+      "neutral15": {
+        "upper_skull_width": 79,
+        "boot_span": 42
+      }
+    },
+    "measurement_definition": {
+      "upper_skull": "Alpha >=128 bbox in native320 crop [70,130,240,165], excluding hanging lower hair; active frames can contain head tilt.",
+      "boots": "Alpha >=128 bbox in native320 crop [120,276,200,288].",
+      "caveat": "Band width is a screening metric, not an independent anatomical landmark fit. The final decision also uses equal-scale visual transition."
+    },
+    "visual_findings": [
+      "Third attack fixes the oversized first-draft boots and the undersized second-draft boots. Neutral0 differs by +2px upper skull and +1px boots versus idle0.",
+      "Attack15 upper-skull band remains +5px wider than idle15. This is disclosed rather than asserted to meet an exact +/-3px rule; it lies within idle's own 74-81px motion range, and the side-by-side transition does not read as a whole-body/head inflation.",
+      "Rear identity and costume remain consistent. Long hair naturally hides the upper torso; coat hem and boots remain at comparable levels.",
+      "Anatomical right arm on screen-right holds the sword; left hand and sheath stay at screen-left waist beneath hair.",
+      "The sword arm stays visibly connected, extends for frames6-11, and follows the upward shoulder motion without a visible wrist spin or detached elbow.",
+      "Burgundy slash trails beneath the rising blade, remains inside the registered cell, and clears before the neutral return.",
+      "Generated attack is somewhat softer and differently shaded than idle before restoration; this review approves geometry and continuity, not a claim of exact pixel or color identity."
+    ],
+    "previous_candidates": [
+      {
+        "revision": 1,
+        "passed": false,
+        "reason": "Neutral boot span49-50px versus idle44px."
+      },
+      {
+        "revision": 2,
+        "passed": false,
+        "reason": "Boots narrowed too far to39-40px and neutral skull widened to83px."
+      }
+    ],
+    "geometry_checks": {
+      "whole_cells_only": true,
+      "one_isotropic_scale_per_motion": true,
+      "limb_masks": false,
+      "individual_frame_resizing": false,
+      "endpoint_substitution": false,
+      "meaningful_source_pixel_omission": 0,
+      "meaningful_source_pixel_duplication": 0,
+      "meaningful_output_clipping": 0,
+      "front_side_and_live_metadata_unchanged": true
+    },
+    "artifacts": {
+      "transition": ".build/whitehair-katana-complete-v12/back-idle-attack-transition-QA.png",
+      "all_attack_frames": ".build/whitehair-katana-complete-v12/back-attack-all16-native-QA.png",
+      "measurements": ".build/whitehair-katana-complete-v12/back-proportions-measurements.json",
+      "registration": ".build/whitehair-katana-complete-v12/back-registration.json",
+      "package_checks": ".build/whitehair-katana-complete-v12/back-package-report.json"
+    },
+    "next_stage": "Restorer notified to process only the approved third attack candidate; root performs production apply and final runtime checks."
+  },
+  "native": {
+    "passed": true,
+    "version": 12,
+    "source": "Actual main.load_character_sprites, main.draw_character, Player state/time selection and Pico2D SDL framebuffer",
+    "code_files_unchanged": {
+      "game/code/character.py": "f94eb4a775235c52cd589f4888857a4ad63967c3b31cf675d9c960975ad69ea4",
+      "game/code/main.py": "41422068d3b96b4db676b3f51a9eca218dacebd5164cb656f4db777e30379451",
+      "game/code/map.py": "a1e0ee974f5307af0e3c3e748238cbaf6d1f9b16703a12b2181cec1d845adc34",
+      "game/code/monster.py": "24708eb293ccf95074f22c48722dc9641f7b2b7294ff25edce747b6a86e99ded",
+      "game/code/user.py": "7ca3cced78b4ebb0fca6cc9f1330e0eafcf0d493ee83cf3d66d35767e1bfb7d7"
+    },
+    "roster_count": 9,
+    "portrait_count": 9,
+    "skill_icon_count": 18,
+    "sheets": {
+      "front-idle": {
+        "file": "asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+        "sha256": "fdb083c84a0a6ab2cfe3551a2f61f48de66a0d8a98e5d9a7b93085dcf245532b"
+      },
+      "side-idle": {
+        "file": "asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+        "sha256": "6a02bcaea0f60b77a45e7df5b3ac889680199aa9686842fe91232b708bdf93de"
+      },
+      "back-idle": {
+        "file": "asset/character/player/main/9-whitehair/katana/back/idle-sheet.png",
+        "sha256": "eb435f28cbe0dceacd71473cc5430d38b644e057c80bfdc443563137f3e6ab18"
+      },
+      "front-attack": {
+        "file": "asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+        "sha256": "67feebeddc45128b57e0bf8c47d28c39f0138307541e6e3d35ea37b5575d9f5a"
+      },
+      "side-attack": {
+        "file": "asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+        "sha256": "fea7219be9fb243ea9fa3e2f1ddc1266074b968afdd422f7c562373d91b33811"
+      },
+      "back-attack": {
+        "file": "asset/character/player/main/9-whitehair/katana/back/attack-sheet.png",
+        "sha256": "fe6d93dc30e8aa681732780b92e8db2262e4216d3aa234ea83f263edac1745fb"
+      }
+    },
+    "native_motion_checks": {
+      "front-idle": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "unique_frames": 16,
+        "framebuffer_hashes": [
+          "2ee0316e9009a549044551de0da9b840d310d771f1dbaff14f159627424a17c7",
+          "8f3a61ff4d000863023c94771414e45e044467ef5caa33666666d207eef4a80d",
+          "25095d8857004e69cc6e6eb9a7f34474a5afeb43cdb024e24cc908d8afae1ca1",
+          "4d6ad70d58794f6975ca16293300a5e3cfaad9289789ac9b02512af6aec800b2",
+          "a89c6ef3c2c25df51888a3ff6360b7663fbe857991796071d26ecf82fdaa0068",
+          "f4a488151caff065b785172f89e00ced144f4ddace19c8b84480ada183465a4f",
+          "6d392f66e950c37db7aa24b7b3658a622e19a5998671e84c44713d2e5b807f18",
+          "611ad6c02dd3c9bee588cb739b920725a944b97848df066b61eeca6eb5fb6ecc",
+          "0753a1ea2bcb282f800dad41b686701aee134252464dba1a934972233bf1523f",
+          "2913f62554b0dded4aa5b8543271e80151ed7ad487d564fd081ec487406a9dcb",
+          "c31f52a391aba2f83fc6ac24dbd74068aaab5f1b57ae84dea4001b0e609b6c38",
+          "62288e6c5c0039071566252701f37f2fb81e5ce1f0fc0afd3b1005ae7795e0a8",
+          "cf3aeb0e4fc6e7081a65c6191d373cc6579f34f5990db4d4aed9e83407c0fabc",
+          "cc4991c0586e198759320f530c4bc03c711590cf4050fdb814b1461b7cd84cc3",
+          "4ca207cf7f9738c34795f4344efbff134de718ad78548574f7d0c065dd001a8d",
+          "a00394e934aa3c7fec85000bb9d68f13472da07170f15211ac1545172835d15c"
+        ],
+        "exact_expected_sheet_clip": true
+      },
+      "side-idle": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "unique_frames": 16,
+        "framebuffer_hashes": [
+          "a31374783bbc04ce6638785ad3a40c44f0a7fc928bf6536a0ff1ae3a0fd7068a",
+          "a6c5b0b1c2530d08b30082c5f56997568d416a27ed58d1a4780fbb7e68e6bf28",
+          "5aeacb06056f2691f5088308ee36d29b6f7e012a05cc61c79f5019f4c66f91fc",
+          "cfa70e1f29406f5838539688fa132d8609d71ed91b517e940548ac11a8b5f855",
+          "94673dce94c2f9de933116117fc7621ff34d660c2547768a66a0c1f62a551c3d",
+          "e8847601cbaca4431b4272cbb93010e212bf8e0a85798540aedfa0b027fe1d39",
+          "69209cb5009b197b772daa27a0b00216f4650aff449ce1652980bc3abd19d7d7",
+          "df6a4c0a79c03557dfca5e60ed5b4db1037319780d578c51f84981eb286e123d",
+          "1d63f73edf7d82261765daf31bb06c43a7f81059432965f7941392a4cf9e250f",
+          "b412172c6292d6d76f227a67d154a8358cdbcbc2372489b2aa35257fe8292aff",
+          "e6793ce9b1ce1bcbf9b0a46ac383c310ba4f03819c3f4683b56878d2487fae4e",
+          "e8fa5f1d3bcd9acf45e590cdd643a206edd06b8321cb8e6876b44be59985b64a",
+          "9d27bcf8ce738414468de142655a9e14b752f71305c5e17229bbdbea075e39e7",
+          "052879ba849956863014ccd015d0abb1439f0e74bec66aa0c49d833093b81331",
+          "51fff5650c0311605ab005dca3b708a53b508db7868b4902ded47b7217ad647b",
+          "22dce07fa33f41effe10cfd1e65095ef450ad19359251641060831410583e452"
+        ],
+        "exact_expected_sheet_clip": true
+      },
+      "back-idle": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "unique_frames": 16,
+        "framebuffer_hashes": [
+          "d1aa6a2adf114b63fa031eeab313dddd7c51878551ef0051d1e8cde34341d02d",
+          "718215cf55dd2a554ca0e23dd1073c9fd2f9444182d9ae1fbfa06436d1095859",
+          "220a7ee72006b03b8acad2f9e2b401a94c349dac28b576eda47dc25d9fcc5f85",
+          "6db9cf365aa7d98234c6e936f8cc705973f5bf3bb91bf2b3f44eb216728deae8",
+          "c572c9b5deb434a8e83c44bc0969743147deb81ae4a648678c37a87be1608c20",
+          "744f6841db28044c0398ff632106d5d1962660d94e1b33725d9208c6165014ec",
+          "9a7effe7aa7830521173024505492d789f8234007031f9f00dbe447311cf420a",
+          "f48ddc92fcd55d8b5d43d65eb39e3eefc79f7b6c3ecb3cf900cfef5deb56e6f5",
+          "6e1feafd6a2627b3be7621e7e19ee95a87194289a82f92d78f06f3c97b47a77e",
+          "7dab51357cc98c3176307a9d4e8e9cbcadb5b7450149d8808a1374c17ee486ad",
+          "d9374d281ceea7383fbebadd769bff6b338bfa19fe6e6622b842ce6ff50b82f7",
+          "b19d92f12cb8ef1e0e148c899b833479cc90acb040f34d72c9336dcaaa636c6a",
+          "63a4299885664d356a8d4b68690f563f9ccf375215c5212e0193a36dd876487e",
+          "c4eae2a2281e2108f517675032549edbcefcdc30f2828d198bd2798b5267c7dd",
+          "425c2ac1193a53d93b51834779132eec9588d471c3498f5e7ecbee601978dfec",
+          "8d6f3bdc2985428f167043cf6995dbf8e83de83688351ddf7f175ddaa5e86b83"
+        ],
+        "exact_expected_sheet_clip": true
+      },
+      "front-attack": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "unique_frames": 16,
+        "framebuffer_hashes": [
+          "e4667f08aa28bd617354089d2f53ba4895415fb0dd85a0e0de6af14027e85c1a",
+          "936e94b596f5065e44b6ba9ad59d37504eba33f356c32d9658ab1f5dc84c6dd4",
+          "075997fd6f4946b509c0fd2c0c02923fe582bdb63bf4fdeff28fd2fb56afdfec",
+          "3cbba4c3b073127f3eef04c67a296873de4bcab929e458f000a0f4def7bc53a6",
+          "f6d9e8ddbdba57e3af32bbc8a22e8256ec65c387d65ff008322c6dfb82ebbe28",
+          "aa8bb3f3517ab6a161f67cc6453d2e0778fcdacb7cc40690bc2893684c3a358c",
+          "278fc91c46612286f02ba4397290499216e3c09dac0ebe0afb8fb93ef7934d10",
+          "cf5a7904d22fb45411a8aa0b7c3dc6491b26d4db12fce2a172ea6cc741264953",
+          "25e978ec65319da089726b107862ebec1dcba66d4fee33fab469e8dc6d36b877",
+          "47bc8db318a8d47773cf0257398bcbac0932b2a84dade1317d323249ed038aa4",
+          "f955cfbf6ead7f435b392dc0788a59ff47aa4d84dc39435c9fe82677d735ee06",
+          "e8f5d40d347d4bbe1bd4bf508bae505448707b1aaa3a2799585a9efb56a16ba4",
+          "6a95720c4e34926280b4acf11ef5d30556d3948834812339530014092677702a",
+          "dfd4eba2d3442a891244326f05dcd296d1a783ecff2dde2e45416a565e12e1b1",
+          "45a08e11310144d49b105fe346a3bb3d410beffc6c2fbc1203244525cd58495b",
+          "e3311435f802db0d64f9c62a393e5b0b7bd0eb2d5b857a1fa4e6f3b4616840c5"
+        ],
+        "exact_expected_sheet_clip": true
+      },
+      "side-attack": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "unique_frames": 16,
+        "framebuffer_hashes": [
+          "f765b0b6b79986b58bccc1e3f696bdfb4ccd2bfb43a9673989e33e77300eef48",
+          "a5ad73b0cf0d8088849f1ae9eaf28c9aa4b494275d239bc192a7a77637a038be",
+          "e4d09c2572be5d0942904078d310142d97970c053c88af72d57f49e95385e2f6",
+          "0fc393206346d59e3ca6eff6df6e3552f659ad02255b02549f9e2aa66a7364d5",
+          "b13573bde915f65395f273797969c6fd69c53f70a8337d08a53506e4f02f763b",
+          "92a4da9a0c88671be514cb0a2d858be951ffe2fc22acd58dda477ea0a4952cdc",
+          "e47a1ead63ea3fe831c9cdc9357aee65fb92b223b393375f7b80834302876100",
+          "4bed3f20322d3ee933b086b8614f8979770debe0eb3322e0ac2b3177b844f913",
+          "1d2fa1467f9b573908f39fdcb08a64bf3af3dc109e9aa237c53140c5cb9858a5",
+          "2d7fe86d29496724d40c341e0ae8067facf27a06ab7f920a9c0b77ed059cb6a7",
+          "1a2668cbcff0af64d530c9d541bf7857b97ca057916ae28c31cf575398556043",
+          "db5539046aa658ef0ff03a88e451e98472d02aeb80764775b055dadd28c760f4",
+          "88ef4f216421db113a4d1713c66fd271d44beab483d0f31e2e0fa45d3d4f904b",
+          "0e4f61a945ed261ab96a0eb1654354931fec4961ed4930121907683844b5f0fe",
+          "a030fb5699990de927e6c996c016881bb733b0be55795a1c538717b8218f0782",
+          "9d3ad69dbeac6029f01067cfd558728a72cb65246d01bb7c0d51d958f6858d53"
+        ],
+        "exact_expected_sheet_clip": true
+      },
+      "back-attack": {
+        "indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "unique_frames": 16,
+        "framebuffer_hashes": [
+          "7a1337093713ad8d0e07da9fb68f4392f58b07a0a9ea9bd667b451bcb2df54ff",
+          "e150f066c961bfd624de25e8b50bd0ecd48d85531cd82c3df116725184c48ffe",
+          "9dd5ed79c7b8eb731252d4f71c1b7e49587683a39fa57a50dae595efbd9c4b3e",
+          "76d2cc8186a5900766c0369ee3553f0e9dca6adf2f14bc895c3b8ca68aa0a4c8",
+          "11dd2777e9905b13b169d13edfb04b535694bf81e377a7ec9a034c4408b2c12e",
+          "6ea7f12c1e550b8cda5d9785630baec85b65aced5694f615e5d15f4de42ae10a",
+          "e7cf5ae1e8ddfb515bf6f152db9df676b490e16a0a9bbdc6a6a943cf056fa5bf",
+          "f21d5a12e62feb1f709de7715a1b4c7c2bea171642aa8f33935e7f79b510a76d",
+          "5c5cfeef827473ecaad3ab2201a3cf1d0eb600f0969ec65f1f5ffae34965e356",
+          "677accd7b3006e89691f9facd1c716c0880a055f4a521eb2e5a0f1a7fe928796",
+          "9b4ff4e992d1233455e663632fb2b47a67d096ec831938fa3811216665ca65a8",
+          "de6a2410c971219e290511557fa3cbd2cc6d56872a0cae860e6fca84be81d47e",
+          "dae554f7603242fe5d9c291e78e0c461400dab4b1a0dd840a473c23f61a0f4c6",
+          "9c578564ba4605a13dbe5497f48d8f3d5056dc6a4ed93d622b3351fd9b49a12f",
+          "eca2d6d804596898eaab76b61fefceb917a701ea3cfd280929dbf8f3d3620a6b",
+          "c4ceb4522af04e423e7b41be4adab0b620b0046a5cc806a8e01dddb432b769b8"
+        ],
+        "exact_expected_sheet_clip": true
+      }
+    },
+    "direction_hashes": {
+      "idle": {
+        "down": "611ad6c02dd3c9bee588cb739b920725a944b97848df066b61eeca6eb5fb6ecc",
+        "left": "df6a4c0a79c03557dfca5e60ed5b4db1037319780d578c51f84981eb286e123d",
+        "up": "f48ddc92fcd55d8b5d43d65eb39e3eefc79f7b6c3ecb3cf900cfef5deb56e6f5",
+        "right": "9b418a07bf811b7c9b81b0a540e74576b2085070cdb758b81d36101846f6ba6e"
+      },
+      "attack": {
+        "down": "cf5a7904d22fb45411a8aa0b7c3dc6491b26d4db12fce2a172ea6cc741264953",
+        "left": "4bed3f20322d3ee933b086b8614f8979770debe0eb3322e0ac2b3177b844f913",
+        "up": "f21d5a12e62feb1f709de7715a1b4c7c2bea171642aa8f33935e7f79b510a76d",
+        "right": "0fb11c8dd6cdf219f7eae2267fa4f24169ec08cbebc7791ca964fd39c0792556"
+      }
+    },
+    "genuine_back_differs_from_front_both_states": true,
+    "right_mirrors_left_authored_side_both_states": true,
+    "state_transitions": {
+      "front": [
+        "idle",
+        "attack",
+        "idle"
+      ],
+      "side": [
+        "idle",
+        "attack",
+        "idle"
+      ],
+      "back": [
+        "idle",
+        "attack",
+        "idle"
+      ]
+    },
+    "wall_clock": {
+      "elapsed_seconds": 1.0429785000160336,
+      "presented_frames": 177,
+      "all_six_seen_indices_0_to15": true,
+      "all_six_wrapped_to_zero": true
+    },
+    "render_scale": 1,
+    "main_flow": "Prior input/mechanics smoke not repeated because game code is unchanged.",
+    "protected_old_roster_and_code_unchanged": 100
+  },
+  "state_switch": {
+    "mode": "production",
+    "source_sheets": {
+      "front-idle": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+        "sha256": "fdb083c84a0a6ab2cfe3551a2f61f48de66a0d8a98e5d9a7b93085dcf245532b"
+      },
+      "front-attack": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+        "sha256": "67feebeddc45128b57e0bf8c47d28c39f0138307541e6e3d35ea37b5575d9f5a"
+      },
+      "side-idle": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+        "sha256": "6a02bcaea0f60b77a45e7df5b3ac889680199aa9686842fe91232b708bdf93de"
+      },
+      "side-attack": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+        "sha256": "fea7219be9fb243ea9fa3e2f1ddc1266074b968afdd422f7c562373d91b33811"
+      },
+      "back-idle": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/back/idle-sheet.png",
+        "sha256": "eb435f28cbe0dceacd71473cc5430d38b644e057c80bfdc443563137f3e6ab18"
+      },
+      "back-attack": {
+        "file": "game/asset/character/player/main/9-whitehair/katana/back/attack-sheet.png",
+        "sha256": "fe6d93dc30e8aa681732780b92e8db2262e4216d3aa234ea83f263edac1745fb"
+      }
+    },
+    "apng": "complete-v12-state-switch.png",
+    "decoded_rgba_exact": true,
+    "source_crop": [
+      36,
+      114,
+      280,
+      298
+    ],
+    "display_scale": 2,
+    "sequence": [
+      {
+        "state": "idle",
+        "index": 0,
+        "duration_ms": 400
+      },
+      {
+        "state": "attack",
+        "index": 0,
+        "duration_ms": 400
+      },
+      {
+        "state": "attack",
+        "index": 0,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 1,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 2,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 3,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 4,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 5,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 6,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 7,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 8,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 9,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 10,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 11,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 12,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 13,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 14,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "attack",
+        "index": 15,
+        "duration_ms": 62.5
+      },
+      {
+        "state": "idle",
+        "index": 0,
+        "duration_ms": 400
+      }
+    ],
+    "duration_ms": 2200.0,
+    "art_edits": false,
+    "crossfade": false,
+    "endpoint_replacement": false
+  },
+  "previews": {
+    "complete-v12-state-switch.png": "game/asset/character/player/icon/preview/whitehair-katana-complete-v12-state-switch.png",
+    "complete-v12-three-directions.png": "game/asset/character/player/icon/preview/whitehair-katana-complete-v12-three-directions.png",
+    "complete-v12-motions.png": "game/asset/character/player/icon/preview/whitehair-katana-complete-v12-motions.png",
+    "complete-v12-motions.gif": "game/asset/character/player/icon/preview/whitehair-katana-complete-v12-motions.gif"
+  },
+  "final_motion_review": {
+    "reviewer": "whitehair_ui_assets",
+    "method": "Independent Pillow APNG decode of all19frames, exact rendered-panel comparison against current six production sheets, all16 attack contact-frame visual inspection for each direction, and decoded neutral-transition keyframes. No pixel or art edits performed.",
+    "result": "pass",
+    "apng": "complete-v12-state-switch.png",
+    "apng_frames": 19,
+    "duration_ms": 2200.0,
+    "frame_durations_ms": [
+      400.0,
+      400.0,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      62.5,
+      400.0
+    ],
+    "all57_panels_exact_to_production": true,
+    "source_sha256": {
+      "front-idle": "fdb083c84a0a6ab2cfe3551a2f61f48de66a0d8a98e5d9a7b93085dcf245532b",
+      "front-attack": "67feebeddc45128b57e0bf8c47d28c39f0138307541e6e3d35ea37b5575d9f5a",
+      "side-idle": "6a02bcaea0f60b77a45e7df5b3ac889680199aa9686842fe91232b708bdf93de",
+      "side-attack": "fea7219be9fb243ea9fa3e2f1ddc1266074b968afdd422f7c562373d91b33811",
+      "back-idle": "eb435f28cbe0dceacd71473cc5430d38b644e057c80bfdc443563137f3e6ab18",
+      "back-attack": "fe6d93dc30e8aa681732780b92e8db2262e4216d3aa234ea83f263edac1745fb"
+    },
+    "visual_review": {
+      "front": "Sword stays anatomical right (screenleft), left hand supports scabbard. Low-to-high path and nearlyextended elbow/shoulder followthrough retained; no hand swap or detached elbow visible.",
+      "side": "Same swordhand throughout, connected arm, upwardcut and recovery retained. Relative head/boots/body proportions stay close at idle/attack transition.",
+      "back": "Full rear view throughout, no face. Rightarm/sword screensright; left scabbard stays downleft. Arm emerges beyond hair silhouette without visible cutout seam. Effect appears belowblade in6..11; recovery returns to rear ready pose.",
+      "color": "Purple-gray hair planes, ivorycloth and crimson effects remain readable after restoration. Gray background reveals no conspicuous colored halo or stray islands.",
+      "transition": "Decoded idle0→attack0 and attack15→idle0 show small illustration/hair differences but no previous wholebody width or boot inflation jump."
+    },
+    "limitations": [
+      "Visual review uses actual decoded frames and contacts, not a separately observed live game window.",
+      "Back hair curl arrangement is not pixel-identical between idle and attack, but anatomy review measured proportions within the idle range."
+    ],
+    "decoded_transition_contact": "final-decoded-transition-review.png"
+  }
+}

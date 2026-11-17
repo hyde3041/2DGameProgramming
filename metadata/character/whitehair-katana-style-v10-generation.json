@@ -1,0 +1,190 @@
+{
+  "id": "whitehair-katana-style-v10",
+  "version": 10,
+  "status": "applied",
+  "request": "Match the newly integrated whitehair katana artwork to the existing party character style.",
+  "mode": "built-in image_gen edit",
+  "scope": [
+    "Front and left-facing side idle, 16 complete cels each",
+    "Front and left-facing side rising-draw attack, 16 complete cels each",
+    "Deployment portrait"
+  ],
+  "style_changes": [
+    "Larger SD head and eyes; shorter compact torso/arms/legs matching swordsman and rogue proportions.",
+    "Sharper dark contour, separated cel-style shadows, reduced soft painterly gradients.",
+    "Long white hair/red eyes, ivory coat/black-red uniform, right sword hand/left sheath hand and straight katana preserved.",
+    "Retained low-to-high shoulder-led slash, connected elbows and obvious black-red trail."
+  ],
+  "generation_stages": [
+    {
+      "mode": "built-in image_gen edit",
+      "prompt": "Use case: style-transfer. EDIT IMAGE1 (current white-haired katana character FRONT and LEFT-FACING SIDE neutral poses) into the exact SD game-art proportions and rendering of the first THREE columns of IMAGE2 (existing swordsman/rogue/guardian, reference only). The last column of image2 is the old whitehair design to be improved. IMAGE3 supplies high-resolution costume identity only, NOT desired proportions.\nReturn ONLY two full-body neutral sprites side-by-side, FRONT on left and LEFT-FACING three-quarter SIDE on right, on true transparent alpha. No labels, captions, panel borders, grid, floor shadow or background haze. Both sprites identical height and foot baseline, fully inside their half with wide clear margins. Make a visible cohesive redesign of proportions: approximately2.2 heads tall, enlarged round SD cranium and larger red eyes, crown-to-chin roughly44-46% of full standing height, compact short torso, shorter sturdy arms and short legs/boots, broad readable silhouette like existing swordsman and rogue. NOT a tall anime illustration shrunk down and NOT a big head pasted onto the old long body. The desired sprite looks like a member of that exact existing party. Match crisp dark contour lines, clean cel-like separated2-3-tone shading, confident opaque color fills, compact hair locks, sharp readable details at small game scale. Avoid airbrush blur, watercolor/painterly mottling, glossy3D, noisy wisps.\nKEEP IDENTITY/COSTUME: long white hair with light muted lavender shadows reaching near calves, red eyes, calm determined expression, black/darkbrown high-collared uniform with thin red piping, ivory shoulder cape and split ivory coat with dark red lining, silver star clasps, brown gloves/belt/boots, red sheath tassel. Preserve straight long silver katana and long black scabbard. Blade is straight, not curved. Neutral ready stance with anatomical RIGHT hand on sword hilt (screen LEFT infront), LEFT hand holding sheath at the left hip (screen RIGHT infront). Both hands connected naturally to elbows/shoulders, five-finger gloved grip, no amputated joint gaps or extra hands. Front sword/sheath lie diagonally across waist as inimage1, side same handedness. Arms must become short proportional chibi arms, do not stretch to old pixel endpoints. Feet planted. Keep original personality and hair/costume design, don't copy the brown/black hair or other weapons fromreferencecharacters. Render enough interior line clarity that a160-pixel-tall in-game character stays sharp. This is the common design guide for subsequent16-frame idle and rising-draw attack sheets.",
+      "generated_file": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-5ecaa47a-8bf9-4e8a-9c52-368b9e92fbdb.png",
+      "output": "game/asset/character/player/icon/source/whitehair/katana/style-v10/design-pair.png",
+      "record": ".build/whitehair-katana-style-v10/design-pair-generation.json",
+      "referenced_image_paths": [
+        ".build/whitehair-katana-style-v10/target-pair.png",
+        ".build/whitehair-katana-style-v10/style-reference.png",
+        "game/asset/character/player/icon/source/whitehair/katana/approved-pair.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "mode": "built-in image_gen edit",
+      "prompt": "Use case: style-transfer. EDIT IMAGE1 (existing left-facing idle sprite sheet) into the redesigned SD character shown in the RIGHT figure of IMAGE2. IMAGE3 first3columns are the existing party rendering style; lastcolumn is the obsolete tall whitehair. IMAGE2 is the final design target: match its much larger head, shorter compact torso/limbs, simplified confident white hair locks, crisp dark contour and separated cel shadows. Whitehair must look like the same game party, approximately2.2-2.4heads tall, NOT old tall skinny proportions.\nOUTPUT one square transparent 4column x4row sprite sheet, exactly16 COMPLETE FULL-BODY idle animation cels in row-major order. Each equal square cell has fullfigure centered around x50%, haircrown near y24%, bootsbottom at y90%, body heightabout66%cellheight. Uniform size throughout all16. No grids/text/numbers, no background or floor shadow, alphaZERO surrounding sprites, no gray haze/speckles. Wide clear transparent margins keep allhair/sword/scabbard inside eachcell. Never crop feet or sword or bleed into anothercell.\nVIEW fixed three-quarter SIDE facing SCREEN LEFT. Use the rightfigure of designguide faithfully everyframe: long white hair, red eyes, charcoal/redpiped highcollar uniform, ivoryshouldercape andcoat, darkredlining, silverstars, brown gloves/belt/boots, redtassel onblacklongscabbard. Straight long silver katana partiallyheld atwaist inreadystance. AnatomicalRIGHT hand graspswordhilt, LEFThandholdsblackscabbardatlefthip. Same hands/weaponarrangement asguide, never swap hands, no extra/detachedhands or wristtwist. Swordandscabbardarestraightnotcurved. Compactarmsnaturallyjoinedfromshoulderthroughsoftelbownormalwrist.\nMOTION subtle breathing idle16F loop: feet/soles anchored samecontacts; f0neutralguide, f1..4 chest/headrise gradually1-2%bodyheight, f5..8 settlebacktoneutral, f9..12 quietsmallbreathdown, f13..15 returntoneutral. Hair tips and coathem sway slightly with1frame delay, nochangehairidentity orvolume. Eyes stayopen, calmdetermined. Keephandsatreadywaist, donotdraworwaveblade, noslashFX. Shoulders/chestparticipate subtly, noisolated limb rotation. f15visuallymatchesf0 forseamlessloop. All16cels subtlydistinct, stable face/costume/size; no bigjumps, no newpose or stance. Rendering cleanopaque2-3toneslikeoldparty, nostreakywatercolor, blurryairbrush,3Dplasticgloss. Redraw wholeconnectedcels, notcutoutpatches.",
+      "generated_file": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-24d16869-ff46-430e-8ce5-8cdd1c3fbb83.png",
+      "output": "game/asset/character/player/icon/source/whitehair/katana/style-v10/side-idle-source.png",
+      "record": ".build/whitehair-katana-style-v10/side-idle-generation.json",
+      "referenced_image_paths": [
+        "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+        "game/asset/character/player/icon/source/whitehair/katana/style-v10/design-pair.png",
+        ".build/whitehair-katana-style-v10/style-reference.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "mode": "built-in image_gen edit",
+      "prompt": "Use case: style-transfer + animation. IMAGE1 is the NEW SD left-facing idle sprite sheet: its full-body design, large head/short limbs proportions, uniform scale and crisp cel rendering are the edit target and MUST be retained. IMAGE2 is the OLD ATTACK MOTION REFERENCE ONLY, not the desired old tall proportions or blurry shading. IMAGE3 shows the shared new design guide. Turn IMAGE1 into a matching 16-frame rising-draw ATTACK sheet using the exact ordered action of IMAGE2.\nOUTPUT square transparent4x4sheet, exactly16 completecels rowmajor. The body crown-to-boots height and HEAD SIZE must match IMAGE1 throughout; all16same scale, about260px body at1254canvas. Keep frame0,1,14,15 neutralbody identical tonewIdle costume, face, hairvolume andbodyratio. Fixed side3/4view FACING SCREEN LEFT, not front. Eachcell equalquartercanvas; move ALLbodies consistently a little right within theircell ifneeded so footcenter~62%cellwidth, with enoughclearLEFTmarginforstraightblade and FX. Keep entire sword and crimsontrail insideowncell, minimum8px transparentgutter atallcellborders. Same commonbodyplacement inallcells. Do notshrinkindividual attackframes tofit. BackgroundalphaZERO,no text/labels/grid/shadow/haze/noisespecks.\nAction rowmajor0..15: f0readyhands atwaist; f1slightanticipation; f2..4begindrawingstraightsworddown/outwhileholding sheath; f5bladepoints diagonallyDOWN-LEFT extendedoutward; f6bladetip sweepsup toalmosthorizontalleft; f7shoulderraises nearlystraight swordarm a little; f8&9 slightlymoreUP-LEFTfollowthrough; f10smallreturntowardhorizontal; f11extendedswordarmnearhorizontal; f12loweroutwardblade; f13bringtip tosheath; f14..15returntoreadywaist asidle. Preserve oldanimation's low-to-high trajectory and subtle coordinated torsolean, shoulders/chestfollow, coatandhairlags. Feet/bootscontactsplanted, no walking/jumps/bodyspin. All16celscomplete connectedfigures, no amputated limbs/gaps, nojointplugs.\nCRITICAL ANATOMY: AnatomicalRIGHT handalwaysholds sword, LEFThandstaysatleftwaistholding blacksheath. Never swap hands. ArmshortensproportionallytoNEWguide, don'tstretchchibiarmsbacktooldpixelpositions. f6..11 swordarmalmoststraight withnaturalsoftelbow, heldextended while SHOULDERS raiseandreturn it; no inward/reverseelbowbend. Wrist/grip/bladealignmentfixed: NO wristspinning, no handflips. Both shoulder/elbow connectionscontinuous; no forearmcutouts/duplicatehands. Straight longsilverkatana, notcurved, keepssameweaponlengthrelativebodythroughout. Whitehair/red eyes/blackredpipeduniform/ivoryshouldercapeandcoat/darkredlining/silverstars/brownglovesbootsbelt/redscabbardtassel unchangedfromIMAGE1.\nFX asIMAGE2: clearlyvisible compact BLACK-RED/deepcrimson tapered crescent, darkmaroon core thin scarlet rim, behind/belowblade'slower-to-upperpath. Smallfirsttrailf5, strongf6..8, fadingf9, tinyremnantf10, NONEf0..4or11..15. TailcurvesDOWNfromcurrentblade towardpreviouslowerpose, neverhooksaboveasdownwardstrike. FXnotonface/elbow/hand, no firedbeam/blood/explosion. EntireFXinsidecell leftmargin. PreservecleanopaqueSDcelshading2-3tones andsharpdarkoutlines, no soft3D/watercolor/hazyhighlights. The result should play as same exact character asnewIdle without size/stylepopping.",
+      "generated_file": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-8ddd544e-4978-4b9e-bc3b-36ad008f42e7.png",
+      "output": "game/asset/character/player/icon/source/whitehair/katana/style-v10/side-attack-draft.png",
+      "record": ".build/whitehair-katana-style-v10/side-attack-draft-generation.json",
+      "referenced_image_paths": [
+        "game/asset/character/player/icon/source/whitehair/katana/style-v10/side-idle-source.png",
+        "game/asset/character/player/icon/source/whitehair/katana/side/attack-body-fx-v9-source-sheet.png",
+        "game/asset/character/player/icon/source/whitehair/katana/style-v10/design-pair.png"
+      ],
+      "transparent_background": true
+    },
+    {
+      "mode": "built-in image_gen edit",
+      "prompt": "EDIT this exact 4x4 sprite sheet. Keep all16 newlyrestyledSD characters, poses, largehead/shortbody proportions, crispcolors, faces, costume, right-sword/left-sheath handedness, continuous shortarms, straightkatana shapes andall16bodyplacements unchanged. This is a small FINAL FX CONTAINMENT correction, not a new redesign or new attack.\nThe black-red swing trail in frame8 (THIRD ROW,FIRST COLUMN, zero-based8) runs off the image LEFT EDGE. Redraw that one effect as a shorter compact tapered darkmaroon/crimsoncrescent, still below the raised blade, with its leftmost edge clearly INSIDE its cell at least12pixels from the canvasleftedge. Its bright scarlet rim attaches to the OUTER THIRD of the existing blade a little to the right of the tip, not beyond the tip; tail sweeps DOWN and then INWARD to the right, so alltailpixelsfit inside that firstcolumncell. The blade itself staysstraight atthesame angle/position. No blood/splatter. Preserve darkredvisiblecrescent strength, don'tremoveeffect. Check otherFXframes5..10 similarly forsmallclear8px minimum cellgutters, fixing onlyFXpixels ifanycrosscell. Allotherframeskeepcurrentart andmotion. Preserve all16completefigures, stablefootbaseline; no rescale/reposition anybody. Effectfades9/10,absent0..4and11..15. Any non-character stray coloredspecks orgrayhaze are transparentbackground,notpartofthecharacter: outputcleanalphaZERO outside silhouette. Do not redrawfaces/hair/joints/weapon/grips, noholes. ReturntransparentPNGsame4x4sheet, nocoloredbackground,text,labels,frames orshadows.",
+      "generated_file": "C:/Users/zx304/.codex/generated_images/01a1b983-80ad-75c1-81b9-7f401620b7fe/exec-62a697d5-119b-40cd-89a7-8edad381979f.png",
+      "output": "game/asset/character/player/icon/source/whitehair/katana/style-v10/side-attack-source.png",
+      "preceding_generation": ".build/whitehair-katana-style-v10/side-attack-draft-generation.json",
+      "record": ".build/whitehair-katana-style-v10/side-attack-generation.json",
+      "referenced_image_paths": [
+        "game/asset/character/player/icon/source/whitehair/katana/style-v10/side-attack-draft.png"
+      ],
+      "transparent_background": true
+    }
+  ],
+  "front_and_profile_generation": {
+    "mode": "built-in image_gen edit",
+    "goal": "Match the white-haired katana character to the existing party SD proportions and crisp rendering while preserving approved attack motion.",
+    "guide": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/style-v10/design-pair.png",
+    "jobs": [
+      {
+        "id": "front-idle",
+        "prompt": "Reillustrate attachment2 into a production FRONT idle spritesheet using EXACTLY the character design/proportions/style of the FRONT character on LEFT of attachment1. Attachment3 is the existing party for lineweight/rendering reference only. The single character is white long hair, RED eyes, charcoal black short tunic with thin red piping, ivory short cape and coat panels with burgundy lining, silver star clasps, brown belt/gloves/short boots, red scabbard tassel. Keep these exact details from attachment1.\n\nOUTPUT: one square transparent PNG spritesheet, exactly 4 columns x4 rows, exactly16 FULL-BODY front-view animation cels, row-major order. No side-view character. Aim1536x1536canvas so each equal cell384x384. In EACH cell crown at about25% cellheight, sole baseline at90%cellheight, bodycenter50%cellwidth, full crown-to-foot height65%cell. Invisible equal grid, no drawn borders, captions, frame numbers, shadows or scenery. Leave ample transparent margin around all hair, scabbard, clothes. Nothing crosses a cell border or gets cropped. Fully transparent alpha0empty background, no gray haze, no sparkles/no stray paint.\n\nSTYLE AND PROPORTIONS mandatory: same very large head, small compact torso, short rounded arms/legs as attachment1, approximately2.3heads tall. Clean dark charcoal contours, crisp limited2-3tone anime celshading, broad simple white hair clumps with soft-lavender shadowplanes, bright flat ivory cloth, no realistic rendering/no3Dshine/no wispy watercolor/no desaturated haze. All16cels identical scale and anatomy/costume.\n\nPOSE: facing camera FRONT. Anatomical RIGHT hand is SCREEN LEFT, gripping the katana hilt; anatomical LEFT hand SCREEN RIGHT grips the black scabbard. Slim long STRAIGHT katana is mostly sheathed, held diagonally across waist down toward SCREEN RIGHT as the FRONT guide. Hands remain on sameobjects, connected naturally via short normal elbows to shoulders; no arm crossing/wrist twist/dislocation. Fixed planted feet. A subtle smooth16frame idle loop: f0neutral, f1-4gentle inhale1-2pixel chestlift, f5-8gentle hair/coat ends trail, f9-12exhale, f13-15return nearf0. Tiny head/chest breathing and hair/coat sway only, no weapon draw/attack or giant body shifting. Everyframe must look like same character from guide and all bodyparts freshly coherently illustrated, never pasted limb cutouts. Preserve identity and ready stance from attachment1, while preserving the16cel layout structure of attachment2.",
+        "referenced_image_paths": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/style-v10/design-pair.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/main/0-swordsman/front/idle-sheet.png"
+        ],
+        "transparent_background": true,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-ee89aeef-645c-40f4-842a-07402be28f35.png",
+        "raw_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/style-v10/front-idle-source.png",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "38cefc4bb8a12f9636919d9152d316f820e6502ed29e284c5f8f17d572006fc2",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      {
+        "id": "front-attack",
+        "prompt": "Edit attachment1 (the existing FRONT attack animation) by re-drawing EVERY complete cel to EXACTLY match the compact SD proportions, crisp lines, costume and palette of attachment2 (approved NEW FRONT idle spritesheet). Attachment3 designguide also shows the character on its LEFT: large head, short little body and arms/legs, approximately2.3heads tall. Attachment1 is ONLY motion sequencingreference; do NOT retain its longbody/longlimbs/softwashedout rendering or floating gray remnants. This is actual runtime16frame attackart so framesmust flow naturally. ONEcharacter eachcell, FRONTfacing.\n\nOUTPUT exactly4columns x4rows 16completeFULLBODYcels rowmajor on squaretransparentPNG. Target1536square, each384cell; actualequalquarters if differentnativeoutputresolution. In eachcell bodycenter at50%cellwidth, crown at25%cellheight and plantedfootbaseline90%cellheight, compact body65%cellheight. Stable body scale/proportions/costume allframes. Allow subtle knees/hip/torso motion of a fewpixels but fixed plantedfeet. Leave wide transparent margins for full sword+effect in everycell; shorten framing scale UNIFORMLY ifnecessary rather thanclip. No borders/gridlines/numbers/labels/shadows/haze/scenery/straypaint. Trulytransparentalpha0outside characterandFX.\n\nIDENTITY: exact newidleattachment2 white-long-hair/red-eyescharacter, bigroundhead, short compact torso androundedshortlimbs, blackcharcoal shorttunic with redpiping, ivorycape/coattails with burgundy lining, silverstarclasps, brownshortboots/belt/gloves, black straight scabbard/redtassel. Crispdarkcontours, clean2-3tonecelshading, broadhairclumps andlavendershadowplanes. No costumechange/colorwashout/realistic3Dshine.\n\nHand roles ALL16: anatomical RIGHTswordhand = SCREEN LEFT side ofbody, anatomical LEFTscabbardhand = SCREENRIGHT atwaist; never swap hands. Leftkeepsscabbard fixed atleft hip(screenright); rightdraws ONElongslim STRAIGHTsilverkatana with darkhilt. Arms naturally fullyconnected atshoulder/elbow/wrist. Anatomicalshortupperarm+shortforearm consistentwithnewidle, doNOTforceoldabsolutehandcoordinates. Natural elbows, no backwards/hyperextended joints, no isolatedrotatedcutoutarm, no wristspinning/flipping, no sudden griphandswap. Keep firmneutralwrist-to-hilt relationship; movement comes from shoulder+natural elbowextension andsoft torso turn.\n\nMotion timeline 0indexed readingrows:\nF0 same readyidle asattachment2, sheathedkatana diagonalacrosswaist towards screenright.\nF1-2 slightweightload/chestwindup, rightgrip beginsdraw.\nF3-4 drawfree andlowerpoint towards ground SCREENLEFT; rightelbow startsunfolding smoothly, wriststable.\nF5 sword extends lowleft, small crimsontrail BELOWblade.\nF6 sword roughlyscreenleft horizontal, rightarm nearlyextended, torso leans/slightlyrotates with it; broad boldblack-red sweeptrail BELOWblade.\nF7 sword/armrise leftupdiagonal ~20degrees, rightelbow almoststraight but NOTlocked, shoulderdoinglift; bigdark-crimsoncrescent remainsBELOWblade.\nF8 furtherupsweep leftupdiagonal ~35degrees, upperbodyfollows, no elbowcollapse; strongestblackredcrescent belowblade trailing down.\nF9 nearpeak35-45degreesup-left slightshoulderfollowthrough, almostextendedarm; dwindlingredtrail belowblade.\nF10 highholdsamealmostextendedarm, noFX.\nF11 shoulderlowers towardlefthorizontal, elbowstillalmostextended, noFX.\nF12 smoothreturn armdownleft thenfoldnaturally; noFX.\nF13 rightgrip approaches scabbardmouth atwaist, elbowsnaturallyfolded, noFX.\nF14 nearlysheathed ready, noFX.\nF15 samepose asF0 andattachment2idle, noFX.\n\nHair/cape/coattails respond to smallbodyturn withdelayedfollowthrough, no dramaticteleport. EnergyONLYframes5..9: largeclean taperedblack-red/wineredcore with brightcrimsonrim clearlyvisible, following LOW-to-HIGHswing and entirely BELOWmovingstraightblade, not abovehead, not spiral, no particles. Preserve this exact16phase progression and completeanatomy. New SDguidebody proportions have priorityoveroldfullbodyproportions.",
+        "referenced_image_paths": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/front/attack-body-fx-v9-source-sheet.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/style-v10/front-idle-source.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/style-v10/design-pair.png"
+        ],
+        "transparent_background": true,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-a0457371-1b21-4841-9d6b-4b581223b32b.png",
+        "raw_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/style-v10/front-attack-source.png",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "f1b00dc1f1210e4c86eb0ce3e8992a8290b8ed0aacbf0e58b1fdfcfdac4774b5",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      {
+        "id": "front-profile",
+        "prompt": "Edit attachment1 (the existing square game deployment portrait), replacing the character with the white-haired red-eyed SD swordsman from attachment2 and attachment3. Attachment2 is the new approved character design; attachment3 is the actual FRONT idle spritesheet. Match EXACT faceidentity/proportions from those: large round compact chibihead, big red anime eyes, short roundedface, very long white hair with same fringe, broad hairclumps with pale lavender shadows. NO elongated mature realisticface. Same black short highcollar tunic with redpiping, ivory cape and silverstarclasps. Calm determinedexpression.\nONE clean square HEAD-AND-SHOULDERS cardportrait, facecentered slightlythreequarter, fullheadfillsframe withouttopclipping; include shoulderandtopchest only. Match attachment1 card presentation: flat opaque cool palegraybackground, noUIborder, noframe, noletters/numbers, noornament. Strong crisp darkcontours and clean2-3toneanimecelshading exactlylike new sprite, no3Dsoftshine, noairbrushedrealisticrendering. Readable at128x128. No weapon/handscoveringface, nofullbody. Preserve the whitehair/red eyes/costume from newdesign and sprite; do not import brown hair/blueeyes from existingcard.",
+        "referenced_image_paths": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/main/0-swordsman/skill/profile/deployment-square.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/style-v10/design-pair.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/style-v10/front-idle-source.png"
+        ],
+        "transparent_background": false,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-a737e998-8131-4572-b6cb-37df255b5a4c.png",
+        "raw_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/style-v10/deployment-square-source.png",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "3fa2cc2f6661c728b340f7fce2450fcfec78e3ae5cbc8a8b662ae0b17e3888c5",
+        "alpha_extrema": [
+          255,
+          255
+        ],
+        "candidate_path": "C:\\study\\2-2\\2dGameProgramming\\2DGameProgramming\\.build\\whitehair-katana-style-v10\\deployment-square-candidate.png"
+      }
+    ],
+    "notes": [
+      "Sources copied unchanged from ImageGen. No production assets or game code overwritten by this generation task.",
+      "Attack source character body was generated larger than idle source; packager should compare normalized body heights and foot anchors before production integration.",
+      "Profile candidate is whole-image Lanczos resize only."
+    ]
+  },
+  "source_sha256": {
+    "game/asset/character/player/icon/source/whitehair/katana/style-v10/design-pair.png": "15747d76af46c77e463a74793ed6bb4a588ac0d08e5158dcbdf8a55faffc5fa7",
+    "game/asset/character/player/icon/source/whitehair/katana/style-v10/front-idle-source.png": "38cefc4bb8a12f9636919d9152d316f820e6502ed29e284c5f8f17d572006fc2",
+    "game/asset/character/player/icon/source/whitehair/katana/style-v10/front-attack-source.png": "f1b00dc1f1210e4c86eb0ce3e8992a8290b8ed0aacbf0e58b1fdfcfdac4774b5",
+    "game/asset/character/player/icon/source/whitehair/katana/style-v10/side-idle-source.png": "378056ae9a1566ade18667f82a6121c7a65e7bb281831ceea76588763cec9155",
+    "game/asset/character/player/icon/source/whitehair/katana/style-v10/side-attack-draft.png": "577fd244b67086b557d53084a83b53a9382dd4a13f0eec53a995b8cdca9c398b",
+    "game/asset/character/player/icon/source/whitehair/katana/style-v10/side-attack-source.png": "691acd1338440174623d3ac98dc0b1e3848b4590e8b6c8387cc94b978e1744e0",
+    "game/asset/character/player/icon/source/whitehair/katana/style-v10/deployment-square-source.png": "3fa2cc2f6661c728b340f7fce2450fcfec78e3ae5cbc8a8b662ae0b17e3888c5"
+  },
+  "authoring_tool": "tools/package_whitehair_katana_style.mjs",
+  "registration": "metadata/character/whitehair-katana-style-v10-registration.json",
+  "registration_policy": "One fixed isotropic scale per direction and motion across all16frames, normalizing mean standing height160; per-frame boot translation only. No limb cutouts, independent body-part scaling, framewise size changes or mesh deformation.",
+  "back_view": "Existing explicit front fallback remains; no new back view authored in this style edit.",
+  "notes": [
+    "Generated Idle/Attack cels retain modest differences in hair silhouette and face lines; pixel-identical neutral poses are not claimed.",
+    "Earlier art versions and other characters are preserved."
+  ],
+  "backup": ".build/backups/whitehair-katana-before-style-v10-20261117T013158Z",
+  "old_idle_reference_backup": ".build/backups/whitehair-katana-before-style-v10-20261117T013158Z/game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+  "runtime_registered": true,
+  "runtime_profile": "9-whitehair",
+  "validation": "metadata/character/whitehair-katana-style-v10-validation.json",
+  "previews": {
+    "whitehair-katana-style-v10.png": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-style-v10.png",
+      "sha256": "cd1d262923bcd79ec409089b83e4ade127f29f9f9020a8b7885e1afb7bda36d5"
+    },
+    "whitehair-katana-style-v10.gif": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-style-v10.gif",
+      "sha256": "90c88ce6f48862c256cd9f1a9e65985988d5f345d025351dea2e2747b821bc59"
+    },
+    "whitehair-katana-style-v10-comparison.png": {
+      "file": "game/asset/character/player/icon/preview/whitehair-katana-style-v10-comparison.png",
+      "sha256": "7237287af63ba673a56610bbb1d1272b63251e81a30c291e6693abc411177693"
+    }
+  },
+  "production_sha256": {
+    "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png": "98c3eb28a670aada65306ddb29a44a163a792adc29adf75eaa8d1b3602270d2c",
+    "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png": "aa7d584f815d0d759db0d31efce5b419ba66bb7c4ce0bc194ded86bbf845f85f",
+    "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png": "69ed3e139d02daf51244791cbc87074f7ce873f9cbea86b4b95b3430633e447f",
+    "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png": "b4935ea7d9eb27103c133f1004fd5b56855ca9861dcfe6e8c8fd2aeb02ebd0cb",
+    "game/asset/character/player/main/9-whitehair/skill/profile/deployment-square.png": "e5cc1408ff6b49269a372206b02897782969c032cfc9a0f3ce647016475f61d5"
+  }
+}

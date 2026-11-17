@@ -1,0 +1,1053 @@
+{
+  "id": "whitehair-katana-complete-v12",
+  "version": 12,
+  "status": "complete_applied",
+  "request": "Use gpt-image-restore to correct color artifacts and finish the missing drawings.",
+  "scope": "Missing rear idle and attack of the currently developed whitehair katana character; all older active characters already have three directions.",
+  "mode": "built-in image_gen for complete new rear cels; explicitly requested gpt-image-restore CLI for conservative RGB restoration",
+  "idle": {
+    "tool": "built-in image_gen",
+    "intent": "generate",
+    "prompt": "Use case: identity-preserve game animation. Draw the missing REAR / BACK VIEW idle sprites of this exact white-haired katana character, a complete 4 columns by 4 rows sprite sheet, exactly 16 full-body consecutive animation cels on actual transparent background. Reference 1 front idle and reference 2 side idle are the STRICT authoritative current chibi proportions, clothing, hair colors and clean outline style. Reference 3 is ONLY rear hair and coat arrangement reference, add her katana equipment consistently with refs1/2. Do not turn or show a face: all16 cels face away from viewer, north/up. Same very large rounded head, compact short torso, short legs and brown boots; top of hair to soles about 2.6 heads. Her long loose ivory-white hair with subtle lavender shadow flows down the back and hides most of the upper torso, ivory split coat with burgundy lining and small pale embroidered lower motifs, black/red clothes, brown gloves and boots. Anatomical RIGHT hand holds the straight katana grip across the front of her waist; rear view therefore right hand is on SCREEN RIGHT, LEFT hand holds the scabbard at the left hip (SCREEN LEFT); black straight scabbard projects down-left, red tassel on left hip. Keep natural two connected arms, correct elbows, fixed wrists, no chopped joints. Hands in front of body are naturally partly occluded by torso and hair from behind, no x-ray outlines. Sword remains sheathed / barely drawn as in the neutral references. Feet stationary, subtle cyclical breathing and slight lagging hair tips and coat motion over16frames, first and last poses nearly match. No leaning body size change, no turning, no large movement, no attack FX. Fixed orthographic game view, identical body height and head width throughout. Each full character centered in its equal cell, soles at same baseline, ample margin all four sides, clean empty gutters, no touching or overlapping other cells. Sharp coherent colored illustration matching the references. No text, no numbers, no background, no ground shadow, no grid lines, no colored speckle, no white halos. Draw complete connected figures, do not assemble limb cutouts.",
+    "source": "game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-idle-source.png",
+    "references": [
+      ".build/whitehair-katana-proportions-v11/front-idle-reference.png",
+      ".build/whitehair-katana-proportions-v11/side-idle-reference.png",
+      "game/asset/character/player/icon/source/whitehair/back/idle.png"
+    ]
+  },
+  "attack": {
+    "mode": "built-in image_gen edit",
+    "iteration": 1,
+    "purpose": "Complete missing BACK attack16F for existing white-haired katana character without modifying FRONT/SIDE production.",
+    "canonical_design": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-idle-source.png",
+    "prompt": "Create the missing REAR/BACK attack spritesheet for EXACTLY the rear character in ATTACHMENT1 (BACK IDLE). Attachment1 is the sole authority for BACK model anatomy, hair silhouette, head width and height, body proportions, boots, garment lengths and colors. Attachments2+3 show the approved frontal and side attack timing and sword/FX action ONLY; do NOT use their viewing angles, do NOT reveal the face. This is one character viewed directly FROM BEHIND, facing NORTH/away from viewer, in ALL16FRAMES. No three-quarter turn and no face/eye visible in any frame.\n\nOUTPUT square transparent PNG, exactly4columns x4rows,16complete fullbody animation cels, row-major order. Each cell equal. Target1280square /320cells, or equalquarter proportions at native size. Uniform scale across16cels. Put each body's center at50%cellwidth, crown at30%cellheight and feet at90%cellheight (crown-to-foot height60%cell); preserve EXACT head/body/boots ratios of attachment1 when reducing to this frame layout. Generous padding around entire character/sword/FX. No cell border crossings, clipping or cropped swordtips. First2 and last2 frames are the same rear ready stance as BACKIDLE, with its SAME skullwidth, longhair volume, waist level, coat lengths, leg lengths and boot size; do not inflate or squat the character in attack. Fixed feet anchor. NO text, numbers, gridlines, frameborder, scenery, floorshadow, grayhaze, straypixels or decorative background. Outside actual character and activebladeFX is truly alpha0 transparent.\n\nRear identity: long flowing white hair with broad lavender-shadowed clumps covering most of upperback, exact hairtip shape and width from attachment1, ivory coat with split back panels and faintleafdecoration, darkburgundy lining, short brownboots, dark trousers. Hair can lag gently with torso motion but NEVER grow wider/taller. Crisp dark contours and clean anime 2-3tone shading matching attachment1 and current front/side. Maintain exact proportions, not tallerbody/biggerhead/chunkyboots. Draw the COMPLETE CONNECTED body in every cel, even hidden regions must have logical anatomy; no independent cutoutlimbs or visible pastedseams.\n\nHandedness when seen FROM BEHIND: PHYSICAL RIGHT HAND is SCREEN RIGHT and ALWAYS wields the ONE long slim STRAIGHTsilver katana with darkhilt. PHYSICAL LEFT hand is SCREEN LEFT and ALWAYS supports black scabbard at LEFT hip (SCREENLEFT). Scabbard extends down-left diagonally and has redtassel. Never swap hands or put scabbard on screenright. Ready/draw hands are naturally on far side of torso, partly occluded by body and longhair. As rightarm extends to SCREENRIGHT beyond bodysilhouette, show connected right sleeve, elbow, glove and sword normally. Do NOT draw arm/sword on top of rearhair as though piercing it. No blade crosses through head/hair; its swing stays outside RIGHT silhouette. Correctly layered body/longhair/near shoulder, occluded forearm where appropriate. All joints remain anatomically natural, no reverse elbow, no broken wrist, no hand flipping, no independent wristtwist. Neutralfirmgrip; motion comes from elbowextension and then shoulder.\n\nExact16 phases, index0-15 rowmajor:\n0-1: SAME BACK IDLE ready silhouette, right hand at hidden hilt in front of waist, left scabbard downleft. NoFX.\n2: subtle torso/hip weightload and preparation, feetfixed. NoFX.\n3-4: right hand draws the straightblade outward towardSCREENRIGHT and DOWN; starts partly hidden then emerges outside rightbodyedge. Bladepointsdown-right. Left hand/scabbard stayatlefthip. NoFX.\n5: sword clearly down-right, rightarm unfolds naturally; slight torsoforward weight. NoFX.\n6: blade/forearm approach horizontal towardSCREENRIGHT, rightelbow nearlystraight but notlocked; compact black-red trailingarc starts BELOWblade and outside rightbodyedge.\n7: nearstraight arm lifted by rightshoulder, blade20degrees up-right; bigger obvious wine-red/crimson crescent belowblade.\n8: continue low-to-high upsweep toward35degrees up-right; biggestclean darkcrimsoncrescent with brightredthinrim BELOWblade, outside hair and body.\n9: shoulder followthrough45degrees up-right, elbow remains nearstraight, no wristspin; FXtrailsbelow.\n10: nearpeak slighthold, shoulder/torso followthrough, smaller crimsontrailingarcbelow.\n11: shoulder lowers nearstraight arm towardhorizontal right; smallFXfadingbelow.\n12: arm drops down-right then elbow begins folding naturally; noFX.\n13: hand returns smoothly toward scabbardmouth in front of waist (partly naturally occluded by torso/hair); noFX.\n14-15: same BACK IDLE ready silhouette and proportions as0-1, sword sheathed, scabbarddownleft; noFX.\n\nOnly frames6-11 have clearly visible dark wine/BLACK-RED sword crescent with saturated crimsonedge, always BELOWblade, no fullcircle aura, no droplets, no particles, no FX aroundhead, and allinsidecell. Small coordinated torso/knee/coat/hair motion, stable bodyshape and bootsize, do not just rotate a detached arm. Match complete approved sword motion timing while staying FULL REAR VIEW. Again attachment1 BACKIDLE anatomy and colors are absolute.",
+    "referenced_image_paths": [
+      "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-idle-source.png",
+      "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+      "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png"
+    ],
+    "transparent_background": true,
+    "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-b0c93b68-ccaa-4aab-aacb-c2f72b0217c9.png",
+    "raw_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-attack-source.png",
+    "status": "Raw candidate; awaits shared body scaling, restoration, anatomy and motion review before production.",
+    "visual_review": [
+      "16 complete back-facing cels; no face shown.",
+      "Right hand/sword stays SCREEN RIGHT, left scabbard stays SCREEN LEFT.",
+      "Low-to-high right-arm extension and shoulder followthrough visible; blade/FX outside hair silhouette.",
+      "Dark red crescent visibly limited to6..11. Frame0/1/14/15 are neutral rear stance.",
+      "Raw idle and attack use different image framing scales; preserve body ratios during packing."
+    ],
+    "size": [
+      1254,
+      1254
+    ],
+    "mode_channels": "RGBA",
+    "sha256": "8f7c0035763f8ffefcc9bf39c5ba18670083172bc46ebeccd4b7d2ebf2a9ab99",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "revisions": [
+      {
+        "iteration": 2,
+        "purpose": "Match boots and foot spacing to canonical BACK idle; normalized target combinedbootspan44px at160pxbodyheight rather than firstdraft49-50px.",
+        "mode": "built-in image_gen edit",
+        "prompt": "Edit ONLY the BOOT/FOOT proportions in attachment1, the16frame REAR ATTACK spritesheet. The result must remain the SAME sixteen attack poses, same positions, same 4x4 grid, same camera rear-facing, same whitehair/head/body/coat silhouette, same right arm/sword movement, same left scabbard, same red FX in frames6-11. Do not redesign or redraw the head/face/hair into different proportions. Do not alter scale or framing. Attachment2 is the canonical BACK IDLE model: boots and footspacing of every ATTACK cel must now match this model exactly.\n\nThe specific defect: after matching crown-to-sole bodyheight160pixels, current attack left-to-right bootspan is49–50pixels, but idle bootspan is44pixels. ATTACK boots are11–14%too wide and too far apart. Correct each COMPLETE rear ATTACK cel so the combined OUTERWIDTH of both boots and their spacing is44/160 =27.5% of crown-to-sole bodyheight. Current isabout31%; reduce this bootregion overall WIDTH by about11%, while keeping bodyheight, solebaseline, bootHEIGHT and legLENGTH identical. Feet remain centered beneath the same hips, planted. Slightly narrower bootshafts/toes and slightly narrower stance together, symmetricaroundbodycenter. Match attachment2's bootshapes, bulk, stance and anatomical proportions. Boots should NOT become shorter or tiny needles; retain exact normal bootdesign and textures, naturally attached to legs under the coat. Do not shrink head/hair/shoulders/coat/sword/arms. No detached pasted limb pieces, no seams. Reillustrate coherently with connected legs and existing natural clothing overlaps. Use the existing dark brown boots and darkpants; preserve palette and shadinglevel.\n\nMandatory invariants: all16cels fullBACK view facingaway/no face; right hand SCREENRIGHT holds STRAIGHTsilverkatana; scabbard staysSCREENLEFT/downleft. The same LOW-to-HIGH swing with nearlystraightarm carried byshoulder, no wristflip, no hyperextendedelbow, not throughhair. Identical action and black-redcrescent timing as attachment1. Same smallbody/hair/coat sway. First2/last2 frames equalneutral ready pose. No newFX, no newelements.\n\nOutput same square transparentPNG4x4 with16completecels, no labels or gridlines, no background/shadow/haze, alpha0 emptyspace, all cels inside their original cells. Preserve already-correct upperbody and motion. This is a precise lower-body proportion correction only; target matching attachment2 bootwidth rather than altering overall character.",
+        "referenced_image_paths": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-attack-first-draft-source.png",
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-idle-source.png"
+        ],
+        "transparent_background": true,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-30485e2e-31e6-444f-a977-b7bb45da16ac.png",
+        "raw_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-attack-boots-corrected-source.png",
+        "candidate": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-attack-source.png",
+        "prior_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-attack-first-draft-source.png",
+        "status": "Candidate pending packaging and anatomy remeasurement; no production modifications.",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "1fc4ce61a93bcc5e78bb02cc0f51c47c4e78e18e4f3519d71f70e180f7616558",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      },
+      {
+        "iteration": 3,
+        "purpose": "Minimal single-reference edit from first draft. Preserve upperbody/hair/model; each boot ~5% narrower plus subtle inward spacing, overall combined width ~9-10% smaller.",
+        "mode": "built-in image_gen edit",
+        "prompt": "Minimal precise edit to the supplied sixteen-frame BACK attack spritesheet. KEEP the original artwork and every pixel placement outside the lower legs/boots as close to unchanged as possible: exact existing head and hair size, exact upperbody width, exact coat, exact silhouette, exact rightarm/sword motion, exact FX, exact canvas4x4layout and character framing. Do not redraw or enlarge the head. Do not change bodyheight or bootheight.\n\nThe ONLY requested adjustment in each of the16 cells: the two brown boots look a little too bulky and the stance is slightly wide. Make each boot approximately5% narrower, and bring the left/right boots slightly closer together, so the overall combined OUTERSPAN of both boots decreases about9–10% total. Relative measurement if characterheight is normalized160pixels: totalbootspan currently49pixels, desired44pixels. The boots must not become tiny: not39px, not20%reduction. Keep SAME boot HEIGHT, soles yposition, darkbrown color, detail and leglength; only a subtle width/spacing refinement. Move each boot slightly inward symmetrically, keep feet planted, retain coherent natural leg connections behind existing coat. Every frame has same footplacement/dimensions appropriate to its currentpose.\n\nPreserve every other part exactly, including the same hair volume/crown-to-foot proportion, no broader or rounder head, no shorterleg, no posechanges, no camera changes. Backview facesaway throughout. The handroles remain identical. Return identical square4x4 transparent spritesheet; no border/text/shadow/background. Do not reinterpret this character or its style. This is a tiny corrective feet edit only.",
+        "referenced_image_paths": [
+          "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-attack-first-draft-source.png"
+        ],
+        "transparent_background": true,
+        "generated_path": "C:/Users/zx304/.codex/generated_images/01a1e713-54ea-78f3-b09f-bc69e500cc1c/exec-3ac58b83-77cb-490d-918f-64ff1e6d36f4.png",
+        "raw_source": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-attack-boots-minimal-source.png",
+        "candidate": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-attack-source.png",
+        "status": "Candidate pending shared packaging and anatomy review; no production modifications.",
+        "size": [
+          1254,
+          1254
+        ],
+        "sha256": "590eefef3c6f21f3864a3558ac94d2cfb2b155d4e8ffe975543b953a374805ba",
+        "alpha_extrema": [
+          0,
+          255
+        ]
+      }
+    ],
+    "current_candidate": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-attack-source.png",
+    "current_source_sha256": "590eefef3c6f21f3864a3558ac94d2cfb2b155d4e8ffe975543b953a374805ba",
+    "first_draft_preserved": "C:/study/2-2/2dGameProgramming/2DGameProgramming/game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-attack-first-draft-source.png",
+    "review": {
+      "reviewer": "katana_anatomy_review",
+      "result": "candidate proportions passed after third generation; pending restored production playback",
+      "frame0": {
+        "attack_upper_skull_width": 76,
+        "idle_upper_skull_width": 74,
+        "attack_boot_span": 45,
+        "idle_boot_span": 44
+      },
+      "frame15": {
+        "attack_upper_skull_width": 79,
+        "idle_upper_skull_width": 74,
+        "attack_boot_span": 42,
+        "idle_boot_span": 44
+      },
+      "notes": [
+        "Idle skull varies74..81px, candidate lies within this range.",
+        "No wholebody expansion at state transition.",
+        "Right swordhand, left scabbard, upward motion and connectedarm maintained."
+      ]
+    }
+  },
+  "restoration": "metadata/character/whitehair-katana-complete-v12-restoration.json",
+  "drawing_audit": {
+    "runtime_profiles": [
+      "0-swordsman",
+      "1-guardian",
+      "2-archer",
+      "3-crossbowman",
+      "4-cleric",
+      "5-herbalist",
+      "6-frost-mage",
+      "7-shadow-thief",
+      "9-whitehair"
+    ],
+    "runtime_count": 9,
+    "missing_authored_drawings": [
+      {
+        "profile": "9-whitehair",
+        "state": "idle",
+        "direction": "back",
+        "type": "no_authored_direction",
+        "alias": "front"
+      },
+      {
+        "profile": "9-whitehair",
+        "state": "attack",
+        "direction": "back",
+        "type": "no_authored_direction",
+        "alias": "front"
+      }
+    ],
+    "characters": [
+      {
+        "profile": "0-swordsman",
+        "idle_metadata": "metadata/character/idle/swordsman.json",
+        "sprite_metadata": "metadata/character/sprites/swordsman.json",
+        "aliases": {},
+        "motions": {
+          "idle": {
+            "front": {
+              "file": "game/asset/character/player/main/0-swordsman/front/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "76b595716cb2071f7cbbc9fd47bde71d00d47fa6cfa96dfa2e4ea6144282d9cb",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "back": {
+              "file": "game/asset/character/player/main/0-swordsman/back/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "bc933d30e74895342804b17cbc7b5f8a63de3b1181a9195e0bcbc3c5a1127a27",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "right": {
+              "file": "game/asset/character/player/main/0-swordsman/side/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "f385a73be5abf1026d2e7ae9f7b1e1b7375647e13b9df58b811faf567855b2b4",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          },
+          "attack": {
+            "front": {
+              "file": "game/asset/character/player/main/0-swordsman/front/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "9015039e76ff2d421853f3238ba2f5fea91911450f62a22b92a8bdf21b8e9b5b",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "back": {
+              "file": "game/asset/character/player/main/0-swordsman/back/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "befb3f12ba30fdcfc804fadb6372f79d120bb6d093332f0b09be062e3380e069",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "right": {
+              "file": "game/asset/character/player/main/0-swordsman/side/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "86684eaf78d2a730f7706cfdb9b008ee63a9ddb704ccbe3a511cdae5c1f96557",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          }
+        }
+      },
+      {
+        "profile": "1-guardian",
+        "idle_metadata": "metadata/character/idle/guardian.json",
+        "sprite_metadata": "metadata/character/sprites/guardian.json",
+        "aliases": {},
+        "motions": {
+          "idle": {
+            "front": {
+              "file": "game/asset/character/player/main/1-guardian/front/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "35e4930cb2472b4ea24e52778c6a00dd5bcbf6fd9b5003a904b57a291241503a",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "back": {
+              "file": "game/asset/character/player/main/1-guardian/back/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "7e1152f61557f7277d61798ed49a2ab7c535f04fe72a770d6b937fa17a0004bd",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "right": {
+              "file": "game/asset/character/player/main/1-guardian/side/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "650fa9eed12a51296301f514917f1bb1c6e895a1c9e36f3a4302342a0b9ffaa0",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          },
+          "attack": {
+            "front": {
+              "file": "game/asset/character/player/main/1-guardian/front/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "86d2e6e7b6f73d5e28566b64a4062e769b0d27a2707540c4b9809fe6c64b10d2",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "back": {
+              "file": "game/asset/character/player/main/1-guardian/back/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "cf04e2cfe1a2b6bb64f238c89ec6d866684722bb778e72ebf036de5c328eb40f",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "right": {
+              "file": "game/asset/character/player/main/1-guardian/side/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "23f53f70e4e44333b85cabc381a1c26898f8dbb201e34cc9a9807f8e1d996ddb",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          }
+        }
+      },
+      {
+        "profile": "2-archer",
+        "idle_metadata": "metadata/character/idle/archer.json",
+        "sprite_metadata": "metadata/character/sprites/archer.json",
+        "aliases": {},
+        "motions": {
+          "idle": {
+            "front": {
+              "file": "game/asset/character/player/main/2-archer/front/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "6bfbb4f3779856e8b557bc5dbd8653cd832408a2b0abc5c0f3ac657879928df1",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "back": {
+              "file": "game/asset/character/player/main/2-archer/back/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "c4dc58d71bb0c332d8b4f116e4fc84ad9e6c28e56beb3ba50b1c9319a1bd45be",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "right": {
+              "file": "game/asset/character/player/main/2-archer/side/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "6ab2b08c7712dc05b73d358ea27b8ebaed5b591069f729857fbe14fa6fc8e655",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          },
+          "attack": {
+            "front": {
+              "file": "game/asset/character/player/main/2-archer/front/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "85dec65a2de4ea831ee71feba0d2fd4ffbb480b2659fcd4e95b7f4fe40f819e0",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "back": {
+              "file": "game/asset/character/player/main/2-archer/back/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "1a85b6eeaeff7bbc810099b81fd8ba79e09306a8443944d0d24bbc20a1adf505",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "right": {
+              "file": "game/asset/character/player/main/2-archer/side/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "0647b56cac387d954f084541739e8a755a2d66a43c57fda57ca929df4e550369",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          }
+        }
+      },
+      {
+        "profile": "3-crossbowman",
+        "idle_metadata": "metadata/character/idle/crossbowman.json",
+        "sprite_metadata": "metadata/character/sprites/crossbowman.json",
+        "aliases": {},
+        "motions": {
+          "idle": {
+            "front": {
+              "file": "game/asset/character/player/main/3-crossbowman/front/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "9c68f9bf6ae91d752b3f1258b91edc1a8319af7949ca64f92219020d3a963e6c",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "back": {
+              "file": "game/asset/character/player/main/3-crossbowman/back/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "5d2ed0b46529c3ddd8433a65fd620fe922d86d22bd46d7012316eba9b37f2247",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "right": {
+              "file": "game/asset/character/player/main/3-crossbowman/side/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "dd171ec82f1c92b2d250006ca60bf16093c1795f06c2d94e8fdf1cbfc377d2d9",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          },
+          "attack": {
+            "front": {
+              "file": "game/asset/character/player/main/3-crossbowman/front/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "d8e5a5d93222c26741c8a9c480ec8555234c9f668bd1169b0dc72e366b76de89",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "back": {
+              "file": "game/asset/character/player/main/3-crossbowman/back/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "fa47db49002dbe9528a49f3ff049aa0820c58fa5f6d3134e532fed0cd6b8508d",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "right": {
+              "file": "game/asset/character/player/main/3-crossbowman/side/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "0108dedf652928c39d2fe58eb3e940192540fc4da66d1d5b857ae7a3efb16a63",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          }
+        }
+      },
+      {
+        "profile": "4-cleric",
+        "idle_metadata": "metadata/character/idle/cleric.json",
+        "sprite_metadata": "metadata/character/sprites/cleric.json",
+        "aliases": {},
+        "motions": {
+          "idle": {
+            "front": {
+              "file": "game/asset/character/player/main/4-cleric/front/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "0ff57504e40d459458603a64255c0258fc8e594ddf2661dced7f1a02bb9f86e0",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "back": {
+              "file": "game/asset/character/player/main/4-cleric/back/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "5c682749041ffa674e8cf6abcfc73853aaeea711fe5cf40cdc3e809b2553d4cb",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "right": {
+              "file": "game/asset/character/player/main/4-cleric/side/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "acf6982790be0d4716ee6b5ec6a5d9b7579efc6f3d0f0bd4d54b166adfac34ae",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          },
+          "attack": {
+            "front": {
+              "file": "game/asset/character/player/main/4-cleric/front/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 3,
+              "size": [
+                960,
+                320
+              ],
+              "sha256": "5f34ef10afb2b60e88cf003e364e5beb4a1f9bd00dd7fd974f4a3683e799bbef",
+              "grid_cells": 3,
+              "nonempty_cells": 3,
+              "unique_nonempty_cells": 3
+            },
+            "back": {
+              "file": "game/asset/character/player/main/4-cleric/back/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 3,
+              "size": [
+                960,
+                320
+              ],
+              "sha256": "090e6b82c9cd42b4d23675b4fc11d872f3e61eabe58c68e6d3a96eb7170c34c4",
+              "grid_cells": 3,
+              "nonempty_cells": 3,
+              "unique_nonempty_cells": 3
+            },
+            "right": {
+              "file": "game/asset/character/player/main/4-cleric/side/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 3,
+              "size": [
+                960,
+                320
+              ],
+              "sha256": "427288858dc3e67a9addf872803057bc8eb609dfb32a03c32e160f6123ec330c",
+              "grid_cells": 3,
+              "nonempty_cells": 3,
+              "unique_nonempty_cells": 3
+            }
+          }
+        }
+      },
+      {
+        "profile": "5-herbalist",
+        "idle_metadata": "metadata/character/idle/herbalist.json",
+        "sprite_metadata": "metadata/character/sprites/herbalist.json",
+        "aliases": {},
+        "motions": {
+          "idle": {
+            "front": {
+              "file": "game/asset/character/player/main/5-herbalist/front/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "38a470becda22f4d57058db4a9e7654e3bb0adb05834bf9157a4b40a7dedd5ad",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "back": {
+              "file": "game/asset/character/player/main/5-herbalist/back/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "375af76afd6e47ccae5e032395fa6844a3411376f3f2ca10e1382b52a8305693",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "right": {
+              "file": "game/asset/character/player/main/5-herbalist/side/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "f95f73a3937c75992f0e1715a25cd622f07846790b3d57d86db7179835320d96",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          },
+          "attack": {
+            "front": {
+              "file": "game/asset/character/player/main/5-herbalist/front/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 3,
+              "size": [
+                960,
+                320
+              ],
+              "sha256": "86b805ff47c025c6dfefbbe7a6cf6069c3d5c75b4bc2e31ae954ad30094b8472",
+              "grid_cells": 3,
+              "nonempty_cells": 3,
+              "unique_nonempty_cells": 3
+            },
+            "back": {
+              "file": "game/asset/character/player/main/5-herbalist/back/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 3,
+              "size": [
+                960,
+                320
+              ],
+              "sha256": "b679ffc81a2ae529584b02704e9230ef26a191ca329fb75127ebc9ecef652518",
+              "grid_cells": 3,
+              "nonempty_cells": 3,
+              "unique_nonempty_cells": 3
+            },
+            "right": {
+              "file": "game/asset/character/player/main/5-herbalist/side/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 3,
+              "size": [
+                960,
+                320
+              ],
+              "sha256": "6e31a2939920795a97b42607879742895862570d8c708ef6ef98f40b81f09959",
+              "grid_cells": 3,
+              "nonempty_cells": 3,
+              "unique_nonempty_cells": 3
+            }
+          }
+        }
+      },
+      {
+        "profile": "6-frost-mage",
+        "idle_metadata": "metadata/character/idle/frost-mage.json",
+        "sprite_metadata": "metadata/character/sprites/frost-mage.json",
+        "aliases": {},
+        "motions": {
+          "idle": {
+            "front": {
+              "file": "game/asset/character/player/main/6-frost-mage/front/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "8030317d0cace76033a1286fa73f3bcb685ce15c4cd6fe3e11636ba74b17114b",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "back": {
+              "file": "game/asset/character/player/main/6-frost-mage/back/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "356c42cecf69c9d126aef8210bdf58401bdf7330030d9284d03a45fdb8baf2df",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "right": {
+              "file": "game/asset/character/player/main/6-frost-mage/side/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "90df866a1d25428e2a5750e683bcdcce0870dfd453fc8162d2bdae34b3de979d",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          },
+          "attack": {
+            "front": {
+              "file": "game/asset/character/player/main/6-frost-mage/front/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 3,
+              "size": [
+                960,
+                320
+              ],
+              "sha256": "cc0c4f0c2b350c8775f41feeae4a11c1ebcf1cb8feb0e369e177434872b6ff83",
+              "grid_cells": 3,
+              "nonempty_cells": 3,
+              "unique_nonempty_cells": 3
+            },
+            "back": {
+              "file": "game/asset/character/player/main/6-frost-mage/back/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 3,
+              "size": [
+                960,
+                320
+              ],
+              "sha256": "20636f6af475c43d9819a9c2b9a3cfb716552c4fbb28432324f275c354bb7417",
+              "grid_cells": 3,
+              "nonempty_cells": 3,
+              "unique_nonempty_cells": 3
+            },
+            "right": {
+              "file": "game/asset/character/player/main/6-frost-mage/side/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 3,
+              "size": [
+                960,
+                320
+              ],
+              "sha256": "0fed87eeffb4fb962fe8f9e9daffbac005603e264d881a18fc7539d2a29f572c",
+              "grid_cells": 3,
+              "nonempty_cells": 3,
+              "unique_nonempty_cells": 3
+            }
+          }
+        }
+      },
+      {
+        "profile": "7-shadow-thief",
+        "idle_metadata": "metadata/character/idle/shadow-thief.json",
+        "sprite_metadata": "metadata/character/sprites/shadow-thief.json",
+        "aliases": {},
+        "motions": {
+          "idle": {
+            "front": {
+              "file": "game/asset/character/player/main/7-shadow-thief/front/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "4f340da3d457b2b4c1380f6b9a6041db9703803e1b143773f9687a469d436cb6",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "back": {
+              "file": "game/asset/character/player/main/7-shadow-thief/back/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "facba210c54c45d006daf3327d73c13829edc28785b979478dd14bfdfde64210",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "right": {
+              "file": "game/asset/character/player/main/7-shadow-thief/side/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "c0c7dd90a04fea5b5bea1a90610842465b50da7cf31df173bbb9fd5f9eae21d8",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          },
+          "attack": {
+            "front": {
+              "file": "game/asset/character/player/main/7-shadow-thief/front/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "8a3dcae1ad6d033bb3fe7e706f28f2a936cc6ccd89be16c01d234c456b3e977d",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 15
+            },
+            "back": {
+              "file": "game/asset/character/player/main/7-shadow-thief/back/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "ba075b1f3384933ee1c5683d09b2c0fcbb0eb5a1de7b972fb37108b5c30c567a",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 15
+            },
+            "right": {
+              "file": "game/asset/character/player/main/7-shadow-thief/side/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "d30360de3448782b96f0a90e6c6c4fbf82f2ee8221bbb325c14f20e6ae3109a1",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 15
+            }
+          }
+        }
+      },
+      {
+        "profile": "9-whitehair",
+        "idle_metadata": "metadata/character/idle/whitehair-katana.json",
+        "sprite_metadata": "metadata/character/sprites/whitehair.json",
+        "aliases": {
+          "right": "side",
+          "back": "front"
+        },
+        "motions": {
+          "idle": {
+            "front": {
+              "file": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "98c3eb28a670aada65306ddb29a44a163a792adc29adf75eaa8d1b3602270d2c",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "side": {
+              "file": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "aa7d584f815d0d759db0d31efce5b419ba66bb7c4ce0bc194ded86bbf845f85f",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          },
+          "attack": {
+            "front": {
+              "file": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "1b2cc8a15179ad0144515d820e1bbbc020e6badea3c4ebdd9aa14ccbfe74b703",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            },
+            "side": {
+              "file": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+              "exists": true,
+              "registered_frames": 16,
+              "size": [
+                1280,
+                1280
+              ],
+              "sha256": "a91865f15ad684c2fc2dad875d98d04e833e0c9f7537db4d7cf4730f0f4423d0",
+              "grid_cells": 16,
+              "nonempty_cells": 16,
+              "unique_nonempty_cells": 16
+            }
+          }
+        }
+      }
+    ],
+    "legacy_whitehair_references": {
+      "back_idle": {
+        "path": "game/asset/character/player/main/9-whitehair/back/idle-sheet.png",
+        "exists": true
+      },
+      "back_neutral": {
+        "path": "game/asset/character/player/icon/source/whitehair/back/idle.png",
+        "exists": true
+      },
+      "back_source": {
+        "path": "game/asset/character/player/icon/source/whitehair/back/idle-source.png",
+        "exists": true
+      },
+      "legacy_turnaround": {
+        "path": "game/asset/character/player/icon/source/whitehair/turnaround.png",
+        "exists": true
+      },
+      "legacy_design": {
+        "path": "game/asset/character/player/icon/source/whitehair/approved-design.png",
+        "exists": true
+      },
+      "legacy_layer_metadata": {
+        "path": "metadata/character/layers/whitehair.json",
+        "exists": true
+      }
+    },
+    "notes": [
+      "Only current whitehair katana lacks authored back idle and back attack. Existing8 runtime characters have actual front/back/side paths.",
+      "Legacy whitehair/back/idle-sheet.png is the earlier unarmed model, not the currentkatana outfit/proportions; use as rear hair/coat reference only.",
+      "Character8 ember-mage is a separate existing asset set outside the active9-person roster.",
+      "Cleric/herbalist/frost-mage have 3 registered attack frames in runtime metadata; a lower frame count is not an unpainted direction."
+    ],
+    "asset_only_ember_mage": [
+      {
+        "direction": "front",
+        "state": "idle",
+        "path": "game/asset/character/player/main/8-ember-mage/front/idle-sheet.png",
+        "exists": true,
+        "size": [
+          1280,
+          1280
+        ]
+      },
+      {
+        "direction": "front",
+        "state": "attack",
+        "path": "game/asset/character/player/main/8-ember-mage/front/attack-sheet.png",
+        "exists": true,
+        "size": [
+          1280,
+          1280
+        ]
+      },
+      {
+        "direction": "side",
+        "state": "idle",
+        "path": "game/asset/character/player/main/8-ember-mage/side/idle-sheet.png",
+        "exists": true,
+        "size": [
+          1280,
+          1280
+        ]
+      },
+      {
+        "direction": "side",
+        "state": "attack",
+        "path": "game/asset/character/player/main/8-ember-mage/side/attack-sheet.png",
+        "exists": true,
+        "size": [
+          1280,
+          1280
+        ]
+      },
+      {
+        "direction": "back",
+        "state": "idle",
+        "path": "game/asset/character/player/main/8-ember-mage/back/idle-sheet.png",
+        "exists": true,
+        "size": [
+          1280,
+          1280
+        ]
+      },
+      {
+        "direction": "back",
+        "state": "attack",
+        "path": "game/asset/character/player/main/8-ember-mage/back/attack-sheet.png",
+        "exists": true,
+        "size": [
+          1280,
+          1280
+        ]
+      }
+    ]
+  },
+  "backup": ".build/backups/whitehair-katana-before-complete-v12-20261117T023011Z",
+  "registered_geometry": "One fixed uniform scale per motion plus foot-pivot translation; no cutout limbs, per-frame scaling or alpha cleanup.",
+  "validation": "metadata/character/whitehair-katana-complete-v12-validation.json",
+  "selected_rear_sources": {
+    "idle": {
+      "file": "game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-idle-source.png",
+      "sha256": "b12cc69670bf3800108683fb3d2f6b0525f45cc6b5db825e7e553a5dd1601e45"
+    },
+    "attack": {
+      "file": "game/asset/character/player/icon/source/whitehair/katana/complete-v12/back-attack-source.png",
+      "sha256": "590eefef3c6f21f3864a3558ac94d2cfb2b155d4e8ffe975543b953a374805ba"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "whitehair-katana",
+  "mode": "built-in image_gen",
+  "purpose": "Repair flipped front middle-cut frame and add visible recovery intermediates before resheathing.",
+  "front": {
+    "source": "exec-182c0599-db00-4c84-903e-f6b90cf2faf7.png",
+    "layout": [
+      4,
+      1
+    ],
+    "replaces_frames": [
+      6,
+      9,
+      10,
+      11
+    ],
+    "prompt": "Create FOUR corrected animation keyframes of the EXACT FRONT character in the reference. A horizontal 4-column,1-row sprite strip, four equal cells, true transparent background, no words/labels/borders/effects. Use the same character as reference, not a redesign. Each full figure is the same size and fixed feet position with generous transparent space around the complete sword. Front-facing torso and face throughout. Long white hair, red eyes, ivory coat/cape, black uniform, brown boots and small ornaments exactly match reference. Clean smooth cel coloring. Exactly two anatomically correct short arms: the character's RIGHT arm is on screen LEFT and its glove ALWAYS grips the hilt; LEFT glove screen RIGHT holds the black scabbard at hip. Same STRAIGHT silver blade, approximately 35% of head-to-boot-height, at a CONSTANT length when fully out. Black empty scabbard remains at the left hip, extending down-right with red tassels. Do NOT switch hands. Maintain the same elbow lengths and body dimensions. No cropped sword tips, extra arm, motion ghosts or glows.\nThese four cells are specific intermediate poses, NOT a complete attack loop:\nCELL1: middle of a draw-cut; right arm extends naturally toward screen LEFT with softly bent elbow, hand at lower chest level; full straight sword points horizontally LEFT, slightly down by about5degrees. It is fully OUT of sheath. This bridges an upward-left sword pose and a downward-left sword pose. Black sheath stays held at hip on screen RIGHT. Blade must point LEFT from the right glove, never right across torso.\nCELL2: early recovery from downward-left cut; right glove stays just outside screen-LEFT hip, forearm rotates down, the full straight blade points STRAIGHT DOWN vertically beside the OUTSIDE of the character's screen-left leg. Sword does not cross boots or touch the body. This is a recovery pose, blade not in sheath.\nCELL3: next recovery pose; right elbow folds and right glove rises a little up and left of the belly; full straight blade rotates to point diagonally DOWN-RIGHT at about50degrees toward the black scabbard mouth. Sword tip is approaching but still OUTSIDE the sheath. Keep blade fully visible and same length. Left hand slightly angles the sheath mouth toward the approaching sword point.\nCELL4: final alignment before insertion; right hand is toward screen LEFT at chest height, left hand remains screen RIGHT at hip. Full blade points diagonally DOWN-RIGHT about25degrees, its TIP just meeting the scabbard mouth. Blade and scabbard share exactly the same straight axis, fully visible blade between hilt and sheath mouth. Right elbow bends naturally without becoming long. This is tip-alignment, not the ready pose with mostly hidden blade. Keep the sword visible all the way from right glove/hilt to left-hand scabbard mouth.\nMaintain exact approved character anatomy and design. Character head and body do not turn between cells. No stepping. Keep clean uniform colors, no noisy patches. Use these motion poses while preserving the attached character. These are FRONT view only. Fit all limbs and the entire straight sword with at least30px empty cell margins."
+  },
+  "side": {
+    "source": "exec-be55f94a-bc1f-4d9f-8ba3-afa045a1b1c5.png",
+    "layout": [
+      3,
+      1
+    ],
+    "replaces_frames": [
+      9,
+      10,
+      11
+    ],
+    "prompt": "Create THREE corrected recovery animation keyframes of the EXACT LEFT-FACING THREE-QUARTER character from the reference. Horizontal3-column,1-row sprite strip, three equal cells, true transparent background. No labels, no borders, no effects. Keep exact approved white-haired red-eyed chibi swordsman, same proportions, clean ivory/burgundy/charcoal/brown outfit and same anatomy. Face/body remain THREE-QUARTER FACING SCREEN LEFT in all cells. Same boots planted at the same coordinates, same head/body size. Entire long sword stays inside each cell with generous empty margins. Exactly2 arms, normal short arm proportions. Preserve hand assignment: anatomical RIGHT glove holds sword HILT; anatomical LEFT glove holds BLACK SCABBARD mouth at hip with red tassel. Never swap hands or replace either arm with a second one. Same straight slender silver blade and straight black scabbard; sword NEVER bends or changes length. Full sword length is approximately35% head-to-boot character height, constant in all cells.\nThese three cells are ONLY successive RECOVERY intermediates after a forward down-left slash. Not a complete attack cycle.\nCELL1: after the down-left cut, right arm stays extended slightly forward toward screen LEFT, right glove at hip height in front of left-facing torso. The FULL silver sword now points VERTICALLY DOWN from this hilt, safely ahead of/outside the legs, without touching the boots. Left hand still holds the empty black sheath at hip, pointing down-right/back.\nCELL2: right elbow bends naturally and right hand rises toward lower chest at screen LEFT of body. The FULL silver blade rotates to point diagonally DOWN-RIGHT about50degrees, with its tip moving toward the left-hand scabbard mouth. The sword is not inserted yet. Do not flip it instantly; this diagonal is between vertical down and the following almost-horizontal-right pose. Left hand slightly rotates sheath opening to meet the tip.\nCELL3: right hand slightly farther screen LEFT and above hip, left hand at the hip. FULL silver blade points diagonally DOWN-RIGHT about25degrees toward the scabbard mouth; the TIP JUST MEETS the opening held by left glove. Blade and sheath are perfectly collinear. Show entire visible blade from right glove's hilt to the left-hand sheath mouth; this is tip alignment, NOT the final mostly-sheathed ready pose. Natural shoulder/elbow/wrist chain, no long rubber forearm.\nDo not move feet, change viewing angle, enlarge gloves, lengthen arms, switch hands, shrink the sword, hide the sword, add slash trails or leave extra copies. Restrained hair/cape motion only. Crisp clean linework with smooth uniform color fills exactly matching the reference. All3 sprites consistent size and fullbody."
+  },
+  "invariants": [
+    "Same anatomical right-hand sword grip and left-hand sheath grip.",
+    "Constant uniform scale within each correction source strip; only foot-anchor translation across frames.",
+    "All supplied original images retained separately; runtime is not registered."
+  ]
+}

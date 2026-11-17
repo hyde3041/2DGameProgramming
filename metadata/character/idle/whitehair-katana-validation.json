@@ -1,0 +1,36 @@
+[
+  {
+    "direction": "front",
+    "frame_count": 16,
+    "unique_frames": 16,
+    "fps": 16,
+    "cycle_ms": 1000,
+    "original_neutral_reconstruction_identical": true,
+    "feet_fixed": true,
+    "loop_endpoints_identical": true,
+    "hand_weapon_transforms_identical": true,
+    "max_unit_error": 3.3306690738754696e-16,
+    "max_determinant_error": 3.3306690738754696e-16,
+    "seam_mae": 0.30870375689339336,
+    "max_step_mae": 0.47115353094365714,
+    "sheet_sha256": "ec0c63f0afd5cec2a12403988bd657f76656f0a271a266467b9c3d72edef40f7",
+    "source_sha256": "6b08be3cb2a4db0652e0a81c298394f748968043d7825da1f80a2f3d5105ab9f"
+  },
+  {
+    "direction": "side",
+    "frame_count": 16,
+    "unique_frames": 16,
+    "fps": 16,
+    "cycle_ms": 1000,
+    "original_neutral_reconstruction_identical": true,
+    "feet_fixed": true,
+    "loop_endpoints_identical": true,
+    "hand_weapon_transforms_identical": true,
+    "max_unit_error": 3.3306690738754696e-16,
+    "max_determinant_error": 3.3306690738754696e-16,
+    "seam_mae": 0.27295012829351445,
+    "max_step_mae": 0.34136619178922023,
+    "sheet_sha256": "2feb0c07d00765f1d0a77b078e97fed2bc4dedb2fcf2a03929c38358c43bae80",
+    "source_sha256": "883edb5a3bdd4504787ff38675a036ba713c250feb501b3c61444e7225a62bdd"
+  }
+]

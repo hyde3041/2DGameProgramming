@@ -1,0 +1,1549 @@
+{
+  "id": "whitehair-katana",
+  "version": 11,
+  "method": "Complete generated attack cells; one isotropic scale fixed for all16 frames per view and boot-pivot translation only.",
+  "cell_size": [
+    320,
+    320
+  ],
+  "pivot": [
+    160,
+    288
+  ],
+  "target_body_height": 160,
+  "source_alpha_cleaning": false,
+  "limb_edits": false,
+  "whole_idle_endpoint_selection": false,
+  "views": {
+    "front": {
+      "source": "game/asset/character/player/icon/source/whitehair/katana/front/attack-proportions-v11-source-sheet.png",
+      "source_history": ".build/whitehair-katana-proportions-v11/source-history/front-9c44a3b771e3.png",
+      "source_sha256": "9c44a3b771e3d7198394dc46b8888da1a17fa2269906308b3d796eaec86b92c1",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_reference_body_height": 178.3125,
+      "uniform_scale": 0.8973010865755345,
+      "source_cell_partition": {
+        "offset_x": 0,
+        "common_cell_width": 314,
+        "common_cell_height": 314,
+        "edge_alpha_max": 2,
+        "meaningful_pixels": 262378,
+        "omitted_meaningful_pixels": 0,
+        "duplicated_meaningful_pixels": 0,
+        "omitted_alpha_max": 0,
+        "valid": true
+      },
+      "sheet": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+      "sheet_sha256": "1b2cc8a15179ad0144515d820e1bbbc020e6badea3c4ebdd9aa14ccbfe74b703",
+      "candidate": ".build/whitehair-katana-proportions-v11/candidates/front/attack-sheet.png",
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "source_rect": [
+            0,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 115,
+          "source_body_height": 178,
+          "source_foot_pivot": [
+            156.5,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            105,
+            128,
+            216,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "8a2aa2d6f40cb9440e86e9084bb60ef1dad8d16ff50080bc3c2d20819078d26d",
+          "rgba_sha256": "8a2aa2d6f40cb9440e86e9084bb60ef1dad8d16ff50080bc3c2d20819078d26d"
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "source_rect": [
+            314,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 115,
+          "source_body_height": 178,
+          "source_foot_pivot": [
+            156.5,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            105,
+            128,
+            215,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "55bd3f9b6315d0019af1cc30344dfb504cb807f1a1a106b1d506423a27c16ae6",
+          "rgba_sha256": "55bd3f9b6315d0019af1cc30344dfb504cb807f1a1a106b1d506423a27c16ae6"
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "source_rect": [
+            627,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 115,
+          "source_body_height": 178,
+          "source_foot_pivot": [
+            156.5,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            104,
+            128,
+            213,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "2aae10c876e471098a41326f07623fa0008b732b33f91f8fd882dca3998f98f5",
+          "rgba_sha256": "2aae10c876e471098a41326f07623fa0008b732b33f91f8fd882dca3998f98f5"
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "source_rect": [
+            941,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 115,
+          "source_body_height": 178,
+          "source_foot_pivot": [
+            156.5,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            94,
+            128,
+            215,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "cc38e371efa4210f11bfe667e7ab541507a16f91d32f1e506880e80579e3f3e3",
+          "rgba_sha256": "cc38e371efa4210f11bfe667e7ab541507a16f91d32f1e506880e80579e3f3e3"
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "source_rect": [
+            0,
+            314,
+            314,
+            314
+          ],
+          "source_crown_y": 114,
+          "source_body_height": 179,
+          "source_foot_pivot": [
+            157,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            187
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.123729407641065,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            82,
+            127,
+            215,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "5e621c3ca9ed8984104593282e0f81198398e1e28155798599407171bc5beb85",
+          "rgba_sha256": "5e621c3ca9ed8984104593282e0f81198398e1e28155798599407171bc5beb85"
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "source_rect": [
+            314,
+            314,
+            314,
+            314
+          ],
+          "source_crown_y": 114,
+          "source_body_height": 179,
+          "source_foot_pivot": [
+            156.5,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            64,
+            127,
+            215,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "3c1d72f574f48d26333e20d03a817f19dadcee8dda4265cb07b3b4c494c243f9",
+          "rgba_sha256": "3c1d72f574f48d26333e20d03a817f19dadcee8dda4265cb07b3b4c494c243f9"
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "source_rect": [
+            627,
+            314,
+            314,
+            314
+          ],
+          "source_crown_y": 114,
+          "source_body_height": 179,
+          "source_foot_pivot": [
+            156.5,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            50,
+            127,
+            222,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "da87ca7e903f117b00a2b77e2a723c6959d4b5b2e12bb0a05b8c43b1c8a3bf28",
+          "rgba_sha256": "da87ca7e903f117b00a2b77e2a723c6959d4b5b2e12bb0a05b8c43b1c8a3bf28"
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "source_rect": [
+            941,
+            314,
+            314,
+            314
+          ],
+          "source_crown_y": 114,
+          "source_body_height": 179,
+          "source_foot_pivot": [
+            156.5,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            48,
+            127,
+            224,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "fc3240cd9465614f1d7dea309ec8014a5b13a3fdd6ae113d63b78bb975438b92",
+          "rgba_sha256": "fc3240cd9465614f1d7dea309ec8014a5b13a3fdd6ae113d63b78bb975438b92"
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "source_rect": [
+            0,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 115,
+          "source_body_height": 178,
+          "source_foot_pivot": [
+            156.5,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            63,
+            128,
+            227,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "3142f2778adc2f046961af6641b73d2d4137828dd36af8396492aa4517ac1089",
+          "rgba_sha256": "3142f2778adc2f046961af6641b73d2d4137828dd36af8396492aa4517ac1089"
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "source_rect": [
+            314,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 114,
+          "source_body_height": 179,
+          "source_foot_pivot": [
+            156.5,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            61,
+            127,
+            227,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "eef2c6bce84c98df5cd1938a2afb7a4d0b2f49dbca2d83b9973d9d7fafcbf2f1",
+          "rgba_sha256": "eef2c6bce84c98df5cd1938a2afb7a4d0b2f49dbca2d83b9973d9d7fafcbf2f1"
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "source_rect": [
+            627,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 115,
+          "source_body_height": 178,
+          "source_foot_pivot": [
+            156.5,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            56,
+            127,
+            227,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "159b89ef379960675e1410aa84a596907ac8bb4a160c8e2362d5b65e761843c6",
+          "rgba_sha256": "159b89ef379960675e1410aa84a596907ac8bb4a160c8e2362d5b65e761843c6"
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "source_rect": [
+            941,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 114,
+          "source_body_height": 179,
+          "source_foot_pivot": [
+            156.5,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            54,
+            127,
+            229,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "64579687664869ba7eafe9648ce03a7076bffd627dc66690c00833e00d9a0715",
+          "rgba_sha256": "64579687664869ba7eafe9648ce03a7076bffd627dc66690c00833e00d9a0715"
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "source_rect": [
+            0,
+            941,
+            314,
+            314
+          ],
+          "source_crown_y": 115,
+          "source_body_height": 177,
+          "source_foot_pivot": [
+            157,
+            292
+          ],
+          "source_boot_span": [
+            127,
+            187
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.123729407641065,
+            25.988082719943918
+          ],
+          "output_bounds": [
+            90,
+            128,
+            220,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "121a12bed230f8c3988a30b3ad5dc768799580acd800e83d9481f55d3e9c3901",
+          "rgba_sha256": "121a12bed230f8c3988a30b3ad5dc768799580acd800e83d9481f55d3e9c3901"
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "source_rect": [
+            314,
+            941,
+            314,
+            314
+          ],
+          "source_crown_y": 114,
+          "source_body_height": 178,
+          "source_foot_pivot": [
+            156.5,
+            292
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.988082719943918
+          ],
+          "output_bounds": [
+            106,
+            128,
+            216,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "13129a9cfa3abf447995ccf7e61f1e64c117c37c651d2c6d154227cfed471bf2",
+          "rgba_sha256": "13129a9cfa3abf447995ccf7e61f1e64c117c37c651d2c6d154227cfed471bf2"
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "source_rect": [
+            627,
+            941,
+            314,
+            314
+          ],
+          "source_crown_y": 115,
+          "source_body_height": 178,
+          "source_foot_pivot": [
+            156.5,
+            293
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.090781633368408
+          ],
+          "output_bounds": [
+            106,
+            127,
+            215,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "7ec0a9da7973ca036449491b15a8e55e704662ef8c032abdd76d0a86d6041a6e",
+          "rgba_sha256": "7ec0a9da7973ca036449491b15a8e55e704662ef8c032abdd76d0a86d6041a6e"
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "source_rect": [
+            941,
+            941,
+            314,
+            314
+          ],
+          "source_crown_y": 114,
+          "source_body_height": 178,
+          "source_foot_pivot": [
+            156.5,
+            292
+          ],
+          "source_boot_span": [
+            127,
+            186
+          ],
+          "uniform_scale": 0.8973010865755345,
+          "translation": [
+            19.57237995092885,
+            25.988082719943918
+          ],
+          "output_bounds": [
+            106,
+            128,
+            215,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "d27907665c8cf8ad25428b7e40931218f232df6d52b128f1886d59b708529e27",
+          "rgba_sha256": "d27907665c8cf8ad25428b7e40931218f232df6d52b128f1886d59b708529e27"
+        }
+      ],
+      "canonical_idle": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+      "canonical_idle_sha256": "98c3eb28a670aada65306ddb29a44a163a792adc29adf75eaa8d1b3602270d2c"
+    },
+    "side": {
+      "source": "game/asset/character/player/icon/source/whitehair/katana/side/attack-proportions-v11-source-sheet.png",
+      "source_history": ".build/whitehair-katana-proportions-v11/source-history/side-1dc3959d3861.png",
+      "source_sha256": "1dc3959d3861b365dc5e795815533fd1e2e22f51d116600b29d336ea319a2643",
+      "source_size": [
+        1254,
+        1254
+      ],
+      "source_reference_body_height": 163.6875,
+      "uniform_scale": 0.9774723176785033,
+      "source_cell_partition": {
+        "offset_x": 0,
+        "common_cell_width": 314,
+        "common_cell_height": 314,
+        "edge_alpha_max": 1,
+        "meaningful_pixels": 236525,
+        "omitted_meaningful_pixels": 0,
+        "duplicated_meaningful_pixels": 0,
+        "omitted_alpha_max": 0,
+        "valid": true
+      },
+      "sheet": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+      "sheet_sha256": "a91865f15ad684c2fc2dad875d98d04e833e0c9f7537db4d7cf4730f0f4423d0",
+      "candidate": ".build/whitehair-katana-proportions-v11/candidates/side/attack-sheet.png",
+      "frames": [
+        {
+          "index": 0,
+          "rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "source_rect": [
+            0,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 122,
+          "source_body_height": 165,
+          "source_foot_pivot": [
+            155,
+            287
+          ],
+          "source_boot_span": [
+            127,
+            183
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            8.491790759831986,
+            7.465444826269561
+          ],
+          "output_bounds": [
+            118,
+            126,
+            233,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "6db9e298d6ebef21893f644ec6c944779ef7d34a72b07256b2750579973aec51",
+          "rgba_sha256": "6db9e298d6ebef21893f644ec6c944779ef7d34a72b07256b2750579973aec51"
+        },
+        {
+          "index": 1,
+          "rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "source_rect": [
+            314,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 122,
+          "source_body_height": 165,
+          "source_foot_pivot": [
+            155,
+            287
+          ],
+          "source_boot_span": [
+            128,
+            182
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            8.491790759831986,
+            7.465444826269561
+          ],
+          "output_bounds": [
+            119,
+            125,
+            233,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "e5949a2199eb4cfd61167b6bfb4b38ccd11d2820f4e79d61496ba06c214947d4",
+          "rgba_sha256": "e5949a2199eb4cfd61167b6bfb4b38ccd11d2820f4e79d61496ba06c214947d4"
+        },
+        {
+          "index": 2,
+          "rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "source_rect": [
+            627,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 122,
+          "source_body_height": 165,
+          "source_foot_pivot": [
+            156,
+            287
+          ],
+          "source_boot_span": [
+            129,
+            183
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            7.514318442153495,
+            7.465444826269561
+          ],
+          "output_bounds": [
+            119,
+            126,
+            232,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "e1e56d2874870494e889632bb33e68ec632be254efbc2f2cf85c69df89e4ef94",
+          "rgba_sha256": "e1e56d2874870494e889632bb33e68ec632be254efbc2f2cf85c69df89e4ef94"
+        },
+        {
+          "index": 3,
+          "rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "source_rect": [
+            941,
+            0,
+            314,
+            314
+          ],
+          "source_crown_y": 122,
+          "source_body_height": 165,
+          "source_foot_pivot": [
+            157,
+            287
+          ],
+          "source_boot_span": [
+            130,
+            184
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            6.536846124474977,
+            7.465444826269561
+          ],
+          "output_bounds": [
+            88,
+            126,
+            231,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "aaa8eec1efbf351b4896fb4b2ac01b8bf79e1d9ffda2d48bd5feca49ee1dbf22",
+          "rgba_sha256": "aaa8eec1efbf351b4896fb4b2ac01b8bf79e1d9ffda2d48bd5feca49ee1dbf22"
+        },
+        {
+          "index": 4,
+          "rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "source_rect": [
+            0,
+            314,
+            314,
+            314
+          ],
+          "source_crown_y": 121,
+          "source_body_height": 164,
+          "source_foot_pivot": [
+            156.5,
+            285
+          ],
+          "source_boot_span": [
+            129,
+            184
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            7.025582283314236,
+            9.420389461626542
+          ],
+          "output_bounds": [
+            74,
+            127,
+            232,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "a074077c0f75a83967e3b422ea35a554329dc69ca269fed2276da5e6c1aa370d",
+          "rgba_sha256": "a074077c0f75a83967e3b422ea35a554329dc69ca269fed2276da5e6c1aa370d"
+        },
+        {
+          "index": 5,
+          "rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "source_rect": [
+            314,
+            314,
+            314,
+            314
+          ],
+          "source_crown_y": 121,
+          "source_body_height": 164,
+          "source_foot_pivot": [
+            155.5,
+            285
+          ],
+          "source_boot_span": [
+            128,
+            183
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            8.003054600992726,
+            9.420389461626542
+          ],
+          "output_bounds": [
+            68,
+            127,
+            232,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "499be99d71231bc517fa31d919b113a41cf64d542f786bdab90363972aef5a7c",
+          "rgba_sha256": "499be99d71231bc517fa31d919b113a41cf64d542f786bdab90363972aef5a7c"
+        },
+        {
+          "index": 6,
+          "rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "source_rect": [
+            627,
+            314,
+            314,
+            314
+          ],
+          "source_crown_y": 122,
+          "source_body_height": 163,
+          "source_foot_pivot": [
+            155.5,
+            285
+          ],
+          "source_boot_span": [
+            128,
+            183
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            8.003054600992726,
+            9.420389461626542
+          ],
+          "output_bounds": [
+            50,
+            128,
+            232,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "dc6bdbdd210992f56185a3aa0e7afc9c5c7ddd4f46721f277cdff1629bccc35b",
+          "rgba_sha256": "dc6bdbdd210992f56185a3aa0e7afc9c5c7ddd4f46721f277cdff1629bccc35b"
+        },
+        {
+          "index": 7,
+          "rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "source_rect": [
+            941,
+            314,
+            314,
+            314
+          ],
+          "source_crown_y": 122,
+          "source_body_height": 163,
+          "source_foot_pivot": [
+            156,
+            285
+          ],
+          "source_boot_span": [
+            128,
+            184
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            7.514318442153495,
+            9.420389461626542
+          ],
+          "output_bounds": [
+            44,
+            128,
+            233,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "4e2311ac6f41322a0d83d56ad05f04f5846996c871b92c14b0132b8e012acd58",
+          "rgba_sha256": "4e2311ac6f41322a0d83d56ad05f04f5846996c871b92c14b0132b8e012acd58"
+        },
+        {
+          "index": 8,
+          "rect": [
+            0,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            320,
+            320,
+            320
+          ],
+          "source_rect": [
+            0,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 123,
+          "source_body_height": 163,
+          "source_foot_pivot": [
+            156.5,
+            286
+          ],
+          "source_boot_span": [
+            129,
+            184
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            7.025582283314236,
+            8.44291714394808
+          ],
+          "output_bounds": [
+            50,
+            128,
+            232,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "b8d8fc60914fc871d2d20deaaea7211569bb81a312f1f0902f8121293a5ccab9",
+          "rgba_sha256": "b8d8fc60914fc871d2d20deaaea7211569bb81a312f1f0902f8121293a5ccab9"
+        },
+        {
+          "index": 9,
+          "rect": [
+            320,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            320,
+            320,
+            320
+          ],
+          "source_rect": [
+            314,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 122,
+          "source_body_height": 164,
+          "source_foot_pivot": [
+            155.5,
+            286
+          ],
+          "source_boot_span": [
+            128,
+            183
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            8.003054600992726,
+            8.44291714394808
+          ],
+          "output_bounds": [
+            57,
+            127,
+            232,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "d50f50ed40c61fb2df8785f1861a8b8ba12d98a19ad1764b4232945f7cb37866",
+          "rgba_sha256": "d50f50ed40c61fb2df8785f1861a8b8ba12d98a19ad1764b4232945f7cb37866"
+        },
+        {
+          "index": 10,
+          "rect": [
+            640,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            320,
+            320,
+            320
+          ],
+          "source_rect": [
+            627,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 123,
+          "source_body_height": 163,
+          "source_foot_pivot": [
+            156.5,
+            286
+          ],
+          "source_boot_span": [
+            129,
+            184
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            7.025582283314236,
+            8.44291714394808
+          ],
+          "output_bounds": [
+            52,
+            128,
+            231,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "d0cdfcddcb6d50566c7a7630dc1eb9e00e1db6a23c6a3ae68abf2bd4471f2750",
+          "rgba_sha256": "d0cdfcddcb6d50566c7a7630dc1eb9e00e1db6a23c6a3ae68abf2bd4471f2750"
+        },
+        {
+          "index": 11,
+          "rect": [
+            960,
+            640,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            320,
+            320,
+            320
+          ],
+          "source_rect": [
+            941,
+            627,
+            314,
+            314
+          ],
+          "source_crown_y": 123,
+          "source_body_height": 163,
+          "source_foot_pivot": [
+            156,
+            286
+          ],
+          "source_boot_span": [
+            129,
+            183
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            7.514318442153495,
+            8.44291714394808
+          ],
+          "output_bounds": [
+            53,
+            128,
+            232,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "b6a4df858458cc2c79e113ccc40e9a7ca462b66d0567bd7cbcdb6efae3f9f830",
+          "rgba_sha256": "b6a4df858458cc2c79e113ccc40e9a7ca462b66d0567bd7cbcdb6efae3f9f830"
+        },
+        {
+          "index": 12,
+          "rect": [
+            0,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            0,
+            0,
+            320,
+            320
+          ],
+          "source_rect": [
+            0,
+            941,
+            314,
+            314
+          ],
+          "source_crown_y": 122,
+          "source_body_height": 163,
+          "source_foot_pivot": [
+            156,
+            285
+          ],
+          "source_boot_span": [
+            129,
+            183
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            7.514318442153495,
+            9.420389461626542
+          ],
+          "output_bounds": [
+            71,
+            128,
+            232,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "ff0167bab34e2d0a9e0af2d0ed3784c54928b73734195012bcd64f424592d6ac",
+          "rgba_sha256": "ff0167bab34e2d0a9e0af2d0ed3784c54928b73734195012bcd64f424592d6ac"
+        },
+        {
+          "index": 13,
+          "rect": [
+            320,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            320,
+            0,
+            320,
+            320
+          ],
+          "source_rect": [
+            314,
+            941,
+            314,
+            314
+          ],
+          "source_crown_y": 122,
+          "source_body_height": 163,
+          "source_foot_pivot": [
+            155.5,
+            285
+          ],
+          "source_boot_span": [
+            128,
+            183
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            8.003054600992726,
+            9.420389461626542
+          ],
+          "output_bounds": [
+            116,
+            128,
+            232,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "eccb8979d2f19209a87b9189d62463ae93b35fb947eb283805cb74c9b6689ff0",
+          "rgba_sha256": "eccb8979d2f19209a87b9189d62463ae93b35fb947eb283805cb74c9b6689ff0"
+        },
+        {
+          "index": 14,
+          "rect": [
+            640,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            640,
+            0,
+            320,
+            320
+          ],
+          "source_rect": [
+            627,
+            941,
+            314,
+            314
+          ],
+          "source_crown_y": 122,
+          "source_body_height": 163,
+          "source_foot_pivot": [
+            155.5,
+            285
+          ],
+          "source_boot_span": [
+            128,
+            183
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            8.003054600992726,
+            9.420389461626542
+          ],
+          "output_bounds": [
+            119,
+            128,
+            232,
+            288
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "aded5e73967e9ac4f2dba219a825acb5d7bf7593c991c43a2e3c5c73650b3000",
+          "rgba_sha256": "aded5e73967e9ac4f2dba219a825acb5d7bf7593c991c43a2e3c5c73650b3000"
+        },
+        {
+          "index": 15,
+          "rect": [
+            960,
+            960,
+            320,
+            320
+          ],
+          "pico2d_rect": [
+            960,
+            0,
+            320,
+            320
+          ],
+          "source_rect": [
+            941,
+            941,
+            314,
+            314
+          ],
+          "source_crown_y": 122,
+          "source_body_height": 163,
+          "source_foot_pivot": [
+            155.5,
+            285
+          ],
+          "source_boot_span": [
+            128,
+            183
+          ],
+          "uniform_scale": 0.9774723176785033,
+          "translation": [
+            8.003054600992726,
+            9.420389461626542
+          ],
+          "output_bounds": [
+            117,
+            128,
+            232,
+            289
+          ],
+          "meaningful_source_pixels_clipped": 0,
+          "whole_idle_endpoint_selection": false,
+          "source_registered_rgba_sha256": "1c0c9386b6b8d7243ead28d9b538b4bfa1d92cb6330d2322d55088848ebff0fe",
+          "rgba_sha256": "1c0c9386b6b8d7243ead28d9b538b4bfa1d92cb6330d2322d55088848ebff0fe"
+        }
+      ],
+      "canonical_idle": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+      "canonical_idle_sha256": "aa7d584f815d0d759db0d31efce5b419ba66bb7c4ce0bc194ded86bbf845f85f"
+    }
+  }
+}

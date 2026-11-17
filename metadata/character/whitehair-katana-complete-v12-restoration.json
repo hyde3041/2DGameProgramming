@@ -1,0 +1,777 @@
+{
+  "passed": true,
+  "applied": true,
+  "selected_preset": "balanced",
+  "tool": {
+    "repository": "https://github.com/hehee9/gpt-image-restore",
+    "commit": "bc9a90916a2213b14024b57e79be4773aa60c3ca",
+    "version": "0.1.0",
+    "directory": ".build/tools/gpt-image-restore",
+    "python": ".build/restore-venv/Scripts/python.exe",
+    "official_readme": "https://github.com/hehee9/gpt-image-restore/blob/main/README.md",
+    "official_pipeline": "https://github.com/hehee9/gpt-image-restore/blob/main/gptimg_restore/pipeline.py"
+  },
+  "command_template": ".build/restore-venv/Scripts/python.exe .build/tools/gpt-image-restore/restore_gpt_image.py INPUT -o OUTPUT --preset balanced --format png --report --save-diff",
+  "selected_workflow": "Restore exact current1280x1280production PNGs and already-registered complete back candidates directly. Source restoration alternatives are retained but RGB anatomy is never re-detected and no sprite registration is recomputed.",
+  "rejected_strong_reason": "Representative visible outline changes reached175–190DN and consumed narrow highlights/edge colors; balanced kept representative source edge pixels unchanged.",
+  "files": {
+    "front-idle": {
+      "production_target": "game/asset/character/player/main/9-whitehair/katana/front/idle-sheet.png",
+      "candidate": ".build/whitehair-katana-complete-v12/restoration/candidates/front-idle.png",
+      "input_snapshot": ".build/whitehair-katana-complete-v12/restoration/input-production/front-idle.png",
+      "input_sha256": "98c3eb28a670aada65306ddb29a44a163a792adc29adf75eaa8d1b3602270d2c",
+      "output_sha256": "fdb083c84a0a6ab2cfe3551a2f61f48de66a0d8a98e5d9a7b93085dcf245532b",
+      "size": [
+        1280,
+        1280
+      ],
+      "size_identical": true,
+      "alpha_identical": true,
+      "alpha_sha256": "9738c5a77bb6377ac57b27dac8f04c3ce2da630a3ec5abbf29ae189ad45a192c",
+      "frame_alpha": [
+        {
+          "index": 0,
+          "alpha_sha256": "d294fb569e26ed697ed7dea691b0e0712310dcde364f4b973ca4c73f99e21320",
+          "alpha_exact": true
+        },
+        {
+          "index": 1,
+          "alpha_sha256": "0c280637806b41db423649f5c5c3fe1324fafb5bb53b4552f3d10cfed3d27992",
+          "alpha_exact": true
+        },
+        {
+          "index": 2,
+          "alpha_sha256": "1f10f79a61bee6f0cac545ab458f7e8b392b6f4e5459d778c28681cff93b373e",
+          "alpha_exact": true
+        },
+        {
+          "index": 3,
+          "alpha_sha256": "bfa0a54de85299e6f7e1f67e2519420b23a25b54fd0a11872d50a2c464773329",
+          "alpha_exact": true
+        },
+        {
+          "index": 4,
+          "alpha_sha256": "221b280a085de409e58c6c65279576346ad7ac7033db38fabd86027a8f28039c",
+          "alpha_exact": true
+        },
+        {
+          "index": 5,
+          "alpha_sha256": "6e60cbd5e72298a6d673e31981e54576a94e50c6734f8f4009429f05b291088a",
+          "alpha_exact": true
+        },
+        {
+          "index": 6,
+          "alpha_sha256": "fd3b6d4821e0c6ac330911047cce1ba290592677d018efb62b4c70bba922c1c8",
+          "alpha_exact": true
+        },
+        {
+          "index": 7,
+          "alpha_sha256": "96ac2d071b246fcae98c124a8a856aa787a956713f75b6a1fb8543d45e437308",
+          "alpha_exact": true
+        },
+        {
+          "index": 8,
+          "alpha_sha256": "4f427a5b76a1f79f3fc8d5ae1310cfa7cf4348cced4ff4731d987e7b2ba8fcf9",
+          "alpha_exact": true
+        },
+        {
+          "index": 9,
+          "alpha_sha256": "0cc3ad82aac166bd13ab1a9adf9041a5108c85fb20ba52085f29d2a6b4dd8d25",
+          "alpha_exact": true
+        },
+        {
+          "index": 10,
+          "alpha_sha256": "ec942c9301c16409aac40c89b169bb151526372f9bdc87f0113c38746c046d66",
+          "alpha_exact": true
+        },
+        {
+          "index": 11,
+          "alpha_sha256": "06e30ce6877daf60ab6d9419f01b8593ef8f5db376385ad259e357cf856ed10d",
+          "alpha_exact": true
+        },
+        {
+          "index": 12,
+          "alpha_sha256": "edf20d037c069f4da7d836bd9f3d39d7ef3d8e49003b2cb12d18ad1c5ac0bc98",
+          "alpha_exact": true
+        },
+        {
+          "index": 13,
+          "alpha_sha256": "50bcada26287b22e54e49d921fef7fa92bb80fa427be2e52a48e2d3fb8dd1401",
+          "alpha_exact": true
+        },
+        {
+          "index": 14,
+          "alpha_sha256": "b5078338cea93ce593b80f69033cf3fa7d7dc1a267450dca50d11b52041c46c6",
+          "alpha_exact": true
+        },
+        {
+          "index": 15,
+          "alpha_sha256": "2f815dc1c09beeb544be49906249b0de5fb8e5c980617c71c32259f1bcfb4f9c",
+          "alpha_exact": true
+        }
+      ],
+      "opaque_changed_pixels": 612,
+      "opaque_mean_abs_rgb_change": 0.003081119479158046,
+      "opaque_max_abs_rgb_change": 4.0,
+      "opaque_mean_signed_rgb_change": [
+        -0.00038794173632376064,
+        -0.0006724323429611851,
+        -0.0004758751965571464
+      ],
+      "outline_mean_abs_rgb_change": 0.0,
+      "outline_max_abs_rgb_change": 0.0,
+      "composited_max_abs_rgb_change": 3.984313725490196,
+      "raw_report": ".build/whitehair-katana-complete-v12/restoration/balanced-production/front-idle_report.json",
+      "recommended_apply": true
+    },
+    "front-attack": {
+      "production_target": "game/asset/character/player/main/9-whitehair/katana/front/attack-sheet.png",
+      "candidate": ".build/whitehair-katana-complete-v12/restoration/candidates/front-attack.png",
+      "input_snapshot": ".build/whitehair-katana-complete-v12/restoration/input-production/front-attack.png",
+      "input_sha256": "1b2cc8a15179ad0144515d820e1bbbc020e6badea3c4ebdd9aa14ccbfe74b703",
+      "output_sha256": "67feebeddc45128b57e0bf8c47d28c39f0138307541e6e3d35ea37b5575d9f5a",
+      "size": [
+        1280,
+        1280
+      ],
+      "size_identical": true,
+      "alpha_identical": true,
+      "alpha_sha256": "a31e4a780c74c5f264dc3966a66ea7f42727d129bab1e0a97397eb3a37f7800f",
+      "frame_alpha": [
+        {
+          "index": 0,
+          "alpha_sha256": "9f1998987367dd114f8601b3a2b8fb905ccf3302680c03bd257b2926ed4d3838",
+          "alpha_exact": true
+        },
+        {
+          "index": 1,
+          "alpha_sha256": "e5a19d985ea134bb8817b087a29b7b83d189376e8443016996beb97a1de4b18f",
+          "alpha_exact": true
+        },
+        {
+          "index": 2,
+          "alpha_sha256": "cb4adbaf17a8c6afb0ad98cda8fe23f9fceb3044cb18e5bc5288a277960f0ec2",
+          "alpha_exact": true
+        },
+        {
+          "index": 3,
+          "alpha_sha256": "1ef67e6c2711f92a1cb1fc5d966d9370c58eb6b8805886d7d6b485e59a61a5ce",
+          "alpha_exact": true
+        },
+        {
+          "index": 4,
+          "alpha_sha256": "fa77040186d2a45c08ff7dd5008efe48b2d7751c592c743f15c84d2903b77e7d",
+          "alpha_exact": true
+        },
+        {
+          "index": 5,
+          "alpha_sha256": "b93ab8c7bd2c3d69ea84f56fa6fd096c86daddaac7d3029d76c34c6d59e30f5d",
+          "alpha_exact": true
+        },
+        {
+          "index": 6,
+          "alpha_sha256": "99352aeb8f805a343cab54a91d21930dfea9a725b33ec354dbedf796d94a7954",
+          "alpha_exact": true
+        },
+        {
+          "index": 7,
+          "alpha_sha256": "4003cdf28dd5c690c016f1c460dcc98e8e8e88b492aabc5378f761f80b579972",
+          "alpha_exact": true
+        },
+        {
+          "index": 8,
+          "alpha_sha256": "0c885971a0f908a08c91386e15c39afe26e420a8a0770ddd573041429180e34b",
+          "alpha_exact": true
+        },
+        {
+          "index": 9,
+          "alpha_sha256": "9a3eddb7be24575547ad9de46e79baf4787e1946fb107e7d0c6fe0eed4710cd7",
+          "alpha_exact": true
+        },
+        {
+          "index": 10,
+          "alpha_sha256": "3dbb5e7e270e0549453b158304cad6f6817dba47b48778759ecadd8bcb6ad46b",
+          "alpha_exact": true
+        },
+        {
+          "index": 11,
+          "alpha_sha256": "be87eb07579df9770ea9c81ca00b5d8eb1ea7c183d41b5370cc6b71c1cc8e465",
+          "alpha_exact": true
+        },
+        {
+          "index": 12,
+          "alpha_sha256": "0bca479f3d3882c3cda1811422af48450f2698b6ca8d5764f571f013032edb01",
+          "alpha_exact": true
+        },
+        {
+          "index": 13,
+          "alpha_sha256": "d755b28c6d3a686dacc74fe1c9195fa4d3fb0c372b2f00853039495734d378e4",
+          "alpha_exact": true
+        },
+        {
+          "index": 14,
+          "alpha_sha256": "45f2730e9f7a560f9d01faf611a42c2e660c0a19be665fb7ab831e06284c5bf1",
+          "alpha_exact": true
+        },
+        {
+          "index": 15,
+          "alpha_sha256": "9cc3975f6e0e519d2d0bf9225f2b92fc3f6f6c562b5a550c68e0d7fa6611c0d4",
+          "alpha_exact": true
+        }
+      ],
+      "opaque_changed_pixels": 723,
+      "opaque_mean_abs_rgb_change": 0.0033254404609841352,
+      "opaque_max_abs_rgb_change": 4.0,
+      "opaque_mean_signed_rgb_change": [
+        -8.077993022633527e-05,
+        -0.0004190458880491142,
+        -0.00022719355376156795
+      ],
+      "outline_mean_abs_rgb_change": 0.0,
+      "outline_max_abs_rgb_change": 0.0,
+      "composited_max_abs_rgb_change": 3.9686274509803923,
+      "raw_report": ".build/whitehair-katana-complete-v12/restoration/balanced-production/front-attack_report.json",
+      "recommended_apply": true
+    },
+    "side-idle": {
+      "production_target": "game/asset/character/player/main/9-whitehair/katana/side/idle-sheet.png",
+      "candidate": ".build/whitehair-katana-complete-v12/restoration/candidates/side-idle.png",
+      "input_snapshot": ".build/whitehair-katana-complete-v12/restoration/input-production/side-idle.png",
+      "input_sha256": "aa7d584f815d0d759db0d31efce5b419ba66bb7c4ce0bc194ded86bbf845f85f",
+      "output_sha256": "6a02bcaea0f60b77a45e7df5b3ac889680199aa9686842fe91232b708bdf93de",
+      "size": [
+        1280,
+        1280
+      ],
+      "size_identical": true,
+      "alpha_identical": true,
+      "alpha_sha256": "ad89a0aa1604b02997f72331fe41edb1e1b5f944ae5dfb95852a0ce305e2a4fb",
+      "frame_alpha": [
+        {
+          "index": 0,
+          "alpha_sha256": "307e6e481d501def88b9353fb6c32faaf0a6de566295e9686a1f0bf637c068fc",
+          "alpha_exact": true
+        },
+        {
+          "index": 1,
+          "alpha_sha256": "a2fc263fce9c028d5fd3bdc23cac79980c78bb7ca790e56946303d3bf1247493",
+          "alpha_exact": true
+        },
+        {
+          "index": 2,
+          "alpha_sha256": "b5d0a0cc23a899ddda8cd4fe6a66d899f38395cbee173a1084d36d4b29e494fc",
+          "alpha_exact": true
+        },
+        {
+          "index": 3,
+          "alpha_sha256": "e615a08700fd46854da8cd7f97a23259ad3f889f31aa4fe09c500b093057f0a7",
+          "alpha_exact": true
+        },
+        {
+          "index": 4,
+          "alpha_sha256": "cf45ee15c0db00a39dee4677c51a6b0fbe7a2f31135db9ceb91d74f7f3c60dd8",
+          "alpha_exact": true
+        },
+        {
+          "index": 5,
+          "alpha_sha256": "c73d0a0722188ac90290edb401a6cacfc0ce6d0a150baaa3b48ff28d8d623c72",
+          "alpha_exact": true
+        },
+        {
+          "index": 6,
+          "alpha_sha256": "d4763ba694f43ab94ca66c8f02d4ae4666635facc1fd09fc3eeef8d35825ae1e",
+          "alpha_exact": true
+        },
+        {
+          "index": 7,
+          "alpha_sha256": "07af59a036212288a3476080a5c1e349b03a39f85f7dd7bf070a48dde6ed01f8",
+          "alpha_exact": true
+        },
+        {
+          "index": 8,
+          "alpha_sha256": "0ce7e4640e233f44b75f2d8ec966a8e66c6da83af0defd42d3446810479ca458",
+          "alpha_exact": true
+        },
+        {
+          "index": 9,
+          "alpha_sha256": "46eb1626eb6d436db482becd61bce9b6705d4e873e40bdf2977327f3d0585a67",
+          "alpha_exact": true
+        },
+        {
+          "index": 10,
+          "alpha_sha256": "a3d6d1c5bcd5ec1e6a5035f71f0956cac39550ed87ff036ff63c21198ca89a06",
+          "alpha_exact": true
+        },
+        {
+          "index": 11,
+          "alpha_sha256": "57154aeb9a657423e72bf9d6bf7fe45523316f7f296a76521ad7e1c211fd19d5",
+          "alpha_exact": true
+        },
+        {
+          "index": 12,
+          "alpha_sha256": "a511bc9738d92c677bf75e944cb25802feb2e40d67004488c505cc8f8402857d",
+          "alpha_exact": true
+        },
+        {
+          "index": 13,
+          "alpha_sha256": "89c2c3d5e7e639c5b93572edbf4eacfdf93c45835dd1ee8ab1ae89e07e6034ec",
+          "alpha_exact": true
+        },
+        {
+          "index": 14,
+          "alpha_sha256": "884e17f92eba902e55e51af2ab0060617996fb3fb69c90c32bb48068b046873a",
+          "alpha_exact": true
+        },
+        {
+          "index": 15,
+          "alpha_sha256": "3329e7f69bc0aa0e8d1d1f9dad77818f5f039b8c308c9f752335ad2e565ac055",
+          "alpha_exact": true
+        }
+      ],
+      "opaque_changed_pixels": 1997,
+      "opaque_mean_abs_rgb_change": 0.005924215597960952,
+      "opaque_max_abs_rgb_change": 4.0,
+      "opaque_mean_signed_rgb_change": [
+        -0.0006471252109628187,
+        -0.0008438512750955157,
+        -0.0004503991468301219
+      ],
+      "outline_mean_abs_rgb_change": 0.0,
+      "outline_max_abs_rgb_change": 0.0,
+      "composited_max_abs_rgb_change": 3.984313725490196,
+      "raw_report": ".build/whitehair-katana-complete-v12/restoration/balanced-production/side-idle_report.json",
+      "recommended_apply": true
+    },
+    "side-attack": {
+      "production_target": "game/asset/character/player/main/9-whitehair/katana/side/attack-sheet.png",
+      "candidate": ".build/whitehair-katana-complete-v12/restoration/candidates/side-attack.png",
+      "input_snapshot": ".build/whitehair-katana-complete-v12/restoration/input-production/side-attack.png",
+      "input_sha256": "a91865f15ad684c2fc2dad875d98d04e833e0c9f7537db4d7cf4730f0f4423d0",
+      "output_sha256": "fea7219be9fb243ea9fa3e2f1ddc1266074b968afdd422f7c562373d91b33811",
+      "size": [
+        1280,
+        1280
+      ],
+      "size_identical": true,
+      "alpha_identical": true,
+      "alpha_sha256": "1b08e600f060188b0e14e5ed20b8088a39b0e065f6a3ff04763e4e25b8468bbb",
+      "frame_alpha": [
+        {
+          "index": 0,
+          "alpha_sha256": "d307ea4fec8d3e60432247d93109d6fcb84aa395b2fd321c1485236c44a3133f",
+          "alpha_exact": true
+        },
+        {
+          "index": 1,
+          "alpha_sha256": "05e5c5cc7a94bc1b1380ecb1d4361194919dec67d591ca862e0725baea4d352b",
+          "alpha_exact": true
+        },
+        {
+          "index": 2,
+          "alpha_sha256": "131020fa64de5449420deaf26e988bf6c97d2f00fc9f2fbaf7ffe09b06976e95",
+          "alpha_exact": true
+        },
+        {
+          "index": 3,
+          "alpha_sha256": "fa3a1927402f9dfda26f05f4f790d2f13661f7937e50115a932ece8ac0a8ac57",
+          "alpha_exact": true
+        },
+        {
+          "index": 4,
+          "alpha_sha256": "344822424d0cde864b299bce282fbab4b1203b9e04942995a251fcd1cd66f34c",
+          "alpha_exact": true
+        },
+        {
+          "index": 5,
+          "alpha_sha256": "13f072aaca90d808d58276451c69a953ce72e66b61a8adc3ab7d6ee0225d7bff",
+          "alpha_exact": true
+        },
+        {
+          "index": 6,
+          "alpha_sha256": "b0d81530e1f81181bcfe03f32f24aeeb7c7398ae652753bd123b2fbe90eae356",
+          "alpha_exact": true
+        },
+        {
+          "index": 7,
+          "alpha_sha256": "6bf161bbc8b8352f7016b8eba4cf4b1d166efdc0ef319a44209f68c87d426bc3",
+          "alpha_exact": true
+        },
+        {
+          "index": 8,
+          "alpha_sha256": "6c227921368ad3996d963364e28d1610f36f3126830d6fe3c86e9702c148bd1d",
+          "alpha_exact": true
+        },
+        {
+          "index": 9,
+          "alpha_sha256": "345e0883a3e884448024236bf856d09b87b78863563cf3018f41fe20b90696ae",
+          "alpha_exact": true
+        },
+        {
+          "index": 10,
+          "alpha_sha256": "02fe196cc67d14999ab2d72df02267e1bd2ec387cc01dd383bc4d4a2e0b26620",
+          "alpha_exact": true
+        },
+        {
+          "index": 11,
+          "alpha_sha256": "7e89ce071092fb5e9970fa1acb6dd85784cad8c7ee628793a4ec3936014203c8",
+          "alpha_exact": true
+        },
+        {
+          "index": 12,
+          "alpha_sha256": "bd85c2c184dc7810b253f1cbbba096eff11a937b56bd0b0d6ded22cb23fe26ce",
+          "alpha_exact": true
+        },
+        {
+          "index": 13,
+          "alpha_sha256": "a99272aeda1c02fedd18cfc319c1777f35bd97e67d6fc6097192548ae10e0dbc",
+          "alpha_exact": true
+        },
+        {
+          "index": 14,
+          "alpha_sha256": "e59d0d76334f5c3fc48601a7f3aadbfef11ef1a8acfab65745ee22e4fea3ea2a",
+          "alpha_exact": true
+        },
+        {
+          "index": 15,
+          "alpha_sha256": "dd64cd193c86ec3629c15e7344607b1546c82d817bb020e37fc0341285d1c1a7",
+          "alpha_exact": true
+        }
+      ],
+      "opaque_changed_pixels": 3129,
+      "opaque_mean_abs_rgb_change": 0.013184055899634747,
+      "opaque_max_abs_rgb_change": 4.0,
+      "opaque_mean_signed_rgb_change": [
+        -0.0013244402096236304,
+        -0.001715102429728442,
+        -0.0012005717008099096
+      ],
+      "outline_mean_abs_rgb_change": 0.0,
+      "outline_max_abs_rgb_change": 0.0,
+      "composited_max_abs_rgb_change": 3.984313725490196,
+      "raw_report": ".build/whitehair-katana-complete-v12/restoration/balanced-production/side-attack_report.json",
+      "recommended_apply": true
+    },
+    "back-idle": {
+      "production_target": "game/asset/character/player/main/9-whitehair/katana/back/idle-sheet.png",
+      "candidate": ".build/whitehair-katana-complete-v12/restoration/candidates/back-idle.png",
+      "input_snapshot": ".build/whitehair-katana-complete-v12/restoration/input-production/back-idle.png",
+      "input_sha256": "e4fd036dc967c4d372473c6294758343e840b6f6bd99d476e23e18c1addf5b91",
+      "output_sha256": "eb435f28cbe0dceacd71473cc5430d38b644e057c80bfdc443563137f3e6ab18",
+      "size": [
+        1280,
+        1280
+      ],
+      "size_identical": true,
+      "alpha_identical": true,
+      "alpha_sha256": "6741edc7d118ce6d0d7d876d56d5d3c69bb82df7fb7215ed5eb6cd005b3042aa",
+      "frame_alpha": [
+        {
+          "index": 0,
+          "alpha_sha256": "cb58bff10bc8fa898eb628b20b99651278af00bd2a8bc3ce6385c6ffa4e1abdb",
+          "alpha_exact": true
+        },
+        {
+          "index": 1,
+          "alpha_sha256": "c48e845421e7c431d8dc313a7ee8e7c0fa564782fb647e22fdf0830f660ff382",
+          "alpha_exact": true
+        },
+        {
+          "index": 2,
+          "alpha_sha256": "c6f1711d36bc6119cee3f1d509b8d8a0d89148269c3748887d3c7ab3729242be",
+          "alpha_exact": true
+        },
+        {
+          "index": 3,
+          "alpha_sha256": "44fd20539ba4e59cf501ba578d98d1ef3e1791cff9110f15e51526b7054ee357",
+          "alpha_exact": true
+        },
+        {
+          "index": 4,
+          "alpha_sha256": "ce9645a72020db69ad4e9efdca1bbc005ea8ecd0f54114271c82d80794426e12",
+          "alpha_exact": true
+        },
+        {
+          "index": 5,
+          "alpha_sha256": "7a89191bf1e97481f20e950e92e19a6bf611aaed73ffefdc118e69effbdbdf55",
+          "alpha_exact": true
+        },
+        {
+          "index": 6,
+          "alpha_sha256": "2a8eef6d32d4bfd70880e4f619408ae626650947633837d8897f27302769b45b",
+          "alpha_exact": true
+        },
+        {
+          "index": 7,
+          "alpha_sha256": "4624bc3b0ba565b39a6b111aad41a75b1bdb6f750d8964acc05eeb485bb02080",
+          "alpha_exact": true
+        },
+        {
+          "index": 8,
+          "alpha_sha256": "bb8fd93ab508e40a65be3b579399b705d2d461482e2ecde4a0ed75223fe32eab",
+          "alpha_exact": true
+        },
+        {
+          "index": 9,
+          "alpha_sha256": "ad8800538033f60978ba7d3ea3f47163ccd4643b2c47b1be70546e1b77cdc58e",
+          "alpha_exact": true
+        },
+        {
+          "index": 10,
+          "alpha_sha256": "092043cb392462e5a7b8b3106d2225c23b41559c066dc40087b2699631499cfc",
+          "alpha_exact": true
+        },
+        {
+          "index": 11,
+          "alpha_sha256": "7beed46449cf57f11af47c56c3c74be35a85ee00899d4f760b15901b2ed94791",
+          "alpha_exact": true
+        },
+        {
+          "index": 12,
+          "alpha_sha256": "79b626e9e3ef3ae9111ea1daebfacd5ba8045ada21bdaf63d0c265547f20e70e",
+          "alpha_exact": true
+        },
+        {
+          "index": 13,
+          "alpha_sha256": "546a8fce48ef40fb62f7b4f2494debc75a080030d23ca2003af431c38451d3a3",
+          "alpha_exact": true
+        },
+        {
+          "index": 14,
+          "alpha_sha256": "ce0e9262841b0e97080100742f9d41a9466302c92ab65d2cd72a46976552679a",
+          "alpha_exact": true
+        },
+        {
+          "index": 15,
+          "alpha_sha256": "d46704fe86fc44208465aa23e0b99dd268b34e566bccd3afeb54fa08df12ed27",
+          "alpha_exact": true
+        }
+      ],
+      "opaque_changed_pixels": 7258,
+      "opaque_mean_abs_rgb_change": 0.042717760916054066,
+      "opaque_max_abs_rgb_change": 4.0,
+      "opaque_mean_signed_rgb_change": [
+        -0.002807100566259942,
+        -0.0035760955489709985,
+        -0.0023231177100082275
+      ],
+      "outline_mean_abs_rgb_change": 0.0,
+      "outline_max_abs_rgb_change": 0.0,
+      "composited_max_abs_rgb_change": 3.9686274509803923,
+      "raw_report": ".build/whitehair-katana-complete-v12/restoration/balanced-production/back-idle_report.json",
+      "recommended_apply": true
+    },
+    "back-attack": {
+      "production_target": "game/asset/character/player/main/9-whitehair/katana/back/attack-sheet.png",
+      "candidate": ".build/whitehair-katana-complete-v12/restoration/candidates/back-attack.png",
+      "input_snapshot": ".build/whitehair-katana-complete-v12/restoration/input-production/back-attack.png",
+      "input_sha256": "2caa280879dc7011eb7f3bb8e63d81754059465b2a1688865a85eed4868f09d5",
+      "output_sha256": "fe6d93dc30e8aa681732780b92e8db2262e4216d3aa234ea83f263edac1745fb",
+      "size": [
+        1280,
+        1280
+      ],
+      "size_identical": true,
+      "alpha_identical": true,
+      "alpha_sha256": "6c1b61c12025a9b811e1cb209cdde181c608f1ddb80892f4679f50bb260c9f7e",
+      "frame_alpha": [
+        {
+          "index": 0,
+          "alpha_sha256": "e9a2821e47ad76f16a9a5684476dcf868f26819cb60bbe8386229807dc9a0f18",
+          "alpha_exact": true
+        },
+        {
+          "index": 1,
+          "alpha_sha256": "5b3c58d05dc2389d47102c9a9142834d4f64aa9a0a9bff4cc0c1018a932024a1",
+          "alpha_exact": true
+        },
+        {
+          "index": 2,
+          "alpha_sha256": "01eb989a773ef2265437d429f4844dc49d701e5888b15c3ade3e2a2ffd943941",
+          "alpha_exact": true
+        },
+        {
+          "index": 3,
+          "alpha_sha256": "e35292c5e649bced24296a503867b5c81fe8aaadf590cff27ced95947378bb4a",
+          "alpha_exact": true
+        },
+        {
+          "index": 4,
+          "alpha_sha256": "7178b2236a8d8de2fb1675cb257daed4f20e47e40b95ff05938859546e38ba67",
+          "alpha_exact": true
+        },
+        {
+          "index": 5,
+          "alpha_sha256": "59a6922b7a872c1d5b014ccc77b277758fd7680f82ead283bc52ce6ddba92fd1",
+          "alpha_exact": true
+        },
+        {
+          "index": 6,
+          "alpha_sha256": "5b2b60398d8ff7d32fabd38769e126cf04f62bab83e0035a7a9c64f46a303a08",
+          "alpha_exact": true
+        },
+        {
+          "index": 7,
+          "alpha_sha256": "4755177ca6ede4f9cb6ce0d525511fe34a6002c6f39a65edb5c81c8175de2a80",
+          "alpha_exact": true
+        },
+        {
+          "index": 8,
+          "alpha_sha256": "f7d3ac7e2bcb32c7adb104b5303486df4ea06c5f7cd18a2bf1e84cbafb389249",
+          "alpha_exact": true
+        },
+        {
+          "index": 9,
+          "alpha_sha256": "866b500058326115d919b1deb23d8a2171e346b6a3d81f450487175d999fe0b8",
+          "alpha_exact": true
+        },
+        {
+          "index": 10,
+          "alpha_sha256": "42c39c85810b7f095b654da0276ecb4807fe9297c55f55df4290f16355ac39cc",
+          "alpha_exact": true
+        },
+        {
+          "index": 11,
+          "alpha_sha256": "a4d7eba82d699162516b250bd527b1980813774f4e86e6b12de3f46cbcb19d0b",
+          "alpha_exact": true
+        },
+        {
+          "index": 12,
+          "alpha_sha256": "e45468dd4275eaf950ed7c2bed5da0facbbc691dce6f75c8ab8428de44ea5ffd",
+          "alpha_exact": true
+        },
+        {
+          "index": 13,
+          "alpha_sha256": "93561389a188f3df88489c3774d833fb5ded3031ecbb03be7784fa1b006f8abe",
+          "alpha_exact": true
+        },
+        {
+          "index": 14,
+          "alpha_sha256": "d23455297503221538691b3211411eb434cb7d8e5b64a2c3c143397a139ec081",
+          "alpha_exact": true
+        },
+        {
+          "index": 15,
+          "alpha_sha256": "d9ef26b6ace6b7182249493f4af15aa176f8cf361959488dfa6e3736b9564ea8",
+          "alpha_exact": true
+        }
+      ],
+      "opaque_changed_pixels": 6187,
+      "opaque_mean_abs_rgb_change": 0.03461969300945596,
+      "opaque_max_abs_rgb_change": 4.0,
+      "opaque_mean_signed_rgb_change": [
+        -0.0044908215680536075,
+        -0.005923847776286443,
+        -0.004082106346691425
+      ],
+      "outline_mean_abs_rgb_change": 0.0,
+      "outline_max_abs_rgb_change": 0.0,
+      "composited_max_abs_rgb_change": 3.9686274509803923,
+      "raw_report": ".build/whitehair-katana-complete-v12/restoration/balanced-production/back-attack_report.json",
+      "recommended_apply": true
+    },
+    "deployment-square": {
+      "production_target": "game/asset/character/player/main/9-whitehair/skill/profile/deployment-square.png",
+      "candidate": ".build/whitehair-katana-complete-v12/restoration/candidates/deployment-square.png",
+      "input_snapshot": ".build/whitehair-katana-complete-v12/restoration/input/deployment-square.png",
+      "input_sha256": "e5cc1408ff6b49269a372206b02897782969c032cfc9a0f3ce647016475f61d5",
+      "output_sha256": "fb73b65c3cdc0d70475dc9b84c9eea71d210fa08c0cdb426d69fb19e03a49087",
+      "size": [
+        128,
+        128
+      ],
+      "size_identical": true,
+      "alpha_identical": true,
+      "alpha_sha256": "0fbba07a833d4dcfc7024eaf313661a0ba8f80a05c6d29b8801c612e10e60dee",
+      "frame_alpha": [],
+      "opaque_changed_pixels": 634,
+      "opaque_mean_abs_rgb_change": 0.01641845703125,
+      "opaque_max_abs_rgb_change": 4.0,
+      "opaque_mean_signed_rgb_change": [
+        0.0087890625,
+        -0.006591796875,
+        -0.00250244140625
+      ],
+      "outline_mean_abs_rgb_change": 0.0,
+      "outline_max_abs_rgb_change": 0.0,
+      "composited_max_abs_rgb_change": 4.0,
+      "raw_report": ".build/whitehair-katana-complete-v12/restoration/balanced/deployment-square_report.json",
+      "recommended_apply": true
+    },
+    "blade-focus": {
+      "production_target": "game/asset/character/player/main/9-whitehair/skill/icon/blade-focus.png",
+      "candidate": ".build/whitehair-katana-complete-v12/restoration/candidates/blade-focus.png",
+      "input_snapshot": ".build/whitehair-katana-complete-v12/restoration/input/blade-focus.png",
+      "input_sha256": "d47f0ca0c64d1d2b77f3e7df7f9eb36c0599c22ab55b80e4ef309e7d36d614b3",
+      "output_sha256": "985f470547ffc6018f75b01f07b1b8d94ef6365555f000d3371fa0f050fd7a41",
+      "size": [
+        256,
+        256
+      ],
+      "size_identical": true,
+      "alpha_identical": true,
+      "alpha_sha256": "dedf5b02b89e6196d71c6ccf36b6ccddafd77c90697b82cfeaa1b54ab0c5107e",
+      "frame_alpha": [],
+      "opaque_changed_pixels": 3,
+      "opaque_mean_abs_rgb_change": 0.0004967709885742673,
+      "opaque_max_abs_rgb_change": 2.0,
+      "opaque_mean_signed_rgb_change": [
+        -0.00016559032952475575,
+        -0.0003311806590495115,
+        -0.0003311806590495115
+      ],
+      "outline_mean_abs_rgb_change": 0.0,
+      "outline_max_abs_rgb_change": 0.0,
+      "composited_max_abs_rgb_change": 1.9843137254901961,
+      "raw_report": ".build/whitehair-katana-complete-v12/restoration/balanced/blade-focus_report.json",
+      "recommended_apply": true
+    },
+    "crimson-draw": {
+      "production_target": "game/asset/character/player/main/9-whitehair/skill/icon/crimson-draw.png",
+      "candidate": ".build/whitehair-katana-complete-v12/restoration/candidates/crimson-draw.png",
+      "input_snapshot": ".build/whitehair-katana-complete-v12/restoration/input/crimson-draw.png",
+      "input_sha256": "0fa49c35021a1632126712d39c561a774bd274781c1ec19bb138a0ef6abdc83c",
+      "output_sha256": "683ea268abd4be2a4a4e822d629a06a4cb6489e2bc594c1a322b1931a7ceb858",
+      "size": [
+        256,
+        256
+      ],
+      "size_identical": true,
+      "alpha_identical": true,
+      "alpha_sha256": "300a09df1fd865b6218c9b6a251fafb26684df81a22ffd12525666330f43df01",
+      "frame_alpha": [],
+      "opaque_changed_pixels": 78,
+      "opaque_mean_abs_rgb_change": 0.006488011283497884,
+      "opaque_max_abs_rgb_change": 4.0,
+      "opaque_mean_signed_rgb_change": [
+        0.0007522331922896097,
+        0.0004701457451810061,
+        0.0005641748942172073
+      ],
+      "outline_mean_abs_rgb_change": 0.0,
+      "outline_max_abs_rgb_change": 0.0,
+      "composited_max_abs_rgb_change": 3.9686274509803923,
+      "raw_report": ".build/whitehair-katana-complete-v12/restoration/balanced/crimson-draw_report.json",
+      "recommended_apply": true
+    }
+  },
+  "backup_files_unchanged": 16,
+  "frame_alpha_checks": 96,
+  "geometry_change": false,
+  "rescale": false,
+  "mask_cleanup": false,
+  "palette_remap": false,
+  "background_alpha_cleanup": false,
+  "limitations": [
+    "This removes detected generation noise; it does not equalize legitimate colors between separately generated art.",
+    "Most saturated red/magenta exterior dots are near-transparent alpha1..7 pixels. Correct alpha compositing hides the bright RGB diagnostic pattern; they were not erased.",
+    "Current restoration changes are subtle, not a dramatic visible repaint."
+  ],
+  "qa_previews": [
+    "production-before-after.png",
+    "front-idle-source-preset-comparison.png",
+    "front-attack-source-preset-comparison.png",
+    "side-idle-production-fringe-backgrounds.png"
+  ],
+  "preset_comparison": "preset-comparison.json",
+  "fringe_audit": "fringe-audit.json"
+}

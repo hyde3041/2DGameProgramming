@@ -4212,11 +4212,11 @@
       "id": "5,3",
       "column": 5,
       "row": 3,
-      "type": "_",
+      "type": ".",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "tileType": 0,
+      "tileType": 1,
       "visual_elevation": 0.0,
       "perspective_scale": 0.92473118,
       "base_rect": [

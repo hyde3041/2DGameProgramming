@@ -2316,11 +2316,11 @@
       "id": "7,1",
       "column": 7,
       "row": 1,
-      "type": "_",
+      "type": ".",
       "floor": 1,
       "height_level": 0,
       "walkable": true,
-      "tileType": 0,
+      "tileType": 1,
       "visual_elevation": 0.0,
       "perspective_scale": 0.88054608,
       "base_rect": [
