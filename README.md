@@ -6,8 +6,9 @@
 
 ## 제출 자료
 
-- **발표 동영상:** [YouTube에서 보기](https://www.youtube.com/watch?v=OwTFQGSFT5A)
-- **발표 PPT:** [6장 발표 자료 다운로드](docs/발표_PPT_던전원정대_김연준.pptx)
+- **2차 발표 PPT:** [1분 30초 영상이 포함된 최종 발표 자료](docs/2차_발표_던전원정대_최종.pptx)
+- **1차 발표 동영상:** [YouTube에서 보기](https://www.youtube.com/watch?v=OwTFQGSFT5A)
+- **1차 발표 PPT:** [6장 발표 자료 다운로드](docs/발표_PPT_던전원정대_김연준.pptx)
 - **기획서 PPT:** [스프라이트를 포함한 24장 상세 기획서 다운로드](docs/기획서_PPT_던전원정대_김연준.pptx)
 - [텍스트 기획서](docs/기획서.md)
 - [발표 대본](docs/발표대본.txt)
