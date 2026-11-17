@@ -39,6 +39,9 @@ class Room:
 
 GAME_DIRECTORY = Path(__file__).resolve().parents[1]
 METADATA_DIRECTORY = GAME_DIRECTORY.parent / "metadata"
+MONSTER_MOTION = json.loads(
+    (METADATA_DIRECTORY / "character/monster-motion.json").read_text(encoding="utf-8")
+)
 MAP_ASSET_DIRECTORY = GAME_DIRECTORY / "asset/map"
 MAP_DIRECTORY = MAP_ASSET_DIRECTORY / "stage/main/cave"
 ROUTE_DIRECTORY = MAP_ASSET_DIRECTORY / "field/main"
@@ -228,7 +231,10 @@ def spawn_monster(profile, start=None, *, now=0.0):
     if plan is None:
         return None
     # Initial tuning values, kept independent of the source game's enemy statistics.
-    monster = Monster(profile=profile, attackSpeed=1, damage=10, hp=100)
+    frame_count = MONSTER_MOTION["frame_count"]
+    hit_frame = MONSTER_MOTION["monsters"].get(profile, {}).get("impact_frame", frame_count / 2)
+    monster = Monster(profile=profile, attackSpeed=1, damage=1, hp=100,
+                      attack_hit_phase=hit_frame / frame_count, lethal_attacks=False)
     monster.assign_route(*plan, now=now, teleports=monster_teleports(plan[2]))
     return monster
 

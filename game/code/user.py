@@ -33,6 +33,7 @@ class User:
         return (
             self.scene == 2
             and any(member is character for member in self.character)
+            and character.hp > 0
             and not character.deployed
             and character.redeploy_remaining(now) <= 0
             and self.cost >= character.cost

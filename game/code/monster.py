@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from math import floor, hypot, isfinite
+from math import dist, floor, hypot, isfinite
 import random
 from typing import ClassVar
 
@@ -29,11 +29,15 @@ def update_monsters(monsters, characters, now: float, *, blockers=None):
 
     for monster in monsters:
         was_blocked = monster.blockedBy is not None
-        available = [character for character in blockers if slots[id(character)] > 0]
+        available = [character for character in blockers if character.hp > 0 and slots[id(character)] > 0]
         monster.update(now, blockers=available)
         if not was_blocked and monster.blockedBy is not None:
             slots[id(monster.blockedBy)] -= 1
         monster.try_attack(characters, now=now)
+
+    for monster in monsters:
+        if monster.blockedBy is not None and monster.blockedBy.hp <= 0:
+            monster.release_block(now)
 
 
 @dataclass(kw_only=True)
@@ -45,6 +49,8 @@ class Monster:
     hp: int
     maxHp: int | None = None
     attackDelay: float = 1.0  # Walking seconds after a free attack finishes.
+    attack_hit_phase: float = 0.5  # Fraction of the animation before the strike lands.
+    lethal_attacks: bool = True
     moveSpeed: float = 0.6  # Tiles per battle second.
     profile: str = ""
     pos: list[float] = field(default_factory=lambda: [0.0, 0.0])
@@ -64,6 +70,8 @@ class Monster:
     _animation_time: float = field(default=0.0, init=False, repr=False, compare=False)
     _state_started_at: float | None = field(default=None, init=False, repr=False, compare=False)
     _attack_ends_at: float | None = field(default=None, init=False, repr=False, compare=False)
+    _attack_target: Player | None = field(default=None, init=False, repr=False, compare=False)
+    _last_hit_cycle: int = field(default=-1, init=False, repr=False, compare=False)
     _next_attack_at: float = field(default=0.0, init=False, repr=False, compare=False)
 
     def __post_init__(self):
@@ -111,12 +119,44 @@ class Monster:
                 or self.state != "walk" or self.attackSpeed <= 0 or now < self._next_attack_at):
             return False
         cells = self.attack_cells()
-        if not any(unit.race == "people" and unit.deployed and unit.hp > 0
-                   and tuple(unit.pos) in cells for unit in units):
+        target = min(
+            (unit for unit in units if unit.race == "people" and unit.deployed and unit.hp > 0
+             and tuple(unit.pos) in cells),
+            key=lambda unit: dist(unit.pos, self.pos),
+            default=None,
+        )
+        if target is None:
             return False
-        self.set_state("attack", now=now)
+        self._begin_attack(target, now)
         self._attack_ends_at = now + 1.0 / self.attackSpeed
         return True
+
+    def _begin_attack(self, target: Player, now: float):
+        self.set_state("attack", now=now)
+        self._state_started_at = now
+        self._attack_ends_at = None
+        self._attack_target = target
+        self._last_hit_cycle = -1
+
+    def _resolve_attack(self, now: float):
+        target = self._attack_target
+        if (target is None or self.hp <= 0 or self.reachedGoal or self.attackSpeed <= 0
+                or now < self._animation_time):
+            return
+        elapsed_cycles = (now - self._state_started_at) * self.attackSpeed
+        hit_cycle = floor(elapsed_cycles - self.attack_hit_phase + 1e-9)
+        if self._attack_ends_at is not None:
+            hit_cycle = min(hit_cycle, 0)
+        if hit_cycle <= self._last_hit_cycle:
+            return
+        self._last_hit_cycle = hit_cycle
+        if (target.race == "people" and target.deployed and target.hp > 0
+                and (target is self.blockedBy or tuple(target.pos) in self.attack_cells())):
+            minimum_hp = 0 if self.lethal_attacks else 1
+            target.hp = max(minimum_hp, target.hp - max(0, self.damage))
+            if target.hp == 0:
+                target.deployed = False
+                target.reset_animation(now)
 
     def release_block(self, now: float):
         self.blockedBy = None
@@ -148,16 +188,17 @@ class Monster:
         fraction, blocker = closest
         self.pos = [start + (end - start) * fraction for start, end in zip(self.pos, destination)]
         self.blockedBy = blocker
-        self._attack_ends_at = None
         if abs(blocker.pos[0] - self.pos[0]) > 1e-9:
             self.direction = "right" if blocker.pos[0] > self.pos[0] else "left"
-        self.set_state("attack", now=now)
+        self._begin_attack(blocker, now)
         return True
 
     def update(self, now: float, *, blockers=()):
         """Follow the assigned route once; never choose or recalculate a path here."""
         if not isfinite(now):
             raise ValueError("Battle time must be finite")
+        # A late update can cross both the hit frame and the end of the swing.
+        self._resolve_attack(now)
         if self._attack_ends_at is not None:
             if now < self._animation_time:
                 self.set_state("walk", now=now)
@@ -212,6 +253,8 @@ class Monster:
     def reset_animation(self, battle_time: float):
         self.blockedBy = None
         self._attack_ends_at = None
+        self._attack_target = None
+        self._last_hit_cycle = -1
         self._next_attack_at = battle_time
         self.state = "walk"
         self._movement_time = battle_time
@@ -221,6 +264,7 @@ class Monster:
     def sync_animation_time(self, battle_time: float):
         if self._state_started_at is None or battle_time < self._animation_time:
             self._state_started_at = battle_time
+            self._last_hit_cycle = -1
         self._animation_time = battle_time
 
     def set_state(self, state: str, *, now: float | None = None):
@@ -229,6 +273,7 @@ class Monster:
             raise ValueError("Monster state must be 'walk' or 'attack'")
         if state != self.state or state == "walk":
             self._attack_ends_at = None
+            self._attack_target = None
         if now is not None:
             self.sync_animation_time(now)
         if self._state_started_at is None or state != self.state:

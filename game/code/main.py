@@ -13,8 +13,8 @@ from pico2d import (
     SDL_MOUSEMOTION,
     SDL_QUIT,
     SDLK_ESCAPE,
+    SDLK_F11,
     SDLK_q,
-    clear_canvas,
     close_canvas,
     delay,
     draw_line,
@@ -59,6 +59,13 @@ UI_DIRECTORY = ASSET_DIRECTORY / "etc/ui"
 DIRECTION_DIRECTORY = ASSET_DIRECTORY / "etc/direction"
 PROFILE_DIRECTORY = ASSET_DIRECTORY / "character/player/main"
 RANGE_OVERLAY_PATH = ASSET_DIRECTORY / "map/stage/main/range-overlay.png"
+
+
+def set_fullscreen(window, enabled: bool):
+    mode = pico2d.SDL_WINDOW_FULLSCREEN_DESKTOP if enabled else 0
+    if pico2d.SDL_SetWindowFullscreen(window, mode) != 0:
+        error = pico2d.SDL_GetError().decode("utf-8", errors="replace")
+        print(f"Could not change fullscreen mode: {error}")
 
 
 def draw_number(digits, number, right, y, width):
@@ -226,7 +233,8 @@ def draw_attack_range(character, overlay, *, pos=None, direction=None):
 def draw_battle_ui(panel, digits, cards, *, cost, defense_points, remaining_enemies, selected=None):
     size, spacing, first_x = card_layout(len(cards))
     for index, (portrait, character) in enumerate(cards):
-        available = cost >= character.cost and not character.deployed and character.redeploy_remaining() <= 0
+        available = (character.hp > 0 and cost >= character.cost and not character.deployed
+                     and character.redeploy_remaining() <= 0)
         portrait.opacify(1.0 if available and character is not selected else 0.5)
         portrait.draw(first_x + spacing * index, CARD_Y, size, size)
     if len(cards) <= 8:
@@ -314,9 +322,7 @@ def draw_character(character, sprites, x, y, opacity=1.0, *, cell=None, directio
 
 
 def load_monster_sprites():
-    metadata = json.loads(
-        (dungeon.METADATA_DIRECTORY / "character/monster-motion.json").read_text(encoding="utf-8")
-    )
+    metadata = dungeon.MONSTER_MOTION
     sprites = {}
     for profile, motion in metadata["monsters"].items():
         sprites[profile] = {
@@ -492,6 +498,11 @@ def main():
     previous_frame_time = 0.0
     open_canvas(WIDTH, HEIGHT)
     try:
+        canvas = open_canvas.__globals__
+        window, renderer = canvas["window"], canvas["renderer"]
+        # Keep the same logical coordinates for rendering and SDL mouse events.
+        if pico2d.SDL_RenderSetLogicalSize(renderer, WIDTH, HEIGHT) != 0:
+            raise RuntimeError(f"Could not set logical canvas size: {pico2d.SDL_GetError()!r}")
         title_image = load_image(str(TITLE_PATH))
         hud_panel = load_image(str(UI_DIRECTORY / "battle-hud.png"))
         hud_digits = load_image(str(UI_DIRECTORY / "battle-hud-digits.png"))
@@ -527,11 +538,17 @@ def main():
                     if dungeon.battle_cells.get(tuple(character.pos), {}).get("tileType") == dungeon.TileType.GROUND
                 ]
                 update_monsters(monsters, user.character, battle_time, blockers=ground_characters)
+                if inspected_character is not None and not inspected_character.deployed:
+                    inspected_character = None
 
             for event in get_events():
                 if event.type == SDL_QUIT:
                     return
                 if event.type == SDL_KEYDOWN:
+                    if event.key == SDLK_F11:
+                        fullscreen = pico2d.SDL_GetWindowFlags(window) & pico2d.SDL_WINDOW_FULLSCREEN
+                        set_fullscreen(window, not fullscreen)
+                        continue
                     if event.key == SDLK_ESCAPE and dragged_character is not None:
                         dragged_character = None
                         pending_pos = None
@@ -668,7 +685,8 @@ def main():
                 combat.update(user.character, monsters, battle_time)
                 monsters[:] = [monster for monster in monsters if not monster.reachedGoal and monster.hp > 0]
 
-            clear_canvas()
+            pico2d.SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255)
+            pico2d.SDL_RenderClear(renderer)
             if user.scene == 0:
                 title_image.draw(WIDTH // 2, HEIGHT // 2, WIDTH, HEIGHT)
             elif user.scene == 1:

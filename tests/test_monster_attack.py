@@ -149,6 +149,76 @@ class MonsterAttackTests(unittest.TestCase):
         self.assertAlmostEqual(unit.pos[0], 0.25)
         self.assertIsNone(unit.blockedBy)
 
+    def test_free_attack_locks_the_nearest_target_at_the_start_of_the_swing(self):
+        unit = monster()
+        farther = character(pos=[1, 0])
+        nearer = character(pos=[0, 0])
+        targets = [farther, nearer]
+        update_monsters([unit], targets, 0.0)
+
+        farther.pos, nearer.pos = nearer.pos, farther.pos
+        update_monsters([unit], targets, 0.5)
+
+        self.assertEqual(farther.hp, 100)
+        self.assertEqual(nearer.hp, 95)
+
+    def test_free_attack_hits_once_at_the_configured_phase(self):
+        unit = monster(attackSpeed=2, attack_hit_phase=0.75)
+        target = character()
+        update_monsters([unit], [target], 0.0)
+        update_monsters([unit], [target], 0.374)
+        self.assertEqual(target.hp, 100)
+
+        for now in [0.375, 0.375, 0.45, 0.5]:
+            with self.subTest(now=now):
+                update_monsters([unit], [target], now)
+                self.assertEqual(target.hp, 95)
+
+    def test_free_attack_does_not_switch_targets_after_withdrawal(self):
+        unit = monster()
+        withdrawn = character(pos=[0, 0])
+        other = character(pos=[1, 0])
+        targets = [withdrawn, other]
+        update_monsters([unit], targets, 0.0)
+
+        withdrawn.deployed = False
+        update_monsters([unit], targets, 0.5)
+
+        self.assertEqual(unit.state, "attack")
+        self.assertEqual(withdrawn.hp, 100)
+        self.assertEqual(other.hp, 100)
+
+    def test_free_attack_resolves_one_pending_hit_when_time_skips_past_its_end(self):
+        unit = monster()
+        target = character()
+        update_monsters([unit], [target], 0.0)
+        update_monsters([unit], [target], 1.25)
+
+        self.assertEqual(unit.state, "walk")
+        self.assertEqual(target.hp, 95)
+
+    def test_blocked_attacks_only_hit_the_blocker_and_release_on_defeat(self):
+        unit = monster()
+        blocker = character(pos=[0, 0], hp=9, canStop=1)
+        other = character(pos=[1, 0])
+        targets = [other, blocker]
+        update_monsters([unit], targets, 0.0)
+        self.assertIs(unit.blockedBy, blocker)
+
+        for now in [0.5, 0.5, 1.0]:
+            with self.subTest(now=now):
+                update_monsters([unit], targets, now)
+                self.assertEqual(blocker.hp, 4)
+                self.assertEqual(other.hp, 100)
+
+        update_monsters([unit], targets, 1.5)
+
+        self.assertEqual(blocker.hp, 0)
+        self.assertFalse(blocker.deployed)
+        self.assertEqual(other.hp, 100)
+        self.assertIsNone(unit.blockedBy)
+        self.assertEqual(unit.state, "walk")
+
     def test_blocking_during_cooldown_ignores_delay_and_release_waits_again(self):
         unit = monster(attackRange=[[0, 0], [0, -1], [0, 1]])
         target = character(canStop=1)

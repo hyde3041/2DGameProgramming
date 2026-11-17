@@ -8,6 +8,8 @@ from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "game/code"))
 
 import map as dungeon
+from character import Player
+from monster import update_monsters
 
 
 class MonsterRouteTests(unittest.TestCase):
@@ -101,6 +103,19 @@ class MonsterRouteTests(unittest.TestCase):
         second.update(6)
         self.assertAlmostEqual(second.pos[0], 0.6)
         self.assertIsNone(dungeon.spawn_monster("goblin-scout", (99, 99), now=5))
+
+    def test_spawned_monster_deals_one_damage_and_cannot_defeat_its_blocker(self):
+        self.terrain([(0, 0), (1, 0), (2, 0)], [(2, 0)], [(0, 0)])
+        enemy = dungeon.spawn_monster(dungeon.GOBLIN)
+        ally = Player(attackSpeed=1, damage=10, hp=3, cost=5, pos=[1, 0], deployed=True)
+        update_monsters([enemy], [ally], 1)
+        self.assertIs(enemy.blockedBy, ally)
+
+        for cycle, expected_hp in enumerate([2, 1, 1]):
+            update_monsters([enemy], [ally], 1 + enemy.attack_hit_phase + cycle)
+            self.assertEqual(ally.hp, expected_hp)
+        self.assertTrue(ally.deployed)
+        self.assertIs(enemy.blockedBy, ally)
 
     def test_load_converts_row_coordinates_and_clear_discards_old_routes(self):
         layout = {
