@@ -29,6 +29,33 @@ DEPLOYMENT_TILES = {
     "9-whitehair": [1, 2],
 }
 
+# Base attack offsets facing down. The origin is the deployed character's tile.
+DEFAULT_ATTACK_RANGE = ((0, 0), (0, -1))
+DEPLOYMENT_ATTACK_RANGES = {
+    "0-swordsman": DEFAULT_ATTACK_RANGE,
+    "1-guardian": ((-1, 0), (0, 0), (1, 0), (0, -1)),
+    "2-archer": (
+        (0, 0),
+        (-1, -1), (0, -1), (1, -1),
+        (-1, -2), (0, -2), (1, -2),
+        (0, -3),
+    ),
+    "3-crossbowman": ((0, 0), (0, -1), (0, -2), (0, -3), (0, -4)),
+    "4-cleric": (
+        (-1, 0), (0, 0), (1, 0),
+        (-1, -1), (0, -1), (1, -1),
+        (-1, -2), (0, -2), (1, -2),
+    ),
+    "5-herbalist": ((0, 0), (0, -1), (-1, -2), (0, -2), (1, -2), (0, -3)),
+    "6-frost-mage": (
+        (0, 0),
+        (-1, -1), (0, -1), (1, -1),
+        (-1, -2), (0, -2), (1, -2),
+    ),
+    "7-shadow-thief": ((0, 0), (0, -1), (0, -2)),
+    "9-whitehair": ((0, 0), (-1, -1), (0, -1), (1, -1)),
+}
+
 
 @dataclass(kw_only=True)
 class Player:
@@ -50,7 +77,7 @@ class Player:
     deployed: bool = False
     pos: list[int] = field(default_factory=lambda: [0, 0])
     # Canonical offsets while facing down, with negative y pointing down.
-    attackRange: list[list[int]] = field(default_factory=lambda: [[0, 0], [0, -1]])
+    attackRange: list[list[int]] | None = None
     state: str = "idle"
     _animation_time: float = field(default=0.0, init=False, repr=False, compare=False)
     _state_started_at: float | None = field(default=None, init=False, repr=False, compare=False)
@@ -60,6 +87,9 @@ class Player:
     def __post_init__(self):
         if self.maxHp is None:
             self.maxHp = max(0, self.hp)
+        if self.attackRange is None:
+            offsets = DEPLOYMENT_ATTACK_RANGES.get(self.profile, DEFAULT_ATTACK_RANGE)
+            self.attackRange = [list(offset) for offset in offsets]
 
     def update_mp(self, now: float):
         elapsed = 0.0 if self._mp_updated_at is None else max(0.0, now - self._mp_updated_at)
@@ -98,24 +128,35 @@ class Player:
             cells.add((x + dx, y + dy))
         return cells
 
+    def targets_in_range(self, units):
+        """Return live enemies in the same cells shown by the range preview."""
+        cells = self.attack_cells()
+        # Moving monsters have fractional positions; each integer is a tile center.
+        return [
+            unit for unit in units
+            if unit.race == "monster"
+            and getattr(unit, "hp", 1) > 0
+            and not getattr(unit, "reachedGoal", False)
+            and (floor(unit.pos[0] + 0.5), floor(unit.pos[1] + 0.5)) in cells
+        ]
+
     def update_state(self, units, *, now: float | None = None) -> str:
         """Select a motion. In combat, now is the shared battle time in seconds."""
         if now is not None:
             self.sync_animation_time(now)
-        cells = self.attack_cells()
-        # Moving monsters have fractional positions; each integer is a tile center.
-        attacking = self.attackSpeed > 0 and any(
-            unit.race == "monster"
-            and getattr(unit, "hp", 1) > 0
-            and not getattr(unit, "reachedGoal", False)
-            and (floor(unit.pos[0] + 0.5), floor(unit.pos[1] + 0.5)) in cells
-            for unit in units
-        )
-        state = "attack" if attacking else "idle"
+        state = "attack" if self.attackSpeed > 0 and self.targets_in_range(units) else "idle"
         if self._state_started_at is None or state != self.state:
             self._state_started_at = self._animation_time
         self.state = state
         return self.state
+
+    def attack_cycles(self, now: float | None = None) -> float:
+        """Return elapsed attack cycles, including the fractional position in this cycle."""
+        if self.state != "attack" or self._state_started_at is None:
+            return 0.0
+        if now is None:
+            now = self._animation_time
+        return max(0.0, (now - self._state_started_at) * self.attackSpeed)
 
     def motion_frame(self, frame_count: int, fps: float, now: float | None = None) -> int:
         """Select a sprite frame from the synchronized battle time."""
@@ -124,5 +165,5 @@ class Player:
         if now is None:
             now = self._animation_time
         if self.state == "attack":
-            fps = frame_count * self.attackSpeed
+            return int(self.attack_cycles(now) * frame_count) % frame_count
         return int((now - self._state_started_at) * fps) % frame_count

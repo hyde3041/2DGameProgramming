@@ -26,8 +26,10 @@ from pico2d import (
 )
 
 import map as dungeon
+from attack_effects import draw_attack_effects
 from character import DEPLOYMENT_COSTS, DEPLOYMENT_TILES, Player
 from monster import update_monsters
+from player_combat import PlayerCombat
 from user import User
 
 
@@ -329,11 +331,11 @@ def load_monster_sprites():
     return sprites
 
 
-def monster_screen_position(monster):
-    """Project a continuous logical position, keeping movement smooth between tiles."""
+def ground_screen_position(pos):
+    """Project a continuous logical position onto the ground plane."""
     grid = dungeon.battle_grid
     projection = grid["projection"]
-    column, row = monster.pos[0], -monster.pos[1]
+    column, row = pos[0], -pos[1]
     taper = 1 / projection["back_scale"] - 1
     depth = (row + 0.5) / grid["rows"]
     perspective = 1 / (1 + taper * (1 - depth))
@@ -345,6 +347,23 @@ def monster_screen_position(monster):
         - top_depth / (1 + taper * (1 - top_depth))
     )
     return x, HEIGHT - y, perspective, tile_height
+
+
+def monster_screen_position(monster):
+    return ground_screen_position(monster.pos)
+
+
+def attack_effect_screen_position(pos, *, elevated=False):
+    """Return the unit's foot position and map scale for an attack effect."""
+    if elevated:
+        cell = dungeon.battle_cells.get(tuple(pos))
+        if cell is not None:
+            x, y = cell["pico2d_center"]
+            scale = dungeon.battle_grid["cell_size"][0] / 64 * cell.get("perspective_scale", 1.0)
+            return x, y - cell["surface_rect"][3] * CHARACTER_FOOT_OFFSET, scale
+    x, y, perspective, tile_height = ground_screen_position(pos)
+    return (x, y - tile_height * CHARACTER_FOOT_OFFSET,
+            dungeon.battle_grid["cell_size"][0] / 64 * perspective)
 
 
 def draw_monster(monster, sprites):
@@ -456,6 +475,7 @@ def main():
     sprites = {}
     monster_sprites = {}
     monsters = []
+    combat = PlayerCombat()
     pending_monsters = []
     monster_spawn_points = []
     monster_spawn_number = 0
@@ -507,7 +527,6 @@ def main():
                     if dungeon.battle_cells.get(tuple(character.pos), {}).get("tileType") == dungeon.TileType.GROUND
                 ]
                 update_monsters(monsters, user.character, battle_time, blockers=ground_characters)
-                monsters[:] = [monster for monster in monsters if not monster.reachedGoal and monster.hp > 0]
 
             for event in get_events():
                 if event.type == SDL_QUIT:
@@ -532,6 +551,7 @@ def main():
                         selected_direction = None
                         direction_dragging = False
                         user.finish_battle(cleared=event.key == SDLK_q)
+                        combat.clear()
                         monsters.clear()
                         pending_monsters.clear()
                         monster_spawn_points.clear()
@@ -565,6 +585,7 @@ def main():
                         battle_time = 0.0
                         previous_frame_time = monotonic()
                         user.begin_battle(room_number, battle_time)
+                        combat.clear()
                         inspected_character = None
                         monsters.clear()
                         pending_monsters = [
@@ -644,9 +665,8 @@ def main():
                 direction_dragging = False
 
             if user.scene == 2:
-                for character in user.character:
-                    if character.deployed:
-                        character.update_state(monsters, now=battle_time)
+                combat.update(user.character, monsters, battle_time)
+                monsters[:] = [monster for monster in monsters if not monster.reachedGoal and monster.hp > 0]
 
             clear_canvas()
             if user.scene == 0:
@@ -680,6 +700,11 @@ def main():
                         cell = dungeon.battle_cells[tuple(unit.pos)]
                         x, y = cell["pico2d_center"]
                         draw_character(unit, sprites, x, y, cell=cell)
+                draw_attack_effects(
+                    combat.projectiles, combat.effects, battle_time,
+                    position_on_map=attack_effect_screen_position,
+                    monster_position=lambda monster: attack_effect_screen_position(monster.pos),
+                )
                 for _, unit in ordered_units:
                     draw_unit_bars(unit)
                 draw_battle_ui(
@@ -721,6 +746,7 @@ def main():
         skill_icons.clear()
         sprites.clear()
         monster_sprites.clear()
+        combat.clear()
         monsters.clear()
         pending_monsters.clear()
         direction_images.clear()

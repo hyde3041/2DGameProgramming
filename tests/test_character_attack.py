@@ -21,6 +21,21 @@ def monster(pos, **kwargs):
 
 
 class CharacterAttackTests(unittest.TestCase):
+    def test_profile_defaults_control_the_reach_and_rotate_with_facing(self):
+        archer = player(profile="2-archer", direction="right")
+        crossbowman = player(profile="3-crossbowman", direction="right")
+        self.assertEqual(archer.update_state([monster([2, 1])]), "attack")
+        self.assertEqual(crossbowman.update_state([monster([2, 1])]), "idle")
+        self.assertEqual(archer.update_state([monster([4, 0])]), "idle")
+        self.assertEqual(crossbowman.update_state([monster([4, 0])]), "attack")
+
+    def test_profile_defaults_are_owned_by_each_character_and_allow_overrides(self):
+        first = player(profile="7-shadow-thief")
+        second = player(profile="7-shadow-thief")
+        first.attackRange[1][1] = -3
+        self.assertEqual(second.attack_cells(), {(0, 0), (0, -1), (0, -2)})
+        self.assertEqual(player(profile="7-shadow-thief", attackRange=[]).attack_cells(), set())
+
     def test_enter_stay_leave_and_reenter_range(self):
         character = player(attackRange=[[0, -1]])
         target = monster([0.1, -1.6])
